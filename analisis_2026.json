@@ -1,0 +1,4780 @@
+{
+ "meses": [
+  "ene",
+  "feb",
+  "mar",
+  "abr",
+  "may",
+  "jun",
+  "jul"
+ ],
+ "pl": [
+  {
+   "mes": "ene",
+   "ingresos": 7128.77,
+   "pauta_cobrada": 0.0,
+   "pauta_pagada": 574.03,
+   "pauta_neta": 574.03,
+   "costo_fijo": 7622.74,
+   "costo_variable": 484.71,
+   "costo_total": 8681.48,
+   "resultado": -1552.71,
+   "margen_contribucion": 6070.03,
+   "margen_pct": 85.1
+  },
+  {
+   "mes": "feb",
+   "ingresos": 12039.85,
+   "pauta_cobrada": 658.37,
+   "pauta_pagada": 1451.48,
+   "pauta_neta": 793.11,
+   "costo_fijo": 7463.25,
+   "costo_variable": 2675.35,
+   "costo_total": 10931.71,
+   "resultado": 1108.14,
+   "margen_contribucion": 8571.39,
+   "margen_pct": 71.2
+  },
+  {
+   "mes": "mar",
+   "ingresos": 10082.24,
+   "pauta_cobrada": 1194.25,
+   "pauta_pagada": 1425.01,
+   "pauta_neta": 230.76,
+   "costo_fijo": 8672.15,
+   "costo_variable": 1961.31,
+   "costo_total": 10864.22,
+   "resultado": -781.98,
+   "margen_contribucion": 7890.17,
+   "margen_pct": 78.3
+  },
+  {
+   "mes": "abr",
+   "ingresos": 10720.25,
+   "pauta_cobrada": 1857.0,
+   "pauta_pagada": 1272.28,
+   "pauta_neta": -584.72,
+   "costo_fijo": 8367.14,
+   "costo_variable": 603.36,
+   "costo_total": 8385.78,
+   "resultado": 2334.47,
+   "margen_contribucion": 10701.61,
+   "margen_pct": 99.8
+  },
+  {
+   "mes": "may",
+   "ingresos": 9187.71,
+   "pauta_cobrada": 0.0,
+   "pauta_pagada": 1763.62,
+   "pauta_neta": 1763.62,
+   "costo_fijo": 6123.45,
+   "costo_variable": 1423.58,
+   "costo_total": 9310.65,
+   "resultado": -122.94,
+   "margen_contribucion": 6000.51,
+   "margen_pct": 65.3
+  },
+  {
+   "mes": "jun",
+   "ingresos": 14741.69,
+   "pauta_cobrada": 1957.0,
+   "pauta_pagada": 1418.0,
+   "pauta_neta": -539.0,
+   "costo_fijo": 12200.11,
+   "costo_variable": 1083.23,
+   "costo_total": 12744.34,
+   "resultado": 1997.35,
+   "margen_contribucion": 14197.46,
+   "margen_pct": 96.3
+  },
+  {
+   "mes": "jul",
+   "ingresos": 13833.52,
+   "pauta_cobrada": 1078.5,
+   "pauta_pagada": 2435.17,
+   "pauta_neta": 1356.67,
+   "costo_fijo": 10123.79,
+   "costo_variable": 1446.76,
+   "costo_total": 12927.22,
+   "resultado": 906.3,
+   "margen_contribucion": 11030.09,
+   "margen_pct": 79.7
+  }
+ ],
+ "grupos": {
+  "Nomina fija": {
+   "ene": -3593.33,
+   "feb": -3629.86,
+   "mar": -4565.84,
+   "abr": -4260.75,
+   "may": -4934.07,
+   "jun": -5577.54,
+   "jul": -5912.16
+  },
+  "Estructura": {
+   "ene": -588.35,
+   "feb": -442.53,
+   "mar": -500.82,
+   "abr": -411.83,
+   "may": -566.71,
+   "jun": -480.66,
+   "jul": -546.91
+  },
+  "Ingresos - Fee mensual": {
+   "ene": 7128.63,
+   "feb": 10814.13,
+   "mar": 9823.48,
+   "abr": 10710.25,
+   "may": 8934.71,
+   "jun": 14693.69,
+   "jul": 12731.02
+  },
+  "Equipos": {
+   "ene": -75.0,
+   "feb": -1119.1,
+   "mar": 0.0,
+   "abr": 0.0,
+   "may": -160.0,
+   "jun": 0.0,
+   "jul": 0.0
+  },
+  "Marketing propio": {
+   "ene": -135.0,
+   "feb": -375.0,
+   "mar": 0.0,
+   "abr": 0.0,
+   "may": 0.0,
+   "jun": 0.0,
+   "jul": 0.0
+  },
+  "Movilizacion": {
+   "ene": -21.08,
+   "feb": 0.0,
+   "mar": -42.67,
+   "abr": -39.01,
+   "may": -20.16,
+   "jun": -56.88,
+   "jul": -18.34
+  },
+  "Pauta": {
+   "ene": -574.03,
+   "feb": -1451.48,
+   "mar": -1425.01,
+   "abr": -1272.28,
+   "may": -1763.62,
+   "jun": -1418.0,
+   "jul": -2435.17
+  },
+  "Freelance y produccion": {
+   "ene": -202.0,
+   "feb": -784.0,
+   "mar": -1375.5,
+   "abr": -500.0,
+   "may": -20.0,
+   "jun": -860.0,
+   "jul": -1092.91
+  },
+  "Nomina variable": {
+   "ene": -24.93,
+   "feb": 0.0,
+   "mar": 0.0,
+   "abr": 0.0,
+   "may": -673.93,
+   "jun": -47.35,
+   "jul": 0.0
+  },
+  "Impuestos y legal": {
+   "ene": -429.15,
+   "feb": -248.95,
+   "mar": -351.58,
+   "abr": -552.65,
+   "may": -475.66,
+   "jun": 0.0,
+   "jul": -522.81
+  },
+  "Tarjeta de credito": {
+   "ene": -26.7,
+   "feb": -29.25,
+   "mar": -494.24,
+   "abr": -36.67,
+   "may": -543.49,
+   "jun": -30.0,
+   "jul": -312.1
+  },
+  "Software y herramientas": {
+   "ene": -11.91,
+   "feb": -11.91,
+   "mar": -11.91,
+   "abr": -11.91,
+   "may": -11.91,
+   "jun": -11.91,
+   "jul": -11.91
+  },
+  "Nomina socios": {
+   "ene": -3000.0,
+   "feb": -3000.0,
+   "mar": -3112.0,
+   "abr": -3000.0,
+   "may": 0.0,
+   "jun": -6000.0,
+   "jul": -3000.0
+  },
+  "Otros ingresos": {
+   "ene": 0.14,
+   "feb": 0.09,
+   "mar": 230.01,
+   "abr": 187.0,
+   "may": 115.0,
+   "jun": 185.0,
+   "jul": 255.0
+  },
+  "Ingresos - Produccion": {
+   "ene": 0.0,
+   "feb": 1500.0,
+   "mar": 0.0,
+   "abr": 0.0,
+   "may": 138.0,
+   "jun": 140.0,
+   "jul": 1286.0
+  },
+  "Devoluciones": {
+   "ene": 0.0,
+   "feb": -362.0,
+   "mar": 0.0,
+   "abr": 0.0,
+   "may": 0.0,
+   "jun": 0.0,
+   "jul": 0.0
+  },
+  "Oficina y bienestar": {
+   "ene": 0.0,
+   "feb": -6.0,
+   "mar": -48.9,
+   "abr": -27.68,
+   "may": -6.0,
+   "jun": -89.0,
+   "jul": -23.41
+  },
+  "Pasantias": {
+   "ene": 0.0,
+   "feb": -130.0,
+   "mar": -130.0,
+   "abr": -130.0,
+   "may": -135.1,
+   "jun": -130.0,
+   "jul": -130.0
+  },
+  "Ingresos - Pauta": {
+   "ene": 0.0,
+   "feb": 384.0,
+   "mar": 570.0,
+   "abr": 1680.0,
+   "may": 0.0,
+   "jun": 1680.0,
+   "jul": 640.0
+  },
+  "Ingresos - Sin identificar": {
+   "ene": 0.0,
+   "feb": 0.0,
+   "mar": 653.0,
+   "abr": 0.0,
+   "may": 0.0,
+   "jun": 0.0,
+   "jul": 0.0
+  }
+ },
+ "no_operativo": {
+  "Saldo Inicial": {
+   "ene": 17564.91,
+   "feb": 0.0,
+   "mar": 0.0,
+   "abr": 0.0,
+   "may": 0.0,
+   "jun": 0.0,
+   "jul": 0.0
+  },
+  "Movimiento entre cuentas propias": {
+   "ene": -20.0,
+   "feb": -14822.59,
+   "mar": 793.01,
+   "abr": -2478.59,
+   "may": 300.41,
+   "jun": -2316.87,
+   "jul": -900.01
+  },
+  "Retiro de socios": {
+   "ene": 0.0,
+   "feb": -2000.0,
+   "mar": 0.0,
+   "abr": 0.0,
+   "may": 0.0,
+   "jun": 0.0,
+   "jul": 0.0
+  }
+ },
+ "promedios": {
+  "ingresos": 11104.86,
+  "costo_fijo": 8653.23,
+  "costo_variable": 1896.11,
+  "ratio_variable": 0.1707,
+  "mc_ratio": 0.8293,
+  "breakeven": 10434.96,
+  "breakeven_sin_socios": 6797.96,
+  "sueldo_socios": 3016.0
+ },
+ "run_rate": {
+  "ingresos": 12587.64,
+  "costo_fijo": 9482.45,
+  "costo_variable": 2178.29,
+  "resultado": 926.9,
+  "ratio_variable": 0.173,
+  "mc_ratio": 0.827,
+  "breakeven": 11466.08,
+  "holgura": 1121.56
+ },
+ "familias": {
+  "ingreso": [
+   "Ingresos - Fee mensual",
+   "Ingresos - Produccion",
+   "Ingresos - Pauta",
+   "Otros ingresos",
+   "Ingresos - Sin identificar"
+  ],
+  "fijo": [
+   "Nomina fija",
+   "Nomina socios",
+   "Pasantias",
+   "Estructura",
+   "Software y herramientas",
+   "Impuestos y legal"
+  ],
+  "variable": [
+   "Nomina variable",
+   "Freelance y produccion",
+   "Pauta",
+   "Movilizacion",
+   "Oficina y bienestar",
+   "Equipos",
+   "Marketing propio",
+   "Tarjeta de credito",
+   "Devoluciones"
+  ]
+ },
+ "clientes": [
+  {
+   "cliente": "Healthy Girl",
+   "total": 8111.12,
+   "pct": 10.4,
+   "pagos": 7,
+   "meses_activo": 5,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "fee_promedio": 1622.22,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 1079.37,
+    "mar": 1429.25,
+    "abr": 2187.0,
+    "may": 0.0,
+    "jun": 2287.0,
+    "jul": 1128.5
+   }
+  },
+  {
+   "cliente": "Uninova",
+   "total": 6656.0,
+   "pct": 8.5,
+   "pagos": 8,
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "fee_promedio": 950.86,
+   "por_mes": {
+    "ene": 900.0,
+    "feb": 900.0,
+    "mar": 900.0,
+    "abr": 900.0,
+    "may": 900.0,
+    "jun": 900.0,
+    "jul": 1256.0
+   }
+  },
+  {
+   "cliente": "Speedy",
+   "total": 5802.0,
+   "pct": 7.4,
+   "pagos": 3,
+   "meses_activo": 2,
+   "primer_mes": "jun",
+   "ultimo_mes": "jul",
+   "fee_promedio": 2901.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 2436.0,
+    "jul": 3366.0
+   }
+  },
+  {
+   "cliente": "Fiammingo",
+   "total": 5520.0,
+   "pct": 7.1,
+   "pagos": 6,
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "fee_promedio": 920.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 920.0,
+    "mar": 920.0,
+    "abr": 920.0,
+    "may": 920.0,
+    "jun": 920.0,
+    "jul": 920.0
+   }
+  },
+  {
+   "cliente": "Velsana",
+   "total": 5345.0,
+   "pct": 6.9,
+   "pagos": 7,
+   "meses_activo": 6,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "fee_promedio": 890.83,
+   "por_mes": {
+    "ene": 640.0,
+    "feb": 1135.0,
+    "mar": 770.0,
+    "abr": 700.0,
+    "may": 0.0,
+    "jun": 1400.0,
+    "jul": 700.0
+   }
+  },
+  {
+   "cliente": "Samari",
+   "total": 5329.49,
+   "pct": 6.8,
+   "pagos": 9,
+   "meses_activo": 6,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "fee_promedio": 888.25,
+   "por_mes": {
+    "ene": 738.13,
+    "feb": 670.13,
+    "mar": 821.1,
+    "abr": 0.0,
+    "may": 1440.46,
+    "jun": 938.44,
+    "jul": 721.23
+   }
+  },
+  {
+   "cliente": "Nane Vestidos",
+   "total": 3660.0,
+   "pct": 4.7,
+   "pagos": 9,
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "fee_promedio": 522.86,
+   "por_mes": {
+    "ene": 450.0,
+    "feb": 480.0,
+    "mar": 500.0,
+    "abr": 500.0,
+    "may": 770.0,
+    "jun": 460.0,
+    "jul": 500.0
+   }
+  },
+  {
+   "cliente": "Cigarra",
+   "total": 3622.5,
+   "pct": 4.7,
+   "pagos": 7,
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "fee_promedio": 517.5,
+   "por_mes": {
+    "ene": 517.5,
+    "feb": 517.5,
+    "mar": 517.5,
+    "abr": 517.5,
+    "may": 517.5,
+    "jun": 517.5,
+    "jul": 517.5
+   }
+  },
+  {
+   "cliente": "Flota Imbabura",
+   "total": 3352.26,
+   "pct": 4.3,
+   "pagos": 6,
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "fee_promedio": 558.71,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 559.63,
+    "mar": 559.63,
+    "abr": 558.25,
+    "may": 558.25,
+    "jun": 558.25,
+    "jul": 558.25
+   }
+  },
+  {
+   "cliente": "Pladeco",
+   "total": 3049.0,
+   "pct": 3.9,
+   "pagos": 6,
+   "meses_activo": 5,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "fee_promedio": 609.8,
+   "por_mes": {
+    "ene": 1493.0,
+    "feb": 350.0,
+    "mar": 400.0,
+    "abr": 0.0,
+    "may": 406.0,
+    "jun": 0.0,
+    "jul": 400.0
+   }
+  },
+  {
+   "cliente": "Confia",
+   "total": 3000.0,
+   "pct": 3.9,
+   "pagos": 7,
+   "meses_activo": 6,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "fee_promedio": 500.0,
+   "por_mes": {
+    "ene": 450.0,
+    "feb": 450.0,
+    "mar": 0.0,
+    "abr": 460.0,
+    "may": 500.0,
+    "jun": 640.0,
+    "jul": 500.0
+   }
+  },
+  {
+   "cliente": "Absolute",
+   "total": 2400.0,
+   "pct": 3.1,
+   "pagos": 7,
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "fee_promedio": 342.86,
+   "por_mes": {
+    "ene": 600.0,
+    "feb": 300.0,
+    "mar": 300.0,
+    "abr": 300.0,
+    "may": 300.0,
+    "jun": 300.0,
+    "jul": 300.0
+   }
+  },
+  {
+   "cliente": "Plasticaucho",
+   "total": 2397.0,
+   "pct": 3.1,
+   "pagos": 6,
+   "meses_activo": 5,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "fee_promedio": 479.4,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 700.0,
+    "mar": 339.0,
+    "abr": 340.0,
+    "may": 0.0,
+    "jun": 679.0,
+    "jul": 339.0
+   }
+  },
+  {
+   "cliente": "Onco Ambato",
+   "total": 2300.0,
+   "pct": 3.0,
+   "pagos": 7,
+   "meses_activo": 5,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "fee_promedio": 460.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 985.0,
+    "mar": 340.0,
+    "abr": 335.0,
+    "may": 340.0,
+    "jun": 0.0,
+    "jul": 300.0
+   }
+  },
+  {
+   "cliente": "Chiflido",
+   "total": 2100.0,
+   "pct": 2.7,
+   "pagos": 7,
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "fee_promedio": 300.0,
+   "por_mes": {
+    "ene": 300.0,
+    "feb": 300.0,
+    "mar": 300.0,
+    "abr": 300.0,
+    "may": 300.0,
+    "jun": 300.0,
+    "jul": 300.0
+   }
+  },
+  {
+   "cliente": "Tartelier",
+   "total": 2070.0,
+   "pct": 2.7,
+   "pagos": 6,
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "fee_promedio": 345.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 345.0,
+    "mar": 345.0,
+    "abr": 345.0,
+    "may": 345.0,
+    "jun": 345.0,
+    "jul": 345.0
+   }
+  },
+  {
+   "cliente": "Provita",
+   "total": 2007.5,
+   "pct": 2.6,
+   "pagos": 7,
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "fee_promedio": 334.58,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 282.5,
+    "mar": 575.0,
+    "abr": 287.5,
+    "may": 287.5,
+    "jun": 287.5,
+    "jul": 287.5
+   }
+  },
+  {
+   "cliente": "El Motor",
+   "total": 1950.0,
+   "pct": 2.5,
+   "pagos": 3,
+   "meses_activo": 2,
+   "primer_mes": "jun",
+   "ultimo_mes": "jul",
+   "fee_promedio": 975.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 1300.0,
+    "jul": 650.0
+   }
+  },
+  {
+   "cliente": "Casa del Verde",
+   "total": 1720.0,
+   "pct": 2.2,
+   "pagos": 4,
+   "meses_activo": 4,
+   "primer_mes": "abr",
+   "ultimo_mes": "jul",
+   "fee_promedio": 430.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 430.0,
+    "may": 430.0,
+    "jun": 430.0,
+    "jul": 430.0
+   }
+  },
+  {
+   "cliente": "Nono",
+   "total": 1350.0,
+   "pct": 1.7,
+   "pagos": 3,
+   "meses_activo": 3,
+   "primer_mes": "ene",
+   "ultimo_mes": "mar",
+   "fee_promedio": 450.0,
+   "por_mes": {
+    "ene": 440.0,
+    "feb": 450.0,
+    "mar": 460.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   }
+  },
+  {
+   "cliente": "Pasteur",
+   "total": 1280.0,
+   "pct": 1.6,
+   "pagos": 2,
+   "meses_activo": 2,
+   "primer_mes": "ene",
+   "ultimo_mes": "abr",
+   "fee_promedio": 640.0,
+   "por_mes": {
+    "ene": 480.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 800.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   }
+  },
+  {
+   "cliente": "APC",
+   "total": 1150.0,
+   "pct": 1.5,
+   "pagos": 2,
+   "meses_activo": 2,
+   "primer_mes": "abr",
+   "ultimo_mes": "may",
+   "fee_promedio": 575.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 575.0,
+    "may": 575.0,
+    "jun": 0.0,
+    "jul": 0.0
+   }
+  },
+  {
+   "cliente": "La Tartuca",
+   "total": 1000.0,
+   "pct": 1.3,
+   "pagos": 1,
+   "meses_activo": 1,
+   "primer_mes": "feb",
+   "ultimo_mes": "feb",
+   "fee_promedio": 1000.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 1000.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   }
+  },
+  {
+   "cliente": "MM Wings",
+   "total": 945.0,
+   "pct": 1.2,
+   "pagos": 7,
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "fee_promedio": 157.5,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 270.0,
+    "mar": 135.0,
+    "abr": 135.0,
+    "may": 135.0,
+    "jun": 135.0,
+    "jul": 135.0
+   }
+  },
+  {
+   "cliente": "Friends Guides",
+   "total": 720.0,
+   "pct": 0.9,
+   "pagos": 6,
+   "meses_activo": 6,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "fee_promedio": 120.0,
+   "por_mes": {
+    "ene": 120.0,
+    "feb": 120.0,
+    "mar": 120.0,
+    "abr": 120.0,
+    "may": 120.0,
+    "jun": 0.0,
+    "jul": 120.0
+   }
+  },
+  {
+   "cliente": "Victor Hugo (evento)",
+   "total": 500.0,
+   "pct": 0.6,
+   "pagos": 1,
+   "meses_activo": 1,
+   "primer_mes": "feb",
+   "ultimo_mes": "feb",
+   "fee_promedio": 500.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 500.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   }
+  },
+  {
+   "cliente": "Tienda Electro",
+   "total": 254.0,
+   "pct": 0.3,
+   "pagos": 3,
+   "meses_activo": 3,
+   "primer_mes": "mar",
+   "ultimo_mes": "jul",
+   "fee_promedio": 84.67,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 92.0,
+    "abr": 0.0,
+    "may": 90.0,
+    "jun": 0.0,
+    "jul": 72.0
+   }
+  },
+  {
+   "cliente": "Nicris",
+   "total": 171.04,
+   "pct": 0.2,
+   "pagos": 1,
+   "meses_activo": 1,
+   "primer_mes": "jul",
+   "ultimo_mes": "jul",
+   "fee_promedio": 171.04,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 171.04
+   }
+  },
+  {
+   "cliente": "Dog Spa",
+   "total": 138.0,
+   "pct": 0.2,
+   "pagos": 1,
+   "meses_activo": 1,
+   "primer_mes": "may",
+   "ultimo_mes": "may",
+   "fee_promedio": 138.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 138.0,
+    "jun": 0.0,
+    "jul": 0.0
+   }
+  }
+ ],
+ "concentracion": {
+  "top1": 10.4,
+  "top3": 26.3,
+  "top5": 40.3
+ },
+ "equipo": [
+  {
+   "persona": "Francisco Vayas",
+   "grupo": "Nomina socios",
+   "total": 10612.0,
+   "meses": 6,
+   "promedio_mes": 1768.67,
+   "base": 1500.0,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 1500.0,
+    "feb": 1500.0,
+    "mar": 1612.0,
+    "abr": 1500.0,
+    "may": 0.0,
+    "jun": 3000.0,
+    "jul": 1500.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "26/01/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO FRANCISCO"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "25/02/2026",
+       "importe": 1500.0,
+       "desc": "PAGO SUELDO FRANCISCO"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "24/03/2026",
+       "importe": 112.0,
+       "desc": "PAGO A FRANCISCO VAYAS"
+      },
+      {
+       "fecha": "25/03/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO FRANCISCO"
+      }
+     ],
+     "razones": [
+      "se pagó en 2 partes durante el mes"
+     ],
+     "delta": {
+      "vs": "feb",
+      "dif": 112.0
+     },
+     "vs_base": 112.0,
+     "cmp_base": true
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "27/04/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO FRANCISCO VAYAS"
+      }
+     ],
+     "razones": [
+      "vuelve a su sueldo habitual: el mes anterior llevaba extras"
+     ],
+     "delta": {
+      "vs": "mar",
+      "dif": -112.0
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO FRANCISCO VAYAS"
+      },
+      {
+       "fecha": "29/06/2026",
+       "importe": 1500.0,
+       "desc": "PAGO SUELDO FRANCISCO"
+      }
+     ],
+     "razones": [
+      "se pagaron dos sueldos en el mismo mes: en mayo no se cobró y salió con retraso"
+     ],
+     "delta": {
+      "vs": "abr",
+      "dif": 1500.0
+     },
+     "vs_base": 1500.0,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "28/07/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO FRANCISCO VAYAS"
+      }
+     ],
+     "razones": [
+      "el mes anterior llevaba dos sueldos; este es un mes normal"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": -1500.0
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Ana Paula",
+   "grupo": "Nomina socios",
+   "total": 10500.0,
+   "meses": 6,
+   "promedio_mes": 1750.0,
+   "base": 1500.0,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 1500.0,
+    "feb": 1500.0,
+    "mar": 1500.0,
+    "abr": 1500.0,
+    "may": 0.0,
+    "jun": 3000.0,
+    "jul": 1500.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "26/01/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO ANA PAULA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "25/02/2026",
+       "importe": 1500.0,
+       "desc": "PAGO SUELDO ANA PAULA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "25/03/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO ANA PAULA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "27/04/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO ANA PAULA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO ANA PAULA"
+      },
+      {
+       "fecha": "29/06/2026",
+       "importe": 1500.0,
+       "desc": "PAGO SUELDO ANA PAULA"
+      }
+     ],
+     "razones": [
+      "se pagaron dos sueldos en el mismo mes: en mayo no se cobró y salió con retraso"
+     ],
+     "delta": {
+      "vs": "abr",
+      "dif": 1500.0
+     },
+     "vs_base": 1500.0,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "28/07/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO ANA PAULA"
+      }
+     ],
+     "razones": [
+      "el mes anterior llevaba dos sueldos; este es un mes normal"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": -1500.0
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Alejandra Aponte",
+   "grupo": "Nomina fija",
+   "total": 5949.64,
+   "meses": 7,
+   "promedio_mes": 849.95,
+   "base": 977.91,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 700.41,
+    "feb": 700.41,
+    "mar": 810.09,
+    "abr": 805.0,
+    "may": 977.91,
+    "jun": 977.91,
+    "jul": 977.91
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "importe": 700.41,
+       "desc": "sueldo alejandra aponte"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": -277.5,
+     "cmp_base": false
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "importe": 700.41,
+       "desc": "sueldo alejandra aponte"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": -277.5,
+     "cmp_base": false
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "02/03/2026",
+       "importe": 810.09,
+       "desc": "PAGO SUELDO ALE CON IVA"
+      }
+     ],
+     "razones": [
+      "emite factura: se le paga el sueldo +15% de IVA"
+     ],
+     "delta": {
+      "vs": "feb",
+      "dif": 109.68
+     },
+     "vs_base": -167.82,
+     "cmp_base": false
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "importe": 805.0,
+       "desc": "sueldo alejandra aponte"
+      }
+     ],
+     "razones": [
+      "ajuste menor: redondeo o días trabajados"
+     ],
+     "delta": {
+      "vs": "mar",
+      "dif": -5.09
+     },
+     "vs_base": -172.91,
+     "cmp_base": false
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "importe": 977.91,
+       "desc": "SUELDO ALEJANDRA APONTE AUMENTO"
+      }
+     ],
+     "razones": [
+      "aumento de sueldo"
+     ],
+     "delta": {
+      "vs": "abr",
+      "dif": 172.91
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 977.91,
+       "desc": "SUELDO ALEJANDRA APONTE"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "importe": 977.91,
+       "desc": "SUELDO ALEJANDRA APONTE"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Alejandro Vaca",
+   "grupo": "Nomina fija",
+   "total": 4747.15,
+   "meses": 7,
+   "promedio_mes": 678.16,
+   "base": 690.0,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 624.93,
+    "feb": 613.34,
+    "mar": 690.0,
+    "abr": 690.0,
+    "may": 718.75,
+    "jun": 720.13,
+    "jul": 690.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "importe": 600.0,
+       "desc": "sueldo alejandro vaca"
+      },
+      {
+       "fecha": "16/01/2026",
+       "importe": 24.93,
+       "desc": "HORAS EXTRAS Y TAXIS ALEJANDRO"
+      }
+     ],
+     "razones": [
+      "horas extras",
+      "el pago incluye taxis de movilización"
+     ],
+     "delta": null,
+     "vs_base": -65.07,
+     "cmp_base": false
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "importe": 613.34,
+       "desc": "SUELDO ALEJANDRO VACA"
+      }
+     ],
+     "razones": [
+      "ajuste menor: redondeo o días trabajados"
+     ],
+     "delta": {
+      "vs": "ene",
+      "dif": -11.59
+     },
+     "vs_base": -76.66,
+     "cmp_base": false
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "03/03/2026",
+       "importe": 690.0,
+       "desc": "SUELDO ALEJO CON IVA"
+      }
+     ],
+     "razones": [
+      "emite factura: se le paga el sueldo +15% de IVA"
+     ],
+     "delta": {
+      "vs": "feb",
+      "dif": 76.66
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "importe": 690.0,
+       "desc": "SUELDO ALEJANDO VACA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "importe": 690.0,
+       "desc": "SUELDO ALEJANDRO VACA"
+      },
+      {
+       "fecha": "18/05/2026",
+       "importe": 28.75,
+       "desc": "PAGO HORAS EXTRAS DE FERIADO ALEJANDRO VACA"
+      }
+     ],
+     "razones": [
+      "horas extras en feriado"
+     ],
+     "delta": {
+      "vs": "abr",
+      "dif": 28.75
+     },
+     "vs_base": 28.75,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 690.0,
+       "desc": "SUELDO ALEJANDRO VACA"
+      },
+      {
+       "fecha": "15/06/2026",
+       "importe": 30.13,
+       "desc": "PAGO HORAS EXTRAS ALEJANDRO DE PRODUCCION UNINOVA FIN DE SEMANA"
+      }
+     ],
+     "razones": [
+      "horas extras (producción Uninova)"
+     ],
+     "delta": {
+      "vs": "may",
+      "dif": 1.38
+     },
+     "vs_base": 30.13,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "importe": 690.0,
+       "desc": "SUELDO ALEJANDRO VACA"
+      }
+     ],
+     "razones": [
+      "vuelve a su sueldo habitual: el mes anterior llevaba extras"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": -30.13
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Stalin Bonilla",
+   "grupo": "Nomina fija",
+   "total": 4521.62,
+   "meses": 7,
+   "promedio_mes": 645.95,
+   "base": 661.25,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 575.0,
+    "feb": 582.69,
+    "mar": 661.25,
+    "abr": 661.25,
+    "may": 718.93,
+    "jun": 661.25,
+    "jul": 661.25
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "importe": 575.0,
+       "desc": "sueldo stalin"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": -86.25,
+     "cmp_base": false
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "importe": 582.69,
+       "desc": "SUELDO STALIN MAS TAXIS"
+      }
+     ],
+     "razones": [
+      "el pago incluye taxis de movilización"
+     ],
+     "delta": {
+      "vs": "ene",
+      "dif": 7.69
+     },
+     "vs_base": -78.56,
+     "cmp_base": false
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "03/03/2026",
+       "importe": 661.25,
+       "desc": "SUELDO STALIN CON IVA"
+      }
+     ],
+     "razones": [
+      "emite factura: se le paga el sueldo +15% de IVA"
+     ],
+     "delta": {
+      "vs": "feb",
+      "dif": 78.56
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "importe": 661.25,
+       "desc": "SUELDO STALIN BONILLA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "importe": 661.25,
+       "desc": "SUELDO STALIN BONILLA"
+      },
+      {
+       "fecha": "04/05/2026",
+       "importe": 30.14,
+       "desc": "PAGO HORA EXTRA FERIADO A STALIN BONILLA"
+      },
+      {
+       "fecha": "18/05/2026",
+       "importe": 27.54,
+       "desc": "PAGO HORAS EXTRAS STALIN"
+      }
+     ],
+     "razones": [
+      "horas extras en feriado"
+     ],
+     "delta": {
+      "vs": "abr",
+      "dif": 57.68
+     },
+     "vs_base": 57.68,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 661.25,
+       "desc": "SUELDO STALIN BONILLA"
+      }
+     ],
+     "razones": [
+      "vuelve a su sueldo habitual: el mes anterior llevaba extras"
+     ],
+     "delta": {
+      "vs": "may",
+      "dif": -57.68
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "importe": 661.25,
+       "desc": "SUELDO STALIN BONILLA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Estefi Jacome",
+   "grupo": "Nomina fija",
+   "total": 4097.5,
+   "meses": 7,
+   "promedio_mes": 585.36,
+   "base": 550.0,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 550.0,
+    "feb": 550.0,
+    "mar": 632.5,
+    "abr": 632.5,
+    "may": 632.5,
+    "jun": 550.0,
+    "jul": 550.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "importe": 550.0,
+       "desc": "sueldo estefita"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "importe": 550.0,
+       "desc": "SUELDO ESTEFITA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "03/03/2026",
+       "importe": 632.5,
+       "desc": "SUELDO ESTEFITA CON IVA"
+      }
+     ],
+     "razones": [
+      "emite factura: se le paga el sueldo +15% de IVA"
+     ],
+     "delta": {
+      "vs": "feb",
+      "dif": 82.5
+     },
+     "vs_base": 82.5,
+     "cmp_base": true
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "importe": 632.5,
+       "desc": "SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 82.5,
+     "cmp_base": true
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "importe": 632.5,
+       "desc": "SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 82.5,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 550.0,
+       "desc": "PAGO SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [
+      "deja de facturar: vuelve al sueldo sin IVA"
+     ],
+     "delta": {
+      "vs": "may",
+      "dif": -82.5
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "importe": 550.0,
+       "desc": "SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Miguel Molina",
+   "grupo": "Nomina fija",
+   "total": 3451.23,
+   "meses": 5,
+   "promedio_mes": 690.25,
+   "base": 690.41,
+   "primer_mes": "ene",
+   "ultimo_mes": "may",
+   "activo_julio": false,
+   "liquidado": true,
+   "por_mes": {
+    "ene": 690.41,
+    "feb": 690.41,
+    "mar": 690.0,
+    "abr": 690.0,
+    "may": 690.41,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "06/01/2026",
+       "importe": 690.41,
+       "desc": "SUELDO MIGUEL"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "importe": 690.41,
+       "desc": "SUELDO MIGUEL"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "02/03/2026",
+       "importe": 690.0,
+       "desc": "PAGO sueldo miguel MOLINA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": -0.41,
+     "cmp_base": true
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "importe": 690.0,
+       "desc": "SUELDO MIGUEL MOLINA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": -0.41,
+     "cmp_base": true
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "importe": 690.41,
+       "desc": "PAGO FINAL MIGUEL MOLINA"
+      }
+     ],
+     "razones": [
+      "liquidación final: es su último pago"
+     ],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Danna Cardenas",
+   "grupo": "Nomina fija",
+   "total": 3381.9,
+   "meses": 7,
+   "promedio_mes": 483.13,
+   "base": 482.0,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 477.51,
+    "feb": 493.01,
+    "mar": 482.0,
+    "abr": 482.0,
+    "may": 482.0,
+    "jun": 483.38,
+    "jul": 482.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "importe": 477.51,
+       "desc": "SUELDO DANNA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": -4.49,
+     "cmp_base": false
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "importe": 493.01,
+       "desc": "SUELDO DANNA MAS TAXIS"
+      }
+     ],
+     "razones": [
+      "el pago incluye taxis de movilización"
+     ],
+     "delta": {
+      "vs": "ene",
+      "dif": 15.5
+     },
+     "vs_base": 11.01,
+     "cmp_base": false
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "04/03/2026",
+       "importe": 482.0,
+       "desc": "SUELDO DANNA COMPLETO"
+      }
+     ],
+     "razones": [
+      "pago completo del mes"
+     ],
+     "delta": {
+      "vs": "feb",
+      "dif": -11.01
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "importe": 482.0,
+       "desc": "SUELDO DANNA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "importe": 482.0,
+       "desc": "SUELDO DANNA CARDENAS"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 483.38,
+       "desc": "SUELDO DANNA CARDENAS"
+      }
+     ],
+     "razones": [
+      "ajuste menor: redondeo o días trabajados"
+     ],
+     "delta": {
+      "vs": "may",
+      "dif": 1.38
+     },
+     "vs_base": 1.38,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "importe": 482.0,
+       "desc": "SUELDO DANNA CARDENAS"
+      }
+     ],
+     "razones": [
+      "vuelve a su sueldo habitual: el mes anterior llevaba extras"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": -1.38
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Karen Pinos",
+   "grupo": "Nomina fija",
+   "total": 1800.0,
+   "meses": 2,
+   "promedio_mes": 900.0,
+   "base": null,
+   "primer_mes": "jun",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": true,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 600.0,
+    "jul": 1200.0
+   },
+   "detalle": {
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 600.0,
+       "desc": "SUELDO KAREN PINOS"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": false
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "importe": 600.0,
+       "desc": "SUELDO KAREN PINOS RAMOS"
+      },
+      {
+       "fecha": "31/07/2026",
+       "importe": 600.0,
+       "desc": "PAGO SUELDO KAREN ULTIMO MES"
+      }
+     ],
+     "razones": [
+      "el mes lleva el sueldo normal y la liquidación",
+      "liquidación final: es su último pago"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": 600.0
+     },
+     "vs_base": 600.0,
+     "cmp_base": false
+    }
+   }
+  },
+  {
+   "persona": "Daniela Cordova",
+   "grupo": "Nomina fija",
+   "total": 1772.5,
+   "meses": 5,
+   "promedio_mes": 354.5,
+   "base": 312.5,
+   "primer_mes": "mar",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 600.0,
+    "abr": 300.0,
+    "may": 312.5,
+    "jun": 290.0,
+    "jul": 270.0
+   },
+   "detalle": {
+    "mar": {
+     "movs": [
+      {
+       "fecha": "06/03/2026",
+       "importe": 300.0,
+       "desc": "SUELDO DANIELA CORDOVA FEBRERO"
+      },
+      {
+       "fecha": "24/03/2026",
+       "importe": 300.0,
+       "desc": "SUELDO DANIELA CORDOVA"
+      }
+     ],
+     "razones": [
+      "incluye el sueldo de febrero"
+     ],
+     "delta": null,
+     "vs_base": 287.5,
+     "cmp_base": false
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "23/04/2026",
+       "importe": 300.0,
+       "desc": "PAGO SUELDO DANIELA CORDOVA"
+      }
+     ],
+     "razones": [
+      "el mes anterior llevaba dos sueldos; este es un mes normal"
+     ],
+     "delta": {
+      "vs": "mar",
+      "dif": -300.0
+     },
+     "vs_base": -12.5,
+     "cmp_base": false
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "18/05/2026",
+       "importe": 12.5,
+       "desc": "PAGO HORAS EXTRAS DANIELA CORDOVA"
+      },
+      {
+       "fecha": "26/05/2026",
+       "importe": 300.0,
+       "desc": "PAGO SUELDO DANIELA CORDOVA"
+      }
+     ],
+     "razones": [
+      "horas extras"
+     ],
+     "delta": {
+      "vs": "abr",
+      "dif": 12.5
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "23/06/2026",
+       "importe": 290.0,
+       "desc": "PAGO SUELDO DANIELA CORDOVA CON DESCUENTO"
+      }
+     ],
+     "razones": [
+      "se le aplicó un descuento"
+     ],
+     "delta": {
+      "vs": "may",
+      "dif": -22.5
+     },
+     "vs_base": -22.5,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "22/07/2026",
+       "importe": 270.0,
+       "desc": "PAGO SUELDO DANIELA CORDOVA"
+      }
+     ],
+     "razones": [
+      "baja de sueldo"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": -20.0
+     },
+     "vs_base": -42.5,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Marissa Alban",
+   "grupo": "Nomina fija",
+   "total": 1502.5,
+   "meses": 3,
+   "promedio_mes": 500.83,
+   "base": 500.0,
+   "primer_mes": "may",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 500.0,
+    "jun": 500.0,
+    "jul": 502.5
+   },
+   "detalle": {
+    "may": {
+     "movs": [
+      {
+       "fecha": "13/05/2026",
+       "importe": 500.0,
+       "desc": "SUELDO MARISSA ALBAN"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "12/06/2026",
+       "importe": 500.0,
+       "desc": "PAGO SUELDO MARISSA ALBAN"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "13/07/2026",
+       "importe": 502.5,
+       "desc": "PAGO SUELDO MARISSA ALBAN"
+      }
+     ],
+     "razones": [
+      "ajuste menor: redondeo o días trabajados"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": 2.5
+     },
+     "vs_base": 2.5,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Josue Lara",
+   "grupo": "Nomina fija",
+   "total": 1403.5,
+   "meses": 2,
+   "promedio_mes": 701.75,
+   "base": null,
+   "primer_mes": "jun",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 825.0,
+    "jul": 578.5
+   },
+   "detalle": {
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 575.0,
+       "desc": "SUELDO JOSUE LARA"
+      },
+      {
+       "fecha": "16/06/2026",
+       "importe": 250.0,
+       "desc": "SUELDO QUINCENAL JOSUE LARA"
+      }
+     ],
+     "razones": [
+      "cobra por quincenas, no mensual"
+     ],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": false
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "importe": 287.5,
+       "desc": "SUELDO QUINCENAL JOSUE LARA"
+      },
+      {
+       "fecha": "15/07/2026",
+       "importe": 291.0,
+       "desc": "PAGO QUINCENA JOSUE LARA"
+      }
+     ],
+     "razones": [
+      "cobra por quincenas, no mensual"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": -246.5
+     },
+     "vs_base": -246.5,
+     "cmp_base": false
+    }
+   }
+  },
+  {
+   "persona": "Karla Jacome",
+   "grupo": "Pasantias",
+   "total": 802.32,
+   "meses": 6,
+   "promedio_mes": 133.72,
+   "base": 130.0,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 130.0,
+    "mar": 130.0,
+    "abr": 130.0,
+    "may": 135.1,
+    "jun": 147.22,
+    "jul": 130.0
+   },
+   "detalle": {
+    "feb": {
+     "movs": [
+      {
+       "fecha": "09/02/2026",
+       "importe": 130.0,
+       "desc": "SUELDO KARLITA JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "11/03/2026",
+       "importe": 130.0,
+       "desc": "SUELDO KARLITA JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "10/04/2026",
+       "importe": 130.0,
+       "desc": "SUELDO KARLA JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "12/05/2026",
+       "importe": 135.1,
+       "desc": "SUELDO KARLA JACOME"
+      }
+     ],
+     "razones": [
+      "ajuste menor: redondeo o días trabajados"
+     ],
+     "delta": {
+      "vs": "abr",
+      "dif": 5.1
+     },
+     "vs_base": 5.1,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "10/06/2026",
+       "importe": 130.0,
+       "desc": "SUELDO KARLA JACOME"
+      },
+      {
+       "fecha": "10/06/2026",
+       "importe": 17.22,
+       "desc": "TAXIS Y HORAS EXTRAS KARLA JACOME"
+      }
+     ],
+     "razones": [
+      "horas extras"
+     ],
+     "delta": {
+      "vs": "may",
+      "dif": 12.12
+     },
+     "vs_base": 17.22,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "10/07/2026",
+       "importe": 130.0,
+       "desc": "SUELDO KARLA JACOME"
+      }
+     ],
+     "razones": [
+      "vuelve a su sueldo habitual: el mes anterior llevaba extras"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": -17.22
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Mikaela Vargas",
+   "grupo": "Nomina variable",
+   "total": 575.0,
+   "meses": 1,
+   "promedio_mes": 575.0,
+   "base": null,
+   "primer_mes": "may",
+   "ultimo_mes": "may",
+   "activo_julio": false,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 575.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "may": {
+     "movs": [
+      {
+       "fecha": "06/05/2026",
+       "importe": 575.0,
+       "desc": "PAGO SUELDO MIKAELA VARGAS"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": false
+    }
+   }
+  }
+ ],
+ "gastos": [
+  {
+   "grupo": "Movimiento entre cuentas propias",
+   "categoria": "Salida a FlexiAhorro",
+   "total": 55020.0,
+   "n": 63,
+   "por_mes": {
+    "ene": 20.0,
+    "feb": 4820.0,
+    "mar": 3620.0,
+    "abr": 9056.0,
+    "may": 7425.0,
+    "jun": 15722.0,
+    "jul": 14357.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "01/01/2026",
+       "desc": "debito ahorro programado",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "05/02/2026",
+       "desc": "ahorro programado",
+       "importe": 20.0
+      },
+      {
+       "fecha": "26/02/2026",
+       "desc": "TRANSFERENCIA FLEXI AHORRO",
+       "importe": 4800.0
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "05/03/2026",
+       "desc": "AHORRO FLEXIBLE",
+       "importe": 20.0
+      },
+      {
+       "fecha": "09/03/2026",
+       "desc": "ENVIO DE PLATA A FLEXI AHORRO",
+       "importe": 600.0
+      },
+      {
+       "fecha": "11/03/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 300.0
+      },
+      {
+       "fecha": "16/03/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1000.0
+      },
+      {
+       "fecha": "25/03/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 900.0
+      },
+      {
+       "fecha": "30/03/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 300.0
+      },
+      {
+       "fecha": "31/03/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 500.0
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 846.0
+      },
+      {
+       "fecha": "06/04/2026",
+       "desc": "debito ahorro programado",
+       "importe": 20.0
+      },
+      {
+       "fecha": "07/04/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 2050.0
+      },
+      {
+       "fecha": "13/04/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 600.0
+      },
+      {
+       "fecha": "13/04/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 500.0
+      },
+      {
+       "fecha": "17/04/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 2600.0
+      },
+      {
+       "fecha": "20/04/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 300.0
+      },
+      {
+       "fecha": "28/04/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 340.0
+      },
+      {
+       "fecha": "28/04/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1100.0
+      },
+      {
+       "fecha": "29/04/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 700.0
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 135.0
+      },
+      {
+       "fecha": "04/05/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 550.0
+      },
+      {
+       "fecha": "05/05/2026",
+       "desc": "debito ahorro programado",
+       "importe": 20.0
+      },
+      {
+       "fecha": "06/05/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 900.0
+      },
+      {
+       "fecha": "12/05/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1300.0
+      },
+      {
+       "fecha": "15/05/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 600.0
+      },
+      {
+       "fecha": "19/05/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 600.0
+      },
+      {
+       "fecha": "26/05/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 940.0
+      },
+      {
+       "fecha": "26/05/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 300.0
+      },
+      {
+       "fecha": "26/05/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 900.0
+      },
+      {
+       "fecha": "28/05/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 600.0
+      },
+      {
+       "fecha": "29/05/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 580.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 3800.0
+      },
+      {
+       "fecha": "01/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 560.0
+      },
+      {
+       "fecha": "04/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1000.0
+      },
+      {
+       "fecha": "05/06/2026",
+       "desc": "debito ahorro programado",
+       "importe": 20.0
+      },
+      {
+       "fecha": "09/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 340.0
+      },
+      {
+       "fecha": "11/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 900.0
+      },
+      {
+       "fecha": "16/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1100.0
+      },
+      {
+       "fecha": "18/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 700.0
+      },
+      {
+       "fecha": "19/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1200.0
+      },
+      {
+       "fecha": "24/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 552.0
+      },
+      {
+       "fecha": "25/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 900.0
+      },
+      {
+       "fecha": "29/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 850.0
+      },
+      {
+       "fecha": "29/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1200.0
+      },
+      {
+       "fecha": "29/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 900.0
+      },
+      {
+       "fecha": "29/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 900.0
+      },
+      {
+       "fecha": "30/06/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 800.0
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "06/07/2026",
+       "desc": "debito ahorro programado",
+       "importe": 20.0
+      },
+      {
+       "fecha": "06/07/2026",
+       "desc": "envio A FLEXIAHORRO",
+       "importe": 500.0
+      },
+      {
+       "fecha": "07/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 3400.0
+      },
+      {
+       "fecha": "10/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 530.0
+      },
+      {
+       "fecha": "10/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 70.0
+      },
+      {
+       "fecha": "13/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 567.0
+      },
+      {
+       "fecha": "20/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1990.0
+      },
+      {
+       "fecha": "20/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1490.0
+      },
+      {
+       "fecha": "21/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1000.0
+      },
+      {
+       "fecha": "22/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 700.0
+      },
+      {
+       "fecha": "24/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 180.0
+      },
+      {
+       "fecha": "27/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1060.0
+      },
+      {
+       "fecha": "28/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1000.0
+      },
+      {
+       "fecha": "28/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 300.0
+      },
+      {
+       "fecha": "31/07/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1550.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Movimiento entre cuentas propias",
+   "categoria": "Entrada desde FlexiAhorro",
+   "total": -45507.54,
+   "n": 50,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": -4413.01,
+    "abr": -6577.41,
+    "may": -7655.0,
+    "jun": -13405.13,
+    "jul": -13456.99
+   },
+   "detalle": {
+    "mar": {
+     "movs": [
+      {
+       "fecha": "02/03/2026",
+       "desc": "REVERSO DE FLEXIAHORRO PARA PAGO DE SUELDOS",
+       "importe": -1878.09
+      },
+      {
+       "fecha": "03/03/2026",
+       "desc": "REVERSO DE FLEXIAHORRO PARA PAGO DE SUELDOS",
+       "importe": -1983.75
+      },
+      {
+       "fecha": "19/03/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO NICOLAS",
+       "importe": -200.0
+      },
+      {
+       "fecha": "20/03/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO IMPUESTOS",
+       "importe": -351.17
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "desc": "INGRESO DE FLEXIAHORO PARA PAGO DE SUELDOS",
+       "importe": -4360.75
+      },
+      {
+       "fecha": "01/04/2026",
+       "desc": "INGRESO FLEXIAHORRO PARA PAGO DE MVILIZACIONES",
+       "importe": -39.01
+      },
+      {
+       "fecha": "09/04/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA COMPRAS OFI",
+       "importe": -25.0
+      },
+      {
+       "fecha": "10/04/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO PAUTAS",
+       "importe": -200.0
+      },
+      {
+       "fecha": "16/04/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO DE IMPEUSTOS  EINTERNET",
+       "importe": -552.65
+      },
+      {
+       "fecha": "27/04/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO DE SUELDOS",
+       "importe": -900.0
+      },
+      {
+       "fecha": "28/04/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PAR APAGO A NICOLAS",
+       "importe": -500.0
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "desc": "INGESO DE FLEXIAHORRO PARA PAGO DE SUELDOS",
+       "importe": -4000.0
+      },
+      {
+       "fecha": "04/05/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO ULTIMO DE MIGUEL MOLINA",
+       "importe": -690.0
+      },
+      {
+       "fecha": "06/05/2026",
+       "desc": "INGRESO DE FELXIAHORRO PARA PAGO DE RESETEO DE COMPUTADOR",
+       "importe": -100.0
+      },
+      {
+       "fecha": "11/05/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO DE PAUTA",
+       "importe": -1765.0
+      },
+      {
+       "fecha": "13/05/2026",
+       "desc": "INGESO DE FLEXIAHORRO PARA PAGO DE SUELDOS",
+       "importe": -500.0
+      },
+      {
+       "fecha": "26/05/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO COPLETO DE TARJETA",
+       "importe": -600.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO DE SUELDOS",
+       "importe": -2000.0
+      },
+      {
+       "fecha": "01/06/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO DE SUELDOS",
+       "importe": -4000.0
+      },
+      {
+       "fecha": "01/06/2026",
+       "desc": "INGRESO DE FELXIAHORRO PARA PAGO DE SULEDOS",
+       "importe": -1100.0
+      },
+      {
+       "fecha": "01/06/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO DE AGUA",
+       "importe": -5.0
+      },
+      {
+       "fecha": "05/06/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO NICOLAS ENCALADA",
+       "importe": -200.0
+      },
+      {
+       "fecha": "05/06/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO DE JUAN PABLO NIETO",
+       "importe": -400.0
+      },
+      {
+       "fecha": "10/06/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO A KARLA JACOME",
+       "importe": -200.0
+      },
+      {
+       "fecha": "10/06/2026",
+       "desc": "INGESO DE FLEXIAHORRO PARA PAGO DE LIMPIEZA",
+       "importe": -100.0
+      },
+      {
+       "fecha": "12/06/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SUELDO MARISSA",
+       "importe": -300.0
+      },
+      {
+       "fecha": "15/06/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO DE PAUTA",
+       "importe": -1420.0
+      },
+      {
+       "fecha": "15/06/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PAGO HORAS EXTRAS ALEJANDRO",
+       "importe": -30.13
+      },
+      {
+       "fecha": "16/06/2026",
+       "desc": "ingreso de flexiahorro para pago sueldo josue",
+       "importe": -250.0
+      },
+      {
+       "fecha": "23/06/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SUELDO DANIELA  Y UBER",
+       "importe": -400.0
+      },
+      {
+       "fecha": "29/06/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SUELDOS FRANCISCO Y AP",
+       "importe": -3000.0
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SUELDOS",
+       "importe": -4000.0
+      },
+      {
+       "fecha": "01/07/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SUELDOS",
+       "importe": -690.0
+      },
+      {
+       "fecha": "03/07/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGOS",
+       "importe": -400.0
+      },
+      {
+       "fecha": "08/07/2026",
+       "desc": "INGESO DE FLEXIAHORRO PAR APAGO TARJETA",
+       "importe": -30.0
+      },
+      {
+       "fecha": "10/07/2026",
+       "desc": "INGERSO DE FLEXIAHORRO PARA PAGO IMPEUSTOS",
+       "importe": -200.0
+      },
+      {
+       "fecha": "10/07/2026",
+       "desc": "INGRESO DE FLEXIAHRRO PARA PAGO DE AGUA",
+       "importe": -10.0
+      },
+      {
+       "fecha": "10/07/2026",
+       "desc": "INGESO DE FLEXIAHORRO PARA PAGO CONDOMINIO 2 MESES",
+       "importe": -20.0
+      },
+      {
+       "fecha": "13/07/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO PAUTA",
+       "importe": -3000.0
+      },
+      {
+       "fecha": "13/07/2026",
+       "desc": "INGESO DE FELXIAHORRO PARA PAGO SUELDO MARISSA",
+       "importe": -502.5
+      },
+      {
+       "fecha": "14/07/2026",
+       "desc": "INGRESO FLEXIAHORRO PARA PAGO ISSAC ALMUERZO QUITO",
+       "importe": -4.5
+      },
+      {
+       "fecha": "15/07/2026",
+       "desc": "INGESO FLEXIAHORRO PAGO BOTELLON",
+       "importe": -2.0
+      },
+      {
+       "fecha": "15/07/2026",
+       "desc": "INGESO FLEXIAHORRO PARA PAGO QUINCENA JOSUE",
+       "importe": -291.0
+      },
+      {
+       "fecha": "22/07/2026",
+       "desc": "INGERSO DE FLEXIAHORRO PARA PAGO SUELDOO DANIELA CORDOVA",
+       "importe": -270.0
+      },
+      {
+       "fecha": "23/07/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO CAFE Y AZUCAR A CHIKI",
+       "importe": -10.0
+      },
+      {
+       "fecha": "28/07/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SUELDO FRANCISCO Y AP",
+       "importe": -3000.0
+      },
+      {
+       "fecha": "28/07/2026",
+       "desc": "INGESO DE FLEXIAHRRO PARA PAGO DE TARJETA COMPLETO",
+       "importe": -300.0
+      },
+      {
+       "fecha": "31/07/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO DE LUZ",
+       "importe": -115.49
+      },
+      {
+       "fecha": "31/07/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO PLATAFORMA CONTABLE",
+       "importe": -11.5
+      },
+      {
+       "fecha": "31/07/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PAR APAGO DE SUELDO KAREN",
+       "importe": -600.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Pauta",
+   "categoria": "Pauta pagada",
+   "total": 10339.59,
+   "n": 7,
+   "por_mes": {
+    "ene": 574.03,
+    "feb": 1451.48,
+    "mar": 1425.01,
+    "abr": 1272.28,
+    "may": 1763.62,
+    "jun": 1418.0,
+    "jul": 2435.17
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "08/01/2026",
+       "desc": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+       "importe": 574.03
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "09/02/2026",
+       "desc": "DEVOLCION PAUTAS FVAYAS",
+       "importe": 1451.48
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "09/03/2026",
+       "desc": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+       "importe": 1425.01
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "10/04/2026",
+       "desc": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+       "importe": 1272.28
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "11/05/2026",
+       "desc": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+       "importe": 1763.62
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "15/06/2026",
+       "desc": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+       "importe": 1418.0
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "13/07/2026",
+       "desc": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+       "importe": 2435.17
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Movimiento entre cuentas propias",
+   "categoria": "Salida a Fideval",
+   "total": 10002.59,
+   "n": 2,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 10002.59,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "feb": {
+     "movs": [
+      {
+       "fecha": "26/02/2026",
+       "desc": "REFERENCIA BANCARIA PARA FIDEVAL",
+       "importe": 2.59
+      },
+      {
+       "fecha": "26/02/2026",
+       "desc": "TRANSFERENCIA FONDO FIDEVAL",
+       "importe": 10000.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Estructura",
+   "categoria": "Arriendo, condominio y alicuotas",
+   "total": 2878.35,
+   "n": 10,
+   "por_mes": {
+    "ene": 400.41,
+    "feb": 400.41,
+    "mar": 430.41,
+    "abr": 400.41,
+    "may": 425.89,
+    "jun": 400.41,
+    "jul": 420.41
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "desc": "arriendo ENERO",
+       "importe": 400.41
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "desc": "ARRIENDO FEBRERO",
+       "importe": 400.41
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "04/03/2026",
+       "desc": "ARRIENDO OFICINA MARZO",
+       "importe": 400.41
+      },
+      {
+       "fecha": "05/03/2026",
+       "desc": "PAGO ALICUOTAS OFICNA DE ENERO A MARZO",
+       "importe": 30.0
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "desc": "PAGO ARREINDO ABRIL",
+       "importe": 400.41
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "desc": "PAGO ARRIENDO MAYO",
+       "importe": 400.41
+      },
+      {
+       "fecha": "29/05/2026",
+       "desc": "PAGO DE AGUA+ CONDOMINIO",
+       "importe": 25.48
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "desc": "PAGO ARRIENDO JUNIO",
+       "importe": 400.41
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "desc": "ARREINDO JULIO",
+       "importe": 400.41
+      },
+      {
+       "fecha": "10/07/2026",
+       "desc": "PAGO CONDOMINIO JUNIO Y JULIO",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Juan Pablo Nieto (produccion)",
+   "total": 2625.0,
+   "n": 5,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 690.0,
+    "mar": 495.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 650.0,
+    "jul": 790.0
+   },
+   "detalle": {
+    "feb": {
+     "movs": [
+      {
+       "fecha": "06/02/2026",
+       "desc": "PAGO JUAN PABLO SAMARI Y CONFIA",
+       "importe": 690.0
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "23/03/2026",
+       "desc": "PAGO JUAN PABLO",
+       "importe": 495.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "05/06/2026",
+       "desc": "PAGO JUANPABLO NIETO",
+       "importe": 400.0
+      },
+      {
+       "fecha": "16/06/2026",
+       "desc": "PAGO A JUAN PABLO NIETO DE PODCAST CONFIA",
+       "importe": 250.0
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "03/07/2026",
+       "desc": "PAGO JUAN PABLO NEITO PRODUCCION SPEEDY",
+       "importe": 790.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Impuestos y legal",
+   "categoria": "Impuestos",
+   "total": 2580.8,
+   "n": 6,
+   "por_mes": {
+    "ene": 429.15,
+    "feb": 248.95,
+    "mar": 351.58,
+    "abr": 552.65,
+    "may": 475.66,
+    "jun": 0.0,
+    "jul": 522.81
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "19/01/2026",
+       "desc": "DEVOLCUION DE IMPUESTOS ANA PAULA",
+       "importe": 429.15
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "19/02/2026",
+       "desc": "Devolucion impuestos",
+       "importe": 248.95
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "20/03/2026",
+       "desc": "IMPUESTOS ANA PAULA",
+       "importe": 351.58
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "16/04/2026",
+       "desc": "PAGO IMPUESTOS E INTERNET",
+       "importe": 552.65
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "desc": "DEVOLUCION IMPUESTOS",
+       "importe": 475.66
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "10/07/2026",
+       "desc": "PAGO IMPUESTOS",
+       "importe": 522.81
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Retiro de socios",
+   "categoria": "Utilidades",
+   "total": 2000.0,
+   "n": 2,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 2000.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "feb": {
+     "movs": [
+      {
+       "fecha": "25/02/2026",
+       "desc": "PAGO UTILIDAD ANA PAULA",
+       "importe": 1000.0
+      },
+      {
+       "fecha": "25/02/2026",
+       "desc": "PAGO UTILIDAD FRANCISCO",
+       "importe": 1000.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Tarjeta de credito",
+   "categoria": "Pago tarjeta (sin desglose)",
+   "total": 1472.45,
+   "n": 13,
+   "por_mes": {
+    "ene": 26.7,
+    "feb": 29.25,
+    "mar": 494.24,
+    "abr": 36.67,
+    "may": 543.49,
+    "jun": 30.0,
+    "jul": 312.1
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "20/01/2026",
+       "desc": "RENOVACION TARJETA DE CREDITO",
+       "importe": 1.81
+      },
+      {
+       "fecha": "21/01/2026",
+       "desc": "TARJETA",
+       "importe": 24.89
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "23/02/2026",
+       "desc": "PAGO TARJETA",
+       "importe": 29.25
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "11/03/2026",
+       "desc": "PAGO TARJETA DE CREDITO",
+       "importe": 494.24
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "21/04/2026",
+       "desc": "PAGO TARJETA DEBITO AUTOMATICO",
+       "importe": 36.67
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "21/05/2026",
+       "desc": "PAGO TARJETA DE CREDITO",
+       "importe": 36.82
+      },
+      {
+       "fecha": "26/05/2026",
+       "desc": "PAGO TARJETA DE CREDITO",
+       "importe": 506.67
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "22/06/2026",
+       "desc": "PAGO TARJETA DEBITO AUTOMATICO",
+       "importe": 8.28
+      },
+      {
+       "fecha": "23/06/2026",
+       "desc": "PAGO TARJETA",
+       "importe": 21.72
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "08/07/2026",
+       "desc": "PAGO TARJETA DE CREDITO",
+       "importe": 21.16
+      },
+      {
+       "fecha": "21/07/2026",
+       "desc": "PAGO TARJETA",
+       "importe": 3.16
+      },
+      {
+       "fecha": "22/07/2026",
+       "desc": "PAGO TARJETA DE CREDITO",
+       "importe": 26.84
+      },
+      {
+       "fecha": "28/07/2026",
+       "desc": "PAGO TARJETA DE CREDITO",
+       "importe": 260.94
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Nicolas Encalada (foto/video)",
+   "total": 1438.0,
+   "n": 5,
+   "por_mes": {
+    "ene": 160.0,
+    "feb": 0.0,
+    "mar": 578.0,
+    "abr": 500.0,
+    "may": 0.0,
+    "jun": 200.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "08/01/2026",
+       "desc": "FOTOGRAFIA NICOLAS",
+       "importe": 160.0
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "02/03/2026",
+       "desc": "PAGO FOTOS FIAMINGO NICOLAS ENCALADA",
+       "importe": 378.0
+      },
+      {
+       "fecha": "19/03/2026",
+       "desc": "PAGO NICOLAS ENCALADA FOTOS CAS DEL VERDE",
+       "importe": 200.0
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "28/04/2026",
+       "desc": "PAGO NICOLAS ENCALADA  PAGO CHIFLIDO Y FIAMMINGO",
+       "importe": 500.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "05/06/2026",
+       "desc": "PAGO NICOLAS ENCALADA PRODUCCION CORTA FIAMMINGO",
+       "importe": 200.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Equipos",
+   "categoria": "Equipos y mantenimiento",
+   "total": 1354.1,
+   "n": 4,
+   "por_mes": {
+    "ene": 75.0,
+    "feb": 1119.1,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 160.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "desc": "reseteo computadora  ruben barona",
+       "importe": 75.0
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "05/02/2026",
+       "desc": "CAMARA SONNY AGENCIA",
+       "importe": 1119.1
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "06/05/2026",
+       "desc": "PAGO RESETEO DE COMUTADOR",
+       "importe": 80.0
+      },
+      {
+       "fecha": "19/05/2026",
+       "desc": "PAGO REVISION COMPUTADOR",
+       "importe": 80.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Marketing propio",
+   "categoria": "Uniformes y branding",
+   "total": 510.0,
+   "n": 2,
+   "por_mes": {
+    "ene": 135.0,
+    "feb": 375.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "desc": "pago 50% capuchas rafael naranjo",
+       "importe": 135.0
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "09/02/2026",
+       "desc": "PAGO BRANDING A CAMILA MERLO",
+       "importe": 375.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Modelos",
+   "total": 382.5,
+   "n": 9,
+   "por_mes": {
+    "ene": 20.0,
+    "feb": 20.0,
+    "mar": 302.5,
+    "abr": 0.0,
+    "may": 20.0,
+    "jun": 0.0,
+    "jul": 20.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "20/01/2026",
+       "desc": "AMELIA PADILLA BATALLAS MODELO VIDEOS VELSANA",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "desc": "VIDEO PAULITA HELATHY ANVIDAD",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "02/03/2026",
+       "desc": "PAGO MODELO HELATHY",
+       "importe": 57.5
+      },
+      {
+       "fecha": "02/03/2026",
+       "desc": "PAGO MODELO HELATHY",
+       "importe": 50.0
+      },
+      {
+       "fecha": "03/03/2026",
+       "desc": "PAGO SAMARI MODELO SUCA NARANJO",
+       "importe": 150.0
+      },
+      {
+       "fecha": "09/03/2026",
+       "desc": "MODELO HELATHY 3",
+       "importe": 25.0
+      },
+      {
+       "fecha": "16/03/2026",
+       "desc": "PAGO MODELO HEALTHY",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "19/05/2026",
+       "desc": "PAGO MODELO HEALTHY GIRLE AMELIA PADILLA",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "desc": "PAGO A MODELO HEALTHY PRODUCCION",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Devoluciones",
+   "categoria": "Devolucion a cliente",
+   "total": 362.0,
+   "n": 1,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 362.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "desc": "DEVOLUCION HERMANOS ROMERO",
+       "importe": 362.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Estructura",
+   "categoria": "Limpieza",
+   "total": 281.64,
+   "n": 4,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 70.41,
+    "abr": 0.0,
+    "may": 140.82,
+    "jun": 70.41,
+    "jul": 0.0
+   },
+   "detalle": {
+    "mar": {
+     "movs": [
+      {
+       "fecha": "10/03/2026",
+       "desc": "LIMPIEZA 7 SEMANAS",
+       "importe": 70.41
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "11/05/2026",
+       "desc": "PAGO LIMPIEZA",
+       "importe": 70.41
+      },
+      {
+       "fecha": "12/05/2026",
+       "desc": "PAGO LIMPIEZA",
+       "importe": 70.41
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "10/06/2026",
+       "desc": "PAGO LIMPIEZA",
+       "importe": 70.41
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Estructura",
+   "categoria": "Internet",
+   "total": 218.33,
+   "n": 3,
+   "por_mes": {
+    "ene": 182.1,
+    "feb": 36.23,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "desc": "INTERNET",
+       "importe": 73.41
+      },
+      {
+       "fecha": "27/01/2026",
+       "desc": "INTERNET DANIEL",
+       "importe": 108.69
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "27/02/2026",
+       "desc": "PAGO INTERNET",
+       "importe": 36.23
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Oficina y bienestar",
+   "categoria": "Refrigerios y suministros",
+   "total": 200.99,
+   "n": 18,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 6.0,
+    "mar": 48.9,
+    "abr": 27.68,
+    "may": 6.0,
+    "jun": 89.0,
+    "jul": 23.41
+   },
+   "detalle": {
+    "feb": {
+     "movs": [
+      {
+       "fecha": "03/02/2026",
+       "desc": "BOTELLON 1",
+       "importe": 3.0
+      },
+      {
+       "fecha": "10/02/2026",
+       "desc": "PAGO BOTELLON",
+       "importe": 3.0
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "04/03/2026",
+       "desc": "ACAI ESTEFITA UCMPLEAÑOS",
+       "importe": 7.25
+      },
+      {
+       "fecha": "09/03/2026",
+       "desc": "PAGO CAFES EN APC CHICOS PRODUCCION",
+       "importe": 2.25
+      },
+      {
+       "fecha": "10/03/2026",
+       "desc": "PAGO SANDUCHES CUMPLEAÑOS ALEJO",
+       "importe": 30.5
+      },
+      {
+       "fecha": "17/03/2026",
+       "desc": "BOTELLON 1",
+       "importe": 3.0
+      },
+      {
+       "fecha": "19/03/2026",
+       "desc": "CAFES EN APC RODUCCION",
+       "importe": 2.9
+      },
+      {
+       "fecha": "24/03/2026",
+       "desc": "BOTELLON 2",
+       "importe": 3.0
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "09/04/2026",
+       "desc": "PAGO EN SUPERMAXI FICOA COMPRA SOFI",
+       "importe": 12.38
+      },
+      {
+       "fecha": "28/04/2026",
+       "desc": "PAGO CERVEZAS PARA CHICOS AGENCIA",
+       "importe": 15.3
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "07/05/2026",
+       "desc": "BOTELLON 1",
+       "importe": 3.0
+      },
+      {
+       "fecha": "14/05/2026",
+       "desc": "BOTELLON 2",
+       "importe": 3.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "16/06/2026",
+       "desc": "SANDUCHES PARA AGENCIA",
+       "importe": 29.0
+      },
+      {
+       "fecha": "29/06/2026",
+       "desc": "CERVEZAS MUNDIAL CHIFLIDO",
+       "importe": 60.0
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "08/07/2026",
+       "desc": "BOTELLON 1",
+       "importe": 2.0
+      },
+      {
+       "fecha": "14/07/2026",
+       "desc": "PAGO ALMUERZO QUITO",
+       "importe": 4.5
+      },
+      {
+       "fecha": "15/07/2026",
+       "desc": "PAGO BOTELLON 2",
+       "importe": 2.0
+      },
+      {
+       "fecha": "23/07/2026",
+       "desc": "PAGO CAFE Y AZUCAR A CHIKI",
+       "importe": 14.91
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Movilizacion",
+   "categoria": "Taxis / parqueo / viaticos",
+   "total": 198.14,
+   "n": 25,
+   "por_mes": {
+    "ene": 21.08,
+    "feb": 0.0,
+    "mar": 42.67,
+    "abr": 39.01,
+    "may": 20.16,
+    "jun": 56.88,
+    "jul": 18.34
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "07/01/2026",
+       "desc": "PARQUEO CENTRO",
+       "importe": 0.75
+      },
+      {
+       "fecha": "08/01/2026",
+       "desc": "PARQUEO CENTRO",
+       "importe": 0.4
+      },
+      {
+       "fecha": "12/01/2026",
+       "desc": "PAGO VIATICOS",
+       "importe": 5.0
+      },
+      {
+       "fecha": "16/01/2026",
+       "desc": "VIATICOS STALIN TAXIS",
+       "importe": 14.93
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "02/03/2026",
+       "desc": "TAXIS UBER PODCAST",
+       "importe": 16.59
+      },
+      {
+       "fecha": "03/03/2026",
+       "desc": "TAXI ALEJO",
+       "importe": 10.98
+      },
+      {
+       "fecha": "03/03/2026",
+       "desc": "TAXI STALIN",
+       "importe": 9.0
+      },
+      {
+       "fecha": "03/03/2026",
+       "desc": "PARQUEO CENTRO",
+       "importe": 0.8
+      },
+      {
+       "fecha": "04/03/2026",
+       "desc": "TAXIS DANNA",
+       "importe": 5.3
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "desc": "PAGO TAXIS ALEJANDRO VACA",
+       "importe": 12.22
+      },
+      {
+       "fecha": "01/04/2026",
+       "desc": "PAGO TAXIS STALIN",
+       "importe": 13.64
+      },
+      {
+       "fecha": "01/04/2026",
+       "desc": "PAGO TAXIS DANNA",
+       "importe": 4.86
+      },
+      {
+       "fecha": "01/04/2026",
+       "desc": "PAGO TAXIS DANIELA CORDOVA",
+       "importe": 3.19
+      },
+      {
+       "fecha": "01/04/2026",
+       "desc": "PAGO TAXIS ALEJANDRA APONTE",
+       "importe": 5.1
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "18/05/2026",
+       "desc": "PAGO TAXIS ALEJANDRO VACA",
+       "importe": 11.7
+      },
+      {
+       "fecha": "18/05/2026",
+       "desc": "PAGO TAXIS DANNA CARDENAS",
+       "importe": 4.46
+      },
+      {
+       "fecha": "28/05/2026",
+       "desc": "GASTO TAXI",
+       "importe": 4.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "desc": "TAXIS STALIN BONILLA",
+       "importe": 11.57
+      },
+      {
+       "fecha": "01/06/2026",
+       "desc": "TAXIS ALEJANDRO VACA",
+       "importe": 19.2
+      },
+      {
+       "fecha": "01/06/2026",
+       "desc": "TAXIS JOSUE LARA",
+       "importe": 10.0
+      },
+      {
+       "fecha": "23/06/2026",
+       "desc": "PGO TAXIS MARISSA ALBAN",
+       "importe": 9.58
+      },
+      {
+       "fecha": "23/06/2026",
+       "desc": "PAGO TAXIS DANIELA CORDOVA",
+       "importe": 6.53
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "desc": "TAXIS STALIN BONILLA",
+       "importe": 2.67
+      },
+      {
+       "fecha": "01/07/2026",
+       "desc": "TADIS DANNA CARDENAS",
+       "importe": 6.28
+      },
+      {
+       "fecha": "01/07/2026",
+       "desc": "TAXIS ALEJANDRO VACA",
+       "importe": 9.39
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Pris Rodriguez (produccion)",
+   "total": 172.5,
+   "n": 1,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 172.5
+   },
+   "detalle": {
+    "jul": {
+     "movs": [
+      {
+       "fecha": "24/07/2026",
+       "desc": "PAGO A PRIS RODRIGUEZ PRODUCCION DE SAMARI",
+       "importe": 172.5
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Estructura",
+   "categoria": "Servicios basicos",
+   "total": 159.49,
+   "n": 6,
+   "por_mes": {
+    "ene": 5.84,
+    "feb": 5.89,
+    "mar": 0.0,
+    "abr": 11.42,
+    "may": 0.0,
+    "jun": 9.84,
+    "jul": 126.5
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "22/01/2026",
+       "desc": "PAGO AGUA MES DE ENERO",
+       "importe": 5.84
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "20/02/2026",
+       "desc": "PAGO AGUA FEBRERO",
+       "importe": 5.89
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "10/04/2026",
+       "desc": "PAGO AGUA MES DE MARZO",
+       "importe": 11.42
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "desc": "PAGO DE AGUA",
+       "importe": 9.84
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "10/07/2026",
+       "desc": "PAGO DE AGUA",
+       "importe": 11.01
+      },
+      {
+       "fecha": "31/07/2026",
+       "desc": "PAGO DE LUZ DESDE ENERO A JULIO A FRANCISCO VAYAS",
+       "importe": 115.49
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Diego Rodriguez / Juandi (locacion)",
+   "total": 110.41,
+   "n": 1,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 110.41
+   },
+   "detalle": {
+    "jul": {
+     "movs": [
+      {
+       "fecha": "03/07/2026",
+       "desc": "PAGO A DIEGO RODRIGUEZ ARRIENDO CASA Y JUANDI PRODUCCION SPEEDY",
+       "importe": 110.41
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Software y herramientas",
+   "categoria": "Suscripciones",
+   "total": 83.37,
+   "n": 7,
+   "por_mes": {
+    "ene": 11.91,
+    "feb": 11.91,
+    "mar": 11.91,
+    "abr": 11.91,
+    "may": 11.91,
+    "jun": 11.91,
+    "jul": 11.91
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "26/01/2026",
+       "desc": "SISTEMA CONTABLE",
+       "importe": 11.91
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "10/02/2026",
+       "desc": "PAGO SISTEMA CONTABLE",
+       "importe": 11.91
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "11/03/2026",
+       "desc": "SISTEMA CONTABLE",
+       "importe": 11.91
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "13/04/2026",
+       "desc": "PAGO SISTEMA CONTABLE",
+       "importe": 11.91
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "28/05/2026",
+       "desc": "PAGO SISTEMA CONTABLE",
+       "importe": 11.91
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "10/06/2026",
+       "desc": "PAGO SISTEMA CONTABLE",
+       "importe": 11.91
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "31/07/2026",
+       "desc": "PAGO SISTEMA CONTABLE",
+       "importe": 11.91
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Ambientacion / props",
+   "total": 74.0,
+   "n": 1,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 74.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "feb": {
+     "movs": [
+      {
+       "fecha": "27/02/2026",
+       "desc": "PLANTAS HEALTHY GIRL",
+       "importe": 74.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Movimiento entre cuentas propias",
+   "categoria": "Reverso bancario",
+   "total": -70.41,
+   "n": 1,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": -70.41,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "may": {
+     "movs": [
+      {
+       "fecha": "11/05/2026",
+       "desc": "FALLO BANCO REVERSO",
+       "importe": -70.41
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Sofia Garzon (flores/deco)",
+   "total": 22.0,
+   "n": 1,
+   "por_mes": {
+    "ene": 22.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "30/01/2026",
+       "desc": "SOFIA GARZON FLORES NANAE",
+       "importe": 22.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Actores",
+   "total": 10.0,
+   "n": 1,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 10.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "jun": {
+     "movs": [
+      {
+       "fecha": "09/06/2026",
+       "desc": "PAGO VIDEO SPEEDY A ACTOR EXTRA",
+       "importe": 10.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  }
+ ],
+ "otros_ingresos": [
+  {
+   "concepto": "Subarriendo oficina · Chiki",
+   "total": 690.0,
+   "n": 6,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 230.0,
+    "abr": 115.0,
+    "may": 115.0,
+    "jun": 115.0,
+    "jul": 115.0
+   },
+   "detalle": {
+    "mar": {
+     "movs": [
+      {
+       "fecha": "04/03/2026",
+       "desc": "ARRIENDO CHIKI ENERO",
+       "importe": 115.0
+      },
+      {
+       "fecha": "26/03/2026",
+       "desc": "ARRIENDO CHIKI FEBRERO",
+       "importe": 115.0
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "10/04/2026",
+       "desc": "ARRIENDO CHIKI ABRIL",
+       "importe": 115.0
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "14/05/2026",
+       "desc": "ARREINDO CHIKI MARZO",
+       "importe": 115.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "12/06/2026",
+       "desc": "ARRIENDO CHIKI ABRIL",
+       "importe": 115.0
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "10/07/2026",
+       "desc": "ARRIENDO CHIKI",
+       "importe": 115.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "concepto": "Subarriendo oficina · Friends Guides",
+   "total": 280.0,
+   "n": 4,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 70.0,
+    "may": 0.0,
+    "jun": 70.0,
+    "jul": 140.0
+   },
+   "detalle": {
+    "abr": {
+     "movs": [
+      {
+       "fecha": "13/04/2026",
+       "desc": "ARRIENDO FRIENDS GUIDES MARZO",
+       "importe": 70.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "desc": "ARRIENDO FRIENDS GUIDES ABRIL",
+       "importe": 70.0
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "10/07/2026",
+       "desc": "ARRIENDO FREINDS GUIDES MAYO",
+       "importe": 70.0
+      },
+      {
+       "fecha": "30/07/2026",
+       "desc": "ARRIENDO FREINDS GUIDES JUNIO",
+       "importe": 70.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "concepto": "Menores",
+   "total": 2.0,
+   "n": 1,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 2.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "abr": {
+     "movs": [
+      {
+       "fecha": "06/04/2026",
+       "desc": "PAGO ESTEFITA SANDUCHE",
+       "importe": 2.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "concepto": "Interes bancario",
+   "total": 0.24,
+   "n": 3,
+   "por_mes": {
+    "ene": 0.14,
+    "feb": 0.09,
+    "mar": 0.01,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "30/01/2026",
+       "desc": "INTERES BANCARIO",
+       "importe": 0.14
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "27/02/2026",
+       "desc": "INTERES BANCARIO",
+       "importe": 0.09
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "31/03/2026",
+       "desc": "INTERES BANCARIO",
+       "importe": 0.01
+      }
+     ],
+     "razones": []
+    }
+   }
+  }
+ ],
+ "totales": {
+  "ingresos": 77734.03,
+  "costo_fijo": 60572.63,
+  "costo_variable": 9678.3,
+  "resultado": 3888.63,
+  "movimientos": 505
+ }
+}

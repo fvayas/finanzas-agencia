@@ -1,0 +1,9 @@
+# sistema
+.DS_Store
+
+# copia de trabajo para el diff contra la hoja: cambia en cada descarga
+2026_anterior.csv
+
+# entornos locales
+.venv/
+__pycache__/

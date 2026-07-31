@@ -1,0 +1,612 @@
+{
+ "meses": [
+  "ene",
+  "feb",
+  "mar",
+  "abr",
+  "may",
+  "jun",
+  "jul"
+ ],
+ "conceptos": [
+  {
+   "concepto": "Whataform",
+   "familia": "Software",
+   "total": 453.97,
+   "n": 7,
+   "por_mes": {
+    "ene": 79.8,
+    "feb": 79.8,
+    "mar": 79.8,
+    "abr": 79.8,
+    "may": 28.37,
+    "jun": 53.2,
+    "jul": 53.2
+   },
+   "movs": [
+    {
+     "mes": "ene",
+     "fecha": "10/12",
+     "desc": "WHATAFORM CA USA",
+     "importe": 79.8
+    },
+    {
+     "mes": "feb",
+     "fecha": "10/01",
+     "desc": "WHATAFORM CA USA",
+     "importe": 79.8
+    },
+    {
+     "mes": "mar",
+     "fecha": "10/02",
+     "desc": "WHATAFORM ECUECU",
+     "importe": 79.8
+    },
+    {
+     "mes": "abr",
+     "fecha": "10/03",
+     "desc": "WHATAFORM ECUECU",
+     "importe": 79.8
+    },
+    {
+     "mes": "may",
+     "fecha": "10/04",
+     "desc": "WHATAFORM ECUECU",
+     "importe": 28.37
+    },
+    {
+     "mes": "jun",
+     "fecha": "10/05",
+     "desc": "WHATAFORM BOGCOL",
+     "importe": 53.2
+    },
+    {
+     "mes": "jul",
+     "fecha": "10/06",
+     "desc": "WHATAFORM ECUECU",
+     "importe": 53.2
+    }
+   ]
+  },
+  {
+   "concepto": "TikTok Ads",
+   "familia": "Pauta",
+   "total": 400.0,
+   "n": 4,
+   "por_mes": {
+    "ene": 100.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 300.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "movs": [
+    {
+     "mes": "ene",
+     "fecha": "30/12",
+     "desc": "PTP - DL - TIKTOK",
+     "importe": 100.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "15/03",
+     "desc": "DLOCAL TIKTOK",
+     "importe": 100.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "18/03",
+     "desc": "DLOCAL TIKTOK",
+     "importe": 100.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "02/04",
+     "desc": "DLOCAL TIKTOK",
+     "importe": 100.0
+    }
+   ]
+  },
+  {
+   "concepto": "Opus Clip",
+   "familia": "Software",
+   "total": 161.0,
+   "n": 7,
+   "por_mes": {
+    "ene": 23.0,
+    "feb": 23.0,
+    "mar": 23.0,
+    "abr": 23.0,
+    "may": 23.0,
+    "jun": 23.0,
+    "jul": 23.0
+   },
+   "movs": [
+    {
+     "mes": "ene",
+     "fecha": "18/12",
+     "desc": "OPUS CLIP 218ECU",
+     "importe": 23.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "18/01",
+     "desc": "OPUS CLIP ECUECU",
+     "importe": 23.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "18/02",
+     "desc": "OPUS CLIP ECUECU",
+     "importe": 23.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "18/03",
+     "desc": "OPUS CLIP ECUECU",
+     "importe": 23.0
+    },
+    {
+     "mes": "may",
+     "fecha": "18/04",
+     "desc": "OPUS CLIP ECUECU",
+     "importe": 23.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "18/05",
+     "desc": "OPUS CLIP CA USA",
+     "importe": 23.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "18/06",
+     "desc": "OPUS CLIP ECUECU",
+     "importe": 23.0
+    }
+   ]
+  },
+  {
+   "concepto": "ChatGPT",
+   "familia": "Software",
+   "total": 140.0,
+   "n": 7,
+   "por_mes": {
+    "ene": 20.0,
+    "feb": 20.0,
+    "mar": 20.0,
+    "abr": 20.0,
+    "may": 20.0,
+    "jun": 20.0,
+    "jul": 20.0
+   },
+   "movs": [
+    {
+     "mes": "ene",
+     "fecha": "28/12",
+     "desc": "OPENAI *CHATGPT SUBSCR",
+     "importe": 20.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "28/01",
+     "desc": "OPENAI *CHATGPT SUBSCR",
+     "importe": 20.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "28/02",
+     "desc": "OPENAI *CHATGPT SUBSCR",
+     "importe": 20.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "28/03",
+     "desc": "OPENAI *CHATGPT SUBSCR",
+     "importe": 20.0
+    },
+    {
+     "mes": "may",
+     "fecha": "28/04",
+     "desc": "OPENAI *CHATGPT SUBSCR",
+     "importe": 20.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "28/05",
+     "desc": "OPENAI *CHATGPT SUBSCR",
+     "importe": 20.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "28/06",
+     "desc": "OPENAI *CHATGPT SUBSCR",
+     "importe": 20.0
+    }
+   ]
+  },
+  {
+   "concepto": "CapCut",
+   "familia": "Software",
+   "total": 44.76,
+   "n": 4,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 2.79,
+    "mar": 13.99,
+    "abr": 13.99,
+    "may": 13.99,
+    "jun": 0.0,
+    "jul": 0.0
+   },
+   "movs": [
+    {
+     "mes": "feb",
+     "fecha": "05/02",
+     "desc": "CAPCUT ECUECU",
+     "importe": 2.79
+    },
+    {
+     "mes": "mar",
+     "fecha": "05/03",
+     "desc": "CAPCUT ECU",
+     "importe": 13.99
+    },
+    {
+     "mes": "abr",
+     "fecha": "05/04",
+     "desc": "CAPCUT ECUECU",
+     "importe": 13.99
+    },
+    {
+     "mes": "may",
+     "fecha": "05/05",
+     "desc": "CAPCUT 002ARG",
+     "importe": 13.99
+    }
+   ]
+  },
+  {
+   "concepto": "Speedy Com",
+   "familia": "Software",
+   "total": 39.0,
+   "n": 2,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 19.5,
+    "jul": 19.5
+   },
+   "movs": [
+    {
+     "mes": "jun",
+     "fecha": "01/06",
+     "desc": "SPEEDY COM P/R",
+     "importe": 19.5
+    },
+    {
+     "mes": "jul",
+     "fecha": "01/07",
+     "desc": "SPEEDY COM P/R",
+     "importe": 19.5
+    }
+   ]
+  },
+  {
+   "concepto": "Apple",
+   "familia": "Software",
+   "total": 28.95,
+   "n": 4,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 14.97,
+    "jun": 6.99,
+    "jul": 6.99
+   },
+   "movs": [
+    {
+     "mes": "may",
+     "fecha": "28/04",
+     "desc": "APPLE.COM/BILLSA",
+     "importe": 14.28
+    },
+    {
+     "mes": "may",
+     "fecha": "29/04",
+     "desc": "APPLE.COM/BILLSA",
+     "importe": 0.69
+    },
+    {
+     "mes": "jun",
+     "fecha": "28/05",
+     "desc": "APPLE.COM/BILLSA",
+     "importe": 6.99
+    },
+    {
+     "mes": "jul",
+     "fecha": "28/06",
+     "desc": "APPLE.COM/BILLSA",
+     "importe": 6.99
+    }
+   ]
+  },
+  {
+   "concepto": "Comida y cafetería",
+   "familia": "Oficina",
+   "total": 19.59,
+   "n": 4,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 2.25,
+    "mar": 3.25,
+    "abr": 0.0,
+    "may": 3.9,
+    "jun": 0.0,
+    "jul": 10.19
+   },
+   "movs": [
+    {
+     "mes": "feb",
+     "fecha": "04/02",
+     "desc": "TOGO EXPRESS MART",
+     "importe": 2.25
+    },
+    {
+     "mes": "mar",
+     "fecha": "23/02",
+     "desc": "TO GO ECUECU",
+     "importe": 3.25
+    },
+    {
+     "mes": "may",
+     "fecha": "18/04",
+     "desc": "SWEET COFFEE",
+     "importe": 3.9
+    },
+    {
+     "mes": "jul",
+     "fecha": "30/06",
+     "desc": "SUPERMERCADOS LA CASERA",
+     "importe": 10.19
+    }
+   ]
+  },
+  {
+   "concepto": "Retención IVA servicios digitales",
+   "familia": "Impuestos",
+   "total": 117.41,
+   "n": 7,
+   "por_mes": {
+    "ene": 14.97,
+    "feb": 15.39,
+    "mar": 20.52,
+    "abr": 20.52,
+    "may": 15.05,
+    "jun": 15.48,
+    "jul": 15.48
+   },
+   "movs": [
+    {
+     "mes": "ene",
+     "fecha": "",
+     "desc": "Retención IVA servicios digitales",
+     "importe": 14.97
+    },
+    {
+     "mes": "feb",
+     "fecha": "",
+     "desc": "Retención IVA servicios digitales",
+     "importe": 15.39
+    },
+    {
+     "mes": "mar",
+     "fecha": "",
+     "desc": "Retención IVA servicios digitales",
+     "importe": 20.52
+    },
+    {
+     "mes": "abr",
+     "fecha": "",
+     "desc": "Retención IVA servicios digitales",
+     "importe": 20.52
+    },
+    {
+     "mes": "may",
+     "fecha": "",
+     "desc": "Retención IVA servicios digitales",
+     "importe": 15.05
+    },
+    {
+     "mes": "jun",
+     "fecha": "",
+     "desc": "Retención IVA servicios digitales",
+     "importe": 15.48
+    },
+    {
+     "mes": "jul",
+     "fecha": "",
+     "desc": "Retención IVA servicios digitales",
+     "importe": 15.48
+    }
+   ]
+  },
+  {
+   "concepto": "Intereses por financiar el saldo",
+   "familia": "Financiero",
+   "total": 14.81,
+   "n": 7,
+   "por_mes": {
+    "ene": 1.97,
+    "feb": 1.63,
+    "mar": 3.22,
+    "abr": 0.56,
+    "may": 3.01,
+    "jun": 3.65,
+    "jul": 0.77
+   },
+   "movs": [
+    {
+     "mes": "ene",
+     "fecha": "",
+     "desc": "Intereses por financiar el saldo",
+     "importe": 1.97
+    },
+    {
+     "mes": "feb",
+     "fecha": "",
+     "desc": "Intereses por financiar el saldo",
+     "importe": 1.63
+    },
+    {
+     "mes": "mar",
+     "fecha": "",
+     "desc": "Intereses por financiar el saldo",
+     "importe": 3.22
+    },
+    {
+     "mes": "abr",
+     "fecha": "",
+     "desc": "Intereses por financiar el saldo",
+     "importe": 0.56
+    },
+    {
+     "mes": "may",
+     "fecha": "",
+     "desc": "Intereses por financiar el saldo",
+     "importe": 3.01
+    },
+    {
+     "mes": "jun",
+     "fecha": "",
+     "desc": "Intereses por financiar el saldo",
+     "importe": 3.65
+    },
+    {
+     "mes": "jul",
+     "fecha": "",
+     "desc": "Intereses por financiar el saldo",
+     "importe": 0.77
+    }
+   ]
+  }
+ ],
+ "por_mes": {
+  "ene": 239.74,
+  "feb": 144.86,
+  "mar": 163.78,
+  "abr": 457.87,
+  "may": 122.29,
+  "jun": 141.82,
+  "jul": 149.13
+ },
+ "total": 1419.49,
+ "familias": {
+  "Software": 867.68,
+  "Pauta": 400.0,
+  "Impuestos": 117.41,
+  "Oficina": 19.59,
+  "Financiero": 14.81
+ },
+ "pagado_hoja": 1472.45,
+ "pagos_por_mes": {
+  "ene": 26.7,
+  "feb": 29.25,
+  "mar": 494.24,
+  "abr": 36.67,
+  "may": 543.49,
+  "jun": 30.0,
+  "jul": 312.1
+ },
+ "detalle_pagos": {
+  "ene": [
+   {
+    "fecha": "20/01/2026",
+    "desc": "RENOVACION TARJETA DE CREDITO",
+    "importe": 1.81
+   },
+   {
+    "fecha": "21/01/2026",
+    "desc": "TARJETA",
+    "importe": 24.89
+   }
+  ],
+  "feb": [
+   {
+    "fecha": "23/02/2026",
+    "desc": "PAGO TARJETA",
+    "importe": 29.25
+   }
+  ],
+  "mar": [
+   {
+    "fecha": "11/03/2026",
+    "desc": "PAGO TARJETA DE CREDITO",
+    "importe": 494.24
+   }
+  ],
+  "abr": [
+   {
+    "fecha": "21/04/2026",
+    "desc": "PAGO TARJETA DEBITO AUTOMATICO",
+    "importe": 36.67
+   }
+  ],
+  "may": [
+   {
+    "fecha": "21/05/2026",
+    "desc": "PAGO TARJETA DE CREDITO",
+    "importe": 36.82
+   },
+   {
+    "fecha": "26/05/2026",
+    "desc": "PAGO TARJETA DE CREDITO",
+    "importe": 506.67
+   }
+  ],
+  "jun": [
+   {
+    "fecha": "22/06/2026",
+    "desc": "PAGO TARJETA DEBITO AUTOMATICO",
+    "importe": 8.28
+   },
+   {
+    "fecha": "23/06/2026",
+    "desc": "PAGO TARJETA",
+    "importe": 21.72
+   }
+  ],
+  "jul": [
+   {
+    "fecha": "08/07/2026",
+    "desc": "PAGO TARJETA DE CREDITO",
+    "importe": 21.16
+   },
+   {
+    "fecha": "21/07/2026",
+    "desc": "PAGO TARJETA",
+    "importe": 3.16
+   },
+   {
+    "fecha": "22/07/2026",
+    "desc": "PAGO TARJETA DE CREDITO",
+    "importe": 26.84
+   },
+   {
+    "fecha": "28/07/2026",
+    "desc": "PAGO TARJETA DE CREDITO",
+    "importe": 260.94
+   }
+  ]
+ },
+ "diferencia": 52.96,
+ "tarjeta": "Mastercard ····3129",
+ "titular": "Rodriguez Ponce Ana Paula"
+}

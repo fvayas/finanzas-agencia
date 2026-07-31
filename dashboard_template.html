@@ -1,0 +1,2012 @@
+<title>Punto de equilibrio 2026 · Cta. Pichincha</title>
+
+<style>
+/* ============================ tokens ============================ */
+:root{
+  /* Libro mayor: papel calido, tinta negra, filete rojo de contable.
+     El rojo es a la vez la marca y el "en rojo" financiero. */
+  --paper:#F6F6F2; --card:#FFFFFF; --line:#D6D7D1; --line-soft:#E6E7E1;
+  --ink:#15181B; --ink-2:#4B5158; --ink-3:#7B828A;
+  --accent:#C22233; --accent-soft:#C2223312;
+  --pos:#1D7A46; --pos-soft:#1D7A4620;
+  --neg:#C22233; --neg-soft:#C2223316;
+  --warn:#95661A; --warn-soft:#95661A1E;
+  --bar:#363C43; --ink-soft:#15181B0D;
+  --shadow:0 1px 2px #15181B0F, 0 10px 28px #15181B08;
+  --font-display:"Avenir Next","Avenir","Montserrat","Futura","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-ui:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Monaco,"Cascadia Mono",Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#101214; --card:#17191C; --line:#2E3236; --line-soft:#232629;
+  --ink:#ECEDEE; --ink-2:#A8ADB3; --ink-3:#71787F;
+  --accent:#F0525F; --accent-soft:#F0525F1C;
+  --pos:#4CC38A; --pos-soft:#4CC38A22;
+  --neg:#F0525F; --neg-soft:#F0525F1F;
+  --warn:#D9A44A; --warn-soft:#D9A44A22;
+  --bar:#A9AFB6; --ink-soft:#ECEDEE14;
+  --shadow:0 1px 2px #0007, 0 12px 32px #0005;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#101214; --card:#17191C; --line:#2E3236; --line-soft:#232629;
+  --ink:#ECEDEE; --ink-2:#A8ADB3; --ink-3:#71787F;
+  --accent:#F0525F; --accent-soft:#F0525F1C;
+  --pos:#4CC38A; --pos-soft:#4CC38A22;
+  --neg:#F0525F; --neg-soft:#F0525F1F;
+  --warn:#D9A44A; --warn-soft:#D9A44A22;
+  --bar:#A9AFB6; --ink-soft:#ECEDEE14;
+  --shadow:0 1px 2px #0007, 0 12px 32px #0005;
+}
+:root[data-theme="light"]{
+  --paper:#F6F6F2; --card:#FFFFFF; --line:#D6D7D1; --line-soft:#E6E7E1;
+  --ink:#15181B; --ink-2:#4B5158; --ink-3:#7B828A;
+  --accent:#C22233; --accent-soft:#C2223312;
+  --pos:#1D7A46; --pos-soft:#1D7A4620;
+  --neg:#C22233; --neg-soft:#C2223316;
+  --warn:#95661A; --warn-soft:#95661A1E;
+  --bar:#363C43; --ink-soft:#15181B0D;
+  --shadow:0 1px 2px #15181B0F, 0 10px 28px #15181B08;
+}
+
+/* ============================ base ============================ */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--font-ui); font-size:15px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px; margin:0 auto; padding:40px 24px 96px}
+.num{font-family:var(--font-mono); font-variant-numeric:tabular-nums; letter-spacing:-.01em}
+h1,h2,h3{font-family:var(--font-display); font-weight:800; text-wrap:balance; margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+
+/* ============================ cabecera ============================ */
+/* Mastil de marca: bloque negro con filete rojo. Es la unica pieza que no
+   cambia con el tema, como la portada de un libro contable. */
+header{
+  position:relative; background:#14171A; color:#FAFAF8;
+  border-radius:10px; padding:38px 36px 30px; overflow:hidden;
+}
+header::before{content:""; position:absolute; inset:0 0 auto 0; height:6px; background:#C22233}
+.eyebrow{
+  font-size:11px; letter-spacing:.24em; text-transform:uppercase;
+  color:#FF7A85; font-weight:700; margin-bottom:16px;
+}
+h1{font-size:clamp(30px,4.6vw,50px); line-height:1.03; letter-spacing:-.02em; color:#FAFAF8; max-width:22ch}
+.sub{color:#B9BDC3; margin-top:14px; max-width:62ch; font-size:15.5px}
+.sub b{color:#FAFAF8}
+.badges{display:flex; flex-wrap:wrap; gap:8px; margin-top:22px}
+.badge{
+  display:inline-flex; align-items:center; gap:7px; font-size:12px;
+  padding:5px 12px; border-radius:4px; border:1px solid #FFFFFF24;
+  background:#FFFFFF0A; color:#C6CACF; font-weight:500;
+}
+.badge b{font-family:var(--font-mono); color:#FAFAF8; font-weight:600}
+.dot{width:6px; height:6px; border-radius:50%; background:#4CC38A; flex:none}
+
+/* ------ navegacion de secciones, pegada arriba ------ */
+.secnav{
+  position:sticky; top:0; z-index:50; display:flex; gap:4px;
+  overflow-x:auto; scrollbar-width:none; margin:18px -24px 0;
+  padding:10px 24px; background:var(--paper);
+  background:color-mix(in srgb, var(--paper) 86%, transparent);
+  -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line-soft);
+}
+.secnav::-webkit-scrollbar{display:none}
+.secnav a{
+  flex:none; display:flex; gap:7px; align-items:baseline; padding:7px 12px;
+  border-radius:6px; font-size:12.5px; color:var(--ink-2);
+  text-decoration:none; border:1px solid transparent; white-space:nowrap;
+}
+.secnav a b{font-family:var(--font-mono); font-size:11px; color:var(--accent); font-weight:700}
+.secnav a:hover{background:var(--ink-soft); color:var(--ink)}
+.secnav a.act{background:var(--card); border-color:var(--line); color:var(--ink); box-shadow:var(--shadow)}
+
+/* ============================ secciones ============================ */
+/* Cada sección abre con una banda ancha: el panel es largo y sin un corte
+   fuerte no se distingue dónde acaba un bloque y empieza el siguiente. */
+section{margin-top:76px; scroll-margin-top:64px}
+.shead{
+  display:flex; align-items:baseline; gap:18px; flex-wrap:wrap;
+  border-top:3px solid var(--ink); padding-top:18px; margin-bottom:12px;
+}
+.snum{
+  font-family:var(--font-mono); font-size:15px; color:var(--accent);
+  font-weight:700; letter-spacing:.04em; padding-top:8px; flex:none;
+}
+h2{font-size:clamp(26px,3.6vw,36px); letter-spacing:-.02em; line-height:1.06}
+.sdesc{color:var(--ink-2); max-width:70ch; margin:0 0 26px; font-size:15px}
+
+/* ============================ tiles ============================ */
+.tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(212px,1fr)); gap:14px}
+.tile{
+  background:var(--card); border:1px solid var(--line-soft); border-radius:8px;
+  padding:18px 18px 16px; box-shadow:var(--shadow); position:relative; overflow:hidden;
+}
+.tile::before{content:""; position:absolute; inset:0 auto 0 0; width:3px; background:var(--ink)}
+.tile.is-pos::before{background:var(--pos)} .tile.is-neg::before{background:var(--neg)}
+.tile.is-warn::before{background:var(--warn)}
+.tlabel{font-size:11px; letter-spacing:.11em; text-transform:uppercase; color:var(--ink-3); font-weight:600}
+.tval{font-family:var(--font-mono); font-size:clamp(25px,3.2vw,31px); font-weight:700; margin-top:9px; letter-spacing:-.02em}
+.tval.pos{color:var(--pos)} .tval.neg{color:var(--neg)} .tval.warn{color:var(--warn)}
+.tfoot{font-size:12.5px; color:var(--ink-2); margin-top:7px; line-height:1.4}
+
+/* ============================ tarjetas ============================ */
+.card{
+  background:var(--card); border:1px solid var(--line-soft); border-radius:8px;
+  padding:24px; box-shadow:var(--shadow);
+}
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+@media(max-width:860px){.grid2{grid-template-columns:1fr}}
+
+/* ============================ tablas ============================ */
+.scroll{overflow-x:auto; -webkit-overflow-scrolling:touch}
+table{border-collapse:collapse; width:100%; font-size:13.5px; min-width:640px}
+th,td{padding:9px 11px; text-align:right; border-bottom:1px solid var(--line-soft); white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+thead th{
+  font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3);
+  font-weight:700; border-bottom:2px solid var(--accent); position:sticky; top:0; background:var(--card);
+}
+tbody tr:hover{background:var(--ink-soft)}
+td.n{font-family:var(--font-mono); font-variant-numeric:tabular-nums}
+tr.total td{border-top:3px double var(--ink); border-bottom:none; font-weight:700; padding-top:11px}
+tr.head-row td{font-weight:600}
+tr.head-row:hover{background:none}
+#t-eq{min-width:840px}
+#t-hon{min-width:760px}
+#t-cli-mes{min-width:1080px}
+#t-gastos{min-width:1000px}
+#t-flexi{min-width:820px}
+#t-tarjeta{min-width:980px}
+
+/* escalera de conciliación: cómo se llega del flujo al saldo del banco */
+.escalera{
+  margin-top:18px; background:var(--card); border:1px solid var(--line-soft);
+  border-radius:12px; padding:22px 24px; box-shadow:var(--shadow);
+}
+.escalera h3{font-family:var(--font-display); font-size:18px; margin:0 0 4px}
+#t-flexi .paso{position:sticky; left:0; max-width:calc(100vw - 120px)}
+.paso{
+  display:flex; justify-content:space-between; align-items:baseline; gap:20px;
+  padding:9px 0; border-bottom:1px solid var(--line-soft); font-size:14px;
+}
+.paso:last-of-type{border-bottom:none}
+.paso em{
+  display:block; font-style:normal; font-size:12px; color:var(--ink-3);
+  margin-top:2px; line-height:1.35;
+}
+.paso .num{font-size:15px; font-weight:600; white-space:nowrap}
+.paso.res{
+  border-top:3px double var(--ink); border-bottom:none; font-weight:700;
+  margin-top:2px; padding-top:11px;
+}
+#t-eq td:first-child{padding-right:18px}
+
+/* celdas con explicación: marcador discreto + cursor de ayuda */
+td.why{position:relative; cursor:help}
+td.why::after{
+  content:""; position:absolute; top:7px; right:4px;
+  width:4px; height:4px; border-radius:50%; background:var(--accent);
+}
+td.why.up::after{background:var(--warn)}
+td.why.down::after{background:var(--ink-3)}
+/* celda normal: se puede consultar igual, pero sin punto que llame la atención */
+td.why.plano::after{display:none}
+td.why:hover,td.why:focus-visible{background:var(--accent-soft)}
+
+/* partida sobre la que se puede saltar al detalle */
+.t-row.ir{cursor:pointer; border-radius:6px; margin:0 -8px; padding-left:8px; padding-right:8px}
+.t-row.ir:hover{background:var(--accent-soft)}
+.t-row .chev{margin-left:6px; color:var(--accent); font-weight:700}
+.t-row em{display:block; font-style:normal; font-size:11.5px;
+  color:var(--ink-3); line-height:1.35; margin-top:1px}
+.t-volver{
+  font-size:12px; color:var(--accent); font-weight:600; cursor:pointer;
+  margin-bottom:6px; display:inline-block;
+}
+.t-volver:hover{text-decoration:underline}
+.t-ir-tabla{color:var(--accent); font-weight:600; cursor:pointer}
+.t-ir-tabla:hover{text-decoration:underline}
+.t-pie{
+  margin-top:10px; padding-top:9px; border-top:1px solid var(--line-soft);
+  font-size:11.5px; color:var(--ink-3);
+}
+/* al llegar desde un salto, la fila parpadea para localizarla */
+@keyframes destello{
+  0%{background:var(--accent-soft)} 35%{background:var(--accent-soft)}
+  100%{background:transparent}
+}
+tr.destello td{animation:destello 2.2s ease-out}
+@media (prefers-reduced-motion:reduce){
+  tr.destello td{animation:none; background:var(--accent-soft)}
+}
+
+#tip{
+  position:fixed; z-index:60; max-width:min(420px, calc(100vw - 24px));
+  pointer-events:auto; opacity:0;
+  background:var(--card); color:var(--ink); border:1px solid var(--line);
+  border-radius:10px; padding:14px 16px; box-shadow:0 6px 28px #0000002e;
+  font-size:13px; line-height:1.5; transition:opacity .12s ease;
+  visibility:hidden; max-height:min(70vh, 560px); overflow-y:auto;
+}
+#tip.on{opacity:1; visibility:visible}
+#tip.fijo{box-shadow:0 0 0 2px var(--ink), 0 12px 36px #00000038}
+#tip .t-h{font-family:var(--font-display); font-size:15px; font-weight:800; margin-bottom:2px}
+#tip .t-amt{font-family:var(--font-mono); font-size:20px; font-weight:600; margin-bottom:10px}
+#tip .t-row{
+  display:flex; justify-content:space-between; align-items:baseline; gap:14px;
+  padding:4px 0; font-family:var(--font-mono); font-size:12px;
+  font-variant-numeric:tabular-nums;
+}
+/* la descripción se envuelve: cortarla escondía justo lo que explica el importe */
+#tip .t-row span:first-child{
+  color:var(--ink-2); font-family:var(--font-ui); font-size:12.5px;
+  line-height:1.4; white-space:normal; overflow-wrap:anywhere; min-width:0;
+}
+#tip .t-row span:last-child{flex:none; white-space:nowrap; font-weight:600}
+/* la fecha del movimiento, delante de la descripción */
+.dudoso{
+  display:inline-block; width:15px; height:15px; line-height:15px; text-align:center;
+  border-radius:50%; background:var(--warn-soft); color:var(--warn);
+  font-size:10px; font-weight:700; cursor:help; vertical-align:middle;
+}
+#tip .t-date{
+  font-family:var(--font-mono); font-size:11.5px; font-weight:600;
+  color:var(--accent); margin-right:8px; white-space:nowrap;
+}
+#tip .t-why{
+  margin-top:11px; padding-top:10px; border-top:1px solid var(--line-soft);
+}
+#tip .t-why b{display:block; font-size:10.5px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--ink-3); margin-bottom:5px}
+#tip .t-delta{font-family:var(--font-mono); font-weight:600}
+.pos{color:var(--pos)} .neg{color:var(--neg)} .muted{color:var(--ink-3)}
+.warn{color:var(--warn)}
+.pill{
+  display:inline-block; font-size:10.5px; font-weight:600; padding:2px 8px;
+  border-radius:4px; letter-spacing:.03em;
+}
+.pill.ok{background:var(--pos-soft); color:var(--pos)}
+.pill.no{background:var(--neg-soft); color:var(--neg)}
+.pill.wa{background:var(--warn-soft); color:var(--warn)}
+.pill.ac{background:var(--ink-soft); color:var(--ink-2)}
+
+/* ============================ graficos ============================ */
+.chart{width:100%; height:auto; display:block; overflow:visible}
+.axis{stroke:var(--line); stroke-width:1}
+.grid-l{stroke:var(--line-soft); stroke-width:1; stroke-dasharray:2 4}
+.lbl{font-family:var(--font-mono); font-size:11px; fill:var(--ink-3)}
+.lbl-m{font-family:var(--font-ui); font-size:12px; fill:var(--ink-2); font-weight:500}
+.val-l{font-family:var(--font-mono); font-size:11px; font-weight:600}
+.legend{display:flex; flex-wrap:wrap; gap:16px; margin-top:16px; font-size:12.5px; color:var(--ink-2)}
+.lg{display:inline-flex; align-items:center; gap:7px}
+.sw{width:13px; height:13px; border-radius:3px; flex:none}
+.sw.ln{height:0; border-top:2px dashed var(--accent); border-radius:0}
+
+/* ============================ barras ============================ */
+.bars{display:flex; flex-direction:column; gap:2px}
+.bar-row{display:grid; grid-template-columns:132px 1fr 78px; align-items:center; gap:12px; padding:3px 0}
+.bar-row:hover .bname{color:var(--ink)}
+.bname{font-size:13px; color:var(--ink-2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.btrack{background:var(--line-soft); border-radius:3px; height:16px; overflow:hidden}
+.bfill{height:100%; background:var(--bar); border-radius:3px}
+.bval{font-family:var(--font-mono); font-size:12.5px; text-align:right; font-variant-numeric:tabular-nums}
+
+/* ============================ simulador ============================ */
+.sim{display:grid; grid-template-columns:340px 1fr; gap:26px}
+@media(max-width:900px){.sim{grid-template-columns:1fr}}
+.ctrl{margin-bottom:22px}
+.ctrl-top{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:9px; gap:10px}
+.ctrl label{font-size:12.5px; color:var(--ink-2); font-weight:500}
+.ctrl output{font-family:var(--font-mono); font-size:17px; font-weight:600; color:var(--accent)}
+input[type=range]{width:100%; accent-color:var(--accent); height:22px; cursor:pointer}
+.hint{font-size:11.5px; color:var(--ink-3); margin-top:5px}
+.verdict{border-radius:10px; padding:20px 22px; border:1px solid; margin-bottom:18px}
+.verdict.go{background:var(--pos-soft); border-color:var(--pos)}
+.verdict.no{background:var(--neg-soft); border-color:var(--neg)}
+.verdict.mid{background:var(--warn-soft); border-color:var(--warn)}
+.vtitle{font-family:var(--font-display); font-size:21px; font-weight:600; margin-bottom:6px}
+.verdict.go .vtitle{color:var(--pos)} .verdict.no .vtitle{color:var(--neg)}
+.verdict.mid .vtitle{color:var(--warn)}
+.vtext{font-size:14px; color:var(--ink-2); line-height:1.5}
+.mini{display:grid; grid-template-columns:repeat(auto-fit,minmax(148px,1fr)); gap:12px}
+.mbox{background:var(--paper); border:1px solid var(--line-soft); border-radius:8px; padding:13px 14px}
+.mlabel{font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3); font-weight:600}
+.mval{font-family:var(--font-mono); font-size:19px; font-weight:600; margin-top:5px}
+
+
+/* ============================ glosario ============================ */
+.glos-bloque{margin-top:26px}
+.glos-bloque > h3{
+  font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent); font-weight:800; margin-bottom:12px;
+}
+.glos-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:12px; margin:0}
+.term{
+  background:var(--card); border:1px solid var(--line-soft); border-radius:8px;
+  padding:14px 16px; box-shadow:var(--shadow); scroll-margin-top:70px;
+}
+.term dt{font-weight:700; font-size:14px; margin-bottom:4px}
+.term dt .num{font-size:12.5px; color:var(--ink-3); font-weight:600; margin-left:6px}
+.term dd{margin:0; font-size:13px; color:var(--ink-2); line-height:1.5}
+/* ============================ notas ============================ */
+.notes{display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:14px}
+.note{
+  background:var(--card); border:1px solid var(--line-soft); border-left:3px solid var(--warn);
+  border-radius:8px; padding:16px 18px;
+}
+.note.crit{border-left-color:var(--neg)} .note.ok{border-left-color:var(--pos)}
+.note h3{font-size:15.5px; margin-bottom:7px; font-family:var(--font-ui); font-weight:650}
+.note p{margin:0; font-size:13.5px; color:var(--ink-2); line-height:1.55}
+.note .fig{font-family:var(--font-mono); font-weight:600; color:var(--ink)}
+
+footer{
+  margin-top:70px; padding-top:22px; border-top:1px solid var(--line);
+  font-size:12.5px; color:var(--ink-3); display:flex; justify-content:space-between;
+  gap:16px; flex-wrap:wrap;
+}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Cuenta Pichincha · Ejercicio 2026</div>
+  <h1>Dónde está el punto de equilibrio</h1>
+  <p class="sub">
+    Los <b id="hd-mov" class="num"></b> movimientos del 1 de enero al <b id="hd-hasta"></b>, categorizados uno a uno
+    y separados entre lo que es operación real y lo que sólo es dinero moviéndose entre cuentas propias.
+  </p>
+  <div class="badges">
+    <span class="badge"><span class="dot"></span>Cuadra con el banco al centavo: saldo final <b id="hd-saldo"></b></span>
+    <span class="badge">Sin categorizar: <b>0</b></span>
+    <span class="badge">19 fechas con año <b>2206</b> corregidas a 2026</span>
+  </div>
+</header>
+
+<nav id="secnav" class="secnav" hidden aria-label="Secciones"></nav>
+
+<!-- ================= 1. VEREDICTO ================= -->
+<section id="veredicto" style="margin-top:18px">
+  <div class="tiles" id="tiles"></div>
+</section>
+
+<!-- ================= 2. LINEA DE FLOTACION ================= -->
+<section>
+  <div class="shead"><span class="snum">01</span><h2>La línea de flotación</h2></div>
+  <p class="sdesc">
+    La línea horizontal es el punto de equilibrio: lo que la agencia tiene que facturar cada mes
+    para no perder dinero. Verde es lo que sobra por encima; rojo es lo que faltó.
+  </p>
+  <div class="card">
+    <svg id="c-break" class="chart" viewBox="0 0 900 340" role="img"
+         aria-label="Facturación mensual frente al punto de equilibrio"></svg>
+    <div class="legend">
+      <span class="lg"><span class="sw" style="background:var(--pos)"></span>Por encima del equilibrio</span>
+      <span class="lg"><span class="sw" style="background:var(--neg)"></span>Por debajo del equilibrio</span>
+      <span class="lg"><span class="sw ln"></span>Punto de equilibrio <b class="num" id="lg-be"></b>/mes</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. P&L ================= -->
+<section>
+  <div class="shead"><span class="snum">02</span><h2>Mes a mes</h2></div>
+  <p class="sdesc">
+    Sólo operación. Las transferencias a FlexiAhorro y Fideval están fuera: no son gasto,
+    es dinero de la agencia cambiando de bolsillo.
+    <b>Pasa el ratón por cualquier cifra para ver de qué partidas sale.</b>
+  </p>
+  <div class="card scroll"><table id="t-pl"></table></div>
+</section>
+
+<!-- ================= 4. ESTRUCTURA DE COSTOS ================= -->
+<section>
+  <div class="shead"><span class="snum">03</span><h2>Qué es fijo y qué es variable</h2></div>
+  <p class="sdesc">
+    El costo fijo se paga igual, entre o no entre una cuenta nueva; el variable sólo aparece
+    cuando hay trabajo. En el gráfico, el marco punteado es lo que facturaste ese mes y las
+    barras son el costo: <b>si sobra hueco arriba, el mes ganó; lo que asoma en rojo es lo
+    que no se cubrió.</b>
+  </p>
+  <div class="grid2" style="align-items:start">
+    <div class="card">
+      <svg id="c-cost" class="chart" viewBox="0 0 560 330" role="img"
+           aria-label="Costo fijo y variable frente a la facturación de cada mes"></svg>
+      <div class="legend">
+        <span class="lg"><span class="sw" style="background:var(--bar)"></span>Costo fijo</span>
+        <span class="lg"><span class="sw" style="background:var(--warn)"></span>Costo variable</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="bars" id="b-grupos"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5b. HONORARIOS ================= -->
+<section>
+  <div class="shead"><span class="snum">04</span><h2>Honorarios reales por cuenta</h2></div>
+  <p class="sdesc">
+    La tarifa contratada de cada cuenta y qué parte llega de verdad al banco después
+    de las retenciones. Lo que cobró cada una mes a mes está en la sección siguiente.
+  </p>
+  <div class="tiles" id="tiles-hon" style="margin-bottom:18px"></div>
+  <div class="card scroll"><table id="t-hon"></table></div>
+</section>
+
+<!-- ================= 6. CLIENTES ================= -->
+<section>
+  <div class="shead"><span class="snum">05</span><h2>De dónde viene el dinero</h2>
+    <span class="pill ac" id="p-conc"></span></div>
+  <p class="sdesc">
+    Todo lo que entra en la agencia: las cuentas, las cerradas, los trabajos puntuales
+    y lo que no viene de ningún cliente. Un guion gris significa que no tocaba cobrar;
+    uno marcado, que ese mes se saltó y se regularizó después.
+    <b>Pasa el ratón por cualquier cifra para ver las transacciones con sus fechas.</b> El punto al lado marca las que se salen de la tarifa.
+  </p>
+  <div class="card scroll" style="margin-bottom:18px"><table id="t-cli-mes"></table></div>
+  <div class="grid2" style="align-items:start">
+    <div class="card"><div class="bars" id="b-cli"></div></div>
+    <div class="card scroll"><table id="t-cli"></table></div>
+  </div>
+</section>
+
+<!-- ================= 7. EQUIPO ================= -->
+<section>
+  <div class="shead"><span class="snum">06</span><h2>Lo que cuesta el equipo</h2></div>
+  <p class="sdesc">
+    Qué se pagó a cada persona, mes a mes. La nómina se lleva
+    <b class="num" id="h-nom-pct"></b> de todo lo que factura la agencia: es la palanca más
+    grande que existe sobre el punto de equilibrio. Un guion significa que ese mes no hubo pago.
+    <b>Pasa el ratón por cualquier cifra para ver los pagos con sus fechas.</b> El punto al lado marca los meses que se salen de lo habitual.
+  </p>
+  <div class="card scroll"><table id="t-eq"></table></div>
+</section>
+
+<!-- ================= 7b. TODO LO DEMAS ================= -->
+<section>
+  <div class="shead"><span class="snum">07</span><h2>Todo lo demás</h2></div>
+  <p class="sdesc">
+    Lo que no es nómina ni cobro de clientes: arriendo, servicios, software, producción
+    externa, impuestos, tarjeta y pauta. <b>Pasa el ratón por cualquier cifra para ver
+    los movimientos con sus fechas.</b>
+  </p>
+  <div class="card scroll"><table id="t-gastos"></table></div>
+</section>
+
+<!-- ================= 9. TARJETA ================= -->
+<section id="sec-tarjeta" hidden>
+  <div class="shead"><span class="snum">08</span><h2>La tarjeta, al fin desglosada</h2></div>
+  <p class="sdesc">
+    Hasta ahora esta línea era el único punto ciego del panel: <b>pagos de tarjeta sin
+    saber en qué</b>. Con los siete estados de cuenta, cada consumo queda identificado.
+    <b>Pasa el ratón por cualquier cifra para ver los cargos con sus fechas.</b>
+  </p>
+  <div class="tiles" id="tiles-tarjeta" style="margin-bottom:18px"></div>
+  <div class="card scroll"><table id="t-tarjeta"></table></div>
+</section>
+
+<!-- ================= 8b. CAJA REAL ================= -->
+<section id="sec-caja" hidden>
+  <div class="shead"><span class="snum">09</span><h2>Dónde está el dinero de verdad</h2></div>
+  <p class="sdesc">
+    La cuenta operativa cierra julio casi en cero, pero eso no es la caja de la agencia.
+    Aquí está el contraste con el extracto real de FlexiAhorro, movimiento a movimiento.
+    El saldo de FlexiAhorro está verificado contra el banco; el de Fideval es lo depositado,
+    a falta de su extracto.
+  </p>
+  <div class="tiles" id="tiles-caja" style="margin-bottom:18px"></div>
+  <div class="card scroll"><table id="t-flexi"></table></div>
+</section>
+
+<!-- ================= 8. AVISOS ================= -->
+<section>
+  <div class="shead"><span class="snum">10</span><h2>Lo que hay que arreglar</h2></div>
+  <p class="sdesc">El estado real a hoy: qué está resuelto, qué es accionable y qué sigue pendiente. Ordenado por impacto en dinero.</p>
+  <div class="notes" id="notes"></div>
+</section>
+
+
+<!-- ================= 5. SIMULADOR ================= -->
+<section>
+  <div class="shead"><span class="snum">11</span><h2>¿Conviene entrar esta cuenta?</h2></div>
+  <p class="sdesc">
+    Después de ver todos los datos, la pregunta de fondo. Mueve el fee que pagaría la cuenta
+    nueva y cuánta gente habría que contratar para atenderla. El cálculo usa el margen de
+    contribución real de los últimos tres meses — los términos están en el glosario de abajo.
+  </p>
+  <div class="card sim">
+    <div>
+      <div class="ctrl">
+        <div class="ctrl-top"><label for="s-fee">Fee mensual de la cuenta nueva</label>
+          <output id="o-fee" for="s-fee"></output></div>
+        <input type="range" id="s-fee" min="0" max="3000" step="50" value="800">
+        <div class="hint">Tu fee medio hoy es <b class="num" id="h-fee"></b>/mes</div>
+      </div>
+      <div class="ctrl">
+        <div class="ctrl-top"><label for="s-hire">Personas nuevas a contratar</label>
+          <output id="o-hire" for="s-hire"></output></div>
+        <input type="range" id="s-hire" min="0" max="3" step="1" value="1">
+        <div class="hint">Costo medio de una persona fija: <b class="num" id="h-per"></b>/mes</div>
+      </div>
+      <div class="ctrl">
+        <div class="ctrl-top"><label for="s-cost">Sueldo de cada persona nueva</label>
+          <output id="o-cost" for="s-cost"></output></div>
+        <input type="range" id="s-cost" min="300" max="1200" step="25" value="600">
+        <div class="hint">Rango real del equipo actual: $354 – $850</div>
+      </div>
+    </div>
+    <div>
+      <div class="verdict" id="verdict">
+        <div class="vtitle" id="v-title"></div>
+        <div class="vtext" id="v-text"></div>
+      </div>
+      <div class="mini">
+        <div class="mbox"><div class="mlabel">Margen que deja</div>
+          <div class="mval" id="m-contrib"></div></div>
+        <div class="mbox"><div class="mlabel">Costo fijo que suma</div>
+          <div class="mval" id="m-fijo"></div></div>
+        <div class="mbox"><div class="mlabel">Resultado neto</div>
+          <div class="mval" id="m-neto"></div></div>
+        <div class="mbox"><div class="mlabel">Fee mínimo viable</div>
+          <div class="mval" id="m-min"></div></div>
+      </div>
+      <div class="mini" style="margin-top:12px">
+        <div class="mbox"><div class="mlabel">Nuevo equilibrio</div>
+          <div class="mval" id="m-be"></div></div>
+        <div class="mbox"><div class="mlabel">Nueva holgura</div>
+          <div class="mval" id="m-hol"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 12. GLOSARIO ================= -->
+<section id="sec-glosario">
+  <div class="shead"><span class="snum">12</span><h2>Glosario</h2></div>
+  <p class="sdesc">
+    Qué significa cada concepto del panel, para consultarlo cuando haga falta.
+    Recuerda que además <b>toda cifra se puede pulsar</b> para ver de qué movimientos sale.
+  </p>
+
+  <div class="glos-bloque"><h3>El resultado</h3><dl class="glos-grid">
+    <div class="term"><dt>Punto de equilibrio</dt>
+      <dd>La facturación mínima del mes para no perder dinero. Se calcula dividiendo el
+      costo fijo entre el margen de contribución. Si facturas menos, pierdes;
+      todo lo que pase de ahí deja beneficio.</dd></div>
+    <div class="term"><dt>Margen de contribución</dt>
+      <dd>De cada dólar facturado, el porcentaje que queda después de pagar los costos
+      variables. Es lo que va quedando para cubrir lo fijo. Aquí ronda el 80%:
+      cada $100 nuevos dejan ~$80.</dd></div>
+    <div class="term"><dt>Holgura</dt>
+      <dd>Lo que la facturación supera al punto de equilibrio. Es tu colchón del mes:
+      cuanto más estrecha, más daño hace un cliente que se retrasa.</dd></div>
+    <div class="term"><dt>Run-rate</dt>
+      <dd>El promedio de los últimos tres meses cerrados. Es la foto de cómo va el
+      negocio HOY, no el promedio del año, que mezcla meses viejos.</dd></div>
+    <div class="term"><dt>Resultado</dt>
+      <dd>Facturación menos todos los costos del mes, incluida la pauta que quedó
+      sin recuperar. Positivo = el mes dejó dinero.</dd></div>
+  </dl></div>
+
+  <div class="glos-bloque"><h3>Lo que entra</h3><dl class="glos-grid">
+    <div class="term"><dt>Honorario <span class="num">(fee)</span></dt>
+      <dd>La tarifa mensual contratada con cada cuenta. Puede ser "cerrada" (sin IVA)
+      o "+ IVA" (se factura un 15% más). Es la única facturación recurrente real.</dd></div>
+    <div class="term"><dt>Proyecto puntual</dt>
+      <dd>Trabajo único fuera del fee: una web, un branding, un evento, una producción
+      extra. Entra una vez y no se repite.</dd></div>
+    <div class="term"><dt>Pauta</dt>
+      <dd>El dinero de los anuncios (Meta, Google, TikTok). No es facturación de la
+      agencia: el cliente lo pone, cruza la cuenta y va a la plataforma. Por eso
+      se resta de los ingresos en el P&amp;L.</dd></div>
+    <div class="term"><dt>Pauta adelantada sin cobrar</dt>
+      <dd>Francisco paga la pauta con su tarjeta y la agencia se la reembolsa; los
+      clientes la van devolviendo en sus giros. Esta línea es la diferencia: lo
+      adelantado que aún no volvió.</dd></div>
+    <div class="term"><dt>Retención</dt>
+      <dd>Impuestos que el cliente descuenta antes de pagar: 3% de renta y el 70% o
+      100% del IVA, según el cliente. No es dinero perdido: es crédito tributario
+      que se recupera al declarar.</dd></div>
+    <div class="term"><dt>Subarriendo</dt>
+      <dd>El alquiler del puesto de trabajo dentro de la oficina: Chiki paga $115 y
+      Friends Guides $70. Cubre un tercio del arriendo que paga la agencia.</dd></div>
+    <div class="term"><dt>Devengado y cobrado</dt>
+      <dd>Un mes se "devenga" cuando se trabaja, aunque se cobre después. El estado
+      "al día / debe X meses" compara los meses de servicio ya trabajados contra
+      los que el cliente ha pagado.</dd></div>
+  </dl></div>
+
+  <div class="glos-bloque"><h3>Lo que sale</h3><dl class="glos-grid">
+    <div class="term"><dt>Costo fijo</dt>
+      <dd>Se paga igual haya o no trabajo: nómina, arriendo, software, impuestos.
+      Es la parte que manda en el punto de equilibrio — cada dólar fijo nuevo hay
+      que facturarlo todos los meses.</dd></div>
+    <div class="term"><dt>Costo variable</dt>
+      <dd>Sólo aparece cuando hay trabajo: freelance, taxis a producciones, equipos,
+      la tarjeta. Si un mes no hay rodajes, no existe.</dd></div>
+    <div class="term"><dt>Nómina fija · socios · pasantías</dt>
+      <dd>Plantilla estable con sueldo mensual; el sueldo de Francisco y Ana Paula
+      ($1.500 cada uno); y la plaza de pasantía, que rota de persona (Karla → Nicole)
+      pero se mantiene como puesto.</dd></div>
+    <div class="term"><dt>Sueldo con IVA</dt>
+      <dd>Quien emite factura cobra su sueldo +15% de IVA (600 se vuelve 690). No es
+      un aumento: es el mismo sueldo con el impuesto encima.</dd></div>
+    <div class="term"><dt>Freelance y producción</dt>
+      <dd>Externos que cobran por proyecto: Nicolás (foto/video), Juan Pablo
+      (producción), modelos, actores, locaciones, ambientación.</dd></div>
+    <div class="term"><dt>Estructura</dt>
+      <dd>El local y sus servicios: arriendo, condominio, alícuotas, agua, luz,
+      internet y limpieza.</dd></div>
+    <div class="term"><dt>Movilización</dt>
+      <dd>Los taxis para que el equipo llegue a las producciones. Muchos movimientos,
+      poco dinero (~$28/mes).</dd></div>
+  </dl></div>
+
+  <div class="glos-bloque"><h3>Las cuentas y la caja</h3><dl class="glos-grid">
+    <div class="term"><dt>Cuenta operativa</dt>
+      <dd>La Pichincha donde vive este flujo. Opera casi en cero: se repone desde
+      FlexiAhorro cada vez que toca pagar algo.</dd></div>
+    <div class="term"><dt>FlexiAhorro</dt>
+      <dd>La cuenta puente (a nombre de Ana Paula): recibe los excedentes y devuelve
+      cuando hay pagos. No es ahorro de verdad — es tesorería — y genera un interés
+      diario pequeño.</dd></div>
+    <div class="term"><dt>Fideval</dt>
+      <dd>El ahorro de largo plazo: $10.000 depositados el 26 de febrero, sin
+      movimientos desde entonces.</dd></div>
+    <div class="term"><dt>Movimiento entre cuentas propias</dt>
+      <dd>Dinero de la agencia cambiando de bolsillo (operativa ↔ FlexiAhorro ↔
+      Fideval). No es ingreso ni gasto: por eso queda fuera del P&amp;L.</dd></div>
+    <div class="term"><dt>Saldo revolvente</dt>
+      <dd>La parte de la tarjeta que no se liquida al mes y pasa al siguiente. Es lo
+      que genera intereses ($14,81 en el año).</dd></div>
+    <div class="term"><dt>Utilidades</dt>
+      <dd>Reparto de beneficios a los socios ($1.000 a cada uno en febrero). No es
+      sueldo ni gasto operativo: es resultado que se retira.</dd></div>
+    <div class="term"><dt>No operativo</dt>
+      <dd>Todo lo que no es operación del negocio: transferencias entre cuentas
+      propias, utilidades y el saldo inicial del año.</dd></div>
+  </dl></div>
+</section>
+
+<footer>
+  <span>Fuente: pestaña <b>2026 CTA PICHINCHA</b> · 1 ene – 31 jul 2026</span>
+  <span id="f-check"></span>
+</footer>
+
+</div>
+
+<script>
+const D = /*__DATOS__*/null;
+const M = D.meses, R = D.run_rate, P = D.promedios, X = D.extra;
+
+const fmt  = n => "$" + Math.round(n).toLocaleString("es-EC");
+const fmt2 = n => "$" + n.toLocaleString("es-EC",{minimumFractionDigits:2,maximumFractionDigits:2});
+const pct  = n => n.toLocaleString("es-EC",{minimumFractionDigits:1,maximumFractionDigits:1}) + "%";
+const MES  = {ene:"Ene",feb:"Feb",mar:"Mar",abr:"Abr",may:"May",jun:"Jun",jul:"Jul"};
+const el   = id => document.getElementById(id);
+const SVGNS = "http://www.w3.org/2000/svg";
+function mk(t,a={},p){const e=document.createElementNS(SVGNS,t);
+  for(const k in a) e.setAttribute(k,a[k]); if(p) p.appendChild(e); return e;}
+
+const MESL = {ene:"Enero",feb:"Febrero",mar:"Marzo",abr:"Abril",
+              may:"Mayo",jun:"Junio",jul:"Julio"};
+
+/* Tooltip compartido por las tablas mensuales (nómina y clientes).
+   `fichas` mapea el id de cada celda a {mes, total, movs[], razones[]};
+   `armar` devuelve {titulo, extra} con el encabezado y el texto de cierre. */
+/* Qué hay dentro de un grupo en un mes concreto: la lista de clientes,
+   personas o conceptos que lo forman. Sirve para abrir un segundo nivel
+   dentro del propio tooltip, sin sacar al lector de la tabla. */
+function desglosarGrupo(grupo, mes, signo){
+  const cli = (D.tarifario && D.tarifario.clientes) || [];
+  const cl = campo => cli
+    .filter(c => Math.abs(c.por_mes[mes][campo]) > 0.005)
+    .map(c => ({desc: c.cliente, importe: c.por_mes[mes][campo]}));
+
+  let filas;
+  // las dos mitades de la pauta: lo que se adelanta y lo que vuelve
+  if (grupo === "__pauta_pagada"){
+    const g = (D.gastos || []).find(x => x.grupo === "Pauta");
+    const d = g && g.detalle[mes];
+    filas = d ? d.movs.map(m => ({desc: m.desc, importe: m.importe,
+                                  fecha: m.fecha})) : [];
+  }
+  else if (grupo === "__pauta_cobrada")         filas = cl("pauta");
+  else if (grupo === "Ingresos - Fee mensual")  filas = cl("honorario");
+  else if (grupo === "Ingresos - Produccion")   filas = cl("puntual");
+  else if (grupo === "Ingresos - Pauta")        filas = cl("pauta");
+  else if (grupo === "Otros ingresos")
+    filas = (D.otros_ingresos || [])
+      .filter(o => Math.abs(o.por_mes[mes]) > 0.005)
+      .map(o => ({desc: o.concepto, importe: o.por_mes[mes]}));
+  else if (grupo.startsWith("Nomina") || grupo === "Pasantias")
+    filas = D.equipo
+      .filter(e => e.grupo === grupo && e.por_mes[mes] > 0.005)
+      .map(e => ({desc: e.persona, importe: e.por_mes[mes]}));
+  else
+    filas = (D.gastos || [])
+      .filter(g => g.grupo === grupo && Math.abs(g.por_mes[mes]) > 0.005)
+      .map(g => ({desc: g.categoria, importe: g.por_mes[mes]}));
+
+  return filas
+    .map(f => ({...f, importe: f.importe * (signo || 1)}))
+    .sort((a,b) => Math.abs(b.importe) - Math.abs(a.importe));
+}
+
+/* Salta a la tabla donde vive el detalle de una partida y la resalta. */
+function irADetalle(tablaId, grupo, mes){
+  const t = el(tablaId);
+  if (!t) return;
+  const filas = Array.from(t.querySelectorAll("tbody tr"))
+                     .filter(r => r.dataset.grupo === grupo);
+  if (!filas.length) { t.scrollIntoView({behavior:"smooth", block:"center"}); return; }
+  filas[0].scrollIntoView({behavior:"smooth", block:"center"});
+  filas.forEach(r => {
+    r.classList.remove("destello");
+    void r.offsetWidth;                 // reinicia la animación si ya la tuvo
+    r.classList.add("destello");
+    setTimeout(() => r.classList.remove("destello"), 2400);
+  });
+}
+
+let _tip = null, _cierre = null, _base = null, _pinta = null;
+function conectarTooltip(tabla, fichas, armar){
+  if (!_tip){
+    _tip = document.createElement("div");
+    _tip.id = "tip"; _tip.setAttribute("role","tooltip");
+    document.body.appendChild(_tip);
+    // entrar en el tooltip no lo cierra: si no, no se podría pulsar dentro
+    _tip.addEventListener("mouseenter", () => clearTimeout(_cierre));
+    _tip.addEventListener("mouseleave", () => {
+      if (!_tip.classList.contains("fijo")) _tip.classList.remove("on"); });
+    const soltar = () => _tip.classList.remove("on", "fijo");
+    _tip.querySelector?.(".t-cerrar")?.addEventListener("click", soltar);
+    document.addEventListener("click", ev => {
+      if (_tip.classList.contains("fijo") && !_tip.contains(ev.target)) soltar();
+    });
+    _tip.addEventListener("click", ev => {
+      // al repintar, el nodo pulsado sale del DOM y el cierre por clic-fuera
+      // lo tomaría por un clic externo: se corta aquí la propagación
+      ev.stopPropagation();
+      const volver = ev.target.closest(".t-volver");
+      if (volver && _base){ _pinta(_base); return; }
+      const ver = ev.target.closest(".t-ir-tabla");
+      if (ver){
+        _tip.classList.remove("on", "fijo");
+        irADetalle(ver.dataset.tabla, ver.dataset.grupo, ver.dataset.mes);
+        return;
+      }
+      const r = ev.target.closest(".t-row.ir");
+      if (!r) return;
+      // por defecto se abre aquí mismo; sólo se salta si no hay nada que abrir
+      if (r.dataset.exp === "1"){
+        const filas = desglosarGrupo(r.dataset.grupo, r.dataset.mes,
+                                     +r.dataset.signo || 1);
+        if (filas.length){
+          _tip.classList.add("fijo");
+          _pinta({titulo: r.dataset.titulo, mes: r.dataset.mes,
+                  total: +r.dataset.importe, movs: filas, razones: [],
+                  esSub: true, tabla: r.dataset.tabla, grupo: r.dataset.grupo});
+          return;
+        }
+      }
+      _tip.classList.remove("on", "fijo");
+      irADetalle(r.dataset.tabla, r.dataset.grupo, r.dataset.mes);
+    });
+    addEventListener("scroll", ev => {
+      if (!_tip.contains(ev.target)) _tip.classList.remove("on"); }, true);
+    addEventListener("keydown", ev => {
+      if (ev.key === "Escape") _tip.classList.remove("on", "fijo"); });
+  }
+
+  function pinta(f){
+    if (!f.esSub) _base = f;
+    _pinta = pinta;
+    const {titulo, extra} = armar(f);
+    // en el segundo nivel el detalle ES el contenido: se muestra entero
+    const TOPE = f.esSub ? 24 : 8;
+    const vista = f.movs.slice(0, TOPE);
+    const filas = vista.map(mv => `
+      <div class="t-row${mv.ir ? " ir" : ""}"${mv.ir
+          ? ` data-tabla="${mv.ir.tabla}" data-grupo="${mv.grupo || mv.ir.grupo}"
+              data-mes="${f.mes}" data-exp="${mv.exp ? 1 : 0}"
+              data-titulo="${mv.desc}" data-importe="${mv.importe}"
+              data-signo="${mv.importe < 0 ? -1 : 1}"
+              title="Ver qué hay dentro de ${mv.desc.toLowerCase()}"` : ``}>
+        <span>${mv.fecha ? `<b class="t-date">${mv.fecha.slice(0,5)}</b>` : ""}${mv.desc}${
+          mv.ir ? `<span class="chev">›</span>` : ""}${
+          mv.nota ? `<em>${mv.nota}</em>` : ""}</span>
+        <span>${fmt2(mv.importe)}</span></div>`).join("") +
+      (f.movs.length > TOPE
+        ? `<div class="t-row muted"><span>y ${f.movs.length - TOPE} movimientos más</span>
+             <span>${fmt2(f.movs.slice(TOPE).reduce((a,m)=>a+m.importe,0))}</span></div>`
+        : "");
+    // con motivo se encabeza "Por qué"; sin él, el pie sólo confirma la
+    // referencia (tarifa o sueldo habitual) para que la celda siga informando
+    const porque = f.razones.length
+      ? `<div class="t-why"><b>Por qué</b>${
+          f.razones.map(r => r.charAt(0).toUpperCase()+r.slice(1)).join(". ")
+        }.${extra || ""}</div>`
+      : extra
+        ? `<div class="t-why"><span class="muted">${extra.trim()}</span></div>`
+        : "";
+    const navegable = f.movs.some(m => m.ir);
+    const cabecera = f.esSub
+      ? `<div class="t-volver">‹ volver</div>
+         <div class="t-h">${titulo} · ${MESL[f.mes]}</div>`
+      : `<div class="t-h">${titulo} · ${MESL[f.mes]}</div>`;
+    const pie = f.esSub
+      ? `<div class="t-pie"><span class="t-ir-tabla" data-tabla="${f.tabla}"
+           data-grupo="${f.grupo}" data-mes="${f.mes}">Ver en la tabla ›</span></div>`
+      : navegable
+        ? `<div class="t-pie">Pulsa la cifra para dejar esto fijo · luego una partida para abrirla</div>`
+        : "";
+    _tip.innerHTML = cabecera +
+      `<div class="t-amt">${fmt2(f.total)}</div>${filas}${porque}` + pie;
+  }
+
+  function coloca(celda){
+    const r = celda.getBoundingClientRect();
+    _tip.style.visibility = "hidden"; _tip.classList.add("on");
+    const tw = _tip.offsetWidth, th = _tip.offsetHeight;
+    let x = Math.max(12, Math.min(r.left + r.width/2 - tw/2, innerWidth - tw - 12));
+    // encima de la celda; si no cabe arriba, debajo
+    let y = r.top - th - 10;
+    if (y < 12) y = r.bottom + 10;
+    _tip.style.left = x + "px"; _tip.style.top = y + "px";
+    _tip.style.removeProperty("visibility");
+  }
+
+  const abrir = ev => {
+    if (_tip.classList.contains("fijo")) return;   // hay uno clavado
+    const c = ev.target.closest("td.why");
+    if (c && fichas[c.dataset.f]) {
+      clearTimeout(_cierre);
+      pinta(fichas[c.dataset.f]); coloca(c);
+    }
+  };
+  // se cierra con retardo: hay que poder pasar de la celda al tooltip
+  const cerrar = () => {
+    if (_tip.classList.contains("fijo")) return;
+    _cierre = setTimeout(() => _tip.classList.remove("on"), 220);
+  };
+  tabla.addEventListener("mouseover", abrir);
+  tabla.addEventListener("mouseout", ev => { if (ev.target.closest("td.why")) cerrar(); });
+  tabla.addEventListener("focusin", abrir);
+  tabla.addEventListener("focusout", cerrar);
+
+  // pulsar la celda lo deja fijo, para poder leerlo y pinchar dentro sin prisa
+  tabla.addEventListener("click", ev => {
+    const c = ev.target.closest("td.why");
+    if (!c || !fichas[c.dataset.f]) return;
+    clearTimeout(_cierre);
+    _tip.classList.remove("fijo");
+    pinta(fichas[c.dataset.f]); coloca(c);
+    _tip.classList.add("fijo");
+    ev.stopPropagation();
+  });
+}
+
+/* ---------------- cabecera ---------------- */
+el("hd-mov").textContent   = X.n_movimientos;
+el("hd-saldo").textContent = fmt2(X.saldo_final);
+el("hd-hasta").textContent = X.ultima_fecha;
+el("f-check").textContent  = "Ingresos y egresos reconciliados contra el saldo bancario · diferencia $0,00";
+
+/* ---------------- tiles ---------------- */
+const holguraPct = R.holgura / R.ingresos * 100;
+const margenNeto = D.totales.resultado / D.totales.ingresos * 100;
+const tiles = [
+  {l:"Punto de equilibrio", v:fmt(R.breakeven), c:"", k:"",
+   f:"Facturación mínima mensual para no perder dinero"},
+  {l:"Facturación actual", v:fmt(R.ingresos), c:"", k:"",
+   f:"Promedio de mayo, junio y julio"},
+  {l:"Holgura", v:fmt(R.holgura), c:holguraPct<15?"warn":"pos", k:holguraPct<15?"is-warn":"is-pos",
+   f:"Sólo " + pct(holguraPct) + " por encima del equilibrio"},
+  {l:"Margen neto del año", v:pct(margenNeto), c:margenNeto<8?"warn":"pos", k:margenNeto<8?"is-warn":"is-pos",
+   f:fmt(D.totales.resultado) + " ganados sobre " + fmt(D.totales.ingresos) + " facturados"},
+];
+el("tiles").innerHTML = tiles.map(t=>`
+  <div class="tile ${t.k}">
+    <div class="tlabel">${t.l}</div>
+    <div class="tval ${t.c}">${t.v}</div>
+    <div class="tfoot">${t.f}</div>
+  </div>`).join("");
+
+/* ================= GRAFICO 1: linea de flotacion ================= */
+(function(){
+  const s = el("c-break"), W=900, H=340, ml=68, mr=22, mt=26, mb=42;
+  const iw = W-ml-mr, ih = H-mt-mb;
+  const be = R.breakeven;
+  const vals = D.pl.map(p=>p.ingresos);
+  const max = Math.max(...vals, be) * 1.14;
+  const y = v => mt + ih - (v/max)*ih;
+  const x = i => ml + (iw/(M.length-1))*i;
+
+  // rejilla
+  for(let k=0;k<=4;k++){
+    const v = max*k/4;
+    mk("line",{x1:ml,x2:W-mr,y1:y(v),y2:y(v),class:"grid-l"},s);
+    mk("text",{x:ml-10,y:y(v)+4,"text-anchor":"end",class:"lbl"},s).textContent = fmt(v);
+  }
+
+  // area entre ingresos y el equilibrio, recortada arriba/abajo
+  const pts = D.pl.map((p,i)=>[x(i),y(p.ingresos)]);
+  const area = "M"+pts.map(p=>p.join(",")).join("L")+
+               "L"+x(M.length-1)+","+y(be)+"L"+ml+","+y(be)+"Z";
+  const defs = mk("defs",{},s);
+  const cA = mk("clipPath",{id:"cl-up"},defs);
+  mk("rect",{x:ml,y:mt,width:iw,height:Math.max(0,y(be)-mt)},cA);
+  const cB = mk("clipPath",{id:"cl-dn"},defs);
+  mk("rect",{x:ml,y:y(be),width:iw,height:Math.max(0,mt+ih-y(be))},cB);
+  mk("path",{d:area,fill:"var(--pos)","fill-opacity":.26,"clip-path":"url(#cl-up)"},s);
+  mk("path",{d:area,fill:"var(--neg)","fill-opacity":.3,"clip-path":"url(#cl-dn)"},s);
+
+  // linea de equilibrio
+  mk("line",{x1:ml,x2:W-mr,y1:y(be),y2:y(be),stroke:"var(--accent)",
+             "stroke-width":2,"stroke-dasharray":"7 5"},s);
+
+  // curva de ingresos
+  mk("path",{d:"M"+pts.map(p=>p.join(",")).join("L"),fill:"none",
+             stroke:"var(--ink)","stroke-width":2.2,"stroke-linejoin":"round"},s);
+
+  // puntos + etiquetas
+  D.pl.forEach((p,i)=>{
+    const arriba = p.ingresos >= be;
+    mk("circle",{cx:x(i),cy:y(p.ingresos),r:4.5,fill:"var(--card)",
+                 stroke:arriba?"var(--pos)":"var(--neg)","stroke-width":2.4},s);
+    const t = mk("text",{x:x(i),y:y(p.ingresos)-14,"text-anchor":"middle",
+                 class:"val-l",fill:arriba?"var(--pos)":"var(--neg)"},s);
+    t.textContent = fmt(p.ingresos);
+    mk("text",{x:x(i),y:H-14,"text-anchor":"middle",class:"lbl-m"},s).textContent = MES[p.mes];
+  });
+
+  // ejes
+  mk("line",{x1:ml,x2:W-mr,y1:mt+ih,y2:mt+ih,class:"axis"},s);
+  el("lg-be").textContent = fmt(be);
+})();
+
+/* ================= TABLA P&L ================= */
+(function(){
+  const filas = [
+    ["Facturación de la agencia","ingresos","",""],
+    ["Costo fijo","costo_fijo","neg","-"],
+    ["Costo variable","costo_variable","neg","-"],
+    ["Pauta adelantada sin cobrar","pauta_neta","sign2",""],
+    ["Resultado","resultado","sign","total"],
+  ];
+
+  const FICHAS = {}; let pid = 0;
+  const NOM = {"Nomina fija":"Nómina fija","Nomina socios":"Nómina socios",
+    "Nomina variable":"Nómina variable","Pasantias":"Pasantías",
+    "Freelance y produccion":"Freelance y producción","Movilizacion":"Movilización",
+    "Impuestos y legal":"Impuestos","Tarjeta de credito":"Tarjeta de crédito",
+    "Software y herramientas":"Software","Oficina y bienestar":"Oficina",
+    "Ingresos - Fee mensual":"Honorarios de clientes",
+    "Ingresos - Produccion":"Proyectos puntuales",
+    "Ingresos - Pauta":"Pauta devuelta por clientes",
+    "Ingresos - Sin identificar":"Cobros sin identificar",
+    "Otros ingresos":"Subarriendo e intereses"};
+
+  // qué contiene cada partida. Un nombre como "Estructura" no dice nada por
+  // sí solo: la explicación va debajo, en el propio desglose.
+  const GLOSARIO = {
+    "Estructura":"arriendo, condominio, alícuotas, agua, luz, internet y limpieza",
+    "Nomina fija":"sueldos de la plantilla estable",
+    "Nomina socios":"sueldo de Francisco y Ana Paula",
+    "Nomina variable":"horas extras y pagos sueltos",
+    "Pasantias":"la plaza de pasantía",
+    "Software y herramientas":"suscripciones del sistema contable y facturación",
+    "Impuestos y legal":"impuestos pagados al SRI",
+    "Freelance y produccion":"Nicolás, Juan Pablo, modelos, actores y locaciones",
+    "Movilizacion":"taxis para llegar a las producciones",
+    "Oficina y bienestar":"botellón, cafés, refrigerios del equipo",
+    "Equipos":"cámaras, computadores y su mantenimiento",
+    "Tarjeta de credito":"software, pauta de TikTok y menores · ver sección 08",
+    "Marketing propio":"uniformes y branding de la agencia",
+    "Devoluciones":"dinero devuelto a un cliente",
+    "Ingresos - Fee mensual":"honorarios de las cuentas",
+    "Ingresos - Produccion":"trabajos puntuales fuera del fee",
+    "Ingresos - Pauta":"pauta que devuelven los clientes",
+    "Otros ingresos":"subarriendo de la oficina e intereses",
+    "Ingresos - Sin identificar":"cobros que aún no sabemos de qué son",
+  };
+
+  // dónde vive el detalle de cada grupo: nómina en la 07, cobros en la 06,
+  // y todo lo demás en la 08
+  const DESTINO = g =>
+    g.startsWith("Nomina") || g === "Pasantias" ? {tabla:"t-eq", grupo:g}
+    : g.startsWith("Ingresos") || g === "Otros ingresos" ? {tabla:"t-cli-mes", grupo:"clientes"}
+    : {tabla:"t-gastos", grupo:g};
+
+  // partidas de una familia de grupos en un mes concreto, de mayor a menor
+  const partidas = (grupos, mes, signo) => grupos
+    .map(g => ({desc: NOM[g] || g, importe: (D.grupos[g]||{})[mes] * signo || 0,
+                nota: GLOSARIO[g], grupo: g, exp: true, ir: DESTINO(g)}))
+    .filter(x => Math.abs(x.importe) > 0.005)
+    .sort((a,b) => Math.abs(b.importe) - Math.abs(a.importe));
+
+  const F = D.familias;
+  function ficha(k, p, mi){
+    const mes = p.mes, base = {mes, cliente: null};
+    if (k === "ingresos"){
+      const movs = partidas(F.ingreso, mes, 1)
+        .concat(p.pauta_cobrada ? [{desc:"menos toda la pauta: no es facturación tuya",
+                                     importe:-p.pauta_cobrada}] : []);   // se resta toda la pauta, también la que viene dentro del fee
+      return {...base, titulo:"Facturación", total:p.ingresos, movs, razones:[]};
+    }
+    if (k === "costo_fijo")
+      return {...base, titulo:"Costo fijo", total:p.costo_fijo,
+              movs: partidas(F.fijo, mes, -1), razones:[]};
+    if (k === "costo_variable")
+      return {...base, titulo:"Costo variable", total:p.costo_variable,
+              movs: partidas(F.variable.filter(g=>g!=="Pauta"), mes, -1), razones:[]};
+    if (k === "pauta_neta")
+      return {...base, titulo:"Pauta adelantada", total:p.pauta_neta, razones:[],
+              // una mitad puede ser cero en un mes dado: mostrarla sólo añade
+              // ruido y una línea que al abrirse no tiene nada dentro
+              movs:[{desc:"Reembolsado a Francisco por la pauta que adelanta",
+                     nota:"él la paga con su tarjeta y la agencia se la devuelve",
+                     importe:p.pauta_pagada, grupo:"__pauta_pagada", exp:true,
+                     ir:{tabla:"t-gastos", grupo:"Pauta"}},
+                    {desc:"Devuelto por los clientes dentro de sus giros",
+                     nota:"parte de lo que pagan que no es honorario, sino su pauta",
+                     importe:-p.pauta_cobrada, grupo:"__pauta_cobrada", exp:true,
+                     ir:{tabla:"t-cli-mes", grupo:"clientes"}}]
+                    .filter(x => Math.abs(x.importe) > 0.005)};
+    if (k === "resultado")
+      return {...base, titulo:"Resultado", total:p.resultado, razones:[],
+              movs:[{desc:"Facturación", importe:p.ingresos},
+                    {desc:"Costo fijo", importe:-p.costo_fijo},
+                    {desc:"Costo variable", importe:-p.costo_variable},
+                    {desc:"Pauta sin cobrar", importe:-p.pauta_neta}]};
+    return null;
+  }
+  let h = "<thead><tr><th>Concepto</th>" +
+    M.map(m=>`<th>${MES[m]}</th>`).join("") + "<th>Total</th></tr></thead><tbody>";
+  filas.forEach(([lab,k,cls,tag])=>{
+    const tot = D.pl.reduce((a,p)=>a+p[k],0);
+    h += `<tr class="${tag==='total'?'total':''}"><td>${lab}</td>` +
+      D.pl.map((p,mi)=>{
+        const v = p[k];
+        // sign  -> verde si suma, rojo si resta (resultado)
+        // sign2 -> es un costo: rojo cuando es positivo, verde cuando el
+        //          cliente devolvió más de lo adelantado ese mes
+        const c = cls==="sign"  ? (v>=0?"pos":"neg")
+                : cls==="sign2" ? (v>0?"neg":"pos") : cls;
+        const pre = tag==="-" ? "−"
+                  : (cls==="sign"  && v<0) ? "−"
+                  : (cls==="sign2") ? (v>0?"−":"+") : "";
+        // cada celda abre las partidas que la componen
+        const f = ficha(k, p, mi);
+        if (!f) return `<td class="n ${c}">${pre}${fmt(Math.abs(v))}</td>`;
+        const id = "p" + (pid++);
+        FICHAS[id] = f;
+        return `<td class="n why plano ${c}" data-f="${id}" tabindex="0"
+                 aria-label="${lab}, ${MES[p.mes]}. Ver desglose"
+                 >${pre}${fmt(Math.abs(v))}</td>`;
+      }).join("") +
+      `<td class="n ${cls==='sign'?(tot>=0?'pos':'neg'):cls==='sign2'?(tot>0?'neg':'pos'):cls}">` +
+      `${tag==='-' ? '−' : (cls==='sign' && tot<0) ? '−'
+        : (cls==='sign2') ? (tot>0?'−':'+') : ''}${fmt(Math.abs(tot))}</td></tr>`;
+  });
+  h += `<tr><td class="muted">Margen de contribución</td>` +
+    D.pl.map(p=>`<td class="n muted">${pct(p.margen_pct)}</td>`).join("") +
+    `<td class="n muted">${pct((1-D.totales.costo_variable/D.totales.ingresos)*100)}</td></tr>`;
+
+  h += "</tbody>";
+  el("t-pl").innerHTML = h;
+
+  conectarTooltip(el("t-pl"), FICHAS, f => ({titulo: f.titulo, extra: ""}));
+})();
+
+/* ============ GRAFICO 2: ¿cabe el costo dentro de lo facturado? ============
+   El diseño anterior obligaba a comparar a ojo una línea suelta contra una
+   barra. Aquí el costo se dibuja DENTRO de la facturación: si sobra hueco
+   arriba, el mes ganó; si el costo desborda, lo que asoma es la pérdida. */
+(function(){
+  const s = el("c-cost"), W=560, H=330, ml=56, mr=14, mt=40, mb=46;
+  const iw = W-ml-mr, ih = H-mt-mb;
+  const max = Math.max(...D.pl.map(p=>Math.max(p.costo_total, p.ingresos)))*1.1;
+  const y = v => mt + ih - (v/max)*ih;
+  const step = iw/M.length, bw = step*0.66;
+  const anim = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  for (let k=0;k<=4;k++){
+    const v = max*k/4;
+    mk("line",{x1:ml,x2:W-mr,y1:y(v),y2:y(v),class:"grid-l"},s);
+    mk("text",{x:ml-8,y:y(v)+4,"text-anchor":"end",class:"lbl"},s).textContent = fmt(v);
+  }
+
+  // una barra crece desde su base en vez de aparecer de golpe
+  const barra = (x, arriba, abajo, attrs, retraso) => {
+    const alto = Math.max(0, abajo - arriba);
+    const r = mk("rect",{x, y:arriba, width:bw, height:alto, ...attrs}, s);
+    if (anim){
+      r.setAttribute("y", abajo); r.setAttribute("height", 0);
+      mk("animate",{attributeName:"y", from:abajo, to:arriba, dur:"0.5s",
+        begin:`${retraso}s`, fill:"freeze", calcMode:"spline",
+        keySplines:".22 1 .36 1", keyTimes:"0;1"}, r);
+      mk("animate",{attributeName:"height", from:0, to:alto, dur:"0.5s",
+        begin:`${retraso}s`, fill:"freeze", calcMode:"spline",
+        keySplines:".22 1 .36 1", keyTimes:"0;1"}, r);
+    }
+    return r;
+  };
+
+  D.pl.forEach((p,i) => {
+    const x0 = ml + step*i + (step-bw)/2;
+    const base = mt + ih, d = i*0.06;
+    const gana = p.resultado >= 0;
+    const yIng = y(p.ingresos);
+    const costeVisible = Math.min(p.costo_total, p.ingresos);
+
+    // marco de la facturación del mes: el "envase" que hay que llenar
+    mk("rect",{x:x0, y:yIng, width:bw, height:base-yIng, rx:4,
+      fill:"var(--ink)","fill-opacity":.05,
+      stroke:"var(--ink-3)","stroke-opacity":.45,"stroke-width":1,
+      "stroke-dasharray":"3 3"}, s);
+
+    // costo fijo y variable, recortados a lo que cabe dentro
+    const hFijo = Math.min(p.costo_fijo, p.ingresos);
+    barra(x0, y(hFijo), base, {rx:4, fill:"var(--bar)"}, d);
+    if (costeVisible > hFijo)
+      barra(x0, y(costeVisible), y(hFijo), {fill:"var(--warn)"}, d+.05);
+
+    // lo que desborda por arriba es pérdida
+    if (p.costo_total > p.ingresos)
+      barra(x0, y(p.costo_total), yIng, {rx:4, fill:"var(--neg)"}, d+.1);
+
+    // resultado del mes, encima de todo
+    const yTop = y(Math.max(p.ingresos, p.costo_total));
+    const t = mk("text",{x:x0+bw/2, y:yTop-11,"text-anchor":"middle",
+      class:"val-l", fill: gana ? "var(--pos)" : "var(--neg)"}, s);
+    t.textContent = (gana ? "+" : "−") + fmt(Math.abs(p.resultado));
+    if (anim) mk("animate",{attributeName:"opacity", from:0, to:1,
+      dur:"0.4s", begin:`${d+.35}s`, fill:"freeze"}, t);
+
+    mk("text",{x:x0+bw/2, y:H-16,"text-anchor":"middle",class:"lbl-m"},s)
+      .textContent = MES[p.mes];
+  });
+
+  mk("line",{x1:ml,x2:W-mr,y1:mt+ih,y2:mt+ih,class:"axis"},s);
+
+  const lg = s.parentElement.querySelector(".legend");
+  lg.insertAdjacentHTML("beforeend",
+    `<span class="lg"><span class="sw" style="background:var(--neg)"></span>Lo que no cubrió</span>
+     <span class="lg"><span class="sw" style="border:1px dashed var(--ink-3);
+       background:var(--ink-soft)"></span>Facturación del mes</span>`);
+})();
+
+/* ================= BARRAS: grupos de gasto ================= */
+(function(){
+  const skip = new Set(["Ingresos - Fee mensual","Ingresos - Produccion",
+                        "Ingresos - Pauta","Otros ingresos"]);
+  const arr = Object.entries(D.grupos)
+    .map(([g,v])=>({g, t:-Object.values(v).reduce((a,b)=>a+b,0)}))
+    .filter(o=>!skip.has(o.g) && o.t>0)
+    .sort((a,b)=>b.t-a.t);
+  const max = arr[0].t, tot = arr.reduce((a,o)=>a+o.t,0);
+  const NOM = {"Nomina fija":"Nómina fija","Nomina socios":"Nómina socios",
+    "Nomina variable":"Nómina variable","Pasantias":"Pasantías",
+    "Freelance y produccion":"Freelance",
+    "Movilizacion":"Movilización · taxis a producción","Impuestos y legal":"Impuestos",
+    "Tarjeta de credito":"Tarjeta de crédito","Software y herramientas":"Software",
+    "Oficina y bienestar":"Oficina","Marketing propio":"Marketing propio"};
+  el("b-grupos").innerHTML =
+    `<div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:12px">
+       Gasto acumulado enero – julio</div>` +
+    arr.map(o=>`
+      <div class="bar-row">
+        <div class="bname" title="${o.g}">${NOM[o.g]||o.g}</div>
+        <div class="btrack"><div class="bfill" style="width:${o.t/max*100}%;
+             background:${o.g.startsWith('Nomina')?'var(--bar)':'var(--warn)'}"></div></div>
+        <div class="bval">${fmt(o.t)}</div>
+      </div>`).join("") +
+    `<div class="bar-row total" style="border-top:1px solid var(--line);margin-top:8px;padding-top:9px">
+       <div class="bname" style="font-weight:600;color:var(--ink)">Total gasto</div>
+       <div></div><div class="bval" style="font-weight:700">${fmt(tot)}</div></div>`;
+})();
+
+/* ================= SIMULADOR ================= */
+(function(){
+  el("h-fee").textContent = fmt(X.fee_medio);
+  el("h-per").textContent = fmt(X.costo_persona);
+  const sFee=el("s-fee"), sHire=el("s-hire"), sCost=el("s-cost");
+  sCost.value = Math.round(X.costo_persona/25)*25;
+
+  function calc(){
+    const fee = +sFee.value, n = +sHire.value, sc = +sCost.value;
+    el("o-fee").textContent  = fmt(fee);
+    el("o-hire").textContent = n === 1 ? "1 persona" : n + " personas";
+    el("o-cost").textContent = fmt(sc);
+
+    const contrib = fee * R.mc_ratio;      // margen que deja la cuenta
+    const fijoNvo = n * sc;                // costo fijo que suma
+    const neto    = contrib - fijoNvo;
+    const feeMin  = fijoNvo / R.mc_ratio;  // fee que empata exactamente
+
+    el("m-contrib").textContent = fmt(contrib);
+    el("m-fijo").textContent    = "−" + fmt(fijoNvo);
+    el("m-neto").textContent    = (neto>=0?"+":"−") + fmt(Math.abs(neto));
+    el("m-neto").className      = "mval " + (neto>=0?"pos":"neg");
+    el("m-min").textContent     = fmt(feeMin);
+
+    const beNvo  = (R.costo_fijo + fijoNvo) / R.mc_ratio;
+    const holNvo = (R.ingresos + fee) - beNvo;
+    el("m-be").textContent  = fmt(beNvo);
+    el("m-hol").textContent = (holNvo>=0?"+":"−") + fmt(Math.abs(holNvo));
+    el("m-hol").className   = "mval " + (holNvo>=0?"pos":"neg");
+
+    const v=el("verdict"), t=el("v-title"), x2=el("v-text");
+    const holPct = holNvo / (R.ingresos + fee) * 100;
+    if(neto < 0){
+      v.className="verdict no"; t.textContent="No conviene";
+      x2.innerHTML = `Esta cuenta deja <b class="num">${fmt(contrib)}</b> de margen pero suma
+        <b class="num">${fmt(fijoNvo)}</b> de sueldo fijo. Pierdes
+        <b class="num">${fmt(Math.abs(neto))}</b> al mes. Para que empate necesitas un fee de
+        <b class="num">${fmt(feeMin)}</b> — o entrarla sin contratar.`;
+    } else if(holPct < 12){
+      v.className="verdict mid"; t.textContent="Justo, con riesgo";
+      x2.innerHTML = `Deja <b class="num">+${fmt(neto)}</b> al mes, pero te quedas con sólo
+        <b class="num">${pct(holPct)}</b> de holgura sobre el nuevo equilibrio de
+        <b class="num">${fmt(beNvo)}</b>. Un mes flojo o un cliente que se retrasa te mete en pérdidas.`;
+    } else {
+      v.className="verdict go"; t.textContent="Conviene";
+      x2.innerHTML = `Deja <b class="num">+${fmt(neto)}</b> al mes después de pagar
+        ${n===0?"cero contrataciones":(n===1?"la persona nueva":"las "+n+" personas nuevas")}.
+        La holgura sube a <b class="num">${fmt(holNvo)}</b> (${pct(holPct)} sobre el equilibrio).`;
+    }
+  }
+  [sFee,sHire,sCost].forEach(i=>i.addEventListener("input",calc));
+  calc();
+})();
+
+/* ================= HONORARIOS POR CUENTA ================= */
+(function(){
+  const T = D.tarifario, C = T.clientes;
+  const recurrentes = C.filter(c => c.estado === "activo");
+  const tt = T.totales;
+
+  el("tiles-hon").innerHTML = [
+    {l:"Honorario recurrente", v:fmt(T.honorarios_recurrentes_mes), k:"",
+     f:`${recurrentes.length} cuentas activas · lo que entra cada mes sin vender nada nuevo`},
+    {l:"Retenido por clientes", v:fmt(T.retenido_mes), k:"is-warn", c:"warn",
+     f:"Impuestos que te descuentan al pagar. Son recuperables si se declaran"},
+    {l:"Pauta que sólo cruza", v:fmt(tt.pauta), k:"",
+     f:`${pct(tt.pauta/tt.cobrado*100)} de lo cobrado no es tuyo: va a Meta y Google`},
+    {l:"Pendiente de cobro", v:fmt(T.pendiente_cobro),
+     k:T.pendiente_cobro>2000?"is-neg":"is-warn", c:T.pendiente_cobro>2000?"neg":"warn",
+     f:`${T.cuentas_al_dia} de ${T.cuentas_activas} cuentas al día · el resto debe mensualidades`},
+  ].map(t=>`<div class="tile ${t.k}"><div class="tlabel">${t.l}</div>
+      <div class="tval ${t.c||''}">${t.v}</div><div class="tfoot">${t.f}</div></div>`).join("");
+
+  // el cambio de tarifa puede ser a la baja: decir siempre "subió" engaña
+  const CAMBIO = c => {
+    const ms = Object.keys(c.cambios || {});
+    if (!ms.length) return "";
+    const nuevo = c.cambios[ms[0]];
+    // fee es la tarifa vigente; si coincide con el cambio, comparamos contra
+    // la anterior mirando si el nuevo valor es mayor o menor que el de partida
+    const subio = nuevo > (c.fee_inicial != null ? c.fee_inicial : 0);
+    return ` <span class="pill ${subio ? "ac" : "wa"}">${
+      subio ? "subió" : "bajó"} en ${MES[ms[0]]}</span>`;
+  };
+
+  const EST = {activo:'<span class="pill ok">activa</span>',
+               cerrado:'<span class="pill no">cerrada</span>',
+               puntual:'<span class="pill wa">puntual</span>',
+               variable:'<span class="pill ac">variable</span>',
+               "sin tarifa":'<span class="pill wa">sin tarifa</span>'};
+
+  // Solo el tarifario y la cuenta de la retención. El resto (honorarios
+  // cobrados, pauta, estado de cobro) vive en la tabla mensual de abajo:
+  // repetirlo aquí obligaba a comparar dos tablas para el mismo dato.
+  let h = `<thead><tr><th>Cuenta</th><th>Tarifa</th><th>IVA</th>
+           <th>Se factura</th><th>Le retienen</th><th>Llega al banco</th>
+           <th>Estado</th></tr></thead><tbody>`;
+
+  const conFee = [...C].filter(c => c.fee != null)
+                       .sort((a,b) => (b.fee||0) - (a.fee||0));
+  conFee.forEach(c => {
+    const ret = c.retenido_mes || 0;
+    h += `<tr>
+      <td>${c.cliente}${CAMBIO(c)}</td>
+      <td class="n">${fmt(c.fee)}</td>
+      <td class="n muted">${c.con_iva ? "15%" : "no"}</td>
+      <td class="n muted">${fmt2(c.facturado_mes)}</td>
+      <td class="n ${ret > 0 ? "neg" : "muted"}">${ret > 0 ? "−"+fmt2(ret) : "—"}</td>
+      <td class="n">${fmt2(c.a_cobrar_mes)}</td>
+      <td>${EST[c.estado] || c.estado}</td></tr>`;
+  });
+
+  const act = conFee.filter(c => c.estado === "activo");
+  h += `<tr class="total"><td>${act.length} cuentas activas</td><td colspan="2"></td>
+        <td class="n">${fmt2(act.reduce((a,c)=>a+c.facturado_mes,0))}</td>
+        <td class="n neg">−${fmt2(act.reduce((a,c)=>a+(c.retenido_mes||0),0))}</td>
+        <td class="n">${fmt2(act.reduce((a,c)=>a+c.a_cobrar_mes,0))}</td>
+        <td></td></tr></tbody>`;
+
+  el("t-hon").innerHTML = h;
+})();
+
+/* ============ CLIENTES: cuánto cobró cada cuenta cada mes ============ */
+(function(){
+  const C = D.tarifario.clientes;
+  const BLOQUES = [
+    ["activo",   "Activas",  "Cuentas con fee recurrente vigente"],
+    ["cerrado",  "Cerradas", "Ya no facturan"],
+    ["variable", "Variables","Sin tarifa fija: se toma lo cobrado"],
+    ["puntual",  "Puntuales","Trabajos únicos, no recurrentes"],
+    ["sin tarifa","Por identificar", "Cobros que aún no sabemos a qué corresponden"],
+  ];
+
+  const FICHAS = {}; let cid = 0;
+  const celda = (c, m) => {
+    const v = c.por_mes[m].cobrado;
+    const f = c.ficha_mes ? c.ficha_mes[m] : null;
+    if (!(v > 0)){
+      // un hueco entre meses activos importa: significa que ese mes no cobró
+      const hueco = f && /no hubo cobro/.test(f.razones.join(" "));
+      if (!hueco) return `<td class="n muted" style="opacity:.35">—</td>`;
+      const k = "c" + (cid++);
+      FICHAS[k] = {cliente: c.cliente, mes: m, total: 0, ...f};
+      return `<td class="n why down" data-f="${k}" tabindex="0"
+               aria-label="${c.cliente}, ${MES[m]}: sin cobro">—</td>`;
+    }
+    // toda celda con importe abre su desglose; el punto solo marca las que
+    // además tienen algo que explicar
+    const k = "c" + (cid++);
+    FICHAS[k] = {cliente: c.cliente, mes: m, total: v, ...(f || {movs: [], razones: []})};
+    const marca = f && f.razones.length
+      ? (f.esperado != null && v > f.esperado ? "up" : "down") : "plano";
+    return `<td class="n why ${marca}" data-f="${k}" tabindex="0"
+             aria-label="${c.cliente}, ${MES[m]}: ${fmt(v)}. Ver desglose">${fmt(v)}</td>`;
+  };
+
+  // etiqueta de si la cuenta está al corriente de sus mensualidades
+  const PILL_COBRO = c => {
+    if (c.estado !== "activo") return `<span class="muted">—</span>`;
+    const k = c.cobro === "al día" ? "ok" : c.cobro === "adelantado" ? "ac"
+            : c.cobro === "1 mes" ? "wa" : "no";
+    const t = ` title="${[c.cobro_fuente, c.cobro_nota].filter(Boolean).join(" · ")}"`;
+    const deuda = c.pendiente > 0 ? ` <span class="muted">${fmt(c.pendiente)}</span>` : "";
+    // cuando los dos métodos de cálculo no coinciden, se avisa en vez de
+    // dar por buena una cifra que puede estar sobrestimando la deuda
+    const duda = c.cobro_nota
+      ? ` <span class="dudoso" title="${c.cobro_nota}">?</span>` : "";
+    return `<span class="pill ${k}"${t}>${c.cobro}</span>${duda}${deuda}`;
+  };
+
+  let h = `<thead><tr><th>Cuenta</th><th>Fee</th>` +
+    M.map(m=>`<th>${MES[m]}</th>`).join("") +
+    `<th>Total</th><th>Al día</th></tr></thead><tbody>`;
+  const totalMes = {}; M.forEach(m => totalMes[m] = 0);
+
+  BLOQUES.forEach(([est, etiqueta, nota]) => {
+    const filas = C.filter(c => c.estado === est)
+                   .sort((a,b) => b.cobrado_total - a.cobrado_total);
+    if (!filas.length) return;
+    h += `<tr class="head-row"><td colspan="${M.length+4}"
+            style="padding-top:16px;border-bottom:1px solid var(--line)">
+            <span class="pill ${est==='activo'?'ok':est==='cerrado'?'no':'wa'}">${etiqueta}</span>
+            <span class="muted" style="font-weight:400;font-size:12.5px;margin-left:9px">${nota}</span>
+          </td></tr>`;
+    const sub = {}; M.forEach(m => sub[m] = 0);
+    filas.forEach(c => {
+      M.forEach(m => { sub[m] += c.por_mes[m].cobrado; totalMes[m] += c.por_mes[m].cobrado; });
+      h += `<tr data-grupo="clientes"><td>${c.cliente}</td>
+        <td class="n muted">${c.fee != null ? fmt(c.fee) + (c.con_iva ? "+iva" : "") : "—"}</td>` +
+        M.map(m => celda(c, m)).join("") +
+        `<td class="n">${fmt(c.cobrado_total)}</td>
+         <td>${PILL_COBRO(c)}</td></tr>`;
+    });
+    if (filas.length > 1){
+      h += `<tr><td class="muted">Subtotal ${etiqueta.toLowerCase()}</td><td></td>` +
+        M.map(m => `<td class="n muted">${fmt(sub[m])}</td>`).join("") +
+        `<td class="n muted">${fmt(Object.values(sub).reduce((a,b)=>a+b,0))}</td>
+         <td></td></tr>`;
+    }
+  });
+
+  // Ingresos que no vienen de una cuenta: subarriendo, intereses y menores.
+  // Entraban en el total del P&L pero no se veían en ninguna tabla.
+  const OI = D.otros_ingresos || [];
+  if (OI.length){
+    h += `<tr class="head-row"><td colspan="${M.length+4}"
+            style="padding-top:16px;border-bottom:1px solid var(--line)">
+            <span class="pill ac">Otros ingresos</span>
+            <span class="muted" style="font-weight:400;font-size:12.5px;margin-left:9px">
+              No vienen de una cuenta: alquiler del puesto de oficina, intereses y menores</span>
+          </td></tr>`;
+    const sub = {}; M.forEach(m => sub[m] = 0);
+    OI.forEach(o => {
+      M.forEach(m => { sub[m] += o.por_mes[m]; totalMes[m] += o.por_mes[m]; });
+      h += `<tr data-grupo="otros"><td>${o.concepto}</td><td class="n muted">—</td>` +
+        M.map(m => {
+          const v = o.por_mes[m];
+          if (!v) return `<td class="n muted" style="opacity:.35">—</td>`;
+          const k = "o" + (cid++);
+          FICHAS[k] = {cliente: o.concepto, mes: m, total: v,
+                       ...(o.detalle[m] || {movs: [], razones: []})};
+          return `<td class="n why plano" data-f="${k}" tabindex="0"
+                   aria-label="${o.concepto}, ${MES[m]}: ${fmt(v)}">${fmt(v)}</td>`;
+        }).join("") +
+        `<td class="n">${fmt(o.total)}</td><td></td></tr>`;
+    });
+    h += `<tr><td class="muted">Subtotal otros ingresos</td><td></td>` +
+      M.map(m => `<td class="n muted">${fmt(sub[m])}</td>`).join("") +
+      `<td class="n muted">${fmt(Object.values(sub).reduce((a,b)=>a+b,0))}</td>
+       <td></td></tr>`;
+  }
+
+  const tt = D.tarifario.totales;
+  const totalGeneral = tt.cobrado + OI.reduce((a,o)=>a+o.total,0);
+  h += `<tr class="total"><td>Cobrado del mes</td><td></td>` +
+    M.map(m => `<td class="n">${fmt(totalMes[m])}</td>`).join("") +
+    `<td class="n">${fmt(totalGeneral)}</td>
+     <td class="n neg">${D.tarifario.pendiente_cobro > 0 ? fmt(D.tarifario.pendiente_cobro) : ""}</td></tr>`;
+
+  // qué parte de lo cobrado cada mes es honorario de verdad
+  h += `<tr><td class="muted">De eso, honorario</td><td></td>` +
+    M.map(m => {
+      const hon = C.reduce((a,c) => a + c.por_mes[m].honorario, 0);
+      return `<td class="n muted">${totalMes[m] ? pct(hon/totalMes[m]*100) : "—"}</td>`;
+    }).join("") +
+    `<td class="n muted">${pct(tt.honorario/totalGeneral*100)}</td>
+     <td class="muted" style="font-size:11.5px">pendiente</td></tr></tbody>`;
+
+  el("t-cli-mes").innerHTML = h;
+
+  conectarTooltip(el("t-cli-mes"), FICHAS, f => {
+    let extra = "";
+    if (f.esperado != null){
+      const dif = f.total - f.esperado;
+      extra = f.total === 0
+        ? ` Su tarifa mensual es ${fmt2(f.esperado)}.`
+        : Math.abs(dif) > 1
+          ? ` Su tarifa mensual es ${fmt2(f.esperado)}:
+              <span class="t-delta ${dif>0?'pos':'neg'}">${dif>0?'+':'−'}${fmt2(Math.abs(dif))}</span>
+              de diferencia.`
+          : ` Coincide con su tarifa de ${fmt2(f.esperado)}.`;
+    }
+    return {titulo: f.cliente, extra};
+  });
+})();
+
+/* ================= CLIENTES ================= */
+(function(){
+  el("p-conc").textContent = "Top 5 = " + pct(D.concentracion.top5) + " de la facturación";
+  // tarifa contratada de cada cuenta, para no mostrar un promedio que mezcla
+  // fee, pauta y trabajos puntuales
+  const TAR = Object.fromEntries(D.tarifario.clientes.map(c => [c.cliente, c.fee]));
+  const top = D.clientes.slice(0,14), max = top[0].total;
+  el("b-cli").innerHTML =
+    `<div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:12px">
+       Facturado enero – julio</div>` +
+    top.map(c=>`
+      <div class="bar-row">
+        <div class="bname" title="${c.cliente}">${c.cliente}</div>
+        <div class="btrack"><div class="bfill" style="width:${c.total/max*100}%;
+             background:${c.ultimo_mes==='jul'?'var(--bar)':'var(--ink-3)'}"></div></div>
+        <div class="bval">${fmt(c.total)}</div>
+      </div>`).join("");
+
+  let h = `<thead><tr><th>Cliente</th><th>Total</th><th>%</th><th>Tarifa</th>
+           <th>Pagos</th><th>Estado</th></tr></thead><tbody>`;
+  D.clientes.forEach(c=>{
+    const act = c.ultimo_mes === "jul";
+    const dormido = !act && c.meses_activo >= 3;
+    h += `<tr><td>${c.cliente}</td>
+      <td class="n">${fmt(c.total)}</td>
+      <td class="n muted">${pct(c.pct)}</td>
+      <td class="n">${TAR[c.cliente] != null ? fmt(TAR[c.cliente]) : '<span class="muted">—</span>'}</td>
+      <td class="n muted">${c.pagos}</td>
+      <td>${act ? '<span class="pill ok">activo</span>'
+           : dormido ? '<span class="pill no">sin cobrar desde '+MES[c.ultimo_mes]+'</span>'
+           : '<span class="pill wa">puntual · '+MES[c.ultimo_mes]+'</span>'}</td></tr>`;
+  });
+  h += `<tr class="total"><td>${D.clientes.length} clientes</td>
+        <td class="n">${fmt(D.clientes.reduce((a,c)=>a+c.total,0))}</td>
+        <td colspan="4"></td></tr></tbody>`;
+  el("t-cli").innerHTML = h;
+})();
+
+/* ================= EQUIPO: mes a mes por persona ================= */
+(function(){
+  // sin filtro de importe: la suma tiene que cuadrar con la nómina real
+  const gente = D.equipo.filter(e => e.total > 0);
+  const nom = gente.reduce((a,e)=>a+e.total,0);
+  el("h-nom-pct").textContent = pct(nom/D.totales.ingresos*100);
+
+  // orden de bloques y etiqueta de cada vínculo
+  const BLOQUES = [
+    ["Nomina socios", "Socios",    "Cobran $1.500 cada uno, fijo"],
+    ["Nomina fija",   "Plantilla", "Costo fijo: se paga entre o no entre trabajo"],
+    ["Pasantias",     "Pasantía",  "Karla sale · Nicole Cuesta entra en agosto"],
+    ["Nomina variable","Puntual",  "Pagos sueltos, no recurrentes"],
+  ];
+
+  // guarda el desglose de cada celda para el tooltip
+  const FICHAS = {};
+  let cid = 0;
+
+  const celda = (e, m) => {
+    const v = e.por_mes[m];
+    if (!(v > 0)) return `<td class="n muted" style="opacity:.4">—</td>`;
+    const d = e.detalle ? e.detalle[m] : null;
+    // toda celda con importe abre su desglose; el punto solo marca las que
+    // además tienen algo que explicar
+    const k = "f" + (cid++);
+    FICHAS[k] = {persona: e.persona, mes: m, total: v, base: e.base,
+                 ...(d || {movs: [], razones: []})};
+    const tiene = d && (d.razones.length || d.movs.length > 1);
+    const marca = !tiene ? "plano" : (d.delta && d.delta.dif > 0 ? "up" : "down");
+    return `<td class="n why ${marca}" data-f="${k}" tabindex="0"
+             aria-label="${e.persona}, ${MES[m]}: ${fmt(v)}. Ver desglose">${fmt(v)}</td>`;
+  };
+
+  let h = `<thead><tr><th>Persona</th>` +
+    M.map(m=>`<th>${MES[m]}</th>`).join("") +
+    `<th>Total</th></tr></thead><tbody>`;
+
+  const totalMes = {}; M.forEach(m => totalMes[m] = 0);
+
+  BLOQUES.forEach(([g, etiqueta, nota]) => {
+    const filas = gente.filter(e => e.grupo === g);
+    if (!filas.length) return;
+
+    // cabecera del bloque
+    h += `<tr class="head-row"><td colspan="${M.length+2}"
+            style="padding-top:16px;border-bottom:1px solid var(--line)">
+            <span class="pill ${g==='Nomina socios'?'ac':g==='Nomina fija'?'ok':'wa'}">${etiqueta}</span>
+            <span class="muted" style="font-weight:400;font-size:12.5px;margin-left:9px">${nota}</span>
+          </td></tr>`;
+
+    const sub = {}; M.forEach(m => sub[m] = 0);
+    filas.forEach(e => {
+      M.forEach(m => { sub[m] += e.por_mes[m]; totalMes[m] += e.por_mes[m]; });
+      // la etiqueta "salió" solo aplica a personas, no a conceptos agregados
+      const salio = !e.activo_julio && !e.persona.startsWith("Horas extras");
+      h += `<tr data-grupo="${e.grupo}"><td>${e.persona}` +
+        (salio ? ` <span class="pill no">salió · ${MES[e.ultimo_mes]}</span>`
+         : e.liquidado ? ` <span class="pill no">liquidado en ${MES[e.ultimo_mes]}</span>`
+         : ``) +
+        `</td>` + M.map(m => celda(e, m)).join("") +
+        `<td class="n">${fmt(e.total)}</td></tr>`;
+    });
+
+    // subtotal del bloque
+    if (filas.length > 1) {
+      h += `<tr><td class="muted">Subtotal ${etiqueta.toLowerCase()}</td>` +
+        M.map(m => `<td class="n muted">${fmt(sub[m])}</td>`).join("") +
+        `<td class="n muted">${fmt(Object.values(sub).reduce((a,b)=>a+b,0))}</td></tr>`;
+    }
+  });
+
+  // total general por mes
+  h += `<tr class="total"><td>Nómina del mes</td>` +
+    M.map(m => `<td class="n">${fmt(totalMes[m])}</td>`).join("") +
+    `<td class="n">${fmt(nom)}</td></tr>`;
+
+  // peso de la nómina sobre lo facturado en cada mes
+  h += `<tr><td class="muted">% de lo facturado ese mes</td>` +
+    M.map((m,i) => {
+      const p = totalMes[m] / D.pl[i].ingresos * 100;
+      return `<td class="n ${p>70?'neg':''}">${pct(p)}</td>`;
+    }).join("") +
+    `<td class="n muted">${pct(nom/D.totales.ingresos*100)}</td></tr></tbody>`;
+
+  el("t-eq").innerHTML = h;
+
+  // el "por qué" de un mes de nómina
+  conectarTooltip(el("t-eq"), FICHAS, f => {
+    const R = f.razones.join(" ");
+    let cmp = "";
+    if (/dos sueldos/.test(R)){
+      cmp = "";                       // el motivo ya lo explica todo
+    } else if (/emite factura|empieza a facturar/.test(R)){
+      // sólo cuando SE AÑADE el IVA tiene sentido descomponer el importe
+      cmp = ` Su sueldo es ${fmt2(f.total/1.15)}; con el 15% de IVA queda en ${fmt2(f.total)}.`;
+    } else if (f.base != null && f.cmp_base){
+      // la referencia es el sueldo habitual, no el mes anterior: dos meses
+      // seguidos con extras hacen que la comparación mensual engañe.
+      const dif = f.total - f.base;
+      cmp = Math.abs(dif) > 1
+        ? ` Son <span class="t-delta ${dif>0?'pos':'neg'}">${dif>0?'+':'−'}${fmt2(Math.abs(dif))}</span>
+            ${dif>0?'sobre':'por debajo de'} su sueldo habitual de ${fmt2(f.base)}.`
+        : ` Coincide con su sueldo habitual de ${fmt2(f.base)}.`;
+    }
+    return {titulo: f.persona, extra: cmp};
+  });
+})();
+
+/* ============ TODO LO DEMÁS: gasto por categoría, mes a mes ============ */
+(function(){
+  const G = D.gastos;
+  // bloques por naturaleza del gasto, no por orden alfabético
+  const BLOQUES = [
+    ["Estructura fija", ["Estructura", "Software y herramientas"],
+     "Se paga igual entre o no entre trabajo"],
+    ["Producción externa", ["Freelance y produccion"],
+     "Escala con el volumen de proyectos"],
+    ["Pauta", ["Pauta"],
+     "Dinero adelantado a Meta y Google que se recupera del cliente"],
+    ["Impuestos y tarjeta", ["Impuestos y legal", "Tarjeta de credito"],
+     "La tarjeta sigue sin desglose: falta el estado de cuenta"],
+    ["Operación del día a día", ["Movilizacion", "Oficina y bienestar",
+     "Equipos", "Marketing propio", "Devoluciones"],
+     "Taxis a producciones, refrigerios, equipos y otros menores"],
+    ["Fuera de la operación", ["Movimiento entre cuentas propias",
+     "Retiro de socios"],
+     "No son gasto: dinero moviéndose entre cuentas de la agencia"],
+  ];
+
+  const FICHAS = {}; let cid = 0;
+  const celda = (g, m) => {
+    const v = g.por_mes[m];
+    if (Math.abs(v) < 0.005) return `<td class="n muted" style="opacity:.35">—</td>`;
+    const d = g.detalle[m];
+    const k = "g" + (cid++);
+    FICHAS[k] = {cat: g.categoria, mes: m, total: v,
+                 ...(d || {movs: [], razones: []})};
+    const signo = v < 0 ? "pos" : "";
+    return `<td class="n why plano ${signo}" data-f="${k}" tabindex="0"
+             aria-label="${g.categoria}, ${MES[m]}: ${fmt(v)}. Ver movimientos"
+             >${v < 0 ? "+" : ""}${fmt(Math.abs(v))}</td>`;
+  };
+
+  let h = `<thead><tr><th>Concepto</th>` +
+    M.map(m=>`<th>${MES[m]}</th>`).join("") +
+    `<th>Total</th><th>Movs</th></tr></thead><tbody>`;
+  const totalMes = {}; M.forEach(m => totalMes[m] = 0);
+
+  BLOQUES.forEach(([titulo, grupos, nota]) => {
+    const filas = G.filter(g => grupos.includes(g.grupo))
+                   .sort((a,b) => Math.abs(b.total) - Math.abs(a.total));
+    if (!filas.length) return;
+    const operativo = titulo !== "Fuera de la operación";
+    h += `<tr class="head-row"><td colspan="${M.length+3}"
+            style="padding-top:16px;border-bottom:1px solid var(--line)">
+            <span class="pill ${operativo ? "wa" : "ac"}">${titulo}</span>
+            <span class="muted" style="font-weight:400;font-size:12.5px;margin-left:9px">${nota}</span>
+          </td></tr>`;
+    const sub = {}; M.forEach(m => sub[m] = 0);
+    filas.forEach(g => {
+      M.forEach(m => {
+        sub[m] += g.por_mes[m];
+        if (operativo) totalMes[m] += g.por_mes[m];
+      });
+      h += `<tr data-grupo="${g.grupo}"><td>${g.categoria}` +
+        (g.grupo !== g.categoria
+          ? ` <span class="muted" style="font-size:12px">· ${g.grupo}</span>` : ``) +
+        `</td>` + M.map(m => celda(g, m)).join("") +
+        `<td class="n">${fmt(g.total)}</td>
+         <td class="n muted">${g.n}</td></tr>`;
+    });
+    if (filas.length > 1){
+      const tsub = Object.values(sub).reduce((a,b)=>a+b,0);
+      h += `<tr><td class="muted">Subtotal ${titulo.toLowerCase()}</td>` +
+        M.map(m => `<td class="n muted">${fmt(sub[m])}</td>`).join("") +
+        `<td class="n muted">${fmt(tsub)}</td><td></td></tr>`;
+    }
+  });
+
+  const tot = Object.values(totalMes).reduce((a,b)=>a+b,0);
+  h += `<tr class="total"><td>Gasto operativo del mes</td>` +
+    M.map(m => `<td class="n">${fmt(totalMes[m])}</td>`).join("") +
+    `<td class="n">${fmt(tot)}</td><td></td></tr>`;
+  h += `<tr><td class="muted">% de lo facturado ese mes</td>` +
+    M.map((m,i) => {
+      const p = totalMes[m] / D.pl[i].ingresos * 100;
+      return `<td class="n muted">${pct(p)}</td>`;
+    }).join("") +
+    `<td class="n muted">${pct(tot/D.totales.ingresos*100)}</td><td></td></tr></tbody>`;
+
+  el("t-gastos").innerHTML = h;
+
+  conectarTooltip(el("t-gastos"), FICHAS, f => ({
+    titulo: f.cat,
+    extra: f.movs.length > 1
+      ? ` ${f.movs.length} movimientos en el mes.` : "",
+  }));
+})();
+
+/* ============ TARJETA: en qué se gasta, cargo a cargo ============ */
+(function(){
+  const T = D.tarjeta;
+  if (!T) return;
+  el("sec-tarjeta").hidden = false;
+
+  const soft = T.familias["Software"] || 0;
+  el("tiles-tarjeta").innerHTML = [
+    {l:"Gastado en la tarjeta", v:fmt2(T.total), k:"",
+     f:`${T.conceptos.length} conceptos distintos · antes era una cifra ciega`},
+    {l:"Software y suscripciones", v:fmt2(soft), k:"is-warn", c:"warn",
+     f:`${pct(soft/T.total*100)} del total · ${fmt2(soft/7)} al mes en herramientas`},
+    {l:"Pauta de TikTok", v:fmt2(T.familias["Pauta"]||0), k:"",
+     f:"No estaba contada como pauta: iba dentro de la tarjeta"},
+    {l:"Intereses pagados", v:fmt2(T.familias["Financiero"]||0), k:"is-neg", c:"neg",
+     f:"Por no liquidar el saldo completo cada mes"},
+  ].map(t=>`<div class="tile ${t.k}"><div class="tlabel">${t.l}</div>
+      <div class="tval ${t.c||''}" style="font-size:clamp(21px,2.7vw,26px)">${t.v}</div>
+      <div class="tfoot">${t.f}</div></div>`).join("");
+
+  const FAM = {Software:"wa", Pauta:"ac", Oficina:"ok",
+               Impuestos:"wa", Financiero:"no"};
+  const FICHAS = {}; let cid = 0;
+
+  let h = `<thead><tr><th>Concepto</th><th>Tipo</th>` +
+    M.map(m=>`<th>${MES[m]}</th>`).join("") +
+    `<th>Total</th><th>Cargos</th></tr></thead><tbody>`;
+
+  T.conceptos.forEach(c => {
+    h += `<tr data-grupo="tarjeta"><td>${c.concepto}</td>
+      <td><span class="pill ${FAM[c.familia]||'wa'}">${c.familia}</span></td>` +
+      M.map(m => {
+        const v = c.por_mes[m];
+        if (!v) return `<td class="n muted" style="opacity:.35">—</td>`;
+        const movs = c.movs.filter(x => x.mes === m);
+        const k = "tj" + (cid++);
+        FICHAS[k] = {concepto: c.concepto, mes: m, total: v,
+                     movs: movs.map(x => ({fecha: x.fecha ? x.fecha+"/26" : "",
+                                           desc: x.desc, importe: x.importe})),
+                     razones: []};
+        return `<td class="n why plano" data-f="${k}" tabindex="0"
+                 aria-label="${c.concepto}, ${MES[m]}: ${fmt2(v)}">${fmt2(v)}</td>`;
+      }).join("") +
+      `<td class="n">${fmt2(c.total)}</td>
+       <td class="n muted">${c.n}</td></tr>`;
+  });
+
+  h += `<tr class="total"><td>Consumido en el mes</td><td></td>` +
+    M.map(m => `<td class="n">${fmt2(T.por_mes[m])}</td>`).join("") +
+    `<td class="n">${fmt2(T.total)}</td><td></td></tr>`;
+  h += `<tr><td class="muted">Pagado según la hoja</td><td></td>` +
+    M.map(m => `<td class="n muted">${fmt2(T.pagos_por_mes[m])}</td>`).join("") +
+    `<td class="n muted">${fmt2(T.pagado_hoja)}</td><td></td></tr>`;
+  h += `<tr><td class="muted" colspan="${M.length+4}"
+        style="white-space:normal;padding-top:12px;border-bottom:none">
+        Consumido <b class="num">${fmt2(T.total)}</b> y pagado
+        <b class="num">${fmt2(T.pagado_hoja)}</b>: la diferencia de
+        <b class="num">${fmt2(Math.abs(T.diferencia))}</b> es saldo revolvente,
+        porque no se liquida el total cada mes. Por eso hay intereses.
+        </td></tr></tbody>`;
+
+  el("t-tarjeta").innerHTML = h;
+  conectarTooltip(el("t-tarjeta"), FICHAS, f => ({titulo: f.concepto, extra: ""}));
+})();
+
+/* ============ CAJA REAL: conciliación con el extracto ============ */
+(function(){
+  const F = D.flexi;
+  if (!F) return;
+  el("sec-caja").hidden = false;
+
+  // Fideval: importe transferido, no saldo verificado (falta su extracto)
+  const fideval = 10000, operativa = X.saldo_final;
+  const total = F.saldo_final + fideval + operativa;
+
+  // saldos con céntimos: son cifras que se contrastan contra el banco y
+  // redondearlas hace dudar de si el dato es el mismo
+  el("tiles-caja").innerHTML = [
+    {l:"Caja total de la agencia", v:fmt2(total), k:"is-pos", c:"pos",
+     f:"Sumando las tres cuentas al 31 de julio"},
+    {l:"FlexiAhorro", v:fmt2(F.saldo_final), k:"",
+     f:"Saldo verificado en el extracto del banco. Cuenta puente: entra y sale a diario"},
+    {l:"Fideval", v:fmt2(fideval), k:"is-warn",
+     f:"Depositado el 26 de febrero. Falta el extracto para confirmar el saldo con intereses"},
+    {l:"Cuenta operativa", v:fmt2(operativa), k:"is-neg", c:"neg",
+     f:"Con esto se opera: cero colchón ante cualquier retraso"},
+  ].map(t=>`<div class="tile ${t.k}"><div class="tlabel">${t.l}</div>
+      <div class="tval ${t.c||''}" style="font-size:clamp(21px,2.7vw,26px)">${t.v}</div>
+      <div class="tfoot">${t.f}</div></div>`).join("");
+
+  const cel = (v, dif) => {
+    const c = Math.abs(dif) < 0.5 ? "" : "neg";
+    return `<td class="n ${c}">${fmt2(v)}</td>`;
+  };
+
+  // cabecera a dos niveles: cada concepto se mira desde los dos lados
+  let h = `<thead>
+    <tr><th rowspan="2" style="vertical-align:bottom">Mes</th>
+        <th colspan="2" style="text-align:center;border-bottom:1px solid var(--line-soft)">
+          Enviado al ahorro</th>
+        <th colspan="2" style="text-align:center;border-bottom:1px solid var(--line-soft)">
+          Sacado del ahorro</th>
+        <th rowspan="2" style="vertical-align:bottom">Interés<br>del banco</th>
+        <th rowspan="2" style="vertical-align:bottom">Cuadre</th></tr>
+    <tr><th>Tu hoja</th><th>El banco</th><th>Tu hoja</th><th>El banco</th></tr>
+    </thead><tbody>`;
+  F.filas.forEach(f => {
+    // julio difiere en los retiros del día 31 que la hoja aún no recoge
+    const pend = f.mes === "jul" ? F.pendiente_total : 0;
+    const ok = Math.abs(f.dif_entra) < 0.5 && Math.abs(f.dif_sale + pend) < 0.5;
+    h += `<tr><td>${MES[f.mes]}</td>
+      ${cel(f.hoja_entra, f.dif_entra)}${cel(f.ext_entra, f.dif_entra)}
+      ${cel(f.hoja_sale, pend ? 999 : f.dif_sale)}${cel(f.ext_sale, pend ? 999 : f.dif_sale)}
+      <td class="n pos">${fmt2(f.interes)}</td>
+      <td>${ok ? '<span class="pill ok">cuadra</span>'
+              : '<span class="pill no">revisar</span>'}</td></tr>`;
+
+    // la diferencia de julio se explica aquí mismo, en su propia fila, para
+    // que al bajar la vista los totales de las dos columnas ya coincidan
+    if (pend) {
+      h += `<tr><td class="muted" style="white-space:normal;padding-left:22px">
+          Falta registrar en tu hoja
+          <em style="display:block;font-style:normal;font-size:12px;color:var(--ink-3)">
+            ${F.pendientes.map(p => p.fecha.slice(0,5) + " · " + fmt2(p.importe)).join(" · ")}
+          </em></td>
+        <td class="n muted">—</td><td class="n muted">—</td>
+        <td class="n warn">+${fmt2(pend)}</td><td class="n muted">—</td>
+        <td class="n muted">—</td>
+        <td><span class="pill wa">pendiente</span></td></tr>`;
+    }
+  });
+
+  const s = k => F.filas.reduce((a,f)=>a+f[k],0);
+  const hojaSaleAj = s("hoja_sale") + F.pendiente_total;   // ya con lo pendiente
+  h += `<tr class="total"><td>Total</td>
+        <td class="n">${fmt2(s("hoja_entra"))}</td><td class="n">${fmt2(s("ext_entra"))}</td>
+        <td class="n">${fmt2(hojaSaleAj)}</td><td class="n">${fmt2(s("ext_sale"))}</td>
+        <td class="n pos">${fmt2(F.interes_2026)}</td>
+        <td>${F.cuadra ? '<span class="pill ok">al centavo</span>' : ''}</td></tr>`;
+
+  // y de aquí sale el saldo, dentro de la misma tabla
+  const pasosTabla = [
+    ["Saldo que ya había el 31/12/2025", F.saldo_inicial, ""],
+    ["Neto que quedó en el ahorro en 2026",
+     s("ext_entra") - s("ext_sale"), "muted"],
+    ["Intereses que pagó el banco", F.interes_2026, "pos"],
+  ];
+  // Estas filas ocupan todo el ancho con su propio flex: si se dejan como
+  // celdas normales, el valor cae en una columna que exige scroll lateral.
+  const linea = (lab, v, c, fin) => `
+    <tr><td colspan="7" style="border-bottom:none;padding:0">
+      <div class="paso${fin ? " res" : ""}">
+        <span>${lab}</span>
+        <span class="num ${c || ""}">${v < 0 ? "−" : ""}${fmt2(Math.abs(v))}</span>
+      </div></td></tr>`;
+
+  h += `<tr><td colspan="7" style="border-bottom:none;padding-top:22px">
+      <b style="font-family:var(--font-display);font-size:16px">
+        Y de ahí sale el saldo</b></td></tr>`;
+  pasosTabla.forEach(([lab, v, c]) => { h += linea(lab, v, c, false); });
+  h += linea("Saldo de FlexiAhorro al 31 de julio", F.saldo_teorico, "", true);
+  h += `<tr><td colspan="7" style="border-bottom:none;padding:0">
+      <div class="paso">
+        <span>Saldo real del extracto del banco</span>
+        <span class="num">${fmt2(F.saldo_final)}</span></div>
+      <div class="paso res">
+        <span>Diferencia<em>Mi redondeo al sumar los intereses diarios a mano</em></span>
+        <span class="num pos">${fmt2(Math.abs(F.desvio_saldo))}</span></div>
+      </td></tr>`;
+  h += `</tbody>`;
+  el("t-flexi").innerHTML = h;
+
+  // La escalera del saldo vive ahora dentro de la propia tabla: separarla
+  // obligaba a bajar la vista para entender la diferencia de julio.
+
+})();
+
+/* ================= AVISOS ================= */
+(function(){
+  // Todo se calcula de los datos: un aviso con cifras quemadas se queda
+  // viejo en cuanto Francisco actualiza la hoja.
+  const T9 = D.tarjeta || {familias:{}, total:0};
+  const pend = D.tarifario.pendiente_cobro || 0;
+  const pendDe = n => {
+    const c = D.tarifario.clientes.find(x => x.cliente === n);
+    return c ? c.pendiente : 0;
+  };
+  const fijasAgosto = D.equipo.filter(e =>
+    e.grupo === "Nomina fija" && e.activo_julio && !e.liquidado).length;
+  const cajaReal = (D.flexi ? D.flexi.saldo_final : 0) + 10000 + X.saldo_final;
+  const fuga = X.pauta_no_recuperada;
+  const tj = f => T9.familias[f] || 0;
+
+  const notas = [
+    {k:"crit", t:"Lo primero: cobrar lo pendiente",
+     p:`Hay <span class="fig">${fmt(pend)}</span> en la calle —
+        ${D.tarifario.cuentas_al_dia} de ${D.tarifario.cuentas_activas} cuentas están al día
+        y el resto debe mensualidades. Encabezan Speedy con
+        <span class="fig">${fmt(pendDe("Speedy"))}</span> y APC con
+        <span class="fig">${fmt(pendDe("APC"))}</span> (dos meses sin girar).
+        Ese dinero ya está ganado: es gestión de cobro, no de ventas. Detalle en la sección 05.`},
+
+    {k:"", t:"La pauta la financian los socios",
+     p:`La agencia reembolsó <span class="fig">${fmt(X.pauta_pagada)}</span> de pauta a
+        Francisco (él la adelanta con su tarjeta personal) y los clientes devolvieron
+        <span class="fig">${fmt(X.pauta_recuperada)}</span> dentro de sus giros. Quedan
+        <span class="fig">${fmt(fuga)}</span> sin volver, más
+        <span class="fig">${fmt(tj("Pauta"))}</span> de TikTok que salieron por la tarjeta
+        de Ana Paula. La regla que falta: toda pauta adelantada se factura, o va dentro del fee.`},
+
+    {k:"", t:"La tarjeta: desglosada, pero con dos deberes",
+     p:`Los <span class="fig">${fmt(X.tarjeta_sin_desglose)}</span> ya están identificados
+        cargo a cargo en la sección 08. Lo accionable: se pagaron
+        <span class="fig">${fmt2(tj("Financiero"))}</span> de intereses por no liquidar el
+        total cada mes — coste evitable — y Whataform cobró tres precios distintos
+        (79,80 → 28,37 → 53,20) que conviene revisar con el proveedor.`},
+
+    {k:"", t:"Las retenciones son crédito, úsalo",
+     p:`Los clientes retienen <span class="fig">${fmt(X.retenido_mes)}</span> al mes
+        (3% de renta y hasta el 100% del IVA). No es dinero perdido: es crédito tributario.
+        El deber es confirmar con contabilidad que se está descontando en las declaraciones —
+        son ~<span class="fig">${fmt(X.retenido_mes*12)}</span> al año.`},
+
+    {k:"", t:"La caja es sana, pero está a nombre de personas",
+     p:`La operativa cierra con <span class="fig">${fmt2(X.saldo_final)}</span>, pero la caja
+        real de la agencia es <span class="fig">${fmt2(cajaReal)}</span> (sección 09).
+        El matiz: FlexiAhorro está a nombre de Ana Paula, la pauta pasa por las tarjetas
+        personales de los dos socios y la luz la adelantó Francisco. Funciona, pero mezcla
+        patrimonio personal y de la empresa: conviene una cuenta y tarjeta de la agencia.`},
+
+    {k:"ok", t:"Nómina al día y explicada",
+     p:`Desde agosto quedan <span class="fig">${fijasAgosto}</span> personas fijas
+        (Karen se liquidó en julio) más la plaza de pasantía, donde Nicole Cuesta releva a
+        Karla. Los "aumentos" de marzo eran IVA de quien empezó a facturar, no subidas;
+        el único aumento real fue el de Alejandra en mayo. Cada pago tiene su porqué en la
+        sección 06.`},
+
+    {k:"ok", t:"Buena diversificación de cuentas",
+     p:`Con ${D.clientes.length} clientes y el mayor pesando
+        <span class="fig">${pct(D.concentracion.top1)}</span> de la facturación
+        (top 5 = <span class="fig">${pct(D.concentracion.top5)}</span>), ninguna cuenta
+        puede tumbar la agencia. Es lo más sano del ejercicio.`},
+
+    {k:"", t:"Cabos sueltos en la hoja",
+     p:`Tres pendientes de origen: los <span class="fig">${fmt(653)}</span> del 12 de marzo
+        siguen sin identificar (marcados en la sección 05); las 19 fechas con año
+        <span class="fig">2206</span> están corregidas aquí pero siguen así en el Sheets;
+        y falta el extracto de Fideval para verificar sus
+        <span class="fig">${fmt(10000)}</span> con intereses.`},
+  ];
+  el("notes").innerHTML = notas.map(n=>`
+    <div class="note ${n.k}"><h3>${n.t}</h3><p>${n.p}</p></div>`).join("");
+})();
+
+/* ============ NAVEGACIÓN: índice fijo de secciones ============ */
+(function(){
+  const nav = el("secnav");
+  const secs = Array.from(document.querySelectorAll(".wrap section"))
+    .filter(x => !x.hidden && x.querySelector(".shead h2"));
+  if (!nav || !secs.length) return;
+  const NOMBRES = {"01":"Flotación","02":"Mes a mes","03":"Fijo · variable",
+    "04":"Tarifario","05":"Ingresos","06":"Equipo","07":"Gastos",
+    "08":"Tarjeta","09":"Caja real","10":"Pendientes",
+    "11":"Simulador","12":"Glosario"};
+  nav.hidden = false;
+  nav.innerHTML = secs.map((x,i) => {
+    const n = x.querySelector(".snum")?.textContent.trim() || String(i+1);
+    if (!x.id) x.id = "sec-" + n;
+    const nom = NOMBRES[n] || x.querySelector("h2").textContent.trim().slice(0,16);
+    return `<a href="#${x.id}" data-sec="${x.id}"><b>${n}</b>${nom}</a>`;
+  }).join("");
+  const enlaces = {};
+  nav.querySelectorAll("a").forEach(a => enlaces[a.dataset.sec] = a);
+  const io = new IntersectionObserver(entradas => {
+    entradas.forEach(e => {
+      if (!e.isIntersecting) return;
+      nav.querySelectorAll("a.act").forEach(a => a.classList.remove("act"));
+      const a = enlaces[e.target.id];
+      if (a){
+        a.classList.add("act");
+        // mantener el activo a la vista dentro de la propia barra
+        const izq = a.offsetLeft - nav.clientWidth/2 + a.clientWidth/2;
+        nav.scrollTo({left: Math.max(0, izq), behavior: "smooth"});
+      }
+    });
+  }, {rootMargin: "-40% 0px -55% 0px"});
+  secs.forEach(x => io.observe(x));
+})();
+</script>

@@ -1,0 +1,7694 @@
+{
+ "meses": [
+  "ene",
+  "feb",
+  "mar",
+  "abr",
+  "may",
+  "jun",
+  "jul"
+ ],
+ "clientes": [
+  {
+   "cliente": "Healthy Girl",
+   "estado": "activo",
+   "nota": "",
+   "fee": 600,
+   "fee_inicial": 700,
+   "con_iva": true,
+   "facturado_mes": 690.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 690.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {
+    "jul": 600
+   },
+   "cobrado_total": 8111.12,
+   "honorario_total": 5520.0,
+   "pauta_total": 2591.12,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 805.0,
+     "pauta": 274.37,
+     "puntual": 0.0,
+     "cobrado": 1079.37
+    },
+    "mar": {
+     "honorario": 805.0,
+     "pauta": 624.25,
+     "puntual": 0.0,
+     "cobrado": 1429.25
+    },
+    "abr": {
+     "honorario": 1610.0,
+     "pauta": 577.0,
+     "puntual": 0.0,
+     "cobrado": 2187.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 1610.0,
+     "pauta": 677.0,
+     "puntual": 0.0,
+     "cobrado": 2287.0
+    },
+    "jul": {
+     "honorario": 690.0,
+     "pauta": 438.5,
+     "puntual": 0.0,
+     "cobrado": 1128.5
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
+   "cobro_nota": "lecturas distintas: el último cobro declara hasta julio, pero el conteo de mensualidades da 0 mes(es) de atraso",
+   "atraso_meses": -1.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 805.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "03/02/2026",
+       "desc": "HEALTHY GIRL DE 18 DE DICEMBRE AL 18DE ENERO",
+       "importe": 1079.37,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 274.37,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 274.37
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 805.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "06/03/2026",
+       "desc": "PAGO HEALTHY GIRL TODO DEL 18 DE ENERO AL 18 DE FEBRERO",
+       "importe": 1429.25,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 624.25,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 624.25
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 805.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "07/04/2026",
+       "desc": "PAGO HEALTHY GIRL DE 18 DE FEBREO AL 18 DE MARZO",
+       "importe": 1028.5,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 223.5,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 223.5
+      },
+      {
+       "mes": "abr",
+       "fecha": "28/04/2026",
+       "desc": "PAGO HEALTHY GIRL DEL 18 DE MARZO AL 18 DE ABRIL",
+       "importe": 1158.5,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 353.5,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 353.5
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes",
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 805.0
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 805.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "01/06/2026",
+       "desc": "HEALTHY GIRL DEL 18 DE ABRIL AL 18 DE MAYO",
+       "importe": 1158.5,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 353.5,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 353.5
+      },
+      {
+       "mes": "jun",
+       "fecha": "15/06/2026",
+       "desc": "healthy girl",
+       "importe": 1128.5,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 323.5,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 323.5
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes",
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 805.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "30/07/2026",
+       "desc": "PAGO HEALTHY GIRL DEL 18 DE JUNIO AL 18 DE JULIO",
+       "importe": 1128.5,
+       "tipo": "honorario",
+       "honorario": 690.0,
+       "pauta": 438.5,
+       "puntual": 0.0,
+       "esperado": 690.0,
+       "desvio": 438.5
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 690.0
+    }
+   },
+   "meses_activo": 5,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [
+    {
+     "mes": "abr",
+     "n": 2
+    },
+    {
+     "mes": "jun",
+     "n": 2
+    }
+   ],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "03/02/2026",
+     "desc": "HEALTHY GIRL DE 18 DE DICEMBRE AL 18DE ENERO",
+     "importe": 1079.37,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 274.37,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 274.37
+    },
+    {
+     "mes": "mar",
+     "fecha": "06/03/2026",
+     "desc": "PAGO HEALTHY GIRL TODO DEL 18 DE ENERO AL 18 DE FEBRERO",
+     "importe": 1429.25,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 624.25,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 624.25
+    },
+    {
+     "mes": "abr",
+     "fecha": "07/04/2026",
+     "desc": "PAGO HEALTHY GIRL DE 18 DE FEBREO AL 18 DE MARZO",
+     "importe": 1028.5,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 223.5,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 223.5
+    },
+    {
+     "mes": "abr",
+     "fecha": "28/04/2026",
+     "desc": "PAGO HEALTHY GIRL DEL 18 DE MARZO AL 18 DE ABRIL",
+     "importe": 1158.5,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 353.5,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 353.5
+    },
+    {
+     "mes": "jun",
+     "fecha": "01/06/2026",
+     "desc": "HEALTHY GIRL DEL 18 DE ABRIL AL 18 DE MAYO",
+     "importe": 1158.5,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 353.5,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 353.5
+    },
+    {
+     "mes": "jun",
+     "fecha": "15/06/2026",
+     "desc": "healthy girl",
+     "importe": 1128.5,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 323.5,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 323.5
+    },
+    {
+     "mes": "jul",
+     "fecha": "30/07/2026",
+     "desc": "PAGO HEALTHY GIRL DEL 18 DE JUNIO AL 18 DE JULIO",
+     "importe": 1128.5,
+     "tipo": "honorario",
+     "honorario": 690.0,
+     "pauta": 438.5,
+     "puntual": 0.0,
+     "esperado": 690.0,
+     "desvio": 438.5
+    }
+   ]
+  },
+  {
+   "cliente": "Pladeco",
+   "estado": "activo",
+   "nota": "",
+   "fee": 400,
+   "fee_inicial": 350,
+   "con_iva": true,
+   "facturado_mes": 460.0,
+   "retenido_mes": 60.0,
+   "a_cobrar_mes": 400.0,
+   "ret_ir": 0,
+   "ret_iva": 1.0,
+   "cambios": {
+    "mar": 400
+   },
+   "cobrado_total": 7433.0,
+   "honorario_total": 2706.0,
+   "pauta_total": 3584.0,
+   "puntual_total": 1143.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 350.0,
+     "pauta": 0.0,
+     "puntual": 1143.0,
+     "cobrado": 1493.0
+    },
+    "feb": {
+     "honorario": 350.0,
+     "pauta": 384.0,
+     "puntual": 0.0,
+     "cobrado": 734.0
+    },
+    "mar": {
+     "honorario": 400.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 400.0
+    },
+    "abr": {
+     "honorario": 400.0,
+     "pauta": 1280.0,
+     "puntual": 0.0,
+     "cobrado": 1680.0
+    },
+    "may": {
+     "honorario": 406.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 406.0
+    },
+    "jun": {
+     "honorario": 400.0,
+     "pauta": 1280.0,
+     "puntual": 0.0,
+     "cobrado": 1680.0
+    },
+    "jul": {
+     "honorario": 400.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "cobrado": 1040.0
+    }
+   },
+   "pendiente": 400.0,
+   "cobro": "1 mes",
+   "cubierto_hasta": 6,
+   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
+   "cobro_nota": "",
+   "atraso_meses": 1.2,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "06/01/2026",
+       "desc": "pladeco  DEL 19 DE NOVIEBRE AL 19 DE DICIEMBRE",
+       "importe": 350.0,
+       "tipo": "honorario",
+       "honorario": 350.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 350.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "ene",
+       "fecha": "09/01/2026",
+       "desc": "CRM MONDAY PLADECO",
+       "importe": 1143.0,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 1143.0,
+       "esperado": 350.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 350.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "06/02/2026",
+       "desc": "PLADECO DEL 19 DICIEMBRE AL 19 DE ENERO",
+       "importe": 350.0,
+       "tipo": "honorario",
+       "honorario": 350.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 350.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "feb",
+       "fecha": "24/02/2026",
+       "desc": "PAUTA ALPES ENERO",
+       "importe": 384.0,
+       "tipo": "pauta",
+       "honorario": 0.0,
+       "pauta": 384.0,
+       "puntual": 0.0,
+       "esperado": 350.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 350.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "04/03/2026",
+       "desc": "PLADECO DE ENERO A FEBRERO",
+       "importe": 400.0,
+       "tipo": "honorario",
+       "honorario": 400.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 400.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "06/04/2026",
+       "desc": "pladeco pautas y mensual",
+       "importe": 1040.0,
+       "tipo": "mixto",
+       "honorario": 400.0,
+       "pauta": 640.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": null
+      },
+      {
+       "mes": "abr",
+       "fecha": "16/04/2026",
+       "desc": "PLADECO PAUTAS",
+       "importe": 640.0,
+       "tipo": "pauta",
+       "honorario": 0.0,
+       "pauta": 640.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 400.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "06/05/2026",
+       "desc": "PLADECO ABRIL FEE MENSUAL",
+       "importe": 406.0,
+       "tipo": "honorario",
+       "honorario": 406.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": 6.0
+      }
+     ],
+     "razones": [],
+     "esperado": 400.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "04/06/2026",
+       "desc": "PLADECO FEE MENSUAL MAS PAUTAS",
+       "importe": 1040.0,
+       "tipo": "mixto",
+       "honorario": 400.0,
+       "pauta": 640.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": null
+      },
+      {
+       "mes": "jun",
+       "fecha": "30/06/2026",
+       "desc": "PAUTA PLADECO",
+       "importe": 640.0,
+       "tipo": "pauta",
+       "honorario": 0.0,
+       "pauta": 640.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 400.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "21/07/2026",
+       "desc": "PLADECO DE JUNIO",
+       "importe": 400.0,
+       "tipo": "honorario",
+       "honorario": 400.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "jul",
+       "fecha": "22/07/2026",
+       "desc": "PAUTA PLADECO",
+       "importe": 640.0,
+       "tipo": "pauta",
+       "honorario": 0.0,
+       "pauta": 640.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 400.0
+    }
+   },
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "06/01/2026",
+     "desc": "pladeco  DEL 19 DE NOVIEBRE AL 19 DE DICIEMBRE",
+     "importe": 350.0,
+     "tipo": "honorario",
+     "honorario": 350.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 350.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ene",
+     "fecha": "09/01/2026",
+     "desc": "CRM MONDAY PLADECO",
+     "importe": 1143.0,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 1143.0,
+     "esperado": 350.0,
+     "desvio": null
+    },
+    {
+     "mes": "feb",
+     "fecha": "06/02/2026",
+     "desc": "PLADECO DEL 19 DICIEMBRE AL 19 DE ENERO",
+     "importe": 350.0,
+     "tipo": "honorario",
+     "honorario": 350.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 350.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "24/02/2026",
+     "desc": "PAUTA ALPES ENERO",
+     "importe": 384.0,
+     "tipo": "pauta",
+     "honorario": 0.0,
+     "pauta": 384.0,
+     "puntual": 0.0,
+     "esperado": 350.0,
+     "desvio": null
+    },
+    {
+     "mes": "mar",
+     "fecha": "04/03/2026",
+     "desc": "PLADECO DE ENERO A FEBRERO",
+     "importe": 400.0,
+     "tipo": "honorario",
+     "honorario": 400.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "06/04/2026",
+     "desc": "pladeco pautas y mensual",
+     "importe": 1040.0,
+     "tipo": "mixto",
+     "honorario": 400.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": null
+    },
+    {
+     "mes": "abr",
+     "fecha": "16/04/2026",
+     "desc": "PLADECO PAUTAS",
+     "importe": 640.0,
+     "tipo": "pauta",
+     "honorario": 0.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": null
+    },
+    {
+     "mes": "may",
+     "fecha": "06/05/2026",
+     "desc": "PLADECO ABRIL FEE MENSUAL",
+     "importe": 406.0,
+     "tipo": "honorario",
+     "honorario": 406.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": 6.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "04/06/2026",
+     "desc": "PLADECO FEE MENSUAL MAS PAUTAS",
+     "importe": 1040.0,
+     "tipo": "mixto",
+     "honorario": 400.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": null
+    },
+    {
+     "mes": "jun",
+     "fecha": "30/06/2026",
+     "desc": "PAUTA PLADECO",
+     "importe": 640.0,
+     "tipo": "pauta",
+     "honorario": 0.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": null
+    },
+    {
+     "mes": "jul",
+     "fecha": "21/07/2026",
+     "desc": "PLADECO DE JUNIO",
+     "importe": 400.0,
+     "tipo": "honorario",
+     "honorario": 400.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "22/07/2026",
+     "desc": "PAUTA PLADECO",
+     "importe": 640.0,
+     "tipo": "pauta",
+     "honorario": 0.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": null
+    }
+   ]
+  },
+  {
+   "cliente": "Uninova",
+   "estado": "activo",
+   "nota": "",
+   "fee": 900,
+   "fee_inicial": 900,
+   "con_iva": false,
+   "facturado_mes": 900.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 900.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 6656.0,
+   "honorario_total": 6300.0,
+   "pauta_total": 0.0,
+   "puntual_total": 356.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 900.0
+    },
+    "feb": {
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 900.0
+    },
+    "mar": {
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 900.0
+    },
+    "abr": {
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 900.0
+    },
+    "may": {
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 900.0
+    },
+    "jun": {
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 900.0
+    },
+    "jul": {
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 356.0,
+     "cobrado": 1256.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": 0.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "19/01/2026",
+       "desc": "UNINOVA",
+       "importe": 900.0,
+       "tipo": "honorario",
+       "honorario": 900.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 900.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 900.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "25/02/2026",
+       "desc": "PAGO UNINOVA ENERO",
+       "importe": 900.0,
+       "tipo": "honorario",
+       "honorario": 900.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 900.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 900.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "25/03/2026",
+       "desc": "PAGO UNINOVA",
+       "importe": 900.0,
+       "tipo": "honorario",
+       "honorario": 900.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 900.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 900.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "22/04/2026",
+       "desc": "PAGO UNINOVA",
+       "importe": 900.0,
+       "tipo": "honorario",
+       "honorario": 900.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 900.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 900.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "26/05/2026",
+       "desc": "PAGO UNINOVA",
+       "importe": 900.0,
+       "tipo": "honorario",
+       "honorario": 900.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 900.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 900.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "29/06/2026",
+       "desc": "PAGO UNINOVA",
+       "importe": 900.0,
+       "tipo": "honorario",
+       "honorario": 900.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 900.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 900.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "09/07/2026",
+       "desc": "PRIMER PAGO WEB UNINOVA",
+       "importe": 356.0,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 356.0,
+       "esperado": 900.0,
+       "desvio": null
+      },
+      {
+       "mes": "jul",
+       "fecha": "20/07/2026",
+       "desc": "PAGO UNINOVA",
+       "importe": 900.0,
+       "tipo": "honorario",
+       "honorario": 900.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 900.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 900.0
+    }
+   },
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "19/01/2026",
+     "desc": "UNINOVA",
+     "importe": 900.0,
+     "tipo": "honorario",
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 900.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "25/02/2026",
+     "desc": "PAGO UNINOVA ENERO",
+     "importe": 900.0,
+     "tipo": "honorario",
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 900.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "25/03/2026",
+     "desc": "PAGO UNINOVA",
+     "importe": 900.0,
+     "tipo": "honorario",
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 900.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "22/04/2026",
+     "desc": "PAGO UNINOVA",
+     "importe": 900.0,
+     "tipo": "honorario",
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 900.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "26/05/2026",
+     "desc": "PAGO UNINOVA",
+     "importe": 900.0,
+     "tipo": "honorario",
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 900.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "29/06/2026",
+     "desc": "PAGO UNINOVA",
+     "importe": 900.0,
+     "tipo": "honorario",
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 900.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "09/07/2026",
+     "desc": "PRIMER PAGO WEB UNINOVA",
+     "importe": 356.0,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 356.0,
+     "esperado": 900.0,
+     "desvio": null
+    },
+    {
+     "mes": "jul",
+     "fecha": "20/07/2026",
+     "desc": "PAGO UNINOVA",
+     "importe": 900.0,
+     "tipo": "honorario",
+     "honorario": 900.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 900.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Speedy",
+   "estado": "activo",
+   "nota": "",
+   "fee": 2400,
+   "fee_inicial": 2400,
+   "con_iva": true,
+   "facturado_mes": 2760.0,
+   "retenido_mes": 324.0,
+   "a_cobrar_mes": 2436.0,
+   "ret_ir": 0.03,
+   "ret_iva": 0.7,
+   "cambios": {},
+   "cobrado_total": 5802.0,
+   "honorario_total": 4872.0,
+   "pauta_total": 0.0,
+   "puntual_total": 930.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "mar": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 2436.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 2436.0
+    },
+    "jul": {
+     "honorario": 2436.0,
+     "pauta": 0.0,
+     "puntual": 930.0,
+     "cobrado": 3366.0
+    }
+   },
+   "pendiente": 2436.0,
+   "cobro": "1 mes",
+   "cubierto_hasta": 6,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": 1.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 2436.0
+    },
+    "feb": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 2436.0
+    },
+    "mar": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 2436.0
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 2436.0
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 2436.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "01/06/2026",
+       "desc": "DEPOSITO DE CHQUE 1 DE SPEEDY",
+       "importe": 2436.0,
+       "tipo": "honorario",
+       "honorario": 2436.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 2436.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 2436.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "03/07/2026",
+       "desc": "PAGO SPEEDY PRODUCCION AUDIOVISUAL Y ACTORES",
+       "importe": 930.0,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 930.0,
+       "esperado": 2436.0,
+       "desvio": null
+      },
+      {
+       "mes": "jul",
+       "fecha": "03/07/2026",
+       "desc": "PAGO FEE MENSUAL SPEEDY",
+       "importe": 2436.0,
+       "tipo": "honorario",
+       "honorario": 2436.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 2436.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 2436.0
+    }
+   },
+   "meses_activo": 2,
+   "primer_mes": "jun",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "jun",
+     "fecha": "01/06/2026",
+     "desc": "DEPOSITO DE CHQUE 1 DE SPEEDY",
+     "importe": 2436.0,
+     "tipo": "honorario",
+     "honorario": 2436.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 2436.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "03/07/2026",
+     "desc": "PAGO SPEEDY PRODUCCION AUDIOVISUAL Y ACTORES",
+     "importe": 930.0,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 930.0,
+     "esperado": 2436.0,
+     "desvio": null
+    },
+    {
+     "mes": "jul",
+     "fecha": "03/07/2026",
+     "desc": "PAGO FEE MENSUAL SPEEDY",
+     "importe": 2436.0,
+     "tipo": "honorario",
+     "honorario": 2436.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 2436.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Fiammingo",
+   "estado": "activo",
+   "nota": "",
+   "fee": 800,
+   "fee_inicial": 800,
+   "con_iva": true,
+   "facturado_mes": 920.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 920.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 5520.0,
+   "honorario_total": 5520.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    },
+    "mar": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    },
+    "abr": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    },
+    "may": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    },
+    "jun": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    },
+    "jul": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "adelantado",
+   "cubierto_hasta": 8,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": -1.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 920.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "25/02/2026",
+       "desc": "PAGO FIAMMINGO DESDE EL 12 DE FEBRERO AL 12 DE MARZO",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "23/03/2026",
+       "desc": "PAGO FIAMMINGO DEL 12 DE MARZO AL 12 DE ABRIL",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "17/04/2026",
+       "desc": "PAGO FIAMMINGO DEL 12 DE ABIL AL 12 D EMAYO",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "12/05/2026",
+       "desc": "PAGO FIAMMINGO DE 12 DE MAYO A 1 2DE JUNIO",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "11/06/2026",
+       "desc": "PAGO FIAMMINGO DEL 12 DE JUNIO AL 12 DE JULIO",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "16/07/2026",
+       "desc": "PAGO FIAMMINGO DEL 12 DE JULIO AL 12 DE AGOSTO",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    }
+   },
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "25/02/2026",
+     "desc": "PAGO FIAMMINGO DESDE EL 12 DE FEBRERO AL 12 DE MARZO",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "23/03/2026",
+     "desc": "PAGO FIAMMINGO DEL 12 DE MARZO AL 12 DE ABRIL",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "17/04/2026",
+     "desc": "PAGO FIAMMINGO DEL 12 DE ABIL AL 12 D EMAYO",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "12/05/2026",
+     "desc": "PAGO FIAMMINGO DE 12 DE MAYO A 1 2DE JUNIO",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "11/06/2026",
+     "desc": "PAGO FIAMMINGO DEL 12 DE JUNIO AL 12 DE JULIO",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "16/07/2026",
+     "desc": "PAGO FIAMMINGO DEL 12 DE JULIO AL 12 DE AGOSTO",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Samari",
+   "estado": "activo",
+   "nota": "",
+   "fee": 650,
+   "fee_inicial": 600,
+   "con_iva": true,
+   "facturado_mes": 747.5,
+   "retenido_mes": 26.27,
+   "a_cobrar_mes": 721.23,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {
+    "may": 650
+   },
+   "cobrado_total": 5329.49,
+   "honorario_total": 4891.66,
+   "pauta_total": 0.0,
+   "puntual_total": 437.83,
+   "por_mes": {
+    "ene": {
+     "honorario": 670.13,
+     "pauta": 0.0,
+     "puntual": 68.0,
+     "cobrado": 738.13
+    },
+    "feb": {
+     "honorario": 670.13,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 670.13
+    },
+    "mar": {
+     "honorario": 668.48,
+     "pauta": 0.0,
+     "puntual": 152.62,
+     "cobrado": 821.1
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 1440.46,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 1440.46
+    },
+    "jun": {
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 217.21,
+     "cobrado": 938.44
+    },
+    "jul": {
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 721.23
+    }
+   },
+   "pendiente": 721.23,
+   "cobro": "1 mes",
+   "cubierto_hasta": 6,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": 1.2,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "15/01/2026",
+       "desc": "SAMARI DICIEMBRE",
+       "importe": 670.13,
+       "tipo": "honorario",
+       "honorario": 670.13,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 670.13,
+       "desvio": 0.0
+      },
+      {
+       "mes": "ene",
+       "fecha": "28/01/2026",
+       "desc": "VIATICOS SAMARI RODAJE BAÑOS CON MARIA JOSE NARANJO",
+       "importe": 68.0,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 68.0,
+       "esperado": 670.13,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "lo que pasa del fee es pago de modelos y viáticos de producción"
+     ],
+     "esperado": 670.13
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "23/02/2026",
+       "desc": "PAGO SAMARI DE ENERO",
+       "importe": 670.13,
+       "tipo": "honorario",
+       "honorario": 670.13,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 670.13,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 670.13
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "03/03/2026",
+       "desc": "PAGO SAMARI MODELO SUCA NARANJO",
+       "importe": 152.62,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 152.62,
+       "esperado": 670.13,
+       "desvio": null
+      },
+      {
+       "mes": "mar",
+       "fecha": "23/03/2026",
+       "desc": "PAGO SAMARI DE MARZO",
+       "importe": 668.48,
+       "tipo": "honorario",
+       "honorario": 668.48,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 670.13,
+       "desvio": -1.65
+      }
+     ],
+     "razones": [
+      "lo que pasa del fee es pago de modelos y viáticos de producción"
+     ],
+     "esperado": 670.13
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 670.13
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "05/05/2026",
+       "desc": "PAGO SAMARI MARZO",
+       "importe": 719.23,
+       "tipo": "honorario",
+       "honorario": 719.23,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 721.23,
+       "desvio": -2.0
+      },
+      {
+       "mes": "may",
+       "fecha": "19/05/2026",
+       "desc": "PAGO SAMARI ABRIL",
+       "importe": 721.23,
+       "tipo": "honorario",
+       "honorario": 721.23,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 721.23,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 721.23
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "29/06/2026",
+       "desc": "PAGO SAMARI DE MAYO",
+       "importe": 938.44,
+       "tipo": "honorario",
+       "honorario": 721.23,
+       "pauta": 0.0,
+       "puntual": 217.21,
+       "esperado": 721.23,
+       "desvio": 217.21
+      }
+     ],
+     "razones": [
+      "lo que pasa del fee es pago de modelos y viáticos de producción"
+     ],
+     "esperado": 721.23
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "20/07/2026",
+       "desc": "PAGO SAMARI JUNIO",
+       "importe": 721.23,
+       "tipo": "honorario",
+       "honorario": 721.23,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 721.23,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 721.23
+    }
+   },
+   "meses_activo": 6,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [
+    {
+     "mes": "may",
+     "n": 2
+    }
+   ],
+   "inferido": "retención calculada desde los pagos reales; faltan los porcentajes del comprobante",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "15/01/2026",
+     "desc": "SAMARI DICIEMBRE",
+     "importe": 670.13,
+     "tipo": "honorario",
+     "honorario": 670.13,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 670.13,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ene",
+     "fecha": "28/01/2026",
+     "desc": "VIATICOS SAMARI RODAJE BAÑOS CON MARIA JOSE NARANJO",
+     "importe": 68.0,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 68.0,
+     "esperado": 670.13,
+     "desvio": null
+    },
+    {
+     "mes": "feb",
+     "fecha": "23/02/2026",
+     "desc": "PAGO SAMARI DE ENERO",
+     "importe": 670.13,
+     "tipo": "honorario",
+     "honorario": 670.13,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 670.13,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "03/03/2026",
+     "desc": "PAGO SAMARI MODELO SUCA NARANJO",
+     "importe": 152.62,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 152.62,
+     "esperado": 670.13,
+     "desvio": null
+    },
+    {
+     "mes": "mar",
+     "fecha": "23/03/2026",
+     "desc": "PAGO SAMARI DE MARZO",
+     "importe": 668.48,
+     "tipo": "honorario",
+     "honorario": 668.48,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 670.13,
+     "desvio": -1.65
+    },
+    {
+     "mes": "may",
+     "fecha": "05/05/2026",
+     "desc": "PAGO SAMARI MARZO",
+     "importe": 719.23,
+     "tipo": "honorario",
+     "honorario": 719.23,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 721.23,
+     "desvio": -2.0
+    },
+    {
+     "mes": "may",
+     "fecha": "19/05/2026",
+     "desc": "PAGO SAMARI ABRIL",
+     "importe": 721.23,
+     "tipo": "honorario",
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 721.23,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "29/06/2026",
+     "desc": "PAGO SAMARI DE MAYO",
+     "importe": 938.44,
+     "tipo": "honorario",
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 217.21,
+     "esperado": 721.23,
+     "desvio": 217.21
+    },
+    {
+     "mes": "jul",
+     "fecha": "20/07/2026",
+     "desc": "PAGO SAMARI JUNIO",
+     "importe": 721.23,
+     "tipo": "honorario",
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 721.23,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Velsana",
+   "estado": "activo",
+   "nota": "",
+   "fee": 700,
+   "fee_inicial": 640,
+   "con_iva": true,
+   "facturado_mes": 805.0,
+   "retenido_mes": 105.0,
+   "a_cobrar_mes": 700.0,
+   "ret_ir": 0,
+   "ret_iva": 1.0,
+   "cambios": {
+    "abr": 700
+   },
+   "cobrado_total": 4850.0,
+   "honorario_total": 4720.0,
+   "pauta_total": 0.0,
+   "puntual_total": 130.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 640.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 640.0
+    },
+    "feb": {
+     "honorario": 640.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 640.0
+    },
+    "mar": {
+     "honorario": 640.0,
+     "pauta": 0.0,
+     "puntual": 130.0,
+     "cobrado": 770.0
+    },
+    "abr": {
+     "honorario": 700.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 700.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 1400.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 1400.0
+    },
+    "jul": {
+     "honorario": 700.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 700.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
+   "cobro_nota": "",
+   "atraso_meses": 0.3,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "22/01/2026",
+       "desc": "VELSANA DEL 11 DE DICEMBRE AL 11 DE ENERO",
+       "importe": 640.0,
+       "tipo": "honorario",
+       "honorario": 640.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 640.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 640.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "23/02/2026",
+       "desc": "VELSANA DEL 11 DE ENERO AL 11 DE FEBREO Y PASTEUR [parte de Velsana]",
+       "importe": 640.0,
+       "tipo": "honorario",
+       "honorario": 640.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 640.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 640.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "20/03/2026",
+       "desc": "PAGO VELAS TUNGURAHUA VELSANA",
+       "importe": 770.0,
+       "tipo": "honorario",
+       "honorario": 640.0,
+       "pauta": 0.0,
+       "puntual": 130.0,
+       "esperado": 640.0,
+       "desvio": 130.0
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 640.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "23/04/2026",
+       "desc": "PAGO VELSANA DEL 12 DE MARZO AL 12 DE ABRIL",
+       "importe": 700.0,
+       "tipo": "honorario",
+       "honorario": 700.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 700.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 700.0
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 700.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "01/06/2026",
+       "desc": "PAG VELSANA DE 12 DE ABRIL AL 12 DE MAYO",
+       "importe": 700.0,
+       "tipo": "honorario",
+       "honorario": 700.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 700.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "jun",
+       "fecha": "18/06/2026",
+       "desc": "VELSANA DEL 12  MAYO A 12 JUNIO",
+       "importe": 700.0,
+       "tipo": "honorario",
+       "honorario": 700.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 700.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 700.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "21/07/2026",
+       "desc": "VELSANA DEL 12 DE JUNIO AL 12 D EJULIO",
+       "importe": 700.0,
+       "tipo": "honorario",
+       "honorario": 700.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 700.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 700.0
+    }
+   },
+   "meses_activo": 6,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [
+    {
+     "mes": "jun",
+     "n": 2
+    }
+   ],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "22/01/2026",
+     "desc": "VELSANA DEL 11 DE DICEMBRE AL 11 DE ENERO",
+     "importe": 640.0,
+     "tipo": "honorario",
+     "honorario": 640.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 640.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "23/02/2026",
+     "desc": "VELSANA DEL 11 DE ENERO AL 11 DE FEBREO Y PASTEUR [parte de Velsana]",
+     "importe": 640.0,
+     "tipo": "honorario",
+     "honorario": 640.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 640.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "20/03/2026",
+     "desc": "PAGO VELAS TUNGURAHUA VELSANA",
+     "importe": 770.0,
+     "tipo": "honorario",
+     "honorario": 640.0,
+     "pauta": 0.0,
+     "puntual": 130.0,
+     "esperado": 640.0,
+     "desvio": 130.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "23/04/2026",
+     "desc": "PAGO VELSANA DEL 12 DE MARZO AL 12 DE ABRIL",
+     "importe": 700.0,
+     "tipo": "honorario",
+     "honorario": 700.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 700.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "01/06/2026",
+     "desc": "PAG VELSANA DE 12 DE ABRIL AL 12 DE MAYO",
+     "importe": 700.0,
+     "tipo": "honorario",
+     "honorario": 700.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 700.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "18/06/2026",
+     "desc": "VELSANA DEL 12  MAYO A 12 JUNIO",
+     "importe": 700.0,
+     "tipo": "honorario",
+     "honorario": 700.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 700.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "21/07/2026",
+     "desc": "VELSANA DEL 12 DE JUNIO AL 12 D EJULIO",
+     "importe": 700.0,
+     "tipo": "honorario",
+     "honorario": 700.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 700.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Nane Vestidos",
+   "estado": "activo",
+   "nota": "",
+   "fee": 450,
+   "fee_inicial": 450,
+   "con_iva": false,
+   "facturado_mes": 450.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 450.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 3660.0,
+   "honorario_total": 3480.0,
+   "pauta_total": 0.0,
+   "puntual_total": 180.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 450.0
+    },
+    "feb": {
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 30.0,
+     "cobrado": 480.0
+    },
+    "mar": {
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 50.0,
+     "cobrado": 500.0
+    },
+    "abr": {
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 50.0,
+     "cobrado": 500.0
+    },
+    "may": {
+     "honorario": 770.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 770.0
+    },
+    "jun": {
+     "honorario": 460.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 460.0
+    },
+    "jul": {
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 50.0,
+     "cobrado": 500.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
+   "cobro_nota": "lecturas distintas: el último cobro declara hasta julio, pero el conteo de mensualidades da 0 mes(es) de atraso",
+   "atraso_meses": -0.7,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "12/01/2026",
+       "desc": "NANE VESTIDOS ENERO",
+       "importe": 450.0,
+       "tipo": "honorario",
+       "honorario": 450.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 450.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "03/02/2026",
+       "desc": "NANE VESTIDOS FEBRERO",
+       "importe": 480.0,
+       "tipo": "honorario",
+       "honorario": 450.0,
+       "pauta": 0.0,
+       "puntual": 30.0,
+       "esperado": 450.0,
+       "desvio": 30.0
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 450.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "10/03/2026",
+       "desc": "NANE VESTIDOS MARZO",
+       "importe": 500.0,
+       "tipo": "honorario",
+       "honorario": 450.0,
+       "pauta": 0.0,
+       "puntual": 50.0,
+       "esperado": 450.0,
+       "desvio": 50.0
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 450.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "13/04/2026",
+       "desc": "NANE VESTIDOS ABRIL",
+       "importe": 500.0,
+       "tipo": "honorario",
+       "honorario": 450.0,
+       "pauta": 0.0,
+       "puntual": 50.0,
+       "esperado": 450.0,
+       "desvio": 50.0
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 450.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "04/05/2026",
+       "desc": "PAGO NANE VESTIDOS MAYO",
+       "importe": 450.0,
+       "tipo": "honorario",
+       "honorario": 450.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "may",
+       "fecha": "06/05/2026",
+       "desc": "ABONO NANE CONFUSION DE PAGO ADELATNADO junio",
+       "importe": 320.0,
+       "tipo": "honorario",
+       "honorario": 320.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": -130.0
+      }
+     ],
+     "razones": [
+      "llegó en 2 giros distintos"
+     ],
+     "esperado": 450.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "09/06/2026",
+       "desc": "NANE VESTIDOS MENOS LO QUE HABIA ABONADO ANTERIORMENTE junio",
+       "importe": 330.0,
+       "tipo": "honorario",
+       "honorario": 330.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": -120.0
+      },
+      {
+       "mes": "jun",
+       "fecha": "29/06/2026",
+       "desc": "NANE PAGO QUE DOMPLETA",
+       "importe": 130.0,
+       "tipo": "honorario",
+       "honorario": 130.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": -320.0
+      }
+     ],
+     "razones": [
+      "llegó en 2 giros distintos"
+     ],
+     "esperado": 450.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "06/07/2026",
+       "desc": "pago nane vestidos julio",
+       "importe": 500.0,
+       "tipo": "honorario",
+       "honorario": 450.0,
+       "pauta": 0.0,
+       "puntual": 50.0,
+       "esperado": 450.0,
+       "desvio": 50.0
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 450.0
+    }
+   },
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "cuadra": false,
+   "desvios": [
+    {
+     "mes": "may",
+     "dif": 320.0,
+     "esperado": 450.0,
+     "real": 770.0
+    }
+   ],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "12/01/2026",
+     "desc": "NANE VESTIDOS ENERO",
+     "importe": 450.0,
+     "tipo": "honorario",
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "03/02/2026",
+     "desc": "NANE VESTIDOS FEBRERO",
+     "importe": 480.0,
+     "tipo": "honorario",
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 30.0,
+     "esperado": 450.0,
+     "desvio": 30.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "10/03/2026",
+     "desc": "NANE VESTIDOS MARZO",
+     "importe": 500.0,
+     "tipo": "honorario",
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 50.0,
+     "esperado": 450.0,
+     "desvio": 50.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "13/04/2026",
+     "desc": "NANE VESTIDOS ABRIL",
+     "importe": 500.0,
+     "tipo": "honorario",
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 50.0,
+     "esperado": 450.0,
+     "desvio": 50.0
+    },
+    {
+     "mes": "may",
+     "fecha": "04/05/2026",
+     "desc": "PAGO NANE VESTIDOS MAYO",
+     "importe": 450.0,
+     "tipo": "honorario",
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "06/05/2026",
+     "desc": "ABONO NANE CONFUSION DE PAGO ADELATNADO junio",
+     "importe": 320.0,
+     "tipo": "honorario",
+     "honorario": 320.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": -130.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "09/06/2026",
+     "desc": "NANE VESTIDOS MENOS LO QUE HABIA ABONADO ANTERIORMENTE junio",
+     "importe": 330.0,
+     "tipo": "honorario",
+     "honorario": 330.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": -120.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "29/06/2026",
+     "desc": "NANE PAGO QUE DOMPLETA",
+     "importe": 130.0,
+     "tipo": "honorario",
+     "honorario": 130.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": -320.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "06/07/2026",
+     "desc": "pago nane vestidos julio",
+     "importe": 500.0,
+     "tipo": "honorario",
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 50.0,
+     "esperado": 450.0,
+     "desvio": 50.0
+    }
+   ]
+  },
+  {
+   "cliente": "Cigarra",
+   "estado": "activo",
+   "nota": "",
+   "fee": 450,
+   "fee_inicial": 450,
+   "con_iva": true,
+   "facturado_mes": 517.5,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 517.5,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 3622.5,
+   "honorario_total": 3622.5,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "feb": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "mar": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "abr": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "may": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "jun": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "jul": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "adelantado",
+   "cubierto_hasta": 8,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "lecturas distintas: el último cobro declara hasta el año anterior, pero el conteo de mensualidades da 0 mes(es) de atraso",
+   "atraso_meses": 0.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "29/01/2026",
+       "desc": "CIGARRA DEL 19 DE ENERO AL 19 DE FEBRERPO",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "23/02/2026",
+       "desc": "PAGO LA CIGARRA del 22 de febrero al 22 de marzo",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "23/03/2026",
+       "desc": "PAGO CIGARRA MARZO A ABRIL",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "23/04/2026",
+       "desc": "CIGARRA DEL 19 DE ABRIL AL 19 MAYO",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "22/05/2026",
+       "desc": "CIGARRA DEL 19 DE MAYO AL 19 DE JUNIO",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "25/06/2026",
+       "desc": "PAGO CIGARRA DEL 19 DE JUNIO AL 19 DE JULIO",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "28/07/2026",
+       "desc": "CIGARRA DEL 19 DE JULIO AL 19 DE AGOSTO",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    }
+   },
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "29/01/2026",
+     "desc": "CIGARRA DEL 19 DE ENERO AL 19 DE FEBRERPO",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "23/02/2026",
+     "desc": "PAGO LA CIGARRA del 22 de febrero al 22 de marzo",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "23/03/2026",
+     "desc": "PAGO CIGARRA MARZO A ABRIL",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "23/04/2026",
+     "desc": "CIGARRA DEL 19 DE ABRIL AL 19 MAYO",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "22/05/2026",
+     "desc": "CIGARRA DEL 19 DE MAYO AL 19 DE JUNIO",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "25/06/2026",
+     "desc": "PAGO CIGARRA DEL 19 DE JUNIO AL 19 DE JULIO",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "28/07/2026",
+     "desc": "CIGARRA DEL 19 DE JULIO AL 19 DE AGOSTO",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Confia",
+   "estado": "activo",
+   "nota": "",
+   "fee": 500,
+   "fee_inicial": 450,
+   "con_iva": true,
+   "facturado_mes": 575.0,
+   "retenido_mes": 75.0,
+   "a_cobrar_mes": 500.0,
+   "ret_ir": 0,
+   "ret_iva": 1.0,
+   "cambios": {
+    "may": 500
+   },
+   "cobrado_total": 3570.0,
+   "honorario_total": 2860.0,
+   "pauta_total": 570.0,
+   "puntual_total": 140.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 450.0
+    },
+    "feb": {
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 450.0
+    },
+    "mar": {
+     "honorario": 0.0,
+     "pauta": 570.0,
+     "puntual": 0.0,
+     "cobrado": 570.0
+    },
+    "abr": {
+     "honorario": 460.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 460.0
+    },
+    "may": {
+     "honorario": 500.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 500.0
+    },
+    "jun": {
+     "honorario": 500.0,
+     "pauta": 0.0,
+     "puntual": 140.0,
+     "cobrado": 640.0
+    },
+    "jul": {
+     "honorario": 500.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 500.0
+    }
+   },
+   "pendiente": 500.0,
+   "cobro": "1 mes",
+   "cubierto_hasta": 6,
+   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
+   "cobro_nota": "",
+   "atraso_meses": 1.3,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "12/01/2026",
+       "desc": "CONFIA DICIEMRBE",
+       "importe": 450.0,
+       "tipo": "honorario",
+       "honorario": 450.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 450.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "19/02/2026",
+       "desc": "CONFIA ENERO",
+       "importe": 450.0,
+       "tipo": "honorario",
+       "honorario": 450.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 450.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "23/03/2026",
+       "desc": "CONFIA Y PAUTA DE CONFIA",
+       "importe": 570.0,
+       "tipo": "pauta",
+       "honorario": 0.0,
+       "pauta": 570.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación",
+      "cobró por debajo de su tarifa"
+     ],
+     "esperado": 450.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "16/04/2026",
+       "desc": "CONFIA MARZO",
+       "importe": 460.0,
+       "tipo": "honorario",
+       "honorario": 460.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": 10.0
+      }
+     ],
+     "razones": [],
+     "esperado": 450.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "18/05/2026",
+       "desc": "PAGO CONFIA ABRIL",
+       "importe": 500.0,
+       "tipo": "honorario",
+       "honorario": 500.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 500.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 500.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "19/06/2026",
+       "desc": "CONFIA MAYO",
+       "importe": 500.0,
+       "tipo": "honorario",
+       "honorario": 500.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 500.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "jun",
+       "fecha": "30/06/2026",
+       "desc": "CONFIA PODCAST",
+       "importe": 140.0,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 140.0,
+       "esperado": 500.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 500.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "10/07/2026",
+       "desc": "PAGO CONFIA JUNIO",
+       "importe": 500.0,
+       "tipo": "honorario",
+       "honorario": 500.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 500.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 500.0
+    }
+   },
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "12/01/2026",
+     "desc": "CONFIA DICIEMRBE",
+     "importe": 450.0,
+     "tipo": "honorario",
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "19/02/2026",
+     "desc": "CONFIA ENERO",
+     "importe": 450.0,
+     "tipo": "honorario",
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "23/03/2026",
+     "desc": "CONFIA Y PAUTA DE CONFIA",
+     "importe": 570.0,
+     "tipo": "pauta",
+     "honorario": 0.0,
+     "pauta": 570.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": null
+    },
+    {
+     "mes": "abr",
+     "fecha": "16/04/2026",
+     "desc": "CONFIA MARZO",
+     "importe": 460.0,
+     "tipo": "honorario",
+     "honorario": 460.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": 10.0
+    },
+    {
+     "mes": "may",
+     "fecha": "18/05/2026",
+     "desc": "PAGO CONFIA ABRIL",
+     "importe": 500.0,
+     "tipo": "honorario",
+     "honorario": 500.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 500.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "19/06/2026",
+     "desc": "CONFIA MAYO",
+     "importe": 500.0,
+     "tipo": "honorario",
+     "honorario": 500.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 500.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "30/06/2026",
+     "desc": "CONFIA PODCAST",
+     "importe": 140.0,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 140.0,
+     "esperado": 500.0,
+     "desvio": null
+    },
+    {
+     "mes": "jul",
+     "fecha": "10/07/2026",
+     "desc": "PAGO CONFIA JUNIO",
+     "importe": 500.0,
+     "tipo": "honorario",
+     "honorario": 500.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 500.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Flota Imbabura",
+   "estado": "activo",
+   "nota": "",
+   "fee": 550,
+   "fee_inicial": 550,
+   "con_iva": true,
+   "facturado_mes": 632.5,
+   "retenido_mes": 74.25,
+   "a_cobrar_mes": 558.25,
+   "ret_ir": 0.03,
+   "ret_iva": 0.7,
+   "cambios": {},
+   "cobrado_total": 3352.26,
+   "honorario_total": 3352.26,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 559.63,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 559.63
+    },
+    "mar": {
+     "honorario": 559.63,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 559.63
+    },
+    "abr": {
+     "honorario": 558.25,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 558.25
+    },
+    "may": {
+     "honorario": 558.25,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 558.25
+    },
+    "jun": {
+     "honorario": 558.25,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 558.25
+    },
+    "jul": {
+     "honorario": 558.25,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 558.25
+    }
+   },
+   "pendiente": 558.25,
+   "cobro": "1 mes",
+   "cubierto_hasta": 6,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": 1.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 558.25
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "03/02/2026",
+       "desc": "FLOTA IMBABURA ENERO",
+       "importe": 559.63,
+       "tipo": "honorario",
+       "honorario": 559.63,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 558.25,
+       "desvio": 1.38
+      }
+     ],
+     "razones": [],
+     "esperado": 558.25
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "02/03/2026",
+       "desc": "FLOTA IMBABURA FEBRERO",
+       "importe": 559.63,
+       "tipo": "honorario",
+       "honorario": 559.63,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 558.25,
+       "desvio": 1.38
+      }
+     ],
+     "razones": [],
+     "esperado": 558.25
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "01/04/2026",
+       "desc": "FLOTA IMBABURA MARZO",
+       "importe": 558.25,
+       "tipo": "honorario",
+       "honorario": 558.25,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 558.25,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 558.25
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "04/05/2026",
+       "desc": "PAGO FLOTA IMBABURA ABRIL",
+       "importe": 558.25,
+       "tipo": "honorario",
+       "honorario": 558.25,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 558.25,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 558.25
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "01/06/2026",
+       "desc": "PAGO FLOTA IMBABURA MAYO",
+       "importe": 558.25,
+       "tipo": "honorario",
+       "honorario": 558.25,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 558.25,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 558.25
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "03/07/2026",
+       "desc": "PAGO FLOTA IMBABURA JUNIO",
+       "importe": 558.25,
+       "tipo": "honorario",
+       "honorario": 558.25,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 558.25,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 558.25
+    }
+   },
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "03/02/2026",
+     "desc": "FLOTA IMBABURA ENERO",
+     "importe": 559.63,
+     "tipo": "honorario",
+     "honorario": 559.63,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 558.25,
+     "desvio": 1.38
+    },
+    {
+     "mes": "mar",
+     "fecha": "02/03/2026",
+     "desc": "FLOTA IMBABURA FEBRERO",
+     "importe": 559.63,
+     "tipo": "honorario",
+     "honorario": 559.63,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 558.25,
+     "desvio": 1.38
+    },
+    {
+     "mes": "abr",
+     "fecha": "01/04/2026",
+     "desc": "FLOTA IMBABURA MARZO",
+     "importe": 558.25,
+     "tipo": "honorario",
+     "honorario": 558.25,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 558.25,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "04/05/2026",
+     "desc": "PAGO FLOTA IMBABURA ABRIL",
+     "importe": 558.25,
+     "tipo": "honorario",
+     "honorario": 558.25,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 558.25,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "01/06/2026",
+     "desc": "PAGO FLOTA IMBABURA MAYO",
+     "importe": 558.25,
+     "tipo": "honorario",
+     "honorario": 558.25,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 558.25,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "03/07/2026",
+     "desc": "PAGO FLOTA IMBABURA JUNIO",
+     "importe": 558.25,
+     "tipo": "honorario",
+     "honorario": 558.25,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 558.25,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Absolute",
+   "estado": "activo",
+   "nota": "",
+   "fee": 300,
+   "fee_inicial": 300,
+   "con_iva": false,
+   "facturado_mes": 300.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 300.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 2400.0,
+   "honorario_total": 2400.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 600.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 600.0
+    },
+    "feb": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "mar": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "abr": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "may": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "jun": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "jul": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    }
+   },
+   "pendiente": 300.0,
+   "cobro": "1 mes",
+   "cubierto_hasta": 6,
+   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
+   "cobro_nota": "lecturas distintas: el último cobro declara hasta junio, pero el conteo de mensualidades da 0 mes(es) de atraso",
+   "atraso_meses": -2.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "07/01/2026",
+       "desc": "DOS MESES DEL ANTERIRO AÑO DE ABSOLUTE CON ESO QUEDA EN CERO",
+       "importe": 600.0,
+       "tipo": "honorario",
+       "honorario": 600.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 300.0
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 300.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "18/02/2026",
+       "desc": "PAGO ABSOLUTE",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "09/03/2026",
+       "desc": "PAGO ABSOLUTE  FEBRERO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "13/04/2026",
+       "desc": "PAGO ABSOLUTE  MARZO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "14/05/2026",
+       "desc": "PAGO ABSOLUTE ABRIL",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "15/06/2026",
+       "desc": "PAGO ABSOLUTE MAYO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "27/07/2026",
+       "desc": "PAGO ABSOLUTE JUNIO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    }
+   },
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [
+    {
+     "mes": "ene",
+     "n": 2
+    }
+   ],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "07/01/2026",
+     "desc": "DOS MESES DEL ANTERIRO AÑO DE ABSOLUTE CON ESO QUEDA EN CERO",
+     "importe": 600.0,
+     "tipo": "honorario",
+     "honorario": 600.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 300.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "18/02/2026",
+     "desc": "PAGO ABSOLUTE",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "09/03/2026",
+     "desc": "PAGO ABSOLUTE  FEBRERO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "13/04/2026",
+     "desc": "PAGO ABSOLUTE  MARZO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "14/05/2026",
+     "desc": "PAGO ABSOLUTE ABRIL",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "15/06/2026",
+     "desc": "PAGO ABSOLUTE MAYO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "27/07/2026",
+     "desc": "PAGO ABSOLUTE JUNIO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Plasticaucho",
+   "estado": "activo",
+   "nota": "",
+   "fee": 350,
+   "fee_inicial": 350,
+   "con_iva": true,
+   "facturado_mes": 402.5,
+   "retenido_mes": 63.0,
+   "a_cobrar_mes": 339.5,
+   "ret_ir": 0.03,
+   "ret_iva": 1.0,
+   "cambios": {},
+   "cobrado_total": 2397.0,
+   "honorario_total": 2397.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 700.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 700.0
+    },
+    "mar": {
+     "honorario": 339.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 339.0
+    },
+    "abr": {
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 340.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 679.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 679.0
+    },
+    "jul": {
+     "honorario": 339.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 339.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": -0.1,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 339.5
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "06/02/2026",
+       "desc": "PLASTICAUCHO ENERO",
+       "importe": 350.0,
+       "tipo": "honorario",
+       "honorario": 350.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": 10.5
+      },
+      {
+       "mes": "feb",
+       "fecha": "20/02/2026",
+       "desc": "PLASTICAUCHO FEBRERO",
+       "importe": 350.0,
+       "tipo": "honorario",
+       "honorario": 350.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": 10.5
+      }
+     ],
+     "razones": [
+      "llegó en 2 giros distintos"
+     ],
+     "esperado": 339.5
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "23/03/2026",
+       "desc": "PLASTICAUCHO MARZO",
+       "importe": 339.0,
+       "tipo": "honorario",
+       "honorario": 339.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": -0.5
+      }
+     ],
+     "razones": [],
+     "esperado": 339.5
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "24/04/2026",
+       "desc": "PAGO PLASTICAUCHO ABRIL",
+       "importe": 340.0,
+       "tipo": "honorario",
+       "honorario": 340.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": 0.5
+      }
+     ],
+     "razones": [],
+     "esperado": 339.5
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 339.5
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "29/06/2026",
+       "desc": "PAGO PLASTICAUCHO MAYO Y JUNIO",
+       "importe": 679.0,
+       "tipo": "honorario",
+       "honorario": 679.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": 339.5
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 339.5
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "24/07/2026",
+       "desc": "PAGO PLASTICAUCHO JULIO",
+       "importe": 339.0,
+       "tipo": "honorario",
+       "honorario": 339.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": -0.5
+      }
+     ],
+     "razones": [],
+     "esperado": 339.5
+    }
+   },
+   "meses_activo": 5,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "cuadra": false,
+   "desvios": [
+    {
+     "mes": "feb",
+     "dif": 360.5,
+     "esperado": 339.5,
+     "real": 700.0
+    }
+   ],
+   "dobles": [
+    {
+     "mes": "jun",
+     "n": 2
+    }
+   ],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "06/02/2026",
+     "desc": "PLASTICAUCHO ENERO",
+     "importe": 350.0,
+     "tipo": "honorario",
+     "honorario": 350.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": 10.5
+    },
+    {
+     "mes": "feb",
+     "fecha": "20/02/2026",
+     "desc": "PLASTICAUCHO FEBRERO",
+     "importe": 350.0,
+     "tipo": "honorario",
+     "honorario": 350.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": 10.5
+    },
+    {
+     "mes": "mar",
+     "fecha": "23/03/2026",
+     "desc": "PLASTICAUCHO MARZO",
+     "importe": 339.0,
+     "tipo": "honorario",
+     "honorario": 339.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": -0.5
+    },
+    {
+     "mes": "abr",
+     "fecha": "24/04/2026",
+     "desc": "PAGO PLASTICAUCHO ABRIL",
+     "importe": 340.0,
+     "tipo": "honorario",
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": 0.5
+    },
+    {
+     "mes": "jun",
+     "fecha": "29/06/2026",
+     "desc": "PAGO PLASTICAUCHO MAYO Y JUNIO",
+     "importe": 679.0,
+     "tipo": "honorario",
+     "honorario": 679.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": 339.5
+    },
+    {
+     "mes": "jul",
+     "fecha": "24/07/2026",
+     "desc": "PAGO PLASTICAUCHO JULIO",
+     "importe": 339.0,
+     "tipo": "honorario",
+     "honorario": 339.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": -0.5
+    }
+   ]
+  },
+  {
+   "cliente": "Onco Ambato",
+   "estado": "activo",
+   "nota": "",
+   "fee": 300,
+   "fee_inicial": 300,
+   "con_iva": true,
+   "facturado_mes": 345.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 345.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 2300.0,
+   "honorario_total": 2300.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 985.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 985.0
+    },
+    "mar": {
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 340.0
+    },
+    "abr": {
+     "honorario": 335.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 335.0
+    },
+    "may": {
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 340.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    }
+   },
+   "pendiente": 345.0,
+   "cobro": "1 mes",
+   "cubierto_hasta": 6,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": 1.3,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 345.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "02/02/2026",
+       "desc": "ONCO AMBATO DICIEMBRE",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -45.0
+      },
+      {
+       "mes": "feb",
+       "fecha": "12/02/2026",
+       "desc": "ONCO AMBATO  ENERO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "feb",
+       "fecha": "24/02/2026",
+       "desc": "ONCO AMBATO FEBRERO",
+       "importe": 340.0,
+       "tipo": "honorario",
+       "honorario": 340.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -5.0
+      }
+     ],
+     "razones": [
+      "llegó en 3 giros distintos"
+     ],
+     "esperado": 345.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "16/03/2026",
+       "desc": "PAGO onco ambato febrero",
+       "importe": 340.0,
+       "tipo": "honorario",
+       "honorario": 340.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -5.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "20/04/2026",
+       "desc": "ONCO AMBATO MARZO",
+       "importe": 335.0,
+       "tipo": "honorario",
+       "honorario": 335.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -10.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "19/05/2026",
+       "desc": "PAGO ONCO AMBATO ABRIL",
+       "importe": 340.0,
+       "tipo": "honorario",
+       "honorario": 340.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -5.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 345.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "27/07/2026",
+       "desc": "ONCO AMBATO JUNIO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -45.0
+      }
+     ],
+     "razones": [
+      "cobró por debajo de su tarifa"
+     ],
+     "esperado": 345.0
+    }
+   },
+   "meses_activo": 5,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "cuadra": false,
+   "desvios": [
+    {
+     "mes": "feb",
+     "dif": 640.0,
+     "esperado": 345.0,
+     "real": 985.0
+    },
+    {
+     "mes": "jul",
+     "dif": -45.0,
+     "esperado": 345.0,
+     "real": 300.0
+    }
+   ],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "02/02/2026",
+     "desc": "ONCO AMBATO DICIEMBRE",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -45.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "12/02/2026",
+     "desc": "ONCO AMBATO  ENERO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "24/02/2026",
+     "desc": "ONCO AMBATO FEBRERO",
+     "importe": 340.0,
+     "tipo": "honorario",
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -5.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "16/03/2026",
+     "desc": "PAGO onco ambato febrero",
+     "importe": 340.0,
+     "tipo": "honorario",
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -5.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "20/04/2026",
+     "desc": "ONCO AMBATO MARZO",
+     "importe": 335.0,
+     "tipo": "honorario",
+     "honorario": 335.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -10.0
+    },
+    {
+     "mes": "may",
+     "fecha": "19/05/2026",
+     "desc": "PAGO ONCO AMBATO ABRIL",
+     "importe": 340.0,
+     "tipo": "honorario",
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -5.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "27/07/2026",
+     "desc": "ONCO AMBATO JUNIO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -45.0
+    }
+   ]
+  },
+  {
+   "cliente": "Chiflido",
+   "estado": "activo",
+   "nota": "",
+   "fee": 300,
+   "fee_inicial": 300,
+   "con_iva": false,
+   "facturado_mes": 300.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 300.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 2100.0,
+   "honorario_total": 2100.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "feb": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "mar": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "abr": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "may": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "jun": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "jul": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": 0.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "29/01/2026",
+       "desc": "CHIFLIDO ENERO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "27/02/2026",
+       "desc": "PAGO CHIFLIDO FEBRERO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "30/03/2026",
+       "desc": "PAGO CHIFLIDO MARZO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "29/04/2026",
+       "desc": "PAGO CHIFLIDO ABRIL",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "29/05/2026",
+       "desc": "PAGO CHIFLIDO MAYO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "29/06/2026",
+       "desc": "PAGO CHIFLIDO JUNIO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "28/07/2026",
+       "desc": "PAGO CHILIDO JULIO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    }
+   },
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "29/01/2026",
+     "desc": "CHIFLIDO ENERO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "27/02/2026",
+     "desc": "PAGO CHIFLIDO FEBRERO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "30/03/2026",
+     "desc": "PAGO CHIFLIDO MARZO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "29/04/2026",
+     "desc": "PAGO CHIFLIDO ABRIL",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "29/05/2026",
+     "desc": "PAGO CHIFLIDO MAYO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "29/06/2026",
+     "desc": "PAGO CHIFLIDO JUNIO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "28/07/2026",
+     "desc": "PAGO CHILIDO JULIO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Tartelier",
+   "estado": "activo",
+   "nota": "",
+   "fee": 300,
+   "fee_inicial": 300,
+   "con_iva": true,
+   "facturado_mes": 345.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 345.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 2070.0,
+   "honorario_total": 2070.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    },
+    "mar": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    },
+    "abr": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    },
+    "may": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    },
+    "jun": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    },
+    "jul": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": 0.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 345.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "25/02/2026",
+       "desc": "PAGO TARTELIER DEL 18 DE ENERO AL 18 DE FEBRERO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "31/03/2026",
+       "desc": "TARTELIER DEL 18 DE FEBRERO AL 18 DE MARZO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "29/04/2026",
+       "desc": "PAGO TARTELIER DEL 18 DE MARZO AL 18 DE ABRIL",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "29/05/2026",
+       "desc": "PAGO TARTELIER DEL 18 DE ABRIL AL 18 D EMAYO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "24/06/2026",
+       "desc": "PAGO TARTELIER DEL 18 DE MAYO AL 18 DE JUNIO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "24/07/2026",
+       "desc": "PAGO TARTELIER DEL 18 DE JUNIO AL 18 DE JULIO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    }
+   },
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "25/02/2026",
+     "desc": "PAGO TARTELIER DEL 18 DE ENERO AL 18 DE FEBRERO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "31/03/2026",
+     "desc": "TARTELIER DEL 18 DE FEBRERO AL 18 DE MARZO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "29/04/2026",
+     "desc": "PAGO TARTELIER DEL 18 DE MARZO AL 18 DE ABRIL",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "29/05/2026",
+     "desc": "PAGO TARTELIER DEL 18 DE ABRIL AL 18 D EMAYO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "24/06/2026",
+     "desc": "PAGO TARTELIER DEL 18 DE MAYO AL 18 DE JUNIO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "24/07/2026",
+     "desc": "PAGO TARTELIER DEL 18 DE JUNIO AL 18 DE JULIO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Provita",
+   "estado": "activo",
+   "nota": "",
+   "fee": 250,
+   "fee_inicial": 250,
+   "con_iva": true,
+   "facturado_mes": 287.5,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 287.5,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 2007.5,
+   "honorario_total": 2007.5,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 282.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 282.5
+    },
+    "mar": {
+     "honorario": 575.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 575.0
+    },
+    "abr": {
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 287.5
+    },
+    "may": {
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 287.5
+    },
+    "jun": {
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 287.5
+    },
+    "jul": {
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 287.5
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": 0.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 287.5
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "05/02/2026",
+       "desc": "provita del 18 de dicembre al 18 de enero",
+       "importe": 282.5,
+       "tipo": "honorario",
+       "honorario": 282.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": -5.0
+      }
+     ],
+     "razones": [],
+     "esperado": 287.5
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "02/03/2026",
+       "desc": "PROVITA DEL 18 DE ENERO AL 18 DE FEBRERO",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      },
+      {
+       "mes": "mar",
+       "fecha": "31/03/2026",
+       "desc": "PAGO PROVITA DEL 18 DE FEBREO AL 18 DE MARZO",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 287.5
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "28/04/2026",
+       "desc": "PAGO PROVITA DEL 18 DE MARZO AL 18 DE ABRIL",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 287.5
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "26/05/2026",
+       "desc": "PAGO PROVITA DEL 18 DE ABRIL AL 18 DE MAYO",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 287.5
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "29/06/2026",
+       "desc": "PAGO PROVITA DEL 18 DE MAYO AL 18 DE JUNIO",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 287.5
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "30/07/2026",
+       "desc": "PAGO PROVITA DEL 18 DE JUNIO AL 18 DE JULIO",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 287.5
+    }
+   },
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [
+    {
+     "mes": "mar",
+     "n": 2
+    }
+   ],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "05/02/2026",
+     "desc": "provita del 18 de dicembre al 18 de enero",
+     "importe": 282.5,
+     "tipo": "honorario",
+     "honorario": 282.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": -5.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "02/03/2026",
+     "desc": "PROVITA DEL 18 DE ENERO AL 18 DE FEBRERO",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "31/03/2026",
+     "desc": "PAGO PROVITA DEL 18 DE FEBREO AL 18 DE MARZO",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "28/04/2026",
+     "desc": "PAGO PROVITA DEL 18 DE MARZO AL 18 DE ABRIL",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "26/05/2026",
+     "desc": "PAGO PROVITA DEL 18 DE ABRIL AL 18 DE MAYO",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "29/06/2026",
+     "desc": "PAGO PROVITA DEL 18 DE MAYO AL 18 DE JUNIO",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "30/07/2026",
+     "desc": "PAGO PROVITA DEL 18 DE JUNIO AL 18 DE JULIO",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "El Motor",
+   "estado": "activo",
+   "nota": "",
+   "fee": 650,
+   "fee_inicial": 650,
+   "con_iva": true,
+   "facturado_mes": 747.5,
+   "retenido_mes": 97.5,
+   "a_cobrar_mes": 650.0,
+   "ret_ir": 0,
+   "ret_iva": 1.0,
+   "cambios": {},
+   "cobrado_total": 1950.0,
+   "honorario_total": 1950.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "mar": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 1300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 1300.0
+    },
+    "jul": {
+     "honorario": 650.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 650.0
+    }
+   },
+   "pendiente": 650.0,
+   "cobro": "1 mes",
+   "cubierto_hasta": 6,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": 1.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 650.0
+    },
+    "feb": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 650.0
+    },
+    "mar": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 650.0
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 650.0
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 650.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "18/06/2026",
+       "desc": "PAGO MOTOR ABRIL",
+       "importe": 650.0,
+       "tipo": "honorario",
+       "honorario": 650.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 650.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "jun",
+       "fecha": "29/06/2026",
+       "desc": "PAGO EL MOTOR MAYO",
+       "importe": 650.0,
+       "tipo": "honorario",
+       "honorario": 650.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 650.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 650.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "20/07/2026",
+       "desc": "EL MOTOR JUNIO",
+       "importe": 650.0,
+       "tipo": "honorario",
+       "honorario": 650.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 650.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 650.0
+    }
+   },
+   "meses_activo": 2,
+   "primer_mes": "jun",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [
+    {
+     "mes": "jun",
+     "n": 2
+    }
+   ],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "jun",
+     "fecha": "18/06/2026",
+     "desc": "PAGO MOTOR ABRIL",
+     "importe": 650.0,
+     "tipo": "honorario",
+     "honorario": 650.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 650.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "29/06/2026",
+     "desc": "PAGO EL MOTOR MAYO",
+     "importe": 650.0,
+     "tipo": "honorario",
+     "honorario": 650.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 650.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "20/07/2026",
+     "desc": "EL MOTOR JUNIO",
+     "importe": 650.0,
+     "tipo": "honorario",
+     "honorario": 650.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 650.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Pasteur",
+   "estado": "cerrado",
+   "nota": "",
+   "fee": 400,
+   "fee_inicial": 400,
+   "con_iva": false,
+   "facturado_mes": 400.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 400.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 1775.0,
+   "honorario_total": 1600.0,
+   "pauta_total": 0.0,
+   "puntual_total": 175.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 400.0,
+     "pauta": 0.0,
+     "puntual": 80.0,
+     "cobrado": 480.0
+    },
+    "feb": {
+     "honorario": 400.0,
+     "pauta": 0.0,
+     "puntual": 95.0,
+     "cobrado": 495.0
+    },
+    "mar": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "abr": {
+     "honorario": 800.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 800.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    }
+   },
+   "pendiente": 0,
+   "cobro": "n/a",
+   "cubierto_hasta": 3,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": 4.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "26/01/2026",
+       "desc": "PASTEUR DICIEMBRE",
+       "importe": 480.0,
+       "tipo": "honorario",
+       "honorario": 400.0,
+       "pauta": 0.0,
+       "puntual": 80.0,
+       "esperado": 400.0,
+       "desvio": 80.0
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 400.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "23/02/2026",
+       "desc": "VELSANA DEL 11 DE ENERO AL 11 DE FEBREO Y PASTEUR [parte de Pasteur]",
+       "importe": 495.0,
+       "tipo": "honorario",
+       "honorario": 400.0,
+       "pauta": 0.0,
+       "puntual": 95.0,
+       "esperado": 400.0,
+       "desvio": 95.0
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 400.0
+    },
+    "mar": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 400.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "10/04/2026",
+       "desc": "PAGO PASTEUR DOS MESES FINALEES",
+       "importe": 800.0,
+       "tipo": "honorario",
+       "honorario": 800.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": 400.0
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 400.0
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 400.0
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 400.0
+    },
+    "jul": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 400.0
+    }
+   },
+   "meses_activo": 3,
+   "primer_mes": "ene",
+   "ultimo_mes": "abr",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [
+    {
+     "mes": "abr",
+     "n": 2
+    }
+   ],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "26/01/2026",
+     "desc": "PASTEUR DICIEMBRE",
+     "importe": 480.0,
+     "tipo": "honorario",
+     "honorario": 400.0,
+     "pauta": 0.0,
+     "puntual": 80.0,
+     "esperado": 400.0,
+     "desvio": 80.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "23/02/2026",
+     "desc": "VELSANA DEL 11 DE ENERO AL 11 DE FEBREO Y PASTEUR [parte de Pasteur]",
+     "importe": 495.0,
+     "tipo": "honorario",
+     "honorario": 400.0,
+     "pauta": 0.0,
+     "puntual": 95.0,
+     "esperado": 400.0,
+     "desvio": 95.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "10/04/2026",
+     "desc": "PAGO PASTEUR DOS MESES FINALEES",
+     "importe": 800.0,
+     "tipo": "honorario",
+     "honorario": 800.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": 400.0
+    }
+   ]
+  },
+  {
+   "cliente": "Casa del Verde",
+   "estado": "activo",
+   "nota": "",
+   "fee": 430,
+   "fee_inicial": 430,
+   "con_iva": false,
+   "facturado_mes": 430.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 430.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 1720.0,
+   "honorario_total": 1720.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "mar": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "abr": {
+     "honorario": 430.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 430.0
+    },
+    "may": {
+     "honorario": 430.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 430.0
+    },
+    "jun": {
+     "honorario": 430.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 430.0
+    },
+    "jul": {
+     "honorario": 430.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 430.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": 0.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 430.0
+    },
+    "feb": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 430.0
+    },
+    "mar": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 430.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "09/04/2026",
+       "desc": "PAGO CASA DEL VERDE",
+       "importe": 430.0,
+       "tipo": "honorario",
+       "honorario": 430.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 430.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 430.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "12/05/2026",
+       "desc": "PAGO CASA DEL VERDE",
+       "importe": 430.0,
+       "tipo": "honorario",
+       "honorario": 430.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 430.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 430.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "25/06/2026",
+       "desc": "CASA DEL VERDE",
+       "importe": 430.0,
+       "tipo": "honorario",
+       "honorario": 430.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 430.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 430.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "27/07/2026",
+       "desc": "CASA DEL VERDE",
+       "importe": 430.0,
+       "tipo": "honorario",
+       "honorario": 430.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 430.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 430.0
+    }
+   },
+   "meses_activo": 4,
+   "primer_mes": "abr",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "abr",
+     "fecha": "09/04/2026",
+     "desc": "PAGO CASA DEL VERDE",
+     "importe": 430.0,
+     "tipo": "honorario",
+     "honorario": 430.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 430.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "12/05/2026",
+     "desc": "PAGO CASA DEL VERDE",
+     "importe": 430.0,
+     "tipo": "honorario",
+     "honorario": 430.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 430.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "25/06/2026",
+     "desc": "CASA DEL VERDE",
+     "importe": 430.0,
+     "tipo": "honorario",
+     "honorario": 430.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 430.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "27/07/2026",
+     "desc": "CASA DEL VERDE",
+     "importe": 430.0,
+     "tipo": "honorario",
+     "honorario": 430.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 430.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Nono",
+   "estado": "cerrado",
+   "nota": "",
+   "fee": 450,
+   "fee_inicial": 450,
+   "con_iva": false,
+   "facturado_mes": 450.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 450.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 1350.0,
+   "honorario_total": 1350.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 440.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 440.0
+    },
+    "feb": {
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 450.0
+    },
+    "mar": {
+     "honorario": 460.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 460.0
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    }
+   },
+   "pendiente": 0,
+   "cobro": "n/a",
+   "cubierto_hasta": 3,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": 4.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "26/01/2026",
+       "desc": "NONO ENERO",
+       "importe": 440.0,
+       "tipo": "honorario",
+       "honorario": 440.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": -10.0
+      }
+     ],
+     "razones": [],
+     "esperado": 450.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "23/02/2026",
+       "desc": "NONO FEBRERO",
+       "importe": 450.0,
+       "tipo": "honorario",
+       "honorario": 450.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 450.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "04/03/2026",
+       "desc": "NONO MARZO",
+       "importe": 460.0,
+       "tipo": "honorario",
+       "honorario": 460.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 450.0,
+       "desvio": 10.0
+      }
+     ],
+     "razones": [],
+     "esperado": 450.0
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 450.0
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 450.0
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 450.0
+    },
+    "jul": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 450.0
+    }
+   },
+   "meses_activo": 3,
+   "primer_mes": "ene",
+   "ultimo_mes": "mar",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "26/01/2026",
+     "desc": "NONO ENERO",
+     "importe": 440.0,
+     "tipo": "honorario",
+     "honorario": 440.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": -10.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "23/02/2026",
+     "desc": "NONO FEBRERO",
+     "importe": 450.0,
+     "tipo": "honorario",
+     "honorario": 450.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "04/03/2026",
+     "desc": "NONO MARZO",
+     "importe": 460.0,
+     "tipo": "honorario",
+     "honorario": 460.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 450.0,
+     "desvio": 10.0
+    }
+   ]
+  },
+  {
+   "cliente": "APC",
+   "estado": "activo",
+   "nota": "",
+   "fee": 500,
+   "fee_inicial": 500,
+   "con_iva": true,
+   "facturado_mes": 575.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 575.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 1150.0,
+   "honorario_total": 1150.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "mar": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "abr": {
+     "honorario": 575.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 575.0
+    },
+    "may": {
+     "honorario": 575.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 575.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    }
+   },
+   "pendiente": 1150.0,
+   "cobro": "2 meses",
+   "cubierto_hasta": 5,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": 2.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 575.0
+    },
+    "feb": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 575.0
+    },
+    "mar": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 575.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "16/04/2026",
+       "desc": "PAGO APC",
+       "importe": 575.0,
+       "tipo": "honorario",
+       "honorario": 575.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 575.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 575.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "27/05/2026",
+       "desc": "PAGO APC",
+       "importe": 575.0,
+       "tipo": "honorario",
+       "honorario": 575.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 575.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 575.0
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 575.0
+    },
+    "jul": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 575.0
+    }
+   },
+   "meses_activo": 2,
+   "primer_mes": "abr",
+   "ultimo_mes": "may",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "abr",
+     "fecha": "16/04/2026",
+     "desc": "PAGO APC",
+     "importe": 575.0,
+     "tipo": "honorario",
+     "honorario": 575.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 575.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "27/05/2026",
+     "desc": "PAGO APC",
+     "importe": 575.0,
+     "tipo": "honorario",
+     "honorario": 575.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 575.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "La Tartuca",
+   "estado": "puntual",
+   "nota": "trabajo único de branding",
+   "fee": null,
+   "fee_inicial": null,
+   "con_iva": false,
+   "facturado_mes": null,
+   "retenido_mes": null,
+   "a_cobrar_mes": null,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 1000.0,
+   "honorario_total": 0.0,
+   "pauta_total": 0.0,
+   "puntual_total": 1000.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 1000.0,
+     "cobrado": 1000.0
+    },
+    "mar": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    }
+   },
+   "pendiente": 0,
+   "cobro": "n/a",
+   "cubierto_hasta": null,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": null,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "24/02/2026",
+       "desc": "BRANDING LA TARTUCA",
+       "importe": 1000.0,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 1000.0,
+       "esperado": null,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": null
+    },
+    "mar": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "jul": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    }
+   },
+   "meses_activo": 1,
+   "primer_mes": "feb",
+   "ultimo_mes": "feb",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "24/02/2026",
+     "desc": "BRANDING LA TARTUCA",
+     "importe": 1000.0,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 1000.0,
+     "esperado": null,
+     "desvio": null
+    }
+   ]
+  },
+  {
+   "cliente": "MM Wings",
+   "estado": "activo",
+   "nota": "",
+   "fee": 135,
+   "fee_inicial": 135,
+   "con_iva": false,
+   "facturado_mes": 135.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 135.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 945.0,
+   "honorario_total": 945.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 270.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 270.0
+    },
+    "mar": {
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 135.0
+    },
+    "abr": {
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 135.0
+    },
+    "may": {
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 135.0
+    },
+    "jun": {
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 135.0
+    },
+    "jul": {
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 135.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": 0.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 135.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "02/02/2026",
+       "desc": "MM WINGS VAYAS",
+       "importe": 135.0,
+       "tipo": "honorario",
+       "honorario": 135.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 135.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "feb",
+       "fecha": "25/02/2026",
+       "desc": "PAGO MM WINGS ENERO",
+       "importe": 135.0,
+       "tipo": "honorario",
+       "honorario": 135.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 135.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 135.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "25/03/2026",
+       "desc": "PAGO MM WINGS",
+       "importe": 135.0,
+       "tipo": "honorario",
+       "honorario": 135.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 135.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 135.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "29/04/2026",
+       "desc": "MM WINNGS",
+       "importe": 135.0,
+       "tipo": "honorario",
+       "honorario": 135.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 135.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 135.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "28/05/2026",
+       "desc": "PAGO MM WINGS",
+       "importe": 135.0,
+       "tipo": "honorario",
+       "honorario": 135.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 135.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 135.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "23/06/2026",
+       "desc": "PAGO MMWINGS",
+       "importe": 135.0,
+       "tipo": "honorario",
+       "honorario": 135.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 135.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 135.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "27/07/2026",
+       "desc": "PAGO MMWINGS",
+       "importe": 135.0,
+       "tipo": "honorario",
+       "honorario": 135.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 135.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 135.0
+    }
+   },
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [
+    {
+     "mes": "feb",
+     "n": 2
+    }
+   ],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "02/02/2026",
+     "desc": "MM WINGS VAYAS",
+     "importe": 135.0,
+     "tipo": "honorario",
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 135.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "25/02/2026",
+     "desc": "PAGO MM WINGS ENERO",
+     "importe": 135.0,
+     "tipo": "honorario",
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 135.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "25/03/2026",
+     "desc": "PAGO MM WINGS",
+     "importe": 135.0,
+     "tipo": "honorario",
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 135.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "29/04/2026",
+     "desc": "MM WINNGS",
+     "importe": 135.0,
+     "tipo": "honorario",
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 135.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "28/05/2026",
+     "desc": "PAGO MM WINGS",
+     "importe": 135.0,
+     "tipo": "honorario",
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 135.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "23/06/2026",
+     "desc": "PAGO MMWINGS",
+     "importe": 135.0,
+     "tipo": "honorario",
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 135.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "27/07/2026",
+     "desc": "PAGO MMWINGS",
+     "importe": 135.0,
+     "tipo": "honorario",
+     "honorario": 135.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 135.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Friends Guides",
+   "estado": "activo",
+   "nota": "",
+   "fee": 120,
+   "fee_inicial": 120,
+   "con_iva": false,
+   "facturado_mes": 120.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 120.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 720.0,
+   "honorario_total": 720.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 120.0
+    },
+    "feb": {
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 120.0
+    },
+    "mar": {
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 120.0
+    },
+    "abr": {
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 120.0
+    },
+    "may": {
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 120.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 120.0
+    }
+   },
+   "pendiente": 360.0,
+   "cobro": "3 meses",
+   "cubierto_hasta": 4,
+   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
+   "cobro_nota": "",
+   "atraso_meses": 3.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "05/01/2026",
+       "desc": "friends guides",
+       "importe": 120.0,
+       "tipo": "honorario",
+       "honorario": 120.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 120.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 120.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "09/02/2026",
+       "desc": "FRIENDS GUIDES NOVIEMBRE 2025",
+       "importe": 120.0,
+       "tipo": "honorario",
+       "honorario": 120.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 120.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 120.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "11/03/2026",
+       "desc": "FRIENDS GUIDES",
+       "importe": 120.0,
+       "tipo": "honorario",
+       "honorario": 120.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 120.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 120.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "13/04/2026",
+       "desc": "PAGO FRENDS GUIDES",
+       "importe": 120.0,
+       "tipo": "honorario",
+       "honorario": 120.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 120.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 120.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "14/05/2026",
+       "desc": "PAGO FRIENDS GUIDES FEE",
+       "importe": 120.0,
+       "tipo": "honorario",
+       "honorario": 120.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 120.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 120.0
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 120.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "20/07/2026",
+       "desc": "PAGO FEE FRIENDS ABRIL",
+       "importe": 120.0,
+       "tipo": "honorario",
+       "honorario": 120.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 120.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 120.0
+    }
+   },
+   "meses_activo": 6,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "05/01/2026",
+     "desc": "friends guides",
+     "importe": 120.0,
+     "tipo": "honorario",
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 120.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "09/02/2026",
+     "desc": "FRIENDS GUIDES NOVIEMBRE 2025",
+     "importe": 120.0,
+     "tipo": "honorario",
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 120.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "11/03/2026",
+     "desc": "FRIENDS GUIDES",
+     "importe": 120.0,
+     "tipo": "honorario",
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 120.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "13/04/2026",
+     "desc": "PAGO FRENDS GUIDES",
+     "importe": 120.0,
+     "tipo": "honorario",
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 120.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "14/05/2026",
+     "desc": "PAGO FRIENDS GUIDES FEE",
+     "importe": 120.0,
+     "tipo": "honorario",
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 120.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "20/07/2026",
+     "desc": "PAGO FEE FRIENDS ABRIL",
+     "importe": 120.0,
+     "tipo": "honorario",
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 120.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Cobro de marzo sin identificar",
+   "estado": "sin tarifa",
+   "nota": "falta confirmar tarifa",
+   "fee": null,
+   "fee_inicial": null,
+   "con_iva": false,
+   "facturado_mes": null,
+   "retenido_mes": null,
+   "a_cobrar_mes": null,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 653.0,
+   "honorario_total": 653.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "mar": {
+     "honorario": 653.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 653.0
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    }
+   },
+   "pendiente": 0,
+   "cobro": "n/a",
+   "cubierto_hasta": null,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": null,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "feb": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "12/03/2026",
+       "desc": "NO IDENTIFICADO",
+       "importe": 653.0,
+       "tipo": "honorario",
+       "honorario": 653.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": null,
+       "desvio": null
+      }
+     ],
+     "razones": [],
+     "esperado": null
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "jul": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    }
+   },
+   "meses_activo": 1,
+   "primer_mes": "mar",
+   "ultimo_mes": "mar",
+   "cuadra": null,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "mar",
+     "fecha": "12/03/2026",
+     "desc": "NO IDENTIFICADO",
+     "importe": 653.0,
+     "tipo": "honorario",
+     "honorario": 653.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": null,
+     "desvio": null
+    }
+   ]
+  },
+  {
+   "cliente": "Victor Hugo (evento)",
+   "estado": "puntual",
+   "nota": "evento puntual",
+   "fee": null,
+   "fee_inicial": null,
+   "con_iva": false,
+   "facturado_mes": null,
+   "retenido_mes": null,
+   "a_cobrar_mes": null,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 500.0,
+   "honorario_total": 0.0,
+   "pauta_total": 0.0,
+   "puntual_total": 500.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 500.0,
+     "cobrado": 500.0
+    },
+    "mar": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    }
+   },
+   "pendiente": 0,
+   "cobro": "n/a",
+   "cubierto_hasta": null,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": null,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "02/02/2026",
+       "desc": "ENTRADAS FIESTA VICTOR HUGO",
+       "importe": 500.0,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 500.0,
+       "esperado": null,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": null
+    },
+    "mar": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "jul": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    }
+   },
+   "meses_activo": 1,
+   "primer_mes": "feb",
+   "ultimo_mes": "feb",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "02/02/2026",
+     "desc": "ENTRADAS FIESTA VICTOR HUGO",
+     "importe": 500.0,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 500.0,
+     "esperado": null,
+     "desvio": null
+    }
+   ]
+  },
+  {
+   "cliente": "Tienda Electro",
+   "estado": "variable",
+   "nota": "pago variable, se toma el neto",
+   "fee": null,
+   "fee_inicial": null,
+   "con_iva": false,
+   "facturado_mes": null,
+   "retenido_mes": null,
+   "a_cobrar_mes": null,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 254.0,
+   "honorario_total": 254.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "mar": {
+     "honorario": 92.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 92.0
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 90.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 90.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 72.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 72.0
+    }
+   },
+   "pendiente": 0,
+   "cobro": "n/a",
+   "cubierto_hasta": null,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": null,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "feb": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "10/03/2026",
+       "desc": "PAGO TIENDA ELECTRODOMESTICOS",
+       "importe": 92.0,
+       "tipo": "honorario",
+       "honorario": 92.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": null,
+       "desvio": null
+      }
+     ],
+     "razones": [],
+     "esperado": null
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": null
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "28/05/2026",
+       "desc": "TIENDA ELECTRODOMESTICOS",
+       "importe": 90.0,
+       "tipo": "honorario",
+       "honorario": 90.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": null,
+       "desvio": null
+      }
+     ],
+     "razones": [],
+     "esperado": null
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": null
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "27/07/2026",
+       "desc": "PAGO TIENDA ELECTRO",
+       "importe": 72.0,
+       "tipo": "honorario",
+       "honorario": 72.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": null,
+       "desvio": null
+      }
+     ],
+     "razones": [],
+     "esperado": null
+    }
+   },
+   "meses_activo": 3,
+   "primer_mes": "mar",
+   "ultimo_mes": "jul",
+   "cuadra": null,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "mar",
+     "fecha": "10/03/2026",
+     "desc": "PAGO TIENDA ELECTRODOMESTICOS",
+     "importe": 92.0,
+     "tipo": "honorario",
+     "honorario": 92.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": null,
+     "desvio": null
+    },
+    {
+     "mes": "may",
+     "fecha": "28/05/2026",
+     "desc": "TIENDA ELECTRODOMESTICOS",
+     "importe": 90.0,
+     "tipo": "honorario",
+     "honorario": 90.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": null,
+     "desvio": null
+    },
+    {
+     "mes": "jul",
+     "fecha": "27/07/2026",
+     "desc": "PAGO TIENDA ELECTRO",
+     "importe": 72.0,
+     "tipo": "honorario",
+     "honorario": 72.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": null,
+     "desvio": null
+    }
+   ]
+  },
+  {
+   "cliente": "Nicris",
+   "estado": "puntual",
+   "nota": "reposición de una luz rota, no es facturación",
+   "fee": null,
+   "fee_inicial": null,
+   "con_iva": false,
+   "facturado_mes": null,
+   "retenido_mes": null,
+   "a_cobrar_mes": null,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 171.04,
+   "honorario_total": 0.0,
+   "pauta_total": 0.0,
+   "puntual_total": 171.04,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "mar": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 171.04,
+     "cobrado": 171.04
+    }
+   },
+   "pendiente": 0,
+   "cobro": "n/a",
+   "cubierto_hasta": null,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": null,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "feb": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "mar": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "15/07/2026",
+       "desc": "PAGO DE ANICRIS LUCES ROTAS",
+       "importe": 171.04,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 171.04,
+       "esperado": null,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": null
+    }
+   },
+   "meses_activo": 1,
+   "primer_mes": "jul",
+   "ultimo_mes": "jul",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "jul",
+     "fecha": "15/07/2026",
+     "desc": "PAGO DE ANICRIS LUCES ROTAS",
+     "importe": 171.04,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 171.04,
+     "esperado": null,
+     "desvio": null
+    }
+   ]
+  },
+  {
+   "cliente": "Dog Spa",
+   "estado": "puntual",
+   "nota": "trabajo puntual de video",
+   "fee": null,
+   "fee_inicial": null,
+   "con_iva": false,
+   "facturado_mes": null,
+   "retenido_mes": null,
+   "a_cobrar_mes": null,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 138.0,
+   "honorario_total": 0.0,
+   "pauta_total": 0.0,
+   "puntual_total": 138.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "mar": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 138.0,
+     "cobrado": 138.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    }
+   },
+   "pendiente": 0,
+   "cobro": "n/a",
+   "cubierto_hasta": null,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": null,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "feb": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "mar": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": null
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "12/05/2026",
+       "desc": "PAGO VIDEO DOG SPA ISMAEL MAYORGA",
+       "importe": 138.0,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 138.0,
+       "esperado": null,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": null
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "jul": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    }
+   },
+   "meses_activo": 1,
+   "primer_mes": "may",
+   "ultimo_mes": "may",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "may",
+     "fecha": "12/05/2026",
+     "desc": "PAGO VIDEO DOG SPA ISMAEL MAYORGA",
+     "importe": 138.0,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 138.0,
+     "esperado": null,
+     "desvio": null
+    }
+   ]
+  }
+ ],
+ "totales": {
+  "honorario": 71460.92,
+  "pauta": 6745.12,
+  "puntual": 5300.87,
+  "cobrado": 83506.91
+ },
+ "honorarios_recurrentes_mes": 12619.98,
+ "retenido_mes": 825.02,
+ "avisos": [
+  "Cobro de marzo sin identificar: no está en el tarifario (cobrado 653.00)"
+ ],
+ "pendiente_cobro": 7420.48,
+ "cuentas_al_dia": 12,
+ "cuentas_activas": 22
+}

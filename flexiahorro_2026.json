@@ -1,0 +1,101 @@
+{
+ "meses": [
+  "ene",
+  "feb",
+  "mar",
+  "abr",
+  "may",
+  "jun",
+  "jul"
+ ],
+ "filas": [
+  {
+   "mes": "ene",
+   "hoja_entra": 20.0,
+   "ext_entra": 20.0,
+   "dif_entra": 0.0,
+   "hoja_sale": 0.0,
+   "ext_sale": 0.0,
+   "dif_sale": 0.0,
+   "interes": 5.92,
+   "neto": 20.0
+  },
+  {
+   "mes": "feb",
+   "hoja_entra": 4820.0,
+   "ext_entra": 4820.0,
+   "dif_entra": 0.0,
+   "hoja_sale": 0.0,
+   "ext_sale": 0.0,
+   "dif_sale": 0.0,
+   "interes": 8.56,
+   "neto": 4820.0
+  },
+  {
+   "mes": "mar",
+   "hoja_entra": 3620.0,
+   "ext_entra": 3620.0,
+   "dif_entra": 0.0,
+   "hoja_sale": 4413.01,
+   "ext_sale": 4413.01,
+   "dif_sale": 0.0,
+   "interes": 14.66,
+   "neto": -793.01
+  },
+  {
+   "mes": "abr",
+   "hoja_entra": 9056.0,
+   "ext_entra": 9056.0,
+   "dif_entra": 0.0,
+   "hoja_sale": 6577.41,
+   "ext_sale": 6577.41,
+   "dif_sale": 0.0,
+   "interes": 23.78,
+   "neto": 2478.59
+  },
+  {
+   "mes": "may",
+   "hoja_entra": 7425.0,
+   "ext_entra": 7425.0,
+   "dif_entra": 0.0,
+   "hoja_sale": 7655.0,
+   "ext_sale": 7655.0,
+   "dif_sale": 0.0,
+   "interes": 19.45,
+   "neto": -230.0
+  },
+  {
+   "mes": "jun",
+   "hoja_entra": 15722.0,
+   "ext_entra": 15722.0,
+   "dif_entra": 0.0,
+   "hoja_sale": 13405.13,
+   "ext_sale": 13405.13,
+   "dif_sale": 0.0,
+   "interes": 25.83,
+   "neto": 2316.87
+  },
+  {
+   "mes": "jul",
+   "hoja_entra": 14357.0,
+   "ext_entra": 14357.0,
+   "dif_entra": 0.0,
+   "hoja_sale": 13456.99,
+   "ext_sale": 13456.99,
+   "dif_sale": 0.0,
+   "interes": 32.85,
+   "neto": 900.01
+  }
+ ],
+ "cuadra": true,
+ "interes_2026": 131.05,
+ "neto_2026": 9512.46,
+ "saldo_inicial": 1626.84,
+ "saldo_final": 11270.94,
+ "saldo_teorico": 11270.35,
+ "desvio_saldo": 0.59,
+ "pendientes": [],
+ "pendiente_total": 0,
+ "titular": "Rodriguez Ponce Ana Paula",
+ "cuenta": "2212160493"
+}
