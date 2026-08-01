@@ -3,7 +3,8 @@
 Cuadro de mando financiero de la agencia, construido desde el flujo bancario
 de la cuenta Pichincha (Google Sheets, pestaña `2026 CTA PICHINCHA`).
 
-**Panel publicado:** https://claude.ai/code/artifact/eb3e524d-78d0-4ea4-8f8e-7abbf68040b8
+**Panel para compartir:** https://fvayas.github.io/finanzas-agencia/
+**Copia de trabajo (artifact):** https://claude.ai/code/artifact/eb3e524d-78d0-4ea4-8f8e-7abbf68040b8
 
 > ⚠️ Este repositorio contiene datos financieros reales de la agencia:
 > sueldos, tarifas por cliente y movimientos bancarios.
