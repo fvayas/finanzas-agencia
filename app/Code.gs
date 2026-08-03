@@ -63,14 +63,17 @@ function registrar(datos) {
     });
     if (!hoja) throw new Error('No encuentro la pestaña "' + HOJA + '".');
 
-    // última fila real: la de la última referencia 01-00XXX
-    const colRef = hoja.getRange("C:C").getValues();
+    // Última fila REAL: referencia + importe. La hoja trae cientos de
+    // referencias pre-impresas más abajo, sin datos: numerar desde ahí
+    // duplica referencias, pierde el saldo y esconde la fila.
+    const cf = hoja.getRange(1, 3, hoja.getLastRow(), 4).getValues(); // C..F
     let fila = 0, ultimaRef = 0;
-    for (let i = colRef.length - 1; i >= 0; i--) {
-      const m = String(colRef[i][0]).match(/01-(\d{5})/);
-      if (m) { fila = i + 1; ultimaRef = +m[1]; break; }
+    for (let i = cf.length - 1; i >= 0; i--) {
+      const m = String(cf[i][0]).match(/01-(\d{5})/);
+      const conImporte = String(cf[i][2]) !== "" || String(cf[i][3]) !== "";
+      if (m && conImporte) { fila = i + 1; ultimaRef = +m[1]; break; }
     }
-    if (!fila) throw new Error("No encuentro la última referencia en la columna C.");
+    if (!fila) throw new Error("No encuentro el último movimiento con importe.");
 
     // saldo corrido: el de la última fila con importe
     const saldoPrevio = Number(hoja.getRange(fila, 7).getValue()) || 0;
