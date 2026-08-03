@@ -8263,8 +8263,8 @@
   "referencia": "01-00515",
   "descripcion": "ARRIENDO OFICINA",
   "ingreso": 0.0,
-  "egreso": 400.11,
-  "neto": -400.11,
+  "egreso": 400.41,
+  "neto": -400.41,
   "naturaleza": "OPERATIVO",
   "grupo": "Estructura",
   "categoria": "Arriendo, condominio y alicuotas",
@@ -8302,5 +8302,21 @@
   "categoria": "Alejandra Aponte",
   "detalle": "SUELDO ALEJANDRA APONTE",
   "tipo_original": "https://drive.google.com/file/d/1LJFvjWM5ywhUdknMNQF3iAoSrc4HtJhd/view?usp=drivesdk"
+ },
+ {
+  "fecha": "03/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00518",
+  "descripcion": "INTERNET ÚLTIMO DANIEL DARQUEA",
+  "ingreso": 0.0,
+  "egreso": 38.12,
+  "neto": -38.12,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Estructura",
+  "categoria": "Internet",
+  "detalle": "INTERNET ÚLTIMO DANIEL DARQUEA",
+  "tipo_original": "https://drive.google.com/file/d/1owbZwso-bHoR8GOhLSOi4kmagmrkbFvh/view?usp=drivesdk"
  }
 ]

@@ -107,10 +107,10 @@
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
-   "costo_fijo": 4048.77,
+   "costo_fijo": 4087.19,
    "costo_variable": 47.84,
-   "costo_total": 4096.61,
-   "resultado": -3538.36,
+   "costo_total": 4135.03,
+   "resultado": -3576.78,
    "margen_contribucion": 510.41,
    "margen_pct": 91.4
   }
@@ -134,7 +134,7 @@
    "may": -566.71,
    "jun": -480.66,
    "jul": -546.91,
-   "ago": -400.11
+   "ago": -438.53
   },
   "Ingresos - Fee mensual": {
    "ene": 7128.63,
@@ -3391,7 +3391,7 @@
   {
    "grupo": "Estructura",
    "categoria": "Arriendo, condominio y alicuotas",
-   "total": 3278.46,
+   "total": 3278.76,
    "n": 11,
    "por_mes": {
     "ene": 400.41,
@@ -3401,7 +3401,7 @@
     "may": 425.89,
     "jun": 400.41,
     "jul": 420.41,
-    "ago": 400.11
+    "ago": 400.41
    },
    "detalle": {
     "ene": {
@@ -3494,7 +3494,7 @@
       {
        "fecha": "03/08/2026",
        "desc": "ARRIENDO OFICINA",
-       "importe": 400.11
+       "importe": 400.41
       }
      ],
      "razones": []
@@ -4127,6 +4127,59 @@
    }
   },
   {
+   "grupo": "Estructura",
+   "categoria": "Internet",
+   "total": 256.45,
+   "n": 4,
+   "por_mes": {
+    "ene": 182.1,
+    "feb": 36.23,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 38.12
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "desc": "INTERNET",
+       "importe": 73.41
+      },
+      {
+       "fecha": "27/01/2026",
+       "desc": "INTERNET DANIEL",
+       "importe": 108.69
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "27/02/2026",
+       "desc": "PAGO INTERNET",
+       "importe": 36.23
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "desc": "INTERNET ÚLTIMO DANIEL DARQUEA",
+       "importe": 38.12
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
    "grupo": "Movilizacion",
    "categoria": "Taxis / parqueo / viaticos",
    "total": 223.08,
@@ -4308,49 +4361,6 @@
        "fecha": "03/08/2026",
        "desc": "TAXIS ALEJANDRO VACA",
        "importe": 10.46
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Estructura",
-   "categoria": "Internet",
-   "total": 218.33,
-   "n": 3,
-   "por_mes": {
-    "ene": 182.1,
-    "feb": 36.23,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 0.0
-   },
-   "detalle": {
-    "ene": {
-     "movs": [
-      {
-       "fecha": "05/01/2026",
-       "desc": "INTERNET",
-       "importe": 73.41
-      },
-      {
-       "fecha": "27/01/2026",
-       "desc": "INTERNET DANIEL",
-       "importe": 108.69
-      }
-     ],
-     "razones": []
-    },
-    "feb": {
-     "movs": [
-      {
-       "fecha": "27/02/2026",
-       "desc": "PAGO INTERNET",
-       "importe": 36.23
       }
      ],
      "razones": []
@@ -5037,9 +5047,9 @@
  ],
  "totales": {
   "ingresos": 78292.28,
-  "costo_fijo": 64621.4,
+  "costo_fijo": 64659.82,
   "costo_variable": 9726.14,
-  "resultado": 350.27,
-  "movimientos": 519
+  "resultado": 311.85,
+  "movimientos": 520
  }
 }
