@@ -107,12 +107,12 @@
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
-   "costo_fijo": 1901.25,
-   "costo_variable": 24.94,
-   "costo_total": 1926.19,
-   "resultado": -1367.94,
-   "margen_contribucion": 533.31,
-   "margen_pct": 95.5
+   "costo_fijo": 4048.77,
+   "costo_variable": 47.84,
+   "costo_total": 4096.61,
+   "resultado": -3538.36,
+   "margen_contribucion": 510.41,
+   "margen_pct": 91.4
   }
  ],
  "grupos": {
@@ -124,7 +124,7 @@
    "may": -4934.07,
    "jun": -5577.54,
    "jul": -5912.16,
-   "ago": -1901.25
+   "ago": -3648.66
   },
   "Estructura": {
    "ene": -588.35,
@@ -134,7 +134,7 @@
    "may": -566.71,
    "jun": -480.66,
    "jul": -546.91,
-   "ago": 0.0
+   "ago": -400.11
   },
   "Ingresos - Fee mensual": {
    "ene": 7128.63,
@@ -194,7 +194,7 @@
    "may": -20.0,
    "jun": -860.0,
    "jul": -1092.91,
-   "ago": 0.0
+   "ago": -20.0
   },
   "Nomina variable": {
    "ene": -24.93,
@@ -284,7 +284,7 @@
    "may": -6.0,
    "jun": -89.0,
    "jul": -23.41,
-   "ago": 0.0
+   "ago": -2.9
   },
   "Pasantias": {
    "ene": 0.0,
@@ -1244,12 +1244,12 @@
   {
    "persona": "Alejandra Aponte",
    "grupo": "Nomina fija",
-   "total": 5949.64,
-   "meses": 7,
-   "promedio_mes": 849.95,
+   "total": 6927.55,
+   "meses": 8,
+   "promedio_mes": 865.94,
    "base": 977.91,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
+   "ultimo_mes": "ago",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1260,7 +1260,7 @@
     "may": 977.91,
     "jun": 977.91,
     "jul": 977.91,
-    "ago": 0.0
+    "ago": 977.91
    },
    "detalle": {
     "ene": {
@@ -1360,6 +1360,19 @@
      "movs": [
       {
        "fecha": "01/07/2026",
+       "importe": 977.91,
+       "desc": "SUELDO ALEJANDRA APONTE"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
        "importe": 977.91,
        "desc": "SUELDO ALEJANDRA APONTE"
       }
@@ -1839,105 +1852,14 @@
    }
   },
   {
-   "persona": "Miguel Molina",
-   "grupo": "Nomina fija",
-   "total": 3451.23,
-   "meses": 5,
-   "promedio_mes": 690.25,
-   "base": 690.41,
-   "primer_mes": "ene",
-   "ultimo_mes": "may",
-   "activo_julio": false,
-   "liquidado": true,
-   "por_mes": {
-    "ene": 690.41,
-    "feb": 690.41,
-    "mar": 690.0,
-    "abr": 690.0,
-    "may": 690.41,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 0.0
-   },
-   "detalle": {
-    "ene": {
-     "movs": [
-      {
-       "fecha": "06/01/2026",
-       "importe": 690.41,
-       "desc": "SUELDO MIGUEL"
-      }
-     ],
-     "razones": [],
-     "delta": null,
-     "vs_base": 0.0,
-     "cmp_base": true
-    },
-    "feb": {
-     "movs": [
-      {
-       "fecha": "02/02/2026",
-       "importe": 690.41,
-       "desc": "SUELDO MIGUEL"
-      }
-     ],
-     "razones": [],
-     "delta": null,
-     "vs_base": 0.0,
-     "cmp_base": true
-    },
-    "mar": {
-     "movs": [
-      {
-       "fecha": "02/03/2026",
-       "importe": 690.0,
-       "desc": "PAGO sueldo miguel MOLINA"
-      }
-     ],
-     "razones": [],
-     "delta": null,
-     "vs_base": -0.41,
-     "cmp_base": true
-    },
-    "abr": {
-     "movs": [
-      {
-       "fecha": "01/04/2026",
-       "importe": 690.0,
-       "desc": "SUELDO MIGUEL MOLINA"
-      }
-     ],
-     "razones": [],
-     "delta": null,
-     "vs_base": -0.41,
-     "cmp_base": true
-    },
-    "may": {
-     "movs": [
-      {
-       "fecha": "04/05/2026",
-       "importe": 690.41,
-       "desc": "PAGO FINAL MIGUEL MOLINA"
-      }
-     ],
-     "razones": [
-      "liquidación final: es su último pago"
-     ],
-     "delta": null,
-     "vs_base": 0.0,
-     "cmp_base": true
-    }
-   }
-  },
-  {
    "persona": "Danna Cardenas",
    "grupo": "Nomina fija",
-   "total": 3381.9,
-   "meses": 7,
-   "promedio_mes": 483.13,
+   "total": 3863.9,
+   "meses": 8,
+   "promedio_mes": 482.99,
    "base": 482.0,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
+   "ultimo_mes": "ago",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1948,7 +1870,7 @@
     "may": 482.0,
     "jun": 483.38,
     "jul": 482.0,
-    "ago": 0.0
+    "ago": 482.0
    },
    "detalle": {
     "ene": {
@@ -2059,6 +1981,110 @@
       "vs": "jun",
       "dif": -1.38
      },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "importe": 482.0,
+       "desc": "SUELDO DANNA CARDENAS"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
+   "persona": "Miguel Molina",
+   "grupo": "Nomina fija",
+   "total": 3451.23,
+   "meses": 5,
+   "promedio_mes": 690.25,
+   "base": 690.41,
+   "primer_mes": "ene",
+   "ultimo_mes": "may",
+   "activo_julio": false,
+   "liquidado": true,
+   "por_mes": {
+    "ene": 690.41,
+    "feb": 690.41,
+    "mar": 690.0,
+    "abr": 690.0,
+    "may": 690.41,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 0.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "06/01/2026",
+       "importe": 690.41,
+       "desc": "SUELDO MIGUEL"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "importe": 690.41,
+       "desc": "SUELDO MIGUEL"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "02/03/2026",
+       "importe": 690.0,
+       "desc": "PAGO sueldo miguel MOLINA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": -0.41,
+     "cmp_base": true
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "importe": 690.0,
+       "desc": "SUELDO MIGUEL MOLINA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": -0.41,
+     "cmp_base": true
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "importe": 690.41,
+       "desc": "PAGO FINAL MIGUEL MOLINA"
+      }
+     ],
+     "razones": [
+      "liquidación final: es su último pago"
+     ],
+     "delta": null,
      "vs_base": 0.0,
      "cmp_base": true
     }
@@ -2247,6 +2273,91 @@
    }
   },
   {
+   "persona": "Josue Lara",
+   "grupo": "Nomina fija",
+   "total": 1691.0,
+   "meses": 3,
+   "promedio_mes": 563.67,
+   "base": 825.0,
+   "primer_mes": "jun",
+   "ultimo_mes": "ago",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 825.0,
+    "jul": 578.5,
+    "ago": 287.5
+   },
+   "detalle": {
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 575.0,
+       "desc": "SUELDO JOSUE LARA"
+      },
+      {
+       "fecha": "16/06/2026",
+       "importe": 250.0,
+       "desc": "SUELDO QUINCENAL JOSUE LARA"
+      }
+     ],
+     "razones": [
+      "cobra por quincenas, no mensual"
+     ],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "importe": 287.5,
+       "desc": "SUELDO QUINCENAL JOSUE LARA"
+      },
+      {
+       "fecha": "15/07/2026",
+       "importe": 291.0,
+       "desc": "PAGO QUINCENA JOSUE LARA"
+      }
+     ],
+     "razones": [
+      "cobra por quincenas, no mensual"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": -246.5
+     },
+     "vs_base": -246.5,
+     "cmp_base": true
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "importe": 287.5,
+       "desc": "SUELDO JOSUE LARA QUINCENA"
+      }
+     ],
+     "razones": [
+      "cobra por quincenas, no mensual"
+     ],
+     "delta": {
+      "vs": "jul",
+      "dif": -291.0
+     },
+     "vs_base": -537.5,
+     "cmp_base": true
+    }
+   }
+  },
+  {
    "persona": "Marissa Alban",
    "grupo": "Nomina fija",
    "total": 1502.5,
@@ -2311,73 +2422,6 @@
      },
      "vs_base": 2.5,
      "cmp_base": true
-    }
-   }
-  },
-  {
-   "persona": "Josue Lara",
-   "grupo": "Nomina fija",
-   "total": 1403.5,
-   "meses": 2,
-   "promedio_mes": 701.75,
-   "base": null,
-   "primer_mes": "jun",
-   "ultimo_mes": "jul",
-   "activo_julio": true,
-   "liquidado": false,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 825.0,
-    "jul": 578.5,
-    "ago": 0.0
-   },
-   "detalle": {
-    "jun": {
-     "movs": [
-      {
-       "fecha": "01/06/2026",
-       "importe": 575.0,
-       "desc": "SUELDO JOSUE LARA"
-      },
-      {
-       "fecha": "16/06/2026",
-       "importe": 250.0,
-       "desc": "SUELDO QUINCENAL JOSUE LARA"
-      }
-     ],
-     "razones": [
-      "cobra por quincenas, no mensual"
-     ],
-     "delta": null,
-     "vs_base": 0.0,
-     "cmp_base": false
-    },
-    "jul": {
-     "movs": [
-      {
-       "fecha": "01/07/2026",
-       "importe": 287.5,
-       "desc": "SUELDO QUINCENAL JOSUE LARA"
-      },
-      {
-       "fecha": "15/07/2026",
-       "importe": 291.0,
-       "desc": "PAGO QUINCENA JOSUE LARA"
-      }
-     ],
-     "razones": [
-      "cobra por quincenas, no mensual"
-     ],
-     "delta": {
-      "vs": "jun",
-      "dif": -246.5
-     },
-     "vs_base": -246.5,
-     "cmp_base": false
     }
    }
   },
@@ -3347,8 +3391,8 @@
   {
    "grupo": "Estructura",
    "categoria": "Arriendo, condominio y alicuotas",
-   "total": 2878.35,
-   "n": 10,
+   "total": 3278.46,
+   "n": 11,
    "por_mes": {
     "ene": 400.41,
     "feb": 400.41,
@@ -3357,7 +3401,7 @@
     "may": 425.89,
     "jun": 400.41,
     "jul": 420.41,
-    "ago": 0.0
+    "ago": 400.11
    },
    "detalle": {
     "ene": {
@@ -3441,6 +3485,16 @@
        "fecha": "10/07/2026",
        "desc": "PAGO CONDOMINIO JUNIO Y JULIO",
        "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "desc": "ARRIENDO OFICINA",
+       "importe": 400.11
       }
      ],
      "razones": []
@@ -3896,8 +3950,8 @@
   {
    "grupo": "Freelance y produccion",
    "categoria": "Modelos",
-   "total": 382.5,
-   "n": 9,
+   "total": 402.5,
+   "n": 10,
    "por_mes": {
     "ene": 20.0,
     "feb": 20.0,
@@ -3906,7 +3960,7 @@
     "may": 20.0,
     "jun": 0.0,
     "jul": 20.0,
-    "ago": 0.0
+    "ago": 20.0
    },
    "detalle": {
     "ene": {
@@ -3974,6 +4028,16 @@
       {
        "fecha": "01/07/2026",
        "desc": "PAGO A MODELO HEALTHY PRODUCCION",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "desc": "MODELO VEALSANA",
        "importe": 20.0
       }
      ],
@@ -4296,8 +4360,8 @@
   {
    "grupo": "Oficina y bienestar",
    "categoria": "Refrigerios y suministros",
-   "total": 200.99,
-   "n": 18,
+   "total": 203.89,
+   "n": 19,
    "por_mes": {
     "ene": 0.0,
     "feb": 6.0,
@@ -4306,7 +4370,7 @@
     "may": 6.0,
     "jun": 89.0,
     "jul": 23.41,
-    "ago": 0.0
+    "ago": 2.9
    },
    "detalle": {
     "feb": {
@@ -4425,6 +4489,16 @@
        "fecha": "23/07/2026",
        "desc": "PAGO CAFE Y AZUCAR A CHIKI",
        "importe": 14.91
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "desc": "CAFÉ PRODUCCIÓN APC",
+       "importe": 2.9
       }
      ],
      "razones": []
@@ -4963,9 +5037,9 @@
  ],
  "totales": {
   "ingresos": 78292.28,
-  "costo_fijo": 62473.88,
-  "costo_variable": 9703.24,
-  "resultado": 2520.69,
-  "movimientos": 513
+  "costo_fijo": 64621.4,
+  "costo_variable": 9726.14,
+  "resultado": 350.27,
+  "movimientos": 519
  }
 }
