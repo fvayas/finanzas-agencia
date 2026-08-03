@@ -105,31 +105,30 @@
   #monto:focus{outline:none}
   .bloque:focus-within{border-color:var(--ink)}
 
-  .fila2{display:grid; grid-template-columns:1.2fr 1fr; gap:12px}
+  .fila2{display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:12px}
+  /* el campo de fecha en iPhone trae ancho propio: se le quita el disfraz
+     nativo y se le obliga a caber en su caja */
+  input[type="date"]{
+    appearance:none; -webkit-appearance:none; min-width:0; max-width:100%;
+    min-height:47px; font-family:var(--mono); font-size:15px;
+  }
+  input[type="date"]::-webkit-date-and-time-value{text-align:left}
 
   .pista{font-size:11.5px; color:var(--ink3); margin-top:7px; line-height:1.45}
   .pista b{color:var(--ink2)}
 
-  /* fichas de descripción: opciones visibles, pensadas para el pulgar */
-  .fichas{margin-top:10px}
-  .fichas .grupo{
-    font-size:9.5px; font-weight:800; color:var(--rojo);
-    text-transform:uppercase; letter-spacing:.14em; margin:10px 0 6px;
+  /* desplegable nativo, vestido como el resto de campos */
+  select{
+    width:100%; font-size:16px; padding:12px 40px 12px 12px;
+    border:1.5px solid var(--line); border-radius:9px;
+    background:var(--card); color:var(--ink); appearance:none;
+    -webkit-appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16' fill='none' stroke='%237B828A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m3 6 5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat:no-repeat; background-position:right 13px center;
   }
-  .fila-fichas{
-    display:flex; gap:7px; overflow-x:auto; padding:2px 2px 6px;
-    scrollbar-width:none; -webkit-overflow-scrolling:touch;
-  }
-  .fila-fichas::-webkit-scrollbar{display:none}
-  .ficha{
-    flex:none; font-size:13px; font-weight:600; color:var(--ink2);
-    background:var(--paper); border:1.5px solid var(--line);
-    border-radius:999px; padding:9px 14px; cursor:pointer; white-space:nowrap;
-    min-height:38px; display:flex; align-items:center;
-    transition:all .1s ease;
-  }
-  .ficha:active{transform:scale(.96)}
-  .ficha.activa{background:var(--ink); border-color:var(--ink); color:var(--card)}
+  select:focus{outline:none; border-color:var(--ink)}
+  select:invalid{color:var(--ink3)}
+  .desc-editable{margin-top:10px}
 
   /* zona de fotos con miniaturas */
   .foto-zona{
@@ -239,12 +238,15 @@
   </div>
 
   <div class="bloque">
-    <label for="desc">Descripción</label>
-    <input id="desc" autocomplete="off" autocapitalize="characters"
-           spellcheck="false" required placeholder="Toca una opción o escribe…">
-    <div class="fichas" id="fichas"></div>
-    <div class="pista">Las fichas de cuentas ya traen el <b>mes del servicio</b>;
-      cámbialo si el pago es de otro mes.</div>
+    <label for="opcion">Descripción</label>
+    <select id="opcion" required></select>
+    <div class="desc-editable">
+      <input id="desc" autocomplete="off" autocapitalize="characters"
+             spellcheck="false" required
+             placeholder="…o escribe la descripción aquí">
+    </div>
+    <div class="pista">Al elegir una cuenta se pone solo el <b>mes del
+      servicio</b>; edítalo abajo si el pago es de otro mes.</div>
   </div>
 
   <div class="bloque">
@@ -301,31 +303,35 @@
     [new Date(Date.now() - 5*3600*1000).getUTCMonth()];
 
   const GRUPOS = [
-    ["Cuentas",   CUENTAS.map(c => ["PAGO " + c, "PAGO " + c + " " + MES_ACTUAL])],
-    ["Sueldos",   EQUIPO.map(p => ["SUELDO " + p.split(" ")[0], "SUELDO " + p])],
-    ["Conceptos", CONCEPTOS.map(c => [c.replace("INGRESO DE FLEXIAHORRO PARA ",
-                    "DESDE FLEXIAHORRO…"), c]).concat([["TAXIS…","TAXIS "]])],
+    ["Cuentas — pagos de clientes",
+      CUENTAS.map(c => ["PAGO " + c, "PAGO " + c + " " + MES_ACTUAL])],
+    ["Sueldos del equipo",
+      EQUIPO.map(p => ["SUELDO " + p, "SUELDO " + p])],
+    ["Conceptos frecuentes",
+      CONCEPTOS.map(c => [c, c]).concat([["TAXIS (añade el nombre)", "TAXIS "]])],
   ];
-  const cont = $("fichas");
+  const sel = $("opcion");
+  sel.innerHTML = '<option value="" disabled selected hidden>Elegir de la lista…</option>';
   GRUPOS.forEach(([titulo, items]) => {
-    const g = document.createElement("div");
-    g.className = "grupo"; g.textContent = titulo; cont.appendChild(g);
-    const fila = document.createElement("div");
-    fila.className = "fila-fichas"; cont.appendChild(fila);
-    items.forEach(([corto, valor]) => {
-      const f = document.createElement("button");
-      f.type = "button"; f.className = "ficha"; f.textContent = corto;
-      f.onclick = () => {
-        $("desc").value = valor;
-        cont.querySelectorAll(".ficha.activa").forEach(x => x.classList.remove("activa"));
-        f.classList.add("activa");
-        // si la ficha termina abierta (espacio o …), el cursor queda al final
-        if (/[ …]$/.test(valor)) { $("desc").focus();
-          $("desc").setSelectionRange(valor.length, valor.length); }
-      };
-      fila.appendChild(f);
+    const g = document.createElement("optgroup");
+    g.label = titulo;
+    items.forEach(([texto, valor]) => {
+      const o = document.createElement("option");
+      o.textContent = texto; o.value = valor; g.appendChild(o);
     });
+    sel.appendChild(g);
   });
+  const otra = document.createElement("option");
+  otra.value = "__otra__"; otra.textContent = "✏️ Otra descripción (escribir)";
+  sel.appendChild(otra);
+
+  sel.onchange = () => {
+    if (sel.value === "__otra__") { $("desc").value = ""; $("desc").focus(); return; }
+    $("desc").value = sel.value;
+    // lo abierto (TAXIS , DESDE FLEXIAHORRO PARA ) pide completar a mano
+    if (/ $/.test(sel.value)) { $("desc").focus();
+      $("desc").setSelectionRange(sel.value.length, sel.value.length); }
+  };
 
   const dinero = n => "$" + Number(n).toLocaleString("es-EC",
     {minimumFractionDigits: 2, maximumFractionDigits: 2});
@@ -391,6 +397,7 @@
       const fecha = $("fecha").value;
       const datos = { clave: clave.value, tipo: tipo, fecha: fecha,
         descripcion: $("desc").value, monto: monto, fotos: imgs };
+      sel.removeAttribute("required");
       if (typeof google === "undefined") return falla("Vista previa sin conexión al libro.");
       google.script.run
         .withSuccessHandler(r => {
@@ -410,6 +417,7 @@
           okk.style.display = "block";
           pintaVivo({ saldo: r.saldo, ref: r.ref });
           $("f").reset();
+          sel.selectedIndex = 0; sel.setAttribute("required", "");
           clave.value = localStorage.getItem("clave");
           fotos.value = ""; pintaFotos();
           $("fecha").value = hoyEC();
