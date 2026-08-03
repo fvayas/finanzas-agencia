@@ -33,7 +33,7 @@ porque requiere tu cuenta.
 
 Listo: cada registro añade la fila al libro con su referencia y saldo
 corrido, sube las fotos a **Drive → Comprobantes Finanzas → 2026 → 2026-08**
-renombradas con fecha y referencia, y deja el enlace en la columna M.
+renombradas con fecha y referencia, y deja el enlace en la columna H.
 El panel público lo recoge en el siguiente cuarto de hora.
 
 ## Opcional: que el panel se actualice al instante

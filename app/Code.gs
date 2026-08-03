@@ -11,7 +11,7 @@
  *   2. Sube las fotos del comprobante a Drive, en carpetas por mes
  *      (Comprobantes Finanzas/2026/2026-08/), renombradas con fecha,
  *      referencia y descripción.
- *   3. Enlaza el comprobante en la columna M de la misma fila.
+ *   3. Enlaza el comprobante en la columna H de la misma fila.
  *   4. Si hay token de GitHub guardado, avisa al repositorio para que el
  *      panel se reconstruya al instante (si no, el robot pasa cada 15 min).
  *
@@ -106,11 +106,10 @@ function registrar(datos) {
       fechaTxt, ref, desc,
       esIngreso ? monto : "", esIngreso ? "" : monto, saldo,
     ]]);
+    // el enlace va en la columna H (la antigua "Tipo", en desuso desde
+    // marzo; el panel clasifica por la descripción y no la lee)
     if (enlaces.length) {
-      if (hoja.getRange(1, 13).getValue() === "") {
-        hoja.getRange(1, 13).setValue("Comprobante");
-      }
-      hoja.getRange(destino, 13).setValue(enlaces.join("\n"));
+      hoja.getRange(destino, 8).setValue(enlaces.join("\n"));
     }
 
     avisarGitHub_();
