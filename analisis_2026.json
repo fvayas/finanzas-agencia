@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 500.0,
+   "ingresos": 558.25,
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
-   "costo_fijo": 0.0,
-   "costo_variable": 0.0,
-   "costo_total": 0.0,
-   "resultado": 500.0,
-   "margen_contribucion": 500.0,
-   "margen_pct": 100.0
+   "costo_fijo": 1901.25,
+   "costo_variable": 24.94,
+   "costo_total": 1926.19,
+   "resultado": -1367.94,
+   "margen_contribucion": 533.31,
+   "margen_pct": 95.5
   }
  ],
  "grupos": {
@@ -124,7 +124,7 @@
    "may": -4934.07,
    "jun": -5577.54,
    "jul": -5912.16,
-   "ago": 0.0
+   "ago": -1901.25
   },
   "Estructura": {
    "ene": -588.35,
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 500.0
+   "ago": 558.25
   },
   "Equipos": {
    "ene": -75.0,
@@ -174,7 +174,7 @@
    "may": -20.16,
    "jun": -56.88,
    "jul": -18.34,
-   "ago": 0.0
+   "ago": -24.94
   },
   "Pauta": {
    "ene": -574.03,
@@ -336,7 +336,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": 0.0
+   "ago": 6433.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -526,6 +526,26 @@
    }
   },
   {
+   "cliente": "Flota Imbabura",
+   "total": 3910.51,
+   "pct": 5.0,
+   "pagos": 7,
+   "meses_activo": 7,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "fee_promedio": 558.64,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 559.63,
+    "mar": 559.63,
+    "abr": 558.25,
+    "may": 558.25,
+    "jun": 558.25,
+    "jul": 558.25,
+    "ago": 558.25
+   }
+  },
+  {
    "cliente": "Nane Vestidos",
    "total": 3660.0,
    "pct": 4.7,
@@ -562,26 +582,6 @@
     "may": 517.5,
     "jun": 517.5,
     "jul": 517.5,
-    "ago": 0.0
-   }
-  },
-  {
-   "cliente": "Flota Imbabura",
-   "total": 3352.26,
-   "pct": 4.3,
-   "pagos": 6,
-   "meses_activo": 6,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "fee_promedio": 558.71,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 559.63,
-    "mar": 559.63,
-    "abr": 558.25,
-    "may": 558.25,
-    "jun": 558.25,
-    "jul": 558.25,
     "ago": 0.0
    }
   },
@@ -786,26 +786,6 @@
    }
   },
   {
-   "cliente": "APC",
-   "total": 1650.0,
-   "pct": 2.1,
-   "pagos": 3,
-   "meses_activo": 3,
-   "primer_mes": "abr",
-   "ultimo_mes": "ago",
-   "fee_promedio": 550.0,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 575.0,
-    "may": 575.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 500.0
-   }
-  },
-  {
    "cliente": "Nono",
    "total": 1350.0,
    "pct": 1.7,
@@ -840,6 +820,26 @@
     "mar": 0.0,
     "abr": 800.0,
     "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 0.0
+   }
+  },
+  {
+   "cliente": "APC",
+   "total": 1150.0,
+   "pct": 1.5,
+   "pagos": 2,
+   "meses_activo": 2,
+   "primer_mes": "abr",
+   "ultimo_mes": "may",
+   "fee_promedio": 575.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 575.0,
+    "may": 575.0,
     "jun": 0.0,
     "jul": 0.0,
     "ago": 0.0
@@ -1374,12 +1374,12 @@
   {
    "persona": "Alejandro Vaca",
    "grupo": "Nomina fija",
-   "total": 4747.15,
-   "meses": 7,
-   "promedio_mes": 678.16,
+   "total": 5437.15,
+   "meses": 8,
+   "promedio_mes": 679.64,
    "base": 690.0,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
+   "ultimo_mes": "ago",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1390,7 +1390,7 @@
     "may": 718.75,
     "jun": 720.13,
     "jul": 690.0,
-    "ago": 0.0
+    "ago": 690.0
    },
    "detalle": {
     "ene": {
@@ -1526,18 +1526,31 @@
      },
      "vs_base": 0.0,
      "cmp_base": true
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "importe": 690.0,
+       "desc": "SUELDO ALEJANDRO VACA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
     }
    }
   },
   {
    "persona": "Stalin Bonilla",
    "grupo": "Nomina fija",
-   "total": 4521.62,
-   "meses": 7,
-   "promedio_mes": 645.95,
+   "total": 5182.87,
+   "meses": 8,
+   "promedio_mes": 647.86,
    "base": 661.25,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
+   "ultimo_mes": "ago",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1548,7 +1561,7 @@
     "may": 718.93,
     "jun": 661.25,
     "jul": 661.25,
-    "ago": 0.0
+    "ago": 661.25
    },
    "detalle": {
     "ene": {
@@ -1671,18 +1684,31 @@
      "delta": null,
      "vs_base": 0.0,
      "cmp_base": true
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "importe": 661.25,
+       "desc": "SUELDO STALIN BONILLA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
     }
    }
   },
   {
    "persona": "Estefi Jacome",
    "grupo": "Nomina fija",
-   "total": 4097.5,
-   "meses": 7,
-   "promedio_mes": 585.36,
+   "total": 4647.5,
+   "meses": 8,
+   "promedio_mes": 580.94,
    "base": 550.0,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
+   "ultimo_mes": "ago",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1693,7 +1719,7 @@
     "may": 632.5,
     "jun": 550.0,
     "jul": 550.0,
-    "ago": 0.0
+    "ago": 550.0
    },
    "detalle": {
     "ene": {
@@ -1788,6 +1814,19 @@
      "movs": [
       {
        "fecha": "01/07/2026",
+       "importe": 550.0,
+       "desc": "SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
        "importe": 550.0,
        "desc": "SUELDO ESTEFI JACOME"
       }
@@ -2506,8 +2545,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 55020.0,
-   "n": 63,
+   "total": 55587.0,
+   "n": 64,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2516,7 +2555,7 @@
     "may": 7425.0,
     "jun": 15722.0,
     "jul": 14357.0,
-    "ago": 0.0
+    "ago": 567.0
    },
    "detalle": {
     "ene": {
@@ -2868,14 +2907,24 @@
       }
      ],
      "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 567.0
+      }
+     ],
+     "razones": []
     }
    }
   },
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Entrada desde FlexiAhorro",
-   "total": -45507.54,
-   "n": 50,
+   "total": -52507.54,
+   "n": 51,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -2884,7 +2933,7 @@
     "may": -7655.0,
     "jun": -13405.13,
     "jul": -13456.99,
-    "ago": 0.0
+    "ago": -7000.0
    },
    "detalle": {
     "mar": {
@@ -3158,6 +3207,16 @@
        "fecha": "31/07/2026",
        "desc": "INGRESO DE FLEXIAHORRO PAR APAGO DE SUELDO KAREN",
        "importe": -600.0
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SUELDOS",
+       "importe": -7000.0
       }
      ],
      "razones": []
@@ -4004,6 +4063,194 @@
    }
   },
   {
+   "grupo": "Movilizacion",
+   "categoria": "Taxis / parqueo / viaticos",
+   "total": 223.08,
+   "n": 27,
+   "por_mes": {
+    "ene": 21.08,
+    "feb": 0.0,
+    "mar": 42.67,
+    "abr": 39.01,
+    "may": 20.16,
+    "jun": 56.88,
+    "jul": 18.34,
+    "ago": 24.94
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "07/01/2026",
+       "desc": "PARQUEO CENTRO",
+       "importe": 0.75
+      },
+      {
+       "fecha": "08/01/2026",
+       "desc": "PARQUEO CENTRO",
+       "importe": 0.4
+      },
+      {
+       "fecha": "12/01/2026",
+       "desc": "PAGO VIATICOS",
+       "importe": 5.0
+      },
+      {
+       "fecha": "16/01/2026",
+       "desc": "VIATICOS STALIN TAXIS",
+       "importe": 14.93
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "02/03/2026",
+       "desc": "TAXIS UBER PODCAST",
+       "importe": 16.59
+      },
+      {
+       "fecha": "03/03/2026",
+       "desc": "TAXI ALEJO",
+       "importe": 10.98
+      },
+      {
+       "fecha": "03/03/2026",
+       "desc": "TAXI STALIN",
+       "importe": 9.0
+      },
+      {
+       "fecha": "03/03/2026",
+       "desc": "PARQUEO CENTRO",
+       "importe": 0.8
+      },
+      {
+       "fecha": "04/03/2026",
+       "desc": "TAXIS DANNA",
+       "importe": 5.3
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "desc": "PAGO TAXIS ALEJANDRO VACA",
+       "importe": 12.22
+      },
+      {
+       "fecha": "01/04/2026",
+       "desc": "PAGO TAXIS STALIN",
+       "importe": 13.64
+      },
+      {
+       "fecha": "01/04/2026",
+       "desc": "PAGO TAXIS DANNA",
+       "importe": 4.86
+      },
+      {
+       "fecha": "01/04/2026",
+       "desc": "PAGO TAXIS DANIELA CORDOVA",
+       "importe": 3.19
+      },
+      {
+       "fecha": "01/04/2026",
+       "desc": "PAGO TAXIS ALEJANDRA APONTE",
+       "importe": 5.1
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "18/05/2026",
+       "desc": "PAGO TAXIS ALEJANDRO VACA",
+       "importe": 11.7
+      },
+      {
+       "fecha": "18/05/2026",
+       "desc": "PAGO TAXIS DANNA CARDENAS",
+       "importe": 4.46
+      },
+      {
+       "fecha": "28/05/2026",
+       "desc": "GASTO TAXI",
+       "importe": 4.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "desc": "TAXIS STALIN BONILLA",
+       "importe": 11.57
+      },
+      {
+       "fecha": "01/06/2026",
+       "desc": "TAXIS ALEJANDRO VACA",
+       "importe": 19.2
+      },
+      {
+       "fecha": "01/06/2026",
+       "desc": "TAXIS JOSUE LARA",
+       "importe": 10.0
+      },
+      {
+       "fecha": "23/06/2026",
+       "desc": "PGO TAXIS MARISSA ALBAN",
+       "importe": 9.58
+      },
+      {
+       "fecha": "23/06/2026",
+       "desc": "PAGO TAXIS DANIELA CORDOVA",
+       "importe": 6.53
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "desc": "TAXIS STALIN BONILLA",
+       "importe": 2.67
+      },
+      {
+       "fecha": "01/07/2026",
+       "desc": "TADIS DANNA CARDENAS",
+       "importe": 6.28
+      },
+      {
+       "fecha": "01/07/2026",
+       "desc": "TAXIS ALEJANDRO VACA",
+       "importe": 9.39
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "desc": "TAXIS STALIN",
+       "importe": 14.48
+      },
+      {
+       "fecha": "03/08/2026",
+       "desc": "TAXIS ALEJANDRO VACA",
+       "importe": 10.46
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
    "grupo": "Estructura",
    "categoria": "Internet",
    "total": 218.33,
@@ -4178,179 +4425,6 @@
        "fecha": "23/07/2026",
        "desc": "PAGO CAFE Y AZUCAR A CHIKI",
        "importe": 14.91
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Movilizacion",
-   "categoria": "Taxis / parqueo / viaticos",
-   "total": 198.14,
-   "n": 25,
-   "por_mes": {
-    "ene": 21.08,
-    "feb": 0.0,
-    "mar": 42.67,
-    "abr": 39.01,
-    "may": 20.16,
-    "jun": 56.88,
-    "jul": 18.34,
-    "ago": 0.0
-   },
-   "detalle": {
-    "ene": {
-     "movs": [
-      {
-       "fecha": "07/01/2026",
-       "desc": "PARQUEO CENTRO",
-       "importe": 0.75
-      },
-      {
-       "fecha": "08/01/2026",
-       "desc": "PARQUEO CENTRO",
-       "importe": 0.4
-      },
-      {
-       "fecha": "12/01/2026",
-       "desc": "PAGO VIATICOS",
-       "importe": 5.0
-      },
-      {
-       "fecha": "16/01/2026",
-       "desc": "VIATICOS STALIN TAXIS",
-       "importe": 14.93
-      }
-     ],
-     "razones": []
-    },
-    "mar": {
-     "movs": [
-      {
-       "fecha": "02/03/2026",
-       "desc": "TAXIS UBER PODCAST",
-       "importe": 16.59
-      },
-      {
-       "fecha": "03/03/2026",
-       "desc": "TAXI ALEJO",
-       "importe": 10.98
-      },
-      {
-       "fecha": "03/03/2026",
-       "desc": "TAXI STALIN",
-       "importe": 9.0
-      },
-      {
-       "fecha": "03/03/2026",
-       "desc": "PARQUEO CENTRO",
-       "importe": 0.8
-      },
-      {
-       "fecha": "04/03/2026",
-       "desc": "TAXIS DANNA",
-       "importe": 5.3
-      }
-     ],
-     "razones": []
-    },
-    "abr": {
-     "movs": [
-      {
-       "fecha": "01/04/2026",
-       "desc": "PAGO TAXIS ALEJANDRO VACA",
-       "importe": 12.22
-      },
-      {
-       "fecha": "01/04/2026",
-       "desc": "PAGO TAXIS STALIN",
-       "importe": 13.64
-      },
-      {
-       "fecha": "01/04/2026",
-       "desc": "PAGO TAXIS DANNA",
-       "importe": 4.86
-      },
-      {
-       "fecha": "01/04/2026",
-       "desc": "PAGO TAXIS DANIELA CORDOVA",
-       "importe": 3.19
-      },
-      {
-       "fecha": "01/04/2026",
-       "desc": "PAGO TAXIS ALEJANDRA APONTE",
-       "importe": 5.1
-      }
-     ],
-     "razones": []
-    },
-    "may": {
-     "movs": [
-      {
-       "fecha": "18/05/2026",
-       "desc": "PAGO TAXIS ALEJANDRO VACA",
-       "importe": 11.7
-      },
-      {
-       "fecha": "18/05/2026",
-       "desc": "PAGO TAXIS DANNA CARDENAS",
-       "importe": 4.46
-      },
-      {
-       "fecha": "28/05/2026",
-       "desc": "GASTO TAXI",
-       "importe": 4.0
-      }
-     ],
-     "razones": []
-    },
-    "jun": {
-     "movs": [
-      {
-       "fecha": "01/06/2026",
-       "desc": "TAXIS STALIN BONILLA",
-       "importe": 11.57
-      },
-      {
-       "fecha": "01/06/2026",
-       "desc": "TAXIS ALEJANDRO VACA",
-       "importe": 19.2
-      },
-      {
-       "fecha": "01/06/2026",
-       "desc": "TAXIS JOSUE LARA",
-       "importe": 10.0
-      },
-      {
-       "fecha": "23/06/2026",
-       "desc": "PGO TAXIS MARISSA ALBAN",
-       "importe": 9.58
-      },
-      {
-       "fecha": "23/06/2026",
-       "desc": "PAGO TAXIS DANIELA CORDOVA",
-       "importe": 6.53
-      }
-     ],
-     "razones": []
-    },
-    "jul": {
-     "movs": [
-      {
-       "fecha": "01/07/2026",
-       "desc": "TAXIS STALIN BONILLA",
-       "importe": 2.67
-      },
-      {
-       "fecha": "01/07/2026",
-       "desc": "TADIS DANNA CARDENAS",
-       "importe": 6.28
-      },
-      {
-       "fecha": "01/07/2026",
-       "desc": "TAXIS ALEJANDRO VACA",
-       "importe": 9.39
       }
      ],
      "razones": []
@@ -4888,10 +4962,10 @@
   }
  ],
  "totales": {
-  "ingresos": 78234.03,
-  "costo_fijo": 60572.63,
-  "costo_variable": 9678.3,
-  "resultado": 4388.63,
-  "movimientos": 506
+  "ingresos": 78292.28,
+  "costo_fijo": 62473.88,
+  "costo_variable": 9703.24,
+  "resultado": 2520.69,
+  "movimientos": 513
  }
 }
