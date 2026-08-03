@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Registrar movimiento</title>
+<style>
+  /* La misma identidad del panel: papel, tinta, filete rojo */
+  :root{
+    --paper:#F6F6F2; --card:#FFFFFF; --line:#D6D7D1; --ink:#15181B;
+    --ink2:#4B5158; --ink3:#7B828A; --rojo:#C22233; --verde:#1D7A46;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font:15px/1.5 -apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    padding:14px 14px 40px; max-width:520px; margin-inline:auto;
+  }
+  header{
+    background:#14171A; color:#FAFAF8; border-radius:10px;
+    padding:18px 18px 14px; position:relative; overflow:hidden; margin-bottom:14px;
+  }
+  header::before{content:""; position:absolute; inset:0 0 auto 0; height:5px; background:var(--rojo)}
+  header small{display:block; letter-spacing:.2em; color:#FF7A85; font-weight:700; font-size:10px; text-transform:uppercase}
+  header h1{margin:6px 0 0; font-size:22px; font-weight:800}
+  form{display:grid; gap:12px}
+  label{font-size:12px; font-weight:700; color:var(--ink2); display:block; margin-bottom:5px; text-transform:uppercase; letter-spacing:.06em}
+  input,select{
+    width:100%; font-size:16px; padding:12px; border:1px solid var(--line);
+    border-radius:8px; background:var(--card); color:var(--ink);
+  }
+  input:focus{outline:2px solid var(--ink); border-color:var(--ink)}
+  .tipo{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+  .tipo input{display:none}
+  .tipo span{
+    display:block; text-align:center; padding:13px; border-radius:8px;
+    border:1px solid var(--line); background:var(--card); font-weight:800; cursor:pointer;
+  }
+  .tipo input:checked + span{color:#fff}
+  #t-ing:checked + span{background:var(--verde); border-color:var(--verde)}
+  #t-egr:checked + span{background:var(--rojo); border-color:var(--rojo)}
+  .fila{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  .pista{font-size:11.5px; color:var(--ink3); margin-top:4px}
+  .foto-zona{
+    border:1.5px dashed var(--line); border-radius:8px; padding:14px;
+    text-align:center; color:var(--ink2); background:var(--card); cursor:pointer;
+  }
+  .foto-zona.con{border-color:var(--verde); color:var(--verde); font-weight:700}
+  button{
+    font-size:17px; font-weight:800; padding:15px; border:0; border-radius:8px;
+    background:#14171A; color:#fff; cursor:pointer;
+  }
+  button:disabled{opacity:.55}
+  .aviso{border-radius:8px; padding:13px 15px; font-size:14px; display:none}
+  .aviso.err{display:block; background:#C2223318; color:var(--rojo); font-weight:600}
+  .aviso.ok{display:block; background:#1D7A4620; color:var(--verde)}
+  .aviso .ref{font-family:var(--mono); font-weight:700}
+  .aviso a{color:inherit}
+</style>
+</head>
+<body>
+
+<header>
+  <small>Finanzas agencia · Cta. Pichincha</small>
+  <h1>Registrar movimiento</h1>
+</header>
+
+<form id="f">
+  <div class="tipo">
+    <label><input type="radio" name="tipo" value="ingreso" id="t-ing"><span>Ingreso</span></label>
+    <label><input type="radio" name="tipo" value="egreso" id="t-egr" checked><span>Egreso</span></label>
+  </div>
+
+  <div class="fila">
+    <div><label for="fecha">Fecha</label><input type="date" id="fecha" required></div>
+    <div><label for="monto">Monto $</label>
+      <input type="number" id="monto" step="0.01" min="0.01" inputmode="decimal" placeholder="0,00" required></div>
+  </div>
+
+  <div>
+    <label for="desc">Descripción</label>
+    <input id="desc" list="sugerencias" autocomplete="off" required
+           placeholder="PAGO SAMARI AGOSTO">
+    <div class="pista">Con el mes del servicio ("PAGO SAMARI AGOSTO") el panel
+      sabe qué mensualidad queda cubierta.</div>
+    <datalist id="sugerencias"></datalist>
+  </div>
+
+  <div>
+    <label>Comprobante (foto)</label>
+    <div class="foto-zona" id="fz" onclick="document.getElementById('fotos').click()">
+      Tocar para hacer foto o elegir imagen</div>
+    <input type="file" id="fotos" accept="image/*" capture="environment" multiple hidden>
+  </div>
+
+  <div>
+    <label for="clave">Clave</label>
+    <input type="password" id="clave" inputmode="numeric" required placeholder="····">
+  </div>
+
+  <div class="aviso err" id="err"></div>
+  <div class="aviso ok" id="okk"></div>
+  <button id="btn" type="submit">Registrar</button>
+</form>
+
+<script>
+  // Sugerencias que el categorizador del panel ya entiende: si la descripción
+  // sale de aquí, la fila cae sola en su cuenta o categoría.
+  const CUENTAS = ["SPEEDY","UNINOVA","FIAMMINGO","HEALTHY GIRL","EL MOTOR",
+    "SAMARI","VELSANA","FLOTA IMBABURA","APC","CIGARRA","CONFIA",
+    "NANE VESTIDOS","CASA DEL VERDE","PLADECO","PLASTICAUCHO","TARTELIER",
+    "CHIFLIDO","ONCO AMBATO","ABSOLUTE","PROVITA","MM WINGS","FRIENDS GUIDES"];
+  const EQUIPO = ["ALEJANDRA APONTE","ALEJANDRO VACA","STALIN BONILLA",
+    "ESTEFI JACOME","DANNA CARDENAS","DANIELA CORDOVA","JOSUE LARA",
+    "MARISSA ALBAN","NICOLE CUESTA","FRANCISCO VAYAS","ANA PAULA"];
+  const CONCEPTOS = ["ENVIO A FLEXIAHORRO","INGRESO DE FLEXIAHORRO PARA ",
+    "PAGO TARJETA DE CREDITO","REEMBOLSO PAUTA FRANCISCO VAYAS",
+    "ARRIENDO OFICINA","ARRIENDO CHIKI","ARRIENDO FRIENDS GUIDES",
+    "PAGO IMPUESTOS","INTERNET","PAGO DE AGUA","PAGO CONDOMINIO",
+    "PAGO LIMPIEZA","BOTELLON","PAGO SISTEMA CONTABLE"];
+
+  const dl = document.getElementById("sugerencias");
+  [].concat(
+    CUENTAS.map(c => "PAGO " + c + " "),
+    EQUIPO.map(p => "SUELDO " + p),
+    EQUIPO.map(p => "TAXIS " + p),
+    CONCEPTOS
+  ).forEach(v => { const o = document.createElement("option"); o.value = v; dl.appendChild(o); });
+
+  // hoy, en hora de Ecuador
+  document.getElementById("fecha").value =
+    new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
+
+  // la clave se recuerda en el teléfono para no teclearla cada vez
+  const clave = document.getElementById("clave");
+  clave.value = localStorage.getItem("clave") || "";
+
+  const fz = document.getElementById("fz"), fotos = document.getElementById("fotos");
+  fotos.onchange = () => {
+    fz.textContent = fotos.files.length
+      ? "✓ " + fotos.files.length + " foto(s) lista(s)"
+      : "Tocar para hacer foto o elegir imagen";
+    fz.classList.toggle("con", !!fotos.files.length);
+  };
+
+  const leer = f => new Promise((si, no) => {
+    const r = new FileReader();
+    r.onload = () => si({ b64: r.result.split(",")[1], nombre: f.name, mime: f.type });
+    r.onerror = no;
+    r.readAsDataURL(f);
+  });
+
+  document.getElementById("f").onsubmit = async ev => {
+    ev.preventDefault();
+    const btn = document.getElementById("btn");
+    const err = document.getElementById("err"), okk = document.getElementById("okk");
+    err.className = "aviso err"; okk.className = "aviso ok";
+    err.style.display = okk.style.display = "none";
+    btn.disabled = true; btn.textContent = "Guardando…";
+    try {
+      const imgs = await Promise.all([...fotos.files].map(leer));
+      const datos = {
+        clave: clave.value,
+        tipo: document.querySelector("input[name=tipo]:checked").value,
+        fecha: document.getElementById("fecha").value,
+        descripcion: document.getElementById("desc").value,
+        monto: parseFloat(document.getElementById("monto").value),
+        fotos: imgs,
+      };
+      google.script.run
+        .withSuccessHandler(r => {
+          localStorage.setItem("clave", clave.value);
+          okk.innerHTML = "Registrado como <span class='ref'>" + r.ref +
+            "</span> · saldo <span class='ref'>$" +
+            r.saldo.toLocaleString("es-EC", {minimumFractionDigits:2}) + "</span>" +
+            (r.fotos ? " · " + r.fotos + " comprobante(s) en Drive" : "") +
+            (r.instantaneo
+              ? "<br>El panel se está actualizando ahora mismo."
+              : "<br>El panel lo recoge en el próximo cuarto de hora.");
+          okk.style.display = "block";
+          document.getElementById("f").reset();
+          clave.value = localStorage.getItem("clave");
+          fotos.value = ""; fotos.onchange();
+          document.getElementById("fecha").value =
+            new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
+          btn.disabled = false; btn.textContent = "Registrar";
+        })
+        .withFailureHandler(e => {
+          err.textContent = e.message || String(e);
+          err.style.display = "block";
+          btn.disabled = false; btn.textContent = "Registrar";
+        })
+        .registrar(datos);
+    } catch (e) {
+      err.textContent = "No pude leer las fotos: " + e;
+      err.style.display = "block";
+      btn.disabled = false; btn.textContent = "Registrar";
+    }
+  };
+</script>
+</body>
+</html>

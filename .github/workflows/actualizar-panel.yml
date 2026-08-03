@@ -1,0 +1,58 @@
+# Reconstruye el panel desde la hoja de Google Sheets y publica en Pages.
+#
+# Se dispara de tres formas:
+#   - cada 15 minutos (respaldo: aunque nadie avise, el panel nunca queda viejo)
+#   - a mano, desde la pestaña Actions o la app de GitHub en el teléfono
+#   - al instante, cuando la app de captura envía el aviso "nuevo-movimiento"
+#     (requiere el token opcional descrito en app/INSTALAR.md)
+name: Actualizar panel
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [nuevo-movimiento]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-panel
+  cancel-in-progress: true
+
+jobs:
+  regenerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Bajar la hoja publicada
+        run: |
+          curl -sL --retry 3 --max-time 60 \
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vSbLFM7IIyDfEndS3zwQrNV6cYlBtimJ_48FaEDn4YgMmQTAIE-ynowRpIwLm7Rwg/pub?gid=535711988&single=true&output=csv" \
+            -o 2026.csv
+          # una hoja vacía o un error HTML no deben pisar los datos buenos
+          test "$(wc -c < 2026.csv)" -gt 10000
+
+      - name: Regenerar el panel
+        run: |
+          python3 categorizar.py
+          python3 tarifario.py
+          python3 analisis.py
+          python3 flexiahorro.py
+          python3 tarjeta.py
+          python3 build_dashboard.py
+          python3 auditoria.py
+
+      - name: Publicar si hay cambios
+        run: |
+          git config user.name "panel-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "La hoja no cambió: nada que publicar."
+          else
+            git commit -m "chore: refresh panel from sheet [bot]"
+            git push
+          fi

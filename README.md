@@ -9,7 +9,18 @@ de la cuenta Pichincha (Google Sheets, pestaña `2026 CTA PICHINCHA`).
 > ⚠️ Este repositorio contiene datos financieros reales de la agencia:
 > sueldos, tarifas por cliente y movimientos bancarios.
 
-## Cómo se regenera
+## Cómo entra un movimiento
+
+**App de captura** (`app/`): formulario móvil que añade la fila al libro con
+su referencia y saldo corrido, sube el comprobante a Drive (carpetas por mes,
+renombrado con fecha y referencia) y avisa al robot. Instalación en
+[`app/INSTALAR.md`](app/INSTALAR.md) — 5 minutos, una sola vez.
+
+**Robot** (`.github/workflows/actualizar-panel.yml`): baja la hoja, corre el
+pipeline y publica en Pages. Pasa cada 15 minutos, se puede lanzar a mano
+desde Actions, y con el token opcional la app lo dispara al instante.
+
+## Cómo se regenera a mano
 
 La fuente de verdad es el Sheets. Cuando se actualiza, correr en orden:
 
