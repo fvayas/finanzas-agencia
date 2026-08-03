@@ -21,7 +21,13 @@ import json, re
 from collections import defaultdict
 
 IVA = 0.15
-MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul"]
+# meses derivados de los datos: la columna de agosto nace con su primer registro
+BASE12 = ["ene", "feb", "mar", "abr", "may", "jun", "jul",
+          "ago", "sep", "oct", "nov", "dic"]
+import json as _json
+_mov0 = _json.load(open("movimientos_2026.json", encoding="utf-8"))
+MESES = BASE12[:max(BASE12.index(m["mes"]) for m in _mov0
+                    if m["mes"] in BASE12) + 1]
 
 # --------------------------------------------------------------------------
 # TARIFARIO — confirmado por Francisco (julio 2026)
@@ -129,11 +135,16 @@ def esperado(cfg, mes):
 
 
 MES_LARGO = {"ene": "enero", "feb": "febrero", "mar": "marzo", "abr": "abril",
-             "may": "mayo", "jun": "junio", "jul": "julio"}
+             "may": "mayo", "jun": "junio", "jul": "julio", "ago": "agosto",
+             "sep": "septiembre", "oct": "octubre", "nov": "noviembre",
+             "dic": "diciembre"}
 
-# El mes de cierre del ejercicio analizado. Todo lo cubierto hasta aqui
-# (o mas alla) cuenta como al dia.
-MES_CORTE = 7
+# Mes EXIGIBLE: el ultimo mes ya terminado a la fecha del ultimo movimiento.
+# Con datos al 3 de agosto, deber agosto no es deber nada; se debe hasta julio.
+# El dia 31 de un mes, ese mes ya cuenta como terminado.
+import calendar as _cal
+_d, _m, _a = (int(x) for x in _mov0[-1]["fecha"].split("/"))
+MES_CORTE = _m if _d == _cal.monthrange(_a, _m)[1] else _m - 1
 
 # Nombres de mes tal y como aparecen escritos en la hoja, con sus erratas.
 # El orden importa: primero las formas largas para que "DICEMBRE" no case
@@ -384,7 +395,7 @@ def main():
         elif cubierto is None:
             cobro = "sin datos"
         elif cubierto > MES_CORTE:
-            cobro = "adelantado"
+            cobro = "adelantado"      # cubre el mes en curso o mas alla
         elif cubierto == MES_CORTE:
             cobro = "al día"
         elif cubierto == MES_CORTE - 1:

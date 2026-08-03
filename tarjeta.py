@@ -17,7 +17,14 @@ Salida: tarjeta_2026.json
 import json
 from collections import defaultdict
 
-MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul"]
+# los consumos registrados llegan hasta julio; los meses posteriores salen
+# en cero hasta que se peguen los estados de cuenta nuevos
+BASE12 = ["ene", "feb", "mar", "abr", "may", "jun", "jul",
+          "ago", "sep", "oct", "nov", "dic"]
+import json as _json
+_mov0 = _json.load(open("movimientos_2026.json", encoding="utf-8"))
+MESES = BASE12[:max(BASE12.index(m["mes"]) for m in _mov0
+                    if m["mes"] in BASE12) + 1]
 
 # Que es cada comercio. La tarjeta se usa para tres cosas:
 #   PAUTA     -> anuncios de TikTok
@@ -154,11 +161,11 @@ def main():
                         ("Intereses por financiar el saldo", "interes", "Financiero")]:
         conceptos.append({
             "concepto": lab, "familia": fam,
-            "total": round(sum(CARGOS[mm][k] for mm in MESES), 2),
+            "total": round(sum(CARGOS[mm][k] for mm in MESES if mm in CARGOS), 2),
             "n": len(MESES),
-            "por_mes": {mm: CARGOS[mm][k] for mm in MESES},
+            "por_mes": {mm: CARGOS.get(mm, {k: 0})[k] if mm in CARGOS else 0 for mm in MESES},
             "movs": [{"mes": mm, "fecha": "", "desc": lab,
-                      "importe": CARGOS[mm][k]} for mm in MESES],
+                      "importe": CARGOS[mm][k]} for mm in MESES if mm in CARGOS],
         })
 
     tot_mes = {mm: round(sum(c["por_mes"][mm] for c in conceptos), 2)

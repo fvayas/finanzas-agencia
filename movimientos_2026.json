@@ -8085,14 +8085,14 @@
   "mes_num": 8,
   "mes": "ago",
   "referencia": "01-00504",
-  "descripcion": "SUELDO ESTEFI JACOME",
-  "ingreso": 0.0,
-  "egreso": 500.0,
-  "neto": -500.0,
+  "descripcion": "PAGO APC",
+  "ingreso": 500.0,
+  "egreso": 0.0,
+  "neto": 500.0,
   "naturaleza": "OPERATIVO",
-  "grupo": "Nomina fija",
-  "categoria": "Estefi Jacome",
-  "detalle": "SUELDO ESTEFI JACOME",
-  "tipo_original": "https://drive.google.com/file/d/1RddD412DH5L9u1Vblwk5xbvOFs1XDHWi/view?usp=drivesdk"
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "APC",
+  "detalle": "PAGO APC",
+  "tipo_original": "https://drive.google.com/file/d/13U-YxCIz9UiwM7pze6AhUUbbDyHx89mM/view?usp=drivesdk"
  }
 ]

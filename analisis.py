@@ -13,9 +13,21 @@ Salida: analisis_2026.json  (consumido por el dashboard)
 import json, re
 from collections import defaultdict, OrderedDict
 
-MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul"]
+# Los meses se derivan de los datos: en cuanto llega el primer movimiento
+# de un mes nuevo, su columna nace sola en todo el panel.
+BASE12 = ["ene", "feb", "mar", "abr", "may", "jun", "jul",
+          "ago", "sep", "oct", "nov", "dic"]
 MES_LARGO = {"ene": "enero", "feb": "febrero", "mar": "marzo", "abr": "abril",
-             "may": "mayo", "jun": "junio", "jul": "julio"}
+             "may": "mayo", "jun": "junio", "jul": "julio", "ago": "agosto",
+             "sep": "septiembre", "oct": "octubre", "nov": "noviembre",
+             "dic": "diciembre"}
+
+def meses_presentes(mov):
+    ultimo = max(BASE12.index(m["mes"]) for m in mov if m["mes"] in BASE12)
+    return BASE12[:ultimo + 1]
+
+MESES = meses_presentes(__import__("json").load(
+    open("movimientos_2026.json", encoding="utf-8")))
 
 
 def _limpia(s):
@@ -140,17 +152,24 @@ def main():
 
     # ------------------------------------------------ punto de equilibrio
     # Se calcula con el promedio de los 7 meses cerrados.
-    n = len(MESES)
-    ing_prom = sum(p["ingresos"] for p in pl) / n
-    fijo_prom = sum(p["costo_fijo"] for p in pl) / n
+    # el promedio general tampoco debe tragarse el mes en curso a medias;
+    # pl_completos se calcula mas abajo, asi que aqui se anticipa el criterio
+    import calendar as _cal0
+    _d0, _m0, _a0 = (int(x) for x in mov[-1]["fecha"].split("/"))
+    _pl_comp = pl if _d0 == _cal0.monthrange(_a0, _m0)[1] else pl[:-1]
+    if not _pl_comp:
+        _pl_comp = pl
+    n = len(_pl_comp)
+    ing_prom = sum(p["ingresos"] for p in _pl_comp) / n
+    fijo_prom = sum(p["costo_fijo"] for p in _pl_comp) / n
     # la pauta no recuperada entra como variable: crece con el volumen de pauta
-    var_prom = sum(p["costo_variable"] + p["pauta_neta"] for p in pl) / n
+    var_prom = sum(p["costo_variable"] + p["pauta_neta"] for p in _pl_comp) / n
     ratio_var = var_prom / ing_prom if ing_prom else 0        # % variable
     mc_ratio = 1 - ratio_var                                  # margen contrib.
     breakeven = fijo_prom / mc_ratio if mc_ratio > 0 else 0
 
     # punto de equilibrio sin contar el sueldo de los socios
-    socios_prom = -sum(grupo_mes["Nomina socios"].values()) / n
+    socios_prom = -sum(grupo_mes["Nomina socios"][p["mes"]] for p in _pl_comp) / n
     be_sin_socios = ((fijo_prom - socios_prom) / mc_ratio) if mc_ratio > 0 else 0
 
     # --------------------------------------------------------- clientes
@@ -297,7 +316,9 @@ def main():
             # con menos de 3 meses cobrados no hay un sueldo "habitual" fiable
             "base": round(base, 2) if len(act) >= 3 else None,
             "primer_mes": act[0] if act else "", "ultimo_mes": act[-1] if act else "",
-            "activo_julio": "jul" in act,
+            # activo = cobro en el ultimo mes completo o despues (dinamico)
+            "activo_julio": bool(act) and MESES.index(act[-1]) >=
+                max(0, len(MESES) - 2),
             # cobró en julio pero fue su finiquito: sale de plantilla en agosto
             "liquidado": bool(act) and any(
                 "liquidación" in r for r in detalle[act[-1]]["razones"]),
@@ -378,9 +399,19 @@ def main():
         })
 
     # ------------------------------------------------- run-rate actual
-    # Ultimos 3 meses cerrados (may, jun, jul) = foto mas realista de hoy
-    ult = pl[-3:]
+    # Ultimos 3 meses COMPLETOS: un mes a medias (agosto a dia 3) hundiria
+    # el promedio y con el, el punto de equilibrio.
+    import calendar as _cal
+    ult_fecha = mov[-1]["fecha"]                      # dd/mm/aaaa
+    _d, _m, _a = (int(x) for x in ult_fecha.split("/"))
+    mes_cerrado = _d == _cal.monthrange(_a, _m)[1]
+    pl_completos = pl if mes_cerrado else pl[:-1]
+    if not pl_completos:
+        pl_completos = pl
+    ult = pl_completos[-3:]
     rr = {
+        "meses": [p["mes"] for p in ult],
+        "mes_en_curso": None if mes_cerrado else MESES[-1],
         "ingresos": round(sum(p["ingresos"] for p in ult) / 3, 2),
         "costo_fijo": round(sum(p["costo_fijo"] for p in ult) / 3, 2),
         "costo_variable": round(sum(p["costo_variable"] + p["pauta_neta"]
@@ -419,6 +450,8 @@ def main():
         "run_rate": rr,
         # el panel necesita saber qué grupos componen cada línea del P&L
         "familias": {"ingreso": G_INGRESO, "fijo": G_FIJO, "variable": G_VARIABLE},
+        # el mes que cuenta como "actual" para actividad de clientes/equipo
+        "mes_corte_activo": MESES[max(0, len(MESES) - 2)],
         "clientes": clientes,
         "concentracion": conc,
         "equipo": equipo,

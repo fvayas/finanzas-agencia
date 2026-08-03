@@ -6,7 +6,8 @@
   "abr",
   "may",
   "jun",
-  "jul"
+  "jul",
+  "ago"
  ],
  "conceptos": [
   {
@@ -21,7 +22,8 @@
     "abr": 79.8,
     "may": 28.37,
     "jun": 53.2,
-    "jul": 53.2
+    "jul": 53.2,
+    "ago": 0.0
    },
    "movs": [
     {
@@ -80,7 +82,8 @@
     "abr": 300.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "movs": [
     {
@@ -121,7 +124,8 @@
     "abr": 23.0,
     "may": 23.0,
     "jun": 23.0,
-    "jul": 23.0
+    "jul": 23.0,
+    "ago": 0.0
    },
    "movs": [
     {
@@ -180,7 +184,8 @@
     "abr": 20.0,
     "may": 20.0,
     "jun": 20.0,
-    "jul": 20.0
+    "jul": 20.0,
+    "ago": 0.0
    },
    "movs": [
     {
@@ -239,7 +244,8 @@
     "abr": 13.99,
     "may": 13.99,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "movs": [
     {
@@ -280,7 +286,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 19.5,
-    "jul": 19.5
+    "jul": 19.5,
+    "ago": 0.0
    },
    "movs": [
     {
@@ -309,7 +316,8 @@
     "abr": 0.0,
     "may": 14.97,
     "jun": 6.99,
-    "jul": 6.99
+    "jul": 6.99,
+    "ago": 0.0
    },
    "movs": [
     {
@@ -350,7 +358,8 @@
     "abr": 0.0,
     "may": 3.9,
     "jun": 0.0,
-    "jul": 10.19
+    "jul": 10.19,
+    "ago": 0.0
    },
    "movs": [
     {
@@ -383,7 +392,7 @@
    "concepto": "Retención IVA servicios digitales",
    "familia": "Impuestos",
    "total": 117.41,
-   "n": 7,
+   "n": 8,
    "por_mes": {
     "ene": 14.97,
     "feb": 15.39,
@@ -391,7 +400,8 @@
     "abr": 20.52,
     "may": 15.05,
     "jun": 15.48,
-    "jul": 15.48
+    "jul": 15.48,
+    "ago": 0
    },
    "movs": [
     {
@@ -442,7 +452,7 @@
    "concepto": "Intereses por financiar el saldo",
    "familia": "Financiero",
    "total": 14.81,
-   "n": 7,
+   "n": 8,
    "por_mes": {
     "ene": 1.97,
     "feb": 1.63,
@@ -450,7 +460,8 @@
     "abr": 0.56,
     "may": 3.01,
     "jun": 3.65,
-    "jul": 0.77
+    "jul": 0.77,
+    "ago": 0
    },
    "movs": [
     {
@@ -505,7 +516,8 @@
   "abr": 457.87,
   "may": 122.29,
   "jun": 141.82,
-  "jul": 149.13
+  "jul": 149.13,
+  "ago": 0.0
  },
  "total": 1419.49,
  "familias": {
@@ -523,7 +535,8 @@
   "abr": 36.67,
   "may": 543.49,
   "jun": 30.0,
-  "jul": 312.1
+  "jul": 312.1,
+  "ago": 0.0
  },
  "detalle_pagos": {
   "ene": [
@@ -604,7 +617,8 @@
     "desc": "PAGO TARJETA DE CREDITO",
     "importe": 260.94
    }
-  ]
+  ],
+  "ago": []
  },
  "diferencia": 52.96,
  "tarjeta": "Mastercard ····3129",

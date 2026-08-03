@@ -504,4 +504,4 @@ fecha,anio,mes_num,mes,referencia,descripcion,ingreso,egreso,neto,naturaleza,gru
 31/07/2026,2026,7,jul,01-00501,PAGO SISTEMA CONTABLE,0.0,11.91,-11.91,OPERATIVO,Software y herramientas,Suscripciones,PAGO SISTEMA CONTABLE,
 31/07/2026,2026,7,jul,01-00502,INGRESO DE FLEXIAHORRO PAR APAGO DE SUELDO KAREN,600.0,0.0,600.0,NO OPERATIVO,Movimiento entre cuentas propias,Entrada desde FlexiAhorro,INGRESO DE FLEXIAHORRO PAR APAGO DE SUELDO KAREN,
 31/07/2026,2026,7,jul,01-00503,PAGO SUELDO KAREN ULTIMO MES,0.0,600.0,-600.0,OPERATIVO,Nomina fija,Karen Pinos,PAGO SUELDO KAREN ULTIMO MES,
-03/08/2026,2026,8,ago,01-00504,SUELDO ESTEFI JACOME,0.0,500.0,-500.0,OPERATIVO,Nomina fija,Estefi Jacome,SUELDO ESTEFI JACOME,https://drive.google.com/file/d/1RddD412DH5L9u1Vblwk5xbvOFs1XDHWi/view?usp=drivesdk
+03/08/2026,2026,8,ago,01-00504,PAGO APC,500.0,0.0,500.0,OPERATIVO,Ingresos - Fee mensual,APC,PAGO APC,https://drive.google.com/file/d/13U-YxCIz9UiwM7pze6AhUUbbDyHx89mM/view?usp=drivesdk

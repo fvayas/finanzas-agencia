@@ -6,7 +6,8 @@
   "abr",
   "may",
   "jun",
-  "jul"
+  "jul",
+  "ago"
  ],
  "pl": [
   {
@@ -99,6 +100,19 @@
    "resultado": 906.3,
    "margen_contribucion": 11030.09,
    "margen_pct": 79.7
+  },
+  {
+   "mes": "ago",
+   "ingresos": 500.0,
+   "pauta_cobrada": 0.0,
+   "pauta_pagada": -0.0,
+   "pauta_neta": -0.0,
+   "costo_fijo": 0.0,
+   "costo_variable": 0.0,
+   "costo_total": 0.0,
+   "resultado": 500.0,
+   "margen_contribucion": 500.0,
+   "margen_pct": 100.0
   }
  ],
  "grupos": {
@@ -109,7 +123,8 @@
    "abr": -4260.75,
    "may": -4934.07,
    "jun": -5577.54,
-   "jul": -5912.16
+   "jul": -5912.16,
+   "ago": 0.0
   },
   "Estructura": {
    "ene": -588.35,
@@ -118,7 +133,8 @@
    "abr": -411.83,
    "may": -566.71,
    "jun": -480.66,
-   "jul": -546.91
+   "jul": -546.91,
+   "ago": 0.0
   },
   "Ingresos - Fee mensual": {
    "ene": 7128.63,
@@ -127,7 +143,8 @@
    "abr": 10710.25,
    "may": 8934.71,
    "jun": 14693.69,
-   "jul": 12731.02
+   "jul": 12731.02,
+   "ago": 500.0
   },
   "Equipos": {
    "ene": -75.0,
@@ -136,7 +153,8 @@
    "abr": 0.0,
    "may": -160.0,
    "jun": 0.0,
-   "jul": 0.0
+   "jul": 0.0,
+   "ago": 0.0
   },
   "Marketing propio": {
    "ene": -135.0,
@@ -145,7 +163,8 @@
    "abr": 0.0,
    "may": 0.0,
    "jun": 0.0,
-   "jul": 0.0
+   "jul": 0.0,
+   "ago": 0.0
   },
   "Movilizacion": {
    "ene": -21.08,
@@ -154,7 +173,8 @@
    "abr": -39.01,
    "may": -20.16,
    "jun": -56.88,
-   "jul": -18.34
+   "jul": -18.34,
+   "ago": 0.0
   },
   "Pauta": {
    "ene": -574.03,
@@ -163,7 +183,8 @@
    "abr": -1272.28,
    "may": -1763.62,
    "jun": -1418.0,
-   "jul": -2435.17
+   "jul": -2435.17,
+   "ago": 0.0
   },
   "Freelance y produccion": {
    "ene": -202.0,
@@ -172,7 +193,8 @@
    "abr": -500.0,
    "may": -20.0,
    "jun": -860.0,
-   "jul": -1092.91
+   "jul": -1092.91,
+   "ago": 0.0
   },
   "Nomina variable": {
    "ene": -24.93,
@@ -181,7 +203,8 @@
    "abr": 0.0,
    "may": -673.93,
    "jun": -47.35,
-   "jul": 0.0
+   "jul": 0.0,
+   "ago": 0.0
   },
   "Impuestos y legal": {
    "ene": -429.15,
@@ -190,7 +213,8 @@
    "abr": -552.65,
    "may": -475.66,
    "jun": 0.0,
-   "jul": -522.81
+   "jul": -522.81,
+   "ago": 0.0
   },
   "Tarjeta de credito": {
    "ene": -26.7,
@@ -199,7 +223,8 @@
    "abr": -36.67,
    "may": -543.49,
    "jun": -30.0,
-   "jul": -312.1
+   "jul": -312.1,
+   "ago": 0.0
   },
   "Software y herramientas": {
    "ene": -11.91,
@@ -208,7 +233,8 @@
    "abr": -11.91,
    "may": -11.91,
    "jun": -11.91,
-   "jul": -11.91
+   "jul": -11.91,
+   "ago": 0.0
   },
   "Nomina socios": {
    "ene": -3000.0,
@@ -217,7 +243,8 @@
    "abr": -3000.0,
    "may": 0.0,
    "jun": -6000.0,
-   "jul": -3000.0
+   "jul": -3000.0,
+   "ago": 0.0
   },
   "Otros ingresos": {
    "ene": 0.14,
@@ -226,7 +253,8 @@
    "abr": 187.0,
    "may": 115.0,
    "jun": 185.0,
-   "jul": 255.0
+   "jul": 255.0,
+   "ago": 0.0
   },
   "Ingresos - Produccion": {
    "ene": 0.0,
@@ -235,7 +263,8 @@
    "abr": 0.0,
    "may": 138.0,
    "jun": 140.0,
-   "jul": 1286.0
+   "jul": 1286.0,
+   "ago": 0.0
   },
   "Devoluciones": {
    "ene": 0.0,
@@ -244,7 +273,8 @@
    "abr": 0.0,
    "may": 0.0,
    "jun": 0.0,
-   "jul": 0.0
+   "jul": 0.0,
+   "ago": 0.0
   },
   "Oficina y bienestar": {
    "ene": 0.0,
@@ -253,7 +283,8 @@
    "abr": -27.68,
    "may": -6.0,
    "jun": -89.0,
-   "jul": -23.41
+   "jul": -23.41,
+   "ago": 0.0
   },
   "Pasantias": {
    "ene": 0.0,
@@ -262,7 +293,8 @@
    "abr": -130.0,
    "may": -135.1,
    "jun": -130.0,
-   "jul": -130.0
+   "jul": -130.0,
+   "ago": 0.0
   },
   "Ingresos - Pauta": {
    "ene": 0.0,
@@ -271,7 +303,8 @@
    "abr": 1680.0,
    "may": 0.0,
    "jun": 1680.0,
-   "jul": 640.0
+   "jul": 640.0,
+   "ago": 0.0
   },
   "Ingresos - Sin identificar": {
    "ene": 0.0,
@@ -280,7 +313,8 @@
    "abr": 0.0,
    "may": 0.0,
    "jun": 0.0,
-   "jul": 0.0
+   "jul": 0.0,
+   "ago": 0.0
   }
  },
  "no_operativo": {
@@ -291,7 +325,8 @@
    "abr": 0.0,
    "may": 0.0,
    "jun": 0.0,
-   "jul": 0.0
+   "jul": 0.0,
+   "ago": 0.0
   },
   "Movimiento entre cuentas propias": {
    "ene": -20.0,
@@ -300,7 +335,8 @@
    "abr": -2478.59,
    "may": 300.41,
    "jun": -2316.87,
-   "jul": -900.01
+   "jul": -900.01,
+   "ago": 0.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -309,7 +345,8 @@
    "abr": 0.0,
    "may": 0.0,
    "jun": 0.0,
-   "jul": 0.0
+   "jul": 0.0,
+   "ago": 0.0
   }
  },
  "promedios": {
@@ -323,6 +360,12 @@
   "sueldo_socios": 3016.0
  },
  "run_rate": {
+  "meses": [
+   "may",
+   "jun",
+   "jul"
+  ],
+  "mes_en_curso": "ago",
   "ingresos": 12587.64,
   "costo_fijo": 9482.45,
   "costo_variable": 2178.29,
@@ -360,11 +403,12 @@
    "Devoluciones"
   ]
  },
+ "mes_corte_activo": "jul",
  "clientes": [
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 10.4,
+   "pct": 10.3,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -377,7 +421,8 @@
     "abr": 2187.0,
     "may": 0.0,
     "jun": 2287.0,
-    "jul": 1128.5
+    "jul": 1128.5,
+    "ago": 0.0
    }
   },
   {
@@ -396,7 +441,8 @@
     "abr": 900.0,
     "may": 900.0,
     "jun": 900.0,
-    "jul": 1256.0
+    "jul": 1256.0,
+    "ago": 0.0
    }
   },
   {
@@ -415,13 +461,14 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 2436.0,
-    "jul": 3366.0
+    "jul": 3366.0,
+    "ago": 0.0
    }
   },
   {
    "cliente": "Fiammingo",
    "total": 5520.0,
-   "pct": 7.1,
+   "pct": 7.0,
    "pagos": 6,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -434,13 +481,14 @@
     "abr": 920.0,
     "may": 920.0,
     "jun": 920.0,
-    "jul": 920.0
+    "jul": 920.0,
+    "ago": 0.0
    }
   },
   {
    "cliente": "Velsana",
    "total": 5345.0,
-   "pct": 6.9,
+   "pct": 6.8,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "ene",
@@ -453,7 +501,8 @@
     "abr": 700.0,
     "may": 0.0,
     "jun": 1400.0,
-    "jul": 700.0
+    "jul": 700.0,
+    "ago": 0.0
    }
   },
   {
@@ -472,7 +521,8 @@
     "abr": 0.0,
     "may": 1440.46,
     "jun": 938.44,
-    "jul": 721.23
+    "jul": 721.23,
+    "ago": 0.0
    }
   },
   {
@@ -491,13 +541,14 @@
     "abr": 500.0,
     "may": 770.0,
     "jun": 460.0,
-    "jul": 500.0
+    "jul": 500.0,
+    "ago": 0.0
    }
   },
   {
    "cliente": "Cigarra",
    "total": 3622.5,
-   "pct": 4.7,
+   "pct": 4.6,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -510,7 +561,8 @@
     "abr": 517.5,
     "may": 517.5,
     "jun": 517.5,
-    "jul": 517.5
+    "jul": 517.5,
+    "ago": 0.0
    }
   },
   {
@@ -529,7 +581,8 @@
     "abr": 558.25,
     "may": 558.25,
     "jun": 558.25,
-    "jul": 558.25
+    "jul": 558.25,
+    "ago": 0.0
    }
   },
   {
@@ -548,13 +601,14 @@
     "abr": 0.0,
     "may": 406.0,
     "jun": 0.0,
-    "jul": 400.0
+    "jul": 400.0,
+    "ago": 0.0
    }
   },
   {
    "cliente": "Confia",
    "total": 3000.0,
-   "pct": 3.9,
+   "pct": 3.8,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "ene",
@@ -567,7 +621,8 @@
     "abr": 460.0,
     "may": 500.0,
     "jun": 640.0,
-    "jul": 500.0
+    "jul": 500.0,
+    "ago": 0.0
    }
   },
   {
@@ -586,7 +641,8 @@
     "abr": 300.0,
     "may": 300.0,
     "jun": 300.0,
-    "jul": 300.0
+    "jul": 300.0,
+    "ago": 0.0
    }
   },
   {
@@ -605,13 +661,14 @@
     "abr": 340.0,
     "may": 0.0,
     "jun": 679.0,
-    "jul": 339.0
+    "jul": 339.0,
+    "ago": 0.0
    }
   },
   {
    "cliente": "Onco Ambato",
    "total": 2300.0,
-   "pct": 3.0,
+   "pct": 2.9,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -624,7 +681,8 @@
     "abr": 335.0,
     "may": 340.0,
     "jun": 0.0,
-    "jul": 300.0
+    "jul": 300.0,
+    "ago": 0.0
    }
   },
   {
@@ -643,13 +701,14 @@
     "abr": 300.0,
     "may": 300.0,
     "jun": 300.0,
-    "jul": 300.0
+    "jul": 300.0,
+    "ago": 0.0
    }
   },
   {
    "cliente": "Tartelier",
    "total": 2070.0,
-   "pct": 2.7,
+   "pct": 2.6,
    "pagos": 6,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -662,7 +721,8 @@
     "abr": 345.0,
     "may": 345.0,
     "jun": 345.0,
-    "jul": 345.0
+    "jul": 345.0,
+    "ago": 0.0
    }
   },
   {
@@ -681,7 +741,8 @@
     "abr": 287.5,
     "may": 287.5,
     "jun": 287.5,
-    "jul": 287.5
+    "jul": 287.5,
+    "ago": 0.0
    }
   },
   {
@@ -700,7 +761,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 1300.0,
-    "jul": 650.0
+    "jul": 650.0,
+    "ago": 0.0
    }
   },
   {
@@ -719,7 +781,28 @@
     "abr": 430.0,
     "may": 430.0,
     "jun": 430.0,
-    "jul": 430.0
+    "jul": 430.0,
+    "ago": 0.0
+   }
+  },
+  {
+   "cliente": "APC",
+   "total": 1650.0,
+   "pct": 2.1,
+   "pagos": 3,
+   "meses_activo": 3,
+   "primer_mes": "abr",
+   "ultimo_mes": "ago",
+   "fee_promedio": 550.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 575.0,
+    "may": 575.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 500.0
    }
   },
   {
@@ -738,7 +821,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    }
   },
   {
@@ -757,26 +841,8 @@
     "abr": 800.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
-   }
-  },
-  {
-   "cliente": "APC",
-   "total": 1150.0,
-   "pct": 1.5,
-   "pagos": 2,
-   "meses_activo": 2,
-   "primer_mes": "abr",
-   "ultimo_mes": "may",
-   "fee_promedio": 575.0,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 575.0,
-    "may": 575.0,
-    "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    }
   },
   {
@@ -795,7 +861,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    }
   },
   {
@@ -814,7 +881,8 @@
     "abr": 135.0,
     "may": 135.0,
     "jun": 135.0,
-    "jul": 135.0
+    "jul": 135.0,
+    "ago": 0.0
    }
   },
   {
@@ -833,7 +901,8 @@
     "abr": 120.0,
     "may": 120.0,
     "jun": 0.0,
-    "jul": 120.0
+    "jul": 120.0,
+    "ago": 0.0
    }
   },
   {
@@ -852,7 +921,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    }
   },
   {
@@ -871,7 +941,8 @@
     "abr": 0.0,
     "may": 90.0,
     "jun": 0.0,
-    "jul": 72.0
+    "jul": 72.0,
+    "ago": 0.0
    }
   },
   {
@@ -890,7 +961,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 171.04
+    "jul": 171.04,
+    "ago": 0.0
    }
   },
   {
@@ -909,14 +981,15 @@
     "abr": 0.0,
     "may": 138.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    }
   }
  ],
  "concentracion": {
-  "top1": 10.4,
-  "top3": 26.3,
-  "top5": 40.3
+  "top1": 10.3,
+  "top3": 26.2,
+  "top5": 40.0
  },
  "equipo": [
   {
@@ -937,7 +1010,8 @@
     "abr": 1500.0,
     "may": 0.0,
     "jun": 3000.0,
-    "jul": 1500.0
+    "jul": 1500.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -1068,7 +1142,8 @@
     "abr": 1500.0,
     "may": 0.0,
     "jun": 3000.0,
-    "jul": 1500.0
+    "jul": 1500.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -1184,7 +1259,8 @@
     "abr": 805.0,
     "may": 977.91,
     "jun": 977.91,
-    "jul": 977.91
+    "jul": 977.91,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -1313,7 +1389,8 @@
     "abr": 690.0,
     "may": 718.75,
     "jun": 720.13,
-    "jul": 690.0
+    "jul": 690.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -1594,7 +1671,8 @@
     "abr": 661.25,
     "may": 718.93,
     "jun": 661.25,
-    "jul": 661.25
+    "jul": 661.25,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -1721,6 +1799,131 @@
    }
   },
   {
+   "persona": "Estefi Jacome",
+   "grupo": "Nomina fija",
+   "total": 4097.5,
+   "meses": 7,
+   "promedio_mes": 585.36,
+   "base": 550.0,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 550.0,
+    "feb": 550.0,
+    "mar": 632.5,
+    "abr": 632.5,
+    "may": 632.5,
+    "jun": 550.0,
+    "jul": 550.0,
+    "ago": 0.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "importe": 550.0,
+       "desc": "sueldo estefita"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "importe": 550.0,
+       "desc": "SUELDO ESTEFITA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "03/03/2026",
+       "importe": 632.5,
+       "desc": "SUELDO ESTEFITA CON IVA"
+      }
+     ],
+     "razones": [
+      "emite factura: se le paga el sueldo +15% de IVA"
+     ],
+     "delta": {
+      "vs": "feb",
+      "dif": 82.5
+     },
+     "vs_base": 82.5,
+     "cmp_base": true
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "importe": 632.5,
+       "desc": "SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 82.5,
+     "cmp_base": true
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "importe": 632.5,
+       "desc": "SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 82.5,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 550.0,
+       "desc": "PAGO SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [
+      "deja de facturar: vuelve al sueldo sin IVA"
+     ],
+     "delta": {
+      "vs": "may",
+      "dif": -82.5
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "importe": 550.0,
+       "desc": "SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
    "persona": "Miguel Molina",
    "grupo": "Nomina fija",
    "total": 3451.23,
@@ -1738,7 +1941,8 @@
     "abr": 690.0,
     "may": 690.41,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -1828,7 +2032,8 @@
     "abr": 482.0,
     "may": 482.0,
     "jun": 483.38,
-    "jul": 482.0
+    "jul": 482.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -1962,7 +2167,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 600.0,
-    "jul": 1200.0
+    "jul": 1200.0,
+    "ago": 0.0
    },
    "detalle": {
     "jun": {
@@ -2022,7 +2228,8 @@
     "abr": 300.0,
     "may": 312.5,
     "jun": 290.0,
-    "jul": 270.0
+    "jul": 270.0,
+    "ago": 0.0
    },
    "detalle": {
     "mar": {
@@ -2142,7 +2349,8 @@
     "abr": 0.0,
     "may": 500.0,
     "jun": 500.0,
-    "jul": 502.5
+    "jul": 502.5,
+    "ago": 0.0
    },
    "detalle": {
     "may": {
@@ -2209,7 +2417,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 825.0,
-    "jul": 578.5
+    "jul": 578.5,
+    "ago": 0.0
    },
    "detalle": {
     "jun": {
@@ -2275,7 +2484,8 @@
     "abr": 130.0,
     "may": 135.1,
     "jun": 147.22,
-    "jul": 130.0
+    "jul": 130.0,
+    "ago": 0.0
    },
    "detalle": {
     "feb": {
@@ -2396,7 +2606,8 @@
     "abr": 0.0,
     "may": 575.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "may": {
@@ -2428,7 +2639,8 @@
     "abr": 9056.0,
     "may": 7425.0,
     "jun": 15722.0,
-    "jul": 14357.0
+    "jul": 14357.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -2795,7 +3007,8 @@
     "abr": -6577.41,
     "may": -7655.0,
     "jun": -13405.13,
-    "jul": -13456.99
+    "jul": -13456.99,
+    "ago": 0.0
    },
    "detalle": {
     "mar": {
@@ -3087,7 +3300,8 @@
     "abr": 1272.28,
     "may": 1763.62,
     "jun": 1418.0,
-    "jul": 2435.17
+    "jul": 2435.17,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -3174,7 +3388,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "feb": {
@@ -3206,7 +3421,8 @@
     "abr": 400.41,
     "may": 425.89,
     "jun": 400.41,
-    "jul": 420.41
+    "jul": 420.41,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -3308,7 +3524,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 650.0,
-    "jul": 790.0
+    "jul": 790.0,
+    "ago": 0.0
    },
    "detalle": {
     "feb": {
@@ -3370,7 +3587,8 @@
     "abr": 552.65,
     "may": 475.66,
     "jun": 0.0,
-    "jul": 522.81
+    "jul": 522.81,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -3447,7 +3665,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "feb": {
@@ -3479,7 +3698,8 @@
     "abr": 36.67,
     "may": 543.49,
     "jun": 30.0,
-    "jul": 312.1
+    "jul": 312.1,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -3596,7 +3816,8 @@
     "abr": 500.0,
     "may": 0.0,
     "jun": 200.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -3658,7 +3879,8 @@
     "abr": 0.0,
     "may": 160.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -3710,7 +3932,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -3747,7 +3970,8 @@
     "abr": 0.0,
     "may": 20.0,
     "jun": 0.0,
-    "jul": 20.0
+    "jul": 20.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -3834,7 +4058,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "feb": {
@@ -3861,7 +4086,8 @@
     "abr": 0.0,
     "may": 140.82,
     "jun": 70.41,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "mar": {
@@ -3913,7 +4139,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -3955,7 +4182,8 @@
     "abr": 27.68,
     "may": 6.0,
     "jun": 89.0,
-    "jul": 23.41
+    "jul": 23.41,
+    "ago": 0.0
    },
    "detalle": {
     "feb": {
@@ -4092,7 +4320,8 @@
     "abr": 39.01,
     "may": 20.16,
     "jun": 56.88,
-    "jul": 18.34
+    "jul": 18.34,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -4264,7 +4493,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 172.5
+    "jul": 172.5,
+    "ago": 0.0
    },
    "detalle": {
     "jul": {
@@ -4291,7 +4521,8 @@
     "abr": 11.42,
     "may": 0.0,
     "jun": 9.84,
-    "jul": 126.5
+    "jul": 126.5,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -4363,7 +4594,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 110.41
+    "jul": 110.41,
+    "ago": 0.0
    },
    "detalle": {
     "jul": {
@@ -4390,7 +4622,8 @@
     "abr": 11.91,
     "may": 11.91,
     "jun": 11.91,
-    "jul": 11.91
+    "jul": 11.91,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -4477,7 +4710,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "feb": {
@@ -4504,7 +4738,8 @@
     "abr": 0.0,
     "may": -70.41,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "may": {
@@ -4531,7 +4766,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -4558,7 +4794,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 10.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "jun": {
@@ -4586,7 +4823,8 @@
     "abr": 115.0,
     "may": 115.0,
     "jun": 115.0,
-    "jul": 115.0
+    "jul": 115.0,
+    "ago": 0.0
    },
    "detalle": {
     "mar": {
@@ -4657,7 +4895,8 @@
     "abr": 70.0,
     "may": 0.0,
     "jun": 70.0,
-    "jul": 140.0
+    "jul": 140.0,
+    "ago": 0.0
    },
    "detalle": {
     "abr": {
@@ -4708,7 +4947,8 @@
     "abr": 2.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "abr": {
@@ -4734,7 +4974,8 @@
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
-    "jul": 0.0
+    "jul": 0.0,
+    "ago": 0.0
    },
    "detalle": {
     "ene": {
@@ -4771,10 +5012,10 @@
   }
  ],
  "totales": {
-  "ingresos": 77734.03,
+  "ingresos": 78234.03,
   "costo_fijo": 60572.63,
   "costo_variable": 9678.3,
-  "resultado": 3888.63,
+  "resultado": 4388.63,
   "movimientos": 506
  }
 }

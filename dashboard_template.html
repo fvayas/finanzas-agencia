@@ -691,14 +691,16 @@ const M = D.meses, R = D.run_rate, P = D.promedios, X = D.extra;
 const fmt  = n => "$" + Math.round(n).toLocaleString("es-EC");
 const fmt2 = n => "$" + n.toLocaleString("es-EC",{minimumFractionDigits:2,maximumFractionDigits:2});
 const pct  = n => n.toLocaleString("es-EC",{minimumFractionDigits:1,maximumFractionDigits:1}) + "%";
-const MES  = {ene:"Ene",feb:"Feb",mar:"Mar",abr:"Abr",may:"May",jun:"Jun",jul:"Jul"};
+const MES  = {ene:"Ene",feb:"Feb",mar:"Mar",abr:"Abr",may:"May",jun:"Jun",
+              jul:"Jul",ago:"Ago",sep:"Sep",oct:"Oct",nov:"Nov",dic:"Dic"};
 const el   = id => document.getElementById(id);
 const SVGNS = "http://www.w3.org/2000/svg";
 function mk(t,a={},p){const e=document.createElementNS(SVGNS,t);
   for(const k in a) e.setAttribute(k,a[k]); if(p) p.appendChild(e); return e;}
 
 const MESL = {ene:"Enero",feb:"Febrero",mar:"Marzo",abr:"Abril",
-              may:"Mayo",jun:"Junio",jul:"Julio"};
+              may:"Mayo",jun:"Junio",jul:"Julio",ago:"Agosto",sep:"Septiembre",
+              oct:"Octubre",nov:"Noviembre",dic:"Diciembre"};
 
 /* Tooltip compartido por las tablas mensuales (nómina y clientes).
    `fichas` mapea el id de cada celda a {mes, total, movs[], razones[]};
@@ -909,7 +911,9 @@ const tiles = [
   {l:"Punto de equilibrio", v:fmt(R.breakeven), c:"", k:"",
    f:"Facturación mínima mensual para no perder dinero"},
   {l:"Facturación actual", v:fmt(R.ingresos), c:"", k:"",
-   f:"Promedio de mayo, junio y julio"},
+   f:"Promedio de " + (R.meses||[]).map(m=>MESL[m].toLowerCase()).join(", ")
+     + (R.mes_en_curso ? " · " + MESL[R.mes_en_curso].toLowerCase()
+        + " en curso queda fuera" : "")},
   {l:"Holgura", v:fmt(R.holgura), c:holguraPct<15?"warn":"pos", k:holguraPct<15?"is-warn":"is-pos",
    f:"Sólo " + pct(holguraPct) + " por encima del equilibrio"},
   {l:"Margen neto del año", v:pct(margenNeto), c:margenNeto<8?"warn":"pos", k:margenNeto<8?"is-warn":"is-pos",
@@ -1489,6 +1493,8 @@ el("tiles").innerHTML = tiles.map(t=>`
   // tarifa contratada de cada cuenta, para no mostrar un promedio que mezcla
   // fee, pauta y trabajos puntuales
   const TAR = Object.fromEntries(D.tarifario.clientes.map(c => [c.cliente, c.fee]));
+  const ORD12 = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+  const ACTIVO = m => m && ORD12.indexOf(m) >= ORD12.indexOf(D.mes_corte_activo || "jul");
   const top = D.clientes.slice(0,14), max = top[0].total;
   el("b-cli").innerHTML =
     `<div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:12px">
@@ -1497,14 +1503,14 @@ el("tiles").innerHTML = tiles.map(t=>`
       <div class="bar-row">
         <div class="bname" title="${c.cliente}">${c.cliente}</div>
         <div class="btrack"><div class="bfill" style="width:${c.total/max*100}%;
-             background:${c.ultimo_mes==='jul'?'var(--bar)':'var(--ink-3)'}"></div></div>
+             background:${ACTIVO(c.ultimo_mes)?'var(--bar)':'var(--ink-3)'}"></div></div>
         <div class="bval">${fmt(c.total)}</div>
       </div>`).join("");
 
   let h = `<thead><tr><th>Cliente</th><th>Total</th><th>%</th><th>Tarifa</th>
            <th>Pagos</th><th>Estado</th></tr></thead><tbody>`;
   D.clientes.forEach(c=>{
-    const act = c.ultimo_mes === "jul";
+    const act = ACTIVO(c.ultimo_mes);
     const dormido = !act && c.meses_activo >= 3;
     h += `<tr><td>${c.cliente}</td>
       <td class="n">${fmt(c.total)}</td>

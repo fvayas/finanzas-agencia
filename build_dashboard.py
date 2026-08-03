@@ -10,7 +10,10 @@ mov = json.load(open("movimientos_2026.json", encoding="utf-8"))
 eq = datos["equipo"]
 fijos_act = [e for e in eq if e["grupo"] == "Nomina fija" and e["activo_julio"]]
 costo_persona = sum(e["promedio_mes"] for e in fijos_act) / len(fijos_act)
-cli_act = [c for c in datos["clientes"] if c["ultimo_mes"] == "jul"]
+_corte = datos.get("mes_corte_activo", "jul")
+_orden12 = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"]
+cli_act = [c for c in datos["clientes"]
+           if c["ultimo_mes"] and _orden12.index(c["ultimo_mes"]) >= _orden12.index(_corte)]
 fee_medio = sum(c["fee_promedio"] for c in cli_act) / len(cli_act)
 
 tarif = json.load(open("tarifario_2026.json", encoding="utf-8"))

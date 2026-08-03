@@ -19,6 +19,8 @@ Salida: flexiahorro_2026.json
 """
 import json
 
+# la conciliacion cubre los meses del extracto pegado; los posteriores
+# apareceran cuando Francisco pegue el extracto siguiente
 MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul"]
 
 # Totales por mes leidos del extracto, separando transferencias de intereses.
