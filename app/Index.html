@@ -259,6 +259,8 @@
       <span id="fz-txt">Tocar para hacer foto o elegir imagen</span>
       <div id="miniaturas"></div>
     </div>
+    <div id="ocr" style="display:none; margin-top:8px; font-size:12.5px;
+      font-weight:600; color:var(--ink2)"></div>
     <button type="button" id="quitar">× Quitar fotos</button>
     <input type="file" id="fotos" accept="image/*" multiple hidden>
   </div>
@@ -278,7 +280,7 @@
 
   <button id="btn" type="submit">Registrar</button>
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v13</div>
+    letter-spacing:.08em; margin-top:4px">v14</div>
 </form>
 
 <script>
@@ -348,7 +350,7 @@
     if (v !== limpio) $("monto").value = limpio;
   });
   // sello de versión, para saber qué copia carga el teléfono
-  console.log("app v13");
+  console.log("app v14");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
@@ -385,8 +387,38 @@
       minis.appendChild(img);
     });
   }
-  fotos.onchange = pintaFotos;
-  $("quitar").onclick = () => { fotos.value = ""; pintaFotos(); };
+  const ocr = $("ocr");
+  fotos.onchange = async () => {
+    pintaFotos();
+    // la IA solo rellena lo que está vacío: lo tuyo nunca se pisa
+    if (!fotos.files.length || $("monto").value.trim() !== "") return;
+    if (typeof google === "undefined") return;
+    ocr.style.display = "block";
+    ocr.textContent = "Leyendo el comprobante…";
+    try {
+      const f = await leer(fotos.files[0]);
+      google.script.run
+        .withSuccessHandler(r => {
+          if (r && r.monto > 0 && $("monto").value.trim() === "") {
+            $("monto").value = r.monto.toFixed(2).replace(".", ",");
+            if (r.fecha) $("fecha").value = r.fecha;
+            ocr.textContent = "Leído del comprobante: $" +
+              r.monto.toFixed(2).replace(".", ",") +
+              (r.fecha ? " · " + r.fecha.split("-").reverse().join("/") : "") +
+              " — revísalo antes de registrar.";
+            ocr.style.color = "var(--verde)";
+          } else {
+            ocr.textContent = "No encontré el monto en la foto; escríbelo tú.";
+          }
+        })
+        .withFailureHandler(() => {
+          ocr.textContent = "No pude leer la foto; escribe el monto.";
+        })
+        .leerComprobante({ b64: f.b64, mime: f.mime });
+    } catch (e) { ocr.style.display = "none"; }
+  };
+  $("quitar").onclick = () => { fotos.value = ""; pintaFotos();
+    ocr.style.display = "none"; ocr.style.color = "var(--ink2)"; };
 
   const leer = f => new Promise((si, no) => {
     const r = new FileReader();

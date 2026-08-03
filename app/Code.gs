@@ -166,3 +166,73 @@ function avisarGitHub_() {
     });
   } catch (e) { /* el cron de 15 min lo recoge igual */ }
 }
+
+/**
+ * Lee un comprobante con el OCR de Google Drive: sube la imagen convertida
+ * a Documento (Drive la OCRea al vuelo), extrae el texto y borra el archivo.
+ * Devuelve el monto y la fecha detectados para autollenar el formulario.
+ * Gratis, sin llaves externas, dentro de la misma cuenta.
+ */
+function leerComprobante(foto) {
+  var token = ScriptApp.getOAuthToken();
+  var frontera = "xxBORDExx";
+  var meta = JSON.stringify({
+    name: "ocr-temporal", mimeType: "application/vnd.google-apps.document"
+  });
+  var cuerpo = Utilities.newBlob(
+    "--" + frontera + "\r\n" +
+    "Content-Type: application/json; charset=UTF-8\r\n\r\n" + meta + "\r\n" +
+    "--" + frontera + "\r\nContent-Type: " + (foto.mime || "image/jpeg") +
+    "\r\nContent-Transfer-Encoding: base64\r\n\r\n" + foto.b64 + "\r\n" +
+    "--" + frontera + "--").getBytes();
+
+  var subida = UrlFetchApp.fetch(
+    "https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart" +
+    "&ocrLanguage=es&fields=id", {
+      method: "post",
+      contentType: "multipart/related; boundary=" + frontera,
+      headers: { Authorization: "Bearer " + token },
+      payload: cuerpo, muteHttpExceptions: true });
+  if (subida.getResponseCode() >= 300) throw new Error("OCR no disponible.");
+  var id = JSON.parse(subida.getContentText()).id;
+
+  try {
+    var texto = UrlFetchApp.fetch(
+      "https://www.googleapis.com/drive/v3/files/" + id +
+      "/export?mimeType=text/plain",
+      { headers: { Authorization: "Bearer " + token } }).getContentText();
+  } finally {
+    UrlFetchApp.fetch("https://www.googleapis.com/drive/v3/files/" + id, {
+      method: "delete", headers: { Authorization: "Bearer " + token },
+      muteHttpExceptions: true });
+  }
+  return interpretarComprobante_(texto);
+}
+
+/** Del texto del voucher, el monto (con pistas MONTO/VALOR/TOTAL) y la fecha. */
+function interpretarComprobante_(texto) {
+  var lineas = texto.toUpperCase().split(/\n+/);
+  var mejor = null, mejorPuntos = -1;
+  var reImporte = /\$?\s*(\d{1,3}(?:[.,]\d{3})*[.,]\d{2}|\d+[.,]\d{2})\b/g;
+  lineas.forEach(function (ln) {
+    var pistas = /MONTO|VALOR|TOTAL|DEBITAD|TRANSFERIDO|IMPORTE/.test(ln) ? 2 :
+                 /COMISION|SALDO|COSTO/.test(ln) ? -1 : 0;
+    var m;
+    while ((m = reImporte.exec(ln)) !== null) {
+      var v = m[1];
+      if (v.indexOf(",") > -1) v = v.replace(/\./g, "").replace(",", ".");
+      else if (/^\d{1,3}(\.\d{3})+$/.test(v)) v = v.replace(/\./g, "");
+      var num = parseFloat(v);
+      if (!(num > 0) || num > 1000000) continue;
+      var puntos = pistas * 10 + (num > 1 ? 1 : 0);
+      if (puntos > mejorPuntos || (puntos === mejorPuntos && mejor !== null && num > mejor)) {
+        mejor = num; mejorPuntos = puntos;
+      }
+    }
+  });
+  var f = texto.match(/(\d{1,2})[\/\-](\d{1,2})[\/\-](20\d{2})/);
+  return {
+    monto: mejor,
+    fecha: f ? (f[3] + "-" + ("0" + f[2]).slice(-2) + "-" + ("0" + f[1]).slice(-2)) : null,
+  };
+}
