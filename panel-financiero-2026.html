@@ -367,7 +367,7 @@ footer{
   <div class="badges">
     <span class="badge"><span class="dot"></span>Cuadra con el banco al centavo: saldo final <b id="hd-saldo"></b></span>
     <span class="badge">Sin categorizar: <b>0</b></span>
-    <span class="badge">19 fechas con año <b>2206</b> corregidas a 2026</span>
+    <span class="badge">Se actualiza solo desde la hoja, cada 15 minutos</span>
   </div>
 </header>
 
@@ -1965,11 +1965,10 @@ el("tiles").innerHTML = tiles.map(t=>`
         puede tumbar la agencia. Es lo más sano del ejercicio.`},
 
     {k:"", t:"Cabos sueltos en la hoja",
-     p:`Tres pendientes de origen: los <span class="fig">${fmt(653)}</span> del 12 de marzo
-        siguen sin identificar (marcados en la sección 05); las 19 fechas con año
-        <span class="fig">2206</span> están corregidas aquí pero siguen así en el Sheets;
-        y falta el extracto de Fideval para verificar sus
-        <span class="fig">${fmt(10000)}</span> con intereses.`},
+     p:`Dos pendientes de origen: los <span class="fig">${fmt(653)}</span> del 12 de marzo
+        siguen sin identificar (marcados en la sección 05), y falta el extracto de
+        Fideval para verificar sus <span class="fig">${fmt(10000)}</span> con intereses.
+        Las fechas con año 2206 ya se corrigieron en el Sheets.`},
   ];
   el("notes").innerHTML = notas.map(n=>`
     <div class="note ${n.k}"><h3>${n.t}</h3><p>${n.p}</p></div>`).join("");
