@@ -30,7 +30,7 @@ jobs:
       - name: Bajar la hoja publicada
         run: |
           curl -sL --retry 3 --max-time 60 \
-            "https://docs.google.com/spreadsheets/d/e/2PACX-1vSbLFM7IIyDfEndS3zwQrNV6cYlBtimJ_48FaEDn4YgMmQTAIE-ynowRpIwLm7Rwg/pub?gid=535711988&single=true&output=csv" \
+            "https://docs.google.com/spreadsheets/d/1rGLDMyLP6A83QPQvnIDh_9IMAOESeUrudbvJ_x4cSIk/export?format=csv&gid=535711988" \
             -o 2026.csv
           # una hoja vacía o un error HTML no deben pisar los datos buenos
           test "$(wc -c < 2026.csv)" -gt 10000

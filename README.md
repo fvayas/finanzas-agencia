@@ -37,7 +37,7 @@ python3 auditoria.py       # comprueba que ningún movimiento quede fuera de las
 Para bajar el CSV de la hoja:
 
 ```bash
-curl -sL "https://docs.google.com/spreadsheets/d/e/2PACX-1vSbLFM7IIyDfEndS3zwQrNV6cYlBtimJ_48FaEDn4YgMmQTAIE-ynowRpIwLm7Rwg/pub?gid=535711988&single=true&output=csv" -o 2026.csv
+curl -sL "https://docs.google.com/spreadsheets/d/1rGLDMyLP6A83QPQvnIDh_9IMAOESeUrudbvJ_x4cSIk/export?format=csv&gid=535711988" -o 2026.csv
 ```
 
 ## Piezas
