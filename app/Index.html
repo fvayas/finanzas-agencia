@@ -26,7 +26,8 @@
   body{
     margin:0; background:var(--paper); color:var(--ink);
     font:15px/1.5 -apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-    padding:12px 12px 48px; max-width:520px; margin-inline:auto;
+    padding:12px 12px calc(28px + env(safe-area-inset-bottom));
+    max-width:520px; margin-inline:auto;
   }
 
   /* ------- mástil: portada negra con filete rojo, fija en ambos temas ------- */
@@ -61,6 +62,7 @@
   .bloque{
     background:var(--card); border:1px solid var(--line-soft);
     border-radius:12px; padding:14px 16px; box-shadow:var(--sombra);
+    min-width:0;  /* sin esto, la fila de fichas ensancha toda la página */
   }
   label,.rotulo{
     font-size:10.5px; font-weight:700; color:var(--ink3); display:block;
@@ -107,6 +109,27 @@
 
   .pista{font-size:11.5px; color:var(--ink3); margin-top:7px; line-height:1.45}
   .pista b{color:var(--ink2)}
+
+  /* fichas de descripción: opciones visibles, pensadas para el pulgar */
+  .fichas{margin-top:10px}
+  .fichas .grupo{
+    font-size:9.5px; font-weight:800; color:var(--rojo);
+    text-transform:uppercase; letter-spacing:.14em; margin:10px 0 6px;
+  }
+  .fila-fichas{
+    display:flex; gap:7px; overflow-x:auto; padding:2px 2px 6px;
+    scrollbar-width:none; -webkit-overflow-scrolling:touch;
+  }
+  .fila-fichas::-webkit-scrollbar{display:none}
+  .ficha{
+    flex:none; font-size:13px; font-weight:600; color:var(--ink2);
+    background:var(--paper); border:1.5px solid var(--line);
+    border-radius:999px; padding:9px 14px; cursor:pointer; white-space:nowrap;
+    min-height:38px; display:flex; align-items:center;
+    transition:all .1s ease;
+  }
+  .ficha:active{transform:scale(.96)}
+  .ficha.activa{background:var(--ink); border-color:var(--ink); color:var(--card)}
 
   /* zona de fotos con miniaturas */
   .foto-zona{
@@ -217,11 +240,11 @@
 
   <div class="bloque">
     <label for="desc">Descripción</label>
-    <input id="desc" list="sugerencias" autocomplete="off" required
-           placeholder="PAGO SAMARI AGOSTO">
-    <div class="pista">Con el <b>mes del servicio</b> ("PAGO SAMARI AGOSTO") el
-      panel sabe qué mensualidad queda cubierta.</div>
-    <datalist id="sugerencias"></datalist>
+    <input id="desc" autocomplete="off" autocapitalize="characters"
+           spellcheck="false" required placeholder="Toca una opción o escribe…">
+    <div class="fichas" id="fichas"></div>
+    <div class="pista">Las fichas de cuentas ya traen el <b>mes del servicio</b>;
+      cámbialo si el pago es de otro mes.</div>
   </div>
 
   <div class="bloque">
@@ -271,13 +294,38 @@
     "PAGO LIMPIEZA","BOTELLON","PAGO SISTEMA CONTABLE"];
 
   const $ = id => document.getElementById(id);
-  const dl = $("sugerencias");
-  [].concat(
-    CUENTAS.map(c => "PAGO " + c + " "),
-    EQUIPO.map(p => "SUELDO " + p),
-    EQUIPO.map(p => "TAXIS " + p),
-    CONCEPTOS
-  ).forEach(v => { const o = document.createElement("option"); o.value = v; dl.appendChild(o); });
+
+  // mes del servicio en curso, para que las fichas de cuentas lo traigan puesto
+  const MES_ACTUAL = ["ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO",
+    "AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE","DICIEMBRE"]
+    [new Date(Date.now() - 5*3600*1000).getUTCMonth()];
+
+  const GRUPOS = [
+    ["Cuentas",   CUENTAS.map(c => ["PAGO " + c, "PAGO " + c + " " + MES_ACTUAL])],
+    ["Sueldos",   EQUIPO.map(p => ["SUELDO " + p.split(" ")[0], "SUELDO " + p])],
+    ["Conceptos", CONCEPTOS.map(c => [c.replace("INGRESO DE FLEXIAHORRO PARA ",
+                    "DESDE FLEXIAHORRO…"), c]).concat([["TAXIS…","TAXIS "]])],
+  ];
+  const cont = $("fichas");
+  GRUPOS.forEach(([titulo, items]) => {
+    const g = document.createElement("div");
+    g.className = "grupo"; g.textContent = titulo; cont.appendChild(g);
+    const fila = document.createElement("div");
+    fila.className = "fila-fichas"; cont.appendChild(fila);
+    items.forEach(([corto, valor]) => {
+      const f = document.createElement("button");
+      f.type = "button"; f.className = "ficha"; f.textContent = corto;
+      f.onclick = () => {
+        $("desc").value = valor;
+        cont.querySelectorAll(".ficha.activa").forEach(x => x.classList.remove("activa"));
+        f.classList.add("activa");
+        // si la ficha termina abierta (espacio o …), el cursor queda al final
+        if (/[ …]$/.test(valor)) { $("desc").focus();
+          $("desc").setSelectionRange(valor.length, valor.length); }
+      };
+      fila.appendChild(f);
+    });
+  });
 
   const dinero = n => "$" + Number(n).toLocaleString("es-EC",
     {minimumFractionDigits: 2, maximumFractionDigits: 2});
