@@ -92,9 +92,11 @@ function registrar(datos) {
       const bytes = Utilities.base64Decode(f.b64);
       const ext = (f.nombre || "").indexOf(".") > -1
         ? f.nombre.slice(f.nombre.lastIndexOf(".")) : ".jpg";
-      const nombre = p[0] + "-" + p[1] + "-" + p[2] + " · " + ref.trim() +
-        (datos.fotos.length > 1 ? " (" + (i + 1) + ")" : "") +
-        " · " + desc.slice(0, 40) + ext;
+      // la descripción manda en el nombre: así se encuentra la foto
+      // buscando lo mismo que se buscaría en la hoja
+      const nombre = desc.slice(0, 60) + " · " + p[0] + "-" + p[1] + "-" + p[2] +
+        " · " + ref.trim() +
+        (datos.fotos.length > 1 ? " (" + (i + 1) + ")" : "") + ext;
       const archivo = carpeta.createFile(
         Utilities.newBlob(bytes, f.mime || "image/jpeg", nombre));
       return archivo.getUrl();
