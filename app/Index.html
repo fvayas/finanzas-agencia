@@ -245,8 +245,8 @@
              spellcheck="false" required
              placeholder="…o escribe la descripción aquí">
     </div>
-    <div class="pista">Al elegir una cuenta se pone solo el <b>mes del
-      servicio</b>; edítalo abajo si el pago es de otro mes.</div>
+    <div class="pista">Si el pago corresponde a un mes atrasado, añádelo a
+      mano: <b>"PAGO SAMARI JUNIO"</b>. Si no, así está perfecto.</div>
   </div>
 
   <div class="bloque">
@@ -260,7 +260,7 @@
       <div id="miniaturas"></div>
     </div>
     <button type="button" id="quitar">× Quitar fotos</button>
-    <input type="file" id="fotos" accept="image/*" capture="environment" multiple hidden>
+    <input type="file" id="fotos" accept="image/*" multiple hidden>
   </div>
 
   <div class="err" id="err"></div>
@@ -278,7 +278,7 @@
 
   <button id="btn" type="submit">Registrar</button>
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v11</div>
+    letter-spacing:.08em; margin-top:4px">v12</div>
 </form>
 
 <script>
@@ -299,14 +299,9 @@
 
   const $ = id => document.getElementById(id);
 
-  // mes del servicio en curso, para que las fichas de cuentas lo traigan puesto
-  const MES_ACTUAL = ["ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO",
-    "AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE","DICIEMBRE"]
-    [new Date(Date.now() - 5*3600*1000).getUTCMonth()];
-
   const GRUPOS = [
     ["Cuentas — pagos de clientes",
-      CUENTAS.map(c => ["PAGO " + c, "PAGO " + c + " " + MES_ACTUAL])],
+      CUENTAS.map(c => ["PAGO " + c, "PAGO " + c])],
     ["Sueldos del equipo",
       EQUIPO.map(p => ["SUELDO " + p, "SUELDO " + p])],
     ["Conceptos frecuentes",
@@ -353,7 +348,7 @@
     if (v !== limpio) $("monto").value = limpio;
   });
   // sello de versión, para saber qué copia carga el teléfono
-  console.log("app v11");
+  console.log("app v12");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
