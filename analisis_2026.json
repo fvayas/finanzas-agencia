@@ -1453,6 +1453,130 @@
    }
   },
   {
+   "persona": "Estefi Jacome",
+   "grupo": "Nomina fija",
+   "total": 4597.5,
+   "meses": 7,
+   "promedio_mes": 656.79,
+   "base": 550.0,
+   "primer_mes": "ene",
+   "ultimo_mes": "jul",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 550.0,
+    "feb": 550.0,
+    "mar": 632.5,
+    "abr": 632.5,
+    "may": 632.5,
+    "jun": 550.0,
+    "jul": 550.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "importe": 550.0,
+       "desc": "sueldo estefita"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "02/02/2026",
+       "importe": 550.0,
+       "desc": "SUELDO ESTEFITA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "03/03/2026",
+       "importe": 632.5,
+       "desc": "SUELDO ESTEFITA CON IVA"
+      }
+     ],
+     "razones": [
+      "emite factura: se le paga el sueldo +15% de IVA"
+     ],
+     "delta": {
+      "vs": "feb",
+      "dif": 82.5
+     },
+     "vs_base": 82.5,
+     "cmp_base": true
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "01/04/2026",
+       "importe": 632.5,
+       "desc": "SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 82.5,
+     "cmp_base": true
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "importe": 632.5,
+       "desc": "SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 82.5,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 550.0,
+       "desc": "PAGO SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [
+      "deja de facturar: vuelve al sueldo sin IVA"
+     ],
+     "delta": {
+      "vs": "may",
+      "dif": -82.5
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "importe": 550.0,
+       "desc": "SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
    "persona": "Stalin Bonilla",
    "grupo": "Nomina fija",
    "total": 4521.62,
@@ -1587,130 +1711,6 @@
        "fecha": "01/07/2026",
        "importe": 661.25,
        "desc": "SUELDO STALIN BONILLA"
-      }
-     ],
-     "razones": [],
-     "delta": null,
-     "vs_base": 0.0,
-     "cmp_base": true
-    }
-   }
-  },
-  {
-   "persona": "Estefi Jacome",
-   "grupo": "Nomina fija",
-   "total": 4097.5,
-   "meses": 7,
-   "promedio_mes": 585.36,
-   "base": 550.0,
-   "primer_mes": "ene",
-   "ultimo_mes": "jul",
-   "activo_julio": true,
-   "liquidado": false,
-   "por_mes": {
-    "ene": 550.0,
-    "feb": 550.0,
-    "mar": 632.5,
-    "abr": 632.5,
-    "may": 632.5,
-    "jun": 550.0,
-    "jul": 550.0
-   },
-   "detalle": {
-    "ene": {
-     "movs": [
-      {
-       "fecha": "05/01/2026",
-       "importe": 550.0,
-       "desc": "sueldo estefita"
-      }
-     ],
-     "razones": [],
-     "delta": null,
-     "vs_base": 0.0,
-     "cmp_base": true
-    },
-    "feb": {
-     "movs": [
-      {
-       "fecha": "02/02/2026",
-       "importe": 550.0,
-       "desc": "SUELDO ESTEFITA"
-      }
-     ],
-     "razones": [],
-     "delta": null,
-     "vs_base": 0.0,
-     "cmp_base": true
-    },
-    "mar": {
-     "movs": [
-      {
-       "fecha": "03/03/2026",
-       "importe": 632.5,
-       "desc": "SUELDO ESTEFITA CON IVA"
-      }
-     ],
-     "razones": [
-      "emite factura: se le paga el sueldo +15% de IVA"
-     ],
-     "delta": {
-      "vs": "feb",
-      "dif": 82.5
-     },
-     "vs_base": 82.5,
-     "cmp_base": true
-    },
-    "abr": {
-     "movs": [
-      {
-       "fecha": "01/04/2026",
-       "importe": 632.5,
-       "desc": "SUELDO ESTEFI JACOME"
-      }
-     ],
-     "razones": [],
-     "delta": null,
-     "vs_base": 82.5,
-     "cmp_base": true
-    },
-    "may": {
-     "movs": [
-      {
-       "fecha": "04/05/2026",
-       "importe": 632.5,
-       "desc": "SUELDO ESTEFI JACOME"
-      }
-     ],
-     "razones": [],
-     "delta": null,
-     "vs_base": 82.5,
-     "cmp_base": true
-    },
-    "jun": {
-     "movs": [
-      {
-       "fecha": "01/06/2026",
-       "importe": 550.0,
-       "desc": "PAGO SUELDO ESTEFI JACOME"
-      }
-     ],
-     "razones": [
-      "deja de facturar: vuelve al sueldo sin IVA"
-     ],
-     "delta": {
-      "vs": "may",
-      "dif": -82.5
-     },
-     "vs_base": 0.0,
-     "cmp_base": true
-    },
-    "jul": {
-     "movs": [
-      {
-       "fecha": "01/07/2026",
-       "importe": 550.0,
-       "desc": "SUELDO ESTEFI JACOME"
       }
      ],
      "razones": [],
@@ -4775,6 +4775,6 @@
   "costo_fijo": 60572.63,
   "costo_variable": 9678.3,
   "resultado": 3888.63,
-  "movimientos": 505
+  "movimientos": 506
  }
 }

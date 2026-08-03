@@ -13,7 +13,7 @@
   "grupo": "Saldo Inicial",
   "categoria": "Saldo Inicial",
   "detalle": "",
-  "tipo_original": "Saldo Inicial"
+  "tipo_original": ""
  },
  {
   "fecha": "01/01/2026",
@@ -29,7 +29,7 @@
   "grupo": "Movimiento entre cuentas propias",
   "categoria": "Salida a FlexiAhorro",
   "detalle": "debito ahorro programado",
-  "tipo_original": "Ahorro"
+  "tipo_original": ""
  },
  {
   "fecha": "05/01/2026",
@@ -45,7 +45,7 @@
   "grupo": "Nomina fija",
   "categoria": "Alejandra Aponte",
   "detalle": "sueldo alejandra aponte",
-  "tipo_original": "Sueldos Alejandra A"
+  "tipo_original": ""
  },
  {
   "fecha": "05/01/2026",
@@ -61,7 +61,7 @@
   "grupo": "Nomina fija",
   "categoria": "Alejandro Vaca",
   "detalle": "sueldo alejandro vaca",
-  "tipo_original": "Sueldos Alejandro V"
+  "tipo_original": ""
  },
  {
   "fecha": "05/01/2026",
@@ -77,7 +77,7 @@
   "grupo": "Nomina fija",
   "categoria": "Estefi Jacome",
   "detalle": "sueldo estefita",
-  "tipo_original": "Sueldo Estefita"
+  "tipo_original": ""
  },
  {
   "fecha": "05/01/2026",
@@ -93,7 +93,7 @@
   "grupo": "Nomina fija",
   "categoria": "Stalin Bonilla",
   "detalle": "sueldo stalin",
-  "tipo_original": "Sueldo Stalin"
+  "tipo_original": ""
  },
  {
   "fecha": "05/01/2026",
@@ -109,7 +109,7 @@
   "grupo": "Estructura",
   "categoria": "Arriendo, condominio y alicuotas",
   "detalle": "arriendo ENERO",
-  "tipo_original": "Arriendo"
+  "tipo_original": ""
  },
  {
   "fecha": "05/01/2026",
@@ -125,7 +125,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Friends Guides",
   "detalle": "friends guides",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "05/01/2026",
@@ -141,7 +141,7 @@
   "grupo": "Estructura",
   "categoria": "Internet",
   "detalle": "INTERNET",
-  "tipo_original": "Internet"
+  "tipo_original": ""
  },
  {
   "fecha": "05/01/2026",
@@ -157,7 +157,7 @@
   "grupo": "Nomina fija",
   "categoria": "Danna Cardenas",
   "detalle": "SUELDO DANNA",
-  "tipo_original": "Sueldo Danna"
+  "tipo_original": ""
  },
  {
   "fecha": "05/01/2026",
@@ -173,7 +173,7 @@
   "grupo": "Equipos",
   "categoria": "Equipos y mantenimiento",
   "detalle": "reseteo computadora  ruben barona",
-  "tipo_original": "Equipos"
+  "tipo_original": ""
  },
  {
   "fecha": "05/01/2026",
@@ -189,7 +189,7 @@
   "grupo": "Marketing propio",
   "categoria": "Uniformes y branding",
   "detalle": "pago 50% capuchas rafael naranjo",
-  "tipo_original": "Uniformes"
+  "tipo_original": ""
  },
  {
   "fecha": "06/01/2026",
@@ -205,7 +205,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Pladeco",
   "detalle": "pladeco  DEL 19 DE NOVIEBRE AL 19 DE DICIEMBRE",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "06/01/2026",
@@ -221,7 +221,7 @@
   "grupo": "Nomina fija",
   "categoria": "Miguel Molina",
   "detalle": "SUELDO MIGUEL",
-  "tipo_original": "Sueldo Miguel"
+  "tipo_original": ""
  },
  {
   "fecha": "07/01/2026",
@@ -237,7 +237,7 @@
   "grupo": "Movilizacion",
   "categoria": "Taxis / parqueo / viaticos",
   "detalle": "",
-  "tipo_original": "Movilización"
+  "tipo_original": ""
  },
  {
   "fecha": "07/01/2026",
@@ -253,7 +253,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Absolute",
   "detalle": "DOS MESES DEL ANTERIRO AÑO DE ABSOLUTE CON ESO QUEDA EN CERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "08/01/2026",
@@ -269,7 +269,7 @@
   "grupo": "Movilizacion",
   "categoria": "Taxis / parqueo / viaticos",
   "detalle": "",
-  "tipo_original": "Movilización"
+  "tipo_original": ""
  },
  {
   "fecha": "08/01/2026",
@@ -285,7 +285,7 @@
   "grupo": "Pauta",
   "categoria": "Pauta pagada",
   "detalle": "REEMBOLSO PAUTA FRANCISCO VAYAS",
-  "tipo_original": "Reembolso"
+  "tipo_original": ""
  },
  {
   "fecha": "08/01/2026",
@@ -301,7 +301,7 @@
   "grupo": "Freelance y produccion",
   "categoria": "Nicolas Encalada (foto/video)",
   "detalle": "",
-  "tipo_original": "Gasto Videografo"
+  "tipo_original": ""
  },
  {
   "fecha": "09/01/2026",
@@ -317,7 +317,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Pladeco",
   "detalle": "CRM MONDAY PLADECO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "12/01/2026",
@@ -333,7 +333,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Confia",
   "detalle": "CONFIA DICIEMRBE",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "12/01/2026",
@@ -349,7 +349,7 @@
   "grupo": "Movilizacion",
   "categoria": "Taxis / parqueo / viaticos",
   "detalle": "",
-  "tipo_original": "Movilización"
+  "tipo_original": ""
  },
  {
   "fecha": "12/01/2026",
@@ -365,7 +365,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Nane Vestidos",
   "detalle": "NANE VESTIDOS ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "15/01/2026",
@@ -381,7 +381,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Samari",
   "detalle": "SAMARI DICIEMBRE",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "16/01/2026",
@@ -397,7 +397,7 @@
   "grupo": "Movilizacion",
   "categoria": "Taxis / parqueo / viaticos",
   "detalle": "Stalin Bonilla",
-  "tipo_original": "Movilización"
+  "tipo_original": ""
  },
  {
   "fecha": "16/01/2026",
@@ -413,7 +413,7 @@
   "grupo": "Nomina variable",
   "categoria": "Horas extras",
   "detalle": "Alejandro Vaca",
-  "tipo_original": "Movilización"
+  "tipo_original": ""
  },
  {
   "fecha": "19/01/2026",
@@ -429,7 +429,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Uninova",
   "detalle": "UNINOVA",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "19/01/2026",
@@ -445,7 +445,7 @@
   "grupo": "Impuestos y legal",
   "categoria": "Impuestos",
   "detalle": "DEVOLCUION DE IMPUESTOS ANA PAULA",
-  "tipo_original": "Impuestos"
+  "tipo_original": ""
  },
  {
   "fecha": "20/01/2026",
@@ -461,7 +461,7 @@
   "grupo": "Freelance y produccion",
   "categoria": "Modelos",
   "detalle": "Velsana",
-  "tipo_original": "Modelos"
+  "tipo_original": ""
  },
  {
   "fecha": "20/01/2026",
@@ -477,7 +477,7 @@
   "grupo": "Tarjeta de credito",
   "categoria": "Pago tarjeta (sin desglose)",
   "detalle": "RENOVACION TARJETA DE CREDITO",
-  "tipo_original": "Imprevistos"
+  "tipo_original": ""
  },
  {
   "fecha": "21/01/2026",
@@ -493,7 +493,7 @@
   "grupo": "Tarjeta de credito",
   "categoria": "Pago tarjeta (sin desglose)",
   "detalle": "TARJETA",
-  "tipo_original": "Tarjeta"
+  "tipo_original": ""
  },
  {
   "fecha": "22/01/2026",
@@ -509,7 +509,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Velsana",
   "detalle": "VELSANA DEL 11 DE DICEMBRE AL 11 DE ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "22/01/2026",
@@ -525,7 +525,7 @@
   "grupo": "Estructura",
   "categoria": "Servicios basicos",
   "detalle": "PAGO AGUA MES DE ENERO",
-  "tipo_original": "Servicios Básicos"
+  "tipo_original": ""
  },
  {
   "fecha": "26/01/2026",
@@ -541,7 +541,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Pasteur",
   "detalle": "PASTEUR DICIEMBRE",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "26/01/2026",
@@ -557,7 +557,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Nono",
   "detalle": "NONO ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "26/01/2026",
@@ -573,7 +573,7 @@
   "grupo": "Software y herramientas",
   "categoria": "Suscripciones",
   "detalle": "SISTEMA CONTABLE",
-  "tipo_original": "Sistema Facturación"
+  "tipo_original": ""
  },
  {
   "fecha": "26/01/2026",
@@ -589,7 +589,7 @@
   "grupo": "Nomina socios",
   "categoria": "Ana Paula",
   "detalle": "SUELDO ANA PAULA",
-  "tipo_original": "Sueldo Ana Paula"
+  "tipo_original": ""
  },
  {
   "fecha": "26/01/2026",
@@ -605,7 +605,7 @@
   "grupo": "Nomina socios",
   "categoria": "Francisco Vayas",
   "detalle": "SUELDO FRANCISCO",
-  "tipo_original": "Sueldo Francisco"
+  "tipo_original": ""
  },
  {
   "fecha": "27/01/2026",
@@ -621,7 +621,7 @@
   "grupo": "Estructura",
   "categoria": "Internet",
   "detalle": "INTERNET DANIEL",
-  "tipo_original": "Internet"
+  "tipo_original": ""
  },
  {
   "fecha": "28/01/2026",
@@ -637,7 +637,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Samari",
   "detalle": "VIATICOS SAMARI RODAJE BAÑOS CON MARIA JOSE NARANJO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "29/01/2026",
@@ -653,7 +653,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Cigarra",
   "detalle": "CIGARRA DEL 19 DE ENERO AL 19 DE FEBRERPO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "29/01/2026",
@@ -669,7 +669,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Chiflido",
   "detalle": "CHIFLIDO ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "30/01/2026",
@@ -685,7 +685,7 @@
   "grupo": "Freelance y produccion",
   "categoria": "Sofia Garzon (flores/deco)",
   "detalle": "",
-  "tipo_original": "Imprevistos"
+  "tipo_original": ""
  },
  {
   "fecha": "30/01/2026",
@@ -701,7 +701,7 @@
   "grupo": "Otros ingresos",
   "categoria": "Interes bancario",
   "detalle": "",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -717,7 +717,7 @@
   "grupo": "Ingresos - Produccion",
   "categoria": "Proyecto puntual",
   "detalle": "Victor Hugo (evento)",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -733,7 +733,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Onco Ambato",
   "detalle": "ONCO AMBATO DICIEMBRE",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -749,7 +749,7 @@
   "grupo": "Nomina fija",
   "categoria": "Estefi Jacome",
   "detalle": "SUELDO ESTEFITA",
-  "tipo_original": "Sueldo Estefita"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -765,7 +765,7 @@
   "grupo": "Nomina fija",
   "categoria": "Alejandra Aponte",
   "detalle": "sueldo alejandra aponte",
-  "tipo_original": "Sueldos Alejandra A"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -781,7 +781,7 @@
   "grupo": "Nomina fija",
   "categoria": "Stalin Bonilla",
   "detalle": "SUELDO STALIN MAS TAXIS",
-  "tipo_original": "Sueldo Stalin"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -797,7 +797,7 @@
   "grupo": "Nomina fija",
   "categoria": "Danna Cardenas",
   "detalle": "SUELDO DANNA MAS TAXIS",
-  "tipo_original": "Sueldo Danna"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -813,7 +813,7 @@
   "grupo": "Nomina fija",
   "categoria": "Alejandro Vaca",
   "detalle": "SUELDO ALEJANDRO VACA",
-  "tipo_original": "Sueldos Alejandro V"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -829,7 +829,7 @@
   "grupo": "Estructura",
   "categoria": "Arriendo, condominio y alicuotas",
   "detalle": "ARRIENDO FEBRERO",
-  "tipo_original": "Arriendo"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -845,7 +845,7 @@
   "grupo": "Freelance y produccion",
   "categoria": "Modelos",
   "detalle": "Healthy Girl",
-  "tipo_original": "Gasto Videografo"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -861,7 +861,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "MM Wings",
   "detalle": "MM WINGS VAYAS",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -877,7 +877,7 @@
   "grupo": "Devoluciones",
   "categoria": "Devolucion a cliente",
   "detalle": "DEVOLUCION HERMANOS ROMERO",
-  "tipo_original": "EGRESOS"
+  "tipo_original": ""
  },
  {
   "fecha": "02/02/2026",
@@ -893,7 +893,7 @@
   "grupo": "Nomina fija",
   "categoria": "Miguel Molina",
   "detalle": "SUELDO MIGUEL",
-  "tipo_original": "Sueldo Miguel"
+  "tipo_original": ""
  },
  {
   "fecha": "03/02/2026",
@@ -909,7 +909,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Nane Vestidos",
   "detalle": "NANE VESTIDOS FEBRERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "03/02/2026",
@@ -925,7 +925,7 @@
   "grupo": "Oficina y bienestar",
   "categoria": "Refrigerios y suministros",
   "detalle": "BOTELLON 1",
-  "tipo_original": "Refrigerios"
+  "tipo_original": ""
  },
  {
   "fecha": "03/02/2026",
@@ -941,7 +941,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Flota Imbabura",
   "detalle": "FLOTA IMBABURA ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "03/02/2026",
@@ -957,7 +957,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Healthy Girl",
   "detalle": "HEALTHY GIRL DE 18 DE DICEMBRE AL 18DE ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "05/02/2026",
@@ -973,7 +973,7 @@
   "grupo": "Equipos",
   "categoria": "Equipos y mantenimiento",
   "detalle": "CAMARA SONNY AGENCIA",
-  "tipo_original": "Equipos"
+  "tipo_original": ""
  },
  {
   "fecha": "05/02/2026",
@@ -989,7 +989,7 @@
   "grupo": "Movimiento entre cuentas propias",
   "categoria": "Salida a FlexiAhorro",
   "detalle": "ahorro programado",
-  "tipo_original": "Ahorro"
+  "tipo_original": ""
  },
  {
   "fecha": "05/02/2026",
@@ -1005,7 +1005,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Provita",
   "detalle": "provita del 18 de dicembre al 18 de enero",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "06/02/2026",
@@ -1021,7 +1021,7 @@
   "grupo": "Freelance y produccion",
   "categoria": "Juan Pablo Nieto (produccion)",
   "detalle": "Samari",
-  "tipo_original": "Gasto Videografo"
+  "tipo_original": ""
  },
  {
   "fecha": "06/02/2026",
@@ -1037,7 +1037,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Plasticaucho",
   "detalle": "PLASTICAUCHO ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "06/02/2026",
@@ -1053,7 +1053,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Pladeco",
   "detalle": "PLADECO DEL 19 DICIEMBRE AL 19 DE ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "09/02/2026",
@@ -1069,7 +1069,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Friends Guides",
   "detalle": "FRIENDS GUIDES NOVIEMBRE 2025",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "09/02/2026",
@@ -1085,7 +1085,7 @@
   "grupo": "Pauta",
   "categoria": "Pauta pagada",
   "detalle": "DEVOLCION PAUTAS FVAYAS",
-  "tipo_original": "Reembolso"
+  "tipo_original": ""
  },
  {
   "fecha": "09/02/2026",
@@ -1101,7 +1101,7 @@
   "grupo": "Pasantias",
   "categoria": "Karla Jacome",
   "detalle": "SUELDO KARLITA JACOME",
-  "tipo_original": "Sueldo Karlita"
+  "tipo_original": ""
  },
  {
   "fecha": "09/02/2026",
@@ -1117,7 +1117,7 @@
   "grupo": "Marketing propio",
   "categoria": "Uniformes y branding",
   "detalle": "PAGO BRANDING A CAMILA MERLO",
-  "tipo_original": "Gasto Branding"
+  "tipo_original": ""
  },
  {
   "fecha": "10/02/2026",
@@ -1133,7 +1133,7 @@
   "grupo": "Software y herramientas",
   "categoria": "Suscripciones",
   "detalle": "PAGO SISTEMA CONTABLE",
-  "tipo_original": "Sistema Facturación"
+  "tipo_original": ""
  },
  {
   "fecha": "10/02/2026",
@@ -1149,7 +1149,7 @@
   "grupo": "Oficina y bienestar",
   "categoria": "Refrigerios y suministros",
   "detalle": "PAGO BOTELLON",
-  "tipo_original": "Refrigerios"
+  "tipo_original": ""
  },
  {
   "fecha": "12/02/2026",
@@ -1165,7 +1165,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Onco Ambato",
   "detalle": "ONCO AMBATO  ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "18/02/2026",
@@ -1181,7 +1181,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Absolute",
   "detalle": "PAGO ABSOLUTE",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "19/02/2026",
@@ -1197,7 +1197,7 @@
   "grupo": "Impuestos y legal",
   "categoria": "Impuestos",
   "detalle": "Devolucion impuestos",
-  "tipo_original": "Impuestos"
+  "tipo_original": ""
  },
  {
   "fecha": "19/02/2026",
@@ -1213,7 +1213,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Confia",
   "detalle": "CONFIA ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "20/02/2026",
@@ -1229,7 +1229,7 @@
   "grupo": "Estructura",
   "categoria": "Servicios basicos",
   "detalle": "PAGO AGUA FEBRERO",
-  "tipo_original": "Servicios Básicos"
+  "tipo_original": ""
  },
  {
   "fecha": "20/02/2026",
@@ -1245,7 +1245,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Plasticaucho",
   "detalle": "PLASTICAUCHO FEBRERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "23/02/2026",
@@ -1261,7 +1261,7 @@
   "grupo": "Tarjeta de credito",
   "categoria": "Pago tarjeta (sin desglose)",
   "detalle": "PAGO TARJETA",
-  "tipo_original": "Tarjeta"
+  "tipo_original": ""
  },
  {
   "fecha": "23/02/2026",
@@ -1277,7 +1277,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Cigarra",
   "detalle": "PAGO LA CIGARRA del 22 de febrero al 22 de marzo",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "23/02/2026",
@@ -1293,7 +1293,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Samari",
   "detalle": "PAGO SAMARI DE ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "23/02/2026",
@@ -1309,7 +1309,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Velsana",
   "detalle": "VELSANA DEL 11 DE ENERO AL 11 DE FEBREO Y PASTEUR",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "23/02/2026",
@@ -1325,7 +1325,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Nono",
   "detalle": "NONO FEBRERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "24/02/2026",
@@ -1341,7 +1341,7 @@
   "grupo": "Ingresos - Pauta",
   "categoria": "Pauta reembolsada",
   "detalle": "Pladeco",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "24/02/2026",
@@ -1357,7 +1357,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Onco Ambato",
   "detalle": "ONCO AMBATO FEBRERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "24/02/2026",
@@ -1373,7 +1373,7 @@
   "grupo": "Ingresos - Produccion",
   "categoria": "Proyecto puntual",
   "detalle": "La Tartuca",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "25/02/2026",
@@ -1389,7 +1389,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Uninova",
   "detalle": "PAGO UNINOVA ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "25/02/2026",
@@ -1405,7 +1405,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "MM Wings",
   "detalle": "PAGO MM WINGS ENERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "25/02/2026",
@@ -1421,7 +1421,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Fiammingo",
   "detalle": "PAGO FIAMMINGO DESDE EL 12 DE FEBRERO AL 12 DE MARZO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "25/02/2026",
@@ -1437,7 +1437,7 @@
   "grupo": "Nomina socios",
   "categoria": "Ana Paula",
   "detalle": "PAGO SUELDO ANA PAULA",
-  "tipo_original": "Sueldo Ana Paula"
+  "tipo_original": ""
  },
  {
   "fecha": "25/02/2026",
@@ -1453,7 +1453,7 @@
   "grupo": "Retiro de socios",
   "categoria": "Utilidades",
   "detalle": "Ana Paula",
-  "tipo_original": "Ahorro"
+  "tipo_original": ""
  },
  {
   "fecha": "25/02/2026",
@@ -1469,7 +1469,7 @@
   "grupo": "Nomina socios",
   "categoria": "Francisco Vayas",
   "detalle": "PAGO SUELDO FRANCISCO",
-  "tipo_original": "Sueldo Francisco"
+  "tipo_original": ""
  },
  {
   "fecha": "25/02/2026",
@@ -1485,7 +1485,7 @@
   "grupo": "Retiro de socios",
   "categoria": "Utilidades",
   "detalle": "",
-  "tipo_original": "Ahorro"
+  "tipo_original": ""
  },
  {
   "fecha": "25/02/2026",
@@ -1501,7 +1501,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Tartelier",
   "detalle": "PAGO TARTELIER DEL 18 DE ENERO AL 18 DE FEBRERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "26/02/2026",
@@ -1517,7 +1517,7 @@
   "grupo": "Movimiento entre cuentas propias",
   "categoria": "Salida a Fideval",
   "detalle": "REFERENCIA BANCARIA PARA FIDEVAL",
-  "tipo_original": "Imprevistos"
+  "tipo_original": ""
  },
  {
   "fecha": "26/02/2026",
@@ -1533,7 +1533,7 @@
   "grupo": "Movimiento entre cuentas propias",
   "categoria": "Salida a Fideval",
   "detalle": "TRANSFERENCIA FONDO FIDEVAL",
-  "tipo_original": "Ahorro"
+  "tipo_original": ""
  },
  {
   "fecha": "26/02/2026",
@@ -1549,7 +1549,7 @@
   "grupo": "Movimiento entre cuentas propias",
   "categoria": "Salida a FlexiAhorro",
   "detalle": "TRANSFERENCIA FLEXI AHORRO",
-  "tipo_original": "Ahorro"
+  "tipo_original": ""
  },
  {
   "fecha": "27/02/2026",
@@ -1565,7 +1565,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Chiflido",
   "detalle": "PAGO CHIFLIDO FEBRERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "27/02/2026",
@@ -1581,7 +1581,7 @@
   "grupo": "Estructura",
   "categoria": "Internet",
   "detalle": "PAGO INTERNET",
-  "tipo_original": "Internet"
+  "tipo_original": ""
  },
  {
   "fecha": "27/02/2026",
@@ -1597,7 +1597,7 @@
   "grupo": "Freelance y produccion",
   "categoria": "Ambientacion / props",
   "detalle": "Healthy Girl",
-  "tipo_original": "Reembolso"
+  "tipo_original": ""
  },
  {
   "fecha": "27/02/2026",
@@ -1613,7 +1613,7 @@
   "grupo": "Otros ingresos",
   "categoria": "Interes bancario",
   "detalle": "",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "02/03/2026",
@@ -1629,7 +1629,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Provita",
   "detalle": "PROVITA DEL 18 DE ENERO AL 18 DE FEBRERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "02/03/2026",
@@ -1645,7 +1645,7 @@
   "grupo": "Movilizacion",
   "categoria": "Taxis / parqueo / viaticos",
   "detalle": "",
-  "tipo_original": "Movilización"
+  "tipo_original": ""
  },
  {
   "fecha": "02/03/2026",
@@ -1661,7 +1661,7 @@
   "grupo": "Freelance y produccion",
   "categoria": "Modelos",
   "detalle": "Healthy Girl",
-  "tipo_original": "Reembolso"
+  "tipo_original": ""
  },
  {
   "fecha": "02/03/2026",
@@ -1677,7 +1677,7 @@
   "grupo": "Freelance y produccion",
   "categoria": "Modelos",
   "detalle": "Healthy Girl",
-  "tipo_original": "Reembolso"
+  "tipo_original": ""
  },
  {
   "fecha": "02/03/2026",
@@ -1693,7 +1693,7 @@
   "grupo": "Movimiento entre cuentas propias",
   "categoria": "Entrada desde FlexiAhorro",
   "detalle": "REVERSO DE FLEXIAHORRO PARA PAGO DE SUELDOS",
-  "tipo_original": "Ahorro"
+  "tipo_original": ""
  },
  {
   "fecha": "02/03/2026",
@@ -1709,7 +1709,7 @@
   "grupo": "Nomina fija",
   "categoria": "Alejandra Aponte",
   "detalle": "PAGO SUELDO ALE CON IVA",
-  "tipo_original": "Sueldos Alejandra A"
+  "tipo_original": ""
  },
  {
   "fecha": "02/03/2026",
@@ -1725,7 +1725,7 @@
   "grupo": "Nomina fija",
   "categoria": "Miguel Molina",
   "detalle": "PAGO sueldo miguel MOLINA",
-  "tipo_original": "Sueldo Miguel"
+  "tipo_original": ""
  },
  {
   "fecha": "02/03/2026",
@@ -1741,7 +1741,7 @@
   "grupo": "Freelance y produccion",
   "categoria": "Nicolas Encalada (foto/video)",
   "detalle": "",
-  "tipo_original": "Gasto Videografo"
+  "tipo_original": ""
  },
  {
   "fecha": "02/03/2026",
@@ -1757,7 +1757,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Flota Imbabura",
   "detalle": "FLOTA IMBABURA FEBRERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "03/03/2026",
@@ -1773,7 +1773,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Samari",
   "detalle": "PAGO SAMARI MODELO SUCA NARANJO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "03/03/2026",
@@ -1789,7 +1789,7 @@
   "grupo": "Freelance y produccion",
   "categoria": "Modelos",
   "detalle": "Samari",
-  "tipo_original": "Reembolso"
+  "tipo_original": ""
  },
  {
   "fecha": "03/03/2026",
@@ -1805,7 +1805,7 @@
   "grupo": "Movimiento entre cuentas propias",
   "categoria": "Entrada desde FlexiAhorro",
   "detalle": "REVERSO DE FLEXIAHORRO PARA PAGO DE SUELDOS",
-  "tipo_original": "Ahorro"
+  "tipo_original": ""
  },
  {
   "fecha": "03/03/2026",
@@ -1821,7 +1821,7 @@
   "grupo": "Nomina fija",
   "categoria": "Estefi Jacome",
   "detalle": "SUELDO ESTEFITA CON IVA",
-  "tipo_original": "Sueldo Estefita"
+  "tipo_original": ""
  },
  {
   "fecha": "03/03/2026",
@@ -1837,7 +1837,7 @@
   "grupo": "Nomina fija",
   "categoria": "Alejandro Vaca",
   "detalle": "SUELDO ALEJO CON IVA",
-  "tipo_original": "Sueldos Alejandro V"
+  "tipo_original": ""
  },
  {
   "fecha": "03/03/2026",
@@ -1853,7 +1853,7 @@
   "grupo": "Nomina fija",
   "categoria": "Stalin Bonilla",
   "detalle": "SUELDO STALIN CON IVA",
-  "tipo_original": "Sueldo Stalin"
+  "tipo_original": ""
  },
  {
   "fecha": "03/03/2026",
@@ -1869,7 +1869,7 @@
   "grupo": "Movilizacion",
   "categoria": "Taxis / parqueo / viaticos",
   "detalle": "Alejandro Vaca",
-  "tipo_original": "Movilización"
+  "tipo_original": ""
  },
  {
   "fecha": "03/03/2026",
@@ -1885,7 +1885,7 @@
   "grupo": "Movilizacion",
   "categoria": "Taxis / parqueo / viaticos",
   "detalle": "Stalin Bonilla",
-  "tipo_original": "Movilización"
+  "tipo_original": ""
  },
  {
   "fecha": "03/03/2026",
@@ -1901,7 +1901,7 @@
   "grupo": "Movilizacion",
   "categoria": "Taxis / parqueo / viaticos",
   "detalle": "",
-  "tipo_original": "Movilización"
+  "tipo_original": ""
  },
  {
   "fecha": "04/03/2026",
@@ -1917,7 +1917,7 @@
   "grupo": "Nomina fija",
   "categoria": "Danna Cardenas",
   "detalle": "SUELDO DANNA COMPLETO",
-  "tipo_original": "Sueldo Danna"
+  "tipo_original": ""
  },
  {
   "fecha": "04/03/2026",
@@ -1933,7 +1933,7 @@
   "grupo": "Movilizacion",
   "categoria": "Taxis / parqueo / viaticos",
   "detalle": "Danna Cardenas",
-  "tipo_original": "Movilización"
+  "tipo_original": ""
  },
  {
   "fecha": "04/03/2026",
@@ -1949,7 +1949,7 @@
   "grupo": "Estructura",
   "categoria": "Arriendo, condominio y alicuotas",
   "detalle": "ARRIENDO OFICINA MARZO",
-  "tipo_original": "Arriendo"
+  "tipo_original": ""
  },
  {
   "fecha": "04/03/2026",
@@ -1965,7 +1965,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Pladeco",
   "detalle": "PLADECO DE ENERO A FEBRERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "04/03/2026",
@@ -1981,7 +1981,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Nono",
   "detalle": "NONO MARZO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "04/03/2026",
@@ -1997,7 +1997,7 @@
   "grupo": "Otros ingresos",
   "categoria": "Subarriendo oficina",
   "detalle": "Chiki",
-  "tipo_original": "Ahorro"
+  "tipo_original": ""
  },
  {
   "fecha": "04/03/2026",
@@ -2013,7 +2013,7 @@
   "grupo": "Oficina y bienestar",
   "categoria": "Refrigerios y suministros",
   "detalle": "ACAI ESTEFITA UCMPLEAÑOS",
-  "tipo_original": "Refrigerios"
+  "tipo_original": ""
  },
  {
   "fecha": "05/03/2026",
@@ -2029,7 +2029,7 @@
   "grupo": "Movimiento entre cuentas propias",
   "categoria": "Salida a FlexiAhorro",
   "detalle": "AHORRO FLEXIBLE",
-  "tipo_original": "Ahorro"
+  "tipo_original": ""
  },
  {
   "fecha": "05/03/2026",
@@ -2045,7 +2045,7 @@
   "grupo": "Estructura",
   "categoria": "Arriendo, condominio y alicuotas",
   "detalle": "PAGO ALICUOTAS OFICNA DE ENERO A MARZO",
-  "tipo_original": "Arriendo"
+  "tipo_original": ""
  },
  {
   "fecha": "06/03/2026",
@@ -2061,7 +2061,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Healthy Girl",
   "detalle": "PAGO HEALTHY GIRL TODO DEL 18 DE ENERO AL 18 DE FEBRERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "06/03/2026",
@@ -2077,7 +2077,7 @@
   "grupo": "Nomina fija",
   "categoria": "Daniela Cordova",
   "detalle": "SUELDO DANIELA CORDOVA FEBRERO",
-  "tipo_original": "Sueldo Daniela C."
+  "tipo_original": ""
  },
  {
   "fecha": "09/03/2026",
@@ -2093,7 +2093,7 @@
   "grupo": "Pauta",
   "categoria": "Pauta pagada",
   "detalle": "REEMBOLSO PAUTA FRANCISCO VAYAS",
-  "tipo_original": "Reembolso"
+  "tipo_original": ""
  },
  {
   "fecha": "09/03/2026",
@@ -2109,7 +2109,7 @@
   "grupo": "Freelance y produccion",
   "categoria": "Modelos",
   "detalle": "Healthy Girl",
-  "tipo_original": "Reembolso"
+  "tipo_original": ""
  },
  {
   "fecha": "09/03/2026",
@@ -2125,7 +2125,7 @@
   "grupo": "Movimiento entre cuentas propias",
   "categoria": "Salida a FlexiAhorro",
   "detalle": "ENVIO DE PLATA A FLEXI AHORRO",
-  "tipo_original": "Ahorro"
+  "tipo_original": ""
  },
  {
   "fecha": "09/03/2026",
@@ -2141,7 +2141,7 @@
   "grupo": "Oficina y bienestar",
   "categoria": "Refrigerios y suministros",
   "detalle": "PAGO CAFES EN APC CHICOS PRODUCCION",
-  "tipo_original": "Refrigerios"
+  "tipo_original": ""
  },
  {
   "fecha": "09/03/2026",
@@ -2157,7 +2157,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Absolute",
   "detalle": "PAGO ABSOLUTE  FEBRERO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "10/03/2026",
@@ -2173,7 +2173,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Tienda Electro",
   "detalle": "PAGO TIENDA ELECTRODOMESTICOS",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "10/03/2026",
@@ -2189,7 +2189,7 @@
   "grupo": "Oficina y bienestar",
   "categoria": "Refrigerios y suministros",
   "detalle": "PAGO SANDUCHES CUMPLEAÑOS ALEJO",
-  "tipo_original": "Refrigerios"
+  "tipo_original": ""
  },
  {
   "fecha": "10/03/2026",
@@ -2205,7 +2205,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Nane Vestidos",
   "detalle": "NANE VESTIDOS MARZO",
-  "tipo_original": "Ingresos"
+  "tipo_original": ""
  },
  {
   "fecha": "10/03/2026",
@@ -2221,7 +2221,7 @@
   "grupo": "Estructura",
   "categoria": "Limpieza",
   "detalle": "LIMPIEZA 7 SEMANAS",
-  "tipo_original": "Limpieza"
+  "tipo_original": ""
  },
  {
   "fecha": "11/03/2026",
@@ -2237,7 +2237,7 @@
   "grupo": "Pasantias",
   "categoria": "Karla Jacome",
   "detalle": "SUELDO KARLITA JACOME",
-  "tipo_original": "Sueldo Karlita"
+  "tipo_original": ""
  },
  {
   "fecha": "11/03/2026",
@@ -2253,7 +2253,7 @@
   "grupo": "Software y herramientas",
   "categoria": "Suscripciones",
   "detalle": "SISTEMA CONTABLE",
-  "tipo_original": "Sistema Facturación"
+  "tipo_original": ""
  },
  {
   "fecha": "11/03/2026",
@@ -2269,7 +2269,7 @@
   "grupo": "Tarjeta de credito",
   "categoria": "Pago tarjeta (sin desglose)",
   "detalle": "PAGO TARJETA DE CREDITO",
-  "tipo_original": "Tarjeta"
+  "tipo_original": ""
  },
  {
   "fecha": "11/03/2026",
@@ -2285,7 +2285,7 @@
   "grupo": "Ingresos - Fee mensual",
   "categoria": "Friends Guides",
   "detalle": "FRIENDS GUIDES",
-  "tipo_original": "INGREsos"
+  "tipo_original": ""
  },
  {
   "fecha": "11/03/2026",
@@ -8078,5 +8078,21 @@
   "categoria": "Karen Pinos",
   "detalle": "PAGO SUELDO KAREN ULTIMO MES",
   "tipo_original": ""
+ },
+ {
+  "fecha": "03/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00504",
+  "descripcion": "SUELDO ESTEFI JACOME",
+  "ingreso": 0.0,
+  "egreso": 500.0,
+  "neto": -500.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Nomina fija",
+  "categoria": "Estefi Jacome",
+  "detalle": "SUELDO ESTEFI JACOME",
+  "tipo_original": "https://drive.google.com/file/d/1RddD412DH5L9u1Vblwk5xbvOFs1XDHWi/view?usp=drivesdk"
  }
 ]
