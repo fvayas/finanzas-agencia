@@ -34,6 +34,31 @@ function doGet() {
     .addMetaTag("viewport", "width=device-width, initial-scale=1");
 }
 
+/** Pestaña del libro + última fila real (referencia con importe). */
+function libro_() {
+  const hoja = SpreadsheetApp.getActive().getSheets().find(function (h) {
+    return h.getSheetId() === HOJA_GID || h.getName().trim() === HOJA;
+  });
+  if (!hoja) throw new Error('No encuentro la pestaña "' + HOJA + '".');
+  const cf = hoja.getRange(1, 3, hoja.getLastRow(), 4).getValues(); // C..F
+  let fila = 0, ultimaRef = 0;
+  for (let i = cf.length - 1; i >= 0; i--) {
+    const m = String(cf[i][0]).match(/01-(\d{5})/);
+    const conImporte = String(cf[i][2]) !== "" || String(cf[i][3]) !== "";
+    if (m && conImporte) { fila = i + 1; ultimaRef = +m[1]; break; }
+  }
+  if (!fila) throw new Error("No encuentro el último movimiento con importe.");
+  return { hoja: hoja, fila: fila, ultimaRef: ultimaRef,
+           saldo: Number(hoja.getRange(fila, 7).getValue()) || 0 };
+}
+
+/** Para la cabecera de la app: saldo y última referencia, en vivo. */
+function estado() {
+  const l = libro_();
+  return { ref: "01-" + ("00000" + l.ultimaRef).slice(-5),
+           saldo: l.saldo };
+}
+
 /** El PIN se compara aquí, nunca viaja al HTML. */
 function claveValida_(clave) {
   const guardada = PropertiesService.getScriptProperties().getProperty("CLAVE");
@@ -56,27 +81,9 @@ function registrar(datos) {
   const cerrojo = LockService.getScriptLock();
   cerrojo.waitLock(20000);
   try {
-    // por gid primero: el nombre real lleva un espacio inicial y cualquier
-    // retoque humano del titulo rompe la busqueda exacta
-    const hoja = SpreadsheetApp.getActive().getSheets().find(function (h) {
-      return h.getSheetId() === HOJA_GID || h.getName().trim() === HOJA;
-    });
-    if (!hoja) throw new Error('No encuentro la pestaña "' + HOJA + '".');
-
-    // Última fila REAL: referencia + importe. La hoja trae cientos de
-    // referencias pre-impresas más abajo, sin datos: numerar desde ahí
-    // duplica referencias, pierde el saldo y esconde la fila.
-    const cf = hoja.getRange(1, 3, hoja.getLastRow(), 4).getValues(); // C..F
-    let fila = 0, ultimaRef = 0;
-    for (let i = cf.length - 1; i >= 0; i--) {
-      const m = String(cf[i][0]).match(/01-(\d{5})/);
-      const conImporte = String(cf[i][2]) !== "" || String(cf[i][3]) !== "";
-      if (m && conImporte) { fila = i + 1; ultimaRef = +m[1]; break; }
-    }
-    if (!fila) throw new Error("No encuentro el último movimiento con importe.");
-
-    // saldo corrido: el de la última fila con importe
-    const saldoPrevio = Number(hoja.getRange(fila, 7).getValue()) || 0;
+    const l = libro_();
+    const hoja = l.hoja, fila = l.fila, ultimaRef = l.ultimaRef;
+    const saldoPrevio = l.saldo;
     const esIngreso = datos.tipo === "ingreso";
     const monto = Math.round(Number(datos.monto) * 100) / 100;
     const saldo = Math.round((saldoPrevio + (esIngreso ? monto : -monto)) * 100) / 100;

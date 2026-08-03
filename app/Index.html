@@ -4,58 +4,178 @@
 <meta charset="utf-8">
 <title>Registrar movimiento</title>
 <style>
-  /* La misma identidad del panel: papel, tinta, filete rojo */
+  /* ===== Libro mayor de bolsillo · identidad VAYAS ===== */
   :root{
-    --paper:#F6F6F2; --card:#FFFFFF; --line:#D6D7D1; --ink:#15181B;
-    --ink2:#4B5158; --ink3:#7B828A; --rojo:#C22233; --verde:#1D7A46;
-    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+    --paper:#F6F6F2; --card:#FFFFFF; --line:#D6D7D1; --line-soft:#E7E8E2;
+    --ink:#15181B; --ink2:#4B5158; --ink3:#7B828A;
+    --rojo:#C22233; --rojo-suave:#C2223314; --verde:#1D7A46; --verde-suave:#1D7A4618;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --display:"Avenir Next","Avenir","Montserrat","Futura","Segoe UI",Roboto,Arial,sans-serif;
+    --sombra:0 1px 2px #15181B0F, 0 10px 26px #15181B0A;
   }
-  *{box-sizing:border-box}
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#101214; --card:#17191C; --line:#2E3236; --line-soft:#232629;
+      --ink:#ECEDEE; --ink2:#A8ADB3; --ink3:#71787F;
+      --rojo:#F0525F; --rojo-suave:#F0525F1F; --verde:#4CC38A; --verde-suave:#4CC38A20;
+      --sombra:0 1px 2px #0007, 0 10px 28px #0005;
+    }
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth}
   body{
     margin:0; background:var(--paper); color:var(--ink);
     font:15px/1.5 -apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-    padding:14px 14px 40px; max-width:520px; margin-inline:auto;
+    padding:12px 12px 48px; max-width:520px; margin-inline:auto;
   }
+
+  /* ------- mástil: portada negra con filete rojo, fija en ambos temas ------- */
   header{
-    background:#14171A; color:#FAFAF8; border-radius:10px;
-    padding:18px 18px 14px; position:relative; overflow:hidden; margin-bottom:14px;
+    position:relative; background:#14171A; color:#FAFAF8;
+    border-radius:12px; padding:20px 20px 16px; overflow:hidden; margin-bottom:14px;
   }
-  header::before{content:""; position:absolute; inset:0 0 auto 0; height:5px; background:var(--rojo)}
-  header small{display:block; letter-spacing:.2em; color:#FF7A85; font-weight:700; font-size:10px; text-transform:uppercase}
-  header h1{margin:6px 0 0; font-size:22px; font-weight:800}
+  header::before{content:""; position:absolute; inset:0 0 auto 0; height:5px; background:#C22233}
+  header small{
+    display:block; letter-spacing:.22em; color:#FF7A85;
+    font-weight:700; font-size:10px; text-transform:uppercase;
+  }
+  header h1{
+    margin:7px 0 0; font-family:var(--display); font-size:24px;
+    font-weight:800; letter-spacing:-.01em;
+  }
+  /* el libro, en vivo: saldo actual y última referencia */
+  #vivo{
+    display:flex; gap:14px; margin-top:14px; padding-top:12px;
+    border-top:1px solid #FFFFFF1F; font-size:11px; color:#9AA0A6;
+    text-transform:uppercase; letter-spacing:.08em; font-weight:600;
+  }
+  #vivo b{
+    display:block; font-family:var(--mono); font-size:16px; margin-top:2px;
+    color:#FAFAF8; letter-spacing:0; text-transform:none;
+  }
+  #vivo .cargando{opacity:.45; animation:late 1.2s ease-in-out infinite}
+  @keyframes late{50%{opacity:.15}}
+
+  /* ------------------------------ formulario ------------------------------ */
   form{display:grid; gap:12px}
-  label{font-size:12px; font-weight:700; color:var(--ink2); display:block; margin-bottom:5px; text-transform:uppercase; letter-spacing:.06em}
-  input,select{
-    width:100%; font-size:16px; padding:12px; border:1px solid var(--line);
-    border-radius:8px; background:var(--card); color:var(--ink);
+  .bloque{
+    background:var(--card); border:1px solid var(--line-soft);
+    border-radius:12px; padding:14px 16px; box-shadow:var(--sombra);
   }
-  input:focus{outline:2px solid var(--ink); border-color:var(--ink)}
+  label,.rotulo{
+    font-size:10.5px; font-weight:700; color:var(--ink3); display:block;
+    margin-bottom:7px; text-transform:uppercase; letter-spacing:.1em;
+  }
+  input{
+    width:100%; font-size:16px; padding:11px 12px; border:1.5px solid var(--line);
+    border-radius:9px; background:var(--card); color:var(--ink);
+    transition:border-color .12s ease;
+  }
+  input:focus{outline:none; border-color:var(--ink)}
+
+  /* tipo: control segmentado con dirección del dinero */
   .tipo{display:grid; grid-template-columns:1fr 1fr; gap:8px}
   .tipo input{display:none}
   .tipo span{
-    display:block; text-align:center; padding:13px; border-radius:8px;
-    border:1px solid var(--line); background:var(--card); font-weight:800; cursor:pointer;
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    padding:14px 8px; border-radius:10px; border:1.5px solid var(--line);
+    background:var(--card); font-weight:800; font-family:var(--display);
+    letter-spacing:.02em; cursor:pointer; transition:all .12s ease;
+    box-shadow:var(--sombra);
   }
-  .tipo input:checked + span{color:#fff}
-  #t-ing:checked + span{background:var(--verde); border-color:var(--verde)}
-  #t-egr:checked + span{background:var(--rojo); border-color:var(--rojo)}
-  .fila{display:grid; grid-template-columns:1fr 1fr; gap:10px}
-  .pista{font-size:11.5px; color:var(--ink3); margin-top:4px}
+  .tipo .flecha{
+    width:16px; height:16px; color:var(--ink3); transition:color .12s ease;
+  }
+  #t-ing:checked + span{background:var(--verde); border-color:var(--verde); color:#fff}
+  #t-egr:checked + span{background:var(--rojo);  border-color:var(--rojo);  color:#fff}
+  .tipo input:checked + span .flecha{color:#fff}
+
+  /* el monto es el protagonista */
+  .monto-caja{display:flex; align-items:baseline; gap:10px}
+  .monto-caja .divisa{
+    font-family:var(--mono); font-size:26px; font-weight:700; color:var(--ink3);
+  }
+  #monto{
+    border:none; padding:0; font-family:var(--mono); font-size:40px;
+    font-weight:700; letter-spacing:-.02em; background:transparent;
+  }
+  #monto::placeholder{color:var(--line)}
+  #monto:focus{outline:none}
+  .bloque:focus-within{border-color:var(--ink)}
+
+  .fila2{display:grid; grid-template-columns:1.2fr 1fr; gap:12px}
+
+  .pista{font-size:11.5px; color:var(--ink3); margin-top:7px; line-height:1.45}
+  .pista b{color:var(--ink2)}
+
+  /* zona de fotos con miniaturas */
   .foto-zona{
-    border:1.5px dashed var(--line); border-radius:8px; padding:14px;
-    text-align:center; color:var(--ink2); background:var(--card); cursor:pointer;
+    border:1.5px dashed var(--line); border-radius:10px; padding:16px 12px;
+    text-align:center; color:var(--ink2); cursor:pointer;
+    transition:border-color .12s ease, background .12s ease;
   }
-  .foto-zona.con{border-color:var(--verde); color:var(--verde); font-weight:700}
-  button{
-    font-size:17px; font-weight:800; padding:15px; border:0; border-radius:8px;
-    background:#14171A; color:#fff; cursor:pointer;
+  .foto-zona:active{background:var(--rojo-suave)}
+  .foto-zona .ico{display:block; margin:0 auto 6px; width:26px; height:26px; color:var(--ink3)}
+  .foto-zona.con{border-color:var(--verde); border-style:solid}
+  #miniaturas{
+    display:none; grid-template-columns:repeat(auto-fill, 64px); gap:8px;
+    justify-content:center; margin-top:10px;
   }
-  button:disabled{opacity:.55}
-  .aviso{border-radius:8px; padding:13px 15px; font-size:14px; display:none}
-  .aviso.err{display:block; background:#C2223318; color:var(--rojo); font-weight:600}
-  .aviso.ok{display:block; background:#1D7A4620; color:var(--verde)}
-  .aviso .ref{font-family:var(--mono); font-weight:700}
-  .aviso a{color:inherit}
+  #miniaturas img{
+    width:64px; height:64px; object-fit:cover; border-radius:8px;
+    border:1.5px solid var(--verde);
+  }
+  #quitar{
+    display:none; margin-top:8px; font-size:12px; color:var(--rojo);
+    font-weight:700; background:none; border:none; cursor:pointer; padding:4px;
+  }
+
+  /* botón principal */
+  #btn{
+    font-family:var(--display); font-size:17px; font-weight:800;
+    letter-spacing:.02em; padding:16px; border:0; border-radius:12px;
+    background:#14171A; color:#fff; cursor:pointer; box-shadow:var(--sombra);
+    transition:transform .08s ease, opacity .12s ease;
+  }
+  #btn:active{transform:scale(.985)}
+  #btn:disabled{opacity:.55}
+  #btn .puntos::after{content:""; animation:puntos 1.2s steps(4) infinite}
+  @keyframes puntos{0%{content:""}25%{content:"."}50%{content:".."}75%{content:"..."}}
+
+  /* error */
+  .err{
+    display:none; border-radius:10px; padding:13px 15px; font-size:14px;
+    background:var(--rojo-suave); color:var(--rojo); font-weight:600;
+    border:1px solid var(--rojo);
+  }
+
+  /* ------- recibo de confirmación: un ticket del libro ------- */
+  #okk{display:none; position:relative; margin-top:2px}
+  .ticket{
+    background:var(--card); border:1.5px dashed var(--ink3); border-radius:12px;
+    padding:18px 18px 14px; box-shadow:var(--sombra); position:relative; overflow:hidden;
+  }
+  .ticket::before{content:""; position:absolute; inset:0 0 auto 0; height:4px; background:var(--verde)}
+  .sello{
+    position:absolute; top:14px; right:12px; transform:rotate(6deg);
+    border:2px solid var(--verde); color:var(--verde); border-radius:6px;
+    font-family:var(--display); font-weight:800; font-size:11px;
+    letter-spacing:.14em; padding:3px 8px; text-transform:uppercase; opacity:.9;
+  }
+  .ticket .tref{
+    font-family:var(--mono); font-size:26px; font-weight:700; letter-spacing:.01em;
+    margin:2px 0 10px;
+  }
+  .ticket .tfila{
+    display:flex; justify-content:space-between; gap:12px; padding:6px 0;
+    border-top:1px solid var(--line-soft); font-size:13.5px; color:var(--ink2);
+  }
+  .ticket .tfila b{font-family:var(--mono); color:var(--ink); font-weight:600}
+  .ticket .tpie{
+    margin-top:10px; padding-top:9px; border-top:1px solid var(--line-soft);
+    font-size:12px; color:var(--ink3);
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
 </style>
 </head>
 <body>
@@ -63,43 +183,74 @@
 <header>
   <small>Finanzas agencia · Cta. Pichincha</small>
   <h1>Registrar movimiento</h1>
+  <div id="vivo">
+    <span>Saldo del libro<b id="v-saldo" class="cargando">— — —</b></span>
+    <span>Último registro<b id="v-ref" class="cargando">— — —</b></span>
+  </div>
 </header>
 
 <form id="f">
   <div class="tipo">
-    <label><input type="radio" name="tipo" value="ingreso" id="t-ing"><span>Ingreso</span></label>
-    <label><input type="radio" name="tipo" value="egreso" id="t-egr" checked><span>Egreso</span></label>
+    <label><input type="radio" name="tipo" value="ingreso" id="t-ing">
+      <span><svg class="flecha" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 2v9M4 7.5 8 11l4-3.5M2.5 14h11"/></svg> Ingreso</span></label>
+    <label><input type="radio" name="tipo" value="egreso" id="t-egr" checked>
+      <span><svg class="flecha" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 14V5M4 8.5 8 5l4 3.5M2.5 2h11"/></svg> Egreso</span></label>
   </div>
 
-  <div class="fila">
-    <div><label for="fecha">Fecha</label><input type="date" id="fecha" required></div>
-    <div><label for="monto">Monto $</label>
-      <input type="number" id="monto" step="0.01" min="0.01" inputmode="decimal" placeholder="0,00" required></div>
+  <div class="bloque">
+    <span class="rotulo">Monto</span>
+    <div class="monto-caja"><span class="divisa">$</span>
+      <input type="number" id="monto" step="0.01" min="0.01" inputmode="decimal"
+             placeholder="0,00" required></div>
   </div>
 
-  <div>
+  <div class="fila2">
+    <div class="bloque"><label for="fecha">Fecha</label>
+      <input type="date" id="fecha" required></div>
+    <div class="bloque"><label for="clave">Clave</label>
+      <input type="password" id="clave" inputmode="numeric" required placeholder="····"></div>
+  </div>
+
+  <div class="bloque">
     <label for="desc">Descripción</label>
     <input id="desc" list="sugerencias" autocomplete="off" required
            placeholder="PAGO SAMARI AGOSTO">
-    <div class="pista">Con el mes del servicio ("PAGO SAMARI AGOSTO") el panel
-      sabe qué mensualidad queda cubierta.</div>
+    <div class="pista">Con el <b>mes del servicio</b> ("PAGO SAMARI AGOSTO") el
+      panel sabe qué mensualidad queda cubierta.</div>
     <datalist id="sugerencias"></datalist>
   </div>
 
-  <div>
-    <label>Comprobante (foto)</label>
+  <div class="bloque">
+    <span class="rotulo">Comprobante</span>
     <div class="foto-zona" id="fz" onclick="document.getElementById('fotos').click()">
-      Tocar para hacer foto o elegir imagen</div>
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+        <circle cx="12" cy="13" r="4"/></svg>
+      <span id="fz-txt">Tocar para hacer foto o elegir imagen</span>
+      <div id="miniaturas"></div>
+    </div>
+    <button type="button" id="quitar">× Quitar fotos</button>
     <input type="file" id="fotos" accept="image/*" capture="environment" multiple hidden>
   </div>
 
-  <div>
-    <label for="clave">Clave</label>
-    <input type="password" id="clave" inputmode="numeric" required placeholder="····">
-  </div>
+  <div class="err" id="err"></div>
 
-  <div class="aviso err" id="err"></div>
-  <div class="aviso ok" id="okk"></div>
+  <div id="okk"><div class="ticket">
+    <span class="sello">Registrado</span>
+    <span class="rotulo">Referencia</span>
+    <div class="tref" id="tk-ref"></div>
+    <div class="tfila"><span>Fecha</span><b id="tk-fecha"></b></div>
+    <div class="tfila"><span>Movimiento</span><b id="tk-monto"></b></div>
+    <div class="tfila"><span>Nuevo saldo del libro</span><b id="tk-saldo"></b></div>
+    <div class="tfila" id="tk-fotos-fila"><span>Comprobantes en Drive</span><b id="tk-fotos"></b></div>
+    <div class="tpie" id="tk-pie"></div>
+  </div></div>
+
   <button id="btn" type="submit">Registrar</button>
 </form>
 
@@ -119,7 +270,8 @@
     "PAGO IMPUESTOS","INTERNET","PAGO DE AGUA","PAGO CONDOMINIO",
     "PAGO LIMPIEZA","BOTELLON","PAGO SISTEMA CONTABLE"];
 
-  const dl = document.getElementById("sugerencias");
+  const $ = id => document.getElementById(id);
+  const dl = $("sugerencias");
   [].concat(
     CUENTAS.map(c => "PAGO " + c + " "),
     EQUIPO.map(p => "SUELDO " + p),
@@ -127,21 +279,46 @@
     CONCEPTOS
   ).forEach(v => { const o = document.createElement("option"); o.value = v; dl.appendChild(o); });
 
-  // hoy, en hora de Ecuador
-  document.getElementById("fecha").value =
-    new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
+  const dinero = n => "$" + Number(n).toLocaleString("es-EC",
+    {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
-  // la clave se recuerda en el teléfono para no teclearla cada vez
-  const clave = document.getElementById("clave");
+  $("fecha").value = hoyEC();
+  const clave = $("clave");
   clave.value = localStorage.getItem("clave") || "";
 
-  const fz = document.getElementById("fz"), fotos = document.getElementById("fotos");
-  fotos.onchange = () => {
-    fz.textContent = fotos.files.length
-      ? "✓ " + fotos.files.length + " foto(s) lista(s)"
+  // ------- cabecera viva: saldo y última referencia del libro -------
+  function pintaVivo(e){
+    $("v-saldo").textContent = dinero(e.saldo);
+    $("v-ref").textContent = e.ref;
+    $("v-saldo").classList.remove("cargando");
+    $("v-ref").classList.remove("cargando");
+  }
+  if (typeof google !== "undefined" && google.script) {
+    google.script.run.withSuccessHandler(pintaVivo)
+      .withFailureHandler(function(){ $("v-saldo").textContent = "—";
+        $("v-ref").textContent = "—"; }).estado();
+  }
+
+  // ------- fotos con miniaturas -------
+  const fz = $("fz"), fotos = $("fotos"), minis = $("miniaturas");
+  function pintaFotos(){
+    const n = fotos.files.length;
+    minis.innerHTML = ""; minis.style.display = n ? "grid" : "none";
+    $("quitar").style.display = n ? "inline-block" : "none";
+    fz.classList.toggle("con", !!n);
+    $("fz-txt").textContent = n
+      ? n + " foto" + (n > 1 ? "s" : "") + " lista" + (n > 1 ? "s" : "")
       : "Tocar para hacer foto o elegir imagen";
-    fz.classList.toggle("con", !!fotos.files.length);
-  };
+    [...fotos.files].slice(0, 6).forEach(f => {
+      const img = document.createElement("img");
+      img.src = URL.createObjectURL(f);
+      img.onload = () => URL.revokeObjectURL(img.src);
+      minis.appendChild(img);
+    });
+  }
+  fotos.onchange = pintaFotos;
+  $("quitar").onclick = () => { fotos.value = ""; pintaFotos(); };
 
   const leer = f => new Promise((si, no) => {
     const r = new FileReader();
@@ -150,52 +327,50 @@
     r.readAsDataURL(f);
   });
 
-  document.getElementById("f").onsubmit = async ev => {
+  // ------- envío -------
+  $("f").onsubmit = async ev => {
     ev.preventDefault();
-    const btn = document.getElementById("btn");
-    const err = document.getElementById("err"), okk = document.getElementById("okk");
-    err.className = "aviso err"; okk.className = "aviso ok";
+    const btn = $("btn"), err = $("err"), okk = $("okk");
     err.style.display = okk.style.display = "none";
-    btn.disabled = true; btn.textContent = "Guardando…";
+    btn.disabled = true;
+    btn.innerHTML = 'Guardando<span class="puntos"></span>';
+    const falla = m => { err.textContent = m; err.style.display = "block";
+      btn.disabled = false; btn.textContent = "Registrar"; };
     try {
       const imgs = await Promise.all([...fotos.files].map(leer));
-      const datos = {
-        clave: clave.value,
-        tipo: document.querySelector("input[name=tipo]:checked").value,
-        fecha: document.getElementById("fecha").value,
-        descripcion: document.getElementById("desc").value,
-        monto: parseFloat(document.getElementById("monto").value),
-        fotos: imgs,
-      };
+      const monto = parseFloat($("monto").value);
+      const tipo = document.querySelector("input[name=tipo]:checked").value;
+      const fecha = $("fecha").value;
+      const datos = { clave: clave.value, tipo: tipo, fecha: fecha,
+        descripcion: $("desc").value, monto: monto, fotos: imgs };
+      if (typeof google === "undefined") return falla("Vista previa sin conexión al libro.");
       google.script.run
         .withSuccessHandler(r => {
           localStorage.setItem("clave", clave.value);
-          okk.innerHTML = "Registrado como <span class='ref'>" + r.ref +
-            "</span> · saldo <span class='ref'>$" +
-            r.saldo.toLocaleString("es-EC", {minimumFractionDigits:2}) + "</span>" +
-            (r.fotos ? " · " + r.fotos + " comprobante(s) en Drive" : "") +
-            (r.instantaneo
-              ? "<br>El panel se está actualizando ahora mismo."
-              : "<br>El panel lo recoge en el próximo cuarto de hora.");
+          if (navigator.vibrate) navigator.vibrate(25);
+          $("tk-ref").textContent = r.ref;
+          const p = fecha.split("-");
+          $("tk-fecha").textContent = (+p[2]) + "/" + (+p[1]) + "/" + p[0];
+          $("tk-monto").textContent = (tipo === "ingreso" ? "+" : "−") + dinero(monto);
+          $("tk-monto").style.color = tipo === "ingreso" ? "var(--verde)" : "var(--rojo)";
+          $("tk-saldo").textContent = dinero(r.saldo);
+          $("tk-fotos-fila").style.display = r.fotos ? "flex" : "none";
+          $("tk-fotos").textContent = r.fotos;
+          $("tk-pie").textContent = r.instantaneo
+            ? "El panel se está actualizando ahora mismo."
+            : "El panel lo recoge en el próximo cuarto de hora.";
           okk.style.display = "block";
-          document.getElementById("f").reset();
+          pintaVivo({ saldo: r.saldo, ref: r.ref });
+          $("f").reset();
           clave.value = localStorage.getItem("clave");
-          fotos.value = ""; fotos.onchange();
-          document.getElementById("fecha").value =
-            new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
+          fotos.value = ""; pintaFotos();
+          $("fecha").value = hoyEC();
           btn.disabled = false; btn.textContent = "Registrar";
+          okk.scrollIntoView({ behavior: "smooth", block: "center" });
         })
-        .withFailureHandler(e => {
-          err.textContent = e.message || String(e);
-          err.style.display = "block";
-          btn.disabled = false; btn.textContent = "Registrar";
-        })
+        .withFailureHandler(e => falla(e.message || String(e)))
         .registrar(datos);
-    } catch (e) {
-      err.textContent = "No pude leer las fotos: " + e;
-      err.style.display = "block";
-      btn.disabled = false; btn.textContent = "Registrar";
-    }
+    } catch (e) { falla("No pude leer las fotos: " + e); }
   };
 </script>
 </body>
