@@ -22,6 +22,7 @@
  */
 
 const HOJA = "2026 CTA PICHINCHA";
+const HOJA_GID = 535711988;   // id fijo de la pestaña: no cambia ni renombrándola
 const CARPETA_RAIZ = "Comprobantes Finanzas";
 const REPO = "fvayas/finanzas-agencia";
 const ZONA = "America/Guayaquil";
@@ -55,7 +56,11 @@ function registrar(datos) {
   const cerrojo = LockService.getScriptLock();
   cerrojo.waitLock(20000);
   try {
-    const hoja = SpreadsheetApp.getActive().getSheetByName(HOJA);
+    // por gid primero: el nombre real lleva un espacio inicial y cualquier
+    // retoque humano del titulo rompe la busqueda exacta
+    const hoja = SpreadsheetApp.getActive().getSheets().find(function (h) {
+      return h.getSheetId() === HOJA_GID || h.getName().trim() === HOJA;
+    });
     if (!hoja) throw new Error('No encuentro la pestaña "' + HOJA + '".');
 
     // última fila real: la de la última referencia 01-00XXX
