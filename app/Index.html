@@ -277,6 +277,8 @@
   </div></div>
 
   <button id="btn" type="submit">Registrar</button>
+  <div style="text-align:center; font-size:10px; color:var(--ink3);
+    letter-spacing:.08em; margin-top:4px">v11</div>
 </form>
 
 <script>
@@ -344,12 +346,14 @@
     else if (/^\d{1,3}(\.\d{3})+$/.test(v)) v = v.replace(/\./g, "");
     return parseFloat(v);
   }
-  // en vivo: solo dígitos y separadores, para que el teclado no meta basura
-  document.addEventListener("DOMContentLoaded", () => {
-    $("monto").addEventListener("input", () => {
-      $("monto").value = $("monto").value.replace(/[^\d.,]/g, "");
-    });
+  // en vivo: solo dígitos y separadores. El script corre al final del body,
+  // así que se engancha directo (esperar DOMContentLoaded llegaba tarde).
+  $("monto").addEventListener("input", () => {
+    const v = $("monto").value, limpio = v.replace(/[^\d.,]/g, "");
+    if (v !== limpio) $("monto").value = limpio;
   });
+  // sello de versión, para saber qué copia carga el teléfono
+  console.log("app v11");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
