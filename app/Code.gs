@@ -100,8 +100,13 @@ function registrar(datos) {
       return archivo.getUrl();
     });
 
-    // ---- la fila, con las columnas del libro (A vacía, B..G, M enlace) ----
+    // ---- la fila, con las columnas del libro (A vacía, B..G) ----
     const destino = fila + 1;
+    // la fila nueva hereda el formato de la última real (el " $ " de moneda
+    // incluido); sin esto, las celdas de abajo salen como número pelado
+    hoja.getRange(fila, 2, 1, 6).copyTo(
+      hoja.getRange(destino, 2, 1, 6),
+      SpreadsheetApp.CopyPasteType.PASTE_FORMAT, false);
     hoja.getRange(destino, 2, 1, 6).setValues([[
       fechaTxt, ref, desc,
       esIngreso ? monto : "", esIngreso ? "" : monto, saldo,
