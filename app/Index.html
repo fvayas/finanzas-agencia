@@ -245,8 +245,8 @@
              spellcheck="false" required
              placeholder="…o escribe la descripción aquí">
     </div>
-    <div class="pista">Si el pago corresponde a un mes atrasado, añádelo a
-      mano: <b>"PAGO SAMARI JUNIO"</b>. Si no, así está perfecto.</div>
+    <div class="pista">Elige de la lista o escribe libre. El panel identifica
+      la cuenta y el mes solos.</div>
   </div>
 
   <div class="bloque">
@@ -278,7 +278,7 @@
 
   <button id="btn" type="submit">Registrar</button>
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v12</div>
+    letter-spacing:.08em; margin-top:4px">v13</div>
 </form>
 
 <script>
@@ -348,7 +348,7 @@
     if (v !== limpio) $("monto").value = limpio;
   });
   // sello de versión, para saber qué copia carga el teléfono
-  console.log("app v12");
+  console.log("app v13");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
