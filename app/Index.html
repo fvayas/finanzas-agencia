@@ -226,7 +226,7 @@
   <div class="bloque">
     <span class="rotulo">Monto</span>
     <div class="monto-caja"><span class="divisa">$</span>
-      <input type="number" id="monto" step="0.01" min="0.01" inputmode="decimal"
+      <input type="text" id="monto" inputmode="decimal" autocomplete="off"
              placeholder="0,00" required></div>
   </div>
 
@@ -335,6 +335,21 @@
 
   const dinero = n => "$" + Number(n).toLocaleString("es-EC",
     {minimumFractionDigits: 2, maximumFractionDigits: 2});
+
+  // Acepta coma o punto como decimal, y punto de miles a la ecuatoriana:
+  //   "150,50" -> 150.5 · "150.50" -> 150.5 · "1.500" -> 1500 · "1.234,56" -> 1234.56
+  function leerMonto(v){
+    v = String(v).trim().replace(/\s/g, "").replace(/\$/g, "");
+    if (v.includes(",")) v = v.replace(/\./g, "").replace(",", ".");
+    else if (/^\d{1,3}(\.\d{3})+$/.test(v)) v = v.replace(/\./g, "");
+    return parseFloat(v);
+  }
+  // en vivo: solo dígitos y separadores, para que el teclado no meta basura
+  document.addEventListener("DOMContentLoaded", () => {
+    $("monto").addEventListener("input", () => {
+      $("monto").value = $("monto").value.replace(/[^\d.,]/g, "");
+    });
+  });
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
@@ -392,7 +407,8 @@
       btn.disabled = false; btn.textContent = "Registrar"; };
     try {
       const imgs = await Promise.all([...fotos.files].map(leer));
-      const monto = parseFloat($("monto").value);
+      const monto = leerMonto($("monto").value);
+      if (!(monto > 0)) return falla("Monto no válido. Ejemplos: 150,50 · 1.500 · 89.99");
       const tipo = document.querySelector("input[name=tipo]:checked").value;
       const fecha = $("fecha").value;
       const datos = { clave: clave.value, tipo: tipo, fecha: fecha,
