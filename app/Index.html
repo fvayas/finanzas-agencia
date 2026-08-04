@@ -197,7 +197,15 @@
     margin-top:10px; padding-top:9px; border-top:1px solid var(--line-soft);
     font-size:12px; color:var(--ink3);
   }
-  /* ------- listas: pendientes del mes y últimos registros ------- */
+  /* aviso de registros guardados sin señal */
+  #cola-banner{
+    background:var(--card); border:1.5px dashed var(--ink3); border-radius:12px;
+    padding:12px 15px; font-size:13px; font-weight:600; color:var(--ink2);
+    margin-bottom:12px; cursor:pointer; box-shadow:var(--sombra);
+  }
+  #cola-banner b{font-family:var(--mono); color:var(--rojo)}
+
+  /* ------- listas: últimos registros y buscador ------- */
   .fila-mov{
     display:flex; align-items:center; gap:10px; padding:8px 0;
     border-top:1px solid var(--line-soft); font-size:13px;
@@ -230,6 +238,8 @@
     <span>Último registro<b id="v-ref" class="cargando">— — —</b></span>
   </div>
 </header>
+
+<div id="cola-banner" style="display:none"></div>
 
 <form id="f">
   <div class="tipo">
@@ -309,8 +319,16 @@
       de las filas siguientes depende de él.</div>
   </div>
 
+  <div class="bloque">
+    <label for="q">Buscar en el libro</label>
+    <input id="q" autocomplete="off" enterkeyhint="search"
+           placeholder="arriendo, speedy, sueldo…">
+    <div id="q-res" style="display:none; margin-top:6px"></div>
+    <div class="pista" id="q-pie" style="display:none"></div>
+  </div>
+
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v17</div>
+    letter-spacing:.08em; margin-top:4px">v18</div>
 </form>
 
 <script>
@@ -380,7 +398,7 @@
     if (v !== limpio) $("monto").value = limpio;
   });
   // sello de versión, para saber qué copia carga el teléfono
-  console.log("app v17");
+  console.log("app v18");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
@@ -531,6 +549,103 @@
     if (clave.value.length >= 4) esperaClave = setTimeout(cargaExtras, 500);
   });
 
+  // ------- buscador del libro -------
+  const q = $("q");
+  q.addEventListener("keydown", e => { if (e.key === "Enter") e.preventDefault(); });
+  let esperaQ;
+  q.addEventListener("input", () => {
+    clearTimeout(esperaQ);
+    const t = q.value.trim();
+    if (t.length < 2) {
+      $("q-res").style.display = "none"; $("q-pie").style.display = "none";
+      return;
+    }
+    esperaQ = setTimeout(() => {
+      if (typeof google === "undefined") return;
+      const pie = $("q-pie");
+      if (clave.value.length < 4) {
+        pie.textContent = "Escribe tu clave arriba para poder buscar.";
+        pie.style.display = "block"; return;
+      }
+      pie.textContent = "Buscando…"; pie.style.display = "block";
+      google.script.run.withSuccessHandler(r => {
+        if (q.value.trim() !== t) return;   // respuesta vieja: llegó tarde
+        const caja = $("q-res"); caja.innerHTML = "";
+        r.filas.forEach(m => caja.appendChild(filaMov(m)));
+        caja.style.display = r.n ? "block" : "none";
+        if (!r.n) { pie.textContent = "Sin coincidencias en el libro."; return; }
+        let resumen = r.n + " movimiento" + (r.n > 1 ? "s" : "");
+        if (r.ing > 0) resumen += " · entró " + dinero(r.ing);
+        if (r.egr > 0) resumen += " · salió " + dinero(r.egr);
+        if (r.n > 8) resumen += " · se muestran los 8 últimos";
+        pie.textContent = resumen;
+      }).withFailureHandler(() => { pie.textContent = "No pude buscar; reintenta."; })
+        .buscar(clave.value, t);
+    }, 450);
+  });
+
+  // ------- cola sin señal: se guarda en el teléfono y se envía solo -------
+  const leeCola = () => {
+    try { return JSON.parse(localStorage.getItem("cola") || "[]"); }
+    catch (e) { return []; }
+  };
+  const guardaCola = c => localStorage.setItem("cola", JSON.stringify(c));
+  function pintaCola(){
+    const n = leeCola().length, b = $("cola-banner");
+    b.style.display = n ? "block" : "none";
+    if (n) b.innerHTML = "⏳ <b>" + n + "</b> registro" + (n > 1 ? "s" : "") +
+      " esperando señal — se envía" + (n > 1 ? "n" : "") +
+      " solo al volver internet. Tocar para reintentar.";
+  }
+  function encola(datos){
+    const cola = leeCola();
+    try { cola.push(datos); guardaCola(cola); }
+    catch (e) {
+      // sin sitio para la foto: vale más el registro que el comprobante
+      const sinFotos = Object.assign({}, datos, { fotos: [] });
+      try { cola.push(sinFotos); guardaCola(cola);
+        alert("Sin espacio para la foto: el registro se guardó sin comprobante."); }
+      catch (e2) { return false; }
+    }
+    localStorage.setItem("clave", datos.clave);
+    pintaCola();
+    if (navigator.vibrate) navigator.vibrate(15);
+    $("f").reset(); sel.selectedIndex = 0; sel.setAttribute("required", "");
+    clave.value = localStorage.getItem("clave");
+    fotos.value = ""; pintaFotos(); $("fecha").value = hoyEC();
+    return true;
+  }
+  let sincronizando = false;
+  function sincroniza(){
+    if (sincronizando || typeof google === "undefined" || !navigator.onLine) return;
+    if (!leeCola().length) return;
+    sincronizando = true;
+    const uno = () => {
+      const cola = leeCola();
+      if (!cola.length) { sincronizando = false; pintaCola(); cargaExtras(); return; }
+      const item = cola[0];
+      google.script.run.withSuccessHandler(r => {
+        if (r && r.duplicado) {
+          if (confirm("Un registro guardado sin señal (" + item.descripcion + " " +
+                      dinero(item.monto) + ") parece duplicado de " + r.duplicado.ref +
+                      " del " + r.duplicado.fecha + ".\n¿Registrarlo de todos modos?")) {
+            item.forzar = true; guardaCola(cola); uno(); return;
+          }
+          cola.shift(); guardaCola(cola); pintaCola(); uno(); return;
+        }
+        cola.shift(); guardaCola(cola); pintaCola();
+        pintaVivo({ saldo: r.saldo, ref: r.ref });
+        if (navigator.vibrate) navigator.vibrate(15);
+        uno();
+      }).withFailureHandler(() => { sincronizando = false; pintaCola(); })
+        .registrar(item);
+    };
+    uno();
+  }
+  $("cola-banner").onclick = () => sincroniza();
+  window.addEventListener("online", sincroniza);
+  pintaCola(); sincroniza();
+
   // ------- envío -------
   $("f").onsubmit = async ev => {
     ev.preventDefault();
@@ -550,6 +665,11 @@
         descripcion: $("desc").value, monto: monto, fotos: imgs };
       sel.removeAttribute("required");
       if (typeof google === "undefined") return falla("Vista previa sin conexión al libro.");
+      if (!navigator.onLine) {
+        encola(datos);
+        btn.disabled = false; btn.textContent = "Registrar";
+        return;
+      }
       const alGuardar = r => {
           if (r && r.duplicado) {
             btn.disabled = false; btn.textContent = "Registrar";
@@ -591,7 +711,14 @@
       };
       google.script.run
         .withSuccessHandler(alGuardar)
-        .withFailureHandler(e => falla(e.message || String(e)))
+        .withFailureHandler(e => {
+          const msg = (e && e.message) || String(e);
+          // corte de red a mitad de envío: a la cola en vez de perderse
+          if (!navigator.onLine || /network|conexi|transport|failed|xhr/i.test(msg)) {
+            encola(datos);
+            btn.disabled = false; btn.textContent = "Registrar";
+          } else falla(msg);
+        })
         .registrar(datos);
     } catch (e) { falla("No pude leer las fotos: " + e); }
   };

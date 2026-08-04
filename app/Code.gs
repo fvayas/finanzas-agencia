@@ -83,6 +83,39 @@ function ultimos(clave) {
 }
 
 /**
+ * Busca en las descripciones del libro (sin distinguir tildes) y devuelve
+ * las últimas coincidencias con la suma de lo que entró y salió: responde
+ * "¿ya pagamos esto?" y "¿cuánto le hemos pagado?" sin abrir la hoja.
+ */
+function buscar(clave, q) {
+  if (!claveValida_(clave)) throw new Error("Clave incorrecta.");
+  q = String(q || "").trim();
+  if (q.length < 2) return { n: 0, ing: 0, egr: 0, filas: [] };
+  const norm = function (t) {
+    return String(t).toUpperCase().normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  };
+  const aguja = norm(q);
+  const l = libro_();
+  const v = l.hoja.getRange(1, 2, l.fila, 5).getValues(); // B..F
+  const filas = [];
+  let ing = 0, egr = 0;
+  for (let i = 0; i < v.length; i++) {
+    if (!/01-\d{5}/.test(String(v[i][1]))) continue;   // solo filas del libro
+    if (norm(v[i][2]).indexOf(aguja) === -1) continue;
+    const vi = Number(v[i][3]) || 0, ve = Number(v[i][4]) || 0;
+    if (!vi && !ve) continue;
+    ing += vi; egr += ve;
+    filas.push({ fila: i + 1, fecha: fechaCorta_(v[i][0]),
+                 ref: String(v[i][1]).trim(), desc: String(v[i][2]),
+                 monto: vi > 0 ? vi : -ve });
+  }
+  return { n: filas.length, ing: Math.round(ing * 100) / 100,
+           egr: Math.round(egr * 100) / 100,
+           filas: filas.slice(-8).reverse() };
+}
+
+/**
  * Anula el ÚLTIMO registro del libro. Solo el último: el saldo corrido de
  * cualquier fila posterior dependería de él. Manda sus comprobantes a la
  * papelera de Drive y avisa al panel.
