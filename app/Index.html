@@ -217,13 +217,6 @@
     border-radius:7px; width:28px; height:28px; font-size:13px; cursor:pointer;
     flex:none; line-height:1; font-weight:700;
   }
-  .fila-mov.falta{cursor:pointer}
-  .fila-mov .m-falta{
-    font-size:10px; font-weight:800; color:var(--rojo); border:1.5px solid var(--rojo);
-    border-radius:6px; padding:2px 7px; letter-spacing:.06em; white-space:nowrap;
-  }
-  .fila-mov.hecho .m-desc{text-decoration:line-through; opacity:.55}
-  .fila-mov .m-hecho{color:var(--verde); font-weight:800; font-size:13px}
   @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
 </style>
 </head>
@@ -307,10 +300,6 @@
 
   <button id="btn" type="submit">Registrar</button>
 
-  <div class="bloque" id="pend" style="display:none">
-    <span class="rotulo">Pendientes de <span id="pend-mes"></span></span>
-    <div id="pend-lista"></div>
-    <div class="pista" id="pend-cobrar" style="display:none"></div>
   </div>
 
   <div class="bloque" id="ult" style="display:none">
@@ -321,7 +310,7 @@
   </div>
 
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v16</div>
+    letter-spacing:.08em; margin-top:4px">v17</div>
 </form>
 
 <script>
@@ -391,7 +380,7 @@
     if (v !== limpio) $("monto").value = limpio;
   });
   // sello de versión, para saber qué copia carga el teléfono
-  console.log("app v16");
+  console.log("app v17");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
@@ -534,51 +523,6 @@
       });
       $("ult").style.display = "block";
     }).withFailureHandler(() => {}).ultimos(clave.value);
-
-    google.script.run.withSuccessHandler(p => {
-      if (!p) return;
-      $("pend-mes").textContent = p.mes_nombre;
-      const caja = $("pend-lista"); caja.innerHTML = "";
-      const todos = (p.sueldos || []).concat(p.fijos || []);
-      const faltan = todos.filter(x => !x.pagado);
-      faltan.forEach(x => {
-        const el = document.createElement("div"); el.className = "fila-mov falta";
-        const de = document.createElement("span"); de.className = "m-desc";
-        de.textContent = x.nombre;
-        const tip = document.createElement("span"); tip.className = "m-ref";
-        tip.textContent = "~" + dinero(x.tipico);
-        const b = document.createElement("span"); b.className = "m-falta";
-        b.textContent = "FALTA";
-        el.append(de, tip, b);
-        // tocar un pendiente deja el formulario listo para registrarlo
-        el.onclick = () => {
-          $("t-egr").checked = true;
-          if (x.sugerencia) { $("desc").value = x.sugerencia; sel.selectedIndex = 0; }
-          window.scrollTo({ top: 0, behavior: "smooth" });
-          $("monto").focus();
-        };
-        caja.appendChild(el);
-      });
-      const hechos = todos.length - faltan.length;
-      if (hechos > 0) {
-        const el = document.createElement("div"); el.className = "fila-mov hecho";
-        const de = document.createElement("span"); de.className = "m-desc";
-        de.textContent = hechos + " pago" + (hechos > 1 ? "s" : "") + " del mes ya registrado" + (hechos > 1 ? "s" : "");
-        const v = document.createElement("span"); v.className = "m-hecho"; v.textContent = "\u2713";
-        el.append(de, v);
-        caja.appendChild(el);
-      }
-      if (p.por_cobrar && p.por_cobrar.length) {
-        const top = p.por_cobrar.slice(0, 3)
-          .map(c => c.cliente + " " + dinero(c.monto)).join(" \u00b7 ");
-        $("pend-cobrar").innerHTML = "";
-        const b = document.createElement("b");
-        b.textContent = "Por cobrar: " + dinero(p.por_cobrar_total) + ". ";
-        $("pend-cobrar").append(b, document.createTextNode(top));
-        $("pend-cobrar").style.display = "block";
-      }
-      $("pend").style.display = "block";
-    }).withFailureHandler(() => {}).pendientes(clave.value);
   }
   cargaExtras();
   let esperaClave;

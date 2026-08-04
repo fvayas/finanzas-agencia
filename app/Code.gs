@@ -115,22 +115,6 @@ function anular(d) {
   }
 }
 
-/** Pendientes del mes que publica el panel (cache de 10 minutos). */
-function pendientes(clave) {
-  if (!claveValida_(clave)) throw new Error("Clave incorrecta.");
-  const cache = CacheService.getScriptCache();
-  let txt = cache.get("app-resumen");
-  if (!txt) {
-    const r = UrlFetchApp.fetch(
-      "https://fvayas.github.io/finanzas-agencia/app-resumen.json",
-      { muteHttpExceptions: true });
-    if (r.getResponseCode() >= 300) return null;
-    txt = r.getContentText();
-    cache.put("app-resumen", txt, 600);
-  }
-  try { return JSON.parse(txt); } catch (e) { return null; }
-}
-
 /**
  * Mismo texto, mismo importe, mismo sentido y fecha a menos de 7 días:
  * huele a doble registro (dos personas apuntando el mismo pago).
