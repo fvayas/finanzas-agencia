@@ -280,7 +280,7 @@
 
   <button id="btn" type="submit">Registrar</button>
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v14</div>
+    letter-spacing:.08em; margin-top:4px">v15</div>
 </form>
 
 <script>
@@ -350,7 +350,7 @@
     if (v !== limpio) $("monto").value = limpio;
   });
   // sello de versión, para saber qué copia carga el teléfono
-  console.log("app v14");
+  console.log("app v15");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
@@ -402,10 +402,13 @@
           if (r && r.monto > 0 && $("monto").value.trim() === "") {
             $("monto").value = r.monto.toFixed(2).replace(".", ",");
             if (r.fecha) $("fecha").value = r.fecha;
-            ocr.textContent = "Leído del comprobante: $" +
-              r.monto.toFixed(2).replace(".", ",") +
-              (r.fecha ? " · " + r.fecha.split("-").reverse().join("/") : "") +
-              " — revísalo antes de registrar.";
+            const led = n => "$" + n.toFixed(2).replace(".", ",");
+            let msg = "Leído: " + led(r.monto);
+            if (r.detalle && r.detalle.comision > 0)
+              msg += " (" + led(r.detalle.base) + " + " +
+                     led(r.detalle.comision) + " de comisión)";
+            if (r.fecha) msg += " · " + r.fecha.split("-").reverse().join("/");
+            ocr.textContent = msg + " — revísalo antes de registrar.";
             ocr.style.color = "var(--verde)";
           } else {
             ocr.textContent = "No encontré el monto en la foto; escríbelo tú.";

@@ -209,30 +209,74 @@ function leerComprobante(foto) {
   return interpretarComprobante_(texto);
 }
 
-/** Del texto del voucher, el monto (con pistas MONTO/VALOR/TOTAL) y la fecha. */
+/**
+ * Del texto del voucher: el monto TOTAL que salio de la cuenta, y la fecha.
+ * El debito real es monto + comision del banco (+ su IVA); si el papel ya
+ * imprime un "TOTAL DEBITADO", ese manda. Saldos, numeros de cuenta y
+ * referencias jamas cuentan como importe.
+ */
 function interpretarComprobante_(texto) {
-  var lineas = texto.toUpperCase().split(/\n+/);
-  var mejor = null, mejorPuntos = -1;
   var reImporte = /\$?\s*(\d{1,3}(?:[.,]\d{3})*[.,]\d{2}|\d+[.,]\d{2})\b/g;
-  lineas.forEach(function (ln) {
-    var pistas = /MONTO|VALOR|TOTAL|DEBITAD|TRANSFERIDO|IMPORTE/.test(ln) ? 2 :
-                 /COMISION|SALDO|COSTO/.test(ln) ? -1 : 0;
+  var aNumero = function (v) {
+    if (v.indexOf(",") > -1) v = v.replace(/\./g, "").replace(",", ".");
+    else if (/^\d{1,3}(\.\d{3})+$/.test(v)) v = v.replace(/\./g, "");
+    var n = parseFloat(v);
+    return (n > 0 && n <= 1000000) ? n : null;
+  };
+  var primero = function (ln) {
+    reImporte.lastIndex = 0;
+    var m = reImporte.exec(ln);
+    return m ? aNumero(m[1]) : null;
+  };
+
+  var total = null, base = null, basePuntos = -1, comision = 0;
+  texto.toUpperCase().split(/\n+/).forEach(function (ln) {
+    if (/SALDO|DISPONIBLE|CONTABLE/.test(ln)) return;
+    var n;
+    if (/TOTAL/.test(ln)) {
+      n = primero(ln);
+      if (n !== null && (total === null || n > total)) total = n;
+      return;
+    }
+    if (/COMISION|COSTO|CARGO|TARIFA|IVA|IMPUESTO/.test(ln)) {
+      n = primero(ln);
+      if (n !== null && n <= 100) comision += n;
+      return;
+    }
+    if (/CUENTA|CTA|REFERENCIA|DOCUMENTO|COMPROBANTE|CEDULA|RUC|TELEFONO|NRO/.test(ln)) return;
+    var pistas = /MONTO|VALOR|IMPORTE|DEBITAD|TRANSFERID|PAGAD|ENVIAD|EFECTIV/.test(ln) ? 2 : 0;
+    reImporte.lastIndex = 0;
     var m;
     while ((m = reImporte.exec(ln)) !== null) {
-      var v = m[1];
-      if (v.indexOf(",") > -1) v = v.replace(/\./g, "").replace(",", ".");
-      else if (/^\d{1,3}(\.\d{3})+$/.test(v)) v = v.replace(/\./g, "");
-      var num = parseFloat(v);
-      if (!(num > 0) || num > 1000000) continue;
-      var puntos = pistas * 10 + (num > 1 ? 1 : 0);
-      if (puntos > mejorPuntos || (puntos === mejorPuntos && mejor !== null && num > mejor)) {
-        mejor = num; mejorPuntos = puntos;
+      n = aNumero(m[1]);
+      if (n === null) continue;
+      var puntos = pistas * 10 + (n > 1 ? 1 : 0);
+      if (puntos > basePuntos || (puntos === basePuntos && base !== null && n > base)) {
+        base = n; basePuntos = puntos;
       }
     }
   });
+
+  var monto = null, detalle = null;
+  if (total !== null && (base === null || total >= base)) {
+    // el total impreso ya incluye las comisiones: no se suma nada encima
+    monto = total;
+    if (base !== null && total > base) {
+      detalle = { base: base,
+                  comision: Math.round((total - base) * 100) / 100 };
+    }
+  } else if (base !== null) {
+    var extra = (comision > 0 && comision < base) ? comision : 0;
+    monto = Math.round((base + extra) * 100) / 100;
+    if (extra > 0) {
+      detalle = { base: base, comision: Math.round(extra * 100) / 100 };
+    }
+  }
+
   var f = texto.match(/(\d{1,2})[\/\-](\d{1,2})[\/\-](20\d{2})/);
   return {
-    monto: mejor,
+    monto: monto,
+    detalle: detalle,
     fecha: f ? (f[3] + "-" + ("0" + f[2]).slice(-2) + "-" + ("0" + f[1]).slice(-2)) : null,
   };
 }
