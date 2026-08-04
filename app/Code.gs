@@ -30,7 +30,8 @@ const ZONA = "America/Guayaquil";
 function doGet() {
   return HtmlService.createTemplateFromFile("Index")
     .evaluate()
-    .setTitle("Registrar movimiento")
+    .setTitle("Caja · Finanzas Agencia")
+    .setFaviconUrl("https://fvayas.github.io/finanzas-agencia/icono-app.png")
     .addMetaTag("viewport", "width=device-width, initial-scale=1");
 }
 
@@ -65,6 +66,103 @@ function claveValida_(clave) {
   return guardada && clave === guardada;
 }
 
+/** Últimos 5 registros del libro, para verlos y poder anular el último. */
+function ultimos(clave) {
+  if (!claveValida_(clave)) throw new Error("Clave incorrecta.");
+  const l = libro_();
+  const desde = Math.max(1, l.fila - 4);
+  const v = l.hoja.getRange(desde, 2, l.fila - desde + 1, 5).getValues(); // B..F
+  return {
+    filas: v.map(function (r, i) {
+      const ing = Number(r[3]) || 0, egr = Number(r[4]) || 0;
+      return { fila: desde + i, fecha: fechaCorta_(r[0]),
+               ref: String(r[1]).trim(), desc: String(r[2]),
+               monto: ing > 0 ? ing : -egr };
+    }),
+  };
+}
+
+/**
+ * Anula el ÚLTIMO registro del libro. Solo el último: el saldo corrido de
+ * cualquier fila posterior dependería de él. Manda sus comprobantes a la
+ * papelera de Drive y avisa al panel.
+ */
+function anular(d) {
+  if (!claveValida_(d.clave)) throw new Error("Clave incorrecta.");
+  const cerrojo = LockService.getScriptLock();
+  cerrojo.waitLock(20000);
+  try {
+    const l = libro_();
+    if (+d.fila !== l.fila) {
+      throw new Error("Solo se puede anular el último registro; recarga la app.");
+    }
+    const ref = String(l.hoja.getRange(l.fila, 3).getValue()).trim();
+    if (ref !== String(d.ref).trim()) {
+      throw new Error("La referencia no coincide; recarga la app.");
+    }
+    const enlaces = String(l.hoja.getRange(l.fila, 8).getValue());
+    const re = /\/d\/([-\w]{20,})|[?&]id=([-\w]{20,})/g;
+    let m;
+    while ((m = re.exec(enlaces)) !== null) {
+      try { DriveApp.getFileById(m[1] || m[2]).setTrashed(true); } catch (e) {}
+    }
+    l.hoja.deleteRow(l.fila);
+    avisarGitHub_();
+    const n = libro_();
+    return { ref: "01-" + ("00000" + n.ultimaRef).slice(-5), saldo: n.saldo };
+  } finally {
+    cerrojo.releaseLock();
+  }
+}
+
+/** Pendientes del mes que publica el panel (cache de 10 minutos). */
+function pendientes(clave) {
+  if (!claveValida_(clave)) throw new Error("Clave incorrecta.");
+  const cache = CacheService.getScriptCache();
+  let txt = cache.get("app-resumen");
+  if (!txt) {
+    const r = UrlFetchApp.fetch(
+      "https://fvayas.github.io/finanzas-agencia/app-resumen.json",
+      { muteHttpExceptions: true });
+    if (r.getResponseCode() >= 300) return null;
+    txt = r.getContentText();
+    cache.put("app-resumen", txt, 600);
+  }
+  try { return JSON.parse(txt); } catch (e) { return null; }
+}
+
+/**
+ * Mismo texto, mismo importe, mismo sentido y fecha a menos de 7 días:
+ * huele a doble registro (dos personas apuntando el mismo pago).
+ */
+function buscaDuplicado_(hoja, fila, desc, monto, esIngreso, fechaTxt) {
+  const desde = Math.max(1, fila - 39);
+  const v = hoja.getRange(desde, 2, fila - desde + 1, 5).getValues(); // B..F
+  const objetivo = desc.replace(/\s+/g, " ");
+  const fN = fechaMs_(fechaTxt);
+  for (let i = v.length - 1; i >= 0; i--) {
+    const imp = Number(v[i][esIngreso ? 3 : 4]) || 0;
+    if (Math.round(imp * 100) !== Math.round(monto * 100)) continue;
+    if (String(v[i][2]).trim().toUpperCase().replace(/\s+/g, " ") !== objetivo) continue;
+    const fV = fechaMs_(v[i][0]);
+    if (fN && fV && Math.abs(fN - fV) > 7 * 864e5) continue;
+    return { ref: String(v[i][1]).trim(), fecha: fechaCorta_(v[i][0]) };
+  }
+  return null;
+}
+
+function fechaCorta_(x) {
+  if (x instanceof Date) return Utilities.formatDate(x, ZONA, "d/M");
+  const p = String(x).split("/");
+  return p.length >= 2 ? (+p[0]) + "/" + (+p[1]) : String(x);
+}
+
+function fechaMs_(x) {
+  if (x instanceof Date) return x.getTime();
+  const p = String(x).split("/");
+  return p.length === 3 ? new Date(+p[2], +p[1] - 1, +p[0]).getTime() : 0;
+}
+
 /**
  * Registra un movimiento. `datos`:
  *   clave, tipo ('ingreso'|'egreso'), fecha 'aaaa-mm-dd',
@@ -92,6 +190,12 @@ function registrar(datos) {
     // la fecha se escribe como texto d/m/aaaa, el formato del resto del libro
     const p = String(datos.fecha).split("-");           // aaaa-mm-dd
     const fechaTxt = (+p[2]) + "/" + (+p[1]) + "/" + p[0];
+
+    // freno de duplicados: se pregunta antes de guardar un doble
+    if (!datos.forzar) {
+      const dup = buscaDuplicado_(hoja, fila, desc, monto, esIngreso, fechaTxt);
+      if (dup) return { duplicado: dup };
+    }
 
     // ---- comprobantes a Drive, en carpeta del mes ----
     const enlaces = (datos.fotos || []).map(function (f, i) {

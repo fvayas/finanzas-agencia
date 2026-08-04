@@ -1,0 +1,146 @@
+{
+ "mes": "ago",
+ "mes_nombre": "agosto",
+ "sueldos": [
+  {
+   "nombre": "Francisco Vayas",
+   "tipico": 1500.0,
+   "pagado": false,
+   "sugerencia": "SUELDO FRANCISCO VAYAS"
+  },
+  {
+   "nombre": "Ana Paula",
+   "tipico": 1500.0,
+   "pagado": false,
+   "sugerencia": "SUELDO ANA PAULA"
+  },
+  {
+   "nombre": "Marissa Alban",
+   "tipico": 500.0,
+   "pagado": false,
+   "sugerencia": "SUELDO MARISSA ALBAN"
+  },
+  {
+   "nombre": "Daniela Cordova",
+   "tipico": 312.5,
+   "pagado": false,
+   "sugerencia": "SUELDO DANIELA CORDOVA"
+  },
+  {
+   "nombre": "Alejandra Aponte",
+   "tipico": 977.91,
+   "pagado": true,
+   "sugerencia": "SUELDO ALEJANDRA APONTE"
+  },
+  {
+   "nombre": "Josue Lara",
+   "tipico": 825.0,
+   "pagado": true,
+   "sugerencia": "SUELDO JOSUE LARA"
+  },
+  {
+   "nombre": "Alejandro Vaca",
+   "tipico": 690.0,
+   "pagado": true,
+   "sugerencia": "SUELDO ALEJANDRO VACA"
+  },
+  {
+   "nombre": "Stalin Bonilla",
+   "tipico": 661.25,
+   "pagado": true,
+   "sugerencia": "SUELDO STALIN BONILLA"
+  },
+  {
+   "nombre": "Estefi Jacome",
+   "tipico": 550.0,
+   "pagado": true,
+   "sugerencia": "SUELDO ESTEFI JACOME"
+  },
+  {
+   "nombre": "Danna Cardenas",
+   "tipico": 482.0,
+   "pagado": true,
+   "sugerencia": "SUELDO DANNA CARDENAS"
+  }
+ ],
+ "fijos": [
+  {
+   "nombre": "Pago tarjeta (sin desglose)",
+   "tipico": 295.2,
+   "pagado": false,
+   "sugerencia": "PAGO TARJETA DE CREDITO"
+  },
+  {
+   "nombre": "Suscripciones",
+   "tipico": 11.91,
+   "pagado": false,
+   "sugerencia": ""
+  },
+  {
+   "nombre": "Arriendo, condominio y alicuotas",
+   "tipico": 415.57,
+   "pagado": true,
+   "sugerencia": "ARRIENDO OFICINA"
+  },
+  {
+   "nombre": "Refrigerios y suministros",
+   "tipico": 39.47,
+   "pagado": true,
+   "sugerencia": ""
+  },
+  {
+   "nombre": "Taxis / parqueo / viaticos",
+   "tipico": 31.79,
+   "pagado": true,
+   "sugerencia": ""
+  }
+ ],
+ "por_cobrar": [
+  {
+   "cliente": "Speedy",
+   "monto": 2436.0,
+   "atraso": "1 mes"
+  },
+  {
+   "cliente": "APC",
+   "monto": 1150.0,
+   "atraso": "2 meses"
+  },
+  {
+   "cliente": "Samari",
+   "monto": 721.23,
+   "atraso": "1 mes"
+  },
+  {
+   "cliente": "El Motor",
+   "monto": 650.0,
+   "atraso": "1 mes"
+  },
+  {
+   "cliente": "Confia",
+   "monto": 500.0,
+   "atraso": "1 mes"
+  },
+  {
+   "cliente": "Pladeco",
+   "monto": 400.0,
+   "atraso": "1 mes"
+  },
+  {
+   "cliente": "Friends Guides",
+   "monto": 360.0,
+   "atraso": "3 meses"
+  },
+  {
+   "cliente": "Onco Ambato",
+   "monto": 345.0,
+   "atraso": "1 mes"
+  },
+  {
+   "cliente": "Absolute",
+   "monto": 300.0,
+   "atraso": "1 mes"
+  }
+ ],
+ "por_cobrar_total": 6862.23
+}

@@ -42,6 +42,7 @@ jobs:
           python3 analisis.py
           python3 flexiahorro.py
           python3 tarjeta.py
+          python3 app_resumen.py
           python3 build_dashboard.py
           python3 auditoria.py
 

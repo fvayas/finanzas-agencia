@@ -30,6 +30,7 @@ python3 tarifario.py       # cuadra cada cuenta contra su tarifa y retenciones
 python3 analisis.py        # P&L, punto de equilibrio, nómina, gastos
 python3 flexiahorro.py     # concilia contra el extracto de FlexiAhorro (datos pegados del PDF)
 python3 tarjeta.py         # desglosa la tarjeta (datos pegados de los estados de cuenta)
+python3 app_resumen.py     # pendientes del mes y por cobrar, para la app de captura
 python3 build_dashboard.py # inyecta todo en dashboard_template.html → panel-financiero-2026.html
 python3 auditoria.py       # comprueba que ningún movimiento quede fuera de las tablas
 ```
@@ -49,6 +50,7 @@ curl -sL "https://docs.google.com/spreadsheets/d/1rGLDMyLP6A83QPQvnIDh_9IMAOESeU
 | `analisis.py` | P&L mensual, punto de equilibrio, costo por persona con el porqué de cada variación, gastos por categoría. |
 | `flexiahorro.py` | Conciliación al centavo contra el extracto del banco (cta. de ahorro). |
 | `tarjeta.py` | Los consumos de la Mastercard ····3129, cargo a cargo, desde los estados de cuenta. |
+| `app_resumen.py` | Resumen ligero (`app-resumen.json`): sueldos y fijos sin registrar este mes + por cobrar. Lo consulta la app de captura. |
 | `build_dashboard.py` | Une todos los JSON dentro de la plantilla y genera el panel final. |
 | `dashboard_template.html` | La plantilla: diseño "libro mayor" (negro/rojo/gris/blanco), 12 secciones, desglose en dos niveles al pulsar cualquier cifra, glosario. |
 | `auditoria.py` | Cobertura: verifica que los 500+ movimientos aparezcan en alguna tabla. |

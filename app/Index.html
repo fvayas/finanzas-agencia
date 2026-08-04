@@ -197,6 +197,33 @@
     margin-top:10px; padding-top:9px; border-top:1px solid var(--line-soft);
     font-size:12px; color:var(--ink3);
   }
+  /* ------- listas: pendientes del mes y últimos registros ------- */
+  .fila-mov{
+    display:flex; align-items:center; gap:10px; padding:8px 0;
+    border-top:1px solid var(--line-soft); font-size:13px;
+  }
+  .fila-mov:first-child{border-top:none}
+  .fila-mov .m-ref{
+    font-family:var(--mono); font-size:11.5px; color:var(--ink3); white-space:nowrap;
+  }
+  .fila-mov .m-desc{
+    flex:1; min-width:0; overflow:hidden; white-space:nowrap;
+    text-overflow:ellipsis; color:var(--ink2); font-weight:600;
+  }
+  .fila-mov .m-monto{font-family:var(--mono); font-weight:700; white-space:nowrap}
+  .m-pos{color:var(--verde)} .m-neg{color:var(--rojo)}
+  .m-anular{
+    border:1.5px solid var(--rojo); color:var(--rojo); background:none;
+    border-radius:7px; width:28px; height:28px; font-size:13px; cursor:pointer;
+    flex:none; line-height:1; font-weight:700;
+  }
+  .fila-mov.falta{cursor:pointer}
+  .fila-mov .m-falta{
+    font-size:10px; font-weight:800; color:var(--rojo); border:1.5px solid var(--rojo);
+    border-radius:6px; padding:2px 7px; letter-spacing:.06em; white-space:nowrap;
+  }
+  .fila-mov.hecho .m-desc{text-decoration:line-through; opacity:.55}
+  .fila-mov .m-hecho{color:var(--verde); font-weight:800; font-size:13px}
   @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
 </style>
 </head>
@@ -279,8 +306,22 @@
   </div></div>
 
   <button id="btn" type="submit">Registrar</button>
+
+  <div class="bloque" id="pend" style="display:none">
+    <span class="rotulo">Pendientes de <span id="pend-mes"></span></span>
+    <div id="pend-lista"></div>
+    <div class="pista" id="pend-cobrar" style="display:none"></div>
+  </div>
+
+  <div class="bloque" id="ult" style="display:none">
+    <span class="rotulo">Últimos registros</span>
+    <div id="ult-lista"></div>
+    <div class="pista">Solo el último se puede anular: el saldo corrido
+      de las filas siguientes depende de él.</div>
+  </div>
+
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v15</div>
+    letter-spacing:.08em; margin-top:4px">v16</div>
 </form>
 
 <script>
@@ -350,7 +391,7 @@
     if (v !== limpio) $("monto").value = limpio;
   });
   // sello de versión, para saber qué copia carga el teléfono
-  console.log("app v15");
+  console.log("app v16");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
@@ -423,11 +464,127 @@
   $("quitar").onclick = () => { fotos.value = ""; pintaFotos();
     ocr.style.display = "none"; ocr.style.color = "var(--ink2)"; };
 
+  // La foto se comprime en el teléfono antes de subir (lado mayor 1600 px,
+  // JPEG): de ~4 MB a ~300 KB, y el OCR lee igual de bien. Si el navegador
+  // no puede decodificarla, va el original tal cual.
   const leer = f => new Promise((si, no) => {
-    const r = new FileReader();
-    r.onload = () => si({ b64: r.result.split(",")[1], nombre: f.name, mime: f.type });
-    r.onerror = no;
-    r.readAsDataURL(f);
+    const original = () => {
+      const r = new FileReader();
+      r.onload = () => si({ b64: r.result.split(",")[1], nombre: f.name, mime: f.type });
+      r.onerror = no;
+      r.readAsDataURL(f);
+    };
+    const img = new Image();
+    const url = URL.createObjectURL(f);
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      try {
+        const esc = Math.min(1, 1600 / Math.max(img.width, img.height));
+        if (esc === 1 && f.type === "image/jpeg" && f.size < 900000) return original();
+        const c = document.createElement("canvas");
+        c.width = Math.round(img.width * esc);
+        c.height = Math.round(img.height * esc);
+        c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+        const b64 = c.toDataURL("image/jpeg", 0.82).split(",")[1];
+        if (!b64) return original();
+        si({ b64: b64, nombre: (f.name || "foto").replace(/\.\w+$/, "") + ".jpg",
+             mime: "image/jpeg" });
+      } catch (e) { original(); }
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); original(); };
+    img.src = url;
+  });
+
+  // ------- pendientes del mes y últimos registros (piden la clave) -------
+  function filaMov(m){
+    const el = document.createElement("div"); el.className = "fila-mov";
+    const ref = document.createElement("span"); ref.className = "m-ref";
+    ref.textContent = m.fecha;
+    const de = document.createElement("span"); de.className = "m-desc";
+    de.textContent = m.desc;
+    const im = document.createElement("b");
+    im.className = "m-monto " + (m.monto >= 0 ? "m-pos" : "m-neg");
+    im.textContent = (m.monto >= 0 ? "+" : "\u2212") + dinero(Math.abs(m.monto));
+    el.append(ref, de, im);
+    return el;
+  }
+  function anula(m){
+    if (!confirm("\u00bfAnular " + m.ref + " (" + m.desc + ")?\n" +
+                 "Se borra la fila del libro y su comprobante va a la papelera.")) return;
+    google.script.run
+      .withSuccessHandler(r => { pintaVivo(r); cargaExtras();
+        if (navigator.vibrate) navigator.vibrate(25); })
+      .withFailureHandler(e => alert(e.message || e))
+      .anular({ clave: clave.value, fila: m.fila, ref: m.ref });
+  }
+  function cargaExtras(){
+    if (typeof google === "undefined" || clave.value.length < 4) return;
+    google.script.run.withSuccessHandler(r => {
+      if (!r || !r.filas.length) return;
+      const caja = $("ult-lista"); caja.innerHTML = "";
+      r.filas.forEach((m, i) => {
+        const el = filaMov(m);
+        if (i === r.filas.length - 1) {
+          const x = document.createElement("button");
+          x.type = "button"; x.className = "m-anular"; x.textContent = "\u00d7";
+          x.onclick = () => anula(m);
+          el.appendChild(x);
+        }
+        caja.appendChild(el);
+      });
+      $("ult").style.display = "block";
+    }).withFailureHandler(() => {}).ultimos(clave.value);
+
+    google.script.run.withSuccessHandler(p => {
+      if (!p) return;
+      $("pend-mes").textContent = p.mes_nombre;
+      const caja = $("pend-lista"); caja.innerHTML = "";
+      const todos = (p.sueldos || []).concat(p.fijos || []);
+      const faltan = todos.filter(x => !x.pagado);
+      faltan.forEach(x => {
+        const el = document.createElement("div"); el.className = "fila-mov falta";
+        const de = document.createElement("span"); de.className = "m-desc";
+        de.textContent = x.nombre;
+        const tip = document.createElement("span"); tip.className = "m-ref";
+        tip.textContent = "~" + dinero(x.tipico);
+        const b = document.createElement("span"); b.className = "m-falta";
+        b.textContent = "FALTA";
+        el.append(de, tip, b);
+        // tocar un pendiente deja el formulario listo para registrarlo
+        el.onclick = () => {
+          $("t-egr").checked = true;
+          if (x.sugerencia) { $("desc").value = x.sugerencia; sel.selectedIndex = 0; }
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          $("monto").focus();
+        };
+        caja.appendChild(el);
+      });
+      const hechos = todos.length - faltan.length;
+      if (hechos > 0) {
+        const el = document.createElement("div"); el.className = "fila-mov hecho";
+        const de = document.createElement("span"); de.className = "m-desc";
+        de.textContent = hechos + " pago" + (hechos > 1 ? "s" : "") + " del mes ya registrado" + (hechos > 1 ? "s" : "");
+        const v = document.createElement("span"); v.className = "m-hecho"; v.textContent = "\u2713";
+        el.append(de, v);
+        caja.appendChild(el);
+      }
+      if (p.por_cobrar && p.por_cobrar.length) {
+        const top = p.por_cobrar.slice(0, 3)
+          .map(c => c.cliente + " " + dinero(c.monto)).join(" \u00b7 ");
+        $("pend-cobrar").innerHTML = "";
+        const b = document.createElement("b");
+        b.textContent = "Por cobrar: " + dinero(p.por_cobrar_total) + ". ";
+        $("pend-cobrar").append(b, document.createTextNode(top));
+        $("pend-cobrar").style.display = "block";
+      }
+      $("pend").style.display = "block";
+    }).withFailureHandler(() => {}).pendientes(clave.value);
+  }
+  cargaExtras();
+  let esperaClave;
+  clave.addEventListener("input", () => {
+    clearTimeout(esperaClave);
+    if (clave.value.length >= 4) esperaClave = setTimeout(cargaExtras, 500);
   });
 
   // ------- envío -------
@@ -449,8 +606,21 @@
         descripcion: $("desc").value, monto: monto, fotos: imgs };
       sel.removeAttribute("required");
       if (typeof google === "undefined") return falla("Vista previa sin conexión al libro.");
-      google.script.run
-        .withSuccessHandler(r => {
+      const alGuardar = r => {
+          if (r && r.duplicado) {
+            btn.disabled = false; btn.textContent = "Registrar";
+            if (confirm("Ojo: ya hay un registro igual \u2014 " + r.duplicado.ref +
+                        " del " + r.duplicado.fecha + ", mismo monto y descripci\u00f3n.\n" +
+                        "\u00bfRegistrar de todos modos?")) {
+              datos.forzar = true;
+              btn.disabled = true;
+              btn.innerHTML = 'Guardando<span class="puntos"></span>';
+              google.script.run.withSuccessHandler(alGuardar)
+                .withFailureHandler(e => falla(e.message || String(e)))
+                .registrar(datos);
+            }
+            return;
+          }
           localStorage.setItem("clave", clave.value);
           if (navigator.vibrate) navigator.vibrate(25);
           $("tk-ref").textContent = r.ref;
@@ -473,7 +643,10 @@
           $("fecha").value = hoyEC();
           btn.disabled = false; btn.textContent = "Registrar";
           okk.scrollIntoView({ behavior: "smooth", block: "center" });
-        })
+          cargaExtras();
+      };
+      google.script.run
+        .withSuccessHandler(alGuardar)
         .withFailureHandler(e => falla(e.message || String(e)))
         .registrar(datos);
     } catch (e) { falla("No pude leer las fotos: " + e); }
