@@ -220,6 +220,7 @@
   }
   .fila-mov .m-monto{font-family:var(--mono); font-weight:700; white-space:nowrap}
   .m-pos{color:var(--verde)} .m-neg{color:var(--rojo)}
+  .m-clip{font-size:11px; flex:none; opacity:.7}
   .m-anular{
     border:1.5px solid var(--rojo); color:var(--rojo); background:none;
     border-radius:7px; width:28px; height:28px; font-size:13px; cursor:pointer;
@@ -328,7 +329,7 @@
   </div>
 
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v18</div>
+    letter-spacing:.08em; margin-top:4px">v19</div>
 </form>
 
 <script>
@@ -398,7 +399,7 @@
     if (v !== limpio) $("monto").value = limpio;
   });
   // sello de versión, para saber qué copia carga el teléfono
-  console.log("app v18");
+  console.log("app v19");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
@@ -512,7 +513,16 @@
     const im = document.createElement("b");
     im.className = "m-monto " + (m.monto >= 0 ? "m-pos" : "m-neg");
     im.textContent = (m.monto >= 0 ? "+" : "\u2212") + dinero(Math.abs(m.monto));
-    el.append(ref, de, im);
+    el.append(ref, de);
+    // con comprobante en Drive, tocar la fila lo abre
+    if (m.enlace) {
+      const clip = document.createElement("span");
+      clip.className = "m-clip"; clip.textContent = "\ud83d\udcce";
+      el.appendChild(clip);
+      el.style.cursor = "pointer";
+      el.onclick = () => window.open(m.enlace, "_blank");
+    }
+    el.appendChild(im);
     return el;
   }
   function anula(m){
@@ -534,7 +544,7 @@
         if (i === r.filas.length - 1) {
           const x = document.createElement("button");
           x.type = "button"; x.className = "m-anular"; x.textContent = "\u00d7";
-          x.onclick = () => anula(m);
+          x.onclick = ev => { ev.stopPropagation(); anula(m); };
           el.appendChild(x);
         }
         caja.appendChild(el);

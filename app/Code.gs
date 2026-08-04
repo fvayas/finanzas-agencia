@@ -35,11 +35,21 @@ function doGet() {
     .addMetaTag("viewport", "width=device-width, initial-scale=1");
 }
 
-/** Pestaña del libro + última fila real (referencia con importe). */
+/**
+ * Pestaña del libro + última fila real (referencia con importe).
+ * A prueba de año nuevo: primero busca la pestaña del año en curso
+ * ("2027 CTA PICHINCHA" cuando llegue); mientras no exista, sigue con la
+ * conocida por gid, y como último recurso por el nombre fijo.
+ */
 function libro_() {
-  const hoja = SpreadsheetApp.getActive().getSheets().find(function (h) {
-    return h.getSheetId() === HOJA_GID || h.getName().trim() === HOJA;
-  });
+  const anio = Utilities.formatDate(new Date(), ZONA, "yyyy");
+  const hojas = SpreadsheetApp.getActive().getSheets();
+  const hoja =
+    hojas.find(function (h) {
+      return h.getName().trim().toUpperCase() === anio + " CTA PICHINCHA";
+    }) ||
+    hojas.find(function (h) { return h.getSheetId() === HOJA_GID; }) ||
+    hojas.find(function (h) { return h.getName().trim() === HOJA; });
   if (!hoja) throw new Error('No encuentro la pestaña "' + HOJA + '".');
   const cf = hoja.getRange(1, 3, hoja.getLastRow(), 4).getValues(); // C..F
   let fila = 0, ultimaRef = 0;
@@ -71,13 +81,14 @@ function ultimos(clave) {
   if (!claveValida_(clave)) throw new Error("Clave incorrecta.");
   const l = libro_();
   const desde = Math.max(1, l.fila - 4);
-  const v = l.hoja.getRange(desde, 2, l.fila - desde + 1, 5).getValues(); // B..F
+  const v = l.hoja.getRange(desde, 2, l.fila - desde + 1, 7).getValues(); // B..H
   return {
     filas: v.map(function (r, i) {
       const ing = Number(r[3]) || 0, egr = Number(r[4]) || 0;
       return { fila: desde + i, fecha: fechaCorta_(r[0]),
                ref: String(r[1]).trim(), desc: String(r[2]),
-               monto: ing > 0 ? ing : -egr };
+               monto: ing > 0 ? ing : -egr,
+               enlace: (String(r[6]).match(/https?:\/\/\S+/) || [""])[0] };
     }),
   };
 }
@@ -97,7 +108,7 @@ function buscar(clave, q) {
   };
   const aguja = norm(q);
   const l = libro_();
-  const v = l.hoja.getRange(1, 2, l.fila, 5).getValues(); // B..F
+  const v = l.hoja.getRange(1, 2, l.fila, 7).getValues(); // B..H
   const filas = [];
   let ing = 0, egr = 0;
   for (let i = 0; i < v.length; i++) {
@@ -108,7 +119,8 @@ function buscar(clave, q) {
     ing += vi; egr += ve;
     filas.push({ fila: i + 1, fecha: fechaCorta_(v[i][0]),
                  ref: String(v[i][1]).trim(), desc: String(v[i][2]),
-                 monto: vi > 0 ? vi : -ve });
+                 monto: vi > 0 ? vi : -ve,
+                 enlace: (String(v[i][6]).match(/https?:\/\/\S+/) || [""])[0] });
   }
   return { n: filas.length, ing: Math.round(ing * 100) / 100,
            egr: Math.round(egr * 100) / 100,
