@@ -107,10 +107,10 @@
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
-   "costo_fijo": 4087.19,
+   "costo_fijo": 4357.6,
    "costo_variable": 47.84,
-   "costo_total": 4135.03,
-   "resultado": -3576.78,
+   "costo_total": 4405.44,
+   "resultado": -3847.19,
    "margen_contribucion": 510.41,
    "margen_pct": 91.4
   }
@@ -214,7 +214,7 @@
    "may": -475.66,
    "jun": 0.0,
    "jul": -522.81,
-   "ago": 0.0
+   "ago": -270.41
   },
   "Tarjeta de credito": {
    "ene": -26.7,
@@ -336,7 +336,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": 6433.0
+   "ago": 3933.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -2589,8 +2589,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 55587.0,
-   "n": 64,
+   "total": 58087.0,
+   "n": 65,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2599,7 +2599,7 @@
     "may": 7425.0,
     "jun": 15722.0,
     "jul": 14357.0,
-    "ago": 567.0
+    "ago": 3067.0
    },
    "detalle": {
     "ene": {
@@ -2958,6 +2958,11 @@
        "fecha": "03/08/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 567.0
+      },
+      {
+       "fecha": "03/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 2500.0
       }
      ],
      "razones": []
@@ -3502,73 +3507,10 @@
    }
   },
   {
-   "grupo": "Freelance y produccion",
-   "categoria": "Juan Pablo Nieto (produccion)",
-   "total": 2625.0,
-   "n": 5,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 690.0,
-    "mar": 495.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 650.0,
-    "jul": 790.0,
-    "ago": 0.0
-   },
-   "detalle": {
-    "feb": {
-     "movs": [
-      {
-       "fecha": "06/02/2026",
-       "desc": "PAGO JUAN PABLO SAMARI Y CONFIA",
-       "importe": 690.0
-      }
-     ],
-     "razones": []
-    },
-    "mar": {
-     "movs": [
-      {
-       "fecha": "23/03/2026",
-       "desc": "PAGO JUAN PABLO",
-       "importe": 495.0
-      }
-     ],
-     "razones": []
-    },
-    "jun": {
-     "movs": [
-      {
-       "fecha": "05/06/2026",
-       "desc": "PAGO JUANPABLO NIETO",
-       "importe": 400.0
-      },
-      {
-       "fecha": "16/06/2026",
-       "desc": "PAGO A JUAN PABLO NIETO DE PODCAST CONFIA",
-       "importe": 250.0
-      }
-     ],
-     "razones": []
-    },
-    "jul": {
-     "movs": [
-      {
-       "fecha": "03/07/2026",
-       "desc": "PAGO JUAN PABLO NEITO PRODUCCION SPEEDY",
-       "importe": 790.0
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
    "grupo": "Impuestos y legal",
    "categoria": "Impuestos",
-   "total": 2580.8,
-   "n": 6,
+   "total": 2851.21,
+   "n": 7,
    "por_mes": {
     "ene": 429.15,
     "feb": 248.95,
@@ -3577,7 +3519,7 @@
     "may": 475.66,
     "jun": 0.0,
     "jul": 522.81,
-    "ago": 0.0
+    "ago": 270.41
    },
    "detalle": {
     "ene": {
@@ -3636,6 +3578,79 @@
        "fecha": "10/07/2026",
        "desc": "PAGO IMPUESTOS",
        "importe": 522.81
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "desc": "PAGO IMPUESTOS",
+       "importe": 270.41
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Juan Pablo Nieto (produccion)",
+   "total": 2625.0,
+   "n": 5,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 690.0,
+    "mar": 495.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 650.0,
+    "jul": 790.0,
+    "ago": 0.0
+   },
+   "detalle": {
+    "feb": {
+     "movs": [
+      {
+       "fecha": "06/02/2026",
+       "desc": "PAGO JUAN PABLO SAMARI Y CONFIA",
+       "importe": 690.0
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "23/03/2026",
+       "desc": "PAGO JUAN PABLO",
+       "importe": 495.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "05/06/2026",
+       "desc": "PAGO JUANPABLO NIETO",
+       "importe": 400.0
+      },
+      {
+       "fecha": "16/06/2026",
+       "desc": "PAGO A JUAN PABLO NIETO DE PODCAST CONFIA",
+       "importe": 250.0
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "03/07/2026",
+       "desc": "PAGO JUAN PABLO NEITO PRODUCCION SPEEDY",
+       "importe": 790.0
       }
      ],
      "razones": []
@@ -5047,9 +5062,9 @@
  ],
  "totales": {
   "ingresos": 78292.28,
-  "costo_fijo": 64659.82,
+  "costo_fijo": 64930.23,
   "costo_variable": 9726.14,
-  "resultado": 311.85,
-  "movimientos": 520
+  "resultado": 41.44,
+  "movimientos": 522
  }
 }

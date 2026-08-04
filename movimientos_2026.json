@@ -8318,5 +8318,37 @@
   "categoria": "Internet",
   "detalle": "INTERNET ÚLTIMO DANIEL DARQUEA",
   "tipo_original": "https://drive.google.com/file/d/1owbZwso-bHoR8GOhLSOi4kmagmrkbFvh/view?usp=drivesdk"
+ },
+ {
+  "fecha": "03/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00519",
+  "descripcion": "PAGO IMPUESTOS",
+  "ingreso": 0.0,
+  "egreso": 270.41,
+  "neto": -270.41,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Impuestos y legal",
+  "categoria": "Impuestos",
+  "detalle": "PAGO IMPUESTOS",
+  "tipo_original": "https://drive.google.com/file/d/1VY8-rYn7qIU2lFfyCiDmGyz2hqDaJdJk/view?usp=drivesdk"
+ },
+ {
+  "fecha": "03/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00520",
+  "descripcion": "ENVIO A FLEXIAHORRO",
+  "ingreso": 0.0,
+  "egreso": 2500.0,
+  "neto": -2500.0,
+  "naturaleza": "NO OPERATIVO",
+  "grupo": "Movimiento entre cuentas propias",
+  "categoria": "Salida a FlexiAhorro",
+  "detalle": "ENVIO A FLEXIAHORRO",
+  "tipo_original": "https://drive.google.com/file/d/1NyzeppPrfHTqy4G9FuBHxrYkg6QIegkv/view?usp=drivesdk"
  }
 ]
