@@ -108,11 +108,11 @@
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
    "costo_fijo": 4357.6,
-   "costo_variable": 47.84,
-   "costo_total": 4405.44,
-   "resultado": -3847.19,
-   "margen_contribucion": 510.41,
-   "margen_pct": 91.4
+   "costo_variable": 67.98,
+   "costo_total": 4425.58,
+   "resultado": -3867.33,
+   "margen_contribucion": 490.27,
+   "margen_pct": 87.8
   }
  ],
  "grupos": {
@@ -174,7 +174,7 @@
    "may": -20.16,
    "jun": -56.88,
    "jul": -18.34,
-   "ago": -24.94
+   "ago": -45.08
   },
   "Pauta": {
    "ene": -574.03,
@@ -4197,8 +4197,8 @@
   {
    "grupo": "Movilizacion",
    "categoria": "Taxis / parqueo / viaticos",
-   "total": 223.08,
-   "n": 27,
+   "total": 243.22,
+   "n": 29,
    "por_mes": {
     "ene": 21.08,
     "feb": 0.0,
@@ -4207,7 +4207,7 @@
     "may": 20.16,
     "jun": 56.88,
     "jul": 18.34,
-    "ago": 24.94
+    "ago": 45.08
    },
    "detalle": {
     "ene": {
@@ -4376,6 +4376,16 @@
        "fecha": "03/08/2026",
        "desc": "TAXIS ALEJANDRO VACA",
        "importe": 10.46
+      },
+      {
+       "fecha": "04/08/2026",
+       "desc": "TAXIS ALE APONTE",
+       "importe": 9.61
+      },
+      {
+       "fecha": "04/08/2026",
+       "desc": "TAXIS KAREN PINOS",
+       "importe": 10.53
       }
      ],
      "razones": []
@@ -5063,8 +5073,8 @@
  "totales": {
   "ingresos": 78292.28,
   "costo_fijo": 64930.23,
-  "costo_variable": 9726.14,
-  "resultado": 41.44,
-  "movimientos": 522
+  "costo_variable": 9746.28,
+  "resultado": 21.3,
+  "movimientos": 524
  }
 }

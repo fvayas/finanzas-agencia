@@ -8350,5 +8350,37 @@
   "categoria": "Salida a FlexiAhorro",
   "detalle": "ENVIO A FLEXIAHORRO",
   "tipo_original": "https://drive.google.com/file/d/1NyzeppPrfHTqy4G9FuBHxrYkg6QIegkv/view?usp=drivesdk"
+ },
+ {
+  "fecha": "04/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00521",
+  "descripcion": "TAXIS ALE APONTE",
+  "ingreso": 0.0,
+  "egreso": 9.61,
+  "neto": -9.61,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Movilizacion",
+  "categoria": "Taxis / parqueo / viaticos",
+  "detalle": "Alejandra Aponte",
+  "tipo_original": "https://drive.google.com/file/d/1YeiWZ2V_nI2AKB_6zFeEQljpiTw5OJc4/view?usp=drivesdk"
+ },
+ {
+  "fecha": "04/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00522",
+  "descripcion": "TAXIS KAREN PINOS",
+  "ingreso": 0.0,
+  "egreso": 10.53,
+  "neto": -10.53,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Movilizacion",
+  "categoria": "Taxis / parqueo / viaticos",
+  "detalle": "Karen Pinos",
+  "tipo_original": "https://drive.google.com/file/d/1SQWKlpEMJkMGXq0s6otcKA_3TA3Rjdjw/view?usp=drivesdk"
  }
 ]
