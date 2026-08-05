@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- Envoltorio de la app de captura. Servida así, en página propia, Google
+     no pinta su franja de "creada por un usuario de Apps Script", y el
+     icono y el nombre quedan bien al guardarla en pantalla de inicio. -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Caja · Finanzas Agencia</title>
+<link rel="icon" href="icono-app.png">
+<link rel="apple-touch-icon" href="icono-app.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Caja">
+<meta name="theme-color" content="#14171A">
+<style>
+  html, body { margin: 0; height: 100%; background: #F6F6F2 }
+  @media (prefers-color-scheme: dark) { html, body { background: #101214 } }
+  iframe { border: 0; width: 100%; height: 100%; height: 100dvh; display: block }
+</style>
+</head>
+<body>
+<iframe src="https://script.google.com/macros/s/AKfycbxjosg2HpvgMIVQuqL9Yc79t9stcvfbOSTQhW0b1SKhrUA_WWL1caOIH-Nq8YVkXz1p/exec"
+        allow="camera"></iframe>
+</body>
+</html>

@@ -32,6 +32,9 @@ function doGet() {
     .evaluate()
     .setTitle("Caja · Finanzas Agencia")
     .setFaviconUrl("https://fvayas.github.io/finanzas-agencia/icono-app.png")
+    // permite servir la app dentro de caja.html (la página envoltorio en
+    // GitHub Pages): así no aparece la franja de aviso de Apps Script
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
     .addMetaTag("viewport", "width=device-width, initial-scale=1");
 }
 
