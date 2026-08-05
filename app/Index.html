@@ -313,11 +313,11 @@
 
   </div>
 
-  <div class="bloque" id="ult" style="display:none">
+  <div class="bloque" id="ult">
     <span class="rotulo">Últimos registros</span>
     <div id="ult-lista"></div>
-    <div class="pista">Solo el último se puede anular: el saldo corrido
-      de las filas siguientes depende de él.</div>
+    <div class="pista" id="ult-pie">Escribe tu clave (arriba) y aquí
+      aparecen los últimos movimientos del libro.</div>
   </div>
 
   <div class="bloque">
@@ -329,7 +329,7 @@
   </div>
 
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v19</div>
+    letter-spacing:.08em; margin-top:4px">v20</div>
 </form>
 
 <script>
@@ -399,7 +399,7 @@
     if (v !== limpio) $("monto").value = limpio;
   });
   // sello de versión, para saber qué copia carga el teléfono
-  console.log("app v19");
+  console.log("app v20");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
@@ -549,7 +549,8 @@
         }
         caja.appendChild(el);
       });
-      $("ult").style.display = "block";
+      $("ult-pie").textContent = "Solo el último se puede anular: " +
+        "el saldo corrido de las filas siguientes depende de él.";
     }).withFailureHandler(() => {}).ultimos(clave.value);
   }
   cargaExtras();
