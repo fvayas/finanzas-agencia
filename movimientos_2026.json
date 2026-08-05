@@ -8382,5 +8382,21 @@
   "categoria": "Taxis / parqueo / viaticos",
   "detalle": "Karen Pinos",
   "tipo_original": "https://drive.google.com/file/d/1SQWKlpEMJkMGXq0s6otcKA_3TA3Rjdjw/view?usp=drivesdk"
+ },
+ {
+  "fecha": "04/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00523",
+  "descripcion": "ARRIENDO FRIENDS GUIDES",
+  "ingreso": 70.0,
+  "egreso": 0.0,
+  "neto": 70.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Otros ingresos",
+  "categoria": "Subarriendo oficina",
+  "detalle": "Friends Guides",
+  "tipo_original": "https://drive.google.com/file/d/1r048IFzZarsn98oLKG5Zb2ghMXYljDie/view?usp=drivesdk"
  }
 ]
