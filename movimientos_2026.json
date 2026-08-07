@@ -8398,5 +8398,37 @@
   "categoria": "Subarriendo oficina",
   "detalle": "Friends Guides",
   "tipo_original": "https://drive.google.com/file/d/1r048IFzZarsn98oLKG5Zb2ghMXYljDie/view?usp=drivesdk"
+ },
+ {
+  "fecha": "06/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00524",
+  "descripcion": "PAGO UNINOVA",
+  "ingreso": 900.0,
+  "egreso": 0.0,
+  "neto": 900.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "Uninova",
+  "detalle": "PAGO UNINOVA",
+  "tipo_original": "https://drive.google.com/file/d/1RmYkCWxxt4BkTCnR9x4w1Hr5D4azMPCI/view?usp=drivesdk"
+ },
+ {
+  "fecha": "06/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00525",
+  "descripcion": "WEB UNINOVA",
+  "ingreso": 247.0,
+  "egreso": 0.0,
+  "neto": 247.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Produccion",
+  "categoria": "Proyecto puntual",
+  "detalle": "Uninova",
+  "tipo_original": "https://drive.google.com/file/d/1EQG1QOt6e1JKaz5lPhPvP3b_aSTIkzeq/view?usp=drivesdk"
  }
 ]
