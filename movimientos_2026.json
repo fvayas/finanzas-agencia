@@ -8478,5 +8478,53 @@
   "categoria": "Friends Guides",
   "detalle": "PAGO FRIENDS GUIDES",
   "tipo_original": "https://drive.google.com/file/d/19d66cGM0-DjuFdonf8BdRDoExi8HBfHm/view?usp=drivesdk"
+ },
+ {
+  "fecha": "07/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00529",
+  "descripcion": "PAGO APC JUNIO",
+  "ingreso": 575.0,
+  "egreso": 0.0,
+  "neto": 575.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "APC",
+  "detalle": "PAGO APC JUNIO",
+  "tipo_original": "https://drive.google.com/file/d/1YWjSeavhY346zwLvpN-w7Vop8J1sP0QU/view?usp=drivesdk"
+ },
+ {
+  "fecha": "07/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00530",
+  "descripcion": "INGRESO DE FLEXIAHORRO PARA PAGO PAUTAS",
+  "ingreso": 1100.0,
+  "egreso": 0.0,
+  "neto": 1100.0,
+  "naturaleza": "NO OPERATIVO",
+  "grupo": "Movimiento entre cuentas propias",
+  "categoria": "Entrada desde FlexiAhorro",
+  "detalle": "INGRESO DE FLEXIAHORRO PARA PAGO PAUTAS",
+  "tipo_original": "https://drive.google.com/file/d/1qgLO2nklOu4WLsW4TI3yx2ntbiB3vcAw/view?usp=drivesdk"
+ },
+ {
+  "fecha": "07/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00531",
+  "descripcion": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+  "ingreso": 0.0,
+  "egreso": 1697.58,
+  "neto": -1697.58,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Pauta",
+  "categoria": "Pauta pagada",
+  "detalle": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+  "tipo_original": "https://drive.google.com/file/d/1TdbuOUDJdbQ0dDHfy2B9GbnQMtHL2t5G/view?usp=drivesdk"
  }
 ]

@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 1895.25,
+   "ingresos": 2470.25,
    "pauta_cobrada": 0.0,
-   "pauta_pagada": -0.0,
-   "pauta_neta": -0.0,
+   "pauta_pagada": 1697.58,
+   "pauta_neta": 1697.58,
    "costo_fijo": 4357.6,
    "costo_variable": 67.98,
-   "costo_total": 4425.58,
-   "resultado": -2530.33,
-   "margen_contribucion": 1827.27,
-   "margen_pct": 96.4
+   "costo_total": 6123.16,
+   "resultado": -3652.91,
+   "margen_contribucion": 704.69,
+   "margen_pct": 28.5
   }
  ],
  "grupos": {
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 1578.25
+   "ago": 2153.25
   },
   "Equipos": {
    "ene": -75.0,
@@ -184,7 +184,7 @@
    "may": -1763.62,
    "jun": -1418.0,
    "jul": -2435.17,
-   "ago": 0.0
+   "ago": -1697.58
   },
   "Freelance y produccion": {
    "ene": -202.0,
@@ -336,7 +336,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": 2642.0
+   "ago": 3742.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -408,7 +408,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 10.2,
+   "pct": 10.1,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -428,7 +428,7 @@
   {
    "cliente": "Uninova",
    "total": 7803.0,
-   "pct": 9.8,
+   "pct": 9.7,
    "pagos": 10,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -448,7 +448,7 @@
   {
    "cliente": "Speedy",
    "total": 5802.0,
-   "pct": 7.3,
+   "pct": 7.2,
    "pagos": 3,
    "meses_activo": 2,
    "primer_mes": "jun",
@@ -508,7 +508,7 @@
   {
    "cliente": "Samari",
    "total": 5329.49,
-   "pct": 6.7,
+   "pct": 6.6,
    "pagos": 9,
    "meses_activo": 6,
    "primer_mes": "ene",
@@ -608,7 +608,7 @@
   {
    "cliente": "Confia",
    "total": 3000.0,
-   "pct": 3.8,
+   "pct": 3.7,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "ene",
@@ -766,9 +766,29 @@
    }
   },
   {
+   "cliente": "APC",
+   "total": 1725.0,
+   "pct": 2.1,
+   "pagos": 3,
+   "meses_activo": 3,
+   "primer_mes": "abr",
+   "ultimo_mes": "ago",
+   "fee_promedio": 575.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 575.0,
+    "may": 575.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 575.0
+   }
+  },
+  {
    "cliente": "Casa del Verde",
    "total": 1720.0,
-   "pct": 2.2,
+   "pct": 2.1,
    "pagos": 4,
    "meses_activo": 4,
    "primer_mes": "abr",
@@ -826,29 +846,9 @@
    }
   },
   {
-   "cliente": "APC",
-   "total": 1150.0,
-   "pct": 1.4,
-   "pagos": 2,
-   "meses_activo": 2,
-   "primer_mes": "abr",
-   "ultimo_mes": "may",
-   "fee_promedio": 575.0,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 575.0,
-    "may": 575.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 0.0
-   }
-  },
-  {
    "cliente": "La Tartuca",
    "total": 1000.0,
-   "pct": 1.3,
+   "pct": 1.2,
    "pagos": 1,
    "meses_activo": 1,
    "primer_mes": "feb",
@@ -888,7 +888,7 @@
   {
    "cliente": "Friends Guides",
    "total": 840.0,
-   "pct": 1.1,
+   "pct": 1.0,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -987,9 +987,9 @@
   }
  ],
  "concentracion": {
-  "top1": 10.2,
-  "top3": 27.3,
-  "top5": 40.9
+  "top1": 10.1,
+  "top3": 27.0,
+  "top5": 40.6
  },
  "equipo": [
   {
@@ -2982,8 +2982,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Entrada desde FlexiAhorro",
-   "total": -52507.54,
-   "n": 51,
+   "total": -53607.54,
+   "n": 52,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -2992,7 +2992,7 @@
     "may": -7655.0,
     "jun": -13405.13,
     "jul": -13456.99,
-    "ago": -7000.0
+    "ago": -8100.0
    },
    "detalle": {
     "mar": {
@@ -3276,6 +3276,11 @@
        "fecha": "03/08/2026",
        "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SUELDOS",
        "importe": -7000.0
+      },
+      {
+       "fecha": "07/08/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO PAUTAS",
+       "importe": -1100.0
       }
      ],
      "razones": []
@@ -3285,8 +3290,8 @@
   {
    "grupo": "Pauta",
    "categoria": "Pauta pagada",
-   "total": 10339.59,
-   "n": 7,
+   "total": 12037.17,
+   "n": 8,
    "por_mes": {
     "ene": 574.03,
     "feb": 1451.48,
@@ -3295,7 +3300,7 @@
     "may": 1763.62,
     "jun": 1418.0,
     "jul": 2435.17,
-    "ago": 0.0
+    "ago": 1697.58
    },
    "detalle": {
     "ene": {
@@ -3364,6 +3369,16 @@
        "fecha": "13/07/2026",
        "desc": "REEMBOLSO PAUTA FRANCISCO VAYAS",
        "importe": 2435.17
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "07/08/2026",
+       "desc": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+       "importe": 1697.58
       }
      ],
      "razones": []
@@ -5091,10 +5106,10 @@
   }
  ],
  "totales": {
-  "ingresos": 79629.28,
+  "ingresos": 80204.28,
   "costo_fijo": 64930.23,
   "costo_variable": 9746.28,
-  "resultado": 1358.3,
-  "movimientos": 530
+  "resultado": 235.72,
+  "movimientos": 533
  }
 }
