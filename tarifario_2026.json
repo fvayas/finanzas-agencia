@@ -7001,8 +7001,8 @@
    "ret_ir": 0,
    "ret_iva": 0,
    "cambios": {},
-   "cobrado_total": 720.0,
-   "honorario_total": 720.0,
+   "cobrado_total": 840.0,
+   "honorario_total": 840.0,
    "pauta_total": 0.0,
    "puntual_total": 0.0,
    "por_mes": {
@@ -7049,18 +7049,18 @@
      "cobrado": 120.0
     },
     "ago": {
-     "honorario": 0.0,
+     "honorario": 120.0,
      "pauta": 0.0,
      "puntual": 0.0,
-     "cobrado": 0.0
+     "cobrado": 120.0
     }
    },
-   "pendiente": 360.0,
-   "cobro": "3 meses",
-   "cubierto_hasta": 4,
-   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
+   "pendiente": 240.0,
+   "cobro": "2 meses",
+   "cubierto_hasta": 5,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": 3.0,
+   "atraso_meses": 2.0,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -7178,16 +7178,27 @@
      "esperado": 120.0
     },
     "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "07/08/2026",
+       "desc": "PAGO FRIENDS GUIDES",
+       "importe": 120.0,
+       "tipo": "honorario",
+       "honorario": 120.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 120.0,
+       "desvio": 0.0
+      }
      ],
+     "razones": [],
      "esperado": 120.0
     }
    },
-   "meses_activo": 6,
+   "meses_activo": 7,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
+   "ultimo_mes": "ago",
    "cuadra": true,
    "desvios": [],
    "dobles": [],
@@ -7257,6 +7268,18 @@
      "mes": "jul",
      "fecha": "20/07/2026",
      "desc": "PAGO FEE FRIENDS ABRIL",
+     "importe": 120.0,
+     "tipo": "honorario",
+     "honorario": 120.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 120.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "07/08/2026",
+     "desc": "PAGO FRIENDS GUIDES",
      "importe": 120.0,
      "tipo": "honorario",
      "honorario": 120.0,
@@ -8141,17 +8164,17 @@
   }
  ],
  "totales": {
-  "honorario": 72919.17,
+  "honorario": 73039.17,
   "pauta": 6745.12,
   "puntual": 5547.87,
-  "cobrado": 85212.16
+  "cobrado": 85332.16
  },
  "honorarios_recurrentes_mes": 12619.98,
  "retenido_mes": 825.02,
  "avisos": [
   "Cobro de marzo sin identificar: no está en el tarifario (cobrado 653.00)"
  ],
- "pendiente_cobro": 6862.23,
+ "pendiente_cobro": 6742.23,
  "cuentas_al_dia": 13,
  "cuentas_activas": 22
 }

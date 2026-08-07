@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 1775.25,
+   "ingresos": 1895.25,
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
    "costo_fijo": 4357.6,
    "costo_variable": 67.98,
    "costo_total": 4425.58,
-   "resultado": -2650.33,
-   "margen_contribucion": 1707.27,
-   "margen_pct": 96.2
+   "resultado": -2530.33,
+   "margen_contribucion": 1827.27,
+   "margen_pct": 96.4
   }
  ],
  "grupos": {
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 1458.25
+   "ago": 1578.25
   },
   "Equipos": {
    "ene": -75.0,
@@ -568,7 +568,7 @@
   {
    "cliente": "Cigarra",
    "total": 3622.5,
-   "pct": 4.6,
+   "pct": 4.5,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -887,12 +887,12 @@
   },
   {
    "cliente": "Friends Guides",
-   "total": 720.0,
-   "pct": 0.9,
-   "pagos": 6,
-   "meses_activo": 6,
+   "total": 840.0,
+   "pct": 1.1,
+   "pagos": 7,
+   "meses_activo": 7,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
+   "ultimo_mes": "ago",
    "fee_promedio": 120.0,
    "por_mes": {
     "ene": 120.0,
@@ -902,7 +902,7 @@
     "may": 120.0,
     "jun": 0.0,
     "jul": 120.0,
-    "ago": 0.0
+    "ago": 120.0
    }
   },
   {
@@ -5091,10 +5091,10 @@
   }
  ],
  "totales": {
-  "ingresos": 79509.28,
+  "ingresos": 79629.28,
   "costo_fijo": 64930.23,
   "costo_variable": 9746.28,
-  "resultado": 1238.3,
-  "movimientos": 529
+  "resultado": 1358.3,
+  "movimientos": 530
  }
 }
