@@ -8430,5 +8430,37 @@
   "categoria": "Proyecto puntual",
   "detalle": "Uninova",
   "tipo_original": "https://drive.google.com/file/d/1EQG1QOt6e1JKaz5lPhPvP3b_aSTIkzeq/view?usp=drivesdk"
+ },
+ {
+  "fecha": "07/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00526",
+  "descripcion": "ENVIO A FLEXIAHORRO DÉBITO AUTOMÁTICO",
+  "ingreso": 0.0,
+  "egreso": 20.0,
+  "neto": -20.0,
+  "naturaleza": "NO OPERATIVO",
+  "grupo": "Movimiento entre cuentas propias",
+  "categoria": "Salida a FlexiAhorro",
+  "detalle": "ENVIO A FLEXIAHORRO DÉBITO AUTOMÁTICO",
+  "tipo_original": "https://drive.google.com/file/d/1y3jLEVZVImX3T85rON067KtvdKURWYTs/view?usp=drivesdk"
+ },
+ {
+  "fecha": "07/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00527",
+  "descripcion": "ENVIO A FLEXIAHORRO",
+  "ingreso": 0.0,
+  "egreso": 1271.0,
+  "neto": -1271.0,
+  "naturaleza": "NO OPERATIVO",
+  "grupo": "Movimiento entre cuentas propias",
+  "categoria": "Salida a FlexiAhorro",
+  "detalle": "ENVIO A FLEXIAHORRO",
+  "tipo_original": "https://drive.google.com/file/d/1e1SdeDbuJbYC7WHliNzCgw4ZmvayZBAX/view?usp=drivesdk"
  }
 ]

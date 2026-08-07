@@ -336,7 +336,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": 3933.0
+   "ago": 2642.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -2589,8 +2589,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 58087.0,
-   "n": 65,
+   "total": 59378.0,
+   "n": 67,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2599,7 +2599,7 @@
     "may": 7425.0,
     "jun": 15722.0,
     "jul": 14357.0,
-    "ago": 3067.0
+    "ago": 4358.0
    },
    "detalle": {
     "ene": {
@@ -2963,6 +2963,16 @@
        "fecha": "03/08/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 2500.0
+      },
+      {
+       "fecha": "07/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO DÉBITO AUTOMÁTICO",
+       "importe": 20.0
+      },
+      {
+       "fecha": "07/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1271.0
       }
      ],
      "razones": []
@@ -5085,6 +5095,6 @@
   "costo_fijo": 64930.23,
   "costo_variable": 9746.28,
   "resultado": 1238.3,
-  "movimientos": 527
+  "movimientos": 529
  }
 }
