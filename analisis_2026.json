@@ -107,12 +107,12 @@
    "pauta_cobrada": 0.0,
    "pauta_pagada": 1697.58,
    "pauta_neta": 1697.58,
-   "costo_fijo": 4357.6,
-   "costo_variable": 67.98,
-   "costo_total": 6123.16,
-   "resultado": -3652.91,
-   "margen_contribucion": 704.69,
-   "margen_pct": 28.5
+   "costo_fijo": 4499.92,
+   "costo_variable": 87.98,
+   "costo_total": 6285.48,
+   "resultado": -3815.23,
+   "margen_contribucion": 684.69,
+   "margen_pct": 27.7
   }
  ],
  "grupos": {
@@ -194,7 +194,7 @@
    "may": -20.0,
    "jun": -860.0,
    "jul": -1092.91,
-   "ago": -20.0
+   "ago": -40.0
   },
   "Nomina variable": {
    "ene": -24.93,
@@ -234,7 +234,7 @@
    "may": -11.91,
    "jun": -11.91,
    "jul": -11.91,
-   "ago": 0.0
+   "ago": -11.91
   },
   "Nomina socios": {
    "ene": -3000.0,
@@ -294,7 +294,7 @@
    "may": -135.1,
    "jun": -130.0,
    "jul": -130.0,
-   "ago": 0.0
+   "ago": -130.41
   },
   "Ingresos - Pauta": {
    "ene": 0.0,
@@ -336,7 +336,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": 3742.0
+   "ago": 4742.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -2583,6 +2583,43 @@
      "cmp_base": false
     }
    }
+  },
+  {
+   "persona": "Nicole Cuesta",
+   "grupo": "Pasantias",
+   "total": 130.41,
+   "meses": 1,
+   "promedio_mes": 130.41,
+   "base": null,
+   "primer_mes": "ago",
+   "ultimo_mes": "ago",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 130.41
+   },
+   "detalle": {
+    "ago": {
+     "movs": [
+      {
+       "fecha": "12/08/2026",
+       "importe": 130.41,
+       "desc": "SUELDO NICOLE CUESTA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": false
+    }
+   }
   }
  ],
  "gastos": [
@@ -2982,8 +3019,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Entrada desde FlexiAhorro",
-   "total": -53607.54,
-   "n": 52,
+   "total": -54607.54,
+   "n": 53,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -2992,7 +3029,7 @@
     "may": -7655.0,
     "jun": -13405.13,
     "jul": -13456.99,
-    "ago": -8100.0
+    "ago": -9100.0
    },
    "detalle": {
     "mar": {
@@ -3281,6 +3318,11 @@
        "fecha": "07/08/2026",
        "desc": "INGRESO DE FLEXIAHORRO PARA PAGO PAUTAS",
        "importe": -1100.0
+      },
+      {
+       "fecha": "12/08/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO NICOLE Y NICO ENCALADA",
+       "importe": -1000.0
       }
      ],
      "razones": []
@@ -4697,8 +4739,8 @@
   {
    "grupo": "Software y herramientas",
    "categoria": "Suscripciones",
-   "total": 83.37,
-   "n": 7,
+   "total": 95.28,
+   "n": 8,
    "por_mes": {
     "ene": 11.91,
     "feb": 11.91,
@@ -4707,7 +4749,7 @@
     "may": 11.91,
     "jun": 11.91,
     "jul": 11.91,
-    "ago": 0.0
+    "ago": 11.91
    },
    "detalle": {
     "ene": {
@@ -4774,6 +4816,16 @@
      "movs": [
       {
        "fecha": "31/07/2026",
+       "desc": "PAGO SISTEMA CONTABLE",
+       "importe": 11.91
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "12/08/2026",
        "desc": "PAGO SISTEMA CONTABLE",
        "importe": 11.91
       }
@@ -4860,6 +4912,34 @@
        "fecha": "30/01/2026",
        "desc": "SOFIA GARZON FLORES NANAE",
        "importe": 22.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Gasto de proyecto",
+   "total": 20.0,
+   "n": 1,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 20.0
+   },
+   "detalle": {
+    "ago": {
+     "movs": [
+      {
+       "fecha": "12/08/2026",
+       "desc": "ACTUALIZACIÓN WEB FIAMMINGO",
+       "importe": 20.0
       }
      ],
      "razones": []
@@ -5107,9 +5187,9 @@
  ],
  "totales": {
   "ingresos": 80204.28,
-  "costo_fijo": 64930.23,
-  "costo_variable": 9746.28,
-  "resultado": 235.72,
-  "movimientos": 533
+  "costo_fijo": 65072.55,
+  "costo_variable": 9766.28,
+  "resultado": 73.4,
+  "movimientos": 537
  }
 }
