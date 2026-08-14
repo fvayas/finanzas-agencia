@@ -3627,6 +3627,350 @@
    ]
   },
   {
+   "cliente": "Onco Ambato",
+   "estado": "activo",
+   "nota": "",
+   "fee": 300,
+   "fee_inicial": 300,
+   "con_iva": true,
+   "facturado_mes": 345.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 345.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 2640.0,
+   "honorario_total": 2640.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 985.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 985.0
+    },
+    "mar": {
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 340.0
+    },
+    "abr": {
+     "honorario": 335.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 335.0
+    },
+    "may": {
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 340.0
+    },
+    "jun": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "ago": {
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 340.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": 0.3,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 345.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "02/02/2026",
+       "desc": "ONCO AMBATO DICIEMBRE",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -45.0
+      },
+      {
+       "mes": "feb",
+       "fecha": "12/02/2026",
+       "desc": "ONCO AMBATO  ENERO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "feb",
+       "fecha": "24/02/2026",
+       "desc": "ONCO AMBATO FEBRERO",
+       "importe": 340.0,
+       "tipo": "honorario",
+       "honorario": 340.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -5.0
+      }
+     ],
+     "razones": [
+      "llegó en 3 giros distintos"
+     ],
+     "esperado": 345.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "16/03/2026",
+       "desc": "PAGO onco ambato febrero",
+       "importe": 340.0,
+       "tipo": "honorario",
+       "honorario": 340.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -5.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "20/04/2026",
+       "desc": "ONCO AMBATO MARZO",
+       "importe": 335.0,
+       "tipo": "honorario",
+       "honorario": 335.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -10.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "19/05/2026",
+       "desc": "PAGO ONCO AMBATO ABRIL",
+       "importe": 340.0,
+       "tipo": "honorario",
+       "honorario": 340.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -5.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "jun": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 345.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "27/07/2026",
+       "desc": "ONCO AMBATO JUNIO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -45.0
+      }
+     ],
+     "razones": [
+      "cobró por debajo de su tarifa"
+     ],
+     "esperado": 345.0
+    },
+    "ago": {
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "14/08/2026",
+       "desc": "PAGO ONCO AMBATO JULIO",
+       "importe": 340.0,
+       "tipo": "honorario",
+       "honorario": 340.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": -5.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    }
+   },
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "cuadra": false,
+   "desvios": [
+    {
+     "mes": "feb",
+     "dif": 640.0,
+     "esperado": 345.0,
+     "real": 985.0
+    },
+    {
+     "mes": "jul",
+     "dif": -45.0,
+     "esperado": 345.0,
+     "real": 300.0
+    }
+   ],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "02/02/2026",
+     "desc": "ONCO AMBATO DICIEMBRE",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -45.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "12/02/2026",
+     "desc": "ONCO AMBATO  ENERO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "24/02/2026",
+     "desc": "ONCO AMBATO FEBRERO",
+     "importe": 340.0,
+     "tipo": "honorario",
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -5.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "16/03/2026",
+     "desc": "PAGO onco ambato febrero",
+     "importe": 340.0,
+     "tipo": "honorario",
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -5.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "20/04/2026",
+     "desc": "ONCO AMBATO MARZO",
+     "importe": 335.0,
+     "tipo": "honorario",
+     "honorario": 335.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -10.0
+    },
+    {
+     "mes": "may",
+     "fecha": "19/05/2026",
+     "desc": "PAGO ONCO AMBATO ABRIL",
+     "importe": 340.0,
+     "tipo": "honorario",
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -5.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "27/07/2026",
+     "desc": "ONCO AMBATO JUNIO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -45.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "14/08/2026",
+     "desc": "PAGO ONCO AMBATO JULIO",
+     "importe": 340.0,
+     "tipo": "honorario",
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": -5.0
+    }
+   ]
+  },
+  {
    "cliente": "Absolute",
    "estado": "activo",
    "nota": "",
@@ -4228,327 +4572,6 @@
      "puntual": 0.0,
      "esperado": 339.5,
      "desvio": -0.5
-    }
-   ]
-  },
-  {
-   "cliente": "Onco Ambato",
-   "estado": "activo",
-   "nota": "",
-   "fee": 300,
-   "fee_inicial": 300,
-   "con_iva": true,
-   "facturado_mes": 345.0,
-   "retenido_mes": 0.0,
-   "a_cobrar_mes": 345.0,
-   "ret_ir": 0,
-   "ret_iva": 0,
-   "cambios": {},
-   "cobrado_total": 2300.0,
-   "honorario_total": 2300.0,
-   "pauta_total": 0.0,
-   "puntual_total": 0.0,
-   "por_mes": {
-    "ene": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "feb": {
-     "honorario": 985.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 985.0
-    },
-    "mar": {
-     "honorario": 340.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 340.0
-    },
-    "abr": {
-     "honorario": 335.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 335.0
-    },
-    "may": {
-     "honorario": 340.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 340.0
-    },
-    "jun": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "jul": {
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 300.0
-    },
-    "ago": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    }
-   },
-   "pendiente": 345.0,
-   "cobro": "1 mes",
-   "cubierto_hasta": 6,
-   "cobro_fuente": "periodo declarado en el último cobro",
-   "cobro_nota": "",
-   "atraso_meses": 1.3,
-   "ficha_mes": {
-    "ene": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 345.0
-    },
-    "feb": {
-     "movs": [
-      {
-       "mes": "feb",
-       "fecha": "02/02/2026",
-       "desc": "ONCO AMBATO DICIEMBRE",
-       "importe": 300.0,
-       "tipo": "honorario",
-       "honorario": 300.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": -45.0
-      },
-      {
-       "mes": "feb",
-       "fecha": "12/02/2026",
-       "desc": "ONCO AMBATO  ENERO",
-       "importe": 345.0,
-       "tipo": "honorario",
-       "honorario": 345.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": 0.0
-      },
-      {
-       "mes": "feb",
-       "fecha": "24/02/2026",
-       "desc": "ONCO AMBATO FEBRERO",
-       "importe": 340.0,
-       "tipo": "honorario",
-       "honorario": 340.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": -5.0
-      }
-     ],
-     "razones": [
-      "llegó en 3 giros distintos"
-     ],
-     "esperado": 345.0
-    },
-    "mar": {
-     "movs": [
-      {
-       "mes": "mar",
-       "fecha": "16/03/2026",
-       "desc": "PAGO onco ambato febrero",
-       "importe": 340.0,
-       "tipo": "honorario",
-       "honorario": 340.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": -5.0
-      }
-     ],
-     "razones": [],
-     "esperado": 345.0
-    },
-    "abr": {
-     "movs": [
-      {
-       "mes": "abr",
-       "fecha": "20/04/2026",
-       "desc": "ONCO AMBATO MARZO",
-       "importe": 335.0,
-       "tipo": "honorario",
-       "honorario": 335.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": -10.0
-      }
-     ],
-     "razones": [],
-     "esperado": 345.0
-    },
-    "may": {
-     "movs": [
-      {
-       "mes": "may",
-       "fecha": "19/05/2026",
-       "desc": "PAGO ONCO AMBATO ABRIL",
-       "importe": 340.0,
-       "tipo": "honorario",
-       "honorario": 340.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": -5.0
-      }
-     ],
-     "razones": [],
-     "esperado": 345.0
-    },
-    "jun": {
-     "movs": [],
-     "razones": [
-      "no hubo cobro este mes; se regularizó en otro"
-     ],
-     "esperado": 345.0
-    },
-    "jul": {
-     "movs": [
-      {
-       "mes": "jul",
-       "fecha": "27/07/2026",
-       "desc": "ONCO AMBATO JUNIO",
-       "importe": 300.0,
-       "tipo": "honorario",
-       "honorario": 300.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": -45.0
-      }
-     ],
-     "razones": [
-      "cobró por debajo de su tarifa"
-     ],
-     "esperado": 345.0
-    },
-    "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
-     ],
-     "esperado": 345.0
-    }
-   },
-   "meses_activo": 5,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "cuadra": false,
-   "desvios": [
-    {
-     "mes": "feb",
-     "dif": 640.0,
-     "esperado": 345.0,
-     "real": 985.0
-    },
-    {
-     "mes": "jul",
-     "dif": -45.0,
-     "esperado": 345.0,
-     "real": 300.0
-    }
-   ],
-   "dobles": [],
-   "inferido": "",
-   "detalle": [
-    {
-     "mes": "feb",
-     "fecha": "02/02/2026",
-     "desc": "ONCO AMBATO DICIEMBRE",
-     "importe": 300.0,
-     "tipo": "honorario",
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": -45.0
-    },
-    {
-     "mes": "feb",
-     "fecha": "12/02/2026",
-     "desc": "ONCO AMBATO  ENERO",
-     "importe": 345.0,
-     "tipo": "honorario",
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "feb",
-     "fecha": "24/02/2026",
-     "desc": "ONCO AMBATO FEBRERO",
-     "importe": 340.0,
-     "tipo": "honorario",
-     "honorario": 340.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": -5.0
-    },
-    {
-     "mes": "mar",
-     "fecha": "16/03/2026",
-     "desc": "PAGO onco ambato febrero",
-     "importe": 340.0,
-     "tipo": "honorario",
-     "honorario": 340.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": -5.0
-    },
-    {
-     "mes": "abr",
-     "fecha": "20/04/2026",
-     "desc": "ONCO AMBATO MARZO",
-     "importe": 335.0,
-     "tipo": "honorario",
-     "honorario": 335.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": -10.0
-    },
-    {
-     "mes": "may",
-     "fecha": "19/05/2026",
-     "desc": "PAGO ONCO AMBATO ABRIL",
-     "importe": 340.0,
-     "tipo": "honorario",
-     "honorario": 340.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": -5.0
-    },
-    {
-     "mes": "jul",
-     "fecha": "27/07/2026",
-     "desc": "ONCO AMBATO JUNIO",
-     "importe": 300.0,
-     "tipo": "honorario",
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": -45.0
     }
    ]
   },
@@ -8187,17 +8210,17 @@
   }
  ],
  "totales": {
-  "honorario": 73614.17,
+  "honorario": 73954.17,
   "pauta": 6745.12,
   "puntual": 5547.87,
-  "cobrado": 85907.16
+  "cobrado": 86247.16
  },
  "honorarios_recurrentes_mes": 12619.98,
  "retenido_mes": 825.02,
  "avisos": [
   "Cobro de marzo sin identificar: no está en el tarifario (cobrado 653.00)"
  ],
- "pendiente_cobro": 6167.23,
- "cuentas_al_dia": 13,
+ "pendiente_cobro": 5822.23,
+ "cuentas_al_dia": 14,
  "cuentas_activas": 22
 }

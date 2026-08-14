@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 2470.25,
+   "ingresos": 2810.25,
    "pauta_cobrada": 0.0,
    "pauta_pagada": 1697.58,
    "pauta_neta": 1697.58,
-   "costo_fijo": 4499.92,
-   "costo_variable": 87.98,
-   "costo_total": 6285.48,
-   "resultado": -3815.23,
-   "margen_contribucion": 684.69,
-   "margen_pct": 27.7
+   "costo_fijo": 4999.92,
+   "costo_variable": 95.12,
+   "costo_total": 6792.62,
+   "resultado": -3982.37,
+   "margen_contribucion": 1017.55,
+   "margen_pct": 36.2
   }
  ],
  "grupos": {
@@ -124,7 +124,7 @@
    "may": -4934.07,
    "jun": -5577.54,
    "jul": -5912.16,
-   "ago": -3648.66
+   "ago": -4148.66
   },
   "Estructura": {
    "ene": -588.35,
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 2153.25
+   "ago": 2493.25
   },
   "Equipos": {
    "ene": -75.0,
@@ -174,7 +174,7 @@
    "may": -20.16,
    "jun": -56.88,
    "jul": -18.34,
-   "ago": -45.08
+   "ago": -52.22
   },
   "Pauta": {
    "ene": -574.03,
@@ -336,7 +336,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": 4742.0
+   "ago": 3982.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -468,7 +468,7 @@
   {
    "cliente": "Fiammingo",
    "total": 5520.0,
-   "pct": 6.9,
+   "pct": 6.8,
    "pagos": 6,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -488,7 +488,7 @@
   {
    "cliente": "Velsana",
    "total": 5345.0,
-   "pct": 6.7,
+   "pct": 6.6,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "ene",
@@ -528,7 +528,7 @@
   {
    "cliente": "Flota Imbabura",
    "total": 3910.51,
-   "pct": 4.9,
+   "pct": 4.8,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -548,7 +548,7 @@
   {
    "cliente": "Nane Vestidos",
    "total": 3660.0,
-   "pct": 4.6,
+   "pct": 4.5,
    "pagos": 9,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -626,6 +626,26 @@
    }
   },
   {
+   "cliente": "Onco Ambato",
+   "total": 2640.0,
+   "pct": 3.3,
+   "pagos": 8,
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "fee_promedio": 440.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 985.0,
+    "mar": 340.0,
+    "abr": 335.0,
+    "may": 340.0,
+    "jun": 0.0,
+    "jul": 300.0,
+    "ago": 340.0
+   }
+  },
+  {
    "cliente": "Absolute",
    "total": 2400.0,
    "pct": 3.0,
@@ -662,26 +682,6 @@
     "may": 0.0,
     "jun": 679.0,
     "jul": 339.0,
-    "ago": 0.0
-   }
-  },
-  {
-   "cliente": "Onco Ambato",
-   "total": 2300.0,
-   "pct": 2.9,
-   "pagos": 7,
-   "meses_activo": 5,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "fee_promedio": 460.0,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 985.0,
-    "mar": 340.0,
-    "abr": 335.0,
-    "may": 340.0,
-    "jun": 0.0,
-    "jul": 300.0,
     "ago": 0.0
    }
   },
@@ -989,7 +989,7 @@
  "concentracion": {
   "top1": 10.1,
   "top3": 27.0,
-  "top5": 40.6
+  "top5": 40.4
  },
  "equipo": [
   {
@@ -2091,6 +2091,92 @@
    }
   },
   {
+   "persona": "Marissa Alban",
+   "grupo": "Nomina fija",
+   "total": 2002.5,
+   "meses": 4,
+   "promedio_mes": 500.62,
+   "base": 500.0,
+   "primer_mes": "may",
+   "ultimo_mes": "ago",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 500.0,
+    "jun": 500.0,
+    "jul": 502.5,
+    "ago": 500.0
+   },
+   "detalle": {
+    "may": {
+     "movs": [
+      {
+       "fecha": "13/05/2026",
+       "importe": 500.0,
+       "desc": "SUELDO MARISSA ALBAN"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "12/06/2026",
+       "importe": 500.0,
+       "desc": "PAGO SUELDO MARISSA ALBAN"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "13/07/2026",
+       "importe": 502.5,
+       "desc": "PAGO SUELDO MARISSA ALBAN"
+      }
+     ],
+     "razones": [
+      "ajuste menor: redondeo o días trabajados"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": 2.5
+     },
+     "vs_base": 2.5,
+     "cmp_base": true
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "14/08/2026",
+       "importe": 500.0,
+       "desc": "SUELDO MARISSA ALBAN"
+      }
+     ],
+     "razones": [
+      "vuelve a su sueldo habitual: el mes anterior llevaba extras"
+     ],
+     "delta": {
+      "vs": "jul",
+      "dif": -2.5
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
    "persona": "Karen Pinos",
    "grupo": "Nomina fija",
    "total": 1800.0,
@@ -2358,74 +2444,6 @@
    }
   },
   {
-   "persona": "Marissa Alban",
-   "grupo": "Nomina fija",
-   "total": 1502.5,
-   "meses": 3,
-   "promedio_mes": 500.83,
-   "base": 500.0,
-   "primer_mes": "may",
-   "ultimo_mes": "jul",
-   "activo_julio": true,
-   "liquidado": false,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 500.0,
-    "jun": 500.0,
-    "jul": 502.5,
-    "ago": 0.0
-   },
-   "detalle": {
-    "may": {
-     "movs": [
-      {
-       "fecha": "13/05/2026",
-       "importe": 500.0,
-       "desc": "SUELDO MARISSA ALBAN"
-      }
-     ],
-     "razones": [],
-     "delta": null,
-     "vs_base": 0.0,
-     "cmp_base": true
-    },
-    "jun": {
-     "movs": [
-      {
-       "fecha": "12/06/2026",
-       "importe": 500.0,
-       "desc": "PAGO SUELDO MARISSA ALBAN"
-      }
-     ],
-     "razones": [],
-     "delta": null,
-     "vs_base": 0.0,
-     "cmp_base": true
-    },
-    "jul": {
-     "movs": [
-      {
-       "fecha": "13/07/2026",
-       "importe": 502.5,
-       "desc": "PAGO SUELDO MARISSA ALBAN"
-      }
-     ],
-     "razones": [
-      "ajuste menor: redondeo o días trabajados"
-     ],
-     "delta": {
-      "vs": "jun",
-      "dif": 2.5
-     },
-     "vs_base": 2.5,
-     "cmp_base": true
-    }
-   }
-  },
-  {
    "persona": "Karla Jacome",
    "grupo": "Pasantias",
    "total": 802.32,
@@ -2626,8 +2644,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 59378.0,
-   "n": 67,
+   "total": 60138.0,
+   "n": 68,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2636,7 +2654,7 @@
     "may": 7425.0,
     "jun": 15722.0,
     "jul": 14357.0,
-    "ago": 4358.0
+    "ago": 5118.0
    },
    "detalle": {
     "ene": {
@@ -3010,6 +3028,11 @@
        "fecha": "07/08/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 1271.0
+      },
+      {
+       "fecha": "14/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 760.0
       }
      ],
      "razones": []
@@ -4264,8 +4287,8 @@
   {
    "grupo": "Movilizacion",
    "categoria": "Taxis / parqueo / viaticos",
-   "total": 243.22,
-   "n": 29,
+   "total": 250.36,
+   "n": 31,
    "por_mes": {
     "ene": 21.08,
     "feb": 0.0,
@@ -4274,7 +4297,7 @@
     "may": 20.16,
     "jun": 56.88,
     "jul": 18.34,
-    "ago": 45.08
+    "ago": 52.22
    },
    "detalle": {
     "ene": {
@@ -4453,6 +4476,16 @@
        "fecha": "04/08/2026",
        "desc": "TAXIS KAREN PINOS",
        "importe": 10.53
+      },
+      {
+       "fecha": "14/08/2026",
+       "desc": "TAXIS DANNA CARDENAS JULIO",
+       "importe": 7.11
+      },
+      {
+       "fecha": "14/08/2026",
+       "desc": "TAXIS FALTÓ DE DANNA",
+       "importe": 0.03
       }
      ],
      "razones": []
@@ -5186,10 +5219,10 @@
   }
  ],
  "totales": {
-  "ingresos": 80204.28,
-  "costo_fijo": 65072.55,
-  "costo_variable": 9766.28,
-  "resultado": 73.4,
-  "movimientos": 537
+  "ingresos": 80544.28,
+  "costo_fijo": 65572.55,
+  "costo_variable": 9773.42,
+  "resultado": -93.74,
+  "movimientos": 542
  }
 }
