@@ -168,13 +168,8 @@ tr.head-row:hover{background:none}
 #t-tarjeta{min-width:980px}
 
 /* sub-filas de desglose en tabla de gastos */
-tr.sub-row td{font-size:12px;color:var(--ink-2);background:var(--ink-soft);border-bottom:1px solid transparent}
+tr.sub-row td{font-size:12.5px;color:var(--ink-2);background:var(--ink-soft);border-bottom:1px solid transparent}
 tr.sub-row:last-child td{border-bottom:1px solid var(--line-soft)}
-.sub-label{display:flex;align-items:center;gap:6px;padding-left:16px}
-.tipo-pill{flex:none;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:3px;white-space:nowrap}
-.tipo-pill.sw{background:var(--accent-soft);color:var(--accent)}
-.tipo-pill.pt{background:var(--warn-soft);color:var(--warn)}
-.tipo-pill.of{background:var(--pos-soft);color:var(--pos)}
 
 /* escalera de conciliación: cómo se llega del flujo al saldo del banco */
 .escalera{
@@ -1709,18 +1704,23 @@ el("tiles").innerHTML = tiles.map(t=>`
          <td class="n muted">${g.n}</td></tr>`;
       // desglose pauta: los conceptos que componen el adelanto mensual
       if (g.grupo === "Pauta" && X.pauta_items && X.pauta_items.length) {
+        const pillSW = 'display:inline;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 5px;border-radius:3px;margin-right:5px;background:var(--accent-soft);color:var(--accent)';
+        const pillPT = 'display:inline;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 5px;border-radius:3px;margin-right:5px;background:var(--warn-soft);color:var(--warn)';
         X.pauta_items.forEach(it => {
-          const tp = it.tipo === "Pauta" ? "pt" : "sw";
-          h += `<tr class="sub-row"><td><div class="sub-label"><span class="tipo-pill ${tp}">${it.tipo}</span><span>${it.concepto}</span></div></td>` +
+          const ps = it.tipo === "Pauta" ? pillPT : pillSW;
+          h += `<tr class="sub-row"><td style="padding-left:24px"><span style="${ps}">${it.tipo}</span>${it.concepto}</td>` +
             M.map(() => `<td class="n" style="opacity:.3">—</td>`).join("") +
             `<td class="n">${fmt(it.monto)}</td><td></td></tr>`;
         });
       }
       // desglose tarjeta: suscripciones y pauta por concepto, mes a mes
       if (g.grupo === "Tarjeta de credito" && D.tarjeta && D.tarjeta.conceptos) {
+        const pillSW = 'display:inline;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 5px;border-radius:3px;margin-right:5px;background:var(--accent-soft);color:var(--accent)';
+        const pillPT = 'display:inline;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 5px;border-radius:3px;margin-right:5px;background:var(--warn-soft);color:var(--warn)';
+        const pillOF = 'display:inline;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 5px;border-radius:3px;margin-right:5px;background:var(--pos-soft);color:var(--pos)';
         D.tarjeta.conceptos.forEach(c => {
-          const tp = c.familia === "Pauta" ? "pt" : c.familia === "Oficina" ? "of" : "sw";
-          h += `<tr class="sub-row"><td><div class="sub-label"><span class="tipo-pill ${tp}">${c.familia}</span><span>${c.concepto}</span></div></td>` +
+          const ps = c.familia === "Pauta" ? pillPT : c.familia === "Oficina" ? pillOF : pillSW;
+          h += `<tr class="sub-row"><td style="padding-left:24px"><span style="${ps}">${c.familia}</span>${c.concepto}</td>` +
             M.map(m => {
               const v = (c.por_mes && c.por_mes[m]) || 0;
               return v > 0.005 ? `<td class="n">${fmt(v)}</td>` : `<td class="n" style="opacity:.3">—</td>`;
