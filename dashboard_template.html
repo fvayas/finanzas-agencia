@@ -147,13 +147,22 @@ h2{font-size:clamp(26px,3.6vw,36px); letter-spacing:-.02em; line-height:1.06}
 @media(max-width:860px){.grid2{grid-template-columns:1fr}}
 
 /* ============================ tablas ============================ */
-.scroll{overflow-x:auto; -webkit-overflow-scrolling:touch}
+/* La tarjeta se acota al alto de la pantalla y scrollea por dentro. Sin ese
+   tope, `position:sticky` de la cabecera no tiene contra qué fijarse: el
+   contenedor crece con la tabla y la fila de meses se va con la página. */
+.scroll{
+  overflow:auto; -webkit-overflow-scrolling:touch;
+  max-height:calc(100vh - 76px); max-height:calc(100dvh - 76px);
+}
 table{border-collapse:collapse; width:100%; font-size:13.5px; min-width:640px}
 th,td{padding:9px 11px; text-align:right; border-bottom:1px solid var(--line-soft); white-space:nowrap}
 th:first-child,td:first-child{text-align:left}
 thead th{
   font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3);
-  font-weight:700; border-bottom:2px solid var(--accent); position:sticky; top:0; background:var(--card);
+  font-weight:700; position:sticky; top:0; z-index:3; background:var(--card);
+  /* con border-collapse el borde de una celda fija no se repinta al scrollar:
+     el filete rojo se dibuja como sombra interior, que sí viaja con ella */
+  border-bottom:none; box-shadow:inset 0 -2px 0 var(--accent);
 }
 tbody tr:hover{background:var(--ink-soft)}
 td.n{font-family:var(--font-mono); font-variant-numeric:tabular-nums}

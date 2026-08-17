@@ -248,9 +248,10 @@ def clasifica(desc, ingreso, egreso):
 
     # ---------- tarjeta de credito ----------
     # OJO: es un pago de deuda, el gasto real esta en el estado de cuenta.
+    # El desglose por concepto cuelga de esta misma fila en el panel.
     if re.search(r"TARJETA", d):
         return ("OPERATIVO", "Tarjeta de credito",
-                "Pago tarjeta (sin desglose)", desc.strip())
+                "Pago tarjeta de credito", desc.strip())
 
     # ---------- impuestos ----------
     # va antes que devoluciones: "devolucion impuestos" es carga fiscal,

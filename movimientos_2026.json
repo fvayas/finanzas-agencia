@@ -475,7 +475,7 @@
   "neto": -1.81,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "RENOVACION TARJETA DE CREDITO",
   "tipo_original": ""
  },
@@ -491,7 +491,7 @@
   "neto": -24.89,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "TARJETA",
   "tipo_original": ""
  },
@@ -1259,7 +1259,7 @@
   "neto": -29.25,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "PAGO TARJETA",
   "tipo_original": ""
  },
@@ -2267,7 +2267,7 @@
   "neto": -494.24,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "PAGO TARJETA DE CREDITO",
   "tipo_original": ""
  },
@@ -3563,7 +3563,7 @@
   "neto": -36.67,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "PAGO TARJETA DEBITO AUTOMATICO",
   "tipo_original": ""
  },
@@ -4715,7 +4715,7 @@
   "neto": -36.82,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "PAGO TARJETA DE CREDITO",
   "tipo_original": ""
  },
@@ -4827,7 +4827,7 @@
   "neto": -506.67,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "PAGO TARJETA DE CREDITO",
   "tipo_original": ""
  },
@@ -6027,7 +6027,7 @@
   "neto": -8.28,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "PAGO TARJETA DEBITO AUTOMATICO",
   "tipo_original": ""
  },
@@ -6059,7 +6059,7 @@
   "neto": -21.72,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "PAGO TARJETA",
   "tipo_original": ""
  },
@@ -6907,7 +6907,7 @@
   "neto": -21.16,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "PAGO TARJETA DE CREDITO",
   "tipo_original": ""
  },
@@ -7451,7 +7451,7 @@
   "neto": -3.16,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "PAGO TARJETA",
   "tipo_original": ""
  },
@@ -7515,7 +7515,7 @@
   "neto": -26.84,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "PAGO TARJETA DE CREDITO",
   "tipo_original": ""
  },
@@ -7883,7 +7883,7 @@
   "neto": -260.94,
   "naturaleza": "OPERATIVO",
   "grupo": "Tarjeta de credito",
-  "categoria": "Pago tarjeta (sin desglose)",
+  "categoria": "Pago tarjeta de credito",
   "detalle": "PAGO TARJETA DE CREDITO",
   "tipo_original": ""
  },
