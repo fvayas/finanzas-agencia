@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 2810.25,
+   "ingresos": 3531.48,
    "pauta_cobrada": 0.0,
    "pauta_pagada": 1697.58,
    "pauta_neta": 1697.58,
    "costo_fijo": 4999.92,
    "costo_variable": 95.12,
    "costo_total": 6792.62,
-   "resultado": -3982.37,
-   "margen_contribucion": 1017.55,
-   "margen_pct": 36.2
+   "resultado": -3261.14,
+   "margen_contribucion": 1738.78,
+   "margen_pct": 49.2
   }
  ],
  "grupos": {
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 2493.25
+   "ago": 3214.48
   },
   "Equipos": {
    "ene": -75.0,
@@ -336,7 +336,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": 3982.0
+   "ago": 3262.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -408,7 +408,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 10.1,
+   "pct": 10.0,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -428,7 +428,7 @@
   {
    "cliente": "Uninova",
    "total": 7803.0,
-   "pct": 9.7,
+   "pct": 9.6,
    "pagos": 10,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -446,9 +446,29 @@
    }
   },
   {
+   "cliente": "Samari",
+   "total": 6050.72,
+   "pct": 7.4,
+   "pagos": 10,
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "ago",
+   "fee_promedio": 864.39,
+   "por_mes": {
+    "ene": 738.13,
+    "feb": 670.13,
+    "mar": 821.1,
+    "abr": 0.0,
+    "may": 1440.46,
+    "jun": 938.44,
+    "jul": 721.23,
+    "ago": 721.23
+   }
+  },
+  {
    "cliente": "Speedy",
    "total": 5802.0,
-   "pct": 7.2,
+   "pct": 7.1,
    "pagos": 3,
    "meses_activo": 2,
    "primer_mes": "jun",
@@ -502,26 +522,6 @@
     "may": 0.0,
     "jun": 1400.0,
     "jul": 700.0,
-    "ago": 0.0
-   }
-  },
-  {
-   "cliente": "Samari",
-   "total": 5329.49,
-   "pct": 6.6,
-   "pagos": 9,
-   "meses_activo": 6,
-   "primer_mes": "ene",
-   "ultimo_mes": "jul",
-   "fee_promedio": 888.25,
-   "por_mes": {
-    "ene": 738.13,
-    "feb": 670.13,
-    "mar": 821.1,
-    "abr": 0.0,
-    "may": 1440.46,
-    "jun": 938.44,
-    "jul": 721.23,
     "ago": 0.0
    }
   },
@@ -588,7 +588,7 @@
   {
    "cliente": "Pladeco",
    "total": 3049.0,
-   "pct": 3.8,
+   "pct": 3.7,
    "pagos": 6,
    "meses_activo": 5,
    "primer_mes": "ene",
@@ -628,7 +628,7 @@
   {
    "cliente": "Onco Ambato",
    "total": 2640.0,
-   "pct": 3.3,
+   "pct": 3.2,
    "pagos": 8,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -648,7 +648,7 @@
   {
    "cliente": "Absolute",
    "total": 2400.0,
-   "pct": 3.0,
+   "pct": 2.9,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -668,7 +668,7 @@
   {
    "cliente": "Plasticaucho",
    "total": 2397.0,
-   "pct": 3.0,
+   "pct": 2.9,
    "pagos": 6,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -708,7 +708,7 @@
   {
    "cliente": "Tartelier",
    "total": 2070.0,
-   "pct": 2.6,
+   "pct": 2.5,
    "pagos": 6,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -987,9 +987,9 @@
   }
  ],
  "concentracion": {
-  "top1": 10.1,
+  "top1": 10.0,
   "top3": 27.0,
-  "top5": 40.4
+  "top5": 40.9
  },
  "equipo": [
   {
@@ -2644,8 +2644,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 60138.0,
-   "n": 68,
+   "total": 60858.0,
+   "n": 69,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2654,7 +2654,7 @@
     "may": 7425.0,
     "jun": 15722.0,
     "jul": 14357.0,
-    "ago": 5118.0
+    "ago": 5838.0
    },
    "detalle": {
     "ene": {
@@ -3033,6 +3033,11 @@
        "fecha": "14/08/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 760.0
+      },
+      {
+       "fecha": "17/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 720.0
       }
      ],
      "razones": []
@@ -5219,10 +5224,10 @@
   }
  ],
  "totales": {
-  "ingresos": 80544.28,
+  "ingresos": 81265.51,
   "costo_fijo": 65572.55,
   "costo_variable": 9773.42,
-  "resultado": -93.74,
-  "movimientos": 542
+  "resultado": 627.49,
+  "movimientos": 544
  }
 }

@@ -1149,6 +1149,395 @@
    ]
   },
   {
+   "cliente": "Samari",
+   "estado": "activo",
+   "nota": "",
+   "fee": 650,
+   "fee_inicial": 600,
+   "con_iva": true,
+   "facturado_mes": 747.5,
+   "retenido_mes": 26.27,
+   "a_cobrar_mes": 721.23,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {
+    "may": 650
+   },
+   "cobrado_total": 6050.72,
+   "honorario_total": 5612.89,
+   "pauta_total": 0.0,
+   "puntual_total": 437.83,
+   "por_mes": {
+    "ene": {
+     "honorario": 670.13,
+     "pauta": 0.0,
+     "puntual": 68.0,
+     "cobrado": 738.13
+    },
+    "feb": {
+     "honorario": 670.13,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 670.13
+    },
+    "mar": {
+     "honorario": 668.48,
+     "pauta": 0.0,
+     "puntual": 152.62,
+     "cobrado": 821.1
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 1440.46,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 1440.46
+    },
+    "jun": {
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 217.21,
+     "cobrado": 938.44
+    },
+    "jul": {
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 721.23
+    },
+    "ago": {
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 721.23
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": 0.2,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "15/01/2026",
+       "desc": "SAMARI DICIEMBRE",
+       "importe": 670.13,
+       "tipo": "honorario",
+       "honorario": 670.13,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 670.13,
+       "desvio": 0.0
+      },
+      {
+       "mes": "ene",
+       "fecha": "28/01/2026",
+       "desc": "VIATICOS SAMARI RODAJE BAÑOS CON MARIA JOSE NARANJO",
+       "importe": 68.0,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 68.0,
+       "esperado": 670.13,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "lo que pasa del fee es pago de modelos y viáticos de producción"
+     ],
+     "esperado": 670.13
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "23/02/2026",
+       "desc": "PAGO SAMARI DE ENERO",
+       "importe": 670.13,
+       "tipo": "honorario",
+       "honorario": 670.13,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 670.13,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 670.13
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "03/03/2026",
+       "desc": "PAGO SAMARI MODELO SUCA NARANJO",
+       "importe": 152.62,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 152.62,
+       "esperado": 670.13,
+       "desvio": null
+      },
+      {
+       "mes": "mar",
+       "fecha": "23/03/2026",
+       "desc": "PAGO SAMARI DE MARZO",
+       "importe": 668.48,
+       "tipo": "honorario",
+       "honorario": 668.48,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 670.13,
+       "desvio": -1.65
+      }
+     ],
+     "razones": [
+      "lo que pasa del fee es pago de modelos y viáticos de producción"
+     ],
+     "esperado": 670.13
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 670.13
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "05/05/2026",
+       "desc": "PAGO SAMARI MARZO",
+       "importe": 719.23,
+       "tipo": "honorario",
+       "honorario": 719.23,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 721.23,
+       "desvio": -2.0
+      },
+      {
+       "mes": "may",
+       "fecha": "19/05/2026",
+       "desc": "PAGO SAMARI ABRIL",
+       "importe": 721.23,
+       "tipo": "honorario",
+       "honorario": 721.23,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 721.23,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 721.23
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "29/06/2026",
+       "desc": "PAGO SAMARI DE MAYO",
+       "importe": 938.44,
+       "tipo": "honorario",
+       "honorario": 721.23,
+       "pauta": 0.0,
+       "puntual": 217.21,
+       "esperado": 721.23,
+       "desvio": 217.21
+      }
+     ],
+     "razones": [
+      "lo que pasa del fee es pago de modelos y viáticos de producción"
+     ],
+     "esperado": 721.23
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "20/07/2026",
+       "desc": "PAGO SAMARI JUNIO",
+       "importe": 721.23,
+       "tipo": "honorario",
+       "honorario": 721.23,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 721.23,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 721.23
+    },
+    "ago": {
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "17/08/2026",
+       "desc": "PAGO SAMARI JULIO",
+       "importe": 721.23,
+       "tipo": "honorario",
+       "honorario": 721.23,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 721.23,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 721.23
+    }
+   },
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "ago",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [
+    {
+     "mes": "may",
+     "n": 2
+    }
+   ],
+   "inferido": "retención calculada desde los pagos reales; faltan los porcentajes del comprobante",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "15/01/2026",
+     "desc": "SAMARI DICIEMBRE",
+     "importe": 670.13,
+     "tipo": "honorario",
+     "honorario": 670.13,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 670.13,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ene",
+     "fecha": "28/01/2026",
+     "desc": "VIATICOS SAMARI RODAJE BAÑOS CON MARIA JOSE NARANJO",
+     "importe": 68.0,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 68.0,
+     "esperado": 670.13,
+     "desvio": null
+    },
+    {
+     "mes": "feb",
+     "fecha": "23/02/2026",
+     "desc": "PAGO SAMARI DE ENERO",
+     "importe": 670.13,
+     "tipo": "honorario",
+     "honorario": 670.13,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 670.13,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "03/03/2026",
+     "desc": "PAGO SAMARI MODELO SUCA NARANJO",
+     "importe": 152.62,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 152.62,
+     "esperado": 670.13,
+     "desvio": null
+    },
+    {
+     "mes": "mar",
+     "fecha": "23/03/2026",
+     "desc": "PAGO SAMARI DE MARZO",
+     "importe": 668.48,
+     "tipo": "honorario",
+     "honorario": 668.48,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 670.13,
+     "desvio": -1.65
+    },
+    {
+     "mes": "may",
+     "fecha": "05/05/2026",
+     "desc": "PAGO SAMARI MARZO",
+     "importe": 719.23,
+     "tipo": "honorario",
+     "honorario": 719.23,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 721.23,
+     "desvio": -2.0
+    },
+    {
+     "mes": "may",
+     "fecha": "19/05/2026",
+     "desc": "PAGO SAMARI ABRIL",
+     "importe": 721.23,
+     "tipo": "honorario",
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 721.23,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "29/06/2026",
+     "desc": "PAGO SAMARI DE MAYO",
+     "importe": 938.44,
+     "tipo": "honorario",
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 217.21,
+     "esperado": 721.23,
+     "desvio": 217.21
+    },
+    {
+     "mes": "jul",
+     "fecha": "20/07/2026",
+     "desc": "PAGO SAMARI JUNIO",
+     "importe": 721.23,
+     "tipo": "honorario",
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 721.23,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "17/08/2026",
+     "desc": "PAGO SAMARI JULIO",
+     "importe": 721.23,
+     "tipo": "honorario",
+     "honorario": 721.23,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 721.23,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
    "cliente": "Speedy",
    "estado": "activo",
    "nota": "",
@@ -1636,372 +2025,6 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "esperado": 920.0,
-     "desvio": 0.0
-    }
-   ]
-  },
-  {
-   "cliente": "Samari",
-   "estado": "activo",
-   "nota": "",
-   "fee": 650,
-   "fee_inicial": 600,
-   "con_iva": true,
-   "facturado_mes": 747.5,
-   "retenido_mes": 26.27,
-   "a_cobrar_mes": 721.23,
-   "ret_ir": 0,
-   "ret_iva": 0,
-   "cambios": {
-    "may": 650
-   },
-   "cobrado_total": 5329.49,
-   "honorario_total": 4891.66,
-   "pauta_total": 0.0,
-   "puntual_total": 437.83,
-   "por_mes": {
-    "ene": {
-     "honorario": 670.13,
-     "pauta": 0.0,
-     "puntual": 68.0,
-     "cobrado": 738.13
-    },
-    "feb": {
-     "honorario": 670.13,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 670.13
-    },
-    "mar": {
-     "honorario": 668.48,
-     "pauta": 0.0,
-     "puntual": 152.62,
-     "cobrado": 821.1
-    },
-    "abr": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "may": {
-     "honorario": 1440.46,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 1440.46
-    },
-    "jun": {
-     "honorario": 721.23,
-     "pauta": 0.0,
-     "puntual": 217.21,
-     "cobrado": 938.44
-    },
-    "jul": {
-     "honorario": 721.23,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 721.23
-    },
-    "ago": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    }
-   },
-   "pendiente": 721.23,
-   "cobro": "1 mes",
-   "cubierto_hasta": 6,
-   "cobro_fuente": "periodo declarado en el último cobro",
-   "cobro_nota": "",
-   "atraso_meses": 1.2,
-   "ficha_mes": {
-    "ene": {
-     "movs": [
-      {
-       "mes": "ene",
-       "fecha": "15/01/2026",
-       "desc": "SAMARI DICIEMBRE",
-       "importe": 670.13,
-       "tipo": "honorario",
-       "honorario": 670.13,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 670.13,
-       "desvio": 0.0
-      },
-      {
-       "mes": "ene",
-       "fecha": "28/01/2026",
-       "desc": "VIATICOS SAMARI RODAJE BAÑOS CON MARIA JOSE NARANJO",
-       "importe": 68.0,
-       "tipo": "puntual",
-       "honorario": 0.0,
-       "pauta": 0.0,
-       "puntual": 68.0,
-       "esperado": 670.13,
-       "desvio": null
-      }
-     ],
-     "razones": [
-      "lo que pasa del fee es pago de modelos y viáticos de producción"
-     ],
-     "esperado": 670.13
-    },
-    "feb": {
-     "movs": [
-      {
-       "mes": "feb",
-       "fecha": "23/02/2026",
-       "desc": "PAGO SAMARI DE ENERO",
-       "importe": 670.13,
-       "tipo": "honorario",
-       "honorario": 670.13,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 670.13,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 670.13
-    },
-    "mar": {
-     "movs": [
-      {
-       "mes": "mar",
-       "fecha": "03/03/2026",
-       "desc": "PAGO SAMARI MODELO SUCA NARANJO",
-       "importe": 152.62,
-       "tipo": "puntual",
-       "honorario": 0.0,
-       "pauta": 0.0,
-       "puntual": 152.62,
-       "esperado": 670.13,
-       "desvio": null
-      },
-      {
-       "mes": "mar",
-       "fecha": "23/03/2026",
-       "desc": "PAGO SAMARI DE MARZO",
-       "importe": 668.48,
-       "tipo": "honorario",
-       "honorario": 668.48,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 670.13,
-       "desvio": -1.65
-      }
-     ],
-     "razones": [
-      "lo que pasa del fee es pago de modelos y viáticos de producción"
-     ],
-     "esperado": 670.13
-    },
-    "abr": {
-     "movs": [],
-     "razones": [
-      "no hubo cobro este mes; se regularizó en otro"
-     ],
-     "esperado": 670.13
-    },
-    "may": {
-     "movs": [
-      {
-       "mes": "may",
-       "fecha": "05/05/2026",
-       "desc": "PAGO SAMARI MARZO",
-       "importe": 719.23,
-       "tipo": "honorario",
-       "honorario": 719.23,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 721.23,
-       "desvio": -2.0
-      },
-      {
-       "mes": "may",
-       "fecha": "19/05/2026",
-       "desc": "PAGO SAMARI ABRIL",
-       "importe": 721.23,
-       "tipo": "honorario",
-       "honorario": 721.23,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 721.23,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [
-      "cobró 2 mensualidades en el mismo mes"
-     ],
-     "esperado": 721.23
-    },
-    "jun": {
-     "movs": [
-      {
-       "mes": "jun",
-       "fecha": "29/06/2026",
-       "desc": "PAGO SAMARI DE MAYO",
-       "importe": 938.44,
-       "tipo": "honorario",
-       "honorario": 721.23,
-       "pauta": 0.0,
-       "puntual": 217.21,
-       "esperado": 721.23,
-       "desvio": 217.21
-      }
-     ],
-     "razones": [
-      "lo que pasa del fee es pago de modelos y viáticos de producción"
-     ],
-     "esperado": 721.23
-    },
-    "jul": {
-     "movs": [
-      {
-       "mes": "jul",
-       "fecha": "20/07/2026",
-       "desc": "PAGO SAMARI JUNIO",
-       "importe": 721.23,
-       "tipo": "honorario",
-       "honorario": 721.23,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 721.23,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 721.23
-    },
-    "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
-     ],
-     "esperado": 721.23
-    }
-   },
-   "meses_activo": 6,
-   "primer_mes": "ene",
-   "ultimo_mes": "jul",
-   "cuadra": true,
-   "desvios": [],
-   "dobles": [
-    {
-     "mes": "may",
-     "n": 2
-    }
-   ],
-   "inferido": "retención calculada desde los pagos reales; faltan los porcentajes del comprobante",
-   "detalle": [
-    {
-     "mes": "ene",
-     "fecha": "15/01/2026",
-     "desc": "SAMARI DICIEMBRE",
-     "importe": 670.13,
-     "tipo": "honorario",
-     "honorario": 670.13,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 670.13,
-     "desvio": 0.0
-    },
-    {
-     "mes": "ene",
-     "fecha": "28/01/2026",
-     "desc": "VIATICOS SAMARI RODAJE BAÑOS CON MARIA JOSE NARANJO",
-     "importe": 68.0,
-     "tipo": "puntual",
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 68.0,
-     "esperado": 670.13,
-     "desvio": null
-    },
-    {
-     "mes": "feb",
-     "fecha": "23/02/2026",
-     "desc": "PAGO SAMARI DE ENERO",
-     "importe": 670.13,
-     "tipo": "honorario",
-     "honorario": 670.13,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 670.13,
-     "desvio": 0.0
-    },
-    {
-     "mes": "mar",
-     "fecha": "03/03/2026",
-     "desc": "PAGO SAMARI MODELO SUCA NARANJO",
-     "importe": 152.62,
-     "tipo": "puntual",
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 152.62,
-     "esperado": 670.13,
-     "desvio": null
-    },
-    {
-     "mes": "mar",
-     "fecha": "23/03/2026",
-     "desc": "PAGO SAMARI DE MARZO",
-     "importe": 668.48,
-     "tipo": "honorario",
-     "honorario": 668.48,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 670.13,
-     "desvio": -1.65
-    },
-    {
-     "mes": "may",
-     "fecha": "05/05/2026",
-     "desc": "PAGO SAMARI MARZO",
-     "importe": 719.23,
-     "tipo": "honorario",
-     "honorario": 719.23,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 721.23,
-     "desvio": -2.0
-    },
-    {
-     "mes": "may",
-     "fecha": "19/05/2026",
-     "desc": "PAGO SAMARI ABRIL",
-     "importe": 721.23,
-     "tipo": "honorario",
-     "honorario": 721.23,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 721.23,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jun",
-     "fecha": "29/06/2026",
-     "desc": "PAGO SAMARI DE MAYO",
-     "importe": 938.44,
-     "tipo": "honorario",
-     "honorario": 721.23,
-     "pauta": 0.0,
-     "puntual": 217.21,
-     "esperado": 721.23,
-     "desvio": 217.21
-    },
-    {
-     "mes": "jul",
-     "fecha": "20/07/2026",
-     "desc": "PAGO SAMARI JUNIO",
-     "importe": 721.23,
-     "tipo": "honorario",
-     "honorario": 721.23,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 721.23,
      "desvio": 0.0
     }
    ]
@@ -8210,17 +8233,17 @@
   }
  ],
  "totales": {
-  "honorario": 73954.17,
+  "honorario": 74675.4,
   "pauta": 6745.12,
   "puntual": 5547.87,
-  "cobrado": 86247.16
+  "cobrado": 86968.39
  },
  "honorarios_recurrentes_mes": 12619.98,
  "retenido_mes": 825.02,
  "avisos": [
   "Cobro de marzo sin identificar: no está en el tarifario (cobrado 653.00)"
  ],
- "pendiente_cobro": 5822.23,
- "cuentas_al_dia": 14,
+ "pendiente_cobro": 5101.0,
+ "cuentas_al_dia": 15,
  "cuentas_activas": 22
 }

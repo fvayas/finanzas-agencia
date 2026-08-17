@@ -8670,5 +8670,37 @@
   "categoria": "Taxis / parqueo / viaticos",
   "detalle": "Danna Cardenas",
   "tipo_original": ""
+ },
+ {
+  "fecha": "17/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00541",
+  "descripcion": "PAGO SAMARI JULIO",
+  "ingreso": 721.23,
+  "egreso": 0.0,
+  "neto": 721.23,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "Samari",
+  "detalle": "PAGO SAMARI JULIO",
+  "tipo_original": "https://drive.google.com/file/d/1GDZL_12Ug_OHWxarUJKESE4kDxXzqvGH/view?usp=drivesdk"
+ },
+ {
+  "fecha": "17/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00542",
+  "descripcion": "ENVIO A FLEXIAHORRO",
+  "ingreso": 0.0,
+  "egreso": 720.0,
+  "neto": -720.0,
+  "naturaleza": "NO OPERATIVO",
+  "grupo": "Movimiento entre cuentas propias",
+  "categoria": "Salida a FlexiAhorro",
+  "detalle": "ENVIO A FLEXIAHORRO",
+  "tipo_original": "https://drive.google.com/file/d/1VXBj3XRmW_PL0rwO9b_0QmOUvuBDM_bM/view?usp=drivesdk"
  }
 ]
