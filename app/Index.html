@@ -329,7 +329,7 @@
   </div>
 
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v22</div>
+    letter-spacing:.08em; margin-top:4px">v21</div>
 </form>
 
 <script>
@@ -347,11 +347,10 @@
     "ARRIENDO OFICINA","ARRIENDO CHIKI","ARRIENDO FRIENDS GUIDES",
     "PAGO IMPUESTOS","INTERNET","PAGO DE AGUA","PAGO CONDOMINIO",
     "PAGO LIMPIEZA","BOTELLON","PAGO SISTEMA CONTABLE"];
-  // Producción externa: los nombres que el categorizador ya sabe leer. Van
-  // con espacio al final porque casi siempre se completa con el cliente.
-  const FREELANCE = ["NICOLAS ENCALADA","JUAN PABLO NIETO","PRIS RODRIGUEZ",
-    "DIEGO RODRIGUEZ","SOFIA GARZON","ISMAEL MAYORGA","MODELO","ACTOR",
-    "VIDEOGRAFO","FLORES","PLANTAS"];
+  // La producción externa (Nicolás, Juan Pablo, modelos…) se escribe a mano
+  // a propósito: el categorizador ya reconoce los nombres, y obligar a
+  // teclear la descripción hace que quede dicho QUÉ se le paga y a qué
+  // cliente, en vez de una fila anónima con sólo el nombre.
 
   const $ = id => document.getElementById(id);
 
@@ -360,8 +359,6 @@
       CUENTAS.map(c => ["PAGO " + c, "PAGO " + c])],
     ["Sueldos del equipo",
       EQUIPO.map(p => ["SUELDO " + p, "SUELDO " + p])],
-    ["Producción externa · freelance",
-      FREELANCE.map(f => ["PAGO " + f + " …", "PAGO " + f + " "])],
     ["Conceptos frecuentes",
       CONCEPTOS.map(c => [c, c]).concat([["TAXIS (añade el nombre)", "TAXIS "]])],
   ];
