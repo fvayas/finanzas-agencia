@@ -167,6 +167,15 @@ tr.head-row:hover{background:none}
 #t-flexi{min-width:820px}
 #t-tarjeta{min-width:980px}
 
+/* sub-filas de desglose en tabla de gastos */
+tr.sub-row td{font-size:12px;color:var(--ink-2);background:var(--ink-soft);border-bottom:1px solid transparent}
+tr.sub-row td:first-child{padding-left:28px}
+tr.sub-row:last-child td{border-bottom:1px solid var(--line-soft)}
+.tipo-pill{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:1px 6px;border-radius:3px;margin-right:5px;vertical-align:middle}
+.tipo-pill.sw{background:var(--accent-soft);color:var(--accent)}
+.tipo-pill.pt{background:var(--warn-soft);color:var(--warn)}
+.tipo-pill.of{background:var(--pos-soft);color:var(--pos)}
+
 /* escalera de conciliación: cómo se llega del flujo al saldo del banco */
 .escalera{
   margin-top:18px; background:var(--card); border:1px solid var(--line-soft);
@@ -1648,7 +1657,7 @@ el("tiles").innerHTML = tiles.map(t=>`
     ["Pauta", ["Pauta"],
      "Dinero adelantado a Meta y Google que se recupera del cliente"],
     ["Impuestos y tarjeta", ["Impuestos y legal", "Tarjeta de credito"],
-     "La tarjeta sigue sin desglose: falta el estado de cuenta"],
+     "Tarjeta desglosada por concepto: suscripciones, pauta digital y gastos de oficina"],
     ["Operación del día a día", ["Movilizacion", "Oficina y bienestar",
      "Equipos", "Marketing propio", "Devoluciones"],
      "Taxis a producciones, refrigerios, equipos y otros menores"],
@@ -1698,6 +1707,27 @@ el("tiles").innerHTML = tiles.map(t=>`
         `</td>` + M.map(m => celda(g, m)).join("") +
         `<td class="n">${fmt(g.total)}</td>
          <td class="n muted">${g.n}</td></tr>`;
+      // desglose pauta: los conceptos que componen el adelanto mensual
+      if (g.grupo === "Pauta" && X.pauta_items && X.pauta_items.length) {
+        X.pauta_items.forEach(it => {
+          const tp = it.tipo === "Pauta" ? "pt" : "sw";
+          h += `<tr class="sub-row"><td><span class="tipo-pill ${tp}">${it.tipo}</span>${it.concepto}</td>` +
+            M.map(() => `<td class="n" style="opacity:.3">—</td>`).join("") +
+            `<td class="n">${fmt(it.monto)}</td><td></td></tr>`;
+        });
+      }
+      // desglose tarjeta: suscripciones y pauta por concepto, mes a mes
+      if (g.grupo === "Tarjeta de credito" && D.tarjeta && D.tarjeta.conceptos) {
+        D.tarjeta.conceptos.forEach(c => {
+          const tp = c.familia === "Pauta" ? "pt" : c.familia === "Oficina" ? "of" : "sw";
+          h += `<tr class="sub-row"><td><span class="tipo-pill ${tp}">${c.familia}</span>${c.concepto}</td>` +
+            M.map(m => {
+              const v = (c.por_mes && c.por_mes[m]) || 0;
+              return v > 0.005 ? `<td class="n">${fmt(v)}</td>` : `<td class="n" style="opacity:.3">—</td>`;
+            }).join("") +
+            `<td class="n">${fmt(c.total)}</td><td class="n muted">${c.n}</td></tr>`;
+        });
+      }
     });
     if (filas.length > 1){
       const tsub = Object.values(sub).reduce((a,b)=>a+b,0);
