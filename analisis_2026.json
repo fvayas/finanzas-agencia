@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 3531.48,
+   "ingresos": 4031.48,
    "pauta_cobrada": 0.0,
    "pauta_pagada": 1697.58,
    "pauta_neta": 1697.58,
    "costo_fijo": 4999.92,
-   "costo_variable": 95.12,
-   "costo_total": 6792.62,
-   "resultado": -3261.14,
-   "margen_contribucion": 1738.78,
-   "margen_pct": 49.2
+   "costo_variable": 1059.12,
+   "costo_total": 7756.62,
+   "resultado": -3725.14,
+   "margen_contribucion": 1274.78,
+   "margen_pct": 31.6
   }
  ],
  "grupos": {
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 3214.48
+   "ago": 3714.48
   },
   "Equipos": {
    "ene": -75.0,
@@ -194,7 +194,7 @@
    "may": -20.0,
    "jun": -860.0,
    "jul": -1092.91,
-   "ago": -40.0
+   "ago": -1004.0
   },
   "Nomina variable": {
    "ene": -24.93,
@@ -336,7 +336,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": 3262.0
+   "ago": 3862.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -408,7 +408,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 10.0,
+   "pct": 9.9,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -428,7 +428,7 @@
   {
    "cliente": "Uninova",
    "total": 7803.0,
-   "pct": 9.6,
+   "pct": 9.5,
    "pagos": 10,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -488,7 +488,7 @@
   {
    "cliente": "Fiammingo",
    "total": 5520.0,
-   "pct": 6.8,
+   "pct": 6.7,
    "pagos": 6,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -508,7 +508,7 @@
   {
    "cliente": "Velsana",
    "total": 5345.0,
-   "pct": 6.6,
+   "pct": 6.5,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "ene",
@@ -568,7 +568,7 @@
   {
    "cliente": "Cigarra",
    "total": 3622.5,
-   "pct": 4.5,
+   "pct": 4.4,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -583,6 +583,26 @@
     "jun": 517.5,
     "jul": 517.5,
     "ago": 0.0
+   }
+  },
+  {
+   "cliente": "Confia",
+   "total": 3500.0,
+   "pct": 4.3,
+   "pagos": 8,
+   "meses_activo": 7,
+   "primer_mes": "ene",
+   "ultimo_mes": "ago",
+   "fee_promedio": 500.0,
+   "por_mes": {
+    "ene": 450.0,
+    "feb": 450.0,
+    "mar": 0.0,
+    "abr": 460.0,
+    "may": 500.0,
+    "jun": 640.0,
+    "jul": 500.0,
+    "ago": 500.0
    }
   },
   {
@@ -602,26 +622,6 @@
     "may": 406.0,
     "jun": 0.0,
     "jul": 400.0,
-    "ago": 0.0
-   }
-  },
-  {
-   "cliente": "Confia",
-   "total": 3000.0,
-   "pct": 3.7,
-   "pagos": 7,
-   "meses_activo": 6,
-   "primer_mes": "ene",
-   "ultimo_mes": "jul",
-   "fee_promedio": 500.0,
-   "por_mes": {
-    "ene": 450.0,
-    "feb": 450.0,
-    "mar": 0.0,
-    "abr": 460.0,
-    "may": 500.0,
-    "jun": 640.0,
-    "jul": 500.0,
     "ago": 0.0
    }
   },
@@ -808,7 +808,7 @@
   {
    "cliente": "Nono",
    "total": 1350.0,
-   "pct": 1.7,
+   "pct": 1.6,
    "pagos": 3,
    "meses_activo": 3,
    "primer_mes": "ene",
@@ -987,9 +987,9 @@
   }
  ],
  "concentracion": {
-  "top1": 10.0,
-  "top3": 27.0,
-  "top5": 40.9
+  "top1": 9.9,
+  "top3": 26.8,
+  "top5": 40.6
  },
  "equipo": [
   {
@@ -3047,8 +3047,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Entrada desde FlexiAhorro",
-   "total": -54607.54,
-   "n": 53,
+   "total": -55207.54,
+   "n": 54,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -3057,7 +3057,7 @@
     "may": -7655.0,
     "jun": -13405.13,
     "jul": -13456.99,
-    "ago": -9100.0
+    "ago": -9700.0
    },
    "detalle": {
     "mar": {
@@ -3351,6 +3351,11 @@
        "fecha": "12/08/2026",
        "desc": "INGRESO DE FLEXIAHORRO PARA PAGO NICOLE Y NICO ENCALADA",
        "importe": -1000.0
+      },
+      {
+       "fecha": "17/08/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO JUAN PABLO",
+       "importe": -600.0
       }
      ],
      "razones": []
@@ -3602,6 +3607,84 @@
    }
   },
   {
+   "grupo": "Freelance y produccion",
+   "categoria": "Juan Pablo Nieto (produccion)",
+   "total": 3089.0,
+   "n": 7,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 690.0,
+    "mar": 495.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 650.0,
+    "jul": 790.0,
+    "ago": 464.0
+   },
+   "detalle": {
+    "feb": {
+     "movs": [
+      {
+       "fecha": "06/02/2026",
+       "desc": "PAGO JUAN PABLO SAMARI Y CONFIA",
+       "importe": 690.0
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "23/03/2026",
+       "desc": "PAGO JUAN PABLO",
+       "importe": 495.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "05/06/2026",
+       "desc": "PAGO JUANPABLO NIETO",
+       "importe": 400.0
+      },
+      {
+       "fecha": "16/06/2026",
+       "desc": "PAGO A JUAN PABLO NIETO DE PODCAST CONFIA",
+       "importe": 250.0
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "03/07/2026",
+       "desc": "PAGO JUAN PABLO NEITO PRODUCCION SPEEDY",
+       "importe": 790.0
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "17/08/2026",
+       "desc": "PRODUCCIÓN UNINOVA JUAN PABLO NIETO",
+       "importe": 280.0
+      },
+      {
+       "fecha": "17/08/2026",
+       "desc": "EDICIÓN VIDEOS SAMARI A JUAN PABLO NIETO",
+       "importe": 184.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
    "grupo": "Impuestos y legal",
    "categoria": "Impuestos",
    "total": 2851.21,
@@ -3690,69 +3773,6 @@
    }
   },
   {
-   "grupo": "Freelance y produccion",
-   "categoria": "Juan Pablo Nieto (produccion)",
-   "total": 2625.0,
-   "n": 5,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 690.0,
-    "mar": 495.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 650.0,
-    "jul": 790.0,
-    "ago": 0.0
-   },
-   "detalle": {
-    "feb": {
-     "movs": [
-      {
-       "fecha": "06/02/2026",
-       "desc": "PAGO JUAN PABLO SAMARI Y CONFIA",
-       "importe": 690.0
-      }
-     ],
-     "razones": []
-    },
-    "mar": {
-     "movs": [
-      {
-       "fecha": "23/03/2026",
-       "desc": "PAGO JUAN PABLO",
-       "importe": 495.0
-      }
-     ],
-     "razones": []
-    },
-    "jun": {
-     "movs": [
-      {
-       "fecha": "05/06/2026",
-       "desc": "PAGO JUANPABLO NIETO",
-       "importe": 400.0
-      },
-      {
-       "fecha": "16/06/2026",
-       "desc": "PAGO A JUAN PABLO NIETO DE PODCAST CONFIA",
-       "importe": 250.0
-      }
-     ],
-     "razones": []
-    },
-    "jul": {
-     "movs": [
-      {
-       "fecha": "03/07/2026",
-       "desc": "PAGO JUAN PABLO NEITO PRODUCCION SPEEDY",
-       "importe": 790.0
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
    "grupo": "Retiro de socios",
    "categoria": "Utilidades",
    "total": 2000.0,
@@ -3779,6 +3799,84 @@
        "fecha": "25/02/2026",
        "desc": "PAGO UTILIDAD FRANCISCO",
        "importe": 1000.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Nicolas Encalada (foto/video)",
+   "total": 1938.0,
+   "n": 7,
+   "por_mes": {
+    "ene": 160.0,
+    "feb": 0.0,
+    "mar": 578.0,
+    "abr": 500.0,
+    "may": 0.0,
+    "jun": 200.0,
+    "jul": 0.0,
+    "ago": 500.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "08/01/2026",
+       "desc": "FOTOGRAFIA NICOLAS",
+       "importe": 160.0
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "02/03/2026",
+       "desc": "PAGO FOTOS FIAMINGO NICOLAS ENCALADA",
+       "importe": 378.0
+      },
+      {
+       "fecha": "19/03/2026",
+       "desc": "PAGO NICOLAS ENCALADA FOTOS CAS DEL VERDE",
+       "importe": 200.0
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "28/04/2026",
+       "desc": "PAGO NICOLAS ENCALADA  PAGO CHIFLIDO Y FIAMMINGO",
+       "importe": 500.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "05/06/2026",
+       "desc": "PAGO NICOLAS ENCALADA PRODUCCION CORTA FIAMMINGO",
+       "importe": 200.0
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "17/08/2026",
+       "desc": "PAGO PRODUCCIÓN FIAMMINGO NICOLÁS ENCALADA",
+       "importe": 350.0
+      },
+      {
+       "fecha": "17/08/2026",
+       "desc": "PRODUCCIÓN  CHIFLIDO  NICOLÁS ENCALADA",
+       "importe": 150.0
       }
      ],
      "razones": []
@@ -3897,69 +3995,6 @@
        "fecha": "28/07/2026",
        "desc": "PAGO TARJETA DE CREDITO",
        "importe": 260.94
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Freelance y produccion",
-   "categoria": "Nicolas Encalada (foto/video)",
-   "total": 1438.0,
-   "n": 5,
-   "por_mes": {
-    "ene": 160.0,
-    "feb": 0.0,
-    "mar": 578.0,
-    "abr": 500.0,
-    "may": 0.0,
-    "jun": 200.0,
-    "jul": 0.0,
-    "ago": 0.0
-   },
-   "detalle": {
-    "ene": {
-     "movs": [
-      {
-       "fecha": "08/01/2026",
-       "desc": "FOTOGRAFIA NICOLAS",
-       "importe": 160.0
-      }
-     ],
-     "razones": []
-    },
-    "mar": {
-     "movs": [
-      {
-       "fecha": "02/03/2026",
-       "desc": "PAGO FOTOS FIAMINGO NICOLAS ENCALADA",
-       "importe": 378.0
-      },
-      {
-       "fecha": "19/03/2026",
-       "desc": "PAGO NICOLAS ENCALADA FOTOS CAS DEL VERDE",
-       "importe": 200.0
-      }
-     ],
-     "razones": []
-    },
-    "abr": {
-     "movs": [
-      {
-       "fecha": "28/04/2026",
-       "desc": "PAGO NICOLAS ENCALADA  PAGO CHIFLIDO Y FIAMMINGO",
-       "importe": 500.0
-      }
-     ],
-     "razones": []
-    },
-    "jun": {
-     "movs": [
-      {
-       "fecha": "05/06/2026",
-       "desc": "PAGO NICOLAS ENCALADA PRODUCCION CORTA FIAMMINGO",
-       "importe": 200.0
       }
      ],
      "razones": []
@@ -5224,10 +5259,10 @@
   }
  ],
  "totales": {
-  "ingresos": 81265.51,
+  "ingresos": 81765.51,
   "costo_fijo": 65572.55,
-  "costo_variable": 9773.42,
-  "resultado": 627.49,
-  "movimientos": 544
+  "costo_variable": 10737.42,
+  "resultado": 163.49,
+  "movimientos": 550
  }
 }
