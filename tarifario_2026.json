@@ -1149,6 +1149,308 @@
    ]
   },
   {
+   "cliente": "Fiammingo",
+   "estado": "activo",
+   "nota": "",
+   "fee": 800,
+   "fee_inicial": 800,
+   "con_iva": true,
+   "facturado_mes": 920.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 920.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 6440.0,
+   "honorario_total": 6440.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    },
+    "mar": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    },
+    "abr": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    },
+    "may": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    },
+    "jun": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    },
+    "jul": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    },
+    "ago": {
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 920.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "adelantado",
+   "cubierto_hasta": 8,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "lecturas distintas: el último cobro declara hasta el año anterior, pero el conteo de mensualidades da 0 mes(es) de atraso",
+   "atraso_meses": -2.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 920.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "25/02/2026",
+       "desc": "PAGO FIAMMINGO DESDE EL 12 DE FEBRERO AL 12 DE MARZO",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "23/03/2026",
+       "desc": "PAGO FIAMMINGO DEL 12 DE MARZO AL 12 DE ABRIL",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "17/04/2026",
+       "desc": "PAGO FIAMMINGO DEL 12 DE ABIL AL 12 D EMAYO",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "12/05/2026",
+       "desc": "PAGO FIAMMINGO DE 12 DE MAYO A 1 2DE JUNIO",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "11/06/2026",
+       "desc": "PAGO FIAMMINGO DEL 12 DE JUNIO AL 12 DE JULIO",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "16/07/2026",
+       "desc": "PAGO FIAMMINGO DEL 12 DE JULIO AL 12 DE AGOSTO",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    },
+    "ago": {
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "17/08/2026",
+       "desc": "PAGO FIAMMINGO JULIO A AGOSTO",
+       "importe": 920.0,
+       "tipo": "honorario",
+       "honorario": 920.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 920.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 920.0
+    }
+   },
+   "meses_activo": 7,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "25/02/2026",
+     "desc": "PAGO FIAMMINGO DESDE EL 12 DE FEBRERO AL 12 DE MARZO",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "23/03/2026",
+     "desc": "PAGO FIAMMINGO DEL 12 DE MARZO AL 12 DE ABRIL",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "17/04/2026",
+     "desc": "PAGO FIAMMINGO DEL 12 DE ABIL AL 12 D EMAYO",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "12/05/2026",
+     "desc": "PAGO FIAMMINGO DE 12 DE MAYO A 1 2DE JUNIO",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "11/06/2026",
+     "desc": "PAGO FIAMMINGO DEL 12 DE JUNIO AL 12 DE JULIO",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "16/07/2026",
+     "desc": "PAGO FIAMMINGO DEL 12 DE JULIO AL 12 DE AGOSTO",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "17/08/2026",
+     "desc": "PAGO FIAMMINGO JULIO A AGOSTO",
+     "importe": 920.0,
+     "tipo": "honorario",
+     "honorario": 920.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 920.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
    "cliente": "Samari",
    "estado": "activo",
    "nota": "",
@@ -1746,285 +2048,6 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "esperado": 2436.0,
-     "desvio": 0.0
-    }
-   ]
-  },
-  {
-   "cliente": "Fiammingo",
-   "estado": "activo",
-   "nota": "",
-   "fee": 800,
-   "fee_inicial": 800,
-   "con_iva": true,
-   "facturado_mes": 920.0,
-   "retenido_mes": 0.0,
-   "a_cobrar_mes": 920.0,
-   "ret_ir": 0,
-   "ret_iva": 0,
-   "cambios": {},
-   "cobrado_total": 5520.0,
-   "honorario_total": 5520.0,
-   "pauta_total": 0.0,
-   "puntual_total": 0.0,
-   "por_mes": {
-    "ene": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "feb": {
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 920.0
-    },
-    "mar": {
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 920.0
-    },
-    "abr": {
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 920.0
-    },
-    "may": {
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 920.0
-    },
-    "jun": {
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 920.0
-    },
-    "jul": {
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 920.0
-    },
-    "ago": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    }
-   },
-   "pendiente": 0.0,
-   "cobro": "adelantado",
-   "cubierto_hasta": 8,
-   "cobro_fuente": "periodo declarado en el último cobro",
-   "cobro_nota": "",
-   "atraso_meses": -1.0,
-   "ficha_mes": {
-    "ene": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 920.0
-    },
-    "feb": {
-     "movs": [
-      {
-       "mes": "feb",
-       "fecha": "25/02/2026",
-       "desc": "PAGO FIAMMINGO DESDE EL 12 DE FEBRERO AL 12 DE MARZO",
-       "importe": 920.0,
-       "tipo": "honorario",
-       "honorario": 920.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 920.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 920.0
-    },
-    "mar": {
-     "movs": [
-      {
-       "mes": "mar",
-       "fecha": "23/03/2026",
-       "desc": "PAGO FIAMMINGO DEL 12 DE MARZO AL 12 DE ABRIL",
-       "importe": 920.0,
-       "tipo": "honorario",
-       "honorario": 920.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 920.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 920.0
-    },
-    "abr": {
-     "movs": [
-      {
-       "mes": "abr",
-       "fecha": "17/04/2026",
-       "desc": "PAGO FIAMMINGO DEL 12 DE ABIL AL 12 D EMAYO",
-       "importe": 920.0,
-       "tipo": "honorario",
-       "honorario": 920.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 920.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 920.0
-    },
-    "may": {
-     "movs": [
-      {
-       "mes": "may",
-       "fecha": "12/05/2026",
-       "desc": "PAGO FIAMMINGO DE 12 DE MAYO A 1 2DE JUNIO",
-       "importe": 920.0,
-       "tipo": "honorario",
-       "honorario": 920.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 920.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 920.0
-    },
-    "jun": {
-     "movs": [
-      {
-       "mes": "jun",
-       "fecha": "11/06/2026",
-       "desc": "PAGO FIAMMINGO DEL 12 DE JUNIO AL 12 DE JULIO",
-       "importe": 920.0,
-       "tipo": "honorario",
-       "honorario": 920.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 920.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 920.0
-    },
-    "jul": {
-     "movs": [
-      {
-       "mes": "jul",
-       "fecha": "16/07/2026",
-       "desc": "PAGO FIAMMINGO DEL 12 DE JULIO AL 12 DE AGOSTO",
-       "importe": 920.0,
-       "tipo": "honorario",
-       "honorario": 920.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 920.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 920.0
-    },
-    "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
-     ],
-     "esperado": 920.0
-    }
-   },
-   "meses_activo": 6,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "cuadra": true,
-   "desvios": [],
-   "dobles": [],
-   "inferido": "",
-   "detalle": [
-    {
-     "mes": "feb",
-     "fecha": "25/02/2026",
-     "desc": "PAGO FIAMMINGO DESDE EL 12 DE FEBRERO AL 12 DE MARZO",
-     "importe": 920.0,
-     "tipo": "honorario",
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 920.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "mar",
-     "fecha": "23/03/2026",
-     "desc": "PAGO FIAMMINGO DEL 12 DE MARZO AL 12 DE ABRIL",
-     "importe": 920.0,
-     "tipo": "honorario",
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 920.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "abr",
-     "fecha": "17/04/2026",
-     "desc": "PAGO FIAMMINGO DEL 12 DE ABIL AL 12 D EMAYO",
-     "importe": 920.0,
-     "tipo": "honorario",
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 920.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "may",
-     "fecha": "12/05/2026",
-     "desc": "PAGO FIAMMINGO DE 12 DE MAYO A 1 2DE JUNIO",
-     "importe": 920.0,
-     "tipo": "honorario",
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 920.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jun",
-     "fecha": "11/06/2026",
-     "desc": "PAGO FIAMMINGO DEL 12 DE JUNIO AL 12 DE JULIO",
-     "importe": 920.0,
-     "tipo": "honorario",
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 920.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jul",
-     "fecha": "16/07/2026",
-     "desc": "PAGO FIAMMINGO DEL 12 DE JULIO AL 12 DE AGOSTO",
-     "importe": 920.0,
-     "tipo": "honorario",
-     "honorario": 920.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 920.0,
      "desvio": 0.0
     }
    ]
@@ -8256,10 +8279,10 @@
   }
  ],
  "totales": {
-  "honorario": 75175.4,
+  "honorario": 76095.4,
   "pauta": 6745.12,
   "puntual": 5547.87,
-  "cobrado": 87468.39
+  "cobrado": 88388.39
  },
  "honorarios_recurrentes_mes": 12619.98,
  "retenido_mes": 825.02,

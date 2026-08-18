@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 4031.48,
+   "ingresos": 5066.48,
    "pauta_cobrada": 0.0,
    "pauta_pagada": 1697.58,
    "pauta_neta": 1697.58,
-   "costo_fijo": 4999.92,
+   "costo_fijo": 5357.83,
    "costo_variable": 1059.12,
-   "costo_total": 7756.62,
-   "resultado": -3725.14,
-   "margen_contribucion": 1274.78,
-   "margen_pct": 31.6
+   "costo_total": 8114.53,
+   "resultado": -3048.05,
+   "margen_contribucion": 2309.78,
+   "margen_pct": 45.6
   }
  ],
  "grupos": {
@@ -124,7 +124,7 @@
    "may": -4934.07,
    "jun": -5577.54,
    "jul": -5912.16,
-   "ago": -4148.66
+   "ago": -4436.16
   },
   "Estructura": {
    "ene": -588.35,
@@ -134,7 +134,7 @@
    "may": -566.71,
    "jun": -480.66,
    "jul": -546.91,
-   "ago": -438.53
+   "ago": -508.94
   },
   "Ingresos - Fee mensual": {
    "ene": 7128.63,
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 3714.48
+   "ago": 4634.48
   },
   "Equipos": {
    "ene": -75.0,
@@ -254,7 +254,7 @@
    "may": 115.0,
    "jun": 185.0,
    "jul": 255.0,
-   "ago": 70.0
+   "ago": 185.0
   },
   "Ingresos - Produccion": {
    "ene": 0.0,
@@ -408,7 +408,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 9.9,
+   "pct": 9.8,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -428,7 +428,7 @@
   {
    "cliente": "Uninova",
    "total": 7803.0,
-   "pct": 9.5,
+   "pct": 9.4,
    "pagos": 10,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -446,9 +446,29 @@
    }
   },
   {
+   "cliente": "Fiammingo",
+   "total": 6440.0,
+   "pct": 7.8,
+   "pagos": 7,
+   "meses_activo": 7,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "fee_promedio": 920.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 920.0,
+    "mar": 920.0,
+    "abr": 920.0,
+    "may": 920.0,
+    "jun": 920.0,
+    "jul": 920.0,
+    "ago": 920.0
+   }
+  },
+  {
    "cliente": "Samari",
    "total": 6050.72,
-   "pct": 7.4,
+   "pct": 7.3,
    "pagos": 10,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -468,7 +488,7 @@
   {
    "cliente": "Speedy",
    "total": 5802.0,
-   "pct": 7.1,
+   "pct": 7.0,
    "pagos": 3,
    "meses_activo": 2,
    "primer_mes": "jun",
@@ -482,26 +502,6 @@
     "may": 0.0,
     "jun": 2436.0,
     "jul": 3366.0,
-    "ago": 0.0
-   }
-  },
-  {
-   "cliente": "Fiammingo",
-   "total": 5520.0,
-   "pct": 6.7,
-   "pagos": 6,
-   "meses_activo": 6,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "fee_promedio": 920.0,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 920.0,
-    "mar": 920.0,
-    "abr": 920.0,
-    "may": 920.0,
-    "jun": 920.0,
-    "jul": 920.0,
     "ago": 0.0
    }
   },
@@ -528,7 +528,7 @@
   {
    "cliente": "Flota Imbabura",
    "total": 3910.51,
-   "pct": 4.8,
+   "pct": 4.7,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -548,7 +548,7 @@
   {
    "cliente": "Nane Vestidos",
    "total": 3660.0,
-   "pct": 4.5,
+   "pct": 4.4,
    "pagos": 9,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -588,7 +588,7 @@
   {
    "cliente": "Confia",
    "total": 3500.0,
-   "pct": 4.3,
+   "pct": 4.2,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -688,7 +688,7 @@
   {
    "cliente": "Chiflido",
    "total": 2100.0,
-   "pct": 2.6,
+   "pct": 2.5,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -728,7 +728,7 @@
   {
    "cliente": "Provita",
    "total": 2007.5,
-   "pct": 2.5,
+   "pct": 2.4,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -828,7 +828,7 @@
   {
    "cliente": "Pasteur",
    "total": 1280.0,
-   "pct": 1.6,
+   "pct": 1.5,
    "pagos": 2,
    "meses_activo": 2,
    "primer_mes": "ene",
@@ -868,7 +868,7 @@
   {
    "cliente": "MM Wings",
    "total": 945.0,
-   "pct": 1.2,
+   "pct": 1.1,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -987,9 +987,9 @@
   }
  ],
  "concentracion": {
-  "top1": 9.9,
-  "top3": 26.8,
-  "top5": 40.6
+  "top1": 9.8,
+  "top3": 27.0,
+  "top5": 41.3
  },
  "equipo": [
   {
@@ -2177,6 +2177,96 @@
    }
   },
   {
+   "persona": "Josue Lara",
+   "grupo": "Nomina fija",
+   "total": 1978.5,
+   "meses": 3,
+   "promedio_mes": 659.5,
+   "base": 825.0,
+   "primer_mes": "jun",
+   "ultimo_mes": "ago",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 825.0,
+    "jul": 578.5,
+    "ago": 575.0
+   },
+   "detalle": {
+    "jun": {
+     "movs": [
+      {
+       "fecha": "01/06/2026",
+       "importe": 575.0,
+       "desc": "SUELDO JOSUE LARA"
+      },
+      {
+       "fecha": "16/06/2026",
+       "importe": 250.0,
+       "desc": "SUELDO QUINCENAL JOSUE LARA"
+      }
+     ],
+     "razones": [
+      "cobra por quincenas, no mensual"
+     ],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "01/07/2026",
+       "importe": 287.5,
+       "desc": "SUELDO QUINCENAL JOSUE LARA"
+      },
+      {
+       "fecha": "15/07/2026",
+       "importe": 291.0,
+       "desc": "PAGO QUINCENA JOSUE LARA"
+      }
+     ],
+     "razones": [
+      "cobra por quincenas, no mensual"
+     ],
+     "delta": {
+      "vs": "jun",
+      "dif": -246.5
+     },
+     "vs_base": -246.5,
+     "cmp_base": true
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "importe": 287.5,
+       "desc": "SUELDO JOSUE LARA QUINCENA"
+      },
+      {
+       "fecha": "17/08/2026",
+       "importe": 287.5,
+       "desc": "SUELDO JOSUE LARA QUINCENA"
+      }
+     ],
+     "razones": [
+      "cobra por quincenas, no mensual"
+     ],
+     "delta": {
+      "vs": "jul",
+      "dif": -3.5
+     },
+     "vs_base": -250.0,
+     "cmp_base": true
+    }
+   }
+  },
+  {
    "persona": "Karen Pinos",
    "grupo": "Nomina fija",
    "total": 1800.0,
@@ -2354,91 +2444,6 @@
       "dif": -20.0
      },
      "vs_base": -42.5,
-     "cmp_base": true
-    }
-   }
-  },
-  {
-   "persona": "Josue Lara",
-   "grupo": "Nomina fija",
-   "total": 1691.0,
-   "meses": 3,
-   "promedio_mes": 563.67,
-   "base": 825.0,
-   "primer_mes": "jun",
-   "ultimo_mes": "ago",
-   "activo_julio": true,
-   "liquidado": false,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 825.0,
-    "jul": 578.5,
-    "ago": 287.5
-   },
-   "detalle": {
-    "jun": {
-     "movs": [
-      {
-       "fecha": "01/06/2026",
-       "importe": 575.0,
-       "desc": "SUELDO JOSUE LARA"
-      },
-      {
-       "fecha": "16/06/2026",
-       "importe": 250.0,
-       "desc": "SUELDO QUINCENAL JOSUE LARA"
-      }
-     ],
-     "razones": [
-      "cobra por quincenas, no mensual"
-     ],
-     "delta": null,
-     "vs_base": 0.0,
-     "cmp_base": true
-    },
-    "jul": {
-     "movs": [
-      {
-       "fecha": "01/07/2026",
-       "importe": 287.5,
-       "desc": "SUELDO QUINCENAL JOSUE LARA"
-      },
-      {
-       "fecha": "15/07/2026",
-       "importe": 291.0,
-       "desc": "PAGO QUINCENA JOSUE LARA"
-      }
-     ],
-     "razones": [
-      "cobra por quincenas, no mensual"
-     ],
-     "delta": {
-      "vs": "jun",
-      "dif": -246.5
-     },
-     "vs_base": -246.5,
-     "cmp_base": true
-    },
-    "ago": {
-     "movs": [
-      {
-       "fecha": "03/08/2026",
-       "importe": 287.5,
-       "desc": "SUELDO JOSUE LARA QUINCENA"
-      }
-     ],
-     "razones": [
-      "cobra por quincenas, no mensual"
-     ],
-     "delta": {
-      "vs": "jul",
-      "dif": -291.0
-     },
-     "vs_base": -537.5,
      "cmp_base": true
     }
    }
@@ -4221,8 +4226,8 @@
   {
    "grupo": "Estructura",
    "categoria": "Limpieza",
-   "total": 281.64,
-   "n": 4,
+   "total": 352.05,
+   "n": 6,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -4231,7 +4236,7 @@
     "may": 140.82,
     "jun": 70.41,
     "jul": 0.0,
-    "ago": 0.0
+    "ago": 70.41
    },
    "detalle": {
     "mar": {
@@ -4265,6 +4270,21 @@
        "fecha": "10/06/2026",
        "desc": "PAGO LIMPIEZA",
        "importe": 70.41
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "17/08/2026",
+       "desc": "PAGO LIMPIEZA 7 SEMANAS",
+       "importe": 70.0
+      },
+      {
+       "fecha": "17/08/2026",
+       "desc": "PAGO LIMPIEZA COMISIÓN BANCARIA",
+       "importe": 0.41
       }
      ],
      "razones": []
@@ -5051,8 +5071,8 @@
  "otros_ingresos": [
   {
    "concepto": "Subarriendo oficina · Chiki",
-   "total": 690.0,
-   "n": 6,
+   "total": 805.0,
+   "n": 7,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -5061,7 +5081,7 @@
     "may": 115.0,
     "jun": 115.0,
     "jul": 115.0,
-    "ago": 0.0
+    "ago": 115.0
    },
    "detalle": {
     "mar": {
@@ -5113,6 +5133,16 @@
      "movs": [
       {
        "fecha": "10/07/2026",
+       "desc": "ARRIENDO CHIKI",
+       "importe": 115.0
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "17/08/2026",
        "desc": "ARRIENDO CHIKI",
        "importe": 115.0
       }
@@ -5259,10 +5289,10 @@
   }
  ],
  "totales": {
-  "ingresos": 81765.51,
-  "costo_fijo": 65572.55,
+  "ingresos": 82800.51,
+  "costo_fijo": 65930.46,
   "costo_variable": 10737.42,
-  "resultado": 163.49,
-  "movimientos": 550
+  "resultado": 840.58,
+  "movimientos": 555
  }
 }
