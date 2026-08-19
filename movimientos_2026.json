@@ -8878,5 +8878,21 @@
   "categoria": "Limpieza",
   "detalle": "PAGO LIMPIEZA COMISIÓN BANCARIA",
   "tipo_original": ""
+ },
+ {
+  "fecha": "18/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00554",
+  "descripcion": "PAGO MM WINGS",
+  "ingreso": 135.0,
+  "egreso": 0.0,
+  "neto": 135.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "MM Wings",
+  "detalle": "PAGO MM WINGS",
+  "tipo_original": "https://drive.google.com/file/d/1TVyiPaHY8feBZIj1icP4gVgzvyPVJZLr/view?usp=drivesdk"
  }
 ]

@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 5066.48,
+   "ingresos": 5201.48,
    "pauta_cobrada": 0.0,
    "pauta_pagada": 1697.58,
    "pauta_neta": 1697.58,
    "costo_fijo": 5357.83,
    "costo_variable": 1059.12,
    "costo_total": 8114.53,
-   "resultado": -3048.05,
-   "margen_contribucion": 2309.78,
-   "margen_pct": 45.6
+   "resultado": -2913.05,
+   "margen_contribucion": 2444.78,
+   "margen_pct": 47.0
   }
  ],
  "grupos": {
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 4634.48
+   "ago": 4769.48
   },
   "Equipos": {
    "ene": -75.0,
@@ -508,7 +508,7 @@
   {
    "cliente": "Velsana",
    "total": 5345.0,
-   "pct": 6.5,
+   "pct": 6.4,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "ene",
@@ -846,6 +846,26 @@
    }
   },
   {
+   "cliente": "MM Wings",
+   "total": 1080.0,
+   "pct": 1.3,
+   "pagos": 8,
+   "meses_activo": 7,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "fee_promedio": 154.29,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 270.0,
+    "mar": 135.0,
+    "abr": 135.0,
+    "may": 135.0,
+    "jun": 135.0,
+    "jul": 135.0,
+    "ago": 135.0
+   }
+  },
+  {
    "cliente": "La Tartuca",
    "total": 1000.0,
    "pct": 1.2,
@@ -862,26 +882,6 @@
     "may": 0.0,
     "jun": 0.0,
     "jul": 0.0,
-    "ago": 0.0
-   }
-  },
-  {
-   "cliente": "MM Wings",
-   "total": 945.0,
-   "pct": 1.1,
-   "pagos": 7,
-   "meses_activo": 6,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "fee_promedio": 157.5,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 270.0,
-    "mar": 135.0,
-    "abr": 135.0,
-    "may": 135.0,
-    "jun": 135.0,
-    "jul": 135.0,
     "ago": 0.0
    }
   },
@@ -5289,10 +5289,10 @@
   }
  ],
  "totales": {
-  "ingresos": 82800.51,
+  "ingresos": 82935.51,
   "costo_fijo": 65930.46,
   "costo_variable": 10737.42,
-  "resultado": 840.58,
-  "movimientos": 555
+  "resultado": 975.58,
+  "movimientos": 556
  }
 }
