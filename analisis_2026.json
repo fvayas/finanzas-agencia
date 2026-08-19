@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 5201.48,
-   "pauta_cobrada": 0.0,
+   "ingresos": 5271.48,
+   "pauta_cobrada": 640.0,
    "pauta_pagada": 1697.58,
-   "pauta_neta": 1697.58,
+   "pauta_neta": 1057.58,
    "costo_fijo": 5357.83,
    "costo_variable": 1059.12,
-   "costo_total": 8114.53,
-   "resultado": -2913.05,
-   "margen_contribucion": 2444.78,
-   "margen_pct": 47.0
+   "costo_total": 7474.53,
+   "resultado": -2203.05,
+   "margen_contribucion": 3154.78,
+   "margen_pct": 59.8
   }
  ],
  "grupos": {
@@ -264,7 +264,7 @@
    "may": 138.0,
    "jun": 140.0,
    "jul": 1286.0,
-   "ago": 247.0
+   "ago": 317.0
   },
   "Devoluciones": {
    "ene": 0.0,
@@ -304,7 +304,7 @@
    "may": 0.0,
    "jun": 1680.0,
    "jul": 640.0,
-   "ago": 0.0
+   "ago": 640.0
   },
   "Ingresos - Sin identificar": {
    "ene": 0.0,
@@ -315,6 +315,16 @@
    "jun": 0.0,
    "jul": 0.0,
    "ago": 0.0
+  },
+  "Egresos - Sin identificar": {
+   "ene": 0.0,
+   "feb": 0.0,
+   "mar": 0.0,
+   "abr": 0.0,
+   "may": 0.0,
+   "jun": 0.0,
+   "jul": 0.0,
+   "ago": -150.0
   }
  },
  "no_operativo": {
@@ -336,7 +346,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": 3862.0
+   "ago": 3190.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -447,13 +457,13 @@
   },
   {
    "cliente": "Fiammingo",
-   "total": 6440.0,
+   "total": 6510.0,
    "pct": 7.8,
-   "pagos": 7,
+   "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "feb",
    "ultimo_mes": "ago",
-   "fee_promedio": 920.0,
+   "fee_promedio": 930.0,
    "por_mes": {
     "ene": 0.0,
     "feb": 920.0,
@@ -462,7 +472,7 @@
     "may": 920.0,
     "jun": 920.0,
     "jul": 920.0,
-    "ago": 920.0
+    "ago": 990.0
    }
   },
   {
@@ -748,7 +758,7 @@
   {
    "cliente": "El Motor",
    "total": 1950.0,
-   "pct": 2.4,
+   "pct": 2.3,
    "pagos": 3,
    "meses_activo": 2,
    "primer_mes": "jun",
@@ -2649,8 +2659,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 60858.0,
-   "n": 69,
+   "total": 61680.0,
+   "n": 70,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2659,7 +2669,7 @@
     "may": 7425.0,
     "jun": 15722.0,
     "jul": 14357.0,
-    "ago": 5838.0
+    "ago": 6660.0
    },
    "detalle": {
     "ene": {
@@ -3043,6 +3053,11 @@
        "fecha": "17/08/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 720.0
+      },
+      {
+       "fecha": "17/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 822.0
       }
      ],
      "razones": []
@@ -3052,8 +3067,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Entrada desde FlexiAhorro",
-   "total": -55207.54,
-   "n": 54,
+   "total": -55357.54,
+   "n": 55,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -3062,7 +3077,7 @@
     "may": -7655.0,
     "jun": -13405.13,
     "jul": -13456.99,
-    "ago": -9700.0
+    "ago": -9850.0
    },
    "detalle": {
     "mar": {
@@ -3361,6 +3376,11 @@
        "fecha": "17/08/2026",
        "desc": "INGRESO DE FLEXIAHORRO PARA PAGO JUAN PABLO",
        "importe": -600.0
+      },
+      {
+       "fecha": "19/08/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SILLAS",
+       "importe": -150.0
       }
      ],
      "razones": []
@@ -4802,6 +4822,34 @@
    }
   },
   {
+   "grupo": "Egresos - Sin identificar",
+   "categoria": "REVISAR",
+   "total": 150.0,
+   "n": 1,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 150.0
+   },
+   "detalle": {
+    "ago": {
+     "movs": [
+      {
+       "fecha": "19/08/2026",
+       "desc": "PAGO SILLAS",
+       "importe": 150.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
    "grupo": "Freelance y produccion",
    "categoria": "Diego Rodriguez / Juandi (locacion)",
    "total": 110.41,
@@ -5289,10 +5337,10 @@
   }
  ],
  "totales": {
-  "ingresos": 82935.51,
+  "ingresos": 83005.51,
   "costo_fijo": 65930.46,
   "costo_variable": 10737.42,
-  "resultado": 975.58,
-  "movimientos": 556
+  "resultado": 1685.58,
+  "movimientos": 561
  }
 }
