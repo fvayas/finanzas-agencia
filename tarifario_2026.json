@@ -11,6 +11,242 @@
  ],
  "clientes": [
   {
+   "cliente": "Speedy",
+   "estado": "activo",
+   "nota": "",
+   "fee": 2400,
+   "fee_inicial": 2400,
+   "con_iva": true,
+   "facturado_mes": 2760.0,
+   "retenido_mes": 324.0,
+   "a_cobrar_mes": 2436.0,
+   "ret_ir": 0.03,
+   "ret_iva": 0.7,
+   "cambios": {},
+   "cobrado_total": 8238.0,
+   "honorario_total": 7308.0,
+   "pauta_total": 0.0,
+   "puntual_total": 930.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "mar": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "abr": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 2436.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 2436.0
+    },
+    "jul": {
+     "honorario": 2436.0,
+     "pauta": 0.0,
+     "puntual": 930.0,
+     "cobrado": 3366.0
+    },
+    "ago": {
+     "honorario": 2436.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 2436.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": 0.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 2436.0
+    },
+    "feb": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 2436.0
+    },
+    "mar": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 2436.0
+    },
+    "abr": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 2436.0
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 2436.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "01/06/2026",
+       "desc": "DEPOSITO DE CHQUE 1 DE SPEEDY",
+       "importe": 2436.0,
+       "tipo": "honorario",
+       "honorario": 2436.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 2436.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 2436.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "03/07/2026",
+       "desc": "PAGO SPEEDY PRODUCCION AUDIOVISUAL Y ACTORES",
+       "importe": 930.0,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 930.0,
+       "esperado": 2436.0,
+       "desvio": null
+      },
+      {
+       "mes": "jul",
+       "fecha": "03/07/2026",
+       "desc": "PAGO FEE MENSUAL SPEEDY",
+       "importe": 2436.0,
+       "tipo": "honorario",
+       "honorario": 2436.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 2436.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 2436.0
+    },
+    "ago": {
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "21/08/2026",
+       "desc": "PAGO SPEEDY",
+       "importe": 2436.0,
+       "tipo": "honorario",
+       "honorario": 2436.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 2436.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 2436.0
+    }
+   },
+   "meses_activo": 3,
+   "primer_mes": "jun",
+   "ultimo_mes": "ago",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "jun",
+     "fecha": "01/06/2026",
+     "desc": "DEPOSITO DE CHQUE 1 DE SPEEDY",
+     "importe": 2436.0,
+     "tipo": "honorario",
+     "honorario": 2436.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 2436.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "03/07/2026",
+     "desc": "PAGO SPEEDY PRODUCCION AUDIOVISUAL Y ACTORES",
+     "importe": 930.0,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 930.0,
+     "esperado": 2436.0,
+     "desvio": null
+    },
+    {
+     "mes": "jul",
+     "fecha": "03/07/2026",
+     "desc": "PAGO FEE MENSUAL SPEEDY",
+     "importe": 2436.0,
+     "tipo": "honorario",
+     "honorario": 2436.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 2436.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "21/08/2026",
+     "desc": "PAGO SPEEDY",
+     "importe": 2436.0,
+     "tipo": "honorario",
+     "honorario": 2436.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 2436.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
    "cliente": "Healthy Girl",
    "estado": "activo",
    "nota": "",
@@ -1892,219 +2128,6 @@
    ]
   },
   {
-   "cliente": "Speedy",
-   "estado": "activo",
-   "nota": "",
-   "fee": 2400,
-   "fee_inicial": 2400,
-   "con_iva": true,
-   "facturado_mes": 2760.0,
-   "retenido_mes": 324.0,
-   "a_cobrar_mes": 2436.0,
-   "ret_ir": 0.03,
-   "ret_iva": 0.7,
-   "cambios": {},
-   "cobrado_total": 5802.0,
-   "honorario_total": 4872.0,
-   "pauta_total": 0.0,
-   "puntual_total": 930.0,
-   "por_mes": {
-    "ene": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "feb": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "mar": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "abr": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "may": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "jun": {
-     "honorario": 2436.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 2436.0
-    },
-    "jul": {
-     "honorario": 2436.0,
-     "pauta": 0.0,
-     "puntual": 930.0,
-     "cobrado": 3366.0
-    },
-    "ago": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    }
-   },
-   "pendiente": 2436.0,
-   "cobro": "1 mes",
-   "cubierto_hasta": 6,
-   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
-   "cobro_nota": "",
-   "atraso_meses": 1.0,
-   "ficha_mes": {
-    "ene": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 2436.0
-    },
-    "feb": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 2436.0
-    },
-    "mar": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 2436.0
-    },
-    "abr": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 2436.0
-    },
-    "may": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 2436.0
-    },
-    "jun": {
-     "movs": [
-      {
-       "mes": "jun",
-       "fecha": "01/06/2026",
-       "desc": "DEPOSITO DE CHQUE 1 DE SPEEDY",
-       "importe": 2436.0,
-       "tipo": "honorario",
-       "honorario": 2436.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 2436.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 2436.0
-    },
-    "jul": {
-     "movs": [
-      {
-       "mes": "jul",
-       "fecha": "03/07/2026",
-       "desc": "PAGO SPEEDY PRODUCCION AUDIOVISUAL Y ACTORES",
-       "importe": 930.0,
-       "tipo": "puntual",
-       "honorario": 0.0,
-       "pauta": 0.0,
-       "puntual": 930.0,
-       "esperado": 2436.0,
-       "desvio": null
-      },
-      {
-       "mes": "jul",
-       "fecha": "03/07/2026",
-       "desc": "PAGO FEE MENSUAL SPEEDY",
-       "importe": 2436.0,
-       "tipo": "honorario",
-       "honorario": 2436.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 2436.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [
-      "incluye un trabajo puntual facturado aparte del fee"
-     ],
-     "esperado": 2436.0
-    },
-    "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
-     ],
-     "esperado": 2436.0
-    }
-   },
-   "meses_activo": 2,
-   "primer_mes": "jun",
-   "ultimo_mes": "jul",
-   "cuadra": true,
-   "desvios": [],
-   "dobles": [],
-   "inferido": "",
-   "detalle": [
-    {
-     "mes": "jun",
-     "fecha": "01/06/2026",
-     "desc": "DEPOSITO DE CHQUE 1 DE SPEEDY",
-     "importe": 2436.0,
-     "tipo": "honorario",
-     "honorario": 2436.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 2436.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jul",
-     "fecha": "03/07/2026",
-     "desc": "PAGO SPEEDY PRODUCCION AUDIOVISUAL Y ACTORES",
-     "importe": 930.0,
-     "tipo": "puntual",
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 930.0,
-     "esperado": 2436.0,
-     "desvio": null
-    },
-    {
-     "mes": "jul",
-     "fecha": "03/07/2026",
-     "desc": "PAGO FEE MENSUAL SPEEDY",
-     "importe": 2436.0,
-     "tipo": "honorario",
-     "honorario": 2436.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 2436.0,
-     "desvio": 0.0
-    }
-   ]
-  },
-  {
    "cliente": "Velsana",
    "estado": "activo",
    "nota": "",
@@ -3748,6 +3771,325 @@
    ]
   },
   {
+   "cliente": "Plasticaucho",
+   "estado": "activo",
+   "nota": "",
+   "fee": 350,
+   "fee_inicial": 350,
+   "con_iva": true,
+   "facturado_mes": 402.5,
+   "retenido_mes": 63.0,
+   "a_cobrar_mes": 339.5,
+   "ret_ir": 0.03,
+   "ret_iva": 1.0,
+   "cambios": {},
+   "cobrado_total": 2736.5,
+   "honorario_total": 2736.5,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 700.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 700.0
+    },
+    "mar": {
+     "honorario": 339.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 339.0
+    },
+    "abr": {
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 340.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 679.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 679.0
+    },
+    "jul": {
+     "honorario": 339.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 339.0
+    },
+    "ago": {
+     "honorario": 339.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 339.5
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "adelantado",
+   "cubierto_hasta": 8,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": -1.1,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 339.5
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "06/02/2026",
+       "desc": "PLASTICAUCHO ENERO",
+       "importe": 350.0,
+       "tipo": "honorario",
+       "honorario": 350.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": 10.5
+      },
+      {
+       "mes": "feb",
+       "fecha": "20/02/2026",
+       "desc": "PLASTICAUCHO FEBRERO",
+       "importe": 350.0,
+       "tipo": "honorario",
+       "honorario": 350.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": 10.5
+      }
+     ],
+     "razones": [
+      "llegó en 2 giros distintos"
+     ],
+     "esperado": 339.5
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "23/03/2026",
+       "desc": "PLASTICAUCHO MARZO",
+       "importe": 339.0,
+       "tipo": "honorario",
+       "honorario": 339.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": -0.5
+      }
+     ],
+     "razones": [],
+     "esperado": 339.5
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "24/04/2026",
+       "desc": "PAGO PLASTICAUCHO ABRIL",
+       "importe": 340.0,
+       "tipo": "honorario",
+       "honorario": 340.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": 0.5
+      }
+     ],
+     "razones": [],
+     "esperado": 339.5
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 339.5
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "29/06/2026",
+       "desc": "PAGO PLASTICAUCHO MAYO Y JUNIO",
+       "importe": 679.0,
+       "tipo": "honorario",
+       "honorario": 679.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": 339.5
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 339.5
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "24/07/2026",
+       "desc": "PAGO PLASTICAUCHO JULIO",
+       "importe": 339.0,
+       "tipo": "honorario",
+       "honorario": 339.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": -0.5
+      }
+     ],
+     "razones": [],
+     "esperado": 339.5
+    },
+    "ago": {
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "21/08/2026",
+       "desc": "PAGO PLASTICAUCHO AGOSTO",
+       "importe": 339.5,
+       "tipo": "honorario",
+       "honorario": 339.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 339.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 339.5
+    }
+   },
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "cuadra": false,
+   "desvios": [
+    {
+     "mes": "feb",
+     "dif": 360.5,
+     "esperado": 339.5,
+     "real": 700.0
+    }
+   ],
+   "dobles": [
+    {
+     "mes": "jun",
+     "n": 2
+    }
+   ],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "06/02/2026",
+     "desc": "PLASTICAUCHO ENERO",
+     "importe": 350.0,
+     "tipo": "honorario",
+     "honorario": 350.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": 10.5
+    },
+    {
+     "mes": "feb",
+     "fecha": "20/02/2026",
+     "desc": "PLASTICAUCHO FEBRERO",
+     "importe": 350.0,
+     "tipo": "honorario",
+     "honorario": 350.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": 10.5
+    },
+    {
+     "mes": "mar",
+     "fecha": "23/03/2026",
+     "desc": "PLASTICAUCHO MARZO",
+     "importe": 339.0,
+     "tipo": "honorario",
+     "honorario": 339.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": -0.5
+    },
+    {
+     "mes": "abr",
+     "fecha": "24/04/2026",
+     "desc": "PAGO PLASTICAUCHO ABRIL",
+     "importe": 340.0,
+     "tipo": "honorario",
+     "honorario": 340.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": 0.5
+    },
+    {
+     "mes": "jun",
+     "fecha": "29/06/2026",
+     "desc": "PAGO PLASTICAUCHO MAYO Y JUNIO",
+     "importe": 679.0,
+     "tipo": "honorario",
+     "honorario": 679.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": 339.5
+    },
+    {
+     "mes": "jul",
+     "fecha": "24/07/2026",
+     "desc": "PAGO PLASTICAUCHO JULIO",
+     "importe": 339.0,
+     "tipo": "honorario",
+     "honorario": 339.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": -0.5
+    },
+    {
+     "mes": "ago",
+     "fecha": "21/08/2026",
+     "desc": "PAGO PLASTICAUCHO AGOSTO",
+     "importe": 339.5,
+     "tipo": "honorario",
+     "honorario": 339.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 339.5,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
    "cliente": "Onco Ambato",
    "estado": "activo",
    "nota": "",
@@ -4401,20 +4743,20 @@
    ]
   },
   {
-   "cliente": "Plasticaucho",
+   "cliente": "APC",
    "estado": "activo",
    "nota": "",
-   "fee": 350,
-   "fee_inicial": 350,
+   "fee": 500,
+   "fee_inicial": 500,
    "con_iva": true,
-   "facturado_mes": 402.5,
-   "retenido_mes": 63.0,
-   "a_cobrar_mes": 339.5,
-   "ret_ir": 0.03,
-   "ret_iva": 1.0,
+   "facturado_mes": 575.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 575.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
    "cambios": {},
-   "cobrado_total": 2397.0,
-   "honorario_total": 2397.0,
+   "cobrado_total": 2300.0,
+   "honorario_total": 2300.0,
    "pauta_total": 0.0,
    "puntual_total": 0.0,
    "por_mes": {
@@ -4425,274 +4767,219 @@
      "cobrado": 0.0
     },
     "feb": {
-     "honorario": 700.0,
+     "honorario": 0.0,
      "pauta": 0.0,
      "puntual": 0.0,
-     "cobrado": 700.0
+     "cobrado": 0.0
     },
     "mar": {
-     "honorario": 339.0,
+     "honorario": 0.0,
      "pauta": 0.0,
      "puntual": 0.0,
-     "cobrado": 339.0
+     "cobrado": 0.0
     },
     "abr": {
-     "honorario": 340.0,
+     "honorario": 575.0,
      "pauta": 0.0,
      "puntual": 0.0,
-     "cobrado": 340.0
+     "cobrado": 575.0
     },
     "may": {
-     "honorario": 0.0,
+     "honorario": 575.0,
      "pauta": 0.0,
      "puntual": 0.0,
-     "cobrado": 0.0
+     "cobrado": 575.0
     },
     "jun": {
-     "honorario": 679.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 679.0
-    },
-    "jul": {
-     "honorario": 339.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 339.0
-    },
-    "ago": {
      "honorario": 0.0,
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 0.0
+    },
+    "jul": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "ago": {
+     "honorario": 1150.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 1150.0
     }
    },
    "pendiente": 0.0,
    "cobro": "al día",
    "cubierto_hasta": 7,
-   "cobro_fuente": "periodo declarado en el último cobro",
-   "cobro_nota": "",
-   "atraso_meses": -0.1,
+   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
+   "cobro_nota": "lecturas distintas: el último cobro declara hasta julio, pero el conteo de mensualidades da 0 mes(es) de atraso",
+   "atraso_meses": -2.0,
    "ficha_mes": {
     "ene": {
      "movs": [],
      "razones": [
       "todavía no era cliente"
      ],
-     "esperado": 339.5
+     "esperado": 575.0
     },
     "feb": {
-     "movs": [
-      {
-       "mes": "feb",
-       "fecha": "06/02/2026",
-       "desc": "PLASTICAUCHO ENERO",
-       "importe": 350.0,
-       "tipo": "honorario",
-       "honorario": 350.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 339.5,
-       "desvio": 10.5
-      },
-      {
-       "mes": "feb",
-       "fecha": "20/02/2026",
-       "desc": "PLASTICAUCHO FEBRERO",
-       "importe": 350.0,
-       "tipo": "honorario",
-       "honorario": 350.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 339.5,
-       "desvio": 10.5
-      }
-     ],
+     "movs": [],
      "razones": [
-      "llegó en 2 giros distintos"
+      "todavía no era cliente"
      ],
-     "esperado": 339.5
+     "esperado": 575.0
     },
     "mar": {
-     "movs": [
-      {
-       "mes": "mar",
-       "fecha": "23/03/2026",
-       "desc": "PLASTICAUCHO MARZO",
-       "importe": 339.0,
-       "tipo": "honorario",
-       "honorario": 339.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 339.5,
-       "desvio": -0.5
-      }
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
      ],
-     "razones": [],
-     "esperado": 339.5
+     "esperado": 575.0
     },
     "abr": {
      "movs": [
       {
        "mes": "abr",
-       "fecha": "24/04/2026",
-       "desc": "PAGO PLASTICAUCHO ABRIL",
-       "importe": 340.0,
+       "fecha": "16/04/2026",
+       "desc": "PAGO APC",
+       "importe": 575.0,
        "tipo": "honorario",
-       "honorario": 340.0,
+       "honorario": 575.0,
        "pauta": 0.0,
        "puntual": 0.0,
-       "esperado": 339.5,
-       "desvio": 0.5
+       "esperado": 575.0,
+       "desvio": 0.0
       }
      ],
      "razones": [],
-     "esperado": 339.5
+     "esperado": 575.0
     },
     "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "27/05/2026",
+       "desc": "PAGO APC",
+       "importe": 575.0,
+       "tipo": "honorario",
+       "honorario": 575.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 575.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 575.0
+    },
+    "jun": {
      "movs": [],
      "razones": [
       "no hubo cobro este mes; se regularizó en otro"
      ],
-     "esperado": 339.5
+     "esperado": 575.0
     },
-    "jun": {
+    "jul": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 575.0
+    },
+    "ago": {
      "movs": [
       {
-       "mes": "jun",
-       "fecha": "29/06/2026",
-       "desc": "PAGO PLASTICAUCHO MAYO Y JUNIO",
-       "importe": 679.0,
+       "mes": "ago",
+       "fecha": "07/08/2026",
+       "desc": "PAGO APC JUNIO",
+       "importe": 575.0,
        "tipo": "honorario",
-       "honorario": 679.0,
+       "honorario": 575.0,
        "pauta": 0.0,
        "puntual": 0.0,
-       "esperado": 339.5,
-       "desvio": 339.5
+       "esperado": 575.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "ago",
+       "fecha": "21/08/2026",
+       "desc": "PAGO APC JULIO",
+       "importe": 575.0,
+       "tipo": "honorario",
+       "honorario": 575.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 575.0,
+       "desvio": 0.0
       }
      ],
      "razones": [
       "cobró 2 mensualidades en el mismo mes"
      ],
-     "esperado": 339.5
-    },
-    "jul": {
-     "movs": [
-      {
-       "mes": "jul",
-       "fecha": "24/07/2026",
-       "desc": "PAGO PLASTICAUCHO JULIO",
-       "importe": 339.0,
-       "tipo": "honorario",
-       "honorario": 339.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 339.5,
-       "desvio": -0.5
-      }
-     ],
-     "razones": [],
-     "esperado": 339.5
-    },
-    "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
-     ],
-     "esperado": 339.5
+     "esperado": 575.0
     }
    },
-   "meses_activo": 5,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "cuadra": false,
-   "desvios": [
-    {
-     "mes": "feb",
-     "dif": 360.5,
-     "esperado": 339.5,
-     "real": 700.0
-    }
-   ],
+   "meses_activo": 3,
+   "primer_mes": "abr",
+   "ultimo_mes": "ago",
+   "cuadra": true,
+   "desvios": [],
    "dobles": [
     {
-     "mes": "jun",
+     "mes": "ago",
      "n": 2
     }
    ],
    "inferido": "",
    "detalle": [
     {
-     "mes": "feb",
-     "fecha": "06/02/2026",
-     "desc": "PLASTICAUCHO ENERO",
-     "importe": 350.0,
-     "tipo": "honorario",
-     "honorario": 350.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 339.5,
-     "desvio": 10.5
-    },
-    {
-     "mes": "feb",
-     "fecha": "20/02/2026",
-     "desc": "PLASTICAUCHO FEBRERO",
-     "importe": 350.0,
-     "tipo": "honorario",
-     "honorario": 350.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 339.5,
-     "desvio": 10.5
-    },
-    {
-     "mes": "mar",
-     "fecha": "23/03/2026",
-     "desc": "PLASTICAUCHO MARZO",
-     "importe": 339.0,
-     "tipo": "honorario",
-     "honorario": 339.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 339.5,
-     "desvio": -0.5
-    },
-    {
      "mes": "abr",
-     "fecha": "24/04/2026",
-     "desc": "PAGO PLASTICAUCHO ABRIL",
-     "importe": 340.0,
+     "fecha": "16/04/2026",
+     "desc": "PAGO APC",
+     "importe": 575.0,
      "tipo": "honorario",
-     "honorario": 340.0,
+     "honorario": 575.0,
      "pauta": 0.0,
      "puntual": 0.0,
-     "esperado": 339.5,
-     "desvio": 0.5
+     "esperado": 575.0,
+     "desvio": 0.0
     },
     {
-     "mes": "jun",
-     "fecha": "29/06/2026",
-     "desc": "PAGO PLASTICAUCHO MAYO Y JUNIO",
-     "importe": 679.0,
+     "mes": "may",
+     "fecha": "27/05/2026",
+     "desc": "PAGO APC",
+     "importe": 575.0,
      "tipo": "honorario",
-     "honorario": 679.0,
+     "honorario": 575.0,
      "pauta": 0.0,
      "puntual": 0.0,
-     "esperado": 339.5,
-     "desvio": 339.5
+     "esperado": 575.0,
+     "desvio": 0.0
     },
     {
-     "mes": "jul",
-     "fecha": "24/07/2026",
-     "desc": "PAGO PLASTICAUCHO JULIO",
-     "importe": 339.0,
+     "mes": "ago",
+     "fecha": "07/08/2026",
+     "desc": "PAGO APC JUNIO",
+     "importe": 575.0,
      "tipo": "honorario",
-     "honorario": 339.0,
+     "honorario": 575.0,
      "pauta": 0.0,
      "puntual": 0.0,
-     "esperado": 339.5,
-     "desvio": -0.5
+     "esperado": 575.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "21/08/2026",
+     "desc": "PAGO APC JULIO",
+     "importe": 575.0,
+     "tipo": "honorario",
+     "honorario": 575.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 575.0,
+     "desvio": 0.0
     }
    ]
   },
@@ -6023,216 +6310,6 @@
      "puntual": 0.0,
      "esperado": 400.0,
      "desvio": 400.0
-    }
-   ]
-  },
-  {
-   "cliente": "APC",
-   "estado": "activo",
-   "nota": "",
-   "fee": 500,
-   "fee_inicial": 500,
-   "con_iva": true,
-   "facturado_mes": 575.0,
-   "retenido_mes": 0.0,
-   "a_cobrar_mes": 575.0,
-   "ret_ir": 0,
-   "ret_iva": 0,
-   "cambios": {},
-   "cobrado_total": 1725.0,
-   "honorario_total": 1725.0,
-   "pauta_total": 0.0,
-   "puntual_total": 0.0,
-   "por_mes": {
-    "ene": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "feb": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "mar": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "abr": {
-     "honorario": 575.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 575.0
-    },
-    "may": {
-     "honorario": 575.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 575.0
-    },
-    "jun": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "jul": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "ago": {
-     "honorario": 575.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 575.0
-    }
-   },
-   "pendiente": 575.0,
-   "cobro": "1 mes",
-   "cubierto_hasta": 6,
-   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
-   "cobro_nota": "lecturas distintas: el último cobro declara hasta junio, pero el conteo de mensualidades da 0 mes(es) de atraso",
-   "atraso_meses": -1.0,
-   "ficha_mes": {
-    "ene": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 575.0
-    },
-    "feb": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 575.0
-    },
-    "mar": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 575.0
-    },
-    "abr": {
-     "movs": [
-      {
-       "mes": "abr",
-       "fecha": "16/04/2026",
-       "desc": "PAGO APC",
-       "importe": 575.0,
-       "tipo": "honorario",
-       "honorario": 575.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 575.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 575.0
-    },
-    "may": {
-     "movs": [
-      {
-       "mes": "may",
-       "fecha": "27/05/2026",
-       "desc": "PAGO APC",
-       "importe": 575.0,
-       "tipo": "honorario",
-       "honorario": 575.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 575.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 575.0
-    },
-    "jun": {
-     "movs": [],
-     "razones": [
-      "no hubo cobro este mes; se regularizó en otro"
-     ],
-     "esperado": 575.0
-    },
-    "jul": {
-     "movs": [],
-     "razones": [
-      "no hubo cobro este mes; se regularizó en otro"
-     ],
-     "esperado": 575.0
-    },
-    "ago": {
-     "movs": [
-      {
-       "mes": "ago",
-       "fecha": "07/08/2026",
-       "desc": "PAGO APC JUNIO",
-       "importe": 575.0,
-       "tipo": "honorario",
-       "honorario": 575.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 575.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 575.0
-    }
-   },
-   "meses_activo": 3,
-   "primer_mes": "abr",
-   "ultimo_mes": "ago",
-   "cuadra": true,
-   "desvios": [],
-   "dobles": [],
-   "inferido": "",
-   "detalle": [
-    {
-     "mes": "abr",
-     "fecha": "16/04/2026",
-     "desc": "PAGO APC",
-     "importe": 575.0,
-     "tipo": "honorario",
-     "honorario": 575.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 575.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "may",
-     "fecha": "27/05/2026",
-     "desc": "PAGO APC",
-     "importe": 575.0,
-     "tipo": "honorario",
-     "honorario": 575.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 575.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "ago",
-     "fecha": "07/08/2026",
-     "desc": "PAGO APC JUNIO",
-     "importe": 575.0,
-     "tipo": "honorario",
-     "honorario": 575.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 575.0,
-     "desvio": 0.0
     }
    ]
   },
@@ -8354,17 +8431,17 @@
   }
  ],
  "totales": {
-  "honorario": 76230.4,
+  "honorario": 79580.9,
   "pauta": 7385.12,
   "puntual": 5617.87,
-  "cobrado": 89233.39
+  "cobrado": 92583.89
  },
  "honorarios_recurrentes_mes": 12619.98,
  "retenido_mes": 825.02,
  "avisos": [
   "Cobro de marzo sin identificar: no está en el tarifario (cobrado 653.00)"
  ],
- "pendiente_cobro": 4601.0,
- "cuentas_al_dia": 16,
+ "pendiente_cobro": 1590.0,
+ "cuentas_al_dia": 18,
  "cuentas_activas": 22
 }

@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 5271.48,
+   "ingresos": 8621.98,
    "pauta_cobrada": 640.0,
    "pauta_pagada": 1697.58,
    "pauta_neta": 1057.58,
    "costo_fijo": 5357.83,
-   "costo_variable": 1059.12,
-   "costo_total": 7474.53,
-   "resultado": -2203.05,
-   "margen_contribucion": 3154.78,
-   "margen_pct": 59.8
+   "costo_variable": 1144.98,
+   "costo_total": 7560.39,
+   "resultado": 1061.59,
+   "margen_contribucion": 6419.42,
+   "margen_pct": 74.5
   }
  ],
  "grupos": {
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 4769.48
+   "ago": 8119.98
   },
   "Equipos": {
    "ene": -75.0,
@@ -174,7 +174,7 @@
    "may": -20.16,
    "jun": -56.88,
    "jul": -18.34,
-   "ago": -52.22
+   "ago": -62.52
   },
   "Pauta": {
    "ene": -574.03,
@@ -224,7 +224,7 @@
    "may": -543.49,
    "jun": -30.0,
    "jul": -312.1,
-   "ago": 0.0
+   "ago": -75.56
   },
   "Software y herramientas": {
    "ene": -11.91,
@@ -346,7 +346,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": 3190.0
+   "ago": -910.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -416,9 +416,29 @@
  "mes_corte_activo": "jul",
  "clientes": [
   {
+   "cliente": "Speedy",
+   "total": 8238.0,
+   "pct": 9.5,
+   "pagos": 4,
+   "meses_activo": 3,
+   "primer_mes": "jun",
+   "ultimo_mes": "ago",
+   "fee_promedio": 2746.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 2436.0,
+    "jul": 3366.0,
+    "ago": 2436.0
+   }
+  },
+  {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 9.8,
+   "pct": 9.4,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -438,7 +458,7 @@
   {
    "cliente": "Uninova",
    "total": 7803.0,
-   "pct": 9.4,
+   "pct": 9.0,
    "pagos": 10,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -458,7 +478,7 @@
   {
    "cliente": "Fiammingo",
    "total": 6510.0,
-   "pct": 7.8,
+   "pct": 7.5,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -478,7 +498,7 @@
   {
    "cliente": "Samari",
    "total": 6050.72,
-   "pct": 7.3,
+   "pct": 7.0,
    "pagos": 10,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -496,29 +516,9 @@
    }
   },
   {
-   "cliente": "Speedy",
-   "total": 5802.0,
-   "pct": 7.0,
-   "pagos": 3,
-   "meses_activo": 2,
-   "primer_mes": "jun",
-   "ultimo_mes": "jul",
-   "fee_promedio": 2901.0,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 2436.0,
-    "jul": 3366.0,
-    "ago": 0.0
-   }
-  },
-  {
    "cliente": "Velsana",
    "total": 5345.0,
-   "pct": 6.4,
+   "pct": 6.2,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "ene",
@@ -538,7 +538,7 @@
   {
    "cliente": "Flota Imbabura",
    "total": 3910.51,
-   "pct": 4.7,
+   "pct": 4.5,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -558,7 +558,7 @@
   {
    "cliente": "Nane Vestidos",
    "total": 3660.0,
-   "pct": 4.4,
+   "pct": 4.2,
    "pagos": 9,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -578,7 +578,7 @@
   {
    "cliente": "Cigarra",
    "total": 3622.5,
-   "pct": 4.4,
+   "pct": 4.2,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -598,7 +598,7 @@
   {
    "cliente": "Confia",
    "total": 3500.0,
-   "pct": 4.2,
+   "pct": 4.1,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -618,7 +618,7 @@
   {
    "cliente": "Pladeco",
    "total": 3049.0,
-   "pct": 3.7,
+   "pct": 3.5,
    "pagos": 6,
    "meses_activo": 5,
    "primer_mes": "ene",
@@ -636,9 +636,29 @@
    }
   },
   {
+   "cliente": "Plasticaucho",
+   "total": 2736.5,
+   "pct": 3.2,
+   "pagos": 7,
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "fee_promedio": 456.08,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 700.0,
+    "mar": 339.0,
+    "abr": 340.0,
+    "may": 0.0,
+    "jun": 679.0,
+    "jul": 339.0,
+    "ago": 339.5
+   }
+  },
+  {
    "cliente": "Onco Ambato",
    "total": 2640.0,
-   "pct": 3.2,
+   "pct": 3.1,
    "pagos": 8,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -658,7 +678,7 @@
   {
    "cliente": "Absolute",
    "total": 2400.0,
-   "pct": 2.9,
+   "pct": 2.8,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -676,29 +696,29 @@
    }
   },
   {
-   "cliente": "Plasticaucho",
-   "total": 2397.0,
-   "pct": 2.9,
-   "pagos": 6,
-   "meses_activo": 5,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "fee_promedio": 479.4,
+   "cliente": "APC",
+   "total": 2300.0,
+   "pct": 2.7,
+   "pagos": 4,
+   "meses_activo": 3,
+   "primer_mes": "abr",
+   "ultimo_mes": "ago",
+   "fee_promedio": 766.67,
    "por_mes": {
     "ene": 0.0,
-    "feb": 700.0,
-    "mar": 339.0,
-    "abr": 340.0,
-    "may": 0.0,
-    "jun": 679.0,
-    "jul": 339.0,
-    "ago": 0.0
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 575.0,
+    "may": 575.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 1150.0
    }
   },
   {
    "cliente": "Chiflido",
    "total": 2100.0,
-   "pct": 2.5,
+   "pct": 2.4,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -718,7 +738,7 @@
   {
    "cliente": "Tartelier",
    "total": 2070.0,
-   "pct": 2.5,
+   "pct": 2.4,
    "pagos": 6,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -738,7 +758,7 @@
   {
    "cliente": "Provita",
    "total": 2007.5,
-   "pct": 2.4,
+   "pct": 2.3,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -776,29 +796,9 @@
    }
   },
   {
-   "cliente": "APC",
-   "total": 1725.0,
-   "pct": 2.1,
-   "pagos": 3,
-   "meses_activo": 3,
-   "primer_mes": "abr",
-   "ultimo_mes": "ago",
-   "fee_promedio": 575.0,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 575.0,
-    "may": 575.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 575.0
-   }
-  },
-  {
    "cliente": "Casa del Verde",
    "total": 1720.0,
-   "pct": 2.1,
+   "pct": 2.0,
    "pagos": 4,
    "meses_activo": 4,
    "primer_mes": "abr",
@@ -997,9 +997,9 @@
   }
  ],
  "concentracion": {
-  "top1": 9.8,
-  "top3": 27.0,
-  "top5": 41.3
+  "top1": 9.5,
+  "top3": 27.9,
+  "top5": 42.4
  },
  "equipo": [
   {
@@ -2659,8 +2659,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 61680.0,
-   "n": 70,
+   "total": 65780.0,
+   "n": 71,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2669,7 +2669,7 @@
     "may": 7425.0,
     "jun": 15722.0,
     "jul": 14357.0,
-    "ago": 6660.0
+    "ago": 10760.0
    },
    "detalle": {
     "ene": {
@@ -3058,6 +3058,11 @@
        "fecha": "17/08/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 822.0
+      },
+      {
+       "fecha": "21/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 4100.0
       }
      ],
      "razones": []
@@ -3911,8 +3916,8 @@
   {
    "grupo": "Tarjeta de credito",
    "categoria": "Pago tarjeta de credito",
-   "total": 1472.45,
-   "n": 13,
+   "total": 1548.01,
+   "n": 14,
    "por_mes": {
     "ene": 26.7,
     "feb": 29.25,
@@ -3921,7 +3926,7 @@
     "may": 543.49,
     "jun": 30.0,
     "jul": 312.1,
-    "ago": 0.0
+    "ago": 75.56
    },
    "detalle": {
     "ene": {
@@ -4020,6 +4025,16 @@
        "fecha": "28/07/2026",
        "desc": "PAGO TARJETA DE CREDITO",
        "importe": 260.94
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "21/08/2026",
+       "desc": "PAGO TARJETA DE CREDITO",
+       "importe": 75.56
       }
      ],
      "razones": []
@@ -4312,63 +4327,10 @@
    }
   },
   {
-   "grupo": "Estructura",
-   "categoria": "Internet",
-   "total": 256.45,
-   "n": 4,
-   "por_mes": {
-    "ene": 182.1,
-    "feb": 36.23,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 38.12
-   },
-   "detalle": {
-    "ene": {
-     "movs": [
-      {
-       "fecha": "05/01/2026",
-       "desc": "INTERNET",
-       "importe": 73.41
-      },
-      {
-       "fecha": "27/01/2026",
-       "desc": "INTERNET DANIEL",
-       "importe": 108.69
-      }
-     ],
-     "razones": []
-    },
-    "feb": {
-     "movs": [
-      {
-       "fecha": "27/02/2026",
-       "desc": "PAGO INTERNET",
-       "importe": 36.23
-      }
-     ],
-     "razones": []
-    },
-    "ago": {
-     "movs": [
-      {
-       "fecha": "03/08/2026",
-       "desc": "INTERNET ÚLTIMO DANIEL DARQUEA",
-       "importe": 38.12
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
    "grupo": "Movilizacion",
    "categoria": "Taxis / parqueo / viaticos",
-   "total": 250.36,
-   "n": 31,
+   "total": 260.66,
+   "n": 32,
    "por_mes": {
     "ene": 21.08,
     "feb": 0.0,
@@ -4377,7 +4339,7 @@
     "may": 20.16,
     "jun": 56.88,
     "jul": 18.34,
-    "ago": 52.22
+    "ago": 62.52
    },
    "detalle": {
     "ene": {
@@ -4566,6 +4528,64 @@
        "fecha": "14/08/2026",
        "desc": "TAXIS FALTÓ DE DANNA",
        "importe": 0.03
+      },
+      {
+       "fecha": "21/08/2026",
+       "desc": "TAXIS  MARISSA ALBAN",
+       "importe": 10.3
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Estructura",
+   "categoria": "Internet",
+   "total": 256.45,
+   "n": 4,
+   "por_mes": {
+    "ene": 182.1,
+    "feb": 36.23,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 38.12
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "desc": "INTERNET",
+       "importe": 73.41
+      },
+      {
+       "fecha": "27/01/2026",
+       "desc": "INTERNET DANIEL",
+       "importe": 108.69
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "27/02/2026",
+       "desc": "PAGO INTERNET",
+       "importe": 36.23
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "desc": "INTERNET ÚLTIMO DANIEL DARQUEA",
+       "importe": 38.12
       }
      ],
      "razones": []
@@ -5337,10 +5357,10 @@
   }
  ],
  "totales": {
-  "ingresos": 83005.51,
+  "ingresos": 86356.01,
   "costo_fijo": 65930.46,
-  "costo_variable": 10737.42,
-  "resultado": 1685.58,
-  "movimientos": 561
+  "costo_variable": 10823.28,
+  "resultado": 4950.22,
+  "movimientos": 567
  }
 }
