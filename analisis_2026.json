@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 8621.98,
+   "ingresos": 9071.98,
    "pauta_cobrada": 640.0,
    "pauta_pagada": 1697.58,
    "pauta_neta": 1057.58,
    "costo_fijo": 5357.83,
    "costo_variable": 1144.98,
    "costo_total": 7560.39,
-   "resultado": 1061.59,
-   "margen_contribucion": 6419.42,
-   "margen_pct": 74.5
+   "resultado": 1511.59,
+   "margen_contribucion": 6869.42,
+   "margen_pct": 75.7
   }
  ],
  "grupos": {
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 8119.98
+   "ago": 8569.98
   },
   "Equipos": {
    "ene": -75.0,
@@ -346,7 +346,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": -910.0
+   "ago": -1360.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -438,7 +438,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 9.4,
+   "pct": 9.3,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -536,6 +536,26 @@
    }
   },
   {
+   "cliente": "Nane Vestidos",
+   "total": 4110.0,
+   "pct": 4.7,
+   "pagos": 10,
+   "meses_activo": 8,
+   "primer_mes": "ene",
+   "ultimo_mes": "ago",
+   "fee_promedio": 513.75,
+   "por_mes": {
+    "ene": 450.0,
+    "feb": 480.0,
+    "mar": 500.0,
+    "abr": 500.0,
+    "may": 770.0,
+    "jun": 460.0,
+    "jul": 500.0,
+    "ago": 450.0
+   }
+  },
+  {
    "cliente": "Flota Imbabura",
    "total": 3910.51,
    "pct": 4.5,
@@ -553,26 +573,6 @@
     "jun": 558.25,
     "jul": 558.25,
     "ago": 558.25
-   }
-  },
-  {
-   "cliente": "Nane Vestidos",
-   "total": 3660.0,
-   "pct": 4.2,
-   "pagos": 9,
-   "meses_activo": 7,
-   "primer_mes": "ene",
-   "ultimo_mes": "jul",
-   "fee_promedio": 522.86,
-   "por_mes": {
-    "ene": 450.0,
-    "feb": 480.0,
-    "mar": 500.0,
-    "abr": 500.0,
-    "may": 770.0,
-    "jun": 460.0,
-    "jul": 500.0,
-    "ago": 0.0
    }
   },
   {
@@ -598,7 +598,7 @@
   {
    "cliente": "Confia",
    "total": 3500.0,
-   "pct": 4.1,
+   "pct": 4.0,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -658,7 +658,7 @@
   {
    "cliente": "Onco Ambato",
    "total": 2640.0,
-   "pct": 3.1,
+   "pct": 3.0,
    "pagos": 8,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -778,7 +778,7 @@
   {
    "cliente": "El Motor",
    "total": 1950.0,
-   "pct": 2.3,
+   "pct": 2.2,
    "pagos": 3,
    "meses_activo": 2,
    "primer_mes": "jun",
@@ -858,7 +858,7 @@
   {
    "cliente": "MM Wings",
    "total": 1080.0,
-   "pct": 1.3,
+   "pct": 1.2,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -998,8 +998,8 @@
  ],
  "concentracion": {
   "top1": 9.5,
-  "top3": 27.9,
-  "top5": 42.4
+  "top3": 27.8,
+  "top5": 42.3
  },
  "equipo": [
   {
@@ -2659,8 +2659,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 65780.0,
-   "n": 71,
+   "total": 66230.0,
+   "n": 72,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2669,7 +2669,7 @@
     "may": 7425.0,
     "jun": 15722.0,
     "jul": 14357.0,
-    "ago": 10760.0
+    "ago": 11210.0
    },
    "detalle": {
     "ene": {
@@ -3063,6 +3063,11 @@
        "fecha": "21/08/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 4100.0
+      },
+      {
+       "fecha": "24/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 450.0
       }
      ],
      "razones": []
@@ -5357,10 +5362,10 @@
   }
  ],
  "totales": {
-  "ingresos": 86356.01,
+  "ingresos": 86806.01,
   "costo_fijo": 65930.46,
   "costo_variable": 10823.28,
-  "resultado": 4950.22,
-  "movimientos": 567
+  "resultado": 5400.22,
+  "movimientos": 569
  }
 }

@@ -9070,5 +9070,37 @@
   "categoria": "Salida a FlexiAhorro",
   "detalle": "ENVIO A FLEXIAHORRO",
   "tipo_original": "https://drive.google.com/file/d/1QTlHZgzx43l5ImUvDIxa5T3GWXSdf1lx/view?usp=drivesdk"
+ },
+ {
+  "fecha": "24/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00566",
+  "descripcion": "PAGO NANE VESTIDOS",
+  "ingreso": 450.0,
+  "egreso": 0.0,
+  "neto": 450.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "Nane Vestidos",
+  "detalle": "PAGO NANE VESTIDOS",
+  "tipo_original": "https://drive.google.com/file/d/1WsNQQ4ST88DqON1H4bEq4Mj8od0epdTR/view?usp=drivesdk"
+ },
+ {
+  "fecha": "24/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00567",
+  "descripcion": "ENVIO A FLEXIAHORRO",
+  "ingreso": 0.0,
+  "egreso": 450.0,
+  "neto": -450.0,
+  "naturaleza": "NO OPERATIVO",
+  "grupo": "Movimiento entre cuentas propias",
+  "categoria": "Salida a FlexiAhorro",
+  "detalle": "ENVIO A FLEXIAHORRO",
+  "tipo_original": "https://drive.google.com/file/d/1FttvQO6Lo2DyGtjdAvJ5G-GKJvqXdf8a/view?usp=drivesdk"
  }
 ]
