@@ -363,6 +363,489 @@
    ]
   },
   {
+   "cliente": "Pladeco",
+   "estado": "activo",
+   "nota": "",
+   "fee": 400,
+   "fee_inicial": 350,
+   "con_iva": true,
+   "facturado_mes": 460.0,
+   "retenido_mes": 60.0,
+   "a_cobrar_mes": 400.0,
+   "ret_ir": 0,
+   "ret_iva": 1.0,
+   "cambios": {
+    "mar": 400
+   },
+   "cobrado_total": 8473.0,
+   "honorario_total": 3106.0,
+   "pauta_total": 4224.0,
+   "puntual_total": 1143.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 350.0,
+     "pauta": 0.0,
+     "puntual": 1143.0,
+     "cobrado": 1493.0
+    },
+    "feb": {
+     "honorario": 350.0,
+     "pauta": 384.0,
+     "puntual": 0.0,
+     "cobrado": 734.0
+    },
+    "mar": {
+     "honorario": 400.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 400.0
+    },
+    "abr": {
+     "honorario": 400.0,
+     "pauta": 1280.0,
+     "puntual": 0.0,
+     "cobrado": 1680.0
+    },
+    "may": {
+     "honorario": 406.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 406.0
+    },
+    "jun": {
+     "honorario": 400.0,
+     "pauta": 1280.0,
+     "puntual": 0.0,
+     "cobrado": 1680.0
+    },
+    "jul": {
+     "honorario": 400.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "cobrado": 1040.0
+    },
+    "ago": {
+     "honorario": 400.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "cobrado": 1040.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 7,
+   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
+   "cobro_nota": "",
+   "atraso_meses": 0.2,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "06/01/2026",
+       "desc": "pladeco  DEL 19 DE NOVIEBRE AL 19 DE DICIEMBRE",
+       "importe": 350.0,
+       "tipo": "honorario",
+       "honorario": 350.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 350.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "ene",
+       "fecha": "09/01/2026",
+       "desc": "CRM MONDAY PLADECO",
+       "importe": 1143.0,
+       "tipo": "puntual",
+       "honorario": 0.0,
+       "pauta": 0.0,
+       "puntual": 1143.0,
+       "esperado": 350.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 350.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "06/02/2026",
+       "desc": "PLADECO DEL 19 DICIEMBRE AL 19 DE ENERO",
+       "importe": 350.0,
+       "tipo": "honorario",
+       "honorario": 350.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 350.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "feb",
+       "fecha": "24/02/2026",
+       "desc": "PAUTA ALPES ENERO",
+       "importe": 384.0,
+       "tipo": "pauta",
+       "honorario": 0.0,
+       "pauta": 384.0,
+       "puntual": 0.0,
+       "esperado": 350.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 350.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "04/03/2026",
+       "desc": "PLADECO DE ENERO A FEBRERO",
+       "importe": 400.0,
+       "tipo": "honorario",
+       "honorario": 400.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 400.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "06/04/2026",
+       "desc": "pladeco pautas y mensual",
+       "importe": 1040.0,
+       "tipo": "mixto",
+       "honorario": 400.0,
+       "pauta": 640.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": null
+      },
+      {
+       "mes": "abr",
+       "fecha": "16/04/2026",
+       "desc": "PLADECO PAUTAS",
+       "importe": 640.0,
+       "tipo": "pauta",
+       "honorario": 0.0,
+       "pauta": 640.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 400.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "06/05/2026",
+       "desc": "PLADECO ABRIL FEE MENSUAL",
+       "importe": 406.0,
+       "tipo": "honorario",
+       "honorario": 406.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": 6.0
+      }
+     ],
+     "razones": [],
+     "esperado": 400.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "04/06/2026",
+       "desc": "PLADECO FEE MENSUAL MAS PAUTAS",
+       "importe": 1040.0,
+       "tipo": "mixto",
+       "honorario": 400.0,
+       "pauta": 640.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": null
+      },
+      {
+       "mes": "jun",
+       "fecha": "30/06/2026",
+       "desc": "PAUTA PLADECO",
+       "importe": 640.0,
+       "tipo": "pauta",
+       "honorario": 0.0,
+       "pauta": 640.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 400.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "21/07/2026",
+       "desc": "PLADECO DE JUNIO",
+       "importe": 400.0,
+       "tipo": "honorario",
+       "honorario": 400.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": 0.0
+      },
+      {
+       "mes": "jul",
+       "fecha": "22/07/2026",
+       "desc": "PAUTA PLADECO",
+       "importe": 640.0,
+       "tipo": "pauta",
+       "honorario": 0.0,
+       "pauta": 640.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 400.0
+    },
+    "ago": {
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "19/08/2026",
+       "desc": "PAGO PLADECO PAUTA PUBLICITARIA",
+       "importe": 640.0,
+       "tipo": "pauta",
+       "honorario": 0.0,
+       "pauta": 640.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": null
+      },
+      {
+       "mes": "ago",
+       "fecha": "28/08/2026",
+       "desc": "PAGO PLADECO JULIO",
+       "importe": 400.0,
+       "tipo": "honorario",
+       "honorario": 400.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 400.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 400.0
+    }
+   },
+   "meses_activo": 8,
+   "primer_mes": "ene",
+   "ultimo_mes": "ago",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "06/01/2026",
+     "desc": "pladeco  DEL 19 DE NOVIEBRE AL 19 DE DICIEMBRE",
+     "importe": 350.0,
+     "tipo": "honorario",
+     "honorario": 350.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 350.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ene",
+     "fecha": "09/01/2026",
+     "desc": "CRM MONDAY PLADECO",
+     "importe": 1143.0,
+     "tipo": "puntual",
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 1143.0,
+     "esperado": 350.0,
+     "desvio": null
+    },
+    {
+     "mes": "feb",
+     "fecha": "06/02/2026",
+     "desc": "PLADECO DEL 19 DICIEMBRE AL 19 DE ENERO",
+     "importe": 350.0,
+     "tipo": "honorario",
+     "honorario": 350.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 350.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "24/02/2026",
+     "desc": "PAUTA ALPES ENERO",
+     "importe": 384.0,
+     "tipo": "pauta",
+     "honorario": 0.0,
+     "pauta": 384.0,
+     "puntual": 0.0,
+     "esperado": 350.0,
+     "desvio": null
+    },
+    {
+     "mes": "mar",
+     "fecha": "04/03/2026",
+     "desc": "PLADECO DE ENERO A FEBRERO",
+     "importe": 400.0,
+     "tipo": "honorario",
+     "honorario": 400.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "06/04/2026",
+     "desc": "pladeco pautas y mensual",
+     "importe": 1040.0,
+     "tipo": "mixto",
+     "honorario": 400.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": null
+    },
+    {
+     "mes": "abr",
+     "fecha": "16/04/2026",
+     "desc": "PLADECO PAUTAS",
+     "importe": 640.0,
+     "tipo": "pauta",
+     "honorario": 0.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": null
+    },
+    {
+     "mes": "may",
+     "fecha": "06/05/2026",
+     "desc": "PLADECO ABRIL FEE MENSUAL",
+     "importe": 406.0,
+     "tipo": "honorario",
+     "honorario": 406.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": 6.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "04/06/2026",
+     "desc": "PLADECO FEE MENSUAL MAS PAUTAS",
+     "importe": 1040.0,
+     "tipo": "mixto",
+     "honorario": 400.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": null
+    },
+    {
+     "mes": "jun",
+     "fecha": "30/06/2026",
+     "desc": "PAUTA PLADECO",
+     "importe": 640.0,
+     "tipo": "pauta",
+     "honorario": 0.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": null
+    },
+    {
+     "mes": "jul",
+     "fecha": "21/07/2026",
+     "desc": "PLADECO DE JUNIO",
+     "importe": 400.0,
+     "tipo": "honorario",
+     "honorario": 400.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "22/07/2026",
+     "desc": "PAUTA PLADECO",
+     "importe": 640.0,
+     "tipo": "pauta",
+     "honorario": 0.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": null
+    },
+    {
+     "mes": "ago",
+     "fecha": "19/08/2026",
+     "desc": "PAGO PLADECO PAUTA PUBLICITARIA",
+     "importe": 640.0,
+     "tipo": "pauta",
+     "honorario": 0.0,
+     "pauta": 640.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": null
+    },
+    {
+     "mes": "ago",
+     "fecha": "28/08/2026",
+     "desc": "PAGO PLADECO JULIO",
+     "importe": 400.0,
+     "tipo": "honorario",
+     "honorario": 400.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 400.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
    "cliente": "Speedy",
    "estado": "activo",
    "nota": "",
@@ -595,466 +1078,6 @@
      "puntual": 0.0,
      "esperado": 2436.0,
      "desvio": 0.0
-    }
-   ]
-  },
-  {
-   "cliente": "Pladeco",
-   "estado": "activo",
-   "nota": "",
-   "fee": 400,
-   "fee_inicial": 350,
-   "con_iva": true,
-   "facturado_mes": 460.0,
-   "retenido_mes": 60.0,
-   "a_cobrar_mes": 400.0,
-   "ret_ir": 0,
-   "ret_iva": 1.0,
-   "cambios": {
-    "mar": 400
-   },
-   "cobrado_total": 8073.0,
-   "honorario_total": 2706.0,
-   "pauta_total": 4224.0,
-   "puntual_total": 1143.0,
-   "por_mes": {
-    "ene": {
-     "honorario": 350.0,
-     "pauta": 0.0,
-     "puntual": 1143.0,
-     "cobrado": 1493.0
-    },
-    "feb": {
-     "honorario": 350.0,
-     "pauta": 384.0,
-     "puntual": 0.0,
-     "cobrado": 734.0
-    },
-    "mar": {
-     "honorario": 400.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 400.0
-    },
-    "abr": {
-     "honorario": 400.0,
-     "pauta": 1280.0,
-     "puntual": 0.0,
-     "cobrado": 1680.0
-    },
-    "may": {
-     "honorario": 406.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 406.0
-    },
-    "jun": {
-     "honorario": 400.0,
-     "pauta": 1280.0,
-     "puntual": 0.0,
-     "cobrado": 1680.0
-    },
-    "jul": {
-     "honorario": 400.0,
-     "pauta": 640.0,
-     "puntual": 0.0,
-     "cobrado": 1040.0
-    },
-    "ago": {
-     "honorario": 0.0,
-     "pauta": 640.0,
-     "puntual": 0.0,
-     "cobrado": 640.0
-    }
-   },
-   "pendiente": 400.0,
-   "cobro": "1 mes",
-   "cubierto_hasta": 6,
-   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
-   "cobro_nota": "",
-   "atraso_meses": 1.2,
-   "ficha_mes": {
-    "ene": {
-     "movs": [
-      {
-       "mes": "ene",
-       "fecha": "06/01/2026",
-       "desc": "pladeco  DEL 19 DE NOVIEBRE AL 19 DE DICIEMBRE",
-       "importe": 350.0,
-       "tipo": "honorario",
-       "honorario": 350.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 350.0,
-       "desvio": 0.0
-      },
-      {
-       "mes": "ene",
-       "fecha": "09/01/2026",
-       "desc": "CRM MONDAY PLADECO",
-       "importe": 1143.0,
-       "tipo": "puntual",
-       "honorario": 0.0,
-       "pauta": 0.0,
-       "puntual": 1143.0,
-       "esperado": 350.0,
-       "desvio": null
-      }
-     ],
-     "razones": [
-      "incluye un trabajo puntual facturado aparte del fee"
-     ],
-     "esperado": 350.0
-    },
-    "feb": {
-     "movs": [
-      {
-       "mes": "feb",
-       "fecha": "06/02/2026",
-       "desc": "PLADECO DEL 19 DICIEMBRE AL 19 DE ENERO",
-       "importe": 350.0,
-       "tipo": "honorario",
-       "honorario": 350.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 350.0,
-       "desvio": 0.0
-      },
-      {
-       "mes": "feb",
-       "fecha": "24/02/2026",
-       "desc": "PAUTA ALPES ENERO",
-       "importe": 384.0,
-       "tipo": "pauta",
-       "honorario": 0.0,
-       "pauta": 384.0,
-       "puntual": 0.0,
-       "esperado": 350.0,
-       "desvio": null
-      }
-     ],
-     "razones": [
-      "el giro trae pauta del cliente, que no es facturación"
-     ],
-     "esperado": 350.0
-    },
-    "mar": {
-     "movs": [
-      {
-       "mes": "mar",
-       "fecha": "04/03/2026",
-       "desc": "PLADECO DE ENERO A FEBRERO",
-       "importe": 400.0,
-       "tipo": "honorario",
-       "honorario": 400.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 400.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 400.0
-    },
-    "abr": {
-     "movs": [
-      {
-       "mes": "abr",
-       "fecha": "06/04/2026",
-       "desc": "pladeco pautas y mensual",
-       "importe": 1040.0,
-       "tipo": "mixto",
-       "honorario": 400.0,
-       "pauta": 640.0,
-       "puntual": 0.0,
-       "esperado": 400.0,
-       "desvio": null
-      },
-      {
-       "mes": "abr",
-       "fecha": "16/04/2026",
-       "desc": "PLADECO PAUTAS",
-       "importe": 640.0,
-       "tipo": "pauta",
-       "honorario": 0.0,
-       "pauta": 640.0,
-       "puntual": 0.0,
-       "esperado": 400.0,
-       "desvio": null
-      }
-     ],
-     "razones": [
-      "el giro trae pauta del cliente, que no es facturación"
-     ],
-     "esperado": 400.0
-    },
-    "may": {
-     "movs": [
-      {
-       "mes": "may",
-       "fecha": "06/05/2026",
-       "desc": "PLADECO ABRIL FEE MENSUAL",
-       "importe": 406.0,
-       "tipo": "honorario",
-       "honorario": 406.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 400.0,
-       "desvio": 6.0
-      }
-     ],
-     "razones": [],
-     "esperado": 400.0
-    },
-    "jun": {
-     "movs": [
-      {
-       "mes": "jun",
-       "fecha": "04/06/2026",
-       "desc": "PLADECO FEE MENSUAL MAS PAUTAS",
-       "importe": 1040.0,
-       "tipo": "mixto",
-       "honorario": 400.0,
-       "pauta": 640.0,
-       "puntual": 0.0,
-       "esperado": 400.0,
-       "desvio": null
-      },
-      {
-       "mes": "jun",
-       "fecha": "30/06/2026",
-       "desc": "PAUTA PLADECO",
-       "importe": 640.0,
-       "tipo": "pauta",
-       "honorario": 0.0,
-       "pauta": 640.0,
-       "puntual": 0.0,
-       "esperado": 400.0,
-       "desvio": null
-      }
-     ],
-     "razones": [
-      "el giro trae pauta del cliente, que no es facturación"
-     ],
-     "esperado": 400.0
-    },
-    "jul": {
-     "movs": [
-      {
-       "mes": "jul",
-       "fecha": "21/07/2026",
-       "desc": "PLADECO DE JUNIO",
-       "importe": 400.0,
-       "tipo": "honorario",
-       "honorario": 400.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 400.0,
-       "desvio": 0.0
-      },
-      {
-       "mes": "jul",
-       "fecha": "22/07/2026",
-       "desc": "PAUTA PLADECO",
-       "importe": 640.0,
-       "tipo": "pauta",
-       "honorario": 0.0,
-       "pauta": 640.0,
-       "puntual": 0.0,
-       "esperado": 400.0,
-       "desvio": null
-      }
-     ],
-     "razones": [
-      "el giro trae pauta del cliente, que no es facturación"
-     ],
-     "esperado": 400.0
-    },
-    "ago": {
-     "movs": [
-      {
-       "mes": "ago",
-       "fecha": "19/08/2026",
-       "desc": "PAGO PLADECO PAUTA PUBLICITARIA",
-       "importe": 640.0,
-       "tipo": "pauta",
-       "honorario": 0.0,
-       "pauta": 640.0,
-       "puntual": 0.0,
-       "esperado": 400.0,
-       "desvio": null
-      }
-     ],
-     "razones": [
-      "el giro trae pauta del cliente, que no es facturación",
-      "cobró por debajo de su tarifa"
-     ],
-     "esperado": 400.0
-    }
-   },
-   "meses_activo": 8,
-   "primer_mes": "ene",
-   "ultimo_mes": "ago",
-   "cuadra": true,
-   "desvios": [],
-   "dobles": [],
-   "inferido": "",
-   "detalle": [
-    {
-     "mes": "ene",
-     "fecha": "06/01/2026",
-     "desc": "pladeco  DEL 19 DE NOVIEBRE AL 19 DE DICIEMBRE",
-     "importe": 350.0,
-     "tipo": "honorario",
-     "honorario": 350.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 350.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "ene",
-     "fecha": "09/01/2026",
-     "desc": "CRM MONDAY PLADECO",
-     "importe": 1143.0,
-     "tipo": "puntual",
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 1143.0,
-     "esperado": 350.0,
-     "desvio": null
-    },
-    {
-     "mes": "feb",
-     "fecha": "06/02/2026",
-     "desc": "PLADECO DEL 19 DICIEMBRE AL 19 DE ENERO",
-     "importe": 350.0,
-     "tipo": "honorario",
-     "honorario": 350.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 350.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "feb",
-     "fecha": "24/02/2026",
-     "desc": "PAUTA ALPES ENERO",
-     "importe": 384.0,
-     "tipo": "pauta",
-     "honorario": 0.0,
-     "pauta": 384.0,
-     "puntual": 0.0,
-     "esperado": 350.0,
-     "desvio": null
-    },
-    {
-     "mes": "mar",
-     "fecha": "04/03/2026",
-     "desc": "PLADECO DE ENERO A FEBRERO",
-     "importe": 400.0,
-     "tipo": "honorario",
-     "honorario": 400.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 400.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "abr",
-     "fecha": "06/04/2026",
-     "desc": "pladeco pautas y mensual",
-     "importe": 1040.0,
-     "tipo": "mixto",
-     "honorario": 400.0,
-     "pauta": 640.0,
-     "puntual": 0.0,
-     "esperado": 400.0,
-     "desvio": null
-    },
-    {
-     "mes": "abr",
-     "fecha": "16/04/2026",
-     "desc": "PLADECO PAUTAS",
-     "importe": 640.0,
-     "tipo": "pauta",
-     "honorario": 0.0,
-     "pauta": 640.0,
-     "puntual": 0.0,
-     "esperado": 400.0,
-     "desvio": null
-    },
-    {
-     "mes": "may",
-     "fecha": "06/05/2026",
-     "desc": "PLADECO ABRIL FEE MENSUAL",
-     "importe": 406.0,
-     "tipo": "honorario",
-     "honorario": 406.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 400.0,
-     "desvio": 6.0
-    },
-    {
-     "mes": "jun",
-     "fecha": "04/06/2026",
-     "desc": "PLADECO FEE MENSUAL MAS PAUTAS",
-     "importe": 1040.0,
-     "tipo": "mixto",
-     "honorario": 400.0,
-     "pauta": 640.0,
-     "puntual": 0.0,
-     "esperado": 400.0,
-     "desvio": null
-    },
-    {
-     "mes": "jun",
-     "fecha": "30/06/2026",
-     "desc": "PAUTA PLADECO",
-     "importe": 640.0,
-     "tipo": "pauta",
-     "honorario": 0.0,
-     "pauta": 640.0,
-     "puntual": 0.0,
-     "esperado": 400.0,
-     "desvio": null
-    },
-    {
-     "mes": "jul",
-     "fecha": "21/07/2026",
-     "desc": "PLADECO DE JUNIO",
-     "importe": 400.0,
-     "tipo": "honorario",
-     "honorario": 400.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 400.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jul",
-     "fecha": "22/07/2026",
-     "desc": "PAUTA PLADECO",
-     "importe": 640.0,
-     "tipo": "pauta",
-     "honorario": 0.0,
-     "pauta": 640.0,
-     "puntual": 0.0,
-     "esperado": 400.0,
-     "desvio": null
-    },
-    {
-     "mes": "ago",
-     "fecha": "19/08/2026",
-     "desc": "PAGO PLADECO PAUTA PUBLICITARIA",
-     "importe": 640.0,
-     "tipo": "pauta",
-     "honorario": 0.0,
-     "pauta": 640.0,
-     "puntual": 0.0,
-     "esperado": 400.0,
-     "desvio": null
     }
    ]
   },
@@ -8571,17 +8594,17 @@
   }
  ],
  "totales": {
-  "honorario": 82438.4,
+  "honorario": 82838.4,
   "pauta": 7722.12,
   "puntual": 5617.87,
-  "cobrado": 95778.39
+  "cobrado": 96178.39
  },
  "honorarios_recurrentes_mes": 12619.98,
  "retenido_mes": 825.02,
  "avisos": [
   "Cobro de marzo sin identificar: no está en el tarifario (cobrado 653.00)"
  ],
- "pendiente_cobro": 1290.0,
- "cuentas_al_dia": 19,
+ "pendiente_cobro": 890.0,
+ "cuentas_al_dia": 20,
  "cuentas_activas": 22
 }

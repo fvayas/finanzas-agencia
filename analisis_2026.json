@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 11479.48,
+   "ingresos": 11879.48,
    "pauta_cobrada": 977.0,
    "pauta_pagada": 1697.58,
    "pauta_neta": 720.58,
-   "costo_fijo": 5357.83,
+   "costo_fijo": 8608.44,
    "costo_variable": 1166.99,
-   "costo_total": 7245.4,
-   "resultado": 4234.08,
-   "margen_contribucion": 9591.91,
-   "margen_pct": 83.6
+   "costo_total": 10496.01,
+   "resultado": 1383.47,
+   "margen_contribucion": 9991.91,
+   "margen_pct": 84.1
   }
  ],
  "grupos": {
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 10287.48
+   "ago": 10687.48
   },
   "Equipos": {
    "ene": -75.0,
@@ -214,7 +214,7 @@
    "may": -475.66,
    "jun": 0.0,
    "jul": -522.81,
-   "ago": -270.41
+   "ago": -521.02
   },
   "Tarjeta de credito": {
    "ene": -26.7,
@@ -244,7 +244,7 @@
    "may": 0.0,
    "jun": -6000.0,
    "jul": -3000.0,
-   "ago": 0.0
+   "ago": -3000.0
   },
   "Otros ingresos": {
    "ene": 0.14,
@@ -324,7 +324,7 @@
    "may": 0.0,
    "jun": 0.0,
    "jul": 0.0,
-   "ago": -160.0
+   "ago": -192.6
   }
  },
  "no_operativo": {
@@ -346,7 +346,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": -4077.0
+   "ago": -1177.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -438,7 +438,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 9.2,
+   "pct": 9.1,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -478,7 +478,7 @@
   {
    "cliente": "Fiammingo",
    "total": 6510.0,
-   "pct": 7.4,
+   "pct": 7.3,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -598,7 +598,7 @@
   {
    "cliente": "Confia",
    "total": 3500.0,
-   "pct": 4.0,
+   "pct": 3.9,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -617,13 +617,13 @@
   },
   {
    "cliente": "Pladeco",
-   "total": 3049.0,
-   "pct": 3.4,
-   "pagos": 6,
-   "meses_activo": 5,
+   "total": 3449.0,
+   "pct": 3.9,
+   "pagos": 7,
+   "meses_activo": 6,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
-   "fee_promedio": 609.8,
+   "ultimo_mes": "ago",
+   "fee_promedio": 574.83,
    "por_mes": {
     "ene": 1493.0,
     "feb": 350.0,
@@ -632,7 +632,7 @@
     "may": 406.0,
     "jun": 0.0,
     "jul": 400.0,
-    "ago": 0.0
+    "ago": 400.0
    }
   },
   {
@@ -658,7 +658,7 @@
   {
    "cliente": "Absolute",
    "total": 2700.0,
-   "pct": 3.1,
+   "pct": 3.0,
    "pagos": 8,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -998,19 +998,19 @@
  ],
  "concentracion": {
   "top1": 9.3,
-  "top3": 27.3,
-  "top5": 41.5
+  "top3": 27.2,
+  "top5": 41.3
  },
  "equipo": [
   {
    "persona": "Francisco Vayas",
    "grupo": "Nomina socios",
-   "total": 10612.0,
-   "meses": 6,
-   "promedio_mes": 1768.67,
+   "total": 12112.0,
+   "meses": 7,
+   "promedio_mes": 1730.29,
    "base": 1500.0,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
+   "ultimo_mes": "ago",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1021,7 +1021,7 @@
     "may": 0.0,
     "jun": 3000.0,
     "jul": 1500.0,
-    "ago": 0.0
+    "ago": 1500.0
    },
    "detalle": {
     "ene": {
@@ -1131,18 +1131,31 @@
      },
      "vs_base": 0.0,
      "cmp_base": true
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "28/08/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO FRANCISCO VAYAS"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
     }
    }
   },
   {
    "persona": "Ana Paula",
    "grupo": "Nomina socios",
-   "total": 10500.0,
-   "meses": 6,
-   "promedio_mes": 1750.0,
+   "total": 12000.0,
+   "meses": 7,
+   "promedio_mes": 1714.29,
    "base": 1500.0,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
+   "ultimo_mes": "ago",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1153,7 +1166,7 @@
     "may": 0.0,
     "jun": 3000.0,
     "jul": 1500.0,
-    "ago": 0.0
+    "ago": 1500.0
    },
    "detalle": {
     "ene": {
@@ -1246,6 +1259,19 @@
       "vs": "jun",
       "dif": -1500.0
      },
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "28/08/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO ANA PAULA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
      "vs_base": 0.0,
      "cmp_base": true
     }
@@ -2659,8 +2685,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 68947.0,
-   "n": 75,
+   "total": 69347.0,
+   "n": 76,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2669,7 +2695,7 @@
     "may": 7425.0,
     "jun": 15722.0,
     "jul": 14357.0,
-    "ago": 13927.0
+    "ago": 14327.0
    },
    "detalle": {
     "ene": {
@@ -3083,6 +3109,11 @@
        "fecha": "27/08/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 730.0
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 400.0
       }
      ],
      "razones": []
@@ -3092,8 +3123,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Entrada desde FlexiAhorro",
-   "total": -55357.54,
-   "n": 55,
+   "total": -58657.54,
+   "n": 57,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -3102,7 +3133,7 @@
     "may": -7655.0,
     "jun": -13405.13,
     "jul": -13456.99,
-    "ago": -9850.0
+    "ago": -13150.0
    },
    "detalle": {
     "mar": {
@@ -3406,6 +3437,16 @@
        "fecha": "19/08/2026",
        "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SILLAS",
        "importe": -150.0
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SUELDOS",
+       "importe": -3000.0
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO IMPUESTOS",
+       "importe": -300.0
       }
      ],
      "razones": []
@@ -3657,6 +3698,99 @@
    }
   },
   {
+   "grupo": "Impuestos y legal",
+   "categoria": "Impuestos",
+   "total": 3101.82,
+   "n": 8,
+   "por_mes": {
+    "ene": 429.15,
+    "feb": 248.95,
+    "mar": 351.58,
+    "abr": 552.65,
+    "may": 475.66,
+    "jun": 0.0,
+    "jul": 522.81,
+    "ago": 521.02
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "19/01/2026",
+       "desc": "DEVOLCUION DE IMPUESTOS ANA PAULA",
+       "importe": 429.15
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "19/02/2026",
+       "desc": "Devolucion impuestos",
+       "importe": 248.95
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "20/03/2026",
+       "desc": "IMPUESTOS ANA PAULA",
+       "importe": 351.58
+      }
+     ],
+     "razones": []
+    },
+    "abr": {
+     "movs": [
+      {
+       "fecha": "16/04/2026",
+       "desc": "PAGO IMPUESTOS E INTERNET",
+       "importe": 552.65
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "04/05/2026",
+       "desc": "DEVOLUCION IMPUESTOS",
+       "importe": 475.66
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "10/07/2026",
+       "desc": "PAGO IMPUESTOS",
+       "importe": 522.81
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "03/08/2026",
+       "desc": "PAGO IMPUESTOS",
+       "importe": 270.41
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "PAGO IMPUESTOS",
+       "importe": 250.61
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
    "grupo": "Freelance y produccion",
    "categoria": "Juan Pablo Nieto (produccion)",
    "total": 3089.0,
@@ -3728,94 +3862,6 @@
        "fecha": "17/08/2026",
        "desc": "EDICIÓN VIDEOS SAMARI A JUAN PABLO NIETO",
        "importe": 184.0
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Impuestos y legal",
-   "categoria": "Impuestos",
-   "total": 2851.21,
-   "n": 7,
-   "por_mes": {
-    "ene": 429.15,
-    "feb": 248.95,
-    "mar": 351.58,
-    "abr": 552.65,
-    "may": 475.66,
-    "jun": 0.0,
-    "jul": 522.81,
-    "ago": 270.41
-   },
-   "detalle": {
-    "ene": {
-     "movs": [
-      {
-       "fecha": "19/01/2026",
-       "desc": "DEVOLCUION DE IMPUESTOS ANA PAULA",
-       "importe": 429.15
-      }
-     ],
-     "razones": []
-    },
-    "feb": {
-     "movs": [
-      {
-       "fecha": "19/02/2026",
-       "desc": "Devolucion impuestos",
-       "importe": 248.95
-      }
-     ],
-     "razones": []
-    },
-    "mar": {
-     "movs": [
-      {
-       "fecha": "20/03/2026",
-       "desc": "IMPUESTOS ANA PAULA",
-       "importe": 351.58
-      }
-     ],
-     "razones": []
-    },
-    "abr": {
-     "movs": [
-      {
-       "fecha": "16/04/2026",
-       "desc": "PAGO IMPUESTOS E INTERNET",
-       "importe": 552.65
-      }
-     ],
-     "razones": []
-    },
-    "may": {
-     "movs": [
-      {
-       "fecha": "04/05/2026",
-       "desc": "DEVOLUCION IMPUESTOS",
-       "importe": 475.66
-      }
-     ],
-     "razones": []
-    },
-    "jul": {
-     "movs": [
-      {
-       "fecha": "10/07/2026",
-       "desc": "PAGO IMPUESTOS",
-       "importe": 522.81
-      }
-     ],
-     "razones": []
-    },
-    "ago": {
-     "movs": [
-      {
-       "fecha": "03/08/2026",
-       "desc": "PAGO IMPUESTOS",
-       "importe": 270.41
       }
      ],
      "razones": []
@@ -4766,6 +4812,49 @@
    }
   },
   {
+   "grupo": "Egresos - Sin identificar",
+   "categoria": "REVISAR",
+   "total": 192.6,
+   "n": 4,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 192.6
+   },
+   "detalle": {
+    "ago": {
+     "movs": [
+      {
+       "fecha": "19/08/2026",
+       "desc": "PAGO SILLAS",
+       "importe": 150.0
+      },
+      {
+       "fecha": "27/08/2026",
+       "desc": "PLOMERO",
+       "importe": 10.0
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "COMISIÓN BANCARIA",
+       "importe": 0.41
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "RENOVACIÓN FIRMA ELECTRÓNICA 2 AÑOS",
+       "importe": 32.19
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
    "grupo": "Freelance y produccion",
    "categoria": "Pris Rodriguez (produccion)",
    "total": 172.5,
@@ -4787,39 +4876,6 @@
        "fecha": "24/07/2026",
        "desc": "PAGO A PRIS RODRIGUEZ PRODUCCION DE SAMARI",
        "importe": 172.5
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Egresos - Sin identificar",
-   "categoria": "REVISAR",
-   "total": 160.0,
-   "n": 2,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 160.0
-   },
-   "detalle": {
-    "ago": {
-     "movs": [
-      {
-       "fecha": "19/08/2026",
-       "desc": "PAGO SILLAS",
-       "importe": 150.0
-      },
-      {
-       "fecha": "27/08/2026",
-       "desc": "PLOMERO",
-       "importe": 10.0
       }
      ],
      "razones": []
@@ -5387,10 +5443,10 @@
   }
  ],
  "totales": {
-  "ingresos": 89213.51,
-  "costo_fijo": 65930.46,
+  "ingresos": 89613.51,
+  "costo_fijo": 69181.07,
   "costo_variable": 10845.29,
-  "resultado": 8122.71,
-  "movimientos": 579
+  "resultado": 5272.1,
+  "movimientos": 588
  }
 }
