@@ -11,6 +11,358 @@
  ],
  "clientes": [
   {
+   "cliente": "Healthy Girl",
+   "estado": "activo",
+   "nota": "",
+   "fee": 600,
+   "fee_inicial": 700,
+   "con_iva": true,
+   "facturado_mes": 690.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 690.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {
+    "jul": 600
+   },
+   "cobrado_total": 9138.12,
+   "honorario_total": 6210.0,
+   "pauta_total": 2928.12,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 805.0,
+     "pauta": 274.37,
+     "puntual": 0.0,
+     "cobrado": 1079.37
+    },
+    "mar": {
+     "honorario": 805.0,
+     "pauta": 624.25,
+     "puntual": 0.0,
+     "cobrado": 1429.25
+    },
+    "abr": {
+     "honorario": 1610.0,
+     "pauta": 577.0,
+     "puntual": 0.0,
+     "cobrado": 2187.0
+    },
+    "may": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "jun": {
+     "honorario": 1610.0,
+     "pauta": 677.0,
+     "puntual": 0.0,
+     "cobrado": 2287.0
+    },
+    "jul": {
+     "honorario": 690.0,
+     "pauta": 438.5,
+     "puntual": 0.0,
+     "cobrado": 1128.5
+    },
+    "ago": {
+     "honorario": 690.0,
+     "pauta": 337.0,
+     "puntual": 0.0,
+     "cobrado": 1027.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "adelantado",
+   "cubierto_hasta": 9,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": -2.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 805.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "03/02/2026",
+       "desc": "HEALTHY GIRL DE 18 DE DICEMBRE AL 18DE ENERO",
+       "importe": 1079.37,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 274.37,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 274.37
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 805.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "06/03/2026",
+       "desc": "PAGO HEALTHY GIRL TODO DEL 18 DE ENERO AL 18 DE FEBRERO",
+       "importe": 1429.25,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 624.25,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 624.25
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 805.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "07/04/2026",
+       "desc": "PAGO HEALTHY GIRL DE 18 DE FEBREO AL 18 DE MARZO",
+       "importe": 1028.5,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 223.5,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 223.5
+      },
+      {
+       "mes": "abr",
+       "fecha": "28/04/2026",
+       "desc": "PAGO HEALTHY GIRL DEL 18 DE MARZO AL 18 DE ABRIL",
+       "importe": 1158.5,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 353.5,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 353.5
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes",
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 805.0
+    },
+    "may": {
+     "movs": [],
+     "razones": [
+      "no hubo cobro este mes; se regularizó en otro"
+     ],
+     "esperado": 805.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "01/06/2026",
+       "desc": "HEALTHY GIRL DEL 18 DE ABRIL AL 18 DE MAYO",
+       "importe": 1158.5,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 353.5,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 353.5
+      },
+      {
+       "mes": "jun",
+       "fecha": "15/06/2026",
+       "desc": "healthy girl",
+       "importe": 1128.5,
+       "tipo": "honorario",
+       "honorario": 805.0,
+       "pauta": 323.5,
+       "puntual": 0.0,
+       "esperado": 805.0,
+       "desvio": 323.5
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes",
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 805.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "30/07/2026",
+       "desc": "PAGO HEALTHY GIRL DEL 18 DE JUNIO AL 18 DE JULIO",
+       "importe": 1128.5,
+       "tipo": "honorario",
+       "honorario": 690.0,
+       "pauta": 438.5,
+       "puntual": 0.0,
+       "esperado": 690.0,
+       "desvio": 438.5
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 690.0
+    },
+    "ago": {
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "27/08/2026",
+       "desc": "PAGO HEALTHY GIRL FEE Y PAUTA",
+       "importe": 1027.0,
+       "tipo": "mixto",
+       "honorario": 690.0,
+       "pauta": 337.0,
+       "puntual": 0.0,
+       "esperado": 690.0,
+       "desvio": null
+      }
+     ],
+     "razones": [
+      "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 690.0
+    }
+   },
+   "meses_activo": 6,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [
+    {
+     "mes": "abr",
+     "n": 2
+    },
+    {
+     "mes": "jun",
+     "n": 2
+    }
+   ],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "03/02/2026",
+     "desc": "HEALTHY GIRL DE 18 DE DICEMBRE AL 18DE ENERO",
+     "importe": 1079.37,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 274.37,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 274.37
+    },
+    {
+     "mes": "mar",
+     "fecha": "06/03/2026",
+     "desc": "PAGO HEALTHY GIRL TODO DEL 18 DE ENERO AL 18 DE FEBRERO",
+     "importe": 1429.25,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 624.25,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 624.25
+    },
+    {
+     "mes": "abr",
+     "fecha": "07/04/2026",
+     "desc": "PAGO HEALTHY GIRL DE 18 DE FEBREO AL 18 DE MARZO",
+     "importe": 1028.5,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 223.5,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 223.5
+    },
+    {
+     "mes": "abr",
+     "fecha": "28/04/2026",
+     "desc": "PAGO HEALTHY GIRL DEL 18 DE MARZO AL 18 DE ABRIL",
+     "importe": 1158.5,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 353.5,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 353.5
+    },
+    {
+     "mes": "jun",
+     "fecha": "01/06/2026",
+     "desc": "HEALTHY GIRL DEL 18 DE ABRIL AL 18 DE MAYO",
+     "importe": 1158.5,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 353.5,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 353.5
+    },
+    {
+     "mes": "jun",
+     "fecha": "15/06/2026",
+     "desc": "healthy girl",
+     "importe": 1128.5,
+     "tipo": "honorario",
+     "honorario": 805.0,
+     "pauta": 323.5,
+     "puntual": 0.0,
+     "esperado": 805.0,
+     "desvio": 323.5
+    },
+    {
+     "mes": "jul",
+     "fecha": "30/07/2026",
+     "desc": "PAGO HEALTHY GIRL DEL 18 DE JUNIO AL 18 DE JULIO",
+     "importe": 1128.5,
+     "tipo": "honorario",
+     "honorario": 690.0,
+     "pauta": 438.5,
+     "puntual": 0.0,
+     "esperado": 690.0,
+     "desvio": 438.5
+    },
+    {
+     "mes": "ago",
+     "fecha": "27/08/2026",
+     "desc": "PAGO HEALTHY GIRL FEE Y PAUTA",
+     "importe": 1027.0,
+     "tipo": "mixto",
+     "honorario": 690.0,
+     "pauta": 337.0,
+     "puntual": 0.0,
+     "esperado": 690.0,
+     "desvio": null
+    }
+   ]
+  },
+  {
    "cliente": "Speedy",
    "estado": "activo",
    "nota": "",
@@ -243,333 +595,6 @@
      "puntual": 0.0,
      "esperado": 2436.0,
      "desvio": 0.0
-    }
-   ]
-  },
-  {
-   "cliente": "Healthy Girl",
-   "estado": "activo",
-   "nota": "",
-   "fee": 600,
-   "fee_inicial": 700,
-   "con_iva": true,
-   "facturado_mes": 690.0,
-   "retenido_mes": 0.0,
-   "a_cobrar_mes": 690.0,
-   "ret_ir": 0,
-   "ret_iva": 0,
-   "cambios": {
-    "jul": 600
-   },
-   "cobrado_total": 8111.12,
-   "honorario_total": 5520.0,
-   "pauta_total": 2591.12,
-   "puntual_total": 0.0,
-   "por_mes": {
-    "ene": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "feb": {
-     "honorario": 805.0,
-     "pauta": 274.37,
-     "puntual": 0.0,
-     "cobrado": 1079.37
-    },
-    "mar": {
-     "honorario": 805.0,
-     "pauta": 624.25,
-     "puntual": 0.0,
-     "cobrado": 1429.25
-    },
-    "abr": {
-     "honorario": 1610.0,
-     "pauta": 577.0,
-     "puntual": 0.0,
-     "cobrado": 2187.0
-    },
-    "may": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "jun": {
-     "honorario": 1610.0,
-     "pauta": 677.0,
-     "puntual": 0.0,
-     "cobrado": 2287.0
-    },
-    "jul": {
-     "honorario": 690.0,
-     "pauta": 438.5,
-     "puntual": 0.0,
-     "cobrado": 1128.5
-    },
-    "ago": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    }
-   },
-   "pendiente": 0.0,
-   "cobro": "al día",
-   "cubierto_hasta": 7,
-   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
-   "cobro_nota": "lecturas distintas: el último cobro declara hasta julio, pero el conteo de mensualidades da 0 mes(es) de atraso",
-   "atraso_meses": -1.0,
-   "ficha_mes": {
-    "ene": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 805.0
-    },
-    "feb": {
-     "movs": [
-      {
-       "mes": "feb",
-       "fecha": "03/02/2026",
-       "desc": "HEALTHY GIRL DE 18 DE DICEMBRE AL 18DE ENERO",
-       "importe": 1079.37,
-       "tipo": "honorario",
-       "honorario": 805.0,
-       "pauta": 274.37,
-       "puntual": 0.0,
-       "esperado": 805.0,
-       "desvio": 274.37
-      }
-     ],
-     "razones": [
-      "el giro trae pauta del cliente, que no es facturación"
-     ],
-     "esperado": 805.0
-    },
-    "mar": {
-     "movs": [
-      {
-       "mes": "mar",
-       "fecha": "06/03/2026",
-       "desc": "PAGO HEALTHY GIRL TODO DEL 18 DE ENERO AL 18 DE FEBRERO",
-       "importe": 1429.25,
-       "tipo": "honorario",
-       "honorario": 805.0,
-       "pauta": 624.25,
-       "puntual": 0.0,
-       "esperado": 805.0,
-       "desvio": 624.25
-      }
-     ],
-     "razones": [
-      "el giro trae pauta del cliente, que no es facturación"
-     ],
-     "esperado": 805.0
-    },
-    "abr": {
-     "movs": [
-      {
-       "mes": "abr",
-       "fecha": "07/04/2026",
-       "desc": "PAGO HEALTHY GIRL DE 18 DE FEBREO AL 18 DE MARZO",
-       "importe": 1028.5,
-       "tipo": "honorario",
-       "honorario": 805.0,
-       "pauta": 223.5,
-       "puntual": 0.0,
-       "esperado": 805.0,
-       "desvio": 223.5
-      },
-      {
-       "mes": "abr",
-       "fecha": "28/04/2026",
-       "desc": "PAGO HEALTHY GIRL DEL 18 DE MARZO AL 18 DE ABRIL",
-       "importe": 1158.5,
-       "tipo": "honorario",
-       "honorario": 805.0,
-       "pauta": 353.5,
-       "puntual": 0.0,
-       "esperado": 805.0,
-       "desvio": 353.5
-      }
-     ],
-     "razones": [
-      "cobró 2 mensualidades en el mismo mes",
-      "el giro trae pauta del cliente, que no es facturación"
-     ],
-     "esperado": 805.0
-    },
-    "may": {
-     "movs": [],
-     "razones": [
-      "no hubo cobro este mes; se regularizó en otro"
-     ],
-     "esperado": 805.0
-    },
-    "jun": {
-     "movs": [
-      {
-       "mes": "jun",
-       "fecha": "01/06/2026",
-       "desc": "HEALTHY GIRL DEL 18 DE ABRIL AL 18 DE MAYO",
-       "importe": 1158.5,
-       "tipo": "honorario",
-       "honorario": 805.0,
-       "pauta": 353.5,
-       "puntual": 0.0,
-       "esperado": 805.0,
-       "desvio": 353.5
-      },
-      {
-       "mes": "jun",
-       "fecha": "15/06/2026",
-       "desc": "healthy girl",
-       "importe": 1128.5,
-       "tipo": "honorario",
-       "honorario": 805.0,
-       "pauta": 323.5,
-       "puntual": 0.0,
-       "esperado": 805.0,
-       "desvio": 323.5
-      }
-     ],
-     "razones": [
-      "cobró 2 mensualidades en el mismo mes",
-      "el giro trae pauta del cliente, que no es facturación"
-     ],
-     "esperado": 805.0
-    },
-    "jul": {
-     "movs": [
-      {
-       "mes": "jul",
-       "fecha": "30/07/2026",
-       "desc": "PAGO HEALTHY GIRL DEL 18 DE JUNIO AL 18 DE JULIO",
-       "importe": 1128.5,
-       "tipo": "honorario",
-       "honorario": 690.0,
-       "pauta": 438.5,
-       "puntual": 0.0,
-       "esperado": 690.0,
-       "desvio": 438.5
-      }
-     ],
-     "razones": [
-      "el giro trae pauta del cliente, que no es facturación"
-     ],
-     "esperado": 690.0
-    },
-    "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
-     ],
-     "esperado": 690.0
-    }
-   },
-   "meses_activo": 5,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "cuadra": true,
-   "desvios": [],
-   "dobles": [
-    {
-     "mes": "abr",
-     "n": 2
-    },
-    {
-     "mes": "jun",
-     "n": 2
-    }
-   ],
-   "inferido": "",
-   "detalle": [
-    {
-     "mes": "feb",
-     "fecha": "03/02/2026",
-     "desc": "HEALTHY GIRL DE 18 DE DICEMBRE AL 18DE ENERO",
-     "importe": 1079.37,
-     "tipo": "honorario",
-     "honorario": 805.0,
-     "pauta": 274.37,
-     "puntual": 0.0,
-     "esperado": 805.0,
-     "desvio": 274.37
-    },
-    {
-     "mes": "mar",
-     "fecha": "06/03/2026",
-     "desc": "PAGO HEALTHY GIRL TODO DEL 18 DE ENERO AL 18 DE FEBRERO",
-     "importe": 1429.25,
-     "tipo": "honorario",
-     "honorario": 805.0,
-     "pauta": 624.25,
-     "puntual": 0.0,
-     "esperado": 805.0,
-     "desvio": 624.25
-    },
-    {
-     "mes": "abr",
-     "fecha": "07/04/2026",
-     "desc": "PAGO HEALTHY GIRL DE 18 DE FEBREO AL 18 DE MARZO",
-     "importe": 1028.5,
-     "tipo": "honorario",
-     "honorario": 805.0,
-     "pauta": 223.5,
-     "puntual": 0.0,
-     "esperado": 805.0,
-     "desvio": 223.5
-    },
-    {
-     "mes": "abr",
-     "fecha": "28/04/2026",
-     "desc": "PAGO HEALTHY GIRL DEL 18 DE MARZO AL 18 DE ABRIL",
-     "importe": 1158.5,
-     "tipo": "honorario",
-     "honorario": 805.0,
-     "pauta": 353.5,
-     "puntual": 0.0,
-     "esperado": 805.0,
-     "desvio": 353.5
-    },
-    {
-     "mes": "jun",
-     "fecha": "01/06/2026",
-     "desc": "HEALTHY GIRL DEL 18 DE ABRIL AL 18 DE MAYO",
-     "importe": 1158.5,
-     "tipo": "honorario",
-     "honorario": 805.0,
-     "pauta": 353.5,
-     "puntual": 0.0,
-     "esperado": 805.0,
-     "desvio": 353.5
-    },
-    {
-     "mes": "jun",
-     "fecha": "15/06/2026",
-     "desc": "healthy girl",
-     "importe": 1128.5,
-     "tipo": "honorario",
-     "honorario": 805.0,
-     "pauta": 323.5,
-     "puntual": 0.0,
-     "esperado": 805.0,
-     "desvio": 323.5
-    },
-    {
-     "mes": "jul",
-     "fecha": "30/07/2026",
-     "desc": "PAGO HEALTHY GIRL DEL 18 DE JUNIO AL 18 DE JULIO",
-     "importe": 1128.5,
-     "tipo": "honorario",
-     "honorario": 690.0,
-     "pauta": 438.5,
-     "puntual": 0.0,
-     "esperado": 690.0,
-     "desvio": 438.5
     }
    ]
   },
@@ -2142,8 +2167,8 @@
    "cambios": {
     "abr": 700
    },
-   "cobrado_total": 4850.0,
-   "honorario_total": 4720.0,
+   "cobrado_total": 5550.0,
+   "honorario_total": 5420.0,
    "pauta_total": 0.0,
    "puntual_total": 130.0,
    "por_mes": {
@@ -2190,18 +2215,18 @@
      "cobrado": 700.0
     },
     "ago": {
-     "honorario": 0.0,
+     "honorario": 700.0,
      "pauta": 0.0,
      "puntual": 0.0,
-     "cobrado": 0.0
+     "cobrado": 700.0
     }
    },
    "pendiente": 0.0,
-   "cobro": "al día",
-   "cubierto_hasta": 7,
-   "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
+   "cobro": "adelantado",
+   "cubierto_hasta": 8,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": 0.3,
+   "atraso_meses": -0.7,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -2335,16 +2360,27 @@
      "esperado": 700.0
     },
     "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "27/08/2026",
+       "desc": "PAGO VELSANA",
+       "importe": 700.0,
+       "tipo": "honorario",
+       "honorario": 700.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 700.0,
+       "desvio": 0.0
+      }
      ],
+     "razones": [],
      "esperado": 700.0
     }
    },
-   "meses_activo": 6,
+   "meses_activo": 7,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
+   "ultimo_mes": "ago",
    "cuadra": true,
    "desvios": [],
    "dobles": [
@@ -2431,6 +2467,18 @@
      "mes": "jul",
      "fecha": "21/07/2026",
      "desc": "VELSANA DEL 12 DE JUNIO AL 12 D EJULIO",
+     "importe": 700.0,
+     "tipo": "honorario",
+     "honorario": 700.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 700.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "27/08/2026",
+     "desc": "PAGO VELSANA",
      "importe": 700.0,
      "tipo": "honorario",
      "honorario": 700.0,
@@ -5007,6 +5055,339 @@
    ]
   },
   {
+   "cliente": "Provita",
+   "estado": "activo",
+   "nota": "",
+   "fee": 250,
+   "fee_inicial": 250,
+   "con_iva": true,
+   "facturado_mes": 287.5,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 287.5,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 2295.0,
+   "honorario_total": 2295.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 282.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 282.5
+    },
+    "mar": {
+     "honorario": 575.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 575.0
+    },
+    "abr": {
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 287.5
+    },
+    "may": {
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 287.5
+    },
+    "jun": {
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 287.5
+    },
+    "jul": {
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 287.5
+    },
+    "ago": {
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 287.5
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "adelantado",
+   "cubierto_hasta": 8,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": -1.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 287.5
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "05/02/2026",
+       "desc": "provita del 18 de dicembre al 18 de enero",
+       "importe": 282.5,
+       "tipo": "honorario",
+       "honorario": 282.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": -5.0
+      }
+     ],
+     "razones": [],
+     "esperado": 287.5
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "02/03/2026",
+       "desc": "PROVITA DEL 18 DE ENERO AL 18 DE FEBRERO",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      },
+      {
+       "mes": "mar",
+       "fecha": "31/03/2026",
+       "desc": "PAGO PROVITA DEL 18 DE FEBREO AL 18 DE MARZO",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [
+      "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 287.5
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "28/04/2026",
+       "desc": "PAGO PROVITA DEL 18 DE MARZO AL 18 DE ABRIL",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 287.5
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "26/05/2026",
+       "desc": "PAGO PROVITA DEL 18 DE ABRIL AL 18 DE MAYO",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 287.5
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "29/06/2026",
+       "desc": "PAGO PROVITA DEL 18 DE MAYO AL 18 DE JUNIO",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 287.5
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "30/07/2026",
+       "desc": "PAGO PROVITA DEL 18 DE JUNIO AL 18 DE JULIO",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 287.5
+    },
+    "ago": {
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "27/08/2026",
+       "desc": "PAGO PROVITA",
+       "importe": 287.5,
+       "tipo": "honorario",
+       "honorario": 287.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 287.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 287.5
+    }
+   },
+   "meses_activo": 7,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [
+    {
+     "mes": "mar",
+     "n": 2
+    }
+   ],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "05/02/2026",
+     "desc": "provita del 18 de dicembre al 18 de enero",
+     "importe": 282.5,
+     "tipo": "honorario",
+     "honorario": 282.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": -5.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "02/03/2026",
+     "desc": "PROVITA DEL 18 DE ENERO AL 18 DE FEBRERO",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "31/03/2026",
+     "desc": "PAGO PROVITA DEL 18 DE FEBREO AL 18 DE MARZO",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "28/04/2026",
+     "desc": "PAGO PROVITA DEL 18 DE MARZO AL 18 DE ABRIL",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "26/05/2026",
+     "desc": "PAGO PROVITA DEL 18 DE ABRIL AL 18 DE MAYO",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "29/06/2026",
+     "desc": "PAGO PROVITA DEL 18 DE MAYO AL 18 DE JUNIO",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "30/07/2026",
+     "desc": "PAGO PROVITA DEL 18 DE JUNIO AL 18 DE JULIO",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "27/08/2026",
+     "desc": "PAGO PROVITA",
+     "importe": 287.5,
+     "tipo": "honorario",
+     "honorario": 287.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 287.5,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
    "cliente": "Chiflido",
    "estado": "activo",
    "nota": "",
@@ -5583,316 +5964,6 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "esperado": 345.0,
-     "desvio": 0.0
-    }
-   ]
-  },
-  {
-   "cliente": "Provita",
-   "estado": "activo",
-   "nota": "",
-   "fee": 250,
-   "fee_inicial": 250,
-   "con_iva": true,
-   "facturado_mes": 287.5,
-   "retenido_mes": 0.0,
-   "a_cobrar_mes": 287.5,
-   "ret_ir": 0,
-   "ret_iva": 0,
-   "cambios": {},
-   "cobrado_total": 2007.5,
-   "honorario_total": 2007.5,
-   "pauta_total": 0.0,
-   "puntual_total": 0.0,
-   "por_mes": {
-    "ene": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "feb": {
-     "honorario": 282.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 282.5
-    },
-    "mar": {
-     "honorario": 575.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 575.0
-    },
-    "abr": {
-     "honorario": 287.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 287.5
-    },
-    "may": {
-     "honorario": 287.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 287.5
-    },
-    "jun": {
-     "honorario": 287.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 287.5
-    },
-    "jul": {
-     "honorario": 287.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 287.5
-    },
-    "ago": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    }
-   },
-   "pendiente": 0.0,
-   "cobro": "al día",
-   "cubierto_hasta": 7,
-   "cobro_fuente": "periodo declarado en el último cobro",
-   "cobro_nota": "",
-   "atraso_meses": 0.0,
-   "ficha_mes": {
-    "ene": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 287.5
-    },
-    "feb": {
-     "movs": [
-      {
-       "mes": "feb",
-       "fecha": "05/02/2026",
-       "desc": "provita del 18 de dicembre al 18 de enero",
-       "importe": 282.5,
-       "tipo": "honorario",
-       "honorario": 282.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 287.5,
-       "desvio": -5.0
-      }
-     ],
-     "razones": [],
-     "esperado": 287.5
-    },
-    "mar": {
-     "movs": [
-      {
-       "mes": "mar",
-       "fecha": "02/03/2026",
-       "desc": "PROVITA DEL 18 DE ENERO AL 18 DE FEBRERO",
-       "importe": 287.5,
-       "tipo": "honorario",
-       "honorario": 287.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 287.5,
-       "desvio": 0.0
-      },
-      {
-       "mes": "mar",
-       "fecha": "31/03/2026",
-       "desc": "PAGO PROVITA DEL 18 DE FEBREO AL 18 DE MARZO",
-       "importe": 287.5,
-       "tipo": "honorario",
-       "honorario": 287.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 287.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [
-      "cobró 2 mensualidades en el mismo mes"
-     ],
-     "esperado": 287.5
-    },
-    "abr": {
-     "movs": [
-      {
-       "mes": "abr",
-       "fecha": "28/04/2026",
-       "desc": "PAGO PROVITA DEL 18 DE MARZO AL 18 DE ABRIL",
-       "importe": 287.5,
-       "tipo": "honorario",
-       "honorario": 287.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 287.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 287.5
-    },
-    "may": {
-     "movs": [
-      {
-       "mes": "may",
-       "fecha": "26/05/2026",
-       "desc": "PAGO PROVITA DEL 18 DE ABRIL AL 18 DE MAYO",
-       "importe": 287.5,
-       "tipo": "honorario",
-       "honorario": 287.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 287.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 287.5
-    },
-    "jun": {
-     "movs": [
-      {
-       "mes": "jun",
-       "fecha": "29/06/2026",
-       "desc": "PAGO PROVITA DEL 18 DE MAYO AL 18 DE JUNIO",
-       "importe": 287.5,
-       "tipo": "honorario",
-       "honorario": 287.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 287.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 287.5
-    },
-    "jul": {
-     "movs": [
-      {
-       "mes": "jul",
-       "fecha": "30/07/2026",
-       "desc": "PAGO PROVITA DEL 18 DE JUNIO AL 18 DE JULIO",
-       "importe": 287.5,
-       "tipo": "honorario",
-       "honorario": 287.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 287.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 287.5
-    },
-    "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
-     ],
-     "esperado": 287.5
-    }
-   },
-   "meses_activo": 6,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "cuadra": true,
-   "desvios": [],
-   "dobles": [
-    {
-     "mes": "mar",
-     "n": 2
-    }
-   ],
-   "inferido": "",
-   "detalle": [
-    {
-     "mes": "feb",
-     "fecha": "05/02/2026",
-     "desc": "provita del 18 de dicembre al 18 de enero",
-     "importe": 282.5,
-     "tipo": "honorario",
-     "honorario": 282.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 287.5,
-     "desvio": -5.0
-    },
-    {
-     "mes": "mar",
-     "fecha": "02/03/2026",
-     "desc": "PROVITA DEL 18 DE ENERO AL 18 DE FEBRERO",
-     "importe": 287.5,
-     "tipo": "honorario",
-     "honorario": 287.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 287.5,
-     "desvio": 0.0
-    },
-    {
-     "mes": "mar",
-     "fecha": "31/03/2026",
-     "desc": "PAGO PROVITA DEL 18 DE FEBREO AL 18 DE MARZO",
-     "importe": 287.5,
-     "tipo": "honorario",
-     "honorario": 287.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 287.5,
-     "desvio": 0.0
-    },
-    {
-     "mes": "abr",
-     "fecha": "28/04/2026",
-     "desc": "PAGO PROVITA DEL 18 DE MARZO AL 18 DE ABRIL",
-     "importe": 287.5,
-     "tipo": "honorario",
-     "honorario": 287.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 287.5,
-     "desvio": 0.0
-    },
-    {
-     "mes": "may",
-     "fecha": "26/05/2026",
-     "desc": "PAGO PROVITA DEL 18 DE ABRIL AL 18 DE MAYO",
-     "importe": 287.5,
-     "tipo": "honorario",
-     "honorario": 287.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 287.5,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jun",
-     "fecha": "29/06/2026",
-     "desc": "PAGO PROVITA DEL 18 DE MAYO AL 18 DE JUNIO",
-     "importe": 287.5,
-     "tipo": "honorario",
-     "honorario": 287.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 287.5,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jul",
-     "fecha": "30/07/2026",
-     "desc": "PAGO PROVITA DEL 18 DE JUNIO AL 18 DE JULIO",
-     "importe": 287.5,
-     "tipo": "honorario",
-     "honorario": 287.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 287.5,
      "desvio": 0.0
     }
    ]
@@ -8454,10 +8525,10 @@
   }
  ],
  "totales": {
-  "honorario": 80030.9,
-  "pauta": 7385.12,
+  "honorario": 81708.4,
+  "pauta": 7722.12,
   "puntual": 5617.87,
-  "cobrado": 93033.89
+  "cobrado": 95048.39
  },
  "honorarios_recurrentes_mes": 12619.98,
  "retenido_mes": 825.02,

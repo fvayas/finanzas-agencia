@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 9071.98,
-   "pauta_cobrada": 640.0,
+   "ingresos": 10749.48,
+   "pauta_cobrada": 977.0,
    "pauta_pagada": 1697.58,
-   "pauta_neta": 1057.58,
+   "pauta_neta": 720.58,
    "costo_fijo": 5357.83,
-   "costo_variable": 1144.98,
-   "costo_total": 7560.39,
-   "resultado": 1511.59,
-   "margen_contribucion": 6869.42,
-   "margen_pct": 75.7
+   "costo_variable": 1166.99,
+   "costo_total": 7245.4,
+   "resultado": 3504.08,
+   "margen_contribucion": 8861.91,
+   "margen_pct": 82.4
   }
  ],
  "grupos": {
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 8569.98
+   "ago": 9557.48
   },
   "Equipos": {
    "ene": -75.0,
@@ -284,7 +284,7 @@
    "may": -6.0,
    "jun": -89.0,
    "jul": -23.41,
-   "ago": -2.9
+   "ago": -24.91
   },
   "Pasantias": {
    "ene": 0.0,
@@ -304,7 +304,7 @@
    "may": 0.0,
    "jun": 1680.0,
    "jul": 640.0,
-   "ago": 640.0
+   "ago": 1667.0
   },
   "Ingresos - Sin identificar": {
    "ene": 0.0,
@@ -324,7 +324,7 @@
    "may": 0.0,
    "jun": 0.0,
    "jul": 0.0,
-   "ago": -150.0
+   "ago": -160.0
   }
  },
  "no_operativo": {
@@ -346,7 +346,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": -1360.0
+   "ago": -3347.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -418,7 +418,7 @@
   {
    "cliente": "Speedy",
    "total": 8238.0,
-   "pct": 9.5,
+   "pct": 9.4,
    "pagos": 4,
    "meses_activo": 3,
    "primer_mes": "jun",
@@ -438,7 +438,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 9.3,
+   "pct": 9.2,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -458,7 +458,7 @@
   {
    "cliente": "Uninova",
    "total": 7803.0,
-   "pct": 9.0,
+   "pct": 8.9,
    "pagos": 10,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -478,7 +478,7 @@
   {
    "cliente": "Fiammingo",
    "total": 6510.0,
-   "pct": 7.5,
+   "pct": 7.4,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -498,7 +498,7 @@
   {
    "cliente": "Samari",
    "total": 6050.72,
-   "pct": 7.0,
+   "pct": 6.9,
    "pagos": 10,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -517,13 +517,13 @@
   },
   {
    "cliente": "Velsana",
-   "total": 5345.0,
-   "pct": 6.2,
-   "pagos": 7,
-   "meses_activo": 6,
+   "total": 6045.0,
+   "pct": 6.9,
+   "pagos": 8,
+   "meses_activo": 7,
    "primer_mes": "ene",
-   "ultimo_mes": "jul",
-   "fee_promedio": 890.83,
+   "ultimo_mes": "ago",
+   "fee_promedio": 863.57,
    "por_mes": {
     "ene": 640.0,
     "feb": 1135.0,
@@ -532,7 +532,7 @@
     "may": 0.0,
     "jun": 1400.0,
     "jul": 700.0,
-    "ago": 0.0
+    "ago": 700.0
    }
   },
   {
@@ -578,7 +578,7 @@
   {
    "cliente": "Cigarra",
    "total": 3622.5,
-   "pct": 4.2,
+   "pct": 4.1,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -638,7 +638,7 @@
   {
    "cliente": "Plasticaucho",
    "total": 2736.5,
-   "pct": 3.2,
+   "pct": 3.1,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -678,7 +678,7 @@
   {
    "cliente": "Absolute",
    "total": 2400.0,
-   "pct": 2.8,
+   "pct": 2.7,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -698,7 +698,7 @@
   {
    "cliente": "APC",
    "total": 2300.0,
-   "pct": 2.7,
+   "pct": 2.6,
    "pagos": 4,
    "meses_activo": 3,
    "primer_mes": "abr",
@@ -713,6 +713,26 @@
     "jun": 0.0,
     "jul": 0.0,
     "ago": 1150.0
+   }
+  },
+  {
+   "cliente": "Provita",
+   "total": 2295.0,
+   "pct": 2.6,
+   "pagos": 8,
+   "meses_activo": 7,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "fee_promedio": 327.86,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 282.5,
+    "mar": 575.0,
+    "abr": 287.5,
+    "may": 287.5,
+    "jun": 287.5,
+    "jul": 287.5,
+    "ago": 287.5
    }
   },
   {
@@ -752,26 +772,6 @@
     "may": 345.0,
     "jun": 345.0,
     "jul": 345.0,
-    "ago": 0.0
-   }
-  },
-  {
-   "cliente": "Provita",
-   "total": 2007.5,
-   "pct": 2.3,
-   "pagos": 7,
-   "meses_activo": 6,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "fee_promedio": 334.58,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 282.5,
-    "mar": 575.0,
-    "abr": 287.5,
-    "may": 287.5,
-    "jun": 287.5,
-    "jul": 287.5,
     "ago": 0.0
    }
   },
@@ -818,7 +818,7 @@
   {
    "cliente": "Nono",
    "total": 1350.0,
-   "pct": 1.6,
+   "pct": 1.5,
    "pagos": 3,
    "meses_activo": 3,
    "primer_mes": "ene",
@@ -878,7 +878,7 @@
   {
    "cliente": "La Tartuca",
    "total": 1000.0,
-   "pct": 1.2,
+   "pct": 1.1,
    "pagos": 1,
    "meses_activo": 1,
    "primer_mes": "feb",
@@ -997,9 +997,9 @@
   }
  ],
  "concentracion": {
-  "top1": 9.5,
-  "top3": 27.8,
-  "top5": 42.3
+  "top1": 9.4,
+  "top3": 27.5,
+  "top5": 41.8
  },
  "equipo": [
   {
@@ -2659,8 +2659,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 66230.0,
-   "n": 72,
+   "total": 68217.0,
+   "n": 74,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2669,7 +2669,7 @@
     "may": 7425.0,
     "jun": 15722.0,
     "jul": 14357.0,
-    "ago": 11210.0
+    "ago": 13197.0
    },
    "detalle": {
     "ene": {
@@ -3068,6 +3068,16 @@
        "fecha": "24/08/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 450.0
+      },
+      {
+       "fecha": "27/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1700.0
+      },
+      {
+       "fecha": "27/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 287.0
       }
      ],
      "razones": []
@@ -4600,8 +4610,8 @@
   {
    "grupo": "Oficina y bienestar",
    "categoria": "Refrigerios y suministros",
-   "total": 203.89,
-   "n": 19,
+   "total": 225.9,
+   "n": 20,
    "por_mes": {
     "ene": 0.0,
     "feb": 6.0,
@@ -4610,7 +4620,7 @@
     "may": 6.0,
     "jun": 89.0,
     "jul": 23.41,
-    "ago": 2.9
+    "ago": 24.91
    },
    "detalle": {
     "feb": {
@@ -4739,6 +4749,11 @@
        "fecha": "03/08/2026",
        "desc": "CAFÉ PRODUCCIÓN APC",
        "importe": 2.9
+      },
+      {
+       "fecha": "27/08/2026",
+       "desc": "COMPRA DE CAFÉ EN SUPERMAXI",
+       "importe": 22.01
       }
      ],
      "razones": []
@@ -4767,6 +4782,39 @@
        "fecha": "24/07/2026",
        "desc": "PAGO A PRIS RODRIGUEZ PRODUCCION DE SAMARI",
        "importe": 172.5
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Egresos - Sin identificar",
+   "categoria": "REVISAR",
+   "total": 160.0,
+   "n": 2,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 160.0
+   },
+   "detalle": {
+    "ago": {
+     "movs": [
+      {
+       "fecha": "19/08/2026",
+       "desc": "PAGO SILLAS",
+       "importe": 150.0
+      },
+      {
+       "fecha": "27/08/2026",
+       "desc": "PLOMERO",
+       "importe": 10.0
       }
      ],
      "razones": []
@@ -4840,34 +4888,6 @@
        "fecha": "31/07/2026",
        "desc": "PAGO DE LUZ DESDE ENERO A JULIO A FRANCISCO VAYAS",
        "importe": 115.49
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Egresos - Sin identificar",
-   "categoria": "REVISAR",
-   "total": 150.0,
-   "n": 1,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 150.0
-   },
-   "detalle": {
-    "ago": {
-     "movs": [
-      {
-       "fecha": "19/08/2026",
-       "desc": "PAGO SILLAS",
-       "importe": 150.0
       }
      ],
      "razones": []
@@ -5362,10 +5382,10 @@
   }
  ],
  "totales": {
-  "ingresos": 86806.01,
+  "ingresos": 88483.51,
   "costo_fijo": 65930.46,
-  "costo_variable": 10823.28,
-  "resultado": 5400.22,
-  "movimientos": 569
+  "costo_variable": 10845.29,
+  "resultado": 7392.71,
+  "movimientos": 576
  }
 }
