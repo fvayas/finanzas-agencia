@@ -9214,5 +9214,53 @@
   "categoria": "Salida a FlexiAhorro",
   "detalle": "ENVIO A FLEXIAHORRO",
   "tipo_original": "https://drive.google.com/file/d/1_N13zXdZmSvb9Q1vHaPyLGfyR4etybsI/view?usp=drivesdk"
+ },
+ {
+  "fecha": "27/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00575",
+  "descripcion": "PAGO ABSOLUTE",
+  "ingreso": 300.0,
+  "egreso": 0.0,
+  "neto": 300.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "Absolute",
+  "detalle": "PAGO ABSOLUTE",
+  "tipo_original": "https://drive.google.com/file/d/1Gue5RkC7L8PkUDzGamCnz_aCLw3QsQdN/view?usp=drivesdk"
+ },
+ {
+  "fecha": "27/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00576",
+  "descripcion": "PAGO CASA DEL VERDE",
+  "ingreso": 430.0,
+  "egreso": 0.0,
+  "neto": 430.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "Casa del Verde",
+  "detalle": "PAGO CASA DEL VERDE",
+  "tipo_original": "https://drive.google.com/file/d/1Dredq_NqzIEJiVkZUxWil-JZoVDf4t67/view?usp=drivesdk"
+ },
+ {
+  "fecha": "27/08/2026",
+  "anio": 2026,
+  "mes_num": 8,
+  "mes": "ago",
+  "referencia": "01-00577",
+  "descripcion": "ENVIO A FLEXIAHORRO",
+  "ingreso": 0.0,
+  "egreso": 730.0,
+  "neto": -730.0,
+  "naturaleza": "NO OPERATIVO",
+  "grupo": "Movimiento entre cuentas propias",
+  "categoria": "Salida a FlexiAhorro",
+  "detalle": "ENVIO A FLEXIAHORRO",
+  "tipo_original": "https://drive.google.com/file/d/10HsJ8O1B_j4ZVjUemGY-D_zHVUmAeKjI/view?usp=drivesdk"
  }
 ]
