@@ -587,3 +587,7 @@ fecha,anio,mes_num,mes,referencia,descripcion,ingreso,egreso,neto,naturaleza,gru
 28/08/2026,2026,8,ago,01-00584,INGRESO DE FLEXIAHORRO PARA PAGO IMPUESTOS,300.0,0.0,300.0,NO OPERATIVO,Movimiento entre cuentas propias,Entrada desde FlexiAhorro,INGRESO DE FLEXIAHORRO PARA PAGO IMPUESTOS,
 28/08/2026,2026,8,ago,01-00585,COMISIÓN BANCARIA,0.0,0.41,-0.41,OPERATIVO,Egresos - Sin identificar,REVISAR,COMISIÓN BANCARIA,
 28/08/2026,2026,8,ago,01-00586,RENOVACIÓN FIRMA ELECTRÓNICA 2 AÑOS,0.0,32.19,-32.19,OPERATIVO,Egresos - Sin identificar,REVISAR,RENOVACIÓN FIRMA ELECTRÓNICA 2 AÑOS,https://drive.google.com/file/d/15OM1vIXBdHRMcEoc1egCrJ7_TBNngU8z/view?usp=drivesdk
+31/08/2026,2026,8,ago,01-00587,PAGO CIGARRA AGOSTO,517.5,0.0,517.5,OPERATIVO,Ingresos - Fee mensual,Cigarra,PAGO CIGARRA AGOSTO,https://drive.google.com/file/d/11PBIP5ojUuzCcHEiZswZUp4Dar5wqPT0/view?usp=drivesdk
+31/08/2026,2026,8,ago,01-00588,PAGO CHIFLIDO,300.0,0.0,300.0,OPERATIVO,Ingresos - Fee mensual,Chiflido,PAGO CHIFLIDO,https://drive.google.com/file/d/1_AKyydfHRwzXd2uEY9TG6r1Koidc27DB/view?usp=drivesdk
+31/08/2026,2026,8,ago,01-00589,PAGO TARTELIER,345.0,0.0,345.0,OPERATIVO,Ingresos - Fee mensual,Tartelier,PAGO TARTELIER,https://drive.google.com/file/d/1J7OP76CMEFjHWteXbCUjqKTt1v-7E_ho/view?usp=drivesdk
+31/08/2026,2026,8,ago,01-00590,ENVIO A FLEXIAHORRO,0.0,1185.0,-1185.0,NO OPERATIVO,Movimiento entre cuentas propias,Salida a FlexiAhorro,ENVIO A FLEXIAHORRO,https://drive.google.com/file/d/1JjsNnq8SaxgphUTNNndhz-Xc9sKf0VgE/view?usp=drivesdk

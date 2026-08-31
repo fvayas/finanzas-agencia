@@ -84,7 +84,7 @@
    "cubierto_hasta": 9,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": -2.0,
+   "atraso_meses": -1.0,
    "ficha_mes": {
     "ene": {
      "movs": [],
@@ -431,12 +431,12 @@
      "cobrado": 1040.0
     }
    },
-   "pendiente": 0.0,
-   "cobro": "al día",
+   "pendiente": 400.0,
+   "cobro": "1 mes",
    "cubierto_hasta": 7,
    "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
    "cobro_nota": "",
-   "atraso_meses": 0.2,
+   "atraso_meses": 1.2,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -912,12 +912,12 @@
      "cobrado": 2436.0
     }
    },
-   "pendiente": 0.0,
-   "cobro": "al día",
+   "pendiente": 2436.0,
+   "cobro": "1 mes",
    "cubierto_hasta": 7,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": 0.0,
+   "atraso_meses": 1.0,
    "ficha_mes": {
     "ene": {
      "movs": [],
@@ -1149,11 +1149,11 @@
     }
    },
    "pendiente": 0.0,
-   "cobro": "adelantado",
+   "cobro": "al día",
    "cubierto_hasta": 8,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": -1.0,
+   "atraso_meses": 0.0,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -1526,11 +1526,11 @@
     }
    },
    "pendiente": 0.0,
-   "cobro": "adelantado",
+   "cobro": "al día",
    "cubierto_hasta": 8,
    "cobro_fuente": "periodo declarado en el último cobro",
    "cobro_nota": "lecturas distintas: el último cobro declara hasta el año anterior, pero el conteo de mensualidades da 0 mes(es) de atraso",
-   "atraso_meses": -2.0,
+   "atraso_meses": -1.0,
    "ficha_mes": {
     "ene": {
      "movs": [],
@@ -1855,12 +1855,12 @@
      "cobrado": 721.23
     }
    },
-   "pendiente": 0.0,
-   "cobro": "al día",
+   "pendiente": 721.23,
+   "cobro": "1 mes",
    "cubierto_hasta": 7,
    "cobro_fuente": "periodo declarado en el último cobro",
    "cobro_nota": "",
-   "atraso_meses": 0.2,
+   "atraso_meses": 1.2,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -2245,11 +2245,11 @@
     }
    },
    "pendiente": 0.0,
-   "cobro": "adelantado",
+   "cobro": "al día",
    "cubierto_hasta": 8,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": -0.7,
+   "atraso_meses": 0.3,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -2513,6 +2513,331 @@
    ]
   },
   {
+   "cliente": "Cigarra",
+   "estado": "activo",
+   "nota": "",
+   "fee": 450,
+   "fee_inicial": 450,
+   "con_iva": true,
+   "facturado_mes": 517.5,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 517.5,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 4140.0,
+   "honorario_total": 4140.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "feb": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "mar": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "abr": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "may": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "jun": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "jul": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    },
+    "ago": {
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 517.5
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 8,
+   "cobro_fuente": "periodo declarado en el último cobro",
+   "cobro_nota": "",
+   "atraso_meses": 0.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "29/01/2026",
+       "desc": "CIGARRA DEL 19 DE ENERO AL 19 DE FEBRERPO",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "23/02/2026",
+       "desc": "PAGO LA CIGARRA del 22 de febrero al 22 de marzo",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "23/03/2026",
+       "desc": "PAGO CIGARRA MARZO A ABRIL",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "23/04/2026",
+       "desc": "CIGARRA DEL 19 DE ABRIL AL 19 MAYO",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "22/05/2026",
+       "desc": "CIGARRA DEL 19 DE MAYO AL 19 DE JUNIO",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "25/06/2026",
+       "desc": "PAGO CIGARRA DEL 19 DE JUNIO AL 19 DE JULIO",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "28/07/2026",
+       "desc": "CIGARRA DEL 19 DE JULIO AL 19 DE AGOSTO",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    },
+    "ago": {
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "31/08/2026",
+       "desc": "PAGO CIGARRA AGOSTO",
+       "importe": 517.5,
+       "tipo": "honorario",
+       "honorario": 517.5,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 517.5,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 517.5
+    }
+   },
+   "meses_activo": 8,
+   "primer_mes": "ene",
+   "ultimo_mes": "ago",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "29/01/2026",
+     "desc": "CIGARRA DEL 19 DE ENERO AL 19 DE FEBRERPO",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "23/02/2026",
+     "desc": "PAGO LA CIGARRA del 22 de febrero al 22 de marzo",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "23/03/2026",
+     "desc": "PAGO CIGARRA MARZO A ABRIL",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "23/04/2026",
+     "desc": "CIGARRA DEL 19 DE ABRIL AL 19 MAYO",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "22/05/2026",
+     "desc": "CIGARRA DEL 19 DE MAYO AL 19 DE JUNIO",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "25/06/2026",
+     "desc": "PAGO CIGARRA DEL 19 DE JUNIO AL 19 DE JULIO",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "28/07/2026",
+     "desc": "CIGARRA DEL 19 DE JULIO AL 19 DE AGOSTO",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "31/08/2026",
+     "desc": "PAGO CIGARRA AGOSTO",
+     "importe": 517.5,
+     "tipo": "honorario",
+     "honorario": 517.5,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 517.5,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
    "cliente": "Nane Vestidos",
    "estado": "activo",
    "nota": "",
@@ -2584,7 +2909,7 @@
    "cubierto_hasta": 9,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": -1.7,
+   "atraso_meses": -0.7,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -2973,12 +3298,12 @@
      "cobrado": 500.0
     }
    },
-   "pendiente": 0.0,
-   "cobro": "al día",
+   "pendiente": 500.0,
+   "cobro": "1 mes",
    "cubierto_hasta": 7,
    "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
    "cobro_nota": "",
-   "atraso_meses": 0.3,
+   "atraso_meses": 1.3,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -3327,12 +3652,12 @@
      "cobrado": 558.25
     }
    },
-   "pendiente": 0.0,
-   "cobro": "al día",
+   "pendiente": 558.25,
+   "cobro": "1 mes",
    "cubierto_hasta": 7,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": -0.0,
+   "atraso_meses": 1.0,
    "ficha_mes": {
     "ene": {
      "movs": [],
@@ -3563,308 +3888,6 @@
    ]
   },
   {
-   "cliente": "Cigarra",
-   "estado": "activo",
-   "nota": "",
-   "fee": 450,
-   "fee_inicial": 450,
-   "con_iva": true,
-   "facturado_mes": 517.5,
-   "retenido_mes": 0.0,
-   "a_cobrar_mes": 517.5,
-   "ret_ir": 0,
-   "ret_iva": 0,
-   "cambios": {},
-   "cobrado_total": 3622.5,
-   "honorario_total": 3622.5,
-   "pauta_total": 0.0,
-   "puntual_total": 0.0,
-   "por_mes": {
-    "ene": {
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 517.5
-    },
-    "feb": {
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 517.5
-    },
-    "mar": {
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 517.5
-    },
-    "abr": {
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 517.5
-    },
-    "may": {
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 517.5
-    },
-    "jun": {
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 517.5
-    },
-    "jul": {
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 517.5
-    },
-    "ago": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    }
-   },
-   "pendiente": 0.0,
-   "cobro": "adelantado",
-   "cubierto_hasta": 8,
-   "cobro_fuente": "periodo declarado en el último cobro",
-   "cobro_nota": "lecturas distintas: el último cobro declara hasta el año anterior, pero el conteo de mensualidades da 0 mes(es) de atraso",
-   "atraso_meses": 0.0,
-   "ficha_mes": {
-    "ene": {
-     "movs": [
-      {
-       "mes": "ene",
-       "fecha": "29/01/2026",
-       "desc": "CIGARRA DEL 19 DE ENERO AL 19 DE FEBRERPO",
-       "importe": 517.5,
-       "tipo": "honorario",
-       "honorario": 517.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 517.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 517.5
-    },
-    "feb": {
-     "movs": [
-      {
-       "mes": "feb",
-       "fecha": "23/02/2026",
-       "desc": "PAGO LA CIGARRA del 22 de febrero al 22 de marzo",
-       "importe": 517.5,
-       "tipo": "honorario",
-       "honorario": 517.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 517.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 517.5
-    },
-    "mar": {
-     "movs": [
-      {
-       "mes": "mar",
-       "fecha": "23/03/2026",
-       "desc": "PAGO CIGARRA MARZO A ABRIL",
-       "importe": 517.5,
-       "tipo": "honorario",
-       "honorario": 517.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 517.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 517.5
-    },
-    "abr": {
-     "movs": [
-      {
-       "mes": "abr",
-       "fecha": "23/04/2026",
-       "desc": "CIGARRA DEL 19 DE ABRIL AL 19 MAYO",
-       "importe": 517.5,
-       "tipo": "honorario",
-       "honorario": 517.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 517.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 517.5
-    },
-    "may": {
-     "movs": [
-      {
-       "mes": "may",
-       "fecha": "22/05/2026",
-       "desc": "CIGARRA DEL 19 DE MAYO AL 19 DE JUNIO",
-       "importe": 517.5,
-       "tipo": "honorario",
-       "honorario": 517.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 517.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 517.5
-    },
-    "jun": {
-     "movs": [
-      {
-       "mes": "jun",
-       "fecha": "25/06/2026",
-       "desc": "PAGO CIGARRA DEL 19 DE JUNIO AL 19 DE JULIO",
-       "importe": 517.5,
-       "tipo": "honorario",
-       "honorario": 517.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 517.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 517.5
-    },
-    "jul": {
-     "movs": [
-      {
-       "mes": "jul",
-       "fecha": "28/07/2026",
-       "desc": "CIGARRA DEL 19 DE JULIO AL 19 DE AGOSTO",
-       "importe": 517.5,
-       "tipo": "honorario",
-       "honorario": 517.5,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 517.5,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 517.5
-    },
-    "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
-     ],
-     "esperado": 517.5
-    }
-   },
-   "meses_activo": 7,
-   "primer_mes": "ene",
-   "ultimo_mes": "jul",
-   "cuadra": true,
-   "desvios": [],
-   "dobles": [],
-   "inferido": "",
-   "detalle": [
-    {
-     "mes": "ene",
-     "fecha": "29/01/2026",
-     "desc": "CIGARRA DEL 19 DE ENERO AL 19 DE FEBRERPO",
-     "importe": 517.5,
-     "tipo": "honorario",
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 517.5,
-     "desvio": 0.0
-    },
-    {
-     "mes": "feb",
-     "fecha": "23/02/2026",
-     "desc": "PAGO LA CIGARRA del 22 de febrero al 22 de marzo",
-     "importe": 517.5,
-     "tipo": "honorario",
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 517.5,
-     "desvio": 0.0
-    },
-    {
-     "mes": "mar",
-     "fecha": "23/03/2026",
-     "desc": "PAGO CIGARRA MARZO A ABRIL",
-     "importe": 517.5,
-     "tipo": "honorario",
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 517.5,
-     "desvio": 0.0
-    },
-    {
-     "mes": "abr",
-     "fecha": "23/04/2026",
-     "desc": "CIGARRA DEL 19 DE ABRIL AL 19 MAYO",
-     "importe": 517.5,
-     "tipo": "honorario",
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 517.5,
-     "desvio": 0.0
-    },
-    {
-     "mes": "may",
-     "fecha": "22/05/2026",
-     "desc": "CIGARRA DEL 19 DE MAYO AL 19 DE JUNIO",
-     "importe": 517.5,
-     "tipo": "honorario",
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 517.5,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jun",
-     "fecha": "25/06/2026",
-     "desc": "PAGO CIGARRA DEL 19 DE JUNIO AL 19 DE JULIO",
-     "importe": 517.5,
-     "tipo": "honorario",
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 517.5,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jul",
-     "fecha": "28/07/2026",
-     "desc": "CIGARRA DEL 19 DE JULIO AL 19 DE AGOSTO",
-     "importe": 517.5,
-     "tipo": "honorario",
-     "honorario": 517.5,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 517.5,
-     "desvio": 0.0
-    }
-   ]
-  },
-  {
    "cliente": "Plasticaucho",
    "estado": "activo",
    "nota": "",
@@ -3932,11 +3955,11 @@
     }
    },
    "pendiente": 0.0,
-   "cobro": "adelantado",
+   "cobro": "al día",
    "cubierto_hasta": 8,
    "cobro_fuente": "periodo declarado en el último cobro",
    "cobro_nota": "",
-   "atraso_meses": -1.1,
+   "atraso_meses": -0.1,
    "ficha_mes": {
     "ene": {
      "movs": [],
@@ -4255,7 +4278,7 @@
    "cubierto_hasta": 10,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": -3.0,
+   "atraso_meses": -2.0,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -4582,12 +4605,12 @@
      "cobrado": 340.0
     }
    },
-   "pendiente": 0.0,
-   "cobro": "al día",
+   "pendiente": 345.0,
+   "cobro": "1 mes",
    "cubierto_hasta": 7,
    "cobro_fuente": "periodo declarado en el último cobro",
    "cobro_nota": "",
-   "atraso_meses": 0.3,
+   "atraso_meses": 1.3,
    "ficha_mes": {
     "ene": {
      "movs": [],
@@ -4860,6 +4883,633 @@
    ]
   },
   {
+   "cliente": "Tartelier",
+   "estado": "activo",
+   "nota": "",
+   "fee": 300,
+   "fee_inicial": 300,
+   "con_iva": true,
+   "facturado_mes": 345.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 345.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 2415.0,
+   "honorario_total": 2415.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "feb": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    },
+    "mar": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    },
+    "abr": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    },
+    "may": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    },
+    "jun": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    },
+    "jul": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    },
+    "ago": {
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 345.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 8,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": 0.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [],
+     "razones": [
+      "todavía no era cliente"
+     ],
+     "esperado": 345.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "25/02/2026",
+       "desc": "PAGO TARTELIER DEL 18 DE ENERO AL 18 DE FEBRERO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "31/03/2026",
+       "desc": "TARTELIER DEL 18 DE FEBRERO AL 18 DE MARZO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "29/04/2026",
+       "desc": "PAGO TARTELIER DEL 18 DE MARZO AL 18 DE ABRIL",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "29/05/2026",
+       "desc": "PAGO TARTELIER DEL 18 DE ABRIL AL 18 D EMAYO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "24/06/2026",
+       "desc": "PAGO TARTELIER DEL 18 DE MAYO AL 18 DE JUNIO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "24/07/2026",
+       "desc": "PAGO TARTELIER DEL 18 DE JUNIO AL 18 DE JULIO",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    },
+    "ago": {
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "31/08/2026",
+       "desc": "PAGO TARTELIER",
+       "importe": 345.0,
+       "tipo": "honorario",
+       "honorario": 345.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 345.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 345.0
+    }
+   },
+   "meses_activo": 7,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "feb",
+     "fecha": "25/02/2026",
+     "desc": "PAGO TARTELIER DEL 18 DE ENERO AL 18 DE FEBRERO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "31/03/2026",
+     "desc": "TARTELIER DEL 18 DE FEBRERO AL 18 DE MARZO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "29/04/2026",
+     "desc": "PAGO TARTELIER DEL 18 DE MARZO AL 18 DE ABRIL",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "29/05/2026",
+     "desc": "PAGO TARTELIER DEL 18 DE ABRIL AL 18 D EMAYO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "24/06/2026",
+     "desc": "PAGO TARTELIER DEL 18 DE MAYO AL 18 DE JUNIO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "24/07/2026",
+     "desc": "PAGO TARTELIER DEL 18 DE JUNIO AL 18 DE JULIO",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "31/08/2026",
+     "desc": "PAGO TARTELIER",
+     "importe": 345.0,
+     "tipo": "honorario",
+     "honorario": 345.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 345.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
+   "cliente": "Chiflido",
+   "estado": "activo",
+   "nota": "",
+   "fee": 300,
+   "fee_inicial": 300,
+   "con_iva": false,
+   "facturado_mes": 300.0,
+   "retenido_mes": 0.0,
+   "a_cobrar_mes": 300.0,
+   "ret_ir": 0,
+   "ret_iva": 0,
+   "cambios": {},
+   "cobrado_total": 2400.0,
+   "honorario_total": 2400.0,
+   "pauta_total": 0.0,
+   "puntual_total": 0.0,
+   "por_mes": {
+    "ene": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "feb": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "mar": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "abr": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "may": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "jun": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "jul": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    },
+    "ago": {
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 300.0
+    }
+   },
+   "pendiente": 0.0,
+   "cobro": "al día",
+   "cubierto_hasta": 8,
+   "cobro_fuente": "mensualidades cobradas frente a las devengadas",
+   "cobro_nota": "",
+   "atraso_meses": 0.0,
+   "ficha_mes": {
+    "ene": {
+     "movs": [
+      {
+       "mes": "ene",
+       "fecha": "29/01/2026",
+       "desc": "CHIFLIDO ENERO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "feb": {
+     "movs": [
+      {
+       "mes": "feb",
+       "fecha": "27/02/2026",
+       "desc": "PAGO CHIFLIDO FEBRERO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "mar": {
+     "movs": [
+      {
+       "mes": "mar",
+       "fecha": "30/03/2026",
+       "desc": "PAGO CHIFLIDO MARZO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "abr": {
+     "movs": [
+      {
+       "mes": "abr",
+       "fecha": "29/04/2026",
+       "desc": "PAGO CHIFLIDO ABRIL",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "may": {
+     "movs": [
+      {
+       "mes": "may",
+       "fecha": "29/05/2026",
+       "desc": "PAGO CHIFLIDO MAYO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "jun": {
+     "movs": [
+      {
+       "mes": "jun",
+       "fecha": "29/06/2026",
+       "desc": "PAGO CHIFLIDO JUNIO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "jul": {
+     "movs": [
+      {
+       "mes": "jul",
+       "fecha": "28/07/2026",
+       "desc": "PAGO CHILIDO JULIO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    },
+    "ago": {
+     "movs": [
+      {
+       "mes": "ago",
+       "fecha": "31/08/2026",
+       "desc": "PAGO CHIFLIDO",
+       "importe": 300.0,
+       "tipo": "honorario",
+       "honorario": 300.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": 300.0,
+       "desvio": 0.0
+      }
+     ],
+     "razones": [],
+     "esperado": 300.0
+    }
+   },
+   "meses_activo": 8,
+   "primer_mes": "ene",
+   "ultimo_mes": "ago",
+   "cuadra": true,
+   "desvios": [],
+   "dobles": [],
+   "inferido": "",
+   "detalle": [
+    {
+     "mes": "ene",
+     "fecha": "29/01/2026",
+     "desc": "CHIFLIDO ENERO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "feb",
+     "fecha": "27/02/2026",
+     "desc": "PAGO CHIFLIDO FEBRERO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "mar",
+     "fecha": "30/03/2026",
+     "desc": "PAGO CHIFLIDO MARZO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "abr",
+     "fecha": "29/04/2026",
+     "desc": "PAGO CHIFLIDO ABRIL",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "may",
+     "fecha": "29/05/2026",
+     "desc": "PAGO CHIFLIDO MAYO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jun",
+     "fecha": "29/06/2026",
+     "desc": "PAGO CHIFLIDO JUNIO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "jul",
+     "fecha": "28/07/2026",
+     "desc": "PAGO CHILIDO JULIO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "31/08/2026",
+     "desc": "PAGO CHIFLIDO",
+     "importe": 300.0,
+     "tipo": "honorario",
+     "honorario": 300.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": 300.0,
+     "desvio": 0.0
+    }
+   ]
+  },
+  {
    "cliente": "APC",
    "estado": "activo",
    "nota": "",
@@ -4926,12 +5576,12 @@
      "cobrado": 1150.0
     }
    },
-   "pendiente": 0.0,
-   "cobro": "al día",
+   "pendiente": 575.0,
+   "cobro": "1 mes",
    "cubierto_hasta": 7,
    "cobro_fuente": "periodo declarado en el último cobro; ojo, algún cobro anterior no declara mes",
    "cobro_nota": "lecturas distintas: el último cobro declara hasta julio, pero el conteo de mensualidades da 0 mes(es) de atraso",
-   "atraso_meses": -2.0,
+   "atraso_meses": -1.0,
    "ficha_mes": {
     "ene": {
      "movs": [],
@@ -5168,11 +5818,11 @@
     }
    },
    "pendiente": 0.0,
-   "cobro": "adelantado",
+   "cobro": "al día",
    "cubierto_hasta": 8,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": -1.0,
+   "atraso_meses": 0.0,
    "ficha_mes": {
     "ene": {
      "movs": [],
@@ -5501,11 +6151,11 @@
     }
    },
    "pendiente": 0.0,
-   "cobro": "adelantado",
+   "cobro": "al día",
    "cubierto_hasta": 8,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": -1.0,
+   "atraso_meses": 0.0,
    "ficha_mes": {
     "ene": {
      "movs": [],
@@ -5690,587 +6340,6 @@
    ]
   },
   {
-   "cliente": "Chiflido",
-   "estado": "activo",
-   "nota": "",
-   "fee": 300,
-   "fee_inicial": 300,
-   "con_iva": false,
-   "facturado_mes": 300.0,
-   "retenido_mes": 0.0,
-   "a_cobrar_mes": 300.0,
-   "ret_ir": 0,
-   "ret_iva": 0,
-   "cambios": {},
-   "cobrado_total": 2100.0,
-   "honorario_total": 2100.0,
-   "pauta_total": 0.0,
-   "puntual_total": 0.0,
-   "por_mes": {
-    "ene": {
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 300.0
-    },
-    "feb": {
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 300.0
-    },
-    "mar": {
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 300.0
-    },
-    "abr": {
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 300.0
-    },
-    "may": {
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 300.0
-    },
-    "jun": {
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 300.0
-    },
-    "jul": {
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 300.0
-    },
-    "ago": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    }
-   },
-   "pendiente": 0.0,
-   "cobro": "al día",
-   "cubierto_hasta": 7,
-   "cobro_fuente": "periodo declarado en el último cobro",
-   "cobro_nota": "",
-   "atraso_meses": 0.0,
-   "ficha_mes": {
-    "ene": {
-     "movs": [
-      {
-       "mes": "ene",
-       "fecha": "29/01/2026",
-       "desc": "CHIFLIDO ENERO",
-       "importe": 300.0,
-       "tipo": "honorario",
-       "honorario": 300.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 300.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 300.0
-    },
-    "feb": {
-     "movs": [
-      {
-       "mes": "feb",
-       "fecha": "27/02/2026",
-       "desc": "PAGO CHIFLIDO FEBRERO",
-       "importe": 300.0,
-       "tipo": "honorario",
-       "honorario": 300.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 300.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 300.0
-    },
-    "mar": {
-     "movs": [
-      {
-       "mes": "mar",
-       "fecha": "30/03/2026",
-       "desc": "PAGO CHIFLIDO MARZO",
-       "importe": 300.0,
-       "tipo": "honorario",
-       "honorario": 300.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 300.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 300.0
-    },
-    "abr": {
-     "movs": [
-      {
-       "mes": "abr",
-       "fecha": "29/04/2026",
-       "desc": "PAGO CHIFLIDO ABRIL",
-       "importe": 300.0,
-       "tipo": "honorario",
-       "honorario": 300.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 300.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 300.0
-    },
-    "may": {
-     "movs": [
-      {
-       "mes": "may",
-       "fecha": "29/05/2026",
-       "desc": "PAGO CHIFLIDO MAYO",
-       "importe": 300.0,
-       "tipo": "honorario",
-       "honorario": 300.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 300.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 300.0
-    },
-    "jun": {
-     "movs": [
-      {
-       "mes": "jun",
-       "fecha": "29/06/2026",
-       "desc": "PAGO CHIFLIDO JUNIO",
-       "importe": 300.0,
-       "tipo": "honorario",
-       "honorario": 300.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 300.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 300.0
-    },
-    "jul": {
-     "movs": [
-      {
-       "mes": "jul",
-       "fecha": "28/07/2026",
-       "desc": "PAGO CHILIDO JULIO",
-       "importe": 300.0,
-       "tipo": "honorario",
-       "honorario": 300.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 300.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 300.0
-    },
-    "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
-     ],
-     "esperado": 300.0
-    }
-   },
-   "meses_activo": 7,
-   "primer_mes": "ene",
-   "ultimo_mes": "jul",
-   "cuadra": true,
-   "desvios": [],
-   "dobles": [],
-   "inferido": "",
-   "detalle": [
-    {
-     "mes": "ene",
-     "fecha": "29/01/2026",
-     "desc": "CHIFLIDO ENERO",
-     "importe": 300.0,
-     "tipo": "honorario",
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 300.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "feb",
-     "fecha": "27/02/2026",
-     "desc": "PAGO CHIFLIDO FEBRERO",
-     "importe": 300.0,
-     "tipo": "honorario",
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 300.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "mar",
-     "fecha": "30/03/2026",
-     "desc": "PAGO CHIFLIDO MARZO",
-     "importe": 300.0,
-     "tipo": "honorario",
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 300.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "abr",
-     "fecha": "29/04/2026",
-     "desc": "PAGO CHIFLIDO ABRIL",
-     "importe": 300.0,
-     "tipo": "honorario",
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 300.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "may",
-     "fecha": "29/05/2026",
-     "desc": "PAGO CHIFLIDO MAYO",
-     "importe": 300.0,
-     "tipo": "honorario",
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 300.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jun",
-     "fecha": "29/06/2026",
-     "desc": "PAGO CHIFLIDO JUNIO",
-     "importe": 300.0,
-     "tipo": "honorario",
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 300.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jul",
-     "fecha": "28/07/2026",
-     "desc": "PAGO CHILIDO JULIO",
-     "importe": 300.0,
-     "tipo": "honorario",
-     "honorario": 300.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 300.0,
-     "desvio": 0.0
-    }
-   ]
-  },
-  {
-   "cliente": "Tartelier",
-   "estado": "activo",
-   "nota": "",
-   "fee": 300,
-   "fee_inicial": 300,
-   "con_iva": true,
-   "facturado_mes": 345.0,
-   "retenido_mes": 0.0,
-   "a_cobrar_mes": 345.0,
-   "ret_ir": 0,
-   "ret_iva": 0,
-   "cambios": {},
-   "cobrado_total": 2070.0,
-   "honorario_total": 2070.0,
-   "pauta_total": 0.0,
-   "puntual_total": 0.0,
-   "por_mes": {
-    "ene": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    },
-    "feb": {
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 345.0
-    },
-    "mar": {
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 345.0
-    },
-    "abr": {
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 345.0
-    },
-    "may": {
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 345.0
-    },
-    "jun": {
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 345.0
-    },
-    "jul": {
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 345.0
-    },
-    "ago": {
-     "honorario": 0.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "cobrado": 0.0
-    }
-   },
-   "pendiente": 0.0,
-   "cobro": "al día",
-   "cubierto_hasta": 7,
-   "cobro_fuente": "periodo declarado en el último cobro",
-   "cobro_nota": "",
-   "atraso_meses": 0.0,
-   "ficha_mes": {
-    "ene": {
-     "movs": [],
-     "razones": [
-      "todavía no era cliente"
-     ],
-     "esperado": 345.0
-    },
-    "feb": {
-     "movs": [
-      {
-       "mes": "feb",
-       "fecha": "25/02/2026",
-       "desc": "PAGO TARTELIER DEL 18 DE ENERO AL 18 DE FEBRERO",
-       "importe": 345.0,
-       "tipo": "honorario",
-       "honorario": 345.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 345.0
-    },
-    "mar": {
-     "movs": [
-      {
-       "mes": "mar",
-       "fecha": "31/03/2026",
-       "desc": "TARTELIER DEL 18 DE FEBRERO AL 18 DE MARZO",
-       "importe": 345.0,
-       "tipo": "honorario",
-       "honorario": 345.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 345.0
-    },
-    "abr": {
-     "movs": [
-      {
-       "mes": "abr",
-       "fecha": "29/04/2026",
-       "desc": "PAGO TARTELIER DEL 18 DE MARZO AL 18 DE ABRIL",
-       "importe": 345.0,
-       "tipo": "honorario",
-       "honorario": 345.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 345.0
-    },
-    "may": {
-     "movs": [
-      {
-       "mes": "may",
-       "fecha": "29/05/2026",
-       "desc": "PAGO TARTELIER DEL 18 DE ABRIL AL 18 D EMAYO",
-       "importe": 345.0,
-       "tipo": "honorario",
-       "honorario": 345.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 345.0
-    },
-    "jun": {
-     "movs": [
-      {
-       "mes": "jun",
-       "fecha": "24/06/2026",
-       "desc": "PAGO TARTELIER DEL 18 DE MAYO AL 18 DE JUNIO",
-       "importe": 345.0,
-       "tipo": "honorario",
-       "honorario": 345.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 345.0
-    },
-    "jul": {
-     "movs": [
-      {
-       "mes": "jul",
-       "fecha": "24/07/2026",
-       "desc": "PAGO TARTELIER DEL 18 DE JUNIO AL 18 DE JULIO",
-       "importe": 345.0,
-       "tipo": "honorario",
-       "honorario": 345.0,
-       "pauta": 0.0,
-       "puntual": 0.0,
-       "esperado": 345.0,
-       "desvio": 0.0
-      }
-     ],
-     "razones": [],
-     "esperado": 345.0
-    },
-    "ago": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
-     ],
-     "esperado": 345.0
-    }
-   },
-   "meses_activo": 6,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "cuadra": true,
-   "desvios": [],
-   "dobles": [],
-   "inferido": "",
-   "detalle": [
-    {
-     "mes": "feb",
-     "fecha": "25/02/2026",
-     "desc": "PAGO TARTELIER DEL 18 DE ENERO AL 18 DE FEBRERO",
-     "importe": 345.0,
-     "tipo": "honorario",
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "mar",
-     "fecha": "31/03/2026",
-     "desc": "TARTELIER DEL 18 DE FEBRERO AL 18 DE MARZO",
-     "importe": 345.0,
-     "tipo": "honorario",
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "abr",
-     "fecha": "29/04/2026",
-     "desc": "PAGO TARTELIER DEL 18 DE MARZO AL 18 DE ABRIL",
-     "importe": 345.0,
-     "tipo": "honorario",
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "may",
-     "fecha": "29/05/2026",
-     "desc": "PAGO TARTELIER DEL 18 DE ABRIL AL 18 D EMAYO",
-     "importe": 345.0,
-     "tipo": "honorario",
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jun",
-     "fecha": "24/06/2026",
-     "desc": "PAGO TARTELIER DEL 18 DE MAYO AL 18 DE JUNIO",
-     "importe": 345.0,
-     "tipo": "honorario",
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": 0.0
-    },
-    {
-     "mes": "jul",
-     "fecha": "24/07/2026",
-     "desc": "PAGO TARTELIER DEL 18 DE JUNIO AL 18 DE JULIO",
-     "importe": 345.0,
-     "tipo": "honorario",
-     "honorario": 345.0,
-     "pauta": 0.0,
-     "puntual": 0.0,
-     "esperado": 345.0,
-     "desvio": 0.0
-    }
-   ]
-  },
-  {
    "cliente": "El Motor",
    "estado": "activo",
    "nota": "",
@@ -6337,12 +6406,12 @@
      "cobrado": 0.0
     }
    },
-   "pendiente": 650.0,
-   "cobro": "1 mes",
+   "pendiente": 1300.0,
+   "cobro": "2 meses",
    "cubierto_hasta": 6,
    "cobro_fuente": "periodo declarado en el último cobro",
    "cobro_nota": "",
-   "atraso_meses": 1.0,
+   "atraso_meses": 2.0,
    "ficha_mes": {
     "ene": {
      "movs": [],
@@ -6560,7 +6629,7 @@
    "cubierto_hasta": 3,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": 4.0,
+   "atraso_meses": 5.0,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -6781,7 +6850,7 @@
    "cubierto_hasta": 3,
    "cobro_fuente": "periodo declarado en el último cobro",
    "cobro_nota": "",
-   "atraso_meses": 4.0,
+   "atraso_meses": 5.0,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -6987,11 +7056,11 @@
     }
    },
    "pendiente": 0.0,
-   "cobro": "adelantado",
+   "cobro": "al día",
    "cubierto_hasta": 8,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": -1.0,
+   "atraso_meses": 0.0,
    "ficha_mes": {
     "ene": {
      "movs": [],
@@ -7485,12 +7554,12 @@
      "cobrado": 120.0
     }
    },
-   "pendiente": 240.0,
-   "cobro": "2 meses",
+   "pendiente": 360.0,
+   "cobro": "3 meses",
    "cubierto_hasta": 5,
    "cobro_fuente": "mensualidades cobradas frente a las devengadas",
    "cobro_nota": "",
-   "atraso_meses": 2.0,
+   "atraso_meses": 3.0,
    "ficha_mes": {
     "ene": {
      "movs": [
@@ -8594,17 +8663,17 @@
   }
  ],
  "totales": {
-  "honorario": 82838.4,
+  "honorario": 84000.9,
   "pauta": 7722.12,
   "puntual": 5617.87,
-  "cobrado": 96178.39
+  "cobrado": 97340.89
  },
  "honorarios_recurrentes_mes": 12619.98,
  "retenido_mes": 825.02,
  "avisos": [
   "Cobro de marzo sin identificar: no está en el tarifario (cobrado 653.00)"
  ],
- "pendiente_cobro": 890.0,
- "cuentas_al_dia": 20,
+ "pendiente_cobro": 7195.48,
+ "cuentas_al_dia": 13,
  "cuentas_activas": 22
 }

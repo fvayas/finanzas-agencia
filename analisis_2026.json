@@ -103,16 +103,16 @@
   },
   {
    "mes": "ago",
-   "ingresos": 11879.48,
+   "ingresos": 13041.98,
    "pauta_cobrada": 977.0,
    "pauta_pagada": 1697.58,
    "pauta_neta": 720.58,
    "costo_fijo": 8608.44,
    "costo_variable": 1166.99,
    "costo_total": 10496.01,
-   "resultado": 1383.47,
-   "margen_contribucion": 9991.91,
-   "margen_pct": 84.1
+   "resultado": 2545.97,
+   "margen_contribucion": 11154.41,
+   "margen_pct": 85.5
   }
  ],
  "grupos": {
@@ -144,7 +144,7 @@
    "may": 8934.71,
    "jun": 14693.69,
    "jul": 12731.02,
-   "ago": 10687.48
+   "ago": 11849.98
   },
   "Equipos": {
    "ene": -75.0,
@@ -346,7 +346,7 @@
    "may": 300.41,
    "jun": -2316.87,
    "jul": -900.01,
-   "ago": -1177.0
+   "ago": -2362.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -360,30 +360,30 @@
   }
  },
  "promedios": {
-  "ingresos": 11104.86,
-  "costo_fijo": 8653.23,
-  "costo_variable": 1896.11,
-  "ratio_variable": 0.1707,
-  "mc_ratio": 0.8293,
-  "breakeven": 10434.96,
-  "breakeven_sin_socios": 6797.96,
-  "sueldo_socios": 3016.0
+  "ingresos": 11347.0,
+  "costo_fijo": 8647.63,
+  "costo_variable": 1895.04,
+  "ratio_variable": 0.167,
+  "mc_ratio": 0.833,
+  "breakeven": 10381.42,
+  "breakeven_sin_socios": 6763.13,
+  "sueldo_socios": 3014.0
  },
  "run_rate": {
   "meses": [
-   "may",
    "jun",
-   "jul"
+   "jul",
+   "ago"
   ],
-  "mes_en_curso": "ago",
-  "ingresos": 12587.64,
-  "costo_fijo": 9482.45,
-  "costo_variable": 2178.29,
-  "resultado": 926.9,
-  "ratio_variable": 0.173,
-  "mc_ratio": 0.827,
-  "breakeven": 11466.08,
-  "holgura": 1121.56
+  "mes_en_curso": null,
+  "ingresos": 13872.4,
+  "costo_fijo": 10310.78,
+  "costo_variable": 1745.08,
+  "resultado": 1816.54,
+  "ratio_variable": 0.1258,
+  "mc_ratio": 0.8742,
+  "breakeven": 11794.53,
+  "holgura": 2077.87
  },
  "familias": {
   "ingreso": [
@@ -418,7 +418,7 @@
   {
    "cliente": "Speedy",
    "total": 8238.0,
-   "pct": 9.3,
+   "pct": 9.1,
    "pagos": 4,
    "meses_activo": 3,
    "primer_mes": "jun",
@@ -438,7 +438,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 9.1,
+   "pct": 9.0,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -458,7 +458,7 @@
   {
    "cliente": "Uninova",
    "total": 7803.0,
-   "pct": 8.8,
+   "pct": 8.7,
    "pagos": 10,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -478,7 +478,7 @@
   {
    "cliente": "Fiammingo",
    "total": 6510.0,
-   "pct": 7.3,
+   "pct": 7.2,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -498,7 +498,7 @@
   {
    "cliente": "Samari",
    "total": 6050.72,
-   "pct": 6.8,
+   "pct": 6.7,
    "pagos": 10,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -518,7 +518,7 @@
   {
    "cliente": "Velsana",
    "total": 6045.0,
-   "pct": 6.8,
+   "pct": 6.7,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -533,6 +533,26 @@
     "jun": 1400.0,
     "jul": 700.0,
     "ago": 700.0
+   }
+  },
+  {
+   "cliente": "Cigarra",
+   "total": 4140.0,
+   "pct": 4.6,
+   "pagos": 8,
+   "meses_activo": 8,
+   "primer_mes": "ene",
+   "ultimo_mes": "ago",
+   "fee_promedio": 517.5,
+   "por_mes": {
+    "ene": 517.5,
+    "feb": 517.5,
+    "mar": 517.5,
+    "abr": 517.5,
+    "may": 517.5,
+    "jun": 517.5,
+    "jul": 517.5,
+    "ago": 517.5
    }
   },
   {
@@ -558,7 +578,7 @@
   {
    "cliente": "Flota Imbabura",
    "total": 3910.51,
-   "pct": 4.4,
+   "pct": 4.3,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -573,26 +593,6 @@
     "jun": 558.25,
     "jul": 558.25,
     "ago": 558.25
-   }
-  },
-  {
-   "cliente": "Cigarra",
-   "total": 3622.5,
-   "pct": 4.1,
-   "pagos": 7,
-   "meses_activo": 7,
-   "primer_mes": "ene",
-   "ultimo_mes": "jul",
-   "fee_promedio": 517.5,
-   "por_mes": {
-    "ene": 517.5,
-    "feb": 517.5,
-    "mar": 517.5,
-    "abr": 517.5,
-    "may": 517.5,
-    "jun": 517.5,
-    "jul": 517.5,
-    "ago": 0.0
    }
   },
   {
@@ -618,7 +618,7 @@
   {
    "cliente": "Pladeco",
    "total": 3449.0,
-   "pct": 3.9,
+   "pct": 3.8,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "ene",
@@ -638,7 +638,7 @@
   {
    "cliente": "Plasticaucho",
    "total": 2736.5,
-   "pct": 3.1,
+   "pct": 3.0,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -678,7 +678,7 @@
   {
    "cliente": "Onco Ambato",
    "total": 2640.0,
-   "pct": 3.0,
+   "pct": 2.9,
    "pagos": 8,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -693,6 +693,46 @@
     "jun": 0.0,
     "jul": 300.0,
     "ago": 340.0
+   }
+  },
+  {
+   "cliente": "Tartelier",
+   "total": 2415.0,
+   "pct": 2.7,
+   "pagos": 7,
+   "meses_activo": 7,
+   "primer_mes": "feb",
+   "ultimo_mes": "ago",
+   "fee_promedio": 345.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 345.0,
+    "mar": 345.0,
+    "abr": 345.0,
+    "may": 345.0,
+    "jun": 345.0,
+    "jul": 345.0,
+    "ago": 345.0
+   }
+  },
+  {
+   "cliente": "Chiflido",
+   "total": 2400.0,
+   "pct": 2.7,
+   "pagos": 8,
+   "meses_activo": 8,
+   "primer_mes": "ene",
+   "ultimo_mes": "ago",
+   "fee_promedio": 300.0,
+   "por_mes": {
+    "ene": 300.0,
+    "feb": 300.0,
+    "mar": 300.0,
+    "abr": 300.0,
+    "may": 300.0,
+    "jun": 300.0,
+    "jul": 300.0,
+    "ago": 300.0
    }
   },
   {
@@ -718,7 +758,7 @@
   {
    "cliente": "Provita",
    "total": 2295.0,
-   "pct": 2.6,
+   "pct": 2.5,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -753,46 +793,6 @@
     "jun": 430.0,
     "jul": 430.0,
     "ago": 430.0
-   }
-  },
-  {
-   "cliente": "Chiflido",
-   "total": 2100.0,
-   "pct": 2.4,
-   "pagos": 7,
-   "meses_activo": 7,
-   "primer_mes": "ene",
-   "ultimo_mes": "jul",
-   "fee_promedio": 300.0,
-   "por_mes": {
-    "ene": 300.0,
-    "feb": 300.0,
-    "mar": 300.0,
-    "abr": 300.0,
-    "may": 300.0,
-    "jun": 300.0,
-    "jul": 300.0,
-    "ago": 0.0
-   }
-  },
-  {
-   "cliente": "Tartelier",
-   "total": 2070.0,
-   "pct": 2.3,
-   "pagos": 6,
-   "meses_activo": 6,
-   "primer_mes": "feb",
-   "ultimo_mes": "jul",
-   "fee_promedio": 345.0,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 345.0,
-    "mar": 345.0,
-    "abr": 345.0,
-    "may": 345.0,
-    "jun": 345.0,
-    "jul": 345.0,
-    "ago": 0.0
    }
   },
   {
@@ -997,9 +997,9 @@
   }
  ],
  "concentracion": {
-  "top1": 9.3,
-  "top3": 27.2,
-  "top5": 41.3
+  "top1": 9.1,
+  "top3": 26.8,
+  "top5": 40.7
  },
  "equipo": [
   {
@@ -2685,8 +2685,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 69347.0,
-   "n": 76,
+   "total": 70532.0,
+   "n": 77,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2695,7 +2695,7 @@
     "may": 7425.0,
     "jun": 15722.0,
     "jul": 14357.0,
-    "ago": 14327.0
+    "ago": 15512.0
    },
    "detalle": {
     "ene": {
@@ -3114,6 +3114,11 @@
        "fecha": "28/08/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 400.0
+      },
+      {
+       "fecha": "31/08/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1185.0
       }
      ],
      "razones": []
@@ -5443,10 +5448,10 @@
   }
  ],
  "totales": {
-  "ingresos": 89613.51,
+  "ingresos": 90776.01,
   "costo_fijo": 69181.07,
   "costo_variable": 10845.29,
-  "resultado": 5272.1,
-  "movimientos": 588
+  "resultado": 6434.6,
+  "movimientos": 592
  }
 }
