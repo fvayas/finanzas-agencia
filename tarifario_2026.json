@@ -7,7 +7,8 @@
   "may",
   "jun",
   "jul",
-  "ago"
+  "ago",
+  "sep"
  ],
  "clientes": [
   {
@@ -77,6 +78,12 @@
      "pauta": 337.0,
      "puntual": 0.0,
      "cobrado": 1027.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -243,6 +250,13 @@
      ],
      "razones": [
       "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 690.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
      ],
      "esperado": 690.0
     }
@@ -429,6 +443,12 @@
      "pauta": 640.0,
      "puntual": 0.0,
      "cobrado": 1040.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 400.0,
@@ -663,6 +683,13 @@
      ],
      "razones": [
       "el giro trae pauta del cliente, que no es facturación"
+     ],
+     "esperado": 400.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
      ],
      "esperado": 400.0
     }
@@ -910,6 +937,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 2436.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 2436.0,
@@ -1020,6 +1053,13 @@
       }
      ],
      "razones": [],
+     "esperado": 2436.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 2436.0
     }
    },
@@ -1146,6 +1186,12 @@
      "pauta": 0.0,
      "puntual": 247.0,
      "cobrado": 1147.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -1324,6 +1370,13 @@
      ],
      "razones": [
       "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 900.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
      ],
      "esperado": 900.0
     }
@@ -1523,6 +1576,12 @@
      "pauta": 0.0,
      "puntual": 70.0,
      "cobrado": 990.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -1676,6 +1735,13 @@
      ],
      "razones": [
       "incluye un trabajo puntual facturado aparte del fee"
+     ],
+     "esperado": 920.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
      ],
      "esperado": 920.0
     }
@@ -1853,6 +1919,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 721.23
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 721.23,
@@ -2037,6 +2109,13 @@
       }
      ],
      "razones": [],
+     "esperado": 721.23
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 721.23
     }
    },
@@ -2242,6 +2321,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 700.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -2398,6 +2483,13 @@
       }
      ],
      "razones": [],
+     "esperado": 700.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 700.0
     }
    },
@@ -2577,6 +2669,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 517.5
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -2728,6 +2826,13 @@
       }
      ],
      "razones": [],
+     "esperado": 517.5
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 517.5
     }
    },
@@ -2902,6 +3007,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 450.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -3089,6 +3200,13 @@
       }
      ],
      "razones": [],
+     "esperado": 450.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 450.0
     }
    },
@@ -3296,6 +3414,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 500.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 500.0,
@@ -3464,6 +3588,13 @@
       }
      ],
      "razones": [],
+     "esperado": 500.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 500.0
     }
    },
@@ -3650,6 +3781,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 558.25
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 558.25,
@@ -3790,6 +3927,13 @@
       }
      ],
      "razones": [],
+     "esperado": 558.25
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 558.25
     }
    },
@@ -3952,6 +4096,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 339.5
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -4097,6 +4247,13 @@
       }
      ],
      "razones": [],
+     "esperado": 339.5
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 339.5
     }
    },
@@ -4271,6 +4428,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 300.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -4424,6 +4587,13 @@
       }
      ],
      "razones": [],
+     "esperado": 300.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 300.0
     }
    },
@@ -4603,6 +4773,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 340.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 345.0,
@@ -4760,6 +4936,13 @@
       }
      ],
      "razones": [],
+     "esperado": 345.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 345.0
     }
    },
@@ -4947,6 +5130,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 345.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -5087,6 +5276,13 @@
       }
      ],
      "razones": [],
+     "esperado": 345.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 345.0
     }
    },
@@ -5249,6 +5445,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 300.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -5400,6 +5602,13 @@
       }
      ],
      "razones": [],
+     "esperado": 300.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 300.0
     }
    },
@@ -5574,6 +5783,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 1150.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 575.0,
@@ -5683,6 +5898,13 @@
      ],
      "razones": [
       "cobró 2 mensualidades en el mismo mes"
+     ],
+     "esperado": 575.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
      ],
      "esperado": 575.0
     }
@@ -5815,6 +6037,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 287.5
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -5969,6 +6197,13 @@
       }
      ],
      "razones": [],
+     "esperado": 287.5
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 287.5
     }
    },
@@ -6148,6 +6383,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 430.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -6266,6 +6507,13 @@
       }
      ],
      "razones": [],
+     "esperado": 430.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 430.0
     }
    },
@@ -6404,6 +6652,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 0.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 1300.0,
@@ -6499,6 +6753,13 @@
      "esperado": 650.0
     },
     "ago": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 650.0
+    },
+    "sep": {
      "movs": [],
      "razones": [
       "dejó de cobrarse a partir de aquí"
@@ -6622,6 +6883,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 0.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0,
@@ -6720,6 +6987,13 @@
      "esperado": 400.0
     },
     "ago": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 400.0
+    },
+    "sep": {
      "movs": [],
      "razones": [
       "dejó de cobrarse a partir de aquí"
@@ -6843,6 +7117,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 0.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0,
@@ -6935,6 +7215,13 @@
      "esperado": 450.0
     },
     "ago": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": 450.0
+    },
+    "sep": {
      "movs": [],
      "razones": [
       "dejó de cobrarse a partir de aquí"
@@ -7053,6 +7340,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 135.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0.0,
@@ -7207,6 +7500,13 @@
       }
      ],
      "razones": [],
+     "esperado": 135.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 135.0
     }
    },
@@ -7386,6 +7686,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 0.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0,
@@ -7458,6 +7764,13 @@
      "esperado": null
     },
     "ago": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "sep": {
      "movs": [],
      "razones": [
       "dejó de cobrarse a partir de aquí"
@@ -7552,6 +7865,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 120.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 360.0,
@@ -7692,6 +8011,13 @@
       }
      ],
      "razones": [],
+     "esperado": 120.0
+    },
+    "sep": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
      "esperado": 120.0
     }
    },
@@ -7854,6 +8180,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 0.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0,
@@ -7924,6 +8256,13 @@
      "esperado": null
     },
     "ago": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "sep": {
      "movs": [],
      "razones": [
       "dejó de cobrarse a partir de aquí"
@@ -8018,6 +8357,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 0.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0,
@@ -8090,6 +8435,13 @@
      "esperado": null
     },
     "ago": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "sep": {
      "movs": [],
      "razones": [
       "dejó de cobrarse a partir de aquí"
@@ -8180,6 +8532,12 @@
      "cobrado": 72.0
     },
     "ago": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
+    },
+    "sep": {
      "honorario": 0.0,
      "pauta": 0.0,
      "puntual": 0.0,
@@ -8276,6 +8634,13 @@
      "esperado": null
     },
     "ago": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "sep": {
      "movs": [],
      "razones": [
       "dejó de cobrarse a partir de aquí"
@@ -8394,6 +8759,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 0.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0,
@@ -8466,6 +8837,13 @@
      "esperado": null
     },
     "ago": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "sep": {
      "movs": [],
      "razones": [
       "dejó de cobrarse a partir de aquí"
@@ -8560,6 +8938,12 @@
      "pauta": 0.0,
      "puntual": 0.0,
      "cobrado": 0.0
+    },
+    "sep": {
+     "honorario": 0.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "cobrado": 0.0
     }
    },
    "pendiente": 0,
@@ -8632,6 +9016,13 @@
      "esperado": null
     },
     "ago": {
+     "movs": [],
+     "razones": [
+      "dejó de cobrarse a partir de aquí"
+     ],
+     "esperado": null
+    },
+    "sep": {
      "movs": [],
      "razones": [
       "dejó de cobrarse a partir de aquí"
