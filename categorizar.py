@@ -120,6 +120,7 @@ NOMINA = OrderedDict([
     (r"DANIELA\s*CORDOVA|DANIE\s*CORDOVA",        ("Daniela Cordova", "FIJO")),
     (r"JOSUE",                                    ("Josue Lara", "FIJO")),
     (r"MARISSA",                                  ("Marissa Alban", "FIJO")),
+    (r"LEO\s*BIGOTES|\bBIGOTES\b|\bLEO\b",       ("Leo Bigotes", "FIJO")),
     (r"KAREN\s*PINOS|KAREN",                      ("Karen Pinos", "FIJO")),
     (r"MIKAELA\s*VARGAS",                         ("Mikaela Vargas", "VAR")),
     # pasantias: rotan cada pocos meses. Karla salio, Nicole entra en agosto.
