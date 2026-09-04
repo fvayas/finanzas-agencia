@@ -117,16 +117,16 @@
   },
   {
    "mes": "sep",
-   "ingresos": 0.0,
+   "ingresos": 1208.25,
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
-   "costo_fijo": 4048.66,
-   "costo_variable": 14.63,
-   "costo_total": 4063.29,
-   "resultado": -4063.29,
-   "margen_contribucion": -14.63,
-   "margen_pct": 0.0
+   "costo_fijo": 4738.66,
+   "costo_variable": 24.63,
+   "costo_total": 4763.29,
+   "resultado": -3555.04,
+   "margen_contribucion": 1183.62,
+   "margen_pct": 98.0
   }
  ],
  "grupos": {
@@ -139,7 +139,7 @@
    "jun": -5577.54,
    "jul": -5912.16,
    "ago": -4436.16,
-   "sep": -3648.25
+   "sep": -4338.25
   },
   "Estructura": {
    "ene": -588.35,
@@ -161,7 +161,7 @@
    "jun": 14693.69,
    "jul": 12731.02,
    "ago": 11849.98,
-   "sep": 0.0
+   "sep": 1208.25
   },
   "Equipos": {
    "ene": -75.0,
@@ -216,7 +216,7 @@
    "jun": -860.0,
    "jul": -1092.91,
    "ago": -1004.0,
-   "sep": 0.0
+   "sep": -8.0
   },
   "Nomina variable": {
    "ene": -24.93,
@@ -315,7 +315,7 @@
    "jun": -89.0,
    "jul": -23.41,
    "ago": -24.91,
-   "sep": 0.0
+   "sep": -2.0
   },
   "Pasantias": {
    "ene": 0.0,
@@ -383,7 +383,7 @@
    "jun": -2316.87,
    "jul": -900.01,
    "ago": -2362.0,
-   "sep": 5000.0
+   "sep": 3560.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -456,7 +456,7 @@
   {
    "cliente": "Speedy",
    "total": 8238.0,
-   "pct": 9.1,
+   "pct": 9.0,
    "pagos": 4,
    "meses_activo": 3,
    "primer_mes": "jun",
@@ -477,7 +477,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 9.0,
+   "pct": 8.9,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -498,7 +498,7 @@
   {
    "cliente": "Uninova",
    "total": 7803.0,
-   "pct": 8.7,
+   "pct": 8.5,
    "pagos": 10,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -519,7 +519,7 @@
   {
    "cliente": "Fiammingo",
    "total": 6510.0,
-   "pct": 7.2,
+   "pct": 7.1,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -540,7 +540,7 @@
   {
    "cliente": "Samari",
    "total": 6050.72,
-   "pct": 6.7,
+   "pct": 6.6,
    "pagos": 10,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -561,7 +561,7 @@
   {
    "cliente": "Velsana",
    "total": 6045.0,
-   "pct": 6.7,
+   "pct": 6.6,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -580,9 +580,30 @@
    }
   },
   {
+   "cliente": "Flota Imbabura",
+   "total": 4468.76,
+   "pct": 4.9,
+   "pagos": 8,
+   "meses_activo": 8,
+   "primer_mes": "feb",
+   "ultimo_mes": "sep",
+   "fee_promedio": 558.6,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 559.63,
+    "mar": 559.63,
+    "abr": 558.25,
+    "may": 558.25,
+    "jun": 558.25,
+    "jul": 558.25,
+    "ago": 558.25,
+    "sep": 558.25
+   }
+  },
+  {
    "cliente": "Cigarra",
    "total": 4140.0,
-   "pct": 4.6,
+   "pct": 4.5,
    "pagos": 8,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -603,7 +624,7 @@
   {
    "cliente": "Nane Vestidos",
    "total": 4110.0,
-   "pct": 4.6,
+   "pct": 4.5,
    "pagos": 10,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -622,30 +643,9 @@
    }
   },
   {
-   "cliente": "Flota Imbabura",
-   "total": 3910.51,
-   "pct": 4.3,
-   "pagos": 7,
-   "meses_activo": 7,
-   "primer_mes": "feb",
-   "ultimo_mes": "ago",
-   "fee_promedio": 558.64,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 559.63,
-    "mar": 559.63,
-    "abr": 558.25,
-    "may": 558.25,
-    "jun": 558.25,
-    "jul": 558.25,
-    "ago": 558.25,
-    "sep": 0.0
-   }
-  },
-  {
    "cliente": "Confia",
    "total": 3500.0,
-   "pct": 3.9,
+   "pct": 3.8,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -748,9 +748,30 @@
    }
   },
   {
+   "cliente": "El Motor",
+   "total": 2600.0,
+   "pct": 2.8,
+   "pagos": 4,
+   "meses_activo": 3,
+   "primer_mes": "jun",
+   "ultimo_mes": "sep",
+   "fee_promedio": 866.67,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 1300.0,
+    "jul": 650.0,
+    "ago": 0.0,
+    "sep": 650.0
+   }
+  },
+  {
    "cliente": "Tartelier",
    "total": 2415.0,
-   "pct": 2.7,
+   "pct": 2.6,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -771,7 +792,7 @@
   {
    "cliente": "Chiflido",
    "total": 2400.0,
-   "pct": 2.7,
+   "pct": 2.6,
    "pagos": 8,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -792,7 +813,7 @@
   {
    "cliente": "APC",
    "total": 2300.0,
-   "pct": 2.6,
+   "pct": 2.5,
    "pagos": 4,
    "meses_activo": 3,
    "primer_mes": "abr",
@@ -849,27 +870,6 @@
     "jun": 430.0,
     "jul": 430.0,
     "ago": 430.0,
-    "sep": 0.0
-   }
-  },
-  {
-   "cliente": "El Motor",
-   "total": 1950.0,
-   "pct": 2.2,
-   "pagos": 3,
-   "meses_activo": 2,
-   "primer_mes": "jun",
-   "ultimo_mes": "jul",
-   "fee_promedio": 975.0,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 1300.0,
-    "jul": 650.0,
-    "ago": 0.0,
     "sep": 0.0
    }
   },
@@ -981,7 +981,7 @@
   {
    "cliente": "Victor Hugo (evento)",
    "total": 500.0,
-   "pct": 0.6,
+   "pct": 0.5,
    "pagos": 1,
    "meses_activo": 1,
    "primer_mes": "feb",
@@ -1064,9 +1064,9 @@
   }
  ],
  "concentracion": {
-  "top1": 9.1,
-  "top3": 26.8,
-  "top5": 40.7
+  "top1": 9.0,
+  "top3": 26.4,
+  "top5": 40.1
  },
  "equipo": [
   {
@@ -2771,6 +2771,44 @@
    }
   },
   {
+   "persona": "Leo Bigotes",
+   "grupo": "Nomina fija",
+   "total": 690.0,
+   "meses": 1,
+   "promedio_mes": 690.0,
+   "base": null,
+   "primer_mes": "sep",
+   "ultimo_mes": "sep",
+   "activo_julio": true,
+   "liquidado": false,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 0.0,
+    "sep": 690.0
+   },
+   "detalle": {
+    "sep": {
+     "movs": [
+      {
+       "fecha": "04/09/2026",
+       "importe": 690.0,
+       "desc": "SUELDO LEO BIGOTES"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": false
+    }
+   }
+  },
+  {
    "persona": "Mikaela Vargas",
    "grupo": "Nomina variable",
    "total": 575.0,
@@ -2851,8 +2889,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 70532.0,
-   "n": 77,
+   "total": 71972.0,
+   "n": 78,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2862,7 +2900,7 @@
     "jun": 15722.0,
     "jul": 14357.0,
     "ago": 15512.0,
-    "sep": 0.0
+    "sep": 1440.0
    },
    "detalle": {
     "ene": {
@@ -3286,6 +3324,16 @@
        "fecha": "31/08/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 1185.0
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "04/09/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1440.0
       }
      ],
      "razones": []
@@ -4894,8 +4942,8 @@
   {
    "grupo": "Oficina y bienestar",
    "categoria": "Refrigerios y suministros",
-   "total": 225.9,
-   "n": 20,
+   "total": 227.9,
+   "n": 21,
    "por_mes": {
     "ene": 0.0,
     "feb": 6.0,
@@ -4905,7 +4953,7 @@
     "jun": 89.0,
     "jul": 23.41,
     "ago": 24.91,
-    "sep": 0.0
+    "sep": 2.0
    },
    "detalle": {
     "feb": {
@@ -5039,6 +5087,16 @@
        "fecha": "27/08/2026",
        "desc": "COMPRA DE CAFÉ EN SUPERMAXI",
        "importe": 22.01
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "04/09/2026",
+       "desc": "BOTELLON",
+       "importe": 2.0
       }
      ],
      "razones": []
@@ -5380,6 +5438,50 @@
   },
   {
    "grupo": "Freelance y produccion",
+   "categoria": "Gasto de proyecto",
+   "total": 28.0,
+   "n": 3,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 20.0,
+    "sep": 8.0
+   },
+   "detalle": {
+    "ago": {
+     "movs": [
+      {
+       "fecha": "12/08/2026",
+       "desc": "ACTUALIZACIÓN WEB FIAMMINGO",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "04/09/2026",
+       "desc": "GASTO PARA PRODUCCIÓN HEALTHY",
+       "importe": 2.04
+      },
+      {
+       "fecha": "04/09/2026",
+       "desc": "GASTO PARA PRODUCCIÓN HEALTHY",
+       "importe": 5.96
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
    "categoria": "Sofia Garzon (flores/deco)",
    "total": 22.0,
    "n": 1,
@@ -5401,35 +5503,6 @@
        "fecha": "30/01/2026",
        "desc": "SOFIA GARZON FLORES NANAE",
        "importe": 22.0
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Freelance y produccion",
-   "categoria": "Gasto de proyecto",
-   "total": 20.0,
-   "n": 1,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 20.0,
-    "sep": 0.0
-   },
-   "detalle": {
-    "ago": {
-     "movs": [
-      {
-       "fecha": "12/08/2026",
-       "desc": "ACTUALIZACIÓN WEB FIAMMINGO",
-       "importe": 20.0
       }
      ],
      "razones": []
@@ -5691,10 +5764,10 @@
   }
  ],
  "totales": {
-  "ingresos": 90776.01,
-  "costo_fijo": 73229.73,
-  "costo_variable": 10859.92,
-  "resultado": 2371.31,
-  "movimientos": 604
+  "ingresos": 91984.26,
+  "costo_fijo": 73919.73,
+  "costo_variable": 10869.92,
+  "resultado": 2879.56,
+  "movimientos": 611
  }
 }
