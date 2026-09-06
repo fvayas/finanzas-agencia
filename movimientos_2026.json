@@ -9774,5 +9774,21 @@
   "categoria": "Refrigerios y suministros",
   "detalle": "BOTELLON",
   "tipo_original": "https://drive.google.com/file/d/1p-OA9YUpqHTPqrxgJIlYIWEiJfsIerLP/view?usp=drivesdk"
+ },
+ {
+  "fecha": "06/09/2026",
+  "anio": 2026,
+  "mes_num": 9,
+  "mes": "sep",
+  "referencia": "01-00610",
+  "descripcion": "ARRIENDO FRIENDS GUIDES",
+  "ingreso": 70.0,
+  "egreso": 0.0,
+  "neto": 70.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Otros ingresos",
+  "categoria": "Subarriendo oficina",
+  "detalle": "Friends Guides",
+  "tipo_original": "https://drive.google.com/file/d/1Nx_sNtRGEjFoMv1LUJyr_-dGGAh78yfP/view?usp=drivesdk"
  }
 ]

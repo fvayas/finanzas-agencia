@@ -117,16 +117,16 @@
   },
   {
    "mes": "sep",
-   "ingresos": 1208.25,
+   "ingresos": 1278.25,
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
    "costo_fijo": 4738.66,
    "costo_variable": 24.63,
    "costo_total": 4763.29,
-   "resultado": -3555.04,
-   "margen_contribucion": 1183.62,
-   "margen_pct": 98.0
+   "resultado": -3485.04,
+   "margen_contribucion": 1253.62,
+   "margen_pct": 98.1
   }
  ],
  "grupos": {
@@ -282,7 +282,7 @@
    "jun": 185.0,
    "jul": 255.0,
    "ago": 185.0,
-   "sep": 0.0
+   "sep": 70.0
   },
   "Ingresos - Produccion": {
    "ene": 0.0,
@@ -5625,8 +5625,8 @@
   },
   {
    "concepto": "Subarriendo oficina · Friends Guides",
-   "total": 350.0,
-   "n": 5,
+   "total": 420.0,
+   "n": 6,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -5636,7 +5636,7 @@
     "jun": 70.0,
     "jul": 140.0,
     "ago": 70.0,
-    "sep": 0.0
+    "sep": 70.0
    },
    "detalle": {
     "abr": {
@@ -5678,6 +5678,16 @@
      "movs": [
       {
        "fecha": "04/08/2026",
+       "desc": "ARRIENDO FRIENDS GUIDES",
+       "importe": 70.0
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "06/09/2026",
        "desc": "ARRIENDO FRIENDS GUIDES",
        "importe": 70.0
       }
@@ -5764,10 +5774,10 @@
   }
  ],
  "totales": {
-  "ingresos": 91984.26,
+  "ingresos": 92054.26,
   "costo_fijo": 73919.73,
   "costo_variable": 10869.92,
-  "resultado": 2879.56,
-  "movimientos": 611
+  "resultado": 2949.56,
+  "movimientos": 612
  }
 }
