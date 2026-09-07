@@ -117,16 +117,16 @@
   },
   {
    "mes": "sep",
-   "ingresos": 1278.25,
+   "ingresos": 1398.25,
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
    "costo_fijo": 4738.66,
    "costo_variable": 24.63,
    "costo_total": 4763.29,
-   "resultado": -3485.04,
-   "margen_contribucion": 1253.62,
-   "margen_pct": 98.1
+   "resultado": -3365.04,
+   "margen_contribucion": 1373.62,
+   "margen_pct": 98.2
   }
  ],
  "grupos": {
@@ -161,7 +161,7 @@
    "jun": 14693.69,
    "jul": 12731.02,
    "ago": 11849.98,
-   "sep": 1208.25
+   "sep": 1328.25
   },
   "Equipos": {
    "ene": -75.0,
@@ -959,12 +959,12 @@
   },
   {
    "cliente": "Friends Guides",
-   "total": 840.0,
-   "pct": 0.9,
-   "pagos": 7,
-   "meses_activo": 7,
+   "total": 960.0,
+   "pct": 1.1,
+   "pagos": 8,
+   "meses_activo": 8,
    "primer_mes": "ene",
-   "ultimo_mes": "ago",
+   "ultimo_mes": "sep",
    "fee_promedio": 120.0,
    "por_mes": {
     "ene": 120.0,
@@ -975,7 +975,7 @@
     "jun": 0.0,
     "jul": 120.0,
     "ago": 120.0,
-    "sep": 0.0
+    "sep": 120.0
    }
   },
   {
@@ -5774,10 +5774,10 @@
   }
  ],
  "totales": {
-  "ingresos": 92054.26,
+  "ingresos": 92174.26,
   "costo_fijo": 73919.73,
   "costo_variable": 10869.92,
-  "resultado": 2949.56,
-  "movimientos": 612
+  "resultado": 3069.56,
+  "movimientos": 613
  }
 }

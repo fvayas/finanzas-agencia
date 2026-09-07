@@ -9790,5 +9790,21 @@
   "categoria": "Subarriendo oficina",
   "detalle": "Friends Guides",
   "tipo_original": "https://drive.google.com/file/d/1Nx_sNtRGEjFoMv1LUJyr_-dGGAh78yfP/view?usp=drivesdk"
+ },
+ {
+  "fecha": "06/09/2026",
+  "anio": 2026,
+  "mes_num": 9,
+  "mes": "sep",
+  "referencia": "01-00611",
+  "descripcion": "PAGO FRIENDS GUIDES",
+  "ingreso": 120.0,
+  "egreso": 0.0,
+  "neto": 120.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "Friends Guides",
+  "detalle": "PAGO FRIENDS GUIDES",
+  "tipo_original": "https://drive.google.com/file/d/1odm-rcQvXOB9gJtEVeKLK8bxsxIQ4HWx/view?usp=drivesdk"
  }
 ]
