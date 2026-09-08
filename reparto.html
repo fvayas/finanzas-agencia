@@ -287,7 +287,11 @@ button.pri{background:var(--ink); color:var(--paper); border-color:var(--ink)}
 
   <div class="acciones">
     <button class="pri" id="equilibrar">Repartir equitativo</button>
-    <button id="copiar">Copiar el reparto</button>
+    <button id="enlace">Copiar enlace con el reparto</button>
+    <button id="bajar">Guardar archivo</button>
+    <button id="subir">Abrir archivo</button>
+    <button id="copiar">Copiar como texto</button>
+    <input type="file" id="fich" accept=".json,application/json" hidden>
     <button id="limpiar">Vaciar todo</button>
   </div>
 
@@ -602,6 +606,43 @@ async function guarda(){
   }
 }
 
+/* ---------- el reparto, en una cadena corta ----------
+   Un caracter por casilla, en orden fijo: cuenta x frente. Asi cabe en un
+   enlace de WhatsApp en vez de necesitar un servidor detras. */
+function codifica(){
+  let c = "";
+  CUENTAS.forEach(x => ROLES.forEach(r => {
+    c += Math.max(0, PERSONAS.indexOf(quien(x.n, r.k)));
+  }));
+  const t = todasTareas().map(x =>
+    [x.k, Math.max(0, PERSONAS.indexOf(quienTarea(x.k))), pesoTarea(x.k),
+     x.mio ? x.t : ""].join("~")).join("|");
+  return "1." + c + "." + btoa(unescape(encodeURIComponent(t)));
+}
+function descodifica(txt){
+  try {
+    const [v, c, t64] = txt.split(".");
+    if (v !== "1") return false;
+    let i = 0;
+    const nuevo = {};
+    CUENTAS.forEach(x => ROLES.forEach(r => {
+      const p = PERSONAS[+c[i++]];
+      if (p && p !== "Sin asignar") nuevo[clave(x.n, r.k)] = p;
+    }));
+    const nPesos = {}, nExtras = [];
+    decodeURIComponent(escape(atob(t64 || ""))).split("|").filter(Boolean)
+      .forEach(fila => {
+        const [k, pi, peso, nombre] = fila.split("~");
+        const p = PERSONAS[+pi];
+        if (p && p !== "Sin asignar") nuevo["tarea:" + k] = p;
+        if (peso !== "") nPesos[k] = +peso;
+        if (nombre) nExtras.push({k, t:nombre, nota:"Añadida a mano", peso:+peso, mio:true});
+      });
+    estado = nuevo; pesos = nPesos; extras = nExtras;
+    return true;
+  } catch(e){ return false; }
+}
+
 /* ---------- acciones ---------- */
 $("copiar").onclick = async () => {
   const t = totales();
@@ -659,6 +700,45 @@ $("equilibrar").onclick = () => {
   pinta(); programaGuardado();
 };
 
+/* Enlace que ya lleva dentro el reparto: se lo mandas y lo abre igual que tu. */
+$("enlace").onclick = async () => {
+  const url = location.origin + location.pathname + "#" + codifica();
+  try {
+    await navigator.clipboard.writeText(url);
+    $("enlace").textContent = "Enlace copiado";
+  } catch(e){
+    prompt("Copia este enlace:", url);
+    $("enlace").textContent = "Copiar enlace con el reparto";
+    return;
+  }
+  setTimeout(() => $("enlace").textContent = "Copiar enlace con el reparto", 1800);
+};
+
+$("bajar").onclick = () => {
+  const datos = JSON.stringify({estado, pesos, extras, guardado:new Date().toISOString()}, null, 1);
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([datos], {type:"application/json"}));
+  const hoy = new Date().toISOString().slice(0,10);
+  a.download = "reparto-" + hoy + ".json";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+};
+
+$("subir").onclick = () => $("fich").click();
+$("fich").onchange = () => {
+  const f = $("fich").files[0];
+  if (!f) return;
+  const lector = new FileReader();
+  lector.onload = () => {
+    try {
+      absorbe(JSON.parse(lector.result));
+      recalculaTotal(); pinta(); programaGuardado();
+    } catch(e){ alert("Ese archivo no tiene un reparto válido."); }
+    $("fich").value = "";
+  };
+  lector.readAsText(f);
+};
+
 $("limpiar").onclick = () => {
   if (!confirm("¿Vaciar todas las asignaciones?")) return;
   estado = {}; pinta(); programaGuardado();
@@ -679,6 +759,8 @@ function absorbe(guardado){
   if (!Object.keys(estado).length){
     try { absorbe(JSON.parse(localStorage.getItem("reparto4") || "null")); } catch(e){}
   }
+  // si el enlace trae un reparto dentro, ese gana sobre lo guardado
+  if (location.hash.length > 3) descodifica(location.hash.slice(1));
   // lo ya decidido se aplica solo donde nadie haya puesto nada
   Object.keys(DEFECTOS).forEach(k => { if (!(k in estado)) estado[k] = DEFECTOS[k]; });
   recalculaTotal();
