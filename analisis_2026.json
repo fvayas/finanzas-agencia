@@ -117,16 +117,16 @@
   },
   {
    "mes": "sep",
-   "ingresos": 1398.25,
+   "ingresos": 2298.25,
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
    "costo_fijo": 4738.66,
    "costo_variable": 24.63,
    "costo_total": 4763.29,
-   "resultado": -3365.04,
-   "margen_contribucion": 1373.62,
-   "margen_pct": 98.2
+   "resultado": -2465.04,
+   "margen_contribucion": 2273.62,
+   "margen_pct": 98.9
   }
  ],
  "grupos": {
@@ -161,7 +161,7 @@
    "jun": 14693.69,
    "jul": 12731.02,
    "ago": 11849.98,
-   "sep": 1328.25
+   "sep": 2228.25
   },
   "Equipos": {
    "ene": -75.0,
@@ -454,9 +454,30 @@
  "mes_corte_activo": "ago",
  "clientes": [
   {
+   "cliente": "Uninova",
+   "total": 8703.0,
+   "pct": 9.4,
+   "pagos": 11,
+   "meses_activo": 9,
+   "primer_mes": "ene",
+   "ultimo_mes": "sep",
+   "fee_promedio": 967.0,
+   "por_mes": {
+    "ene": 900.0,
+    "feb": 900.0,
+    "mar": 900.0,
+    "abr": 900.0,
+    "may": 900.0,
+    "jun": 900.0,
+    "jul": 1256.0,
+    "ago": 1147.0,
+    "sep": 900.0
+   }
+  },
+  {
    "cliente": "Speedy",
    "total": 8238.0,
-   "pct": 9.0,
+   "pct": 8.9,
    "pagos": 4,
    "meses_activo": 3,
    "primer_mes": "jun",
@@ -477,7 +498,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 8.9,
+   "pct": 8.8,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -492,27 +513,6 @@
     "jun": 2287.0,
     "jul": 1128.5,
     "ago": 0.0,
-    "sep": 0.0
-   }
-  },
-  {
-   "cliente": "Uninova",
-   "total": 7803.0,
-   "pct": 8.5,
-   "pagos": 10,
-   "meses_activo": 8,
-   "primer_mes": "ene",
-   "ultimo_mes": "ago",
-   "fee_promedio": 975.38,
-   "por_mes": {
-    "ene": 900.0,
-    "feb": 900.0,
-    "mar": 900.0,
-    "abr": 900.0,
-    "may": 900.0,
-    "jun": 900.0,
-    "jul": 1256.0,
-    "ago": 1147.0,
     "sep": 0.0
    }
   },
@@ -561,7 +561,7 @@
   {
    "cliente": "Velsana",
    "total": 6045.0,
-   "pct": 6.6,
+   "pct": 6.5,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -582,7 +582,7 @@
   {
    "cliente": "Flota Imbabura",
    "total": 4468.76,
-   "pct": 4.9,
+   "pct": 4.8,
    "pagos": 8,
    "meses_activo": 8,
    "primer_mes": "feb",
@@ -666,7 +666,7 @@
   {
    "cliente": "Pladeco",
    "total": 3449.0,
-   "pct": 3.8,
+   "pct": 3.7,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "ene",
@@ -708,7 +708,7 @@
   {
    "cliente": "Absolute",
    "total": 2700.0,
-   "pct": 3.0,
+   "pct": 2.9,
    "pagos": 8,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -855,7 +855,7 @@
   {
    "cliente": "Casa del Verde",
    "total": 2150.0,
-   "pct": 2.4,
+   "pct": 2.3,
    "pagos": 5,
    "meses_activo": 5,
    "primer_mes": "abr",
@@ -960,7 +960,7 @@
   {
    "cliente": "Friends Guides",
    "total": 960.0,
-   "pct": 1.1,
+   "pct": 1.0,
    "pagos": 8,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -1044,7 +1044,7 @@
   {
    "cliente": "Dog Spa",
    "total": 138.0,
-   "pct": 0.2,
+   "pct": 0.1,
    "pagos": 1,
    "meses_activo": 1,
    "primer_mes": "may",
@@ -1064,9 +1064,9 @@
   }
  ],
  "concentracion": {
-  "top1": 9.0,
-  "top3": 26.4,
-  "top5": 40.1
+  "top1": 9.4,
+  "top3": 27.1,
+  "top5": 40.8
  },
  "equipo": [
   {
@@ -5774,10 +5774,10 @@
   }
  ],
  "totales": {
-  "ingresos": 92174.26,
+  "ingresos": 93074.26,
   "costo_fijo": 73919.73,
   "costo_variable": 10869.92,
-  "resultado": 3069.56,
-  "movimientos": 613
+  "resultado": 3969.56,
+  "movimientos": 614
  }
 }
