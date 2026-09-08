@@ -155,7 +155,7 @@ h2:first-of-type{margin-top:0}
 .caja{background:var(--card); border:1px solid var(--rule-soft); border-radius:4px;
   box-shadow:var(--shadow); overflow-x:auto}
 table{border-collapse:collapse; width:100%}
-#t-cuentas{min-width:1100px}
+#t-cuentas{min-width:1260px}
 #t-roles{min-width:560px}
 #t-tareas{min-width:560px}
 #t-tareas .tt{font-weight:600}
@@ -229,10 +229,10 @@ button.pri{background:var(--ink); color:var(--paper); border-color:var(--ink)}
 <div class="wrap">
 
   <header>
-    <div class="eyebrow">22 cuentas · 5 frentes · tareas de agencia</div>
+    <div class="eyebrow">22 cuentas · 6 frentes · tareas de agencia</div>
     <h1>Reparto de cuentas</h1>
-    <p class="sub">Cada cuenta tiene cinco frentes: revisar contenido, pauta, programar,
-      reuniones y facturar. Y aparte están las tareas de la agencia. Solo tres responsables: tú, Ana Paula o colaboradores. El objetivo es
+    <p class="sub">Cada cuenta tiene seis frentes: planificar y revisar contenido, pauta,
+      programar, reuniones y facturar. Y aparte están las tareas de la agencia. Solo tres responsables: tú, Ana Paula o colaboradores. El objetivo es
       que los dos socios queden parejos — <b>lo que cuenta no es el número de tareas, sino cuánta
       facturación hay detrás</b>.</p>
     <div class="estado" id="estado"><span class="pt"></span><span id="estado-txt">Cargando…</span></div>
@@ -246,9 +246,9 @@ button.pri{background:var(--ink); color:var(--paper); border-color:var(--ink)}
       <ol>
         <li><b>Cada cuenta pesa lo que factura.</b> Speedy pesa $2.400 y Friends
           Guides $120, porque eso es lo que entra por cada una.</li>
-        <li><b>Ese peso se parte en cinco frentes iguales:</b> revisar contenido,
-          pauta, programar, reuniones y facturar. Así, llevar la pauta de Speedy
-          pesa $480 y la de Friends Guides $24.</li>
+        <li><b>Ese peso se parte en seis frentes iguales:</b> planificar contenido,
+          revisarlo, pauta, programar, reuniones y facturar. Así, llevar la pauta
+          de Speedy pesa $400 y la de Friends Guides $20.</li>
         <li><b>Las tareas de agencia no tienen factura detrás</b>, así que su peso lo
           declaramos nosotros a mano. Es el único número discutible de toda la
           página — está para eso, para discutirlo.</li>
@@ -263,7 +263,7 @@ button.pri{background:var(--ink); color:var(--paper); border-color:var(--ink)}
 
   <div class="balanza" id="balanza"></div>
 
-  <h2>Carga por persona <em>cada frente vale un quinto del fee de su cuenta</em></h2>
+  <h2>Carga por persona <em>cada frente vale un sexto del fee de su cuenta</em></h2>
   <div class="balance" id="balance"></div>
 
   <h2>Quién cubre qué <em>tareas y facturación por rol</em></h2>
@@ -314,6 +314,7 @@ const CUENTAS = [
   {n:"Friends Guides", f:120},
 ];
 const ROLES = [
+  {k:"planificar", t:"Planificar contenido"},
   {k:"contenido", t:"Revisar contenido"},
   {k:"pauta",     t:"Pauta"},
   {k:"programar", t:"Programar"},
