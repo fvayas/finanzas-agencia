@@ -122,11 +122,11 @@
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
    "costo_fijo": 4738.66,
-   "costo_variable": 24.63,
-   "costo_total": 4763.29,
-   "resultado": -2465.04,
-   "margen_contribucion": 2273.62,
-   "margen_pct": 98.9
+   "costo_variable": 116.47,
+   "costo_total": 4855.13,
+   "resultado": -2556.88,
+   "margen_contribucion": 2181.78,
+   "margen_pct": 94.9
   }
  ],
  "grupos": {
@@ -194,7 +194,7 @@
    "jun": -56.88,
    "jul": -18.34,
    "ago": -62.52,
-   "sep": -14.63
+   "sep": -36.47
   },
   "Pauta": {
    "ene": -574.03,
@@ -216,7 +216,7 @@
    "jun": -860.0,
    "jul": -1092.91,
    "ago": -1004.0,
-   "sep": -8.0
+   "sep": -78.0
   },
   "Nomina variable": {
    "ene": -24.93,
@@ -383,7 +383,7 @@
    "jun": -2316.87,
    "jul": -900.01,
    "ago": -2362.0,
-   "sep": 3560.0
+   "sep": 2560.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -2889,8 +2889,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 71972.0,
-   "n": 78,
+   "total": 72972.0,
+   "n": 80,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -2900,7 +2900,7 @@
     "jun": 15722.0,
     "jul": 14357.0,
     "ago": 15512.0,
-    "sep": 1440.0
+    "sep": 2440.0
    },
    "detalle": {
     "ene": {
@@ -3334,6 +3334,16 @@
        "fecha": "04/09/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 1440.0
+      },
+      {
+       "fecha": "07/09/2026",
+       "desc": "ENVIO A FLEXIAHORRO PROGRAMADO",
+       "importe": 20.0
+      },
+      {
+       "fecha": "08/09/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 980.0
       }
      ],
      "razones": []
@@ -3947,6 +3957,95 @@
    }
   },
   {
+   "grupo": "Freelance y produccion",
+   "categoria": "Juan Pablo Nieto (produccion)",
+   "total": 3159.0,
+   "n": 8,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 690.0,
+    "mar": 495.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 650.0,
+    "jul": 790.0,
+    "ago": 464.0,
+    "sep": 70.0
+   },
+   "detalle": {
+    "feb": {
+     "movs": [
+      {
+       "fecha": "06/02/2026",
+       "desc": "PAGO JUAN PABLO SAMARI Y CONFIA",
+       "importe": 690.0
+      }
+     ],
+     "razones": []
+    },
+    "mar": {
+     "movs": [
+      {
+       "fecha": "23/03/2026",
+       "desc": "PAGO JUAN PABLO",
+       "importe": 495.0
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "05/06/2026",
+       "desc": "PAGO JUANPABLO NIETO",
+       "importe": 400.0
+      },
+      {
+       "fecha": "16/06/2026",
+       "desc": "PAGO A JUAN PABLO NIETO DE PODCAST CONFIA",
+       "importe": 250.0
+      }
+     ],
+     "razones": []
+    },
+    "jul": {
+     "movs": [
+      {
+       "fecha": "03/07/2026",
+       "desc": "PAGO JUAN PABLO NEITO PRODUCCION SPEEDY",
+       "importe": 790.0
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "17/08/2026",
+       "desc": "PRODUCCIÓN UNINOVA JUAN PABLO NIETO",
+       "importe": 280.0
+      },
+      {
+       "fecha": "17/08/2026",
+       "desc": "EDICIÓN VIDEOS SAMARI A JUAN PABLO NIETO",
+       "importe": 184.0
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "07/09/2026",
+       "desc": "PAGO VIDEOGRAFO JUAN PABLO UNINOVA",
+       "importe": 70.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
    "grupo": "Impuestos y legal",
    "categoria": "Impuestos",
    "total": 3101.82,
@@ -4034,85 +4133,6 @@
        "fecha": "28/08/2026",
        "desc": "PAGO IMPUESTOS",
        "importe": 250.61
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Freelance y produccion",
-   "categoria": "Juan Pablo Nieto (produccion)",
-   "total": 3089.0,
-   "n": 7,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 690.0,
-    "mar": 495.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 650.0,
-    "jul": 790.0,
-    "ago": 464.0,
-    "sep": 0.0
-   },
-   "detalle": {
-    "feb": {
-     "movs": [
-      {
-       "fecha": "06/02/2026",
-       "desc": "PAGO JUAN PABLO SAMARI Y CONFIA",
-       "importe": 690.0
-      }
-     ],
-     "razones": []
-    },
-    "mar": {
-     "movs": [
-      {
-       "fecha": "23/03/2026",
-       "desc": "PAGO JUAN PABLO",
-       "importe": 495.0
-      }
-     ],
-     "razones": []
-    },
-    "jun": {
-     "movs": [
-      {
-       "fecha": "05/06/2026",
-       "desc": "PAGO JUANPABLO NIETO",
-       "importe": 400.0
-      },
-      {
-       "fecha": "16/06/2026",
-       "desc": "PAGO A JUAN PABLO NIETO DE PODCAST CONFIA",
-       "importe": 250.0
-      }
-     ],
-     "razones": []
-    },
-    "jul": {
-     "movs": [
-      {
-       "fecha": "03/07/2026",
-       "desc": "PAGO JUAN PABLO NEITO PRODUCCION SPEEDY",
-       "importe": 790.0
-      }
-     ],
-     "razones": []
-    },
-    "ago": {
-     "movs": [
-      {
-       "fecha": "17/08/2026",
-       "desc": "PRODUCCIÓN UNINOVA JUAN PABLO NIETO",
-       "importe": 280.0
-      },
-      {
-       "fecha": "17/08/2026",
-       "desc": "EDICIÓN VIDEOS SAMARI A JUAN PABLO NIETO",
-       "importe": 184.0
       }
      ],
      "razones": []
@@ -4654,8 +4674,8 @@
   {
    "grupo": "Movilizacion",
    "categoria": "Taxis / parqueo / viaticos",
-   "total": 275.29,
-   "n": 35,
+   "total": 297.13,
+   "n": 37,
    "por_mes": {
     "ene": 21.08,
     "feb": 0.0,
@@ -4665,7 +4685,7 @@
     "jun": 56.88,
     "jul": 18.34,
     "ago": 62.52,
-    "sep": 14.63
+    "sep": 36.47
    },
    "detalle": {
     "ene": {
@@ -4879,6 +4899,16 @@
        "fecha": "01/09/2026",
        "desc": "TAXIS DANNA",
        "importe": 6.16
+      },
+      {
+       "fecha": "08/09/2026",
+       "desc": "TAXIS LEONARDO",
+       "importe": 11.16
+      },
+      {
+       "fecha": "08/09/2026",
+       "desc": "TAXIS ALEJANDRA APONTE",
+       "importe": 10.68
       }
      ],
      "razones": []
@@ -5776,8 +5806,8 @@
  "totales": {
   "ingresos": 93074.26,
   "costo_fijo": 73919.73,
-  "costo_variable": 10869.92,
-  "resultado": 3969.56,
-  "movimientos": 614
+  "costo_variable": 10961.76,
+  "resultado": 3877.72,
+  "movimientos": 619
  }
 }
