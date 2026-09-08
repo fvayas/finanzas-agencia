@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reparto de cuentas · Agencia</title>
+<meta name="theme-color" content="#C22233">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  html,body{background:#F7F6F2}
+  @media (prefers-color-scheme:dark){html,body{background:#111315}}
+</style>
+</head>
+<body>
+<style>
+:root{
+  --paper:#F7F6F2; --card:#FFFFFF; --rule:#DAD8D0; --rule-soft:#EAE8E1;
+  --ink:#16191C; --ink-2:#4A5058; --ink-3:#7C828A;
+  --accent:#C22233; --accent-soft:#C2223314;
+  --shadow:0 1px 2px #16191C0D, 0 6px 20px #16191C08;
+  --ui:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --p0:#9AA0A6; --p1:#C22233; --p2:#1D6F7A; --p3:#8A5A18;
+  --p4:#4A5FA8; --p5:#1D7A46; --p6:#8B3D8F; --p7:#B0552A; --p8:#3F6E38;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#111315; --card:#191B1E; --rule:#31353A; --rule-soft:#24272A;
+    --ink:#ECEDEE; --ink-2:#A7ACB2; --ink-3:#727880;
+    --accent:#F0525F; --accent-soft:#F0525F1E;
+    --shadow:0 1px 2px #0008, 0 8px 26px #0006;
+    --p0:#6B7178; --p1:#F0525F; --p2:#4FB6C4; --p3:#D9A44A;
+    --p4:#8298DC; --p5:#4CC38A; --p6:#C77FCB; --p7:#E0906A; --p8:#7FB877;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#111315; --card:#191B1E; --rule:#31353A; --rule-soft:#24272A;
+  --ink:#ECEDEE; --ink-2:#A7ACB2; --ink-3:#727880;
+  --accent:#F0525F; --accent-soft:#F0525F1E;
+  --shadow:0 1px 2px #0008, 0 8px 26px #0006;
+  --p0:#6B7178; --p1:#F0525F; --p2:#4FB6C4; --p3:#D9A44A;
+  --p4:#8298DC; --p5:#4CC38A; --p6:#C77FCB; --p7:#E0906A; --p8:#7FB877;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--ui); font-size:15px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px; margin:0 auto; padding:0 20px 80px}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ---------------- cabecera ---------------- */
+header{
+  position:relative; margin:0 -20px 26px; padding:34px 20px 22px;
+  border-bottom:1px solid var(--rule);
+}
+header::before{content:""; position:absolute; left:20px; right:20px; top:0; height:4px; background:var(--accent)}
+.eyebrow{
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--accent); margin-bottom:12px;
+}
+h1{font-size:clamp(26px,4.5vw,38px); font-weight:700; letter-spacing:-.025em; margin:0; line-height:1.05}
+.sub{color:var(--ink-2); margin:10px 0 0; font-size:15px; max-width:64ch}
+.estado{
+  display:inline-flex; align-items:center; gap:7px; margin-top:14px;
+  font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase;
+  padding:4px 10px; border-radius:3px; border:1px solid var(--rule); color:var(--ink-3);
+}
+.estado .pt{width:6px; height:6px; border-radius:50%; background:var(--ink-3); flex:none}
+.estado.ok{color:var(--p5); border-color:var(--p5)} .estado.ok .pt{background:var(--p5)}
+.estado.go{color:var(--p3); border-color:var(--p3)} .estado.go .pt{background:var(--p3)}
+.estado.no{color:var(--accent); border-color:var(--accent)} .estado.no .pt{background:var(--accent)}
+
+h2{
+  font-size:11.5px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-3); margin:32px 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;
+}
+h2 em{font-style:normal; font-size:12px; letter-spacing:0; text-transform:none; color:var(--ink-3); font-weight:400}
+h2:first-of-type{margin-top:0}
+
+/* ---------------- el metodo, plegable ---------------- */
+.metodo{
+  background:var(--card); border:1px solid var(--rule-soft); border-radius:4px;
+  box-shadow:var(--shadow); margin-bottom:18px; overflow:hidden;
+}
+.metodo summary{
+  cursor:pointer; padding:15px 20px; font-size:13.5px; font-weight:600;
+  list-style:none; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;
+}
+.metodo summary::-webkit-details-marker{display:none}
+.metodo summary::before{
+  content:"?"; font-family:var(--mono); font-size:11px; font-weight:700;
+  width:17px; height:17px; border-radius:50%; background:var(--accent); color:#fff;
+  display:inline-flex; align-items:center; justify-content:center; flex:none;
+  align-self:center;
+}
+.metodo summary span{font-weight:400; color:var(--ink-3); font-size:12.5px}
+.metodo[open] summary{border-bottom:1px solid var(--rule-soft)}
+.met-cuerpo{padding:18px 20px 20px; font-size:14px; color:var(--ink-2); line-height:1.6}
+.met-cuerpo p{margin:0 0 12px; max-width:72ch}
+.met-cuerpo b{color:var(--ink); font-weight:600}
+.met-cuerpo ol{margin:0 0 12px; padding-left:20px; max-width:72ch}
+.met-cuerpo li{margin-bottom:7px}
+.met-ojo{
+  border-left:3px solid var(--accent); padding:10px 14px; margin:0!important;
+  background:var(--accent-soft); border-radius:0 3px 3px 0; font-size:13.5px;
+}
+.met-ojo em{font-style:italic}
+
+/* ---------------- balanza entre socios ---------------- */
+.balanza{
+  background:var(--card); border:1px solid var(--rule-soft); border-radius:4px;
+  box-shadow:var(--shadow); padding:20px 22px; margin-bottom:28px;
+}
+.bz-top{display:flex; justify-content:space-between; align-items:baseline; gap:16px; margin-bottom:12px}
+.bz-lado{display:flex; flex-direction:column; gap:1px; min-width:0}
+.bz-lado.der{text-align:right}
+.bz-n{font-size:12.5px; font-weight:600; color:var(--c)}
+.bz-v{font-family:var(--mono); font-size:26px; font-weight:600; letter-spacing:-.03em}
+.bz-p{font-family:var(--mono); font-size:12px; color:var(--ink-3)}
+.bz-barra{display:flex; height:10px; border-radius:5px; overflow:hidden; background:var(--rule-soft)}
+.bz-barra i{display:block; transition:width .3s ease}
+.bz-pie{
+  margin-top:12px; font-size:13.5px; text-align:center; color:var(--ink-2);
+}
+.bz-pie b{font-family:var(--mono); font-weight:600}
+.bz-pie.ok{color:var(--p5)} .bz-pie.mal{color:var(--accent)}
+
+/* ---------------- balance ---------------- */
+.balance{display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:12px}
+.pcard{
+  background:var(--card); border:1px solid var(--rule-soft); border-radius:4px;
+  padding:14px 16px; box-shadow:var(--shadow); border-left:3px solid var(--c);
+  display:flex; flex-direction:column; gap:3px; min-width:0;
+}
+.pcard .pn{font-size:13px; font-weight:600; color:var(--c); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.pcard .pv{font-family:var(--mono); font-size:23px; font-weight:600; letter-spacing:-.03em}
+.pcard .pf{font-size:12px; color:var(--ink-3); font-family:var(--mono)}
+.barra{height:4px; border-radius:2px; background:var(--rule-soft); margin-top:7px; overflow:hidden}
+.barra i{display:block; height:100%; background:var(--c); transition:width .25s ease}
+.roles-mini{display:flex; gap:4px; margin-top:8px; flex-wrap:wrap}
+.rm{
+  font-family:var(--mono); font-size:9.5px; letter-spacing:.05em; text-transform:uppercase;
+  padding:1px 5px; border-radius:2px; background:var(--rule-soft); color:var(--ink-3);
+}
+.rm b{color:var(--ink-2); font-weight:600}
+
+/* ---------------- tablas ---------------- */
+.caja{background:var(--card); border:1px solid var(--rule-soft); border-radius:4px;
+  box-shadow:var(--shadow); overflow-x:auto}
+table{border-collapse:collapse; width:100%}
+#t-cuentas{min-width:1100px}
+#t-roles{min-width:560px}
+#t-tareas{min-width:560px}
+#t-tareas .tt{font-weight:600}
+#t-tareas .tn{display:block; font-size:12.5px; color:var(--ink-3); font-weight:400; margin-top:1px}
+#t-tareas .equiv{display:block; font-size:11.5px; color:var(--ink-3); font-family:var(--mono); margin-top:3px}
+input[type=number]{
+  font-family:var(--mono); font-size:14px; font-weight:600; width:96px;
+  padding:5px 8px; border:1.5px solid var(--rule); border-radius:4px;
+  background:var(--card); color:var(--ink); text-align:right;
+}
+input[type=number]:focus{outline:none; border-color:var(--accent)}
+button.mini{
+  font-family:var(--ui); font-size:12.5px; font-weight:600; padding:4px 9px;
+  border:1.5px solid var(--rule); border-radius:4px; background:transparent;
+  color:var(--ink-3); cursor:pointer; line-height:1.2;
+}
+button.mini:hover{border-color:var(--accent); color:var(--accent)}
+button.mini.mas{color:var(--ink-2); border-style:dashed; width:100%; padding:8px}
+#t-tareas tr.add td{border-bottom:none; padding-top:10px}
+#t-tareas tr.add:hover{background:none}
+th{
+  font-size:10.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-3); text-align:left; padding:13px 10px;
+  border-bottom:1.5px solid var(--accent); white-space:nowrap;
+}
+th.r{text-align:right}
+td{padding:8px 10px; border-bottom:1px solid var(--rule-soft); white-space:nowrap}
+td.r{text-align:right}
+tbody tr:last-child td{border-bottom:none}
+#t-cuentas tbody tr:hover{background:var(--accent-soft)}
+td.i{font-family:var(--mono); font-size:11.5px; color:var(--ink-3); width:1%}
+td.c{font-weight:600}
+td.n{font-family:var(--mono); font-variant-numeric:tabular-nums; font-size:14px; text-align:right}
+td.p{font-family:var(--mono); font-size:13px; color:var(--ink-2); text-align:right}
+tr.mitad td{border-bottom:2px solid var(--accent)}
+.marca{
+  display:block; font-family:var(--mono); font-size:9.5px; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--accent); font-weight:600; margin-top:2px;
+}
+select{
+  font-family:var(--ui); font-size:13px; font-weight:600; padding:5px 22px 5px 8px;
+  border:1.5px solid var(--rule); border-radius:4px; background:var(--card);
+  color:var(--c,var(--ink-3)); appearance:none; -webkit-appearance:none; cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 16 16' fill='none' stroke='%237C828A' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m3 6 5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 6px center; width:118px;
+}
+select:hover{border-color:var(--ink-3)}
+select.puesto{border-color:var(--c); background-color:color-mix(in srgb, var(--c) 9%, transparent)}
+/* rellenar una columna entera de golpe */
+th select{width:112px; font-size:12px; margin-top:6px; display:block; font-weight:500}
+
+/* matriz persona x rol */
+#t-roles td.q{font-family:var(--mono); font-size:13px; text-align:right}
+#t-roles td.q b{font-weight:600}
+#t-roles td.q span{color:var(--ink-3); font-size:11.5px}
+#t-roles tr td:first-child{font-weight:600; color:var(--c)}
+#t-roles tfoot td{border-top:1.5px solid var(--rule); border-bottom:none; font-weight:600; padding-top:11px}
+
+.acciones{display:flex; gap:10px; flex-wrap:wrap; margin-top:22px; align-items:center}
+button{
+  font-family:var(--ui); font-size:13px; font-weight:600; padding:9px 15px;
+  border:1.5px solid var(--rule); border-radius:4px; background:var(--card);
+  color:var(--ink); cursor:pointer;
+}
+button:hover{border-color:var(--ink-3)}
+button.pri{background:var(--ink); color:var(--paper); border-color:var(--ink)}
+.nota{font-size:13px; color:var(--ink-3); margin-top:22px; line-height:1.55; max-width:74ch}
+.nota b{color:var(--ink-2)}
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">22 cuentas · 5 frentes · tareas de agencia</div>
+    <h1>Reparto de cuentas</h1>
+    <p class="sub">Cada cuenta tiene cinco frentes: revisar contenido, pauta, programar,
+      reuniones y facturar. Y aparte están las tareas de la agencia. Solo tres responsables: tú, Ana Paula o colaboradores. El objetivo es
+      que los dos socios queden parejos — <b>lo que cuenta no es el número de tareas, sino cuánta
+      facturación hay detrás</b>.</p>
+    <div class="estado" id="estado"><span class="pt"></span><span id="estado-txt">Cargando…</span></div>
+  </header>
+
+  <details class="metodo">
+    <summary>Cómo se mide el trabajo aquí <span>— léelo antes de discutir el reparto</span></summary>
+    <div class="met-cuerpo">
+      <p>Todo se mide en <b>una sola moneda: dólares de facturación al mes</b>. No en
+        número de tareas, porque llevar Speedy no es lo mismo que llevar MM Wings.</p>
+      <ol>
+        <li><b>Cada cuenta pesa lo que factura.</b> Speedy pesa $2.400 y Friends
+          Guides $120, porque eso es lo que entra por cada una.</li>
+        <li><b>Ese peso se parte en cinco frentes iguales:</b> revisar contenido,
+          pauta, programar, reuniones y facturar. Así, llevar la pauta de Speedy
+          pesa $480 y la de Friends Guides $24.</li>
+        <li><b>Las tareas de agencia no tienen factura detrás</b>, así que su peso lo
+          declaramos nosotros a mano. Es el único número discutible de toda la
+          página — está para eso, para discutirlo.</li>
+        <li><b>Lo marcado «2 socios» suma la mitad a cada uno.</b> Lo que va a
+          colaboradores no pesa en el reparto de ninguno: está delegado.</li>
+      </ol>
+      <p class="met-ojo">Esto no dice quién <em>debe</em> llevar qué — hay criterio,
+        relación con el cliente y experiencia que ningún número recoge. Solo dice
+        cuánto pesa lo que cada uno acabe llevando.</p>
+    </div>
+  </details>
+
+  <div class="balanza" id="balanza"></div>
+
+  <h2>Carga por persona <em>cada frente vale un quinto del fee de su cuenta</em></h2>
+  <div class="balance" id="balance"></div>
+
+  <h2>Quién cubre qué <em>tareas y facturación por rol</em></h2>
+  <div class="caja"><table id="t-roles">
+    <thead><tr id="rh"></tr></thead>
+    <tbody id="rb"></tbody>
+    <tfoot id="rf"></tfoot>
+  </table></div>
+
+  <h2>Tareas de la agencia <em>no cuelgan de ninguna cuenta · el peso lo pones tú</em></h2>
+  <div class="caja"><table id="t-tareas">
+    <thead><tr><th>Tarea</th><th class="r">Peso al mes</th><th>Responsable</th><th></th></tr></thead>
+    <tbody id="tareas"></tbody>
+  </table></div>
+
+  <h2>Las 22 cuentas <em>de mayor a menor facturación</em></h2>
+  <div class="caja"><table id="t-cuentas">
+    <thead><tr id="ch"></tr></thead>
+    <tbody id="filas"></tbody>
+  </table></div>
+
+  <div class="acciones">
+    <button class="pri" id="equilibrar">Repartir equitativo</button>
+    <button id="copiar">Copiar el reparto</button>
+    <button id="limpiar">Vaciar todo</button>
+  </div>
+
+  <p class="nota">La línea roja marca el <b>50% de la facturación</b>: las seis primeras
+    cuentas pesan tanto como las dieciséis restantes juntas. Y en la cabecera de cada
+    columna hay un selector para <b>asignar ese rol en las 22 cuentas de una vez</b>,
+    útil cuando alguien lleva un frente entero. El botón <b>Repartir equitativo</b> hace el reparto más parejo posible entre los dos socios, respetando lo que ya esté delegado a colaboradores.</p>
+
+</div>
+
+<script>
+const CUENTAS = [
+  {n:"Speedy", f:2400}, {n:"Uninova", f:900}, {n:"Fiammingo", f:800},
+  {n:"Velsana", f:700}, {n:"Samari", f:650}, {n:"El Motor", f:650},
+  {n:"Healthy Girl", f:600}, {n:"Flota Imbabura", f:550}, {n:"Confia", f:500, d:"Confia / Valles de Samanga"},
+  {n:"APC", f:500}, {n:"Cigarra", f:450}, {n:"Nane Vestidos", f:450},
+  {n:"Casa del Verde", f:430}, {n:"Pladeco", f:400}, {n:"Plasticaucho", f:350},
+  {n:"Absolute", f:300}, {n:"Onco Ambato", f:300}, {n:"Tartelier", f:300},
+  {n:"Chiflido", f:300}, {n:"Provita", f:250}, {n:"MM Wings", f:135},
+  {n:"Friends Guides", f:120},
+];
+const ROLES = [
+  {k:"contenido", t:"Revisar contenido"},
+  {k:"pauta",     t:"Pauta"},
+  {k:"programar", t:"Programar"},
+  {k:"reuniones", t:"Reuniones"},
+  {k:"facturar",  t:"Facturar"},
+];
+
+/* Tareas de la agencia que no cuelgan de una cuenta. El peso lo pones tú:
+   no hay forma de deducir de la contabilidad lo que cuesta un dia de nomina,
+   asi que se declara y se ve al lado del resto en la misma moneda. */
+const TAREAS = [
+  {k:"nomina", t:"Pagar sueldos y horas extras",
+   nota:"Una vez al mes, un día entero", peso:500},
+];
+
+/* Lo ya decidido: Francisco solo factura Uninova y Absolute; el resto,
+   Ana Paula. Se aplica al arrancar y unicamente donde no haya nada puesto. */
+const DEFECTOS = (() => {
+  const d = {};
+  CUENTAS.forEach(c => {
+    d[c.n + "|facturar"] = (c.n === "Uninova" || c.n === "Absolute")
+      ? "Francisco" : "Ana Paula";
+  });
+  return d;
+})();
+const PERSONAS = ["Sin asignar","Francisco","Ana Paula","2 socios","Colaboradores"];
+const AMBOS = "2 socios";
+// El equilibrio se mide entre los dos socios: lo que va a colaboradores
+// esta delegado y no pesa en el reparto personal de ninguno de los dos.
+const SOCIOS = ["Francisco","Ana Paula"];
+const FEES  = CUENTAS.reduce((a,c)=>a+c.f,0);
+const todasTareas = () => TAREAS.concat(extras);
+const pesoTarea = k => {
+  if (pesos[k] != null) return pesos[k];
+  const t = todasTareas().find(x => x.k === k);
+  return t ? t.peso : 0;
+};
+const CUOTA = 1 / ROLES.length;          // cada rol carga un cuarto del fee
+
+const COLOR = {"Sin asignar":"var(--p0)","Francisco":"var(--p1)",
+               "Ana Paula":"var(--p2)","2 socios":"var(--p6)",
+               "Colaboradores":"var(--p4)"};
+const col = p => COLOR[p] || "var(--p0)";
+const $ = id => document.getElementById(id);
+const money = n => "$" + Math.round(n).toLocaleString("es-EC");
+const pct = n => n.toFixed(1).replace(".",",") + "%";
+const clave = (c,r) => c + "|" + r;
+const rotulo = c => c.d || c.n;
+
+let estado = {};                 // {"Cuenta|rol": persona} y {"tarea:k": persona}
+let pesos  = {};                 // {k: peso declarado de la tarea suelta}
+let extras = [];                 // tareas de agencia añadidas por ellos
+let TOTAL  = 0;                  // fees + tareas sueltas: la base de los %
+let artifact = null, guardando = null, sucio = false;
+
+function quien(c,r){ return estado[clave(c,r)] || "Sin asignar"; }
+function quienTarea(k){ return estado["tarea:" + k] || "Sin asignar"; }
+function recalculaTotal(){
+  TOTAL = FEES + todasTareas().reduce((a,t) => a + pesoTarea(t.k), 0);
+}
+
+/* ---------- cálculo ---------- */
+function totales(){
+  const t = {};
+  PERSONAS.forEach(p => {
+    t[p] = {monto:0, n:0};
+    ROLES.forEach(r => t[p][r.k] = {monto:0, n:0});
+  });
+  todasTareas().forEach(x => {
+    const p = quienTarea(x.k);
+    if (!t[p]) { t[p] = {monto:0, n:0}; ROLES.forEach(y => t[p][y.k] = {monto:0,n:0}); }
+    t[p].monto += pesoTarea(x.k); t[p].n++;
+  });
+  CUENTAS.forEach(c => ROLES.forEach(r => {
+    const p = quien(c.n, r.k);
+    if (!t[p]) { t[p] = {monto:0, n:0}; ROLES.forEach(x => t[p][x.k] = {monto:0,n:0}); }
+    const m = c.f * CUOTA;
+    t[p].monto += m; t[p].n++;
+    t[p][r.k].monto += m; t[p][r.k].n++;
+  }));
+  return t;
+}
+
+/* ---------- pintar ---------- */
+function pintaBalanza(t){
+  const [A,B] = SOCIOS;
+  // lo llevado entre los dos suma la mitad a cada lado
+  const mitad = t[AMBOS].monto / 2, mitadN = t[AMBOS].n / 2;
+  const a = t[A].monto + mitad, b = t[B].monto + mitad, suma = a + b;
+  const nA = t[A].n + mitadN, nB = t[B].n + mitadN;
+  const pa = suma ? a/suma*100 : 50, pb = 100 - pa;
+  const dif = Math.abs(a - b);
+  const quien = a > b ? A : B;
+  let clase = "", txt;
+  let compartido = t[AMBOS].n
+    ? ` <span style="color:var(--ink-3)">· ${t[AMBOS].n} tarea${t[AMBOS].n===1?"":"s"} a medias</span>` : "";
+  if (!suma) txt = "Todavía no hay nada repartido entre los dos socios.";
+  else if (dif < suma * 0.03){ clase = "ok";
+    txt = `Equilibrado: la diferencia son <b>${money(dif)}</b> al mes.`; }
+  else { clase = dif > suma * 0.15 ? "mal" : "";
+    txt = `<b>${quien}</b> lleva <b>${money(dif)}</b> más al mes ` +
+          `(${pct(Math.abs(pa-pb))} de diferencia).`; }
+  txt += compartido;
+  $("balanza").innerHTML = `
+    <div class="bz-top">
+      <div class="bz-lado" style="--c:${col(A)}">
+        <span class="bz-n">${A}</span>
+        <span class="bz-v">${money(a)}</span>
+        <span class="bz-p">${pct(pa)} · ${nA % 1 ? nA.toFixed(1) : nA} tareas</span>
+      </div>
+      <div class="bz-lado der" style="--c:${col(B)}">
+        <span class="bz-n">${B}</span>
+        <span class="bz-v">${money(b)}</span>
+        <span class="bz-p">${pct(pb)} · ${nB % 1 ? nB.toFixed(1) : nB} tareas</span>
+      </div>
+    </div>
+    <div class="bz-barra">
+      <i style="width:${pa}%;background:${col(A)}"></i>
+      <i style="width:${pb}%;background:${col(B)}"></i>
+    </div>
+    <div class="bz-pie ${clase}">${txt}</div>`;
+}
+
+function pinta(){
+  const t = totales();
+  const vivos = PERSONAS.filter(p => t[p].n > 0);
+  pintaBalanza(t);
+
+  // tarjetas por persona
+  $("balance").innerHTML = vivos.map(p => {
+    const pc = t[p].monto / TOTAL * 100;
+    const mini = ROLES.filter(r => t[p][r.k].n > 0)
+      .map(r => `<span class="rm">${r.t.split(" ").pop()} <b>${t[p][r.k].n}</b></span>`).join("");
+    return `<div class="pcard" style="--c:${col(p)}">
+      <div class="pn">${p}</div>
+      <div class="pv">${money(t[p].monto)}</div>
+      <div class="pf">${pct(pc)} · ${t[p].n} tarea${t[p].n===1?"":"s"}</div>
+      <div class="barra"><i style="width:${pc}%"></i></div>
+      <div class="roles-mini">${mini}</div>
+    </div>`;
+  }).join("");
+
+  // matriz persona x rol
+  $("rh").innerHTML = "<th>Persona</th>" +
+    ROLES.map(r => `<th class="r">${r.t}</th>`).join("") + `<th class="r">Total</th>`;
+  $("rb").innerHTML = vivos.filter(p => p !== "Sin asignar").map(p => {
+    return `<tr style="--c:${col(p)}"><td>${p}</td>` +
+      ROLES.map(r => `<td class="q"><b>${t[p][r.k].n}</b> <span>${money(t[p][r.k].monto)}</span></td>`).join("") +
+      `<td class="q"><b>${t[p].n}</b> <span>${money(t[p].monto)}</span></td></tr>`;
+  }).join("") || `<tr><td colspan="${ROLES.length+2}" style="color:var(--ink-3)">Nada asignado todavía.</td></tr>`;
+  const sa = t["Sin asignar"];
+  $("rf").innerHTML = sa.n > 0
+    ? `<tr style="--c:var(--p0)"><td>Sin asignar</td>` +
+      ROLES.map(r => `<td class="q"><b>${sa[r.k].n}</b> <span>${money(sa[r.k].monto)}</span></td>`).join("") +
+      `<td class="q"><b>${sa.n}</b> <span>${money(sa.monto)}</span></td></tr>`
+    : `<tr><td colspan="${ROLES.length+2}" style="color:var(--p5)">Todo repartido.</td></tr>`;
+
+  // tareas de la agencia
+  $("tareas").innerHTML = todasTareas().map(x => {
+    const p = quienTarea(x.k), w = pesoTarea(x.k);
+    const equiv = w > 0
+      ? `pesa como ${(w / (FEES/CUENTAS.length)).toFixed(1).replace(".",",")} cuentas medias`
+      : "sin peso: no entra en el reparto";
+    return `<tr>
+      <td class="tt">${x.t}<span class="tn">${x.nota}</span></td>
+      <td class="r"><input type="number" min="0" step="25" value="${w}" data-peso="${x.k}">
+        <span class="equiv">${equiv}</span></td>
+      <td><select data-tarea="${x.k}" style="--c:${col(p)}"
+        class="${p!=="Sin asignar"?"puesto":""}">${
+        PERSONAS.map(y => `<option value="${y}"${y===p?" selected":""}>${y}</option>`).join("")
+      }</select></td>
+      <td class="r">${x.mio ? `<button class="mini" data-borra="${x.k}" title="Quitar">\u00d7</button>` : ""}</td>
+    </tr>`;
+  }).join("") +
+  `<tr class="add"><td colspan="4">
+     <button class="mini mas" id="mas-tarea">+ A\u00f1adir otra tarea de agencia</button>
+   </td></tr>`;
+
+  // cabecera de la tabla de cuentas, con el selector de columna
+  $("ch").innerHTML = `<th>#</th><th>Cuenta</th><th class="r">Fee</th>
+    <th class="r">Peso</th><th class="r">Acum.</th>` +
+    ROLES.map(r => `<th>${r.t}
+      <select data-todo="${r.k}">${
+        PERSONAS.map(x => `<option value="${x}"${x==="Sin asignar"?" selected":""}>${
+          x==="Sin asignar" ? "— a todas —" : "Todas: "+x}</option>`).join("")
+      }</select></th>`).join("");
+
+  // filas
+  let acum = 0, cruzada = false;
+  $("filas").innerHTML = CUENTAS.map((c,k) => {
+    const peso = c.f / TOTAL * 100; acum += peso;
+    const marca = !cruzada && acum >= 50 ? (cruzada = true) : false;
+    const celdas = ROLES.map(r => {
+      const p = quien(c.n, r.k);
+      return `<td><select data-c="${c.n}" data-r="${r.k}" style="--c:${col(p)}"
+        class="${p!=="Sin asignar"?"puesto":""}">${
+        PERSONAS.map(x => `<option value="${x}"${x===p?" selected":""}>${x}</option>`).join("")
+      }</select></td>`;
+    }).join("");
+    return `<tr class="${marca?"mitad":""}">
+      <td class="i">${k+1}</td>
+      <td class="c">${rotulo(c)}${marca?'<span class="marca">mitad de la facturación</span>':""}</td>
+      <td class="n">${money(c.f)}</td>
+      <td class="p">${pct(peso)}</td>
+      <td class="p">${pct(acum)}</td>${celdas}</tr>`;
+  }).join("");
+
+  // eventos
+  $("filas").querySelectorAll("select").forEach(s => {
+    s.onchange = () => {
+      const k = clave(s.dataset.c, s.dataset.r);
+      if (s.value === "Sin asignar") delete estado[k]; else estado[k] = s.value;
+      pinta(); programaGuardado();
+    };
+  });
+  $("tareas").querySelectorAll("select").forEach(s => {
+    s.onchange = () => {
+      const k = "tarea:" + s.dataset.tarea;
+      if (s.value === "Sin asignar") delete estado[k]; else estado[k] = s.value;
+      pinta(); programaGuardado();
+    };
+  });
+  $("mas-tarea").onclick = () => {
+    const nombre = prompt("¿Qué tarea de agencia?\n(por ejemplo: cobranza, reunión de equipo, cierre contable)");
+    if (!nombre || !nombre.trim()) return;
+    const peso = prompt("¿Cuánto pesa al mes, en dólares?\n\nDe referencia: una cuenta media son " +
+                        money(FEES/CUENTAS.length) + " y un frente de una cuenta media, " +
+                        money(FEES/CUENTAS.length/ROLES.length) + ".", "300");
+    if (peso === null) return;
+    extras.push({k:"x" + Date.now(), t:nombre.trim(),
+                 nota:"Añadida a mano", peso:Math.max(0, +peso || 0), mio:true});
+    recalculaTotal(); pinta(); programaGuardado();
+  };
+  $("tareas").querySelectorAll("button[data-borra]").forEach(b => {
+    b.onclick = () => {
+      const k = b.dataset.borra;
+      if (!confirm("¿Quitar esta tarea del reparto?")) return;
+      extras = extras.filter(x => x.k !== k);
+      delete estado["tarea:" + k]; delete pesos[k];
+      recalculaTotal(); pinta(); programaGuardado();
+    };
+  });
+  $("tareas").querySelectorAll("input[data-peso]").forEach(i => {
+    i.onchange = () => {
+      pesos[i.dataset.peso] = Math.max(0, +i.value || 0);
+      recalculaTotal(); pinta(); programaGuardado();
+    };
+  });
+  $("ch").querySelectorAll("select").forEach(s => {
+    s.onchange = () => {
+      const r = s.dataset.todo, v = s.value;
+      CUENTAS.forEach(c => {
+        const k = clave(c.n, r);
+        if (v === "Sin asignar") delete estado[k]; else estado[k] = v;
+      });
+      pinta(); programaGuardado();
+    };
+  });
+}
+
+/* ---------- guardar ---------- */
+function marcaEstado(clase, txt){
+  $("estado").className = "estado " + clase;
+  $("estado-txt").textContent = txt;
+}
+function programaGuardado(){
+  try { localStorage.setItem("reparto4", JSON.stringify({estado, pesos, extras})); } catch(e){}
+  if (!artifact){ marcaEstado("go","Se guarda en este navegador"); return; }
+  sucio = true;
+  marcaEstado("go","Cambios sin guardar");
+  clearTimeout(guardando);
+  guardando = setTimeout(guarda, 2000);
+}
+async function guarda(){
+  if (!artifact || !sucio) return;
+  marcaEstado("go","Guardando…");
+  try {
+    await artifact.publish({"data/reparto.json": JSON.stringify({estado, pesos, extras}, null, 1)});
+    sucio = false;
+    marcaEstado("ok","Guardado · lo ve todo el equipo");
+  } catch (e) {
+    const c = e && e.code;
+    if (c === "conflict") return;
+    if (["not_writer","not_granted","capability_disabled","not_declared","capability_removed"].includes(c)){
+      artifact = null; marcaEstado("go","Guardado solo en este equipo"); return;
+    }
+    if (c === "rate_limited"){ clearTimeout(guardando); guardando = setTimeout(guarda, 8000); return; }
+    marcaEstado("no","No pude guardar; reintentando");
+    clearTimeout(guardando); guardando = setTimeout(guarda, 5000);
+  }
+}
+
+/* ---------- acciones ---------- */
+$("copiar").onclick = async () => {
+  const t = totales();
+  let txt = "REPARTO DE CUENTAS · " + money(TOTAL) + "/mes · 22 cuentas x 4 roles\n\n";
+  PERSONAS.filter(p => p !== "Sin asignar" && t[p].n > 0)
+    .sort((a,b) => t[b].monto - t[a].monto)
+    .forEach(p => {
+      txt += p.toUpperCase() + " — " + money(t[p].monto) + " (" +
+             pct(t[p].monto/TOTAL*100) + ", " + t[p].n + " tareas)\n";
+      ROLES.forEach(r => {
+        const suyas = CUENTAS.filter(c => quien(c.n, r.k) === p);
+        if (suyas.length) txt += "  " + r.t + ": " + suyas.map(rotulo).join(", ") + "\n";
+      });
+      txt += "\n";
+    });
+  if (t["Sin asignar"].n) {
+    txt += "SIN ASIGNAR — " + t["Sin asignar"].n + " tareas (" +
+           money(t["Sin asignar"].monto) + ")\n";
+    ROLES.forEach(r => {
+      const s = CUENTAS.filter(c => quien(c.n, r.k) === "Sin asignar");
+      if (s.length) txt += "  " + r.t + ": " + s.map(rotulo).join(", ") + "\n";
+    });
+  }
+  try {
+    await navigator.clipboard.writeText(txt);
+    $("copiar").textContent = "Copiado";
+  } catch(e){ $("copiar").textContent = "No pude copiar"; }
+  setTimeout(() => $("copiar").textContent = "Copiar el reparto", 1600);
+};
+/* Reparte entre los dos socios lo que no este delegado a colaboradores.
+   Va de la tarea mas pesada a la mas ligera dandosela siempre a quien menos
+   lleva acumulado: es la regla LPT, y deja una diferencia final minima. */
+$("equilibrar").onclick = () => {
+  const quedan = [];
+  todasTareas().forEach(x => {
+    const p = quienTarea(x.k);
+    if (!t[p]) { t[p] = {monto:0, n:0}; ROLES.forEach(y => t[p][y.k] = {monto:0,n:0}); }
+    t[p].monto += pesoTarea(x.k); t[p].n++;
+  });
+  CUENTAS.forEach(c => ROLES.forEach(r => {
+    const q = quien(c.n, r.k);
+    if (q !== "Colaboradores" && q !== AMBOS)
+      quedan.push({k: clave(c.n, r.k), peso: c.f * CUOTA});
+  }));
+  if (!quedan.length){ alert("No queda nada por repartir: todo está a medias o delegado."); return; }
+  if (!confirm("Voy a repartir " + quedan.length + " tareas de cuenta entre Francisco y Ana Paula " +
+               "buscando el mayor equilibrio.\n\nLo que ya esté en Colaboradores se respeta. " +
+               "¿Sigo?")) return;
+  quedan.sort((x,y) => y.peso - x.peso);
+  const carga = {"Francisco":0, "Ana Paula":0};
+  quedan.forEach(t => {
+    const p = carga["Francisco"] <= carga["Ana Paula"] ? "Francisco" : "Ana Paula";
+    estado[t.k] = p; carga[p] += t.peso;
+  });
+  pinta(); programaGuardado();
+};
+
+$("limpiar").onclick = () => {
+  if (!confirm("¿Vaciar todas las asignaciones?")) return;
+  estado = {}; pinta(); programaGuardado();
+};
+
+/* ---------- arranque ---------- */
+function absorbe(guardado){
+  if (!guardado) return;
+  // formato nuevo {estado,pesos}; el viejo era el estado pelado
+  if (guardado.estado){ estado = guardado.estado || {}; pesos = guardado.pesos || {}; extras = guardado.extras || []; }
+  else estado = guardado;
+}
+(async function(){
+  try {
+    const r = await fetch("data/reparto.json", {cache:"no-store"});
+    if (r.ok) absorbe(await r.json());
+  } catch(e){}
+  if (!Object.keys(estado).length){
+    try { absorbe(JSON.parse(localStorage.getItem("reparto4") || "null")); } catch(e){}
+  }
+  // lo ya decidido se aplica solo donde nadie haya puesto nada
+  Object.keys(DEFECTOS).forEach(k => { if (!(k in estado)) estado[k] = DEFECTOS[k]; });
+  recalculaTotal();
+  pinta();
+  marcaEstado("", "Cargando…");
+  // fuera de claude.ai no existe `claude`: la pagina sigue funcionando
+  // guardando en el propio navegador
+  const a = (typeof claude !== "undefined" && claude.use)
+    ? await claude.use("artifact") : null;
+  if (a){ artifact = a; marcaEstado("ok","Guardado · lo ve todo el equipo"); }
+  else   { marcaEstado("go","Se guarda en este navegador"); }
+})();
+</script>
+</body>
+</html>
