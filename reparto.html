@@ -714,12 +714,20 @@ $("enlace").onclick = async () => {
   setTimeout(() => $("enlace").textContent = "Copiar enlace con el reparto", 1800);
 };
 
-$("bajar").onclick = () => {
+$("bajar").onclick = async () => {
   const datos = JSON.stringify({estado, pesos, extras, guardado:new Date().toISOString()}, null, 1);
+  const nombre = "reparto-" + new Date().toISOString().slice(0,10) + ".json";
+  // dentro de claude.ai la descarga la media la plataforma; fuera, enlace normal
+  const dl = (typeof claude !== "undefined" && claude.use)
+    ? await claude.use("downloads") : null;
+  if (dl){
+    try { await dl.save({filename: nombre, data: datos}); }
+    catch(e){ /* el visor pudo rechazarla: no hay nada que reintentar */ }
+    return;
+  }
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([datos], {type:"application/json"}));
-  const hoy = new Date().toISOString().slice(0,10);
-  a.download = "reparto-" + hoy + ".json";
+  a.download = nombre;
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(a.href), 2000);
 };
