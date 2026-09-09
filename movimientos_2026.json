@@ -9934,5 +9934,53 @@
   "categoria": "Modelos",
   "detalle": "Healthy Girl",
   "tipo_original": "https://drive.google.com/file/d/1BabLbvXzWupn1lmLHmJ3LMIZmYg9LO85/view?usp=drivesdk"
+ },
+ {
+  "fecha": "09/09/2026",
+  "anio": 2026,
+  "mes_num": 9,
+  "mes": "sep",
+  "referencia": "01-00620",
+  "descripcion": "PAGO MODELO HEALTHY GIRL",
+  "ingreso": 0.0,
+  "egreso": 20.0,
+  "neto": -20.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Freelance y produccion",
+  "categoria": "Modelos",
+  "detalle": "Healthy Girl",
+  "tipo_original": "https://drive.google.com/file/d/1_clJ8DG_gxpSz_9d1zQh2aU1PTUmlqm5/view?usp=drivesdk"
+ },
+ {
+  "fecha": "09/09/2026",
+  "anio": 2026,
+  "mes_num": 9,
+  "mes": "sep",
+  "referencia": "01-00621",
+  "descripcion": "INGRESO DE FLEXIAHORRO PARA PAGO DE MICROONDAS",
+  "ingreso": 70.0,
+  "egreso": 0.0,
+  "neto": 70.0,
+  "naturaleza": "NO OPERATIVO",
+  "grupo": "Movimiento entre cuentas propias",
+  "categoria": "Entrada desde FlexiAhorro",
+  "detalle": "INGRESO DE FLEXIAHORRO PARA PAGO DE MICROONDAS",
+  "tipo_original": "https://drive.google.com/file/d/11EDt_ZJ2I2z6rkAXMtu4DJEDa5B52m2M/view?usp=drivesdk"
+ },
+ {
+  "fecha": "09/09/2026",
+  "anio": 2026,
+  "mes_num": 9,
+  "mes": "sep",
+  "referencia": "01-00622",
+  "descripcion": "PAGO DE MICROONDAS",
+  "ingreso": 0.0,
+  "egreso": 70.41,
+  "neto": -70.41,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Egresos - Sin identificar",
+  "categoria": "REVISAR",
+  "detalle": "PAGO DE MICROONDAS",
+  "tipo_original": "https://drive.google.com/file/d/1TC_-p2TapGdzZ-lf-bfGCnY8DMV9Y3IX/view?usp=drivesdk"
  }
 ]

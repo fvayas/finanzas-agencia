@@ -122,11 +122,11 @@
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
    "costo_fijo": 4738.66,
-   "costo_variable": 136.47,
-   "costo_total": 4875.13,
-   "resultado": -2576.88,
-   "margen_contribucion": 2161.78,
-   "margen_pct": 94.1
+   "costo_variable": 156.47,
+   "costo_total": 4895.13,
+   "resultado": -2596.88,
+   "margen_contribucion": 2141.78,
+   "margen_pct": 93.2
   }
  ],
  "grupos": {
@@ -216,7 +216,7 @@
    "jun": -860.0,
    "jul": -1092.91,
    "ago": -1004.0,
-   "sep": -98.0
+   "sep": -118.0
   },
   "Nomina variable": {
    "ene": -24.93,
@@ -359,7 +359,7 @@
    "jun": 0.0,
    "jul": 0.0,
    "ago": -192.6,
-   "sep": 0.0
+   "sep": -70.41
   }
  },
  "no_operativo": {
@@ -383,7 +383,7 @@
    "jun": -2316.87,
    "jul": -900.01,
    "ago": -2362.0,
-   "sep": 2600.0
+   "sep": 2670.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -3353,8 +3353,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Entrada desde FlexiAhorro",
-   "total": -63697.54,
-   "n": 59,
+   "total": -63767.54,
+   "n": 60,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -3364,7 +3364,7 @@
     "jun": -13405.13,
     "jul": -13456.99,
     "ago": -13150.0,
-    "sep": -5040.0
+    "sep": -5110.0
    },
    "detalle": {
     "mar": {
@@ -3693,6 +3693,11 @@
        "fecha": "09/09/2026",
        "desc": "INGRESO DE FLEXIAHORRO PARA PAGO MODELOS",
        "importe": -40.0
+      },
+      {
+       "fecha": "09/09/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO DE MICROONDAS",
+       "importe": -70.0
       }
      ],
      "razones": []
@@ -4482,8 +4487,8 @@
   {
    "grupo": "Freelance y produccion",
    "categoria": "Modelos",
-   "total": 422.5,
-   "n": 11,
+   "total": 442.5,
+   "n": 12,
    "por_mes": {
     "ene": 20.0,
     "feb": 20.0,
@@ -4493,7 +4498,7 @@
     "jun": 0.0,
     "jul": 20.0,
     "ago": 20.0,
-    "sep": 20.0
+    "sep": 40.0
    },
    "detalle": {
     "ene": {
@@ -4578,6 +4583,11 @@
     },
     "sep": {
      "movs": [
+      {
+       "fecha": "09/09/2026",
+       "desc": "PAGO MODELO HEALTHY GIRL",
+       "importe": 20.0
+      },
       {
        "fecha": "09/09/2026",
        "desc": "PAGO MODELO HEALTHY GIRL",
@@ -4931,6 +4941,60 @@
    }
   },
   {
+   "grupo": "Egresos - Sin identificar",
+   "categoria": "REVISAR",
+   "total": 263.01,
+   "n": 5,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 192.6,
+    "sep": 70.41
+   },
+   "detalle": {
+    "ago": {
+     "movs": [
+      {
+       "fecha": "19/08/2026",
+       "desc": "PAGO SILLAS",
+       "importe": 150.0
+      },
+      {
+       "fecha": "27/08/2026",
+       "desc": "PLOMERO",
+       "importe": 10.0
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "COMISIÓN BANCARIA",
+       "importe": 0.41
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "RENOVACIÓN FIRMA ELECTRÓNICA 2 AÑOS",
+       "importe": 32.19
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "09/09/2026",
+       "desc": "PAGO DE MICROONDAS",
+       "importe": 70.41
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
    "grupo": "Estructura",
    "categoria": "Internet",
    "total": 256.45,
@@ -5142,50 +5206,6 @@
        "fecha": "04/09/2026",
        "desc": "BOTELLON",
        "importe": 2.0
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Egresos - Sin identificar",
-   "categoria": "REVISAR",
-   "total": 192.6,
-   "n": 4,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 192.6,
-    "sep": 0.0
-   },
-   "detalle": {
-    "ago": {
-     "movs": [
-      {
-       "fecha": "19/08/2026",
-       "desc": "PAGO SILLAS",
-       "importe": 150.0
-      },
-      {
-       "fecha": "27/08/2026",
-       "desc": "PLOMERO",
-       "importe": 10.0
-      },
-      {
-       "fecha": "28/08/2026",
-       "desc": "COMISIÓN BANCARIA",
-       "importe": 0.41
-      },
-      {
-       "fecha": "28/08/2026",
-       "desc": "RENOVACIÓN FIRMA ELECTRÓNICA 2 AÑOS",
-       "importe": 32.19
       }
      ],
      "razones": []
@@ -5821,8 +5841,8 @@
  "totales": {
   "ingresos": 93074.26,
   "costo_fijo": 73919.73,
-  "costo_variable": 10981.76,
-  "resultado": 3857.72,
-  "movimientos": 621
+  "costo_variable": 11001.76,
+  "resultado": 3837.72,
+  "movimientos": 624
  }
 }
