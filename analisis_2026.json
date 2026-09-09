@@ -122,11 +122,11 @@
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
    "costo_fijo": 4738.66,
-   "costo_variable": 116.47,
-   "costo_total": 4855.13,
-   "resultado": -2556.88,
-   "margen_contribucion": 2181.78,
-   "margen_pct": 94.9
+   "costo_variable": 136.47,
+   "costo_total": 4875.13,
+   "resultado": -2576.88,
+   "margen_contribucion": 2161.78,
+   "margen_pct": 94.1
   }
  ],
  "grupos": {
@@ -216,7 +216,7 @@
    "jun": -860.0,
    "jul": -1092.91,
    "ago": -1004.0,
-   "sep": -78.0
+   "sep": -98.0
   },
   "Nomina variable": {
    "ene": -24.93,
@@ -383,7 +383,7 @@
    "jun": -2316.87,
    "jul": -900.01,
    "ago": -2362.0,
-   "sep": 2560.0
+   "sep": 2600.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -3353,8 +3353,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Entrada desde FlexiAhorro",
-   "total": -63657.54,
-   "n": 58,
+   "total": -63697.54,
+   "n": 59,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -3364,7 +3364,7 @@
     "jun": -13405.13,
     "jul": -13456.99,
     "ago": -13150.0,
-    "sep": -5000.0
+    "sep": -5040.0
    },
    "detalle": {
     "mar": {
@@ -3688,6 +3688,11 @@
        "fecha": "01/09/2026",
        "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SUELDOS",
        "importe": -5000.0
+      },
+      {
+       "fecha": "09/09/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO MODELOS",
+       "importe": -40.0
       }
      ],
      "razones": []
@@ -4477,8 +4482,8 @@
   {
    "grupo": "Freelance y produccion",
    "categoria": "Modelos",
-   "total": 402.5,
-   "n": 10,
+   "total": 422.5,
+   "n": 11,
    "por_mes": {
     "ene": 20.0,
     "feb": 20.0,
@@ -4488,7 +4493,7 @@
     "jun": 0.0,
     "jul": 20.0,
     "ago": 20.0,
-    "sep": 0.0
+    "sep": 20.0
    },
    "detalle": {
     "ene": {
@@ -4566,6 +4571,16 @@
       {
        "fecha": "03/08/2026",
        "desc": "MODELO VEALSANA",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "09/09/2026",
+       "desc": "PAGO MODELO HEALTHY GIRL",
        "importe": 20.0
       }
      ],
@@ -5806,8 +5821,8 @@
  "totales": {
   "ingresos": 93074.26,
   "costo_fijo": 73919.73,
-  "costo_variable": 10961.76,
-  "resultado": 3877.72,
-  "movimientos": 619
+  "costo_variable": 10981.76,
+  "resultado": 3857.72,
+  "movimientos": 621
  }
 }

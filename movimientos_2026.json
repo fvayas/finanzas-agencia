@@ -9902,5 +9902,37 @@
   "categoria": "Salida a FlexiAhorro",
   "detalle": "ENVIO A FLEXIAHORRO",
   "tipo_original": "https://drive.google.com/file/d/1-Sxc11x89fNDEwK84j5RTs_vDpJBH59Y/view?usp=drivesdk"
+ },
+ {
+  "fecha": "09/09/2026",
+  "anio": 2026,
+  "mes_num": 9,
+  "mes": "sep",
+  "referencia": "01-00618",
+  "descripcion": "INGRESO DE FLEXIAHORRO PARA PAGO MODELOS",
+  "ingreso": 40.0,
+  "egreso": 0.0,
+  "neto": 40.0,
+  "naturaleza": "NO OPERATIVO",
+  "grupo": "Movimiento entre cuentas propias",
+  "categoria": "Entrada desde FlexiAhorro",
+  "detalle": "INGRESO DE FLEXIAHORRO PARA PAGO MODELOS",
+  "tipo_original": "https://drive.google.com/file/d/1uuiPYsGgRqs3JEvALdGj4LFdnTCJb0LC/view?usp=drivesdk"
+ },
+ {
+  "fecha": "09/09/2026",
+  "anio": 2026,
+  "mes_num": 9,
+  "mes": "sep",
+  "referencia": "01-00619",
+  "descripcion": "PAGO MODELO HEALTHY GIRL",
+  "ingreso": 0.0,
+  "egreso": 20.0,
+  "neto": -20.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Freelance y produccion",
+  "categoria": "Modelos",
+  "detalle": "Healthy Girl",
+  "tipo_original": "https://drive.google.com/file/d/1BabLbvXzWupn1lmLHmJ3LMIZmYg9LO85/view?usp=drivesdk"
  }
 ]
