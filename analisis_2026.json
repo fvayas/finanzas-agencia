@@ -119,14 +119,14 @@
    "mes": "sep",
    "ingresos": 2298.25,
    "pauta_cobrada": 0.0,
-   "pauta_pagada": -0.0,
-   "pauta_neta": -0.0,
+   "pauta_pagada": 1345.12,
+   "pauta_neta": 1345.12,
    "costo_fijo": 4738.66,
    "costo_variable": 156.47,
-   "costo_total": 4895.13,
-   "resultado": -2596.88,
-   "margen_contribucion": 2141.78,
-   "margen_pct": 93.2
+   "costo_total": 6240.25,
+   "resultado": -3942.0,
+   "margen_contribucion": 796.66,
+   "margen_pct": 34.7
   }
  ],
  "grupos": {
@@ -205,7 +205,7 @@
    "jun": -1418.0,
    "jul": -2435.17,
    "ago": -1697.58,
-   "sep": 0.0
+   "sep": -1345.12
   },
   "Freelance y produccion": {
    "ene": -202.0,
@@ -383,7 +383,7 @@
    "jun": -2316.87,
    "jul": -900.01,
    "ago": -2362.0,
-   "sep": 2670.0
+   "sep": 4070.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -3353,8 +3353,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Entrada desde FlexiAhorro",
-   "total": -63767.54,
-   "n": 60,
+   "total": -65167.54,
+   "n": 61,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -3364,7 +3364,7 @@
     "jun": -13405.13,
     "jul": -13456.99,
     "ago": -13150.0,
-    "sep": -5110.0
+    "sep": -6510.0
    },
    "detalle": {
     "mar": {
@@ -3698,6 +3698,11 @@
        "fecha": "09/09/2026",
        "desc": "INGRESO DE FLEXIAHORRO PARA PAGO DE MICROONDAS",
        "importe": -70.0
+      },
+      {
+       "fecha": "10/09/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAUTA",
+       "importe": -1400.0
       }
      ],
      "razones": []
@@ -3707,8 +3712,8 @@
   {
    "grupo": "Pauta",
    "categoria": "Pauta pagada",
-   "total": 12037.17,
-   "n": 8,
+   "total": 13382.29,
+   "n": 9,
    "por_mes": {
     "ene": 574.03,
     "feb": 1451.48,
@@ -3718,7 +3723,7 @@
     "jun": 1418.0,
     "jul": 2435.17,
     "ago": 1697.58,
-    "sep": 0.0
+    "sep": 1345.12
    },
    "detalle": {
     "ene": {
@@ -3797,6 +3802,16 @@
        "fecha": "07/08/2026",
        "desc": "REEMBOLSO PAUTA FRANCISCO VAYAS",
        "importe": 1697.58
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "10/09/2026",
+       "desc": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+       "importe": 1345.12
       }
      ],
      "razones": []
@@ -5842,7 +5857,7 @@
   "ingresos": 93074.26,
   "costo_fijo": 73919.73,
   "costo_variable": 11001.76,
-  "resultado": 3837.72,
-  "movimientos": 624
+  "resultado": 2492.6,
+  "movimientos": 626
  }
 }

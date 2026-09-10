@@ -9982,5 +9982,37 @@
   "categoria": "REVISAR",
   "detalle": "PAGO DE MICROONDAS",
   "tipo_original": "https://drive.google.com/file/d/1TC_-p2TapGdzZ-lf-bfGCnY8DMV9Y3IX/view?usp=drivesdk"
+ },
+ {
+  "fecha": "10/09/2026",
+  "anio": 2026,
+  "mes_num": 9,
+  "mes": "sep",
+  "referencia": "01-00623",
+  "descripcion": "INGRESO DE FLEXIAHORRO PARA PAUTA",
+  "ingreso": 1400.0,
+  "egreso": 0.0,
+  "neto": 1400.0,
+  "naturaleza": "NO OPERATIVO",
+  "grupo": "Movimiento entre cuentas propias",
+  "categoria": "Entrada desde FlexiAhorro",
+  "detalle": "INGRESO DE FLEXIAHORRO PARA PAUTA",
+  "tipo_original": ""
+ },
+ {
+  "fecha": "10/09/2026",
+  "anio": 2026,
+  "mes_num": 9,
+  "mes": "sep",
+  "referencia": "01-00624",
+  "descripcion": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+  "ingreso": 0.0,
+  "egreso": 1345.12,
+  "neto": -1345.12,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Pauta",
+  "categoria": "Pauta pagada",
+  "detalle": "REEMBOLSO PAUTA FRANCISCO VAYAS",
+  "tipo_original": "https://drive.google.com/file/d/1SYsUvl4_pHS-NpvWkp6Am4qI1FVmFRdx/view?usp=drivesdk"
  }
 ]
