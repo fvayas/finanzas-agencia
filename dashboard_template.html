@@ -1716,27 +1716,36 @@ el("tiles").innerHTML = tiles.map(t=>`
         const pillSW = 'display:inline;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 5px;border-radius:3px;margin-right:5px;background:var(--accent-soft);color:var(--accent)';
         const pillPT = 'display:inline;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 5px;border-radius:3px;margin-right:5px;background:var(--warn-soft);color:var(--warn)';
         const pillOK = 'display:inline;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 4px;border-radius:3px;margin-left:6px;background:var(--pos-soft);color:var(--pos)';
-        // un bloque por mes reembolsado, con su cierre: lo que vuelve del
-        // cliente y lo que la agencia acaba absorbiendo de verdad
-        [...new Set(X.pauta_items.map(i => i.mes))].forEach(mm => {
-          const items = X.pauta_items.filter(i => i.mes === mm);
-          const tot = items.reduce((a,i) => a + i.monto, 0);
-          const rec = items.filter(i => i.recupera).reduce((a,i) => a + i.monto, 0);
-          items.forEach(it => {
-            const ps = it.tipo === "Pauta" ? pillPT : pillSW;
-            const ok = it.recupera ? `<span style="${pillOK}">se recupera</span>` : "";
-            h += `<tr class="sub-row"><td style="padding-left:24px"><span style="${ps}">${it.tipo}</span>${it.concepto}${ok}</td>` +
-              M.map(m => m === it.mes
-                ? `<td class="n">${fmt2(it.monto)}</td>`
-                : `<td class="n" style="opacity:.2">—</td>`).join("") +
-              `<td class="n">${fmt2(it.monto)}</td><td></td></tr>`;
-          });
-          h += `<tr class="sub-row"><td style="padding-left:24px;font-weight:600">Reembolsado en ${MESL[mm] || mm}
-              <span class="muted" style="font-weight:400;font-size:12px">· vuelve del cliente ${fmt2(rec)} · lo absorbe la agencia <b style="color:var(--neg)">${fmt2(tot - rec)}</b></span></td>` +
-            M.map(m => m === mm
-              ? `<td class="n" style="font-weight:600">${fmt2(tot)}</td>`
+        const cel = v => v > 0.005
+          ? `<td class="n">${fmt2(v)}</td>`
+          : `<td class="n" style="opacity:.2">—</td>`;
+        // una fila por concepto, con su importe en cada mes: asi se compara
+        // mes contra mes en vez de repetir la lista entera cada vez
+        X.pauta_items.forEach(it => {
+          const ps = it.tipo === "Pauta" ? pillPT : pillSW;
+          const ok = it.recupera ? `<span style="${pillOK}">se recupera</span>` : "";
+          const tot = M.reduce((acc,m) => acc + (it.por_mes[m] || 0), 0);
+          h += `<tr class="sub-row"><td style="padding-left:24px"><span style="${ps}">${it.tipo}</span>${it.concepto}${ok}</td>` +
+            M.map(m => cel(it.por_mes[m] || 0)).join("") +
+            `<td class="n">${fmt2(tot)}</td><td></td></tr>`;
+        });
+        // cierre: de lo reembolsado, cuanto vuelve y cuanto se queda dentro
+        const sum = (m, filtro) => X.pauta_items
+          .filter(filtro).reduce((a,i) => a + (i.por_mes[m] || 0), 0);
+        const cierres = [
+          ["Reembolsado a Francisco", () => true,       "var(--ink)",   600],
+          ["· vuelve del cliente",    i => i.recupera,  "var(--pos)",   400],
+          ["· lo absorbe la agencia", i => !i.recupera, "var(--neg)",   600],
+        ];
+        cierres.forEach(([rot, f, color, peso]) => {
+          const porMes = M.map(m => sum(m, f));
+          const tot = porMes.reduce((a,b) => a + b, 0);
+          if (tot < 0.005) return;
+          h += `<tr class="sub-row"><td style="padding-left:24px;font-weight:${peso};color:${color}">${rot}</td>` +
+            porMes.map(v => v > 0.005
+              ? `<td class="n" style="font-weight:${peso};color:${color}">${fmt2(v)}</td>`
               : `<td class="n" style="opacity:.2">—</td>`).join("") +
-            `<td class="n" style="font-weight:600">${fmt2(tot)}</td><td></td></tr>`;
+            `<td class="n" style="font-weight:${peso};color:${color}">${fmt2(tot)}</td><td></td></tr>`;
         });
       }
       // desglose tarjeta: suscripciones y pauta por concepto, mes a mes
