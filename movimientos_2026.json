@@ -10190,5 +10190,21 @@
   "categoria": "Salida a FlexiAhorro",
   "detalle": "ENVIO A FLEXIAHORRO",
   "tipo_original": "https://drive.google.com/file/d/17DNa02Y1-yyf2oDKHPrgqOMDIid0GCQ0/view?usp=drivesdk"
+ },
+ {
+  "fecha": "20/09/2026",
+  "anio": 2026,
+  "mes_num": 9,
+  "mes": "sep",
+  "referencia": "01-00636",
+  "descripcion": "PAGO UNINOVA",
+  "ingreso": 220.0,
+  "egreso": 0.0,
+  "neto": 220.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "Uninova",
+  "detalle": "PAGO UNINOVA",
+  "tipo_original": "https://drive.google.com/file/d/1L6slbMoHDt1TPNsL27v9qp5iNUuL3_1g/view?usp=drivesdk"
  }
 ]

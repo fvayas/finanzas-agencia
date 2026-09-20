@@ -117,16 +117,16 @@
   },
   {
    "mes": "sep",
-   "ingresos": 4098.48,
+   "ingresos": 4318.48,
    "pauta_cobrada": 640.0,
    "pauta_pagada": 1345.12,
    "pauta_neta": 705.12,
    "costo_fijo": 5269.7,
    "costo_variable": 162.59,
    "costo_total": 6137.41,
-   "resultado": -2038.93,
-   "margen_contribucion": 3230.77,
-   "margen_pct": 78.8
+   "resultado": -1818.93,
+   "margen_contribucion": 3450.77,
+   "margen_pct": 79.9
   }
  ],
  "grupos": {
@@ -161,7 +161,7 @@
    "jun": 14693.69,
    "jul": 12731.02,
    "ago": 11849.98,
-   "sep": 3913.48
+   "sep": 4133.48
   },
   "Equipos": {
    "ene": -75.0,
@@ -455,13 +455,13 @@
  "clientes": [
   {
    "cliente": "Uninova",
-   "total": 8703.0,
-   "pct": 9.3,
-   "pagos": 11,
+   "total": 8923.0,
+   "pct": 9.5,
+   "pagos": 12,
    "meses_activo": 9,
    "primer_mes": "ene",
    "ultimo_mes": "sep",
-   "fee_promedio": 967.0,
+   "fee_promedio": 991.44,
    "por_mes": {
     "ene": 900.0,
     "feb": 900.0,
@@ -471,13 +471,13 @@
     "jun": 900.0,
     "jul": 1256.0,
     "ago": 1147.0,
-    "sep": 900.0
+    "sep": 1120.0
    }
   },
   {
    "cliente": "Speedy",
    "total": 8238.0,
-   "pct": 8.8,
+   "pct": 8.7,
    "pagos": 4,
    "meses_activo": 3,
    "primer_mes": "jun",
@@ -603,7 +603,7 @@
   {
    "cliente": "Flota Imbabura",
    "total": 4468.76,
-   "pct": 4.8,
+   "pct": 4.7,
    "pagos": 8,
    "meses_activo": 8,
    "primer_mes": "feb",
@@ -645,7 +645,7 @@
   {
    "cliente": "Confia",
    "total": 4000.0,
-   "pct": 4.3,
+   "pct": 4.2,
    "pagos": 9,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -792,7 +792,7 @@
   {
    "cliente": "Chiflido",
    "total": 2400.0,
-   "pct": 2.6,
+   "pct": 2.5,
    "pagos": 8,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -1064,9 +1064,9 @@
   }
  ],
  "concentracion": {
-  "top1": 9.3,
-  "top3": 26.7,
-  "top5": 40.8
+  "top1": 9.5,
+  "top3": 26.8,
+  "top5": 40.9
  },
  "equipo": [
   {
@@ -5907,10 +5907,10 @@
   }
  ],
  "totales": {
-  "ingresos": 94874.49,
+  "ingresos": 95094.49,
   "costo_fijo": 74450.77,
   "costo_variable": 11007.88,
-  "resultado": 4395.67,
-  "movimientos": 637
+  "resultado": 4615.67,
+  "movimientos": 638
  }
 }
