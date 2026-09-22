@@ -41,6 +41,21 @@ EXTRACTO = {
 SALDO_31_12_2025 = 1_626.84
 SALDO_31_07_2026 = 11_270.94
 
+# El banco NO corta por mes natural: la cuenta esta en "Ciclo 6" y los cortes
+# caen cada dos meses. Estos son los estados oficiales, con su saldo de cierre
+# verificado. Es la conciliacion dura; la tabla mensual de arriba sirve para
+# ver el ritmo, pero el saldo bueno es el de estos cortes.
+CICLOS = [
+    # (desde, hasta, saldo_anterior, saldo_cierre, interes_del_periodo)
+    ("24/04/2026", "19/06/2026",  7_458.81,  7_626.11, 42.43),
+    ("19/06/2026", "21/08/2026",  7_626.11, 12_207.73, 69.61),
+]
+
+# El banco abona "CR AH PROGRAMADO" (ahorro programado, 20,00 al mes) que no
+# sale de la cuenta operativa: por eso el extracto recibe algo mas de lo que
+# la hoja envia. No es un descuadre.
+AHORRO_PROGRAMADO_MES = 20.00
+
 # Retiros que el extracto recoge y la hoja operativa todavia no.
 # Los tres del 31/07 (600 + 115,49 + 11,50) se registraron en la hoja el
 # 31/07/2026, asi que la lista queda vacia y los dos lados cuadran solos.
@@ -81,6 +96,34 @@ def main():
             "neto": round(e["entra"] - e["sale"], 2),
         })
 
+    # --- conciliacion contra los ciclos reales del banco ---
+    # Ojo con las erratas de la hoja: FELXIAHORRO, FLEXIAHRRO, FLEXIAHORO.
+    # Filtrar por "FLEXI" a secas dejaba fuera tres movimientos.
+    import re, datetime as _dt
+    SUENA = re.compile(r"F[EL]{1,2}[XI]{1,2}[A-Z]*AH[OR]{0,3}R?O", re.I)
+    def _f(txt):
+        d, m, a = txt.split("/")
+        return _dt.date(int(a), int(m), int(d))
+    mov = json.load(open("movimientos_2026.json", encoding="utf-8"))
+    ciclos = []
+    for desde, hasta, sa, sc, inte in CICLOS:
+        a, b = _f(desde), _f(hasta)
+        env = sac = 0.0
+        for x in mov:
+            if not SUENA.search(x["descripcion"]):
+                continue
+            if a < _f(x["fecha"]) <= b:
+                env += x["egreso"]
+                sac += x["ingreso"]
+        teo = round(sa + env - sac + inte, 2)
+        ciclos.append({
+            "desde": desde, "hasta": hasta,
+            "saldo_anterior": sa, "saldo_cierre": sc,
+            "hoja_envia": round(env, 2), "hoja_saca": round(sac, 2),
+            "interes": inte, "teorico": teo,
+            "desvio": round(sc - teo, 2),
+        })
+
     interes = round(sum(f["interes"] for f in filas), 2)
     neto = round(sum(f["neto"] for f in filas), 2)
     pend = round(sum(p[2] for p in PENDIENTES_EN_HOJA), 2)
@@ -92,6 +135,10 @@ def main():
 
     out = {
         "meses": MESES, "filas": filas, "cuadra": ok,
+        "ciclos": ciclos,
+        "saldo_verificado": CICLOS[-1][3],
+        "saldo_verificado_fecha": CICLOS[-1][1],
+        "interes_ciclos": round(sum(c["interes"] for c in ciclos), 2),
         "interes_2026": interes, "neto_2026": neto,
         "saldo_inicial": SALDO_31_12_2025, "saldo_final": SALDO_31_07_2026,
         "saldo_teorico": teorico,
@@ -123,6 +170,20 @@ def main():
           f"{sum(f['ext_sale'] for f in filas):>{W},.2f}{'':>8}{interes:>10,.2f}")
     print()
     print("CUADRA AL CENTAVO" if ok else "HAY DIFERENCIAS QUE REVISAR")
+    print()
+    print("=" * 92)
+    print("CONCILIACION POR CICLO DEL BANCO  ·  el corte no es mensual")
+    print("=" * 92)
+    for c in ciclos:
+        print(f"  {c['desde']} -> {c['hasta']}")
+        print(f"     saldo anterior {c['saldo_anterior']:>12,.2f}")
+        print(f"     la hoja envia  {c['hoja_envia']:>12,.2f}")
+        print(f"     la hoja saca   {-c['hoja_saca']:>12,.2f}")
+        print(f"     interes        {c['interes']:>12,.2f}")
+        print(f"     = teorico      {c['teorico']:>12,.2f}")
+        print(f"       real         {c['saldo_cierre']:>12,.2f}   desvio {c['desvio']:>8,.2f}"
+              + ("   (ahorro programado del banco)" if abs(c['desvio']) % AHORRO_PROGRAMADO_MES < 0.01 else ""))
+        print()
     print()
     print(f"{'Saldo FlexiAhorro 31/12/2025':<42}{SALDO_31_12_2025:>12,.2f}")
     print(f"{'+ neto aportado en 2026':<42}{neto:>12,.2f}")
