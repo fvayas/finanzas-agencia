@@ -182,7 +182,10 @@ def main():
         conceptos.append({
             "concepto": lab, "familia": fam,
             "total": round(sum(CARGOS[mm].get(k, 0) for mm in MESES if mm in CARGOS), 2),
-            "n": len(MESES),
+            # los meses en que el cargo aparece de verdad: la membresia es
+            # anual y contarla como 9 hacia pensar que se paga cada mes
+            "n": sum(1 for mm in MESES
+                     if mm in CARGOS and CARGOS[mm].get(k, 0) > 0),
             "por_mes": {mm: CARGOS[mm].get(k, 0) if mm in CARGOS else 0 for mm in MESES},
             "movs": [{"mes": mm, "fecha": "", "desc": lab,
                       "importe": CARGOS[mm].get(k, 0)} for mm in MESES

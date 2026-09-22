@@ -1865,15 +1865,19 @@ el("tiles").innerHTML = tiles.map(t=>`
 
   // Fideval: importe transferido, no saldo verificado (falta su extracto)
   const fideval = 10000, operativa = X.saldo_final;
-  const total = F.saldo_final + fideval + operativa;
+  // el banco corta cada dos meses (Ciclo 6): el saldo bueno es el del ultimo
+  // corte verificado, no el de fin de mes
+  const flexiSaldo = F.saldo_verificado || F.saldo_final;
+  const flexiFecha = F.saldo_verificado_fecha || "31/07/2026";
+  const total = flexiSaldo + fideval + operativa;
 
   // saldos con céntimos: son cifras que se contrastan contra el banco y
   // redondearlas hace dudar de si el dato es el mismo
   el("tiles-caja").innerHTML = [
     {l:"Caja total de la agencia", v:fmt2(total), k:"is-pos", c:"pos",
-     f:"Sumando las tres cuentas al 31 de julio"},
-    {l:"FlexiAhorro", v:fmt2(F.saldo_final), k:"",
-     f:"Saldo verificado en el extracto del banco. Cuenta puente: entra y sale a diario"},
+     f:`Sumando las tres cuentas · FlexiAhorro al ${flexiFecha}`},
+    {l:"FlexiAhorro", v:fmt2(flexiSaldo), k:"",
+     f:`Verificado contra el extracto del corte del ${flexiFecha}. Cuenta puente: entra y sale a diario`},
     {l:"Fideval", v:fmt2(fideval), k:"is-warn",
      f:"Depositado el 26 de febrero. Falta el extracto para confirmar el saldo con intereses"},
     {l:"Cuenta operativa", v:fmt2(operativa), k:"is-neg", c:"neg",
@@ -1961,6 +1965,38 @@ el("tiles").innerHTML = tiles.map(t=>`
         <span>Diferencia<em>Mi redondeo al sumar los intereses diarios a mano</em></span>
         <span class="num pos">${fmt2(Math.abs(F.desvio_saldo))}</span></div>
       </td></tr>`;
+  // Los cortes del banco no son mensuales: esta es la conciliacion dura,
+  // contra los estados oficiales, con su saldo de cierre verificado.
+  if (F.ciclos && F.ciclos.length){
+    h += `<tr><td colspan="7" style="border-bottom:none;padding-top:26px">
+        <b style="font-family:var(--font-display);font-size:16px">
+          Los cortes reales del banco</b>
+        <div class="muted" style="font-size:12.5px;margin-top:3px">
+          La cuenta está en Ciclo 6: el banco cierra cada dos meses, no a fin
+          de mes. Contra estos cortes se verifica el saldo.</div></td></tr>`;
+    F.ciclos.forEach(c => {
+      h += `<tr><td colspan="7" style="border-bottom:none;padding:0">
+        <div class="paso">
+          <span>Del ${c.desde} al ${c.hasta}
+            <em>la hoja envió ${fmt2(c.hoja_envia)} y sacó ${fmt2(c.hoja_saca)} ·
+            el banco abonó ${fmt2(c.interes)} de interés</em></span>
+          <span class="num">${fmt2(c.saldo_cierre)}</span></div>`;
+      if (Math.abs(c.desvio) > 0.005){
+        h += `<div class="paso">
+          <span class="muted" style="font-size:12.5px">Diferencia contra la hoja
+            <em>Ahorro programado del banco: ${fmt2(c.desvio)} que entran solos,
+            sin salir de la cuenta operativa</em></span>
+          <span class="num muted">${fmt2(c.desvio)}</span></div>`;
+      }
+      h += `</td></tr>`;
+    });
+    h += `<tr><td colspan="7" style="border-bottom:none;padding:0">
+        <div class="paso res">
+          <span>Saldo verificado al ${F.saldo_verificado_fecha}</span>
+          <span class="num">${fmt2(F.saldo_verificado)}</span></div>
+        </td></tr>`;
+  }
+
   h += `</tbody>`;
   el("t-flexi").innerHTML = h;
 
