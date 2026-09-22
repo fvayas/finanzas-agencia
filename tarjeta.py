@@ -94,23 +94,42 @@ CONSUMOS = [
     ("jul", "28/06", "APPLE.COM/BILLSA",             6.99),
     ("jul", "30/06", "SUPERMERCADOS LA CASERA",     10.19),
     ("jul", "01/07", "SPEEDY COM P/R",              19.50),
+    # --- AGOSTO (07/07 - 06/08) ---
+    ("ago", "10/07", "WHATAFORM ECU",               53.20),
+    ("ago", "18/07", "OPUS CLIP ECUECU",            23.00),
+    ("ago", "28/07", "OPENAI *CHATGPT SUBSCR",      20.00),
+    ("ago", "28/07", "APPLE.COM/BILLCU",             6.99),
+    ("ago", "03/08", "PTP - DL - TIKTOK",          100.00),
+    ("ago", "03/08", "SPEEDY COM P/R",              19.50),
+    # --- SEPTIEMBRE (07/08 - 06/09) ---
+    ("sep", "10/08", "WHATAFORM ECUECU",            53.20),
+    ("sep", "18/08", "OPUS CLIP ECUECU",            23.00),
+    ("sep", "28/08", "OPENAI *CHATGPT SUBSCR",      20.00),
+    ("sep", "28/08", "APPLE.COM/BILLCU",             6.99),
+    ("sep", "01/09", "SPEEDY COM P/R",              19.50),
 ]
 
 # Retencion de IVA sobre servicios digitales e intereses de financiamiento,
 # tal y como los resume cada estado de cuenta.
+# 'membresia' aparece por primera vez en agosto: plan de recompensas 28,00 +
+# prestaciones en el exterior 16,00, con su IVA (4,20 + 2,40). Son cuotas
+# anuales de la tarjeta, no consumo de la agencia.
 CARGOS = {
-    "ene": {"ret_iva": 14.97, "interes": 1.97},
-    "feb": {"ret_iva": 15.39, "interes": 1.63},
-    "mar": {"ret_iva": 20.52, "interes": 3.22},
-    "abr": {"ret_iva": 20.52, "interes": 0.56},
-    "may": {"ret_iva": 15.05, "interes": 3.01},
-    "jun": {"ret_iva": 15.48, "interes": 3.65},
-    "jul": {"ret_iva": 15.48, "interes": 0.77},
+    "ene": {"ret_iva": 14.97, "interes": 1.97, "membresia": 0.00},
+    "feb": {"ret_iva": 15.39, "interes": 1.63, "membresia": 0.00},
+    "mar": {"ret_iva": 20.52, "interes": 3.22, "membresia": 0.00},
+    "abr": {"ret_iva": 20.52, "interes": 0.56, "membresia": 0.00},
+    "may": {"ret_iva": 15.05, "interes": 3.01, "membresia": 0.00},
+    "jun": {"ret_iva": 15.48, "interes": 3.65, "membresia": 0.00},
+    "jul": {"ret_iva": 15.48, "interes": 0.77, "membresia": 0.00},
+    "ago": {"ret_iva": 15.48, "interes": 1.46, "membresia": 50.60},
+    "sep": {"ret_iva": 15.48, "interes": 1.40, "membresia": 0.00},
 }
 
 # Total a pagar que declara cada estado, para poder validar
 TOTAL_ESTADO = {"ene": 239.74, "feb": 359.71, "mar": 494.24, "abr": 457.87,
-                "may": 543.49, "jun": 141.82, "jul": 260.94}
+                "may": 543.49, "jun": 141.82, "jul": 260.94, "ago": 260.23,
+                "sep": 324.24}
 
 
 def clasifica(desc):
@@ -158,14 +177,16 @@ def main():
 
     # las dos lineas que no son compras sino cargos del banco
     for lab, k, fam in [("Retención IVA servicios digitales", "ret_iva", "Impuestos"),
-                        ("Intereses por financiar el saldo", "interes", "Financiero")]:
+                        ("Intereses por financiar el saldo", "interes", "Financiero"),
+                        ("Membresía y prestaciones de la tarjeta", "membresia", "Financiero")]:
         conceptos.append({
             "concepto": lab, "familia": fam,
-            "total": round(sum(CARGOS[mm][k] for mm in MESES if mm in CARGOS), 2),
+            "total": round(sum(CARGOS[mm].get(k, 0) for mm in MESES if mm in CARGOS), 2),
             "n": len(MESES),
-            "por_mes": {mm: CARGOS.get(mm, {k: 0})[k] if mm in CARGOS else 0 for mm in MESES},
+            "por_mes": {mm: CARGOS[mm].get(k, 0) if mm in CARGOS else 0 for mm in MESES},
             "movs": [{"mes": mm, "fecha": "", "desc": lab,
-                      "importe": CARGOS[mm][k]} for mm in MESES if mm in CARGOS],
+                      "importe": CARGOS[mm].get(k, 0)} for mm in MESES
+                      if mm in CARGOS and CARGOS[mm].get(k, 0) > 0],
         })
 
     tot_mes = {mm: round(sum(c["por_mes"][mm] for c in conceptos), 2)

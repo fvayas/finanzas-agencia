@@ -14,8 +14,8 @@
   {
    "concepto": "Whataform",
    "familia": "Software",
-   "total": 453.97,
-   "n": 7,
+   "total": 560.37,
+   "n": 9,
    "por_mes": {
     "ene": 79.8,
     "feb": 79.8,
@@ -24,8 +24,8 @@
     "may": 28.37,
     "jun": 53.2,
     "jul": 53.2,
-    "ago": 0.0,
-    "sep": 0.0
+    "ago": 53.2,
+    "sep": 53.2
    },
    "movs": [
     {
@@ -69,14 +69,26 @@
      "fecha": "10/06",
      "desc": "WHATAFORM ECUECU",
      "importe": 53.2
+    },
+    {
+     "mes": "ago",
+     "fecha": "10/07",
+     "desc": "WHATAFORM ECU",
+     "importe": 53.2
+    },
+    {
+     "mes": "sep",
+     "fecha": "10/08",
+     "desc": "WHATAFORM ECUECU",
+     "importe": 53.2
     }
    ]
   },
   {
    "concepto": "TikTok Ads",
    "familia": "Pauta",
-   "total": 400.0,
-   "n": 4,
+   "total": 500.0,
+   "n": 5,
    "por_mes": {
     "ene": 100.0,
     "feb": 0.0,
@@ -85,7 +97,7 @@
     "may": 0.0,
     "jun": 0.0,
     "jul": 0.0,
-    "ago": 0.0,
+    "ago": 100.0,
     "sep": 0.0
    },
    "movs": [
@@ -112,14 +124,20 @@
      "fecha": "02/04",
      "desc": "DLOCAL TIKTOK",
      "importe": 100.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "03/08",
+     "desc": "PTP - DL - TIKTOK",
+     "importe": 100.0
     }
    ]
   },
   {
    "concepto": "Opus Clip",
    "familia": "Software",
-   "total": 161.0,
-   "n": 7,
+   "total": 207.0,
+   "n": 9,
    "por_mes": {
     "ene": 23.0,
     "feb": 23.0,
@@ -128,8 +146,8 @@
     "may": 23.0,
     "jun": 23.0,
     "jul": 23.0,
-    "ago": 0.0,
-    "sep": 0.0
+    "ago": 23.0,
+    "sep": 23.0
    },
    "movs": [
     {
@@ -173,14 +191,26 @@
      "fecha": "18/06",
      "desc": "OPUS CLIP ECUECU",
      "importe": 23.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "18/07",
+     "desc": "OPUS CLIP ECUECU",
+     "importe": 23.0
+    },
+    {
+     "mes": "sep",
+     "fecha": "18/08",
+     "desc": "OPUS CLIP ECUECU",
+     "importe": 23.0
     }
    ]
   },
   {
    "concepto": "ChatGPT",
    "familia": "Software",
-   "total": 140.0,
-   "n": 7,
+   "total": 180.0,
+   "n": 9,
    "por_mes": {
     "ene": 20.0,
     "feb": 20.0,
@@ -189,8 +219,8 @@
     "may": 20.0,
     "jun": 20.0,
     "jul": 20.0,
-    "ago": 0.0,
-    "sep": 0.0
+    "ago": 20.0,
+    "sep": 20.0
    },
    "movs": [
     {
@@ -234,6 +264,61 @@
      "fecha": "28/06",
      "desc": "OPENAI *CHATGPT SUBSCR",
      "importe": 20.0
+    },
+    {
+     "mes": "ago",
+     "fecha": "28/07",
+     "desc": "OPENAI *CHATGPT SUBSCR",
+     "importe": 20.0
+    },
+    {
+     "mes": "sep",
+     "fecha": "28/08",
+     "desc": "OPENAI *CHATGPT SUBSCR",
+     "importe": 20.0
+    }
+   ]
+  },
+  {
+   "concepto": "Speedy Com",
+   "familia": "Software",
+   "total": 78.0,
+   "n": 4,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 19.5,
+    "jul": 19.5,
+    "ago": 19.5,
+    "sep": 19.5
+   },
+   "movs": [
+    {
+     "mes": "jun",
+     "fecha": "01/06",
+     "desc": "SPEEDY COM P/R",
+     "importe": 19.5
+    },
+    {
+     "mes": "jul",
+     "fecha": "01/07",
+     "desc": "SPEEDY COM P/R",
+     "importe": 19.5
+    },
+    {
+     "mes": "ago",
+     "fecha": "03/08",
+     "desc": "SPEEDY COM P/R",
+     "importe": 19.5
+    },
+    {
+     "mes": "sep",
+     "fecha": "01/09",
+     "desc": "SPEEDY COM P/R",
+     "importe": 19.5
     }
    ]
   },
@@ -281,41 +366,10 @@
    ]
   },
   {
-   "concepto": "Speedy Com",
-   "familia": "Software",
-   "total": 39.0,
-   "n": 2,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 19.5,
-    "jul": 19.5,
-    "ago": 0.0,
-    "sep": 0.0
-   },
-   "movs": [
-    {
-     "mes": "jun",
-     "fecha": "01/06",
-     "desc": "SPEEDY COM P/R",
-     "importe": 19.5
-    },
-    {
-     "mes": "jul",
-     "fecha": "01/07",
-     "desc": "SPEEDY COM P/R",
-     "importe": 19.5
-    }
-   ]
-  },
-  {
    "concepto": "Apple",
    "familia": "Software",
-   "total": 28.95,
-   "n": 4,
+   "total": 42.93,
+   "n": 6,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -324,8 +378,8 @@
     "may": 14.97,
     "jun": 6.99,
     "jul": 6.99,
-    "ago": 0.0,
-    "sep": 0.0
+    "ago": 6.99,
+    "sep": 6.99
    },
    "movs": [
     {
@@ -350,6 +404,18 @@
      "mes": "jul",
      "fecha": "28/06",
      "desc": "APPLE.COM/BILLSA",
+     "importe": 6.99
+    },
+    {
+     "mes": "ago",
+     "fecha": "28/07",
+     "desc": "APPLE.COM/BILLCU",
+     "importe": 6.99
+    },
+    {
+     "mes": "sep",
+     "fecha": "28/08",
+     "desc": "APPLE.COM/BILLCU",
      "importe": 6.99
     }
    ]
@@ -400,7 +466,7 @@
   {
    "concepto": "Retención IVA servicios digitales",
    "familia": "Impuestos",
-   "total": 117.41,
+   "total": 148.37,
    "n": 9,
    "por_mes": {
     "ene": 14.97,
@@ -410,8 +476,8 @@
     "may": 15.05,
     "jun": 15.48,
     "jul": 15.48,
-    "ago": 0,
-    "sep": 0
+    "ago": 15.48,
+    "sep": 15.48
    },
    "movs": [
     {
@@ -455,13 +521,25 @@
      "fecha": "",
      "desc": "Retención IVA servicios digitales",
      "importe": 15.48
+    },
+    {
+     "mes": "ago",
+     "fecha": "",
+     "desc": "Retención IVA servicios digitales",
+     "importe": 15.48
+    },
+    {
+     "mes": "sep",
+     "fecha": "",
+     "desc": "Retención IVA servicios digitales",
+     "importe": 15.48
     }
    ]
   },
   {
    "concepto": "Intereses por financiar el saldo",
    "familia": "Financiero",
-   "total": 14.81,
+   "total": 17.67,
    "n": 9,
    "por_mes": {
     "ene": 1.97,
@@ -471,8 +549,8 @@
     "may": 3.01,
     "jun": 3.65,
     "jul": 0.77,
-    "ago": 0,
-    "sep": 0
+    "ago": 1.46,
+    "sep": 1.4
    },
    "movs": [
     {
@@ -516,6 +594,43 @@
      "fecha": "",
      "desc": "Intereses por financiar el saldo",
      "importe": 0.77
+    },
+    {
+     "mes": "ago",
+     "fecha": "",
+     "desc": "Intereses por financiar el saldo",
+     "importe": 1.46
+    },
+    {
+     "mes": "sep",
+     "fecha": "",
+     "desc": "Intereses por financiar el saldo",
+     "importe": 1.4
+    }
+   ]
+  },
+  {
+   "concepto": "Membresía y prestaciones de la tarjeta",
+   "familia": "Financiero",
+   "total": 50.6,
+   "n": 9,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 50.6,
+    "sep": 0.0
+   },
+   "movs": [
+    {
+     "mes": "ago",
+     "fecha": "",
+     "desc": "Membresía y prestaciones de la tarjeta",
+     "importe": 50.6
     }
    ]
   }
@@ -528,16 +643,16 @@
   "may": 122.29,
   "jun": 141.82,
   "jul": 149.13,
-  "ago": 0.0,
-  "sep": 0.0
+  "ago": 290.23,
+  "sep": 139.57
  },
- "total": 1419.49,
+ "total": 1849.29,
  "familias": {
-  "Software": 867.68,
-  "Pauta": 400.0,
-  "Impuestos": 117.41,
-  "Oficina": 19.59,
-  "Financiero": 14.81
+  "Software": 1113.06,
+  "Pauta": 500.0,
+  "Impuestos": 148.37,
+  "Financiero": 68.27,
+  "Oficina": 19.59
  },
  "pagado_hoja": 1548.01,
  "pagos_por_mes": {
@@ -640,7 +755,7 @@
   ],
   "sep": []
  },
- "diferencia": 128.52,
+ "diferencia": -301.28,
  "tarjeta": "Mastercard ····3129",
  "titular": "Rodriguez Ponce Ana Paula"
 }
