@@ -117,16 +117,16 @@
   },
   {
    "mes": "sep",
-   "ingresos": 7094.48,
+   "ingresos": 7214.48,
    "pauta_cobrada": 640.0,
    "pauta_pagada": 1345.12,
    "pauta_neta": 705.12,
    "costo_fijo": 5902.61,
    "costo_variable": 1323.58,
    "costo_total": 7931.31,
-   "resultado": -836.83,
-   "margen_contribucion": 5065.78,
-   "margen_pct": 71.4
+   "resultado": -716.83,
+   "margen_contribucion": 5185.78,
+   "margen_pct": 71.9
   }
  ],
  "grupos": {
@@ -161,7 +161,7 @@
    "jun": 14693.69,
    "jul": 12731.02,
    "ago": 11849.98,
-   "sep": 6909.48
+   "sep": 7029.48
   },
   "Equipos": {
    "ene": -75.0,
@@ -916,6 +916,27 @@
    }
   },
   {
+   "cliente": "Friends Guides",
+   "total": 1080.0,
+   "pct": 1.1,
+   "pagos": 9,
+   "meses_activo": 8,
+   "primer_mes": "ene",
+   "ultimo_mes": "sep",
+   "fee_promedio": 135.0,
+   "por_mes": {
+    "ene": 120.0,
+    "feb": 120.0,
+    "mar": 120.0,
+    "abr": 120.0,
+    "may": 120.0,
+    "jun": 0.0,
+    "jul": 120.0,
+    "ago": 120.0,
+    "sep": 240.0
+   }
+  },
+  {
    "cliente": "MM Wings",
    "total": 1080.0,
    "pct": 1.1,
@@ -955,27 +976,6 @@
     "jul": 0.0,
     "ago": 0.0,
     "sep": 0.0
-   }
-  },
-  {
-   "cliente": "Friends Guides",
-   "total": 960.0,
-   "pct": 1.0,
-   "pagos": 8,
-   "meses_activo": 8,
-   "primer_mes": "ene",
-   "ultimo_mes": "sep",
-   "fee_promedio": 120.0,
-   "por_mes": {
-    "ene": 120.0,
-    "feb": 120.0,
-    "mar": 120.0,
-    "abr": 120.0,
-    "may": 120.0,
-    "jun": 0.0,
-    "jul": 120.0,
-    "ago": 120.0,
-    "sep": 120.0
    }
   },
   {
@@ -5961,10 +5961,10 @@
   }
  ],
  "totales": {
-  "ingresos": 97870.49,
+  "ingresos": 97990.49,
   "costo_fijo": 75083.68,
   "costo_variable": 12168.87,
-  "resultado": 5597.77,
-  "movimientos": 649
+  "resultado": 5717.77,
+  "movimientos": 650
  }
 }
