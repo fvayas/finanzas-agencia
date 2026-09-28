@@ -117,16 +117,16 @@
   },
   {
    "mes": "sep",
-   "ingresos": 7214.48,
+   "ingresos": 7514.48,
    "pauta_cobrada": 640.0,
    "pauta_pagada": 1345.12,
    "pauta_neta": 705.12,
    "costo_fijo": 5902.61,
    "costo_variable": 1323.58,
    "costo_total": 7931.31,
-   "resultado": -716.83,
-   "margen_contribucion": 5185.78,
-   "margen_pct": 71.9
+   "resultado": -416.83,
+   "margen_contribucion": 5485.78,
+   "margen_pct": 73.0
   }
  ],
  "grupos": {
@@ -161,7 +161,7 @@
    "jun": 14693.69,
    "jul": 12731.02,
    "ago": 11849.98,
-   "sep": 7029.48
+   "sep": 7329.48
   },
   "Equipos": {
    "ene": -75.0,
@@ -498,7 +498,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 8111.12,
-   "pct": 8.4,
+   "pct": 8.3,
    "pagos": 7,
    "meses_activo": 5,
    "primer_mes": "feb",
@@ -666,7 +666,7 @@
   {
    "cliente": "Pladeco",
    "total": 3449.0,
-   "pct": 3.6,
+   "pct": 3.5,
    "pagos": 7,
    "meses_activo": 6,
    "primer_mes": "ene",
@@ -682,6 +682,27 @@
     "jul": 400.0,
     "ago": 400.0,
     "sep": 0.0
+   }
+  },
+  {
+   "cliente": "Absolute",
+   "total": 3000.0,
+   "pct": 3.1,
+   "pagos": 9,
+   "meses_activo": 9,
+   "primer_mes": "ene",
+   "ultimo_mes": "sep",
+   "fee_promedio": 333.33,
+   "por_mes": {
+    "ene": 600.0,
+    "feb": 300.0,
+    "mar": 300.0,
+    "abr": 300.0,
+    "may": 300.0,
+    "jun": 300.0,
+    "jul": 300.0,
+    "ago": 300.0,
+    "sep": 300.0
    }
   },
   {
@@ -723,27 +744,6 @@
     "jun": 679.0,
     "jul": 339.0,
     "ago": 339.5,
-    "sep": 0.0
-   }
-  },
-  {
-   "cliente": "Absolute",
-   "total": 2700.0,
-   "pct": 2.8,
-   "pagos": 8,
-   "meses_activo": 8,
-   "primer_mes": "ene",
-   "ultimo_mes": "ago",
-   "fee_promedio": 337.5,
-   "por_mes": {
-    "ene": 600.0,
-    "feb": 300.0,
-    "mar": 300.0,
-    "abr": 300.0,
-    "may": 300.0,
-    "jun": 300.0,
-    "jul": 300.0,
-    "ago": 300.0,
     "sep": 0.0
    }
   },
@@ -1065,8 +1065,8 @@
  ],
  "concentracion": {
   "top1": 11.0,
-  "top3": 28.6,
-  "top5": 42.3
+  "top3": 28.5,
+  "top5": 42.2
  },
  "equipo": [
   {
@@ -5961,10 +5961,10 @@
   }
  ],
  "totales": {
-  "ingresos": 97990.49,
+  "ingresos": 98290.49,
   "costo_fijo": 75083.68,
   "costo_variable": 12168.87,
-  "resultado": 5717.77,
-  "movimientos": 650
+  "resultado": 6017.77,
+  "movimientos": 651
  }
 }

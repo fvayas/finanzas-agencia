@@ -10398,5 +10398,21 @@
   "categoria": "Friends Guides",
   "detalle": "PAGO FRIENDS GUIDES",
   "tipo_original": "https://drive.google.com/file/d/11J0NC2ExgeGevmCnWTDvp4bmPktuRhP-/view?usp=drivesdk"
+ },
+ {
+  "fecha": "28/09/2026",
+  "anio": 2026,
+  "mes_num": 9,
+  "mes": "sep",
+  "referencia": "01-00649",
+  "descripcion": "PAGO ABSOLUTE",
+  "ingreso": 300.0,
+  "egreso": 0.0,
+  "neto": 300.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "Absolute",
+  "detalle": "PAGO ABSOLUTE",
+  "tipo_original": "https://drive.google.com/file/d/1uarmtsBu5io884t3O-WeHt8tMFqF4dFY/view?usp=drivesdk"
  }
 ]
