@@ -10734,5 +10734,21 @@
   "categoria": "Equipos y mantenimiento",
   "detalle": "MANTENIMIENTO COMPUTADORAS",
   "tipo_original": "https://drive.google.com/file/d/1a7XDU2VPoIjnHVjJejp-0kNfxN50NZE0/view?usp=drivesdk"
+ },
+ {
+  "fecha": "01/10/2026",
+  "anio": 2026,
+  "mes_num": 10,
+  "mes": "oct",
+  "referencia": "01-00670",
+  "descripcion": "PAGO LENCHO RECUPERAR",
+  "ingreso": 0.0,
+  "egreso": 40.0,
+  "neto": -40.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Egresos - Sin identificar",
+  "categoria": "REVISAR",
+  "detalle": "PAGO LENCHO RECUPERAR",
+  "tipo_original": "https://drive.google.com/file/d/1vmQisms_Y8VPcv2hxd4zCem1nWOQ1mC1/view?usp=drivesdk"
  }
 ]

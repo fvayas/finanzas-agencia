@@ -394,7 +394,7 @@
    "jul": 0.0,
    "ago": -192.6,
    "sep": -91.57,
-   "oct": 0.0
+   "oct": -40.0
   }
  },
  "no_operativo": {
@@ -4953,6 +4953,76 @@
    }
   },
   {
+   "grupo": "Egresos - Sin identificar",
+   "categoria": "REVISAR",
+   "total": 324.17,
+   "n": 7,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 192.6,
+    "sep": 91.57,
+    "oct": 40.0
+   },
+   "detalle": {
+    "ago": {
+     "movs": [
+      {
+       "fecha": "19/08/2026",
+       "desc": "PAGO SILLAS",
+       "importe": 150.0
+      },
+      {
+       "fecha": "27/08/2026",
+       "desc": "PLOMERO",
+       "importe": 10.0
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "COMISIÓN BANCARIA",
+       "importe": 0.41
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "RENOVACIÓN FIRMA ELECTRÓNICA 2 AÑOS",
+       "importe": 32.19
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "09/09/2026",
+       "desc": "PAGO DE MICROONDAS",
+       "importe": 70.41
+      },
+      {
+       "fecha": "24/09/2026",
+       "desc": "TORRAR ARGOT PASTEL LEO",
+       "importe": 21.16
+      }
+     ],
+     "razones": []
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "01/10/2026",
+       "desc": "PAGO LENCHO RECUPERAR",
+       "importe": 40.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
    "grupo": "Movilizacion",
    "categoria": "Taxis / parqueo / viaticos",
    "total": 303.75,
@@ -5206,66 +5276,6 @@
        "fecha": "22/09/2026",
        "desc": "TAXIS COMPUS",
        "importe": 2.0
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Egresos - Sin identificar",
-   "categoria": "REVISAR",
-   "total": 284.17,
-   "n": 6,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 192.6,
-    "sep": 91.57,
-    "oct": 0.0
-   },
-   "detalle": {
-    "ago": {
-     "movs": [
-      {
-       "fecha": "19/08/2026",
-       "desc": "PAGO SILLAS",
-       "importe": 150.0
-      },
-      {
-       "fecha": "27/08/2026",
-       "desc": "PLOMERO",
-       "importe": 10.0
-      },
-      {
-       "fecha": "28/08/2026",
-       "desc": "COMISIÓN BANCARIA",
-       "importe": 0.41
-      },
-      {
-       "fecha": "28/08/2026",
-       "desc": "RENOVACIÓN FIRMA ELECTRÓNICA 2 AÑOS",
-       "importe": 32.19
-      }
-     ],
-     "razones": []
-    },
-    "sep": {
-     "movs": [
-      {
-       "fecha": "09/09/2026",
-       "desc": "PAGO DE MICROONDAS",
-       "importe": 70.41
-      },
-      {
-       "fecha": "24/09/2026",
-       "desc": "TORRAR ARGOT PASTEL LEO",
-       "importe": 21.16
       }
      ],
      "razones": []
@@ -6161,6 +6171,6 @@
   "costo_fijo": 78213.68,
   "costo_variable": 12440.77,
   "resultado": 7137.64,
-  "movimientos": 671
+  "movimientos": 672
  }
 }
