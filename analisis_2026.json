@@ -131,16 +131,16 @@
   },
   {
    "mes": "oct",
-   "ingresos": 0.0,
+   "ingresos": 1235.0,
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
-   "costo_fijo": 0.0,
-   "costo_variable": 121.9,
-   "costo_total": 121.9,
-   "resultado": -121.9,
-   "margen_contribucion": -121.9,
-   "margen_pct": 0.0
+   "costo_fijo": 4417.48,
+   "costo_variable": 272.31,
+   "costo_total": 4689.79,
+   "resultado": -3454.79,
+   "margen_contribucion": 962.69,
+   "margen_pct": 78.0
   }
  ],
  "grupos": {
@@ -154,7 +154,7 @@
    "jul": -5912.16,
    "ago": -4436.16,
    "sep": -5471.16,
-   "oct": 0.0
+   "oct": -3993.25
   },
   "Estructura": {
    "ene": -588.35,
@@ -166,7 +166,7 @@
    "jul": -546.91,
    "ago": -508.94,
    "sep": -431.45,
-   "oct": 0.0
+   "oct": -400.41
   },
   "Ingresos - Fee mensual": {
    "ene": 7128.63,
@@ -178,7 +178,7 @@
    "jul": 12731.02,
    "ago": 11849.98,
    "sep": 11226.25,
-   "oct": 0.0
+   "oct": 1235.0
   },
   "Equipos": {
    "ene": -75.0,
@@ -238,7 +238,7 @@
    "jul": -1092.91,
    "ago": -1004.0,
    "sep": -1068.0,
-   "oct": 0.0
+   "oct": -150.41
   },
   "Nomina variable": {
    "ene": -24.93,
@@ -286,7 +286,7 @@
    "jul": -11.91,
    "ago": -11.91,
    "sep": 0.0,
-   "oct": 0.0
+   "oct": -23.82
   },
   "Nomina socios": {
    "ene": -3000.0,
@@ -420,7 +420,7 @@
    "jul": -900.01,
    "ago": -2362.0,
    "sep": 1499.0,
-   "oct": 0.0
+   "oct": 1270.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -494,7 +494,7 @@
   {
    "cliente": "Speedy",
    "total": 10674.0,
-   "pct": 10.5,
+   "pct": 10.4,
    "pagos": 5,
    "meses_activo": 4,
    "primer_mes": "jun",
@@ -516,7 +516,7 @@
   {
    "cliente": "Healthy Girl",
    "total": 9162.12,
-   "pct": 9.0,
+   "pct": 8.9,
    "pagos": 8,
    "meses_activo": 6,
    "primer_mes": "feb",
@@ -538,7 +538,7 @@
   {
    "cliente": "Uninova",
    "total": 8923.0,
-   "pct": 8.8,
+   "pct": 8.7,
    "pagos": 12,
    "meses_activo": 9,
    "primer_mes": "ene",
@@ -560,7 +560,7 @@
   {
    "cliente": "Fiammingo",
    "total": 7430.0,
-   "pct": 7.3,
+   "pct": 7.2,
    "pagos": 9,
    "meses_activo": 8,
    "primer_mes": "feb",
@@ -604,7 +604,7 @@
   {
    "cliente": "Velsana",
    "total": 6745.0,
-   "pct": 6.7,
+   "pct": 6.6,
    "pagos": 9,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -621,6 +621,28 @@
     "ago": 700.0,
     "sep": 700.0,
     "oct": 0.0
+   }
+  },
+  {
+   "cliente": "Cigarra",
+   "total": 4657.5,
+   "pct": 4.5,
+   "pagos": 9,
+   "meses_activo": 9,
+   "primer_mes": "ene",
+   "ultimo_mes": "oct",
+   "fee_promedio": 517.5,
+   "por_mes": {
+    "ene": 517.5,
+    "feb": 517.5,
+    "mar": 517.5,
+    "abr": 517.5,
+    "may": 517.5,
+    "jun": 517.5,
+    "jul": 517.5,
+    "ago": 517.5,
+    "sep": 0.0,
+    "oct": 517.5
    }
   },
   {
@@ -664,28 +686,6 @@
     "jul": 558.25,
     "ago": 558.25,
     "sep": 582.62,
-    "oct": 0.0
-   }
-  },
-  {
-   "cliente": "Cigarra",
-   "total": 4140.0,
-   "pct": 4.1,
-   "pagos": 8,
-   "meses_activo": 8,
-   "primer_mes": "ene",
-   "ultimo_mes": "ago",
-   "fee_promedio": 517.5,
-   "por_mes": {
-    "ene": 517.5,
-    "feb": 517.5,
-    "mar": 517.5,
-    "abr": 517.5,
-    "may": 517.5,
-    "jun": 517.5,
-    "jul": 517.5,
-    "ago": 517.5,
-    "sep": 0.0,
     "oct": 0.0
    }
   },
@@ -758,7 +758,7 @@
   {
    "cliente": "Absolute",
    "total": 3000.0,
-   "pct": 3.0,
+   "pct": 2.9,
    "pagos": 9,
    "meses_activo": 9,
    "primer_mes": "ene",
@@ -802,7 +802,7 @@
   {
    "cliente": "Chiflido",
    "total": 2700.0,
-   "pct": 2.7,
+   "pct": 2.6,
    "pagos": 9,
    "meses_activo": 9,
    "primer_mes": "ene",
@@ -824,7 +824,7 @@
   {
    "cliente": "El Motor",
    "total": 2600.0,
-   "pct": 2.6,
+   "pct": 2.5,
    "pagos": 4,
    "meses_activo": 3,
    "primer_mes": "jun",
@@ -841,6 +841,50 @@
     "ago": 0.0,
     "sep": 650.0,
     "oct": 0.0
+   }
+  },
+  {
+   "cliente": "Provita",
+   "total": 2582.5,
+   "pct": 2.5,
+   "pagos": 9,
+   "meses_activo": 8,
+   "primer_mes": "feb",
+   "ultimo_mes": "oct",
+   "fee_promedio": 322.81,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 282.5,
+    "mar": 575.0,
+    "abr": 287.5,
+    "may": 287.5,
+    "jun": 287.5,
+    "jul": 287.5,
+    "ago": 287.5,
+    "sep": 0.0,
+    "oct": 287.5
+   }
+  },
+  {
+   "cliente": "Casa del Verde",
+   "total": 2580.0,
+   "pct": 2.5,
+   "pagos": 6,
+   "meses_activo": 6,
+   "primer_mes": "abr",
+   "ultimo_mes": "oct",
+   "fee_promedio": 430.0,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 430.0,
+    "may": 430.0,
+    "jun": 430.0,
+    "jul": 430.0,
+    "ago": 430.0,
+    "sep": 0.0,
+    "oct": 430.0
    }
   },
   {
@@ -868,7 +912,7 @@
   {
    "cliente": "APC",
    "total": 2300.0,
-   "pct": 2.3,
+   "pct": 2.2,
    "pagos": 4,
    "meses_activo": 3,
    "primer_mes": "abr",
@@ -883,50 +927,6 @@
     "jun": 0.0,
     "jul": 0.0,
     "ago": 1150.0,
-    "sep": 0.0,
-    "oct": 0.0
-   }
-  },
-  {
-   "cliente": "Provita",
-   "total": 2295.0,
-   "pct": 2.3,
-   "pagos": 8,
-   "meses_activo": 7,
-   "primer_mes": "feb",
-   "ultimo_mes": "ago",
-   "fee_promedio": 327.86,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 282.5,
-    "mar": 575.0,
-    "abr": 287.5,
-    "may": 287.5,
-    "jun": 287.5,
-    "jul": 287.5,
-    "ago": 287.5,
-    "sep": 0.0,
-    "oct": 0.0
-   }
-  },
-  {
-   "cliente": "Casa del Verde",
-   "total": 2150.0,
-   "pct": 2.1,
-   "pagos": 5,
-   "meses_activo": 5,
-   "primer_mes": "abr",
-   "ultimo_mes": "ago",
-   "fee_promedio": 430.0,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 430.0,
-    "may": 430.0,
-    "jun": 430.0,
-    "jul": 430.0,
-    "ago": 430.0,
     "sep": 0.0,
     "oct": 0.0
    }
@@ -956,7 +956,7 @@
   {
    "cliente": "Pasteur",
    "total": 1280.0,
-   "pct": 1.3,
+   "pct": 1.2,
    "pagos": 2,
    "meses_activo": 2,
    "primer_mes": "ene",
@@ -1066,7 +1066,7 @@
   {
    "cliente": "Tienda Electro",
    "total": 254.0,
-   "pct": 0.3,
+   "pct": 0.2,
    "pagos": 3,
    "meses_activo": 3,
    "primer_mes": "mar",
@@ -1131,9 +1131,9 @@
   }
  ],
  "concentracion": {
-  "top1": 10.5,
-  "top3": 28.3,
-  "top5": 42.4
+  "top1": 10.4,
+  "top3": 28.0,
+  "top5": 42.0
  },
  "equipo": [
   {
@@ -1454,12 +1454,12 @@
   {
    "persona": "Alejandra Aponte",
    "grupo": "Nomina fija",
-   "total": 7905.05,
-   "meses": 9,
-   "promedio_mes": 878.34,
+   "total": 8882.55,
+   "meses": 10,
+   "promedio_mes": 888.25,
    "base": 977.91,
    "primer_mes": "ene",
-   "ultimo_mes": "sep",
+   "ultimo_mes": "oct",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1472,7 +1472,7 @@
     "jul": 977.91,
     "ago": 977.91,
     "sep": 977.5,
-    "oct": 0.0
+    "oct": 977.5
    },
    "detalle": {
     "ene": {
@@ -1606,18 +1606,31 @@
      "delta": null,
      "vs_base": -0.41,
      "cmp_base": true
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "02/10/2026",
+       "importe": 977.5,
+       "desc": "SUELDO ALEJANDRA APONTE"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": -0.41,
+     "cmp_base": true
     }
    }
   },
   {
    "persona": "Alejandro Vaca",
    "grupo": "Nomina fija",
-   "total": 6127.15,
-   "meses": 9,
-   "promedio_mes": 680.79,
+   "total": 6817.15,
+   "meses": 10,
+   "promedio_mes": 681.71,
    "base": 690.0,
    "primer_mes": "ene",
-   "ultimo_mes": "sep",
+   "ultimo_mes": "oct",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1630,7 +1643,7 @@
     "jul": 690.0,
     "ago": 690.0,
     "sep": 690.0,
-    "oct": 0.0
+    "oct": 690.0
    },
    "detalle": {
     "ene": {
@@ -1792,18 +1805,31 @@
      "delta": null,
      "vs_base": 0.0,
      "cmp_base": true
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "02/10/2026",
+       "importe": 690.0,
+       "desc": "SUELDO ALEJANDRO VACA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
     }
    }
   },
   {
    "persona": "Stalin Bonilla",
    "grupo": "Nomina fija",
-   "total": 5844.12,
-   "meses": 9,
-   "promedio_mes": 649.35,
+   "total": 6505.37,
+   "meses": 10,
+   "promedio_mes": 650.54,
    "base": 661.25,
    "primer_mes": "ene",
-   "ultimo_mes": "sep",
+   "ultimo_mes": "oct",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1816,7 +1842,7 @@
     "jul": 661.25,
     "ago": 661.25,
     "sep": 661.25,
-    "oct": 0.0
+    "oct": 661.25
    },
    "detalle": {
     "ene": {
@@ -1965,18 +1991,31 @@
      "delta": null,
      "vs_base": 0.0,
      "cmp_base": true
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "02/10/2026",
+       "importe": 661.25,
+       "desc": "SUELDO STALIN BONILLA"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
     }
    }
   },
   {
    "persona": "Estefi Jacome",
    "grupo": "Nomina fija",
-   "total": 5197.5,
-   "meses": 9,
-   "promedio_mes": 577.5,
+   "total": 5747.5,
+   "meses": 10,
+   "promedio_mes": 574.75,
    "base": 550.0,
    "primer_mes": "ene",
-   "ultimo_mes": "sep",
+   "ultimo_mes": "oct",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1989,7 +2028,7 @@
     "jul": 550.0,
     "ago": 550.0,
     "sep": 550.0,
-    "oct": 0.0
+    "oct": 550.0
    },
    "detalle": {
     "ene": {
@@ -2118,18 +2157,31 @@
      "delta": null,
      "vs_base": 0.0,
      "cmp_base": true
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "02/10/2026",
+       "importe": 550.0,
+       "desc": "SUELDO ESTEFI JACOME"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
     }
    }
   },
   {
    "persona": "Danna Cardenas",
    "grupo": "Nomina fija",
-   "total": 4345.9,
-   "meses": 9,
-   "promedio_mes": 482.88,
+   "total": 4827.9,
+   "meses": 10,
+   "promedio_mes": 482.79,
    "base": 482.0,
    "primer_mes": "ene",
-   "ultimo_mes": "sep",
+   "ultimo_mes": "oct",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -2142,7 +2194,7 @@
     "jul": 482.0,
     "ago": 482.0,
     "sep": 482.0,
-    "oct": 0.0
+    "oct": 482.0
    },
    "detalle": {
     "ene": {
@@ -2281,6 +2333,19 @@
      "delta": null,
      "vs_base": 0.0,
      "cmp_base": true
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "01/10/2026",
+       "importe": 482.0,
+       "desc": "SUELDO DANNA CARDENAS"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
     }
    }
   },
@@ -2380,12 +2445,12 @@
   {
    "persona": "Josue Lara",
    "grupo": "Nomina fija",
-   "total": 2553.5,
-   "meses": 4,
-   "promedio_mes": 638.38,
+   "total": 2841.0,
+   "meses": 5,
+   "promedio_mes": 568.2,
    "base": 575.0,
    "primer_mes": "jun",
-   "ultimo_mes": "sep",
+   "ultimo_mes": "oct",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -2398,7 +2463,7 @@
     "jul": 578.5,
     "ago": 575.0,
     "sep": 575.0,
-    "oct": 0.0
+    "oct": 287.5
    },
    "detalle": {
     "jun": {
@@ -2486,6 +2551,24 @@
      ],
      "delta": null,
      "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "02/10/2026",
+       "importe": 287.5,
+       "desc": "SUELDO JOSUE LARA QUINCENA"
+      }
+     ],
+     "razones": [
+      "cobra por quincenas, no mensual"
+     ],
+     "delta": {
+      "vs": "sep",
+      "dif": -287.5
+     },
+     "vs_base": -287.5,
      "cmp_base": true
     }
    }
@@ -2780,12 +2863,12 @@
   {
    "persona": "Leo Bigotes",
    "grupo": "Nomina fija",
-   "total": 1035.41,
-   "meses": 1,
-   "promedio_mes": 1035.41,
+   "total": 1380.41,
+   "meses": 2,
+   "promedio_mes": 690.21,
    "base": null,
    "primer_mes": "sep",
-   "ultimo_mes": "sep",
+   "ultimo_mes": "oct",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -2798,7 +2881,7 @@
     "jul": 0.0,
     "ago": 0.0,
     "sep": 1035.41,
-    "oct": 0.0
+    "oct": 345.0
    },
    "detalle": {
     "sep": {
@@ -2818,6 +2901,24 @@
       "cobra por quincenas, no mensual"
      ],
      "delta": null,
+     "vs_base": 690.41,
+     "cmp_base": false
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "02/10/2026",
+       "importe": 345.0,
+       "desc": "QUINCENA SUELDO LEO BIGOTES"
+      }
+     ],
+     "razones": [
+      "cobra por quincenas, no mensual"
+     ],
+     "delta": {
+      "vs": "sep",
+      "dif": -690.41
+     },
      "vs_base": 0.0,
      "cmp_base": false
     }
@@ -3030,8 +3131,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 80483.0,
-   "n": 84,
+   "total": 81113.0,
+   "n": 85,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -3042,7 +3143,7 @@
     "jul": 14357.0,
     "ago": 15512.0,
     "sep": 9951.0,
-    "oct": 0.0
+    "oct": 630.0
    },
    "detalle": {
     "ene": {
@@ -3509,14 +3610,24 @@
       }
      ],
      "razones": []
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "02/10/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 630.0
+      }
+     ],
+     "razones": []
     }
    }
   },
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Entrada desde FlexiAhorro",
-   "total": -70107.54,
-   "n": 65,
+   "total": -72007.54,
+   "n": 67,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -3527,7 +3638,7 @@
     "jul": -13456.99,
     "ago": -13150.0,
     "sep": -11450.0,
-    "oct": 0.0
+    "oct": -1900.0
    },
    "detalle": {
     "mar": {
@@ -3889,6 +4000,21 @@
       }
      ],
      "razones": []
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "02/10/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO SUELDO",
+       "importe": -1500.0
+      },
+      {
+       "fecha": "02/10/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO ARRIENDO",
+       "importe": -400.0
+      }
+     ],
+     "razones": []
     }
    }
   },
@@ -4040,8 +4166,8 @@
   {
    "grupo": "Estructura",
    "categoria": "Arriendo, condominio y alicuotas",
-   "total": 3699.17,
-   "n": 14,
+   "total": 4099.58,
+   "n": 15,
    "por_mes": {
     "ene": 400.41,
     "feb": 400.41,
@@ -4052,7 +4178,7 @@
     "jul": 420.41,
     "ago": 400.41,
     "sep": 420.41,
-    "oct": 0.0
+    "oct": 400.41
    },
    "detalle": {
     "ene": {
@@ -4166,6 +4292,16 @@
        "fecha": "14/09/2026",
        "desc": "PAGO CONDOMINIO",
        "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "02/10/2026",
+       "desc": "ARRIENDO OFICINA",
+       "importe": 400.41
       }
      ],
      "razones": []
@@ -4698,50 +4834,10 @@
    }
   },
   {
-   "grupo": "Marketing propio",
-   "categoria": "Uniformes y branding",
-   "total": 510.0,
-   "n": 2,
-   "por_mes": {
-    "ene": 135.0,
-    "feb": 375.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 0.0,
-    "sep": 0.0,
-    "oct": 0.0
-   },
-   "detalle": {
-    "ene": {
-     "movs": [
-      {
-       "fecha": "05/01/2026",
-       "desc": "pago 50% capuchas rafael naranjo",
-       "importe": 135.0
-      }
-     ],
-     "razones": []
-    },
-    "feb": {
-     "movs": [
-      {
-       "fecha": "09/02/2026",
-       "desc": "PAGO BRANDING A CAMILA MERLO",
-       "importe": 375.0
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
    "grupo": "Freelance y produccion",
    "categoria": "Modelos",
-   "total": 442.5,
-   "n": 12,
+   "total": 592.91,
+   "n": 13,
    "por_mes": {
     "ene": 20.0,
     "feb": 20.0,
@@ -4752,7 +4848,7 @@
     "jul": 20.0,
     "ago": 20.0,
     "sep": 40.0,
-    "oct": 0.0
+    "oct": 150.41
    },
    "detalle": {
     "ene": {
@@ -4846,6 +4942,56 @@
        "fecha": "09/09/2026",
        "desc": "PAGO MODELO HEALTHY GIRL",
        "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "02/10/2026",
+       "desc": "PAGO MODELO DAMARI",
+       "importe": 150.41
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Marketing propio",
+   "categoria": "Uniformes y branding",
+   "total": 510.0,
+   "n": 2,
+   "por_mes": {
+    "ene": 135.0,
+    "feb": 375.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 0.0,
+    "sep": 0.0,
+    "oct": 0.0
+   },
+   "detalle": {
+    "ene": {
+     "movs": [
+      {
+       "fecha": "05/01/2026",
+       "desc": "pago 50% capuchas rafael naranjo",
+       "importe": 135.0
+      }
+     ],
+     "razones": []
+    },
+    "feb": {
+     "movs": [
+      {
+       "fecha": "09/02/2026",
+       "desc": "PAGO BRANDING A CAMILA MERLO",
+       "importe": 375.0
       }
      ],
      "razones": []
@@ -5623,40 +5769,10 @@
    }
   },
   {
-   "grupo": "Freelance y produccion",
-   "categoria": "Diego Rodriguez / Juandi (locacion)",
-   "total": 110.41,
-   "n": 1,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 110.41,
-    "ago": 0.0,
-    "sep": 0.0,
-    "oct": 0.0
-   },
-   "detalle": {
-    "jul": {
-     "movs": [
-      {
-       "fecha": "03/07/2026",
-       "desc": "PAGO A DIEGO RODRIGUEZ ARRIENDO CASA Y JUANDI PRODUCCION SPEEDY",
-       "importe": 110.41
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
    "grupo": "Software y herramientas",
    "categoria": "Suscripciones",
-   "total": 95.28,
-   "n": 8,
+   "total": 119.1,
+   "n": 10,
    "por_mes": {
     "ene": 11.91,
     "feb": 11.91,
@@ -5667,7 +5783,7 @@
     "jul": 11.91,
     "ago": 11.91,
     "sep": 0.0,
-    "oct": 0.0
+    "oct": 23.82
    },
    "detalle": {
     "ene": {
@@ -5746,6 +5862,51 @@
        "fecha": "12/08/2026",
        "desc": "PAGO SISTEMA CONTABLE",
        "importe": 11.91
+      }
+     ],
+     "razones": []
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "02/10/2026",
+       "desc": "PAGO SISTEMA CONTABLE SEPTIEMBRE",
+       "importe": 11.91
+      },
+      {
+       "fecha": "02/10/2026",
+       "desc": "PAGO SISTEMA CONTABLE OCTUBRE",
+       "importe": 11.91
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Diego Rodriguez / Juandi (locacion)",
+   "total": 110.41,
+   "n": 1,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 110.41,
+    "ago": 0.0,
+    "sep": 0.0,
+    "oct": 0.0
+   },
+   "detalle": {
+    "jul": {
+     "movs": [
+      {
+       "fecha": "03/07/2026",
+       "desc": "PAGO A DIEGO RODRIGUEZ ARRIENDO CASA Y JUANDI PRODUCCION SPEEDY",
+       "importe": 110.41
       }
      ],
      "razones": []
@@ -6167,10 +6328,10 @@
   }
  ],
  "totales": {
-  "ingresos": 101826.26,
-  "costo_fijo": 78213.68,
-  "costo_variable": 12440.77,
-  "resultado": 7137.64,
-  "movimientos": 672
+  "ingresos": 103061.26,
+  "costo_fijo": 82631.16,
+  "costo_variable": 12591.18,
+  "resultado": 3804.75,
+  "movimientos": 689
  }
 }
