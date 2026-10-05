@@ -131,16 +131,16 @@
   },
   {
    "mes": "oct",
-   "ingresos": 1235.0,
+   "ingresos": 1370.0,
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
    "costo_fijo": 4417.48,
    "costo_variable": 272.31,
    "costo_total": 4689.79,
-   "resultado": -3454.79,
-   "margen_contribucion": 962.69,
-   "margen_pct": 78.0
+   "resultado": -3319.79,
+   "margen_contribucion": 1097.69,
+   "margen_pct": 80.1
   }
  ],
  "grupos": {
@@ -178,7 +178,7 @@
    "jul": 12731.02,
    "ago": 11849.98,
    "sep": 11226.25,
-   "oct": 1235.0
+   "oct": 1370.0
   },
   "Equipos": {
    "ene": -75.0,
@@ -714,7 +714,7 @@
   {
    "cliente": "Pladeco",
    "total": 3849.0,
-   "pct": 3.8,
+   "pct": 3.7,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "ene",
@@ -976,6 +976,28 @@
    }
   },
   {
+   "cliente": "MM Wings",
+   "total": 1215.0,
+   "pct": 1.2,
+   "pagos": 9,
+   "meses_activo": 8,
+   "primer_mes": "feb",
+   "ultimo_mes": "oct",
+   "fee_promedio": 151.88,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 270.0,
+    "mar": 135.0,
+    "abr": 135.0,
+    "may": 135.0,
+    "jun": 135.0,
+    "jul": 135.0,
+    "ago": 135.0,
+    "sep": 0.0,
+    "oct": 135.0
+   }
+  },
+  {
    "cliente": "Friends Guides",
    "total": 1080.0,
    "pct": 1.1,
@@ -994,28 +1016,6 @@
     "jul": 120.0,
     "ago": 120.0,
     "sep": 240.0,
-    "oct": 0.0
-   }
-  },
-  {
-   "cliente": "MM Wings",
-   "total": 1080.0,
-   "pct": 1.1,
-   "pagos": 8,
-   "meses_activo": 7,
-   "primer_mes": "feb",
-   "ultimo_mes": "ago",
-   "fee_promedio": 154.29,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 270.0,
-    "mar": 135.0,
-    "abr": 135.0,
-    "may": 135.0,
-    "jun": 135.0,
-    "jul": 135.0,
-    "ago": 135.0,
-    "sep": 0.0,
     "oct": 0.0
    }
   },
@@ -6328,10 +6328,10 @@
   }
  ],
  "totales": {
-  "ingresos": 103061.26,
+  "ingresos": 103196.26,
   "costo_fijo": 82631.16,
   "costo_variable": 12591.18,
-  "resultado": 3804.75,
-  "movimientos": 689
+  "resultado": 3939.75,
+  "movimientos": 690
  }
 }
