@@ -205,6 +205,11 @@ function registrar(datos) {
   if (!(datos.monto > 0)) throw new Error("El monto debe ser mayor que cero.");
   const desc = String(datos.descripcion || "").trim().toUpperCase();
   if (desc.length < 3) throw new Error("Describe el movimiento.");
+  // El comprobante es obligatorio. La app ya lo exige, pero la comprobacion
+  // de verdad va aqui: el formulario se puede saltar, esto no.
+  if (!(datos.fotos && datos.fotos.length)) {
+    throw new Error("Falta el comprobante: sin foto no se registra el movimiento.");
+  }
 
   // una sola persona escribe a la vez: sin esto, dos capturas simultáneas
   // se llevarían la misma referencia y el mismo saldo

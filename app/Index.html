@@ -281,7 +281,7 @@
   </div>
 
   <div class="bloque">
-    <span class="rotulo">Comprobante</span>
+    <span class="rotulo">Comprobante <b style="color:var(--rojo)">· obligatorio</b></span>
     <div class="foto-zona" id="fz" onclick="document.getElementById('fotos').click()">
       <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -329,7 +329,7 @@
   </div>
 
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v23</div>
+    letter-spacing:.08em; margin-top:4px">v24</div>
 </form>
 
 <script>
@@ -407,7 +407,7 @@
     if (v !== limpio) $("monto").value = limpio;
   });
   // sello de versión, para saber qué copia carga el teléfono
-  console.log("app v23");
+  console.log("app v24");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
@@ -620,11 +620,11 @@
     const cola = leeCola();
     try { cola.push(datos); guardaCola(cola); }
     catch (e) {
-      // sin sitio para la foto: vale más el registro que el comprobante
-      const sinFotos = Object.assign({}, datos, { fotos: [] });
-      try { cola.push(sinFotos); guardaCola(cola);
-        alert("Sin espacio para la foto: el registro se guardó sin comprobante."); }
-      catch (e2) { return false; }
+      // antes se guardaba sin la foto para no perder el registro. Ya no:
+      // un movimiento sin comprobante no entra, ni siquiera sin señal.
+      alert("No hay espacio en el teléfono para guardar la foto.\n\n" +
+            "Libera espacio y vuelve a registrarlo, o hazlo cuando tengas señal.");
+      return false;
     }
     localStorage.setItem("clave", datos.clave);
     pintaCola();
@@ -675,6 +675,11 @@
     const falla = m => { err.textContent = m; err.style.display = "block";
       btn.disabled = false; btn.textContent = "Registrar"; };
     try {
+      // sin comprobante no se registra: el libro sin respaldo no sirve de nada
+      if (!fotos.files.length) {
+        fz.scrollIntoView({behavior:"smooth", block:"center"});
+        return falla("Falta el comprobante. Hazle una foto antes de registrar.");
+      }
       const imgs = await Promise.all([...fotos.files].map(leer));
       const monto = leerMonto($("monto").value);
       if (!(monto > 0)) return falla("Monto no válido. Ejemplos: 150,50 · 1.500 · 89.99");
