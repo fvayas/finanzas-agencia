@@ -281,7 +281,7 @@
   </div>
 
   <div class="bloque">
-    <span class="rotulo">Comprobante <b style="color:var(--rojo)">· obligatorio</b></span>
+    <span class="rotulo">Comprobante <b id="fz-obl" style="color:var(--rojo)">· obligatorio</b></span>
     <div class="foto-zona" id="fz" onclick="document.getElementById('fotos').click()">
       <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -329,7 +329,7 @@
   </div>
 
   <div style="text-align:center; font-size:10px; color:var(--ink3);
-    letter-spacing:.08em; margin-top:4px">v24</div>
+    letter-spacing:.08em; margin-top:4px">v25</div>
 </form>
 
 <script>
@@ -353,6 +353,10 @@
   const FREELANCE = ["NICOLAS ENCALADA","JUAN PABLO NIETO","PRIS RODRIGUEZ",
     "DIEGO RODRIGUEZ","SOFIA GARZON","ISMAEL MAYORGA","MODELO","ACTOR",
     "VIDEOGRAFO","FLORES","PLANTAS"];
+
+  // por debajo de este importe el comprobante deja de ser obligatorio:
+  // son las comisiones e intereses que el banco carga sin papel
+  const MIN_SIN_FOTO = 1;
 
   const $ = id => document.getElementById(id);
 
@@ -405,9 +409,14 @@
   $("monto").addEventListener("input", () => {
     const v = $("monto").value, limpio = v.replace(/[^\d.,]/g, "");
     if (v !== limpio) $("monto").value = limpio;
+    // el rotulo deja de pedir foto en cuanto el monto baja del minimo
+    const n = leerMonto($("monto").value);
+    const libre = n > 0 && n < MIN_SIN_FOTO;
+    $("fz-obl").textContent = libre ? "· opcional" : "· obligatorio";
+    $("fz-obl").style.color = libre ? "var(--ink3)" : "var(--rojo)";
   });
   // sello de versión, para saber qué copia carga el teléfono
-  console.log("app v24");
+  console.log("app v25");
   const hoyEC = () => new Date(Date.now() - 5*3600*1000).toISOString().slice(0,10);
 
   $("fecha").value = hoyEC();
@@ -675,14 +684,16 @@
     const falla = m => { err.textContent = m; err.style.display = "block";
       btn.disabled = false; btn.textContent = "Registrar"; };
     try {
-      // sin comprobante no se registra: el libro sin respaldo no sirve de nada
-      if (!fotos.files.length) {
-        fz.scrollIntoView({behavior:"smooth", block:"center"});
-        return falla("Falta el comprobante. Hazle una foto antes de registrar.");
-      }
-      const imgs = await Promise.all([...fotos.files].map(leer));
       const monto = leerMonto($("monto").value);
       if (!(monto > 0)) return falla("Monto no válido. Ejemplos: 150,50 · 1.500 · 89.99");
+      // Sin comprobante no se registra. Excepcion: los centavos que carga el
+      // banco solo (comisiones, intereses) no tienen papel que fotografiar.
+      if (!fotos.files.length && monto >= MIN_SIN_FOTO) {
+        fz.scrollIntoView({behavior:"smooth", block:"center"});
+        return falla("Falta el comprobante. Hazle una foto antes de registrar." +
+                     " (Solo los movimientos de menos de $1 van sin foto.)");
+      }
+      const imgs = await Promise.all([...fotos.files].map(leer));
       const tipo = document.querySelector("input[name=tipo]:checked").value;
       const fecha = $("fecha").value;
       const datos = { clave: clave.value, tipo: tipo, fecha: fecha,

@@ -26,6 +26,8 @@ const HOJA_GID = 535711988;   // id fijo de la pestaña: no cambia ni renombrán
 const CARPETA_RAIZ = "Comprobantes Finanzas";
 const REPO = "fvayas/finanzas-agencia";
 const ZONA = "America/Guayaquil";
+// importe por debajo del cual no se exige comprobante
+const MIN_SIN_FOTO = 1;
 
 function doGet() {
   return HtmlService.createTemplateFromFile("Index")
@@ -207,7 +209,9 @@ function registrar(datos) {
   if (desc.length < 3) throw new Error("Describe el movimiento.");
   // El comprobante es obligatorio. La app ya lo exige, pero la comprobacion
   // de verdad va aqui: el formulario se puede saltar, esto no.
-  if (!(datos.fotos && datos.fotos.length)) {
+  // Unica excepcion: por debajo de MIN_SIN_FOTO estan las comisiones e
+  // intereses que el banco carga solo, y de esos no hay papel que fotografiar.
+  if (!(datos.fotos && datos.fotos.length) && Number(datos.monto) >= MIN_SIN_FOTO) {
     throw new Error("Falta el comprobante: sin foto no se registra el movimiento.");
   }
 
