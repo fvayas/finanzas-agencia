@@ -9475,8 +9475,8 @@
    "ret_ir": 0,
    "ret_iva": 0,
    "cambios": {},
-   "cobrado_total": 254.0,
-   "honorario_total": 254.0,
+   "cobrado_total": 362.0,
+   "honorario_total": 362.0,
    "pauta_total": 0.0,
    "puntual_total": 0.0,
    "por_mes": {
@@ -9535,10 +9535,10 @@
      "cobrado": 0.0
     },
     "oct": {
-     "honorario": 0.0,
+     "honorario": 108.0,
      "pauta": 0.0,
      "puntual": 0.0,
-     "cobrado": 0.0
+     "cobrado": 108.0
     }
    },
    "pendiente": 0,
@@ -9633,28 +9633,39 @@
     "ago": {
      "movs": [],
      "razones": [
-      "dejó de cobrarse a partir de aquí"
+      "no hubo cobro este mes; se regularizó en otro"
      ],
      "esperado": null
     },
     "sep": {
      "movs": [],
      "razones": [
-      "dejó de cobrarse a partir de aquí"
+      "no hubo cobro este mes; se regularizó en otro"
      ],
      "esperado": null
     },
     "oct": {
-     "movs": [],
-     "razones": [
-      "dejó de cobrarse a partir de aquí"
+     "movs": [
+      {
+       "mes": "oct",
+       "fecha": "05/10/2026",
+       "desc": "TIENDA ELECTRO",
+       "importe": 108.0,
+       "tipo": "honorario",
+       "honorario": 108.0,
+       "pauta": 0.0,
+       "puntual": 0.0,
+       "esperado": null,
+       "desvio": null
+      }
      ],
+     "razones": [],
      "esperado": null
     }
    },
-   "meses_activo": 3,
+   "meses_activo": 4,
    "primer_mes": "mar",
-   "ultimo_mes": "jul",
+   "ultimo_mes": "oct",
    "cuadra": null,
    "desvios": [],
    "dobles": [],
@@ -9691,6 +9702,18 @@
      "importe": 72.0,
      "tipo": "honorario",
      "honorario": 72.0,
+     "pauta": 0.0,
+     "puntual": 0.0,
+     "esperado": null,
+     "desvio": null
+    },
+    {
+     "mes": "oct",
+     "fecha": "05/10/2026",
+     "desc": "TIENDA ELECTRO",
+     "importe": 108.0,
+     "tipo": "honorario",
+     "honorario": 108.0,
      "pauta": 0.0,
      "puntual": 0.0,
      "esperado": null,
@@ -10084,10 +10107,10 @@
   }
  ],
  "totales": {
-  "honorario": 96073.75,
+  "honorario": 96181.75,
   "pauta": 9348.12,
   "puntual": 5780.27,
-  "cobrado": 111202.14
+  "cobrado": 111310.14
  },
  "honorarios_recurrentes_mes": 12619.98,
  "retenido_mes": 825.02,

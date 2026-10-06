@@ -131,16 +131,16 @@
   },
   {
    "mes": "oct",
-   "ingresos": 1370.0,
+   "ingresos": 1478.0,
    "pauta_cobrada": 0.0,
    "pauta_pagada": -0.0,
    "pauta_neta": -0.0,
    "costo_fijo": 4417.48,
    "costo_variable": 272.31,
    "costo_total": 4689.79,
-   "resultado": -3319.79,
-   "margen_contribucion": 1097.69,
-   "margen_pct": 80.1
+   "resultado": -3211.79,
+   "margen_contribucion": 1205.69,
+   "margen_pct": 81.6
   }
  ],
  "grupos": {
@@ -178,7 +178,7 @@
    "jul": 12731.02,
    "ago": 11849.98,
    "sep": 11226.25,
-   "oct": 1370.0
+   "oct": 1478.0
   },
   "Equipos": {
    "ene": -75.0,
@@ -582,7 +582,7 @@
   {
    "cliente": "Samari",
    "total": 6934.35,
-   "pct": 6.8,
+   "pct": 6.7,
    "pagos": 12,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -890,7 +890,7 @@
   {
    "cliente": "Tartelier",
    "total": 2415.0,
-   "pct": 2.4,
+   "pct": 2.3,
    "pagos": 7,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -1065,13 +1065,13 @@
   },
   {
    "cliente": "Tienda Electro",
-   "total": 254.0,
-   "pct": 0.2,
-   "pagos": 3,
-   "meses_activo": 3,
+   "total": 362.0,
+   "pct": 0.4,
+   "pagos": 4,
+   "meses_activo": 4,
    "primer_mes": "mar",
-   "ultimo_mes": "jul",
-   "fee_promedio": 84.67,
+   "ultimo_mes": "oct",
+   "fee_promedio": 90.5,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -1082,7 +1082,7 @@
     "jul": 72.0,
     "ago": 0.0,
     "sep": 0.0,
-    "oct": 0.0
+    "oct": 108.0
    }
   },
   {
@@ -1133,7 +1133,7 @@
  "concentracion": {
   "top1": 10.4,
   "top3": 28.0,
-  "top5": 42.0
+  "top5": 41.9
  },
  "equipo": [
   {
@@ -6328,10 +6328,10 @@
   }
  ],
  "totales": {
-  "ingresos": 103196.26,
+  "ingresos": 103304.26,
   "costo_fijo": 82631.16,
   "costo_variable": 12591.18,
-  "resultado": 3939.75,
-  "movimientos": 690
+  "resultado": 4047.75,
+  "movimientos": 691
  }
 }

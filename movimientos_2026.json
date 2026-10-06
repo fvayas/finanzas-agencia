@@ -11038,5 +11038,21 @@
   "categoria": "MM Wings",
   "detalle": "PAGO MM WINGS",
   "tipo_original": "https://drive.google.com/file/d/1M3qktyJdht-ZOwSNRz5B_DhnkZOp-o4q/view?usp=drivesdk"
+ },
+ {
+  "fecha": "05/10/2026",
+  "anio": 2026,
+  "mes_num": 10,
+  "mes": "oct",
+  "referencia": "01-00689",
+  "descripcion": "TIENDA ELECTRO",
+  "ingreso": 108.0,
+  "egreso": 0.0,
+  "neto": 108.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "Tienda Electro",
+  "detalle": "TIENDA ELECTRO",
+  "tipo_original": "https://drive.google.com/file/d/1xArACTzAfM-64suNQvMQbBrA6OCf4-Eg/view?usp=drivesdk"
  }
 ]
