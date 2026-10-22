@@ -11278,5 +11278,21 @@
   "categoria": "Impuestos",
   "detalle": "PAGO IMPUESTOS",
   "tipo_original": "https://drive.google.com/file/d/18ZL7WDBqFmw5B2LrmFZXjiu1Epdk7rSK/view?usp=drivesdk"
+ },
+ {
+  "fecha": "22/10/2026",
+  "anio": 2026,
+  "mes_num": 10,
+  "mes": "oct",
+  "referencia": "01-00704",
+  "descripcion": "PAGO FRIENDS GUIDES AGOSTO",
+  "ingreso": 120.0,
+  "egreso": 0.0,
+  "neto": 120.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Ingresos - Fee mensual",
+  "categoria": "Friends Guides",
+  "detalle": "PAGO FRIENDS GUIDES AGOSTO",
+  "tipo_original": "https://drive.google.com/file/d/1NgEwGfEa5RFFtFSSmMHwJapcVhdStTzZ/view?usp=drivesdk"
  }
 ]

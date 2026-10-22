@@ -131,16 +131,16 @@
   },
   {
    "mes": "oct",
-   "ingresos": 2923.0,
+   "ingresos": 3043.0,
    "pauta_cobrada": 0.0,
    "pauta_pagada": 1696.92,
    "pauta_neta": 1696.92,
    "costo_fijo": 4843.63,
    "costo_variable": 328.6,
    "costo_total": 6869.15,
-   "resultado": -3946.15,
-   "margen_contribucion": 897.48,
-   "margen_pct": 30.7
+   "resultado": -3826.15,
+   "margen_contribucion": 1017.48,
+   "margen_pct": 33.4
   }
  ],
  "grupos": {
@@ -178,7 +178,7 @@
    "jul": 12731.02,
    "ago": 11849.98,
    "sep": 11226.25,
-   "oct": 2923.0
+   "oct": 3043.0
   },
   "Equipos": {
    "ene": -75.0,
@@ -582,7 +582,7 @@
   {
    "cliente": "Samari",
    "total": 6934.35,
-   "pct": 6.7,
+   "pct": 6.6,
    "pagos": 12,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -758,7 +758,7 @@
   {
    "cliente": "Plasticaucho",
    "total": 3075.5,
-   "pct": 3.0,
+   "pct": 2.9,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -999,13 +999,13 @@
   },
   {
    "cliente": "Friends Guides",
-   "total": 1080.0,
-   "pct": 1.0,
-   "pagos": 9,
-   "meses_activo": 8,
+   "total": 1200.0,
+   "pct": 1.2,
+   "pagos": 10,
+   "meses_activo": 9,
    "primer_mes": "ene",
-   "ultimo_mes": "sep",
-   "fee_promedio": 135.0,
+   "ultimo_mes": "oct",
+   "fee_promedio": 133.33,
    "por_mes": {
     "ene": 120.0,
     "feb": 120.0,
@@ -1016,7 +1016,7 @@
     "jul": 120.0,
     "ago": 120.0,
     "sep": 240.0,
-    "oct": 0.0
+    "oct": 120.0
    }
   },
   {
@@ -1133,7 +1133,7 @@
  "concentracion": {
   "top1": 10.2,
   "top3": 27.6,
-  "top5": 41.4
+  "top5": 41.3
  },
  "equipo": [
   {
@@ -6398,10 +6398,10 @@
   }
  ],
  "totales": {
-  "ingresos": 104749.26,
+  "ingresos": 104869.26,
   "costo_fijo": 83057.31,
   "costo_variable": 12647.47,
-  "resultado": 3313.39,
-  "movimientos": 705
+  "resultado": 3433.39,
+  "movimientos": 706
  }
 }
