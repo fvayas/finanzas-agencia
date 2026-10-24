@@ -136,11 +136,11 @@
    "pauta_pagada": 1696.92,
    "pauta_neta": 1696.92,
    "costo_fijo": 4843.63,
-   "costo_variable": 328.6,
-   "costo_total": 6869.15,
-   "resultado": -3526.15,
-   "margen_contribucion": 1317.48,
-   "margen_pct": 39.4
+   "costo_variable": 1228.6,
+   "costo_total": 7769.15,
+   "resultado": -4426.15,
+   "margen_contribucion": 417.48,
+   "margen_pct": 12.5
   }
  ],
  "grupos": {
@@ -238,7 +238,7 @@
    "jul": -1092.91,
    "ago": -1004.0,
    "sep": -1068.0,
-   "oct": -150.41
+   "oct": -1050.41
   },
   "Nomina variable": {
    "ene": -24.93,
@@ -4880,6 +4880,61 @@
   },
   {
    "grupo": "Freelance y produccion",
+   "categoria": "Gasto de proyecto",
+   "total": 928.0,
+   "n": 4,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 20.0,
+    "sep": 8.0,
+    "oct": 900.0
+   },
+   "detalle": {
+    "ago": {
+     "movs": [
+      {
+       "fecha": "12/08/2026",
+       "desc": "ACTUALIZACIÓN WEB FIAMMINGO",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "04/09/2026",
+       "desc": "GASTO PARA PRODUCCIÓN HEALTHY",
+       "importe": 2.04
+      },
+      {
+       "fecha": "04/09/2026",
+       "desc": "GASTO PARA PRODUCCIÓN HEALTHY",
+       "importe": 5.96
+      }
+     ],
+     "razones": []
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "23/10/2026",
+       "desc": "PAGO UNINOVA",
+       "importe": 900.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
    "categoria": "Modelos",
    "total": 592.91,
    "n": 13,
@@ -6045,51 +6100,6 @@
   },
   {
    "grupo": "Freelance y produccion",
-   "categoria": "Gasto de proyecto",
-   "total": 28.0,
-   "n": 3,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 20.0,
-    "sep": 8.0,
-    "oct": 0.0
-   },
-   "detalle": {
-    "ago": {
-     "movs": [
-      {
-       "fecha": "12/08/2026",
-       "desc": "ACTUALIZACIÓN WEB FIAMMINGO",
-       "importe": 20.0
-      }
-     ],
-     "razones": []
-    },
-    "sep": {
-     "movs": [
-      {
-       "fecha": "04/09/2026",
-       "desc": "GASTO PARA PRODUCCIÓN HEALTHY",
-       "importe": 2.04
-      },
-      {
-       "fecha": "04/09/2026",
-       "desc": "GASTO PARA PRODUCCIÓN HEALTHY",
-       "importe": 5.96
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Freelance y produccion",
    "categoria": "Sofia Garzon (flores/deco)",
    "total": 22.0,
    "n": 1,
@@ -6400,8 +6410,8 @@
  "totales": {
   "ingresos": 105169.26,
   "costo_fijo": 83057.31,
-  "costo_variable": 12647.47,
-  "resultado": 3733.39,
-  "movimientos": 707
+  "costo_variable": 13547.47,
+  "resultado": 2833.39,
+  "movimientos": 708
  }
 }

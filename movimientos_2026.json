@@ -11310,5 +11310,21 @@
   "categoria": "Absolute",
   "detalle": "PAGO ABSOLUTE",
   "tipo_original": "https://drive.google.com/file/d/19Bh2aIG4qPREmKkc1gXgyb8lcxtqwdHT/view?usp=drivesdk"
+ },
+ {
+  "fecha": "23/10/2026",
+  "anio": 2026,
+  "mes_num": 10,
+  "mes": "oct",
+  "referencia": "01-00706",
+  "descripcion": "PAGO UNINOVA",
+  "ingreso": 0.0,
+  "egreso": 900.0,
+  "neto": -900.0,
+  "naturaleza": "OPERATIVO",
+  "grupo": "Freelance y produccion",
+  "categoria": "Gasto de proyecto",
+  "detalle": "Uninova",
+  "tipo_original": "https://drive.google.com/file/d/11Z0j56sd4-nSlX0o4EoJGepQAhEfjs6O/view?usp=drivesdk"
  }
 ]
