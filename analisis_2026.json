@@ -131,16 +131,16 @@
   },
   {
    "mes": "oct",
-   "ingresos": 3343.0,
-   "pauta_cobrada": 0.0,
+   "ingresos": 8780.83,
+   "pauta_cobrada": 1301.0,
    "pauta_pagada": 1696.92,
-   "pauta_neta": 1696.92,
-   "costo_fijo": 4843.63,
-   "costo_variable": 1228.6,
-   "costo_total": 7769.15,
-   "resultado": -4426.15,
-   "margen_contribucion": 417.48,
-   "margen_pct": 12.5
+   "pauta_neta": 395.92,
+   "costo_fijo": 8716.61,
+   "costo_variable": 416.81,
+   "costo_total": 9529.34,
+   "resultado": -748.51,
+   "margen_contribucion": 7968.1,
+   "margen_pct": 90.7
   }
  ],
  "grupos": {
@@ -154,7 +154,7 @@
    "jul": -5912.16,
    "ago": -4436.16,
    "sep": -5471.16,
-   "oct": -3993.25
+   "oct": -4780.75
   },
   "Estructura": {
    "ene": -588.35,
@@ -166,7 +166,7 @@
    "jul": -546.91,
    "ago": -508.94,
    "sep": -431.45,
-   "oct": -400.41
+   "oct": -485.89
   },
   "Ingresos - Fee mensual": {
    "ene": 7128.63,
@@ -178,7 +178,7 @@
    "jul": 12731.02,
    "ago": 11849.98,
    "sep": 11226.25,
-   "oct": 3343.0
+   "oct": 9326.83
   },
   "Equipos": {
    "ene": -75.0,
@@ -214,7 +214,7 @@
    "jul": -18.34,
    "ago": -62.52,
    "sep": -43.09,
-   "oct": -56.29
+   "oct": -83.36
   },
   "Pauta": {
    "ene": -574.03,
@@ -238,7 +238,7 @@
    "jul": -1092.91,
    "ago": -1004.0,
    "sep": -1068.0,
-   "oct": -1050.41
+   "oct": -170.41
   },
   "Nomina variable": {
    "ene": -24.93,
@@ -274,7 +274,7 @@
    "jul": -312.1,
    "ago": -75.56,
    "sep": -356.49,
-   "oct": 0.0
+   "oct": -30.0
   },
   "Software y herramientas": {
    "ene": -11.91,
@@ -298,7 +298,7 @@
    "jul": -3000.0,
    "ago": -3000.0,
    "sep": -3130.0,
-   "oct": 0.0
+   "oct": -3000.0
   },
   "Otros ingresos": {
    "ene": 0.14,
@@ -346,7 +346,7 @@
    "jul": -23.41,
    "ago": -24.91,
    "sep": -6.0,
-   "oct": 0.0
+   "oct": -11.14
   },
   "Pasantias": {
    "ene": 0.0,
@@ -370,7 +370,7 @@
    "jul": 640.0,
    "ago": 1667.0,
    "sep": 1265.0,
-   "oct": 0.0
+   "oct": 640.0
   },
   "Ingresos - Sin identificar": {
    "ene": 0.0,
@@ -382,7 +382,7 @@
    "jul": 0.0,
    "ago": 0.0,
    "sep": 0.0,
-   "oct": 0.0
+   "oct": 115.0
   },
   "Egresos - Sin identificar": {
    "ene": 0.0,
@@ -394,7 +394,7 @@
    "jul": 0.0,
    "ago": -192.6,
    "sep": -91.57,
-   "oct": -40.0
+   "oct": -185.5
   }
  },
  "no_operativo": {
@@ -420,7 +420,7 @@
    "jul": -900.01,
    "ago": -2362.0,
    "sep": 1499.0,
-   "oct": 1840.0
+   "oct": -1240.0
   },
   "Retiro de socios": {
    "ene": 0.0,
@@ -494,7 +494,7 @@
   {
    "cliente": "Speedy",
    "total": 10674.0,
-   "pct": 10.2,
+   "pct": 9.6,
    "pagos": 5,
    "meses_activo": 4,
    "primer_mes": "jun",
@@ -515,13 +515,13 @@
   },
   {
    "cliente": "Healthy Girl",
-   "total": 9162.12,
-   "pct": 8.8,
-   "pagos": 8,
-   "meses_activo": 6,
+   "total": 10513.12,
+   "pct": 9.5,
+   "pagos": 9,
+   "meses_activo": 7,
    "primer_mes": "feb",
-   "ultimo_mes": "sep",
-   "fee_promedio": 1527.02,
+   "ultimo_mes": "oct",
+   "fee_promedio": 1501.87,
    "por_mes": {
     "ene": 0.0,
     "feb": 1079.37,
@@ -532,18 +532,18 @@
     "jul": 1128.5,
     "ago": 0.0,
     "sep": 1051.0,
-    "oct": 0.0
+    "oct": 1351.0
    }
   },
   {
    "cliente": "Uninova",
-   "total": 8923.0,
-   "pct": 8.5,
-   "pagos": 12,
-   "meses_activo": 9,
+   "total": 9823.0,
+   "pct": 8.9,
+   "pagos": 13,
+   "meses_activo": 10,
    "primer_mes": "ene",
-   "ultimo_mes": "sep",
-   "fee_promedio": 991.44,
+   "ultimo_mes": "oct",
+   "fee_promedio": 982.3,
    "por_mes": {
     "ene": 900.0,
     "feb": 900.0,
@@ -554,18 +554,18 @@
     "jul": 1256.0,
     "ago": 1147.0,
     "sep": 1120.0,
-    "oct": 0.0
+    "oct": 900.0
    }
   },
   {
    "cliente": "Fiammingo",
-   "total": 7430.0,
-   "pct": 7.1,
-   "pagos": 9,
-   "meses_activo": 8,
+   "total": 8453.5,
+   "pct": 7.6,
+   "pagos": 10,
+   "meses_activo": 9,
    "primer_mes": "feb",
-   "ultimo_mes": "sep",
-   "fee_promedio": 928.75,
+   "ultimo_mes": "oct",
+   "fee_promedio": 939.28,
    "por_mes": {
     "ene": 0.0,
     "feb": 920.0,
@@ -576,18 +576,18 @@
     "jul": 920.0,
     "ago": 990.0,
     "sep": 920.0,
-    "oct": 0.0
+    "oct": 1023.5
    }
   },
   {
    "cliente": "Samari",
-   "total": 6934.35,
-   "pct": 6.6,
-   "pagos": 12,
-   "meses_activo": 8,
+   "total": 7655.58,
+   "pct": 6.9,
+   "pagos": 13,
+   "meses_activo": 9,
    "primer_mes": "ene",
-   "ultimo_mes": "sep",
-   "fee_promedio": 866.79,
+   "ultimo_mes": "oct",
+   "fee_promedio": 850.62,
    "por_mes": {
     "ene": 738.13,
     "feb": 670.13,
@@ -598,18 +598,18 @@
     "jul": 721.23,
     "ago": 721.23,
     "sep": 883.63,
-    "oct": 0.0
+    "oct": 721.23
    }
   },
   {
    "cliente": "Velsana",
-   "total": 6745.0,
-   "pct": 6.4,
-   "pagos": 9,
-   "meses_activo": 8,
+   "total": 7445.0,
+   "pct": 6.7,
+   "pagos": 10,
+   "meses_activo": 9,
    "primer_mes": "ene",
-   "ultimo_mes": "sep",
-   "fee_promedio": 843.12,
+   "ultimo_mes": "oct",
+   "fee_promedio": 827.22,
    "por_mes": {
     "ene": 640.0,
     "feb": 1135.0,
@@ -620,13 +620,35 @@
     "jul": 700.0,
     "ago": 700.0,
     "sep": 700.0,
-    "oct": 0.0
+    "oct": 700.0
+   }
+  },
+  {
+   "cliente": "Flota Imbabura",
+   "total": 5041.23,
+   "pct": 4.6,
+   "pagos": 10,
+   "meses_activo": 9,
+   "primer_mes": "feb",
+   "ultimo_mes": "oct",
+   "fee_promedio": 560.14,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 559.63,
+    "mar": 559.63,
+    "abr": 558.25,
+    "may": 558.25,
+    "jun": 558.25,
+    "jul": 558.25,
+    "ago": 558.25,
+    "sep": 582.62,
+    "oct": 548.1
    }
   },
   {
    "cliente": "Nane Vestidos",
    "total": 5024.0,
-   "pct": 4.8,
+   "pct": 4.5,
    "pagos": 12,
    "meses_activo": 10,
    "primer_mes": "ene",
@@ -648,7 +670,7 @@
   {
    "cliente": "Cigarra",
    "total": 4657.5,
-   "pct": 4.5,
+   "pct": 4.2,
    "pagos": 9,
    "meses_activo": 9,
    "primer_mes": "ene",
@@ -668,31 +690,31 @@
    }
   },
   {
-   "cliente": "Flota Imbabura",
-   "total": 4493.13,
-   "pct": 4.3,
+   "cliente": "Pladeco",
+   "total": 4249.0,
+   "pct": 3.8,
    "pagos": 9,
    "meses_activo": 8,
-   "primer_mes": "feb",
-   "ultimo_mes": "sep",
-   "fee_promedio": 561.64,
+   "primer_mes": "ene",
+   "ultimo_mes": "oct",
+   "fee_promedio": 531.12,
    "por_mes": {
-    "ene": 0.0,
-    "feb": 559.63,
-    "mar": 559.63,
-    "abr": 558.25,
-    "may": 558.25,
-    "jun": 558.25,
-    "jul": 558.25,
-    "ago": 558.25,
-    "sep": 582.62,
-    "oct": 0.0
+    "ene": 1493.0,
+    "feb": 350.0,
+    "mar": 400.0,
+    "abr": 0.0,
+    "may": 406.0,
+    "jun": 0.0,
+    "jul": 400.0,
+    "ago": 400.0,
+    "sep": 400.0,
+    "oct": 400.0
    }
   },
   {
    "cliente": "Confia",
    "total": 4000.0,
-   "pct": 3.8,
+   "pct": 3.6,
    "pagos": 9,
    "meses_activo": 8,
    "primer_mes": "ene",
@@ -712,31 +734,31 @@
    }
   },
   {
-   "cliente": "Pladeco",
-   "total": 3849.0,
-   "pct": 3.7,
-   "pagos": 8,
-   "meses_activo": 7,
-   "primer_mes": "ene",
-   "ultimo_mes": "sep",
-   "fee_promedio": 549.86,
+   "cliente": "Onco Ambato",
+   "total": 3320.0,
+   "pct": 3.0,
+   "pagos": 10,
+   "meses_activo": 8,
+   "primer_mes": "feb",
+   "ultimo_mes": "oct",
+   "fee_promedio": 415.0,
    "por_mes": {
-    "ene": 1493.0,
-    "feb": 350.0,
-    "mar": 400.0,
-    "abr": 0.0,
-    "may": 406.0,
+    "ene": 0.0,
+    "feb": 985.0,
+    "mar": 340.0,
+    "abr": 335.0,
+    "may": 340.0,
     "jun": 0.0,
-    "jul": 400.0,
-    "ago": 400.0,
-    "sep": 400.0,
-    "oct": 0.0
+    "jul": 300.0,
+    "ago": 340.0,
+    "sep": 340.0,
+    "oct": 340.0
    }
   },
   {
    "cliente": "Absolute",
    "total": 3300.0,
-   "pct": 3.2,
+   "pct": 3.0,
    "pagos": 10,
    "meses_activo": 10,
    "primer_mes": "ene",
@@ -758,7 +780,7 @@
   {
    "cliente": "El Motor",
    "total": 3250.0,
-   "pct": 3.1,
+   "pct": 2.9,
    "pagos": 5,
    "meses_activo": 4,
    "primer_mes": "jun",
@@ -780,7 +802,7 @@
   {
    "cliente": "Plasticaucho",
    "total": 3075.5,
-   "pct": 2.9,
+   "pct": 2.8,
    "pagos": 8,
    "meses_activo": 7,
    "primer_mes": "feb",
@@ -800,31 +822,9 @@
    }
   },
   {
-   "cliente": "Onco Ambato",
-   "total": 2980.0,
-   "pct": 2.8,
-   "pagos": 9,
-   "meses_activo": 7,
-   "primer_mes": "feb",
-   "ultimo_mes": "sep",
-   "fee_promedio": 425.71,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 985.0,
-    "mar": 340.0,
-    "abr": 335.0,
-    "may": 340.0,
-    "jun": 0.0,
-    "jul": 300.0,
-    "ago": 340.0,
-    "sep": 340.0,
-    "oct": 0.0
-   }
-  },
-  {
    "cliente": "Tartelier",
    "total": 2760.0,
-   "pct": 2.6,
+   "pct": 2.5,
    "pagos": 8,
    "meses_activo": 8,
    "primer_mes": "feb",
@@ -846,7 +846,7 @@
   {
    "cliente": "Chiflido",
    "total": 2700.0,
-   "pct": 2.6,
+   "pct": 2.4,
    "pagos": 9,
    "meses_activo": 9,
    "primer_mes": "ene",
@@ -868,7 +868,7 @@
   {
    "cliente": "Provita",
    "total": 2582.5,
-   "pct": 2.5,
+   "pct": 2.3,
    "pagos": 9,
    "meses_activo": 8,
    "primer_mes": "feb",
@@ -890,7 +890,7 @@
   {
    "cliente": "Casa del Verde",
    "total": 2580.0,
-   "pct": 2.5,
+   "pct": 2.3,
    "pagos": 6,
    "meses_activo": 6,
    "primer_mes": "abr",
@@ -912,7 +912,7 @@
   {
    "cliente": "APC",
    "total": 2300.0,
-   "pct": 2.2,
+   "pct": 2.1,
    "pagos": 4,
    "meses_activo": 3,
    "primer_mes": "abr",
@@ -934,7 +934,7 @@
   {
    "cliente": "Nono",
    "total": 1350.0,
-   "pct": 1.3,
+   "pct": 1.2,
    "pagos": 3,
    "meses_activo": 3,
    "primer_mes": "ene",
@@ -978,7 +978,7 @@
   {
    "cliente": "MM Wings",
    "total": 1215.0,
-   "pct": 1.2,
+   "pct": 1.1,
    "pagos": 9,
    "meses_activo": 8,
    "primer_mes": "feb",
@@ -1022,7 +1022,7 @@
   {
    "cliente": "La Tartuca",
    "total": 1000.0,
-   "pct": 1.0,
+   "pct": 0.9,
    "pagos": 1,
    "meses_activo": 1,
    "primer_mes": "feb",
@@ -1131,20 +1131,20 @@
   }
  ],
  "concentracion": {
-  "top1": 10.2,
-  "top3": 27.5,
-  "top5": 41.2
+  "top1": 9.6,
+  "top3": 28.0,
+  "top5": 42.5
  },
  "equipo": [
   {
    "persona": "Ana Paula",
    "grupo": "Nomina socios",
-   "total": 13630.0,
-   "meses": 8,
-   "promedio_mes": 1703.75,
+   "total": 15130.0,
+   "meses": 9,
+   "promedio_mes": 1681.11,
    "base": 1500.0,
    "primer_mes": "ene",
-   "ultimo_mes": "sep",
+   "ultimo_mes": "oct",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1157,7 +1157,7 @@
     "jul": 1500.0,
     "ago": 1500.0,
     "sep": 1630.0,
-    "oct": 0.0
+    "oct": 1500.0
    },
    "detalle": {
     "ene": {
@@ -1288,18 +1288,36 @@
      },
      "vs_base": 130.0,
      "cmp_base": true
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "26/10/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO ANA PAULA"
+      }
+     ],
+     "razones": [
+      "vuelve a su sueldo habitual: el mes anterior llevaba extras"
+     ],
+     "delta": {
+      "vs": "sep",
+      "dif": -130.0
+     },
+     "vs_base": 0.0,
+     "cmp_base": true
     }
    }
   },
   {
    "persona": "Francisco Vayas",
    "grupo": "Nomina socios",
-   "total": 13612.0,
-   "meses": 8,
-   "promedio_mes": 1701.5,
+   "total": 15112.0,
+   "meses": 9,
+   "promedio_mes": 1679.11,
    "base": 1500.0,
    "primer_mes": "ene",
-   "ultimo_mes": "sep",
+   "ultimo_mes": "oct",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -1312,7 +1330,7 @@
     "jul": 1500.0,
     "ago": 1500.0,
     "sep": 1500.0,
-    "oct": 0.0
+    "oct": 1500.0
    },
    "detalle": {
     "ene": {
@@ -1440,6 +1458,19 @@
      "movs": [
       {
        "fecha": "25/09/2026",
+       "importe": 1500.0,
+       "desc": "SUELDO FRANCISCO VAYAS"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "26/10/2026",
        "importe": 1500.0,
        "desc": "SUELDO FRANCISCO VAYAS"
       }
@@ -2445,9 +2476,9 @@
   {
    "persona": "Josue Lara",
    "grupo": "Nomina fija",
-   "total": 2841.0,
+   "total": 3128.5,
    "meses": 5,
-   "promedio_mes": 568.2,
+   "promedio_mes": 625.7,
    "base": 575.0,
    "primer_mes": "jun",
    "ultimo_mes": "oct",
@@ -2463,7 +2494,7 @@
     "jul": 578.5,
     "ago": 575.0,
     "sep": 575.0,
-    "oct": 287.5
+    "oct": 575.0
    },
    "detalle": {
     "jun": {
@@ -2559,16 +2590,18 @@
        "fecha": "02/10/2026",
        "importe": 287.5,
        "desc": "SUELDO JOSUE LARA QUINCENA"
+      },
+      {
+       "fecha": "16/10/2026",
+       "importe": 287.5,
+       "desc": "SUELDO JOSUE LARA QUINCENA"
       }
      ],
      "razones": [
       "cobra por quincenas, no mensual"
      ],
-     "delta": {
-      "vs": "sep",
-      "dif": -287.5
-     },
-     "vs_base": -287.5,
+     "delta": null,
+     "vs_base": 0.0,
      "cmp_base": true
     }
    }
@@ -2576,12 +2609,12 @@
   {
    "persona": "Marissa Alban",
    "grupo": "Nomina fija",
-   "total": 2502.5,
-   "meses": 5,
-   "promedio_mes": 500.5,
+   "total": 3002.5,
+   "meses": 6,
+   "promedio_mes": 500.42,
    "base": 500.0,
    "primer_mes": "may",
-   "ultimo_mes": "sep",
+   "ultimo_mes": "oct",
    "activo_julio": true,
    "liquidado": false,
    "por_mes": {
@@ -2594,7 +2627,7 @@
     "jul": 502.5,
     "ago": 500.0,
     "sep": 500.0,
-    "oct": 0.0
+    "oct": 500.0
    },
    "detalle": {
     "may": {
@@ -2663,6 +2696,19 @@
      "movs": [
       {
        "fecha": "14/09/2026",
+       "importe": 500.0,
+       "desc": "SUELDO MARISSA ALBAN"
+      }
+     ],
+     "razones": [],
+     "delta": null,
+     "vs_base": 0.0,
+     "cmp_base": true
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "13/10/2026",
        "importe": 500.0,
        "desc": "SUELDO MARISSA ALBAN"
       }
@@ -3131,8 +3177,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Salida a FlexiAhorro",
-   "total": 82793.0,
-   "n": 88,
+   "total": 89083.0,
+   "n": 91,
    "por_mes": {
     "ene": 20.0,
     "feb": 4820.0,
@@ -3143,7 +3189,7 @@
     "jul": 14357.0,
     "ago": 15512.0,
     "sep": 9951.0,
-    "oct": 2310.0
+    "oct": 8600.0
    },
    "detalle": {
     "ene": {
@@ -3632,6 +3678,21 @@
        "fecha": "08/10/2026",
        "desc": "ENVIO A FLEXIAHORRO",
        "importe": 100.0
+      },
+      {
+       "fecha": "16/10/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 2890.0
+      },
+      {
+       "fecha": "22/10/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 1100.0
+      },
+      {
+       "fecha": "26/10/2026",
+       "desc": "ENVIO A FLEXIAHORRO",
+       "importe": 2300.0
       }
      ],
      "razones": []
@@ -3641,8 +3702,8 @@
   {
    "grupo": "Movimiento entre cuentas propias",
    "categoria": "Entrada desde FlexiAhorro",
-   "total": -74257.54,
-   "n": 69,
+   "total": -77467.54,
+   "n": 71,
    "por_mes": {
     "ene": 0.0,
     "feb": 0.0,
@@ -3653,7 +3714,7 @@
     "jul": -13456.99,
     "ago": -13150.0,
     "sep": -11450.0,
-    "oct": -4150.0
+    "oct": -7360.0
    },
    "detalle": {
     "mar": {
@@ -4037,6 +4098,16 @@
        "fecha": "08/10/2026",
        "desc": "INGRESO DE FLEXIAHORRO PARA PAGO PAUTA E IMPUESTOS",
        "importe": -2200.0
+      },
+      {
+       "fecha": "19/10/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA PAGO PASTEL",
+       "importe": -10.0
+      },
+      {
+       "fecha": "26/10/2026",
+       "desc": "INGRESO DE FLEXIAHORRO PARA SUELDOS",
+       "importe": -3200.0
       }
      ],
      "razones": []
@@ -4201,8 +4272,8 @@
   {
    "grupo": "Estructura",
    "categoria": "Arriendo, condominio y alicuotas",
-   "total": 4099.58,
-   "n": 15,
+   "total": 4109.58,
+   "n": 16,
    "por_mes": {
     "ene": 400.41,
     "feb": 400.41,
@@ -4213,7 +4284,7 @@
     "jul": 420.41,
     "ago": 400.41,
     "sep": 420.41,
-    "oct": 400.41
+    "oct": 410.41
    },
    "detalle": {
     "ene": {
@@ -4337,6 +4408,11 @@
        "fecha": "02/10/2026",
        "desc": "ARRIENDO OFICINA",
        "importe": 400.41
+      },
+      {
+       "fecha": "13/10/2026",
+       "desc": "PAGO CONDOMINIO OCTUBRE",
+       "importe": 10.0
       }
      ],
      "razones": []
@@ -4671,8 +4747,8 @@
   {
    "grupo": "Tarjeta de credito",
    "categoria": "Pago tarjeta de credito",
-   "total": 1904.5,
-   "n": 16,
+   "total": 1934.5,
+   "n": 17,
    "por_mes": {
     "ene": 26.7,
     "feb": 29.25,
@@ -4683,7 +4759,7 @@
     "jul": 312.1,
     "ago": 75.56,
     "sep": 356.49,
-    "oct": 0.0
+    "oct": 30.0
    },
    "detalle": {
     "ene": {
@@ -4810,6 +4886,16 @@
       }
      ],
      "razones": []
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "21/10/2026",
+       "desc": "PAGO TARJETA DE CREDITO",
+       "importe": 30.0
+      }
+     ],
+     "razones": []
     }
    }
   },
@@ -4880,64 +4966,9 @@
   },
   {
    "grupo": "Freelance y produccion",
-   "categoria": "Gasto de proyecto",
-   "total": 928.0,
-   "n": 4,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 0.0,
-    "ago": 20.0,
-    "sep": 8.0,
-    "oct": 900.0
-   },
-   "detalle": {
-    "ago": {
-     "movs": [
-      {
-       "fecha": "12/08/2026",
-       "desc": "ACTUALIZACIÓN WEB FIAMMINGO",
-       "importe": 20.0
-      }
-     ],
-     "razones": []
-    },
-    "sep": {
-     "movs": [
-      {
-       "fecha": "04/09/2026",
-       "desc": "GASTO PARA PRODUCCIÓN HEALTHY",
-       "importe": 2.04
-      },
-      {
-       "fecha": "04/09/2026",
-       "desc": "GASTO PARA PRODUCCIÓN HEALTHY",
-       "importe": 5.96
-      }
-     ],
-     "razones": []
-    },
-    "oct": {
-     "movs": [
-      {
-       "fecha": "23/10/2026",
-       "desc": "PAGO UNINOVA",
-       "importe": 900.0
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Freelance y produccion",
    "categoria": "Modelos",
-   "total": 592.91,
-   "n": 13,
+   "total": 612.91,
+   "n": 14,
    "por_mes": {
     "ene": 20.0,
     "feb": 20.0,
@@ -4948,7 +4979,7 @@
     "jul": 20.0,
     "ago": 20.0,
     "sep": 40.0,
-    "oct": 150.41
+    "oct": 170.41
    },
    "detalle": {
     "ene": {
@@ -5052,6 +5083,11 @@
        "fecha": "02/10/2026",
        "desc": "PAGO MODELO DAMARI",
        "importe": 150.41
+      },
+      {
+       "fecha": "20/10/2026",
+       "desc": "PAGO MODELO VELSANA",
+       "importe": 20.0
       }
      ],
      "razones": []
@@ -5099,29 +5135,159 @@
    }
   },
   {
-   "grupo": "Devoluciones",
-   "categoria": "Devolucion a cliente",
-   "total": 362.0,
-   "n": 1,
+   "grupo": "Egresos - Sin identificar",
+   "categoria": "REVISAR",
+   "total": 469.67,
+   "n": 9,
    "por_mes": {
     "ene": 0.0,
-    "feb": 362.0,
+    "feb": 0.0,
     "mar": 0.0,
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
     "jul": 0.0,
-    "ago": 0.0,
-    "sep": 0.0,
-    "oct": 0.0
+    "ago": 192.6,
+    "sep": 91.57,
+    "oct": 185.5
    },
    "detalle": {
-    "feb": {
+    "ago": {
      "movs": [
       {
-       "fecha": "02/02/2026",
-       "desc": "DEVOLUCION HERMANOS ROMERO",
-       "importe": 362.0
+       "fecha": "19/08/2026",
+       "desc": "PAGO SILLAS",
+       "importe": 150.0
+      },
+      {
+       "fecha": "27/08/2026",
+       "desc": "PLOMERO",
+       "importe": 10.0
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "COMISIÓN BANCARIA",
+       "importe": 0.41
+      },
+      {
+       "fecha": "28/08/2026",
+       "desc": "RENOVACIÓN FIRMA ELECTRÓNICA 2 AÑOS",
+       "importe": 32.19
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "09/09/2026",
+       "desc": "PAGO DE MICROONDAS",
+       "importe": 70.41
+      },
+      {
+       "fecha": "24/09/2026",
+       "desc": "TORRAR ARGOT PASTEL LEO",
+       "importe": 21.16
+      }
+     ],
+     "razones": []
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "01/10/2026",
+       "desc": "PAGO LENCHO RECUPERAR",
+       "importe": 40.0
+      },
+      {
+       "fecha": "19/10/2026",
+       "desc": "PAGO PASTEL MARISSA",
+       "importe": 15.5
+      },
+      {
+       "fecha": "26/10/2026",
+       "desc": "SUELDO COMMUNITY",
+       "importe": 130.0
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Estructura",
+   "categoria": "Limpieza",
+   "total": 422.05,
+   "n": 7,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 70.41,
+    "abr": 0.0,
+    "may": 140.82,
+    "jun": 70.41,
+    "jul": 0.0,
+    "ago": 70.41,
+    "sep": 0.0,
+    "oct": 70.0
+   },
+   "detalle": {
+    "mar": {
+     "movs": [
+      {
+       "fecha": "10/03/2026",
+       "desc": "LIMPIEZA 7 SEMANAS",
+       "importe": 70.41
+      }
+     ],
+     "razones": []
+    },
+    "may": {
+     "movs": [
+      {
+       "fecha": "11/05/2026",
+       "desc": "PAGO LIMPIEZA",
+       "importe": 70.41
+      },
+      {
+       "fecha": "12/05/2026",
+       "desc": "PAGO LIMPIEZA",
+       "importe": 70.41
+      }
+     ],
+     "razones": []
+    },
+    "jun": {
+     "movs": [
+      {
+       "fecha": "10/06/2026",
+       "desc": "PAGO LIMPIEZA",
+       "importe": 70.41
+      }
+     ],
+     "razones": []
+    },
+    "ago": {
+     "movs": [
+      {
+       "fecha": "17/08/2026",
+       "desc": "PAGO LIMPIEZA 7 SEMANAS",
+       "importe": 70.0
+      },
+      {
+       "fecha": "17/08/2026",
+       "desc": "PAGO LIMPIEZA COMISIÓN BANCARIA",
+       "importe": 0.41
+      }
+     ],
+     "razones": []
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "26/10/2026",
+       "desc": "PAGO LIMPIEZA",
+       "importe": 70.0
       }
      ],
      "razones": []
@@ -5131,8 +5297,8 @@
   {
    "grupo": "Movilizacion",
    "categoria": "Taxis / parqueo / viaticos",
-   "total": 360.04,
-   "n": 44,
+   "total": 387.11,
+   "n": 46,
    "por_mes": {
     "ene": 21.08,
     "feb": 0.0,
@@ -5143,7 +5309,7 @@
     "jul": 18.34,
     "ago": 62.52,
     "sep": 43.09,
-    "oct": 56.29
+    "oct": 83.36
    },
    "detalle": {
     "ene": {
@@ -5407,6 +5573,16 @@
        "fecha": "08/10/2026",
        "desc": "TAXIS ALE APONTE",
        "importe": 6.52
+      },
+      {
+       "fecha": "13/10/2026",
+       "desc": "TAXIS MARISSA",
+       "importe": 10.02
+      },
+      {
+       "fecha": "13/10/2026",
+       "desc": "TAXIS DANNA",
+       "importe": 17.05
       }
      ],
      "razones": []
@@ -5414,139 +5590,29 @@
    }
   },
   {
-   "grupo": "Estructura",
-   "categoria": "Limpieza",
-   "total": 352.05,
-   "n": 6,
+   "grupo": "Devoluciones",
+   "categoria": "Devolucion a cliente",
+   "total": 362.0,
+   "n": 1,
    "por_mes": {
     "ene": 0.0,
-    "feb": 0.0,
-    "mar": 70.41,
-    "abr": 0.0,
-    "may": 140.82,
-    "jun": 70.41,
-    "jul": 0.0,
-    "ago": 70.41,
-    "sep": 0.0,
-    "oct": 0.0
-   },
-   "detalle": {
-    "mar": {
-     "movs": [
-      {
-       "fecha": "10/03/2026",
-       "desc": "LIMPIEZA 7 SEMANAS",
-       "importe": 70.41
-      }
-     ],
-     "razones": []
-    },
-    "may": {
-     "movs": [
-      {
-       "fecha": "11/05/2026",
-       "desc": "PAGO LIMPIEZA",
-       "importe": 70.41
-      },
-      {
-       "fecha": "12/05/2026",
-       "desc": "PAGO LIMPIEZA",
-       "importe": 70.41
-      }
-     ],
-     "razones": []
-    },
-    "jun": {
-     "movs": [
-      {
-       "fecha": "10/06/2026",
-       "desc": "PAGO LIMPIEZA",
-       "importe": 70.41
-      }
-     ],
-     "razones": []
-    },
-    "ago": {
-     "movs": [
-      {
-       "fecha": "17/08/2026",
-       "desc": "PAGO LIMPIEZA 7 SEMANAS",
-       "importe": 70.0
-      },
-      {
-       "fecha": "17/08/2026",
-       "desc": "PAGO LIMPIEZA COMISIÓN BANCARIA",
-       "importe": 0.41
-      }
-     ],
-     "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Egresos - Sin identificar",
-   "categoria": "REVISAR",
-   "total": 324.17,
-   "n": 7,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
+    "feb": 362.0,
     "mar": 0.0,
     "abr": 0.0,
     "may": 0.0,
     "jun": 0.0,
     "jul": 0.0,
-    "ago": 192.6,
-    "sep": 91.57,
-    "oct": 40.0
+    "ago": 0.0,
+    "sep": 0.0,
+    "oct": 0.0
    },
    "detalle": {
-    "ago": {
+    "feb": {
      "movs": [
       {
-       "fecha": "19/08/2026",
-       "desc": "PAGO SILLAS",
-       "importe": 150.0
-      },
-      {
-       "fecha": "27/08/2026",
-       "desc": "PLOMERO",
-       "importe": 10.0
-      },
-      {
-       "fecha": "28/08/2026",
-       "desc": "COMISIÓN BANCARIA",
-       "importe": 0.41
-      },
-      {
-       "fecha": "28/08/2026",
-       "desc": "RENOVACIÓN FIRMA ELECTRÓNICA 2 AÑOS",
-       "importe": 32.19
-      }
-     ],
-     "razones": []
-    },
-    "sep": {
-     "movs": [
-      {
-       "fecha": "09/09/2026",
-       "desc": "PAGO DE MICROONDAS",
-       "importe": 70.41
-      },
-      {
-       "fecha": "24/09/2026",
-       "desc": "TORRAR ARGOT PASTEL LEO",
-       "importe": 21.16
-      }
-     ],
-     "razones": []
-    },
-    "oct": {
-     "movs": [
-      {
-       "fecha": "01/10/2026",
-       "desc": "PAGO LENCHO RECUPERAR",
-       "importe": 40.0
+       "fecha": "02/02/2026",
+       "desc": "DEVOLUCION HERMANOS ROMERO",
+       "importe": 362.0
       }
      ],
      "razones": []
@@ -5611,8 +5677,8 @@
   {
    "grupo": "Oficina y bienestar",
    "categoria": "Refrigerios y suministros",
-   "total": 231.9,
-   "n": 22,
+   "total": 243.04,
+   "n": 23,
    "por_mes": {
     "ene": 0.0,
     "feb": 6.0,
@@ -5623,7 +5689,7 @@
     "jul": 23.41,
     "ago": 24.91,
     "sep": 6.0,
-    "oct": 0.0
+    "oct": 11.14
    },
    "detalle": {
     "feb": {
@@ -5775,33 +5841,13 @@
       }
      ],
      "razones": []
-    }
-   }
-  },
-  {
-   "grupo": "Freelance y produccion",
-   "categoria": "Pris Rodriguez (produccion)",
-   "total": 172.5,
-   "n": 1,
-   "por_mes": {
-    "ene": 0.0,
-    "feb": 0.0,
-    "mar": 0.0,
-    "abr": 0.0,
-    "may": 0.0,
-    "jun": 0.0,
-    "jul": 172.5,
-    "ago": 0.0,
-    "sep": 0.0,
-    "oct": 0.0
-   },
-   "detalle": {
-    "jul": {
+    },
+    "oct": {
      "movs": [
       {
-       "fecha": "24/07/2026",
-       "desc": "PAGO A PRIS RODRIGUEZ PRODUCCION DE SAMARI",
-       "importe": 172.5
+       "fecha": "26/10/2026",
+       "desc": "COMPRA DE AZÚCAR Y LECHE PARA AVENCIA",
+       "importe": 11.14
       }
      ],
      "razones": []
@@ -5811,8 +5857,8 @@
   {
    "grupo": "Estructura",
    "categoria": "Servicios basicos",
-   "total": 170.53,
-   "n": 7,
+   "total": 176.01,
+   "n": 8,
    "por_mes": {
     "ene": 5.84,
     "feb": 5.89,
@@ -5823,7 +5869,7 @@
     "jul": 126.5,
     "ago": 0.0,
     "sep": 11.04,
-    "oct": 0.0
+    "oct": 5.48
    },
    "detalle": {
     "ene": {
@@ -5887,6 +5933,46 @@
        "fecha": "14/09/2026",
        "desc": "PAGO DE AGUA",
        "importe": 11.04
+      }
+     ],
+     "razones": []
+    },
+    "oct": {
+     "movs": [
+      {
+       "fecha": "13/10/2026",
+       "desc": "PAGO DE AGUA",
+       "importe": 5.48
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Pris Rodriguez (produccion)",
+   "total": 172.5,
+   "n": 1,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 172.5,
+    "ago": 0.0,
+    "sep": 0.0,
+    "oct": 0.0
+   },
+   "detalle": {
+    "jul": {
+     "movs": [
+      {
+       "fecha": "24/07/2026",
+       "desc": "PAGO A PRIS RODRIGUEZ PRODUCCION DE SAMARI",
+       "importe": 172.5
       }
      ],
      "razones": []
@@ -6092,6 +6178,51 @@
        "fecha": "11/05/2026",
        "desc": "FALLO BANCO REVERSO",
        "importe": -70.41
+      }
+     ],
+     "razones": []
+    }
+   }
+  },
+  {
+   "grupo": "Freelance y produccion",
+   "categoria": "Gasto de proyecto",
+   "total": 28.0,
+   "n": 3,
+   "por_mes": {
+    "ene": 0.0,
+    "feb": 0.0,
+    "mar": 0.0,
+    "abr": 0.0,
+    "may": 0.0,
+    "jun": 0.0,
+    "jul": 0.0,
+    "ago": 20.0,
+    "sep": 8.0,
+    "oct": 0.0
+   },
+   "detalle": {
+    "ago": {
+     "movs": [
+      {
+       "fecha": "12/08/2026",
+       "desc": "ACTUALIZACIÓN WEB FIAMMINGO",
+       "importe": 20.0
+      }
+     ],
+     "razones": []
+    },
+    "sep": {
+     "movs": [
+      {
+       "fecha": "04/09/2026",
+       "desc": "GASTO PARA PRODUCCIÓN HEALTHY",
+       "importe": 2.04
+      },
+      {
+       "fecha": "04/09/2026",
+       "desc": "GASTO PARA PRODUCCIÓN HEALTHY",
+       "importe": 5.96
       }
      ],
      "razones": []
@@ -6408,10 +6539,10 @@
   }
  ],
  "totales": {
-  "ingresos": 105169.26,
-  "costo_fijo": 83057.31,
-  "costo_variable": 13547.47,
-  "resultado": 2833.39,
-  "movimientos": 708
+  "ingresos": 110607.09,
+  "costo_fijo": 86930.29,
+  "costo_variable": 12735.68,
+  "resultado": 6511.03,
+  "movimientos": 736
  }
 }

@@ -667,7 +667,7 @@
   "Financiero": 68.27,
   "Oficina": 19.59
  },
- "pagado_hoja": 1904.5,
+ "pagado_hoja": 1934.5,
  "pagos_por_mes": {
   "ene": 26.7,
   "feb": 29.25,
@@ -678,7 +678,7 @@
   "jul": 312.1,
   "ago": 75.56,
   "sep": 356.49,
-  "oct": 0.0
+  "oct": 30.0
  },
  "detalle_pagos": {
   "ene": [
@@ -779,9 +779,15 @@
     "importe": 324.24
    }
   ],
-  "oct": []
+  "oct": [
+   {
+    "fecha": "21/10/2026",
+    "desc": "PAGO TARJETA DE CREDITO",
+    "importe": 30.0
+   }
+  ]
  },
- "diferencia": 55.21,
+ "diferencia": 85.21,
  "tarjeta": "Mastercard ····3129",
  "titular": "Rodriguez Ponce Ana Paula"
 }
